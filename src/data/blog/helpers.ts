@@ -152,8 +152,8 @@ export function getBlogSitemapEntries() {
 			images: [
 				{
 					url: new URL(siteConfig.defaultOgImage, siteConfig.url).href,
-					title: 'Overwatch Hacks Intel blog',
-					caption: 'Overwatch Intel blog covering meta guides, ESP, Aimbot, and EAC notes',
+					title: 'War Thunder Hacks Intel blog',
+					caption: 'War Thunder Intel blog covering meta guides, ESP, Aimbot, and EAC notes',
 				},
 			],
 		},

@@ -1,5 +1,5 @@
 /**
- * Plays muted Overwatch Hacks background clips without blocking interaction.
+ * Plays muted War Thunder Hacks background clips without blocking interaction.
  * - hero: desktop-only muted autoplay (mobile keeps the poster for LCP)
  * - product / lazy: hydrate data-src only when near the viewport
  */
@@ -119,7 +119,7 @@
 		if (reduceMq.matches || !desktopMq.matches) return;
 
 		var heroes = Array.prototype.slice.call(
-			document.querySelectorAll('[data-overwatch-hacks-video="hero"]'),
+			document.querySelectorAll('[data-war-thunder-hacks-video="hero"]'),
 		);
 		if (!heroes.length) return;
 
@@ -141,7 +141,7 @@
 	observeLazy(
 		Array.prototype.slice.call(
 			document.querySelectorAll(
-				'[data-overwatch-hacks-video="product"], [data-overwatch-hacks-video="lazy"]',
+				'[data-war-thunder-hacks-video="product"], [data-war-thunder-hacks-video="lazy"]',
 			),
 		),
 	);

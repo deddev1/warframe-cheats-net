@@ -28,56 +28,56 @@ const img = (path: string, title: string, caption: string): SitemapImage => ({
 /** Sitemap image assignments for indexable pages only (see sitemapPageIds in routing.ts). */
 const sitemapImagesByPageId: Partial<Record<PageId, SitemapImage[]>> = {
 	home: [
-		img(rustImages.hero, 'Overwatch Hacks', 'Overwatch Hacks homepage hero'),
-		img(rustImages.espWallhack, 'Overwatch ESP', 'Overwatch ESP wallhack overlay'),
-		img(rustImages.aimbotCombat, 'Overwatch Aimbot', 'Overwatch Aimbot combat preview'),
+		img(rustImages.hero, 'War Thunder Hacks', 'War Thunder Hacks homepage hero'),
+		img(rustImages.espWallhack, 'War Thunder ESP', 'War Thunder ESP wallhack overlay'),
+		img(rustImages.aimbotCombat, 'War Thunder Aimbot', 'War Thunder Aimbot combat preview'),
 	],
 	hacks: [
-		img(rustImages.battleRoyaleCombat, 'Overwatch Hacks', 'Overwatch 2 hacks ranked team fight preview'),
-		img(rustImages.espWallhack, 'Overwatch Hacks ESP', 'Overwatch wallhack ESP on enemy heroes'),
+		img(rustImages.battleRoyaleCombat, 'War Thunder Hacks', 'War Thunder hacks ranked ground battle preview'),
+		img(rustImages.espWallhack, 'War Thunder Hacks ESP', 'War Thunder wallhack ESP on enemy tanks and aircraft'),
 	],
-	'overwatch-esp': [
-		img(rustImages.espWallhack, 'Overwatch ESP', 'Overwatch ESP wallhack overlay'),
-		img(rustImages.playerEsp, 'Overwatch player ESP', 'Overwatch player ESP markers'),
+	'war-thunder-esp': [
+		img(rustImages.espWallhack, 'War Thunder ESP', 'War Thunder ESP wallhack overlay'),
+		img(rustImages.playerEsp, 'War Thunder player ESP', 'War Thunder player ESP markers'),
 	],
-	'overwatch-aimbot': [
-		img(rustImages.aimbotCombat, 'Overwatch Aimbot', 'Overwatch Aimbot combat preview'),
-		img(rustImages.squadFight, 'Overwatch Aimbot squad fight', 'Overwatch Aimbot in squad combat'),
+	'war-thunder-aimbot': [
+		img(rustImages.aimbotCombat, 'War Thunder Aimbot', 'War Thunder Aimbot combat preview'),
+		img(rustImages.squadFight, 'War Thunder Aimbot platoon engagement', 'War Thunder Aimbot in platoon combat'),
 	],
 	wallhack: [
-		img(rustImages.espWallhack, 'Overwatch Wallhack', 'Overwatch wallhack ESP view'),
+		img(rustImages.espWallhack, 'War Thunder Wallhack', 'War Thunder wallhack ESP view'),
 	],
 	radar: [
-		img(rustImages.radarHack, 'Overwatch Radar Hack', 'Overwatch 2 radar hack minimap overlay'),
+		img(rustImages.radarHack, 'War Thunder Radar Hack', 'War Thunder radar hack minimap overlay'),
 	],
 	features: [
-		img(rustImages.hero, 'Overwatch Hacks Features', 'Overwatch Hacks feature overview'),
-		img(rustImages.loadoutBuilder, 'Overwatch Hacks menu', 'Overwatch Hacks in-client controls'),
+		img(rustImages.hero, 'War Thunder Hacks Features', 'War Thunder Hacks feature overview'),
+		img(rustImages.loadoutBuilder, 'War Thunder Hacks menu', 'War Thunder Hacks in-client controls'),
 	],
 	pricing: [
-		img(rustImages.cover, 'Overwatch Hacks Pricing', 'Overwatch Hacks license plans'),
-		img(rustImages.cheatsPackage, 'Overwatch Hacks package', 'Overwatch Hacks product package'),
+		img(rustImages.cover, 'War Thunder Hacks Pricing', 'War Thunder Hacks license plans'),
+		img(rustImages.cheatsPackage, 'War Thunder Hacks package', 'War Thunder Hacks product package'),
 	],
 	setup: [
-		img(rustImages.squadFight, 'Overwatch Hacks Setup', 'Overwatch Hacks installation guide'),
+		img(rustImages.squadFight, 'War Thunder Hacks Setup', 'War Thunder Hacks installation guide'),
 	],
 	updates: [
-		img(rustImages.hero, 'Overwatch Hacks Updates', 'Overwatch Hacks patch status'),
+		img(rustImages.hero, 'War Thunder Hacks Updates', 'War Thunder Hacks patch status'),
 	],
 	faq: [
-		img(rustImages.loadoutBuilder, 'Overwatch Hacks FAQ', 'Overwatch Hacks frequently asked questions'),
+		img(rustImages.loadoutBuilder, 'War Thunder Hacks FAQ', 'War Thunder Hacks frequently asked questions'),
 	],
 	support: [
-		img(rustImages.headerArt, 'Overwatch Hacks Support', 'Overwatch Hacks help center'),
+		img(rustImages.headerArt, 'War Thunder Hacks Support', 'War Thunder Hacks help center'),
 	],
 	privacy: [
-		img(rustImages.cover, 'Overwatch Hacks Privacy Policy', 'Overwatch Hacks privacy policy'),
+		img(rustImages.cover, 'War Thunder Hacks Privacy Policy', 'War Thunder Hacks privacy policy'),
 	],
 	refund: [
-		img(rustImages.cover, 'Overwatch Hacks Refund Policy', 'Overwatch Hacks refund policy'),
+		img(rustImages.cover, 'War Thunder Hacks Refund Policy', 'War Thunder Hacks refund policy'),
 	],
 	terms: [
-		img(rustImages.squadFight, 'Overwatch Hacks Terms', 'Overwatch Hacks terms of use'),
+		img(rustImages.squadFight, 'War Thunder Hacks Terms', 'War Thunder Hacks terms of use'),
 	],
 };
 
@@ -87,7 +87,7 @@ for (const pageId of sitemapPageIds) {
 	}
 }
 
-/** Canonical English sitemap entries — core overwatch-hacks URLs only. */
+/** Canonical English sitemap entries — core war-thunder-hacks URLs only. */
 export const pageSitemapEntries: PageSitemapEntry[] = sitemapPageIds.map((pageId) => {
 	const meta = pageSitemapMeta[pageId];
 	return {

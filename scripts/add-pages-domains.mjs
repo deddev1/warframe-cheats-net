@@ -8,7 +8,7 @@ import { join } from 'node:path';
 
 const ACCOUNT_ID = '002527a31814aabc946cce93095ec7a5';
 const PROJECT = 'rusthacks';
-const DOMAINS = ['overwatchhacks.com', 'www.overwatchhacks.com'];
+const DOMAINS = ['warthunderhacks.net', 'www.warthunderhacks.net'];
 
 function getToken() {
   const configPath = join(

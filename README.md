@@ -1,6 +1,6 @@
-# Overwatch Hacks — Marketing Site
+# War Thunder Hacks — Marketing Site
 
-Static Astro 7 site for [overwatchhacks.com](https://overwatchhacks.com). Primary SEO focus: **Overwatch Hacks** (supporting: Overwatch hacks, overwatch esp, overwatch aimbot).
+Static Astro 7 site for [warthunderhacks.net](https://warthunderhacks.net). Primary SEO focus: **War Thunder Hacks** (supporting: War Thunder hacks, war thunder esp, war thunder aimbot).
 
 ## Stack
 
@@ -22,7 +22,7 @@ Build and validate sitemaps:
 npm run build:validate
 ```
 
-Refresh Overwatch atmosphere images (optional):
+Refresh War Thunder atmosphere images (optional):
 
 ```bash
 npm run fetch:images
@@ -31,11 +31,11 @@ npm run optimize:images
 
 ## Deploy (Cloudflare Pages)
 
-1. Create a Cloudflare Pages project named **overwatchhacks**
+1. Create a Cloudflare Pages project named **warthunderhacks**
 2. Connect this repo or upload `dist/` after `npm run build`
 3. Build command: `npm run build`
 4. Output directory: `dist`
-5. Custom domain **overwatchhacks.com** (apex) and redirect **www** → apex
+5. Custom domain **warthunderhacks.net** (apex) and redirect **www** → apex
 6. Enable SSL **Always Use HTTPS**
 
 CLI deploy:
@@ -48,8 +48,8 @@ npm run pages:deploy
 
 - Node.js >= 22.12.0
 - Checkout URL in `src/data/site.ts` (`siteConfig.checkoutUrl`)
-- Canonical site URL: `https://overwatchhacks.com`
+- Canonical site URL: `https://warthunderhacks.net`
 
 ## License
 
-Private — for overwatchhacks.com deployment only.
+Private — for warthunderhacks.net deployment only.

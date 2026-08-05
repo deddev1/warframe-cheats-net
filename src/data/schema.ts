@@ -4,87 +4,87 @@ export const pageFaqClusters: Partial<
 > = {
 	hacks: [
 		{
-			question: 'What are Overwatch hacks?',
+			question: 'What are War Thunder hacks?',
 			answer:
-				'Overwatch hacks are Windows PC tools for Overwatch with ESP, wallhack, and aimbot controls. Overwatch Hacks licenses include anti-cheat maintenance updates and setup support.',
+				'War Thunder hacks are Windows PC tools for War Thunder with ESP, wallhack, and aimbot controls. War Thunder Hacks licenses include anti-cheat maintenance updates and setup support.',
 		},
 		{
-			question: 'Are Overwatch hacks permanently undetected?',
+			question: 'Are War Thunder hacks permanently undetected?',
 			answer:
 				'No package can promise that. We rebuild after anti-cheat and game patches and post status on Updates. Check there before you load in.',
 		},
 		{
-			question: 'What is included in the Overwatch Hacks package?',
+			question: 'What is included in the War Thunder Hacks package?',
 			answer:
-				'Enemy ESP, health pack markers, radar cues, and configurable aimbot in one license. See Features, ESP, and Aimbot for control detail.',
+				'Enemy ESP, repair point markers, radar cues, and configurable aimbot in one license. See Features, ESP, and Aimbot for control detail.',
 		},
 	],
-	'overwatch-esp': [
+	'war-thunder-esp': [
 		{
-			question: 'What is an Overwatch wallhack?',
+			question: 'What is an War Thunder wallhack?',
 			answer:
-				'An Overwatch wallhack is an ESP overlay that shows enemy heroes, enemy ults, and loot through cover. Overwatch Hacks wallhack includes distance readouts, team colours, and toggleable categories for competitive and Quick Play.',
+				'An War Thunder wallhack is an ESP overlay that shows enemy tanks and aircraft, artillery strikes, and loot through cover. War Thunder Hacks wallhack includes distance readouts, team colours, and toggleable categories for realistic battles and Arcade Battles.',
 		},
 		{
-			question: 'Does Overwatch Hacks include a radar hack?',
+			question: 'Does War Thunder Hacks include a radar hack?',
 			answer:
-				'Yes. Overwatch Hacks includes 2D radar-style overlays that highlight nearby threats outside your direct view — useful for reading flanks during team pushes.',
+				'Yes. War Thunder Hacks includes 2D radar-style overlays that highlight nearby threats outside your direct view — useful for reading flanks during team pushes.',
 		},
 		{
-			question: 'Does this fit competitive and Quick Play runs?',
+			question: 'Does this fit realistic battles and Arcade Battles runs?',
 			answer:
 				'Yes. ESP and radar help you read nearby enemies and loot; aimbot covers the firefight. Tuned for solo and team push play.',
 		},
 	],
-	'overwatch-aimbot': [
+	'war-thunder-aimbot': [
 		{
-			question: 'What is Overwatch soft aim?',
+			question: 'What is War Thunder aimbot?',
 			answer:
-				'Overwatch soft aim is configurable aim assist with smoothness, FOV, and bone priority controls. It ships bundled with ESP and radar in the Overwatch Hacks license for Windows PC.',
+				'War Thunder aimbot is configurable aim assist with smoothness, FOV, and bone priority controls. It ships bundled with ESP and radar in the War Thunder Hacks license for Windows PC.',
 		},
 		{
-			question: 'Can I use Overwatch aimbot with a controller?',
+			question: 'Can I use War Thunder aimbot with a controller?',
 			answer:
-				'Yes. Overwatch Hacks supports controller play on Windows PC. Tune FOV and smoothness per weapon profile after setup.',
+				'Yes. War Thunder Hacks supports controller play on Windows PC. Tune FOV and smoothness per weapon profile after setup.',
 		},
 		{
-			question: 'Are Overwatch hacks permanently undetected?',
+			question: 'Are War Thunder hacks permanently undetected?',
 			answer:
 				'No package can promise that. We rebuild after anti-cheat and game patches and post status on Updates. Check there before you load in.',
 		},
 	],
 	pricing: [
 		{
-			question: 'How are Overwatch Hacks licenses delivered?',
+			question: 'How are War Thunder Hacks licenses delivered?',
 			answer:
 				'Digitally after payment confirmation. Timing can vary by payment method — keep your order confirmation if you contact support.',
 		},
 		{
 			question: 'What does the $35/month plan include?',
 			answer:
-				'The monthly license includes ESP, wallhack overlays, radar, and aimbot controls with anti-cheat maintenance updates for Overwatch on Windows PC.',
+				'The monthly license includes ESP, wallhack overlays, radar, and aimbot controls with anti-cheat maintenance updates for War Thunder on Windows PC.',
 		},
 		{
 			question: 'Is the $150 lifetime license worth it?',
 			answer:
-				'Lifetime pays off if you play Overwatch across multiple seasons. It includes the same feature stack as monthly with long-term maintenance after patches.',
+				'Lifetime pays off if you play War Thunder across multiple seasons. It includes the same feature stack as monthly with long-term maintenance after patches.',
 		},
 	],
 	features: [
 		{
-			question: 'What is included in Overwatch Hacks?',
+			question: 'What is included in War Thunder Hacks?',
 			answer:
-				'Enemy ESP, health pack markers, radar cues, and configurable aimbot in one license. See Features, ESP, and Aimbot for control detail.',
+				'Enemy ESP, repair point markers, radar cues, and configurable aimbot in one license. See Features, ESP, and Aimbot for control detail.',
 		},
 		{
-			question: 'Does Overwatch Hacks work on Windows PC?',
+			question: 'Does War Thunder Hacks work on Windows PC?',
 			answer:
-				'Yes — Overwatch Hacks is built for Overwatch on Windows 10 and 11 with in-client toggles for ESP, radar, and aimbot.',
+				'Yes — War Thunder Hacks is built for War Thunder on Windows 10 and 11 with in-client toggles for ESP, radar, and aimbot.',
 		},
 		{
-			question: 'How does anti-cheat affect Overwatch Hacks?',
+			question: 'How does anti-cheat affect War Thunder Hacks?',
 			answer:
-				'Anti-cheat monitors Overwatch on Windows PC. Overwatch Hacks publishes maintenance notes after patches that may require a rebuild. Read the maintenance guide page for how updates are handled.',
+				'Anti-cheat monitors War Thunder on Windows PC. War Thunder Hacks publishes maintenance notes after patches that may require a rebuild. Read the maintenance guide page for how updates are handled.',
 		},
 	],
 };
@@ -147,8 +147,8 @@ export function buildFaqSchemaNode(
 
 const schemaRichPages = new Set<PageId>([
 	'hacks',
-	'overwatch-esp',
-	'overwatch-aimbot',
+	'war-thunder-esp',
+	'war-thunder-aimbot',
 	'pricing',
 	'features',
 	'faq',

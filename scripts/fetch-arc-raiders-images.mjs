@@ -6,42 +6,42 @@ import sharp from 'sharp';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const outDir = join(root, 'public', 'images');
 
-/** Seven unique Overwatch 2 hack screenshots — keyword-mapped for overwatchhacks.com SEO. */
+/** Seven unique War Thunder hack screenshots — keyword-mapped for warthunderhacks.net SEO. */
 const SOURCES = [
 	{
-		url: 'https://wh-satano.ru/storage/thumbnails/default/2c/se/63abhhc0k40gccgk4o0w4.webp?p=mason-ow2-s1.webp&s=s3',
-		file: 'overwatch-hacks-hero.webp',
-		alt: 'Overwatch 2 hacks main menu with ESP, wallhack, and aimbot toggles on PC',
+		url: 'https://cdn.wh-satano.ru/arcane-wt-s1.webp',
+		file: 'war-thunder-hacks-hero.webp',
+		alt: 'War Thunder hacks main menu with ESP, wallhack, and aimbot toggles on PC',
 	},
 	{
-		url: 'https://wh-satano.ru/storage/thumbnails/default/a0/q1/6u9rp8g0wsgssc08k0c8o.webp?p=mason-ow2-s2.webp&s=s3',
-		file: 'overwatch-esp-overlay.webp',
-		alt: 'Overwatch 2 ESP overlay showing enemy hero positions and health bars through walls',
+		url: 'https://cdn.wh-satano.ru/arcane-wt-s2.webp',
+		file: 'war-thunder-esp-overlay.webp',
+		alt: 'War Thunder ESP overlay showing enemy tank positions and module health through terrain',
 	},
 	{
-		url: 'https://wh-satano.ru/storage/thumbnails/default/3z/c4/l5mli9mowkwokk4ogk4cw.webp?p=byster-overwatch-s1.webp&s=s3',
-		file: 'overwatch-esp-bots.webp',
-		alt: 'Overwatch wallhack ESP with hero skeleton boxes and distance readouts in ranked',
+		url: 'https://cdn.wh-satano.ru/arcane-wt-s3.webp',
+		file: 'war-thunder-esp-tanks.webp',
+		alt: 'War Thunder wallhack ESP with vehicle module boxes and distance readouts in Realistic Battles',
 	},
 	{
-		url: 'https://wh-satano.ru/storage/thumbnails/default/bq/1j/zvmc9twgw048kokc808sg.webp?p=byster-overwatch-s2.webp&s=s3',
-		file: 'overwatch-esp-hitbox.webp',
-		alt: 'Overwatch aimbot hitbox lock on enemy DPS hero during a team fight on PC',
+		url: 'https://cdn.wh-satano.ru/smg-wt-s1.webp',
+		file: 'war-thunder-esp-modules.webp',
+		alt: 'War Thunder aimbot lead calculator lock on enemy tank turret during ground battle',
 	},
 	{
-		url: 'https://wh-satano.ru/storage/thumbnails/default/c8/5b/nnii90gg8ks4k8wsgwssk.webp?p=byster-overwatch-s3.webp&s=s3',
-		file: 'overwatch-aimbot-menu.webp',
-		alt: 'Overwatch hacks cheat menu with soft aim, FOV slider, and bone priority settings',
+		url: 'https://cdn.wh-satano.ru/smg-wt-s2.webp',
+		file: 'war-thunder-aimbot-menu.webp',
+		alt: 'War Thunder hacks cheat menu with aimbot, ballistic prediction, and FOV settings',
 	},
 	{
-		url: 'https://wh-satano.ru/storage/thumbnails/default/7x/6e/a58jkjwoso0ws4ggcko88.webp?p=byster-overwatch-s4.webp&s=s3',
-		file: 'overwatch-radar-hack.webp',
-		alt: 'Overwatch radar hack 2D minimap overlay showing flank routes and enemy heroes',
+		url: 'https://cdn.wh-satano.ru/smg-wt-s3.webp',
+		file: 'war-thunder-radar-hack.webp',
+		alt: 'War Thunder radar hack 2D overlay showing flank vectors and enemy aircraft',
 	},
 	{
-		url: 'https://wh-satano.ru/storage/thumbnails/default/3p/sk/7h7dja04wwk4cw0w0gc8k.webp?p=byster-overwatch-s5.webp&s=s3',
-		file: 'overwatch-ranked-fight.webp',
-		alt: 'Overwatch hacks ranked team fight with ESP boxes and aimbot active on payload',
+		url: 'https://cdn.wh-satano.ru/wtfecs1.webp',
+		file: 'war-thunder-battle.webp',
+		alt: 'War Thunder hacks Realistic Battle with ESP boxes and aimbot active on capture zone',
 	},
 ];
 
@@ -80,4 +80,4 @@ for (const item of SOURCES) {
 	console.log(`  ✓ ${item.file} (+ variants)`);
 }
 
-console.log('Done — 7 Overwatch 2 hack images installed.');
+console.log('Done — 7 War Thunder hack images installed.');

@@ -61,7 +61,7 @@ function localizeParagraphHtml(html: string): string {
 
 /** Keep document titles within ~60 chars without cutting mid-word. */
 function pageTitle(headline: string): string {
-	const suffix = ' | Overwatch Hacks';
+	const suffix = ' | War Thunder Hacks';
 	if (headline.length + suffix.length <= 60) return `${headline}${suffix}`;
 	if (headline.length <= 60) return headline;
 	const trimmed = headline.slice(0, 57);

@@ -1,11 +1,11 @@
-# Deploy overwatchhacks.com
+# Deploy warthunderhacks.net
 
-Step-by-step guide to deploy the Overwatch Hacks static site to **overwatchhacks.com** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
+Step-by-step guide to deploy the War Thunder Hacks static site to **warthunderhacks.net** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
 
 ## Prerequisites
 
 - Node.js **≥ 22.12.0**
-- Cloudflare account with access to **overwatchhacks.com** DNS
+- Cloudflare account with access to **warthunderhacks.net** DNS
 - Wrangler CLI (included as dev dependency): `npx wrangler login`
 
 ## 1. Build and validate locally
@@ -71,9 +71,9 @@ Or for Pages: `npm run pages:deploy` (see `wrangler.toml`).
 
 ## 3. Custom domain and DNS
 
-Add **overwatchhacks.com** as the primary custom domain on the Pages project.
+Add **warthunderhacks.net** as the primary custom domain on the Pages project.
 
-### Apex (overwatchhacks.com)
+### Apex (warthunderhacks.net)
 
 In **Cloudflare DNS** for the zone:
 
@@ -87,8 +87,8 @@ Cloudflare CNAME flattening handles apex records automatically.
 
 1. Add a DNS record for `www` pointing to the same Pages project (proxied CNAME or A record).
 2. In **Rules** → **Redirect Rules** (or Bulk Redirects), create:
-   - **Source:** `www.overwatchhacks.com/*`
-   - **Target:** `https://overwatchhacks.com/${1}`
+   - **Source:** `www.warthunderhacks.net/*`
+   - **Target:** `https://warthunderhacks.net/${1}`
    - **Status:** 301
 
 The deployed `functions/_middleware.js` also enforces apex canonical host, legacy domain redirects (`rusthacks.xyz`, `.net`, `.com`), and legacy path redirects.
@@ -103,33 +103,33 @@ The deployed `functions/_middleware.js` also enforces apex canonical host, legac
 
 Verify these URLs return **200** with correct content:
 
-- `https://overwatchhacks.com/`
-- `https://overwatchhacks.com/es/`
-- `https://overwatchhacks.com/overwatch-hacks/`
-- `https://overwatchhacks.com/overwatch-aimbot/`
-- `https://overwatchhacks.com/sitemap-index.xml`
-- `https://overwatchhacks.com/robots.txt`
+- `https://warthunderhacks.net/`
+- `https://warthunderhacks.net/es/`
+- `https://warthunderhacks.net/war-thunder-hacks/`
+- `https://warthunderhacks.net/war-thunder-aimbot/`
+- `https://warthunderhacks.net/sitemap-index.xml`
+- `https://warthunderhacks.net/robots.txt`
 
 Verify redirects:
 
-- `https://overwatchhacks.com` → `https://overwatchhacks.com` (301)
-- `https://overwatchhacks.com` → `https://overwatchhacks.com` (301)
-- `https://rusthacks.xyz` → `https://overwatchhacks.com` (301)
+- `https://warthunderhacks.net` → `https://warthunderhacks.net` (301)
+- `https://warthunderhacks.net` → `https://warthunderhacks.net` (301)
+- `https://rusthacks.xyz` → `https://warthunderhacks.net` (301)
 - Legacy paths (e.g. `/warzone-aimbot/`) → Rust equivalents (301)
 
 ## 5. Google Search Console
 
 1. Go to [Google Search Console](https://search.google.com/search-console).
-2. **Add property** → choose **Domain** → enter `overwatchhacks.com`.
+2. **Add property** → choose **Domain** → enter `warthunderhacks.net`.
 3. Verify ownership via the **DNS TXT record** Cloudflare provides (add in Cloudflare DNS, wait for propagation, then confirm in GSC).
 4. After verification, open **Sitemaps** and submit:
    ```
-   https://overwatchhacks.com/sitemap-index.xml
+   https://warthunderhacks.net/sitemap-index.xml
    ```
 5. Use **URL Inspection** to request indexing for:
    - Homepage (`/`)
-   - Pillar page (`/overwatch-hacks/`)
-   - Key landing pages (`/overwatch-aimbot/`, `/overwatch-esp/`, `/overwatch-cheats-2026/`, etc.)
+   - Pillar page (`/war-thunder-hacks/`)
+   - Key landing pages (`/war-thunder-aimbot/`, `/war-thunder-esp/`, `/war-thunder-cheats-2026/`, etc.)
    - A sample of locale homepages (`/es/`, `/de/`, `/fr/`)
 6. Monitor **Pages** (Coverage), **Core Web Vitals**, and **International targeting** (hreflang) over the following weeks.
 
@@ -147,11 +147,11 @@ Verify redirects:
 
 - [ ] `npm run build:validate` passes locally
 - [ ] Cloudflare Pages project attached to this repo
-- [ ] Custom domain `overwatchhacks.com` attached and active
+- [ ] Custom domain `warthunderhacks.net` attached and active
 - [ ] `www` redirects to apex
-- [ ] Legacy domains 301 to `overwatchhacks.com`
+- [ ] Legacy domains 301 to `warthunderhacks.net`
 - [ ] Always Use HTTPS enabled
-- [ ] `robots.txt` and sitemaps serve from `https://overwatchhacks.com`
+- [ ] `robots.txt` and sitemaps serve from `https://warthunderhacks.net`
 - [ ] Google Search Console domain verified
 - [ ] `sitemap-index.xml` submitted in GSC
-- [ ] Homepage and `/overwatch-hacks/` requested for indexing
+- [ ] Homepage and `/war-thunder-hacks/` requested for indexing

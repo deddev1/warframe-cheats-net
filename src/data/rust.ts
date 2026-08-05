@@ -1,72 +1,72 @@
 import { siteConfig } from './site';
 
-/** Seven unique Overwatch 2 hack screenshots — each used once per gallery, product grid, and sitemap. */
+/** Seven unique War Thunder hack screenshots — each used once per gallery, product grid, and sitemap. */
 
 export const rustHeroVideo = {
-	src: '/images/overwatch-hacks-hero.webp',
-	poster: '/images/overwatch-hacks-hero.webp',
-	title: 'Overwatch 2 hacks hero preview',
-	ariaLabel: 'Overwatch 2 hacks gameplay preview — undetected ESP and aimbot on PC',
+	src: '/images/war-thunder-hacks-hero.webp',
+	poster: '/images/war-thunder-hacks-hero.webp',
+	title: 'War Thunder hacks hero preview',
+	ariaLabel: 'War Thunder hacks gameplay preview — undetected ESP and aimbot on PC',
 } as const;
 
 export const rustVideo = {
-	src: '/images/overwatch-ranked-fight.webp',
-	poster: '/images/overwatch-ranked-fight.webp',
-	title: 'Overwatch 2 hacks ranked combat preview',
-	ariaLabel: 'Overwatch 2 hacks preview — ranked team fight with ESP and aimbot',
-	caption: 'Overwatch 2 hacks gameplay with ESP wallhack and soft aim overlays',
+	src: '/images/war-thunder-battle.webp',
+	poster: '/images/war-thunder-battle.webp',
+	title: 'War Thunder hacks Realistic Battle preview',
+	ariaLabel: 'War Thunder hacks preview — ground battle with ESP and aimbot',
+	caption: 'War Thunder hacks gameplay with ESP wallhack and aimbot overlays',
 } as const;
 
-const ow1 = '/images/overwatch-hacks-hero.webp';
-const ow2 = '/images/overwatch-esp-overlay.webp';
-const ow3 = '/images/overwatch-esp-bots.webp';
-const ow4 = '/images/overwatch-esp-hitbox.webp';
-const ow5 = '/images/overwatch-aimbot-menu.webp';
-const ow6 = '/images/overwatch-radar-hack.webp';
-const ow7 = '/images/overwatch-ranked-fight.webp';
+const wt1 = '/images/war-thunder-hacks-hero.webp';
+const wt2 = '/images/war-thunder-esp-overlay.webp';
+const wt3 = '/images/war-thunder-esp-tanks.webp';
+const wt4 = '/images/war-thunder-esp-modules.webp';
+const wt5 = '/images/war-thunder-aimbot-menu.webp';
+const wt6 = '/images/war-thunder-radar-hack.webp';
+const wt7 = '/images/war-thunder-battle.webp';
 
 export const rustImages = {
-	hero: ow1,
-	cover: ow2,
+	hero: wt1,
+	cover: wt2,
 	logo: siteConfig.logo,
-	loadoutBuilder: ow5,
-	aimbotCombat: ow4,
-	squadFight: ow7,
-	espWallhack: ow3,
-	cheatsPackage: ow2,
-	headerArt: ow4,
-	battleRoyaleCombat: ow7,
-	rebootFight: ow6,
-	playerEsp: ow3,
-	radarHack: ow6,
-	zeroBuildCombat: ow1,
-	zeroBuildMode: ow3,
-	battleRoyaleIsland: ow5,
+	loadoutBuilder: wt5,
+	aimbotCombat: wt4,
+	squadFight: wt7,
+	espWallhack: wt3,
+	cheatsPackage: wt2,
+	headerArt: wt4,
+	battleRoyaleCombat: wt7,
+	rebootFight: wt6,
+	playerEsp: wt3,
+	radarHack: wt6,
+	zeroBuildCombat: wt1,
+	zeroBuildMode: wt3,
+	battleRoyaleIsland: wt5,
 	/** Product thumbs — five unique stills; main media is the hero still. */
 	product: [
-		{ src: ow2, alt: 'Overwatch 2 ESP overlay with enemy hero boxes and health bars' },
-		{ src: ow3, alt: 'Overwatch wallhack ESP skeleton boxes on enemy heroes in ranked' },
-		{ src: ow4, alt: 'Overwatch aimbot hitbox lock on enemy DPS during team fight' },
-		{ src: ow5, alt: 'Overwatch hacks cheat menu with soft aim and FOV controls' },
-		{ src: ow6, alt: 'Overwatch radar hack minimap showing flank routes and threats' },
+		{ src: wt2, alt: 'War Thunder ESP overlay with enemy tank boxes and module health bars' },
+		{ src: wt3, alt: 'War Thunder wallhack ESP module boxes on enemy vehicles in Realistic Battles' },
+		{ src: wt4, alt: 'War Thunder aimbot lead calculator lock on enemy tank turret during ground battle' },
+		{ src: wt5, alt: 'War Thunder hacks cheat menu with aimbot, ballistic prediction, and FOV controls' },
+		{ src: wt6, alt: 'War Thunder radar hack 2D overlay showing flank vectors and enemy aircraft' },
 	],
-	/** Gallery grid — seven unique Overwatch 2 hack stills, no duplicates. */
+	/** Gallery grid — seven unique War Thunder hack stills, no duplicates. */
 	gallery: [
-		{ src: ow1, alt: 'Overwatch 2 hacks main menu with ESP, wallhack, and aimbot toggles' },
-		{ src: ow2, alt: 'Overwatch 2 ESP overlay showing enemy heroes through map geometry' },
-		{ src: ow3, alt: 'Overwatch wallhack ESP with hero skeleton boxes in competitive' },
-		{ src: ow4, alt: 'Overwatch aimbot hitbox targeting enemy support in ranked match' },
-		{ src: ow5, alt: 'Overwatch hacks settings menu with soft aim profiles and hotkeys' },
-		{ src: ow6, alt: 'Overwatch radar hack 2D overlay for reading flanks outside FOV' },
-		{ src: ow7, alt: 'Overwatch hacks ranked payload fight with ESP and aimbot active' },
+		{ src: wt1, alt: 'War Thunder hacks main menu with ESP, wallhack, and aimbot toggles' },
+		{ src: wt2, alt: 'War Thunder ESP overlay showing enemy tanks and aircraft through terrain' },
+		{ src: wt3, alt: 'War Thunder wallhack ESP with vehicle module boxes in Realistic Battles' },
+		{ src: wt4, alt: 'War Thunder aimbot ballistic prediction targeting enemy tank weak spots' },
+		{ src: wt5, alt: 'War Thunder hacks settings menu with aimbot profiles and hotkeys' },
+		{ src: wt6, alt: 'War Thunder radar hack 2D overlay for reading flanks outside FOV' },
+		{ src: wt7, alt: 'War Thunder hacks capture zone fight with ESP and aimbot active' },
 	],
 	sitemap: [
-		{ src: ow1, title: 'Overwatch Hacks | Undetected ESP & Aimbot', caption: 'Overwatch 2 hacks main menu with ESP and aimbot toggles' },
-		{ src: ow2, title: 'Overwatch ESP overlay', caption: 'Overwatch 2 ESP wallhack showing enemy hero positions and health' },
-		{ src: ow3, title: 'Overwatch wallhack ESP', caption: 'Overwatch wallhack skeleton boxes on enemy heroes in ranked' },
-		{ src: ow4, title: 'Overwatch aimbot hitbox', caption: 'Overwatch aimbot lock on enemy DPS during team fight' },
-		{ src: ow5, title: 'Overwatch hacks menu', caption: 'Overwatch hacks cheat menu with soft aim and FOV settings' },
-		{ src: ow6, title: 'Overwatch radar hack', caption: 'Overwatch radar hack minimap overlay for flank detection' },
-		{ src: ow7, title: 'Overwatch ranked hacks', caption: 'Overwatch hacks ranked team fight with ESP and aimbot' },
+		{ src: wt1, title: 'War Thunder Hacks | Undetected ESP & Aimbot', caption: 'War Thunder hacks main menu with ESP and aimbot toggles' },
+		{ src: wt2, title: 'War Thunder ESP overlay', caption: 'War Thunder ESP wallhack showing enemy tank positions and module health' },
+		{ src: wt3, title: 'War Thunder wallhack ESP', caption: 'War Thunder wallhack module boxes on enemy vehicles in Realistic Battles' },
+		{ src: wt4, title: 'War Thunder aimbot lead calculator', caption: 'War Thunder aimbot lock on enemy tank turret during ground battle' },
+		{ src: wt5, title: 'War Thunder hacks menu', caption: 'War Thunder hacks cheat menu with aimbot and ballistic prediction settings' },
+		{ src: wt6, title: 'War Thunder radar hack', caption: 'War Thunder radar hack overlay for flank and aircraft detection' },
+		{ src: wt7, title: 'War Thunder Realistic Battle hacks', caption: 'War Thunder hacks capture zone fight with ESP and aimbot' },
 	],
 } as const;

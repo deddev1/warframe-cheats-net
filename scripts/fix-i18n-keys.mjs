@@ -8,19 +8,19 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SRC = path.resolve(ROOT, '..', 'amansand');
 
 const UI_REPLACEMENTS = [
-	['Warzone Cheats', 'Overwatch Hacks'],
+	['Warzone Cheats', 'War Thunder Hacks'],
 	['Warzone cheats', 'Rust cheats'],
-	['Warzone Cheats', 'Overwatch Hacks'],
+	['Warzone Cheats', 'War Thunder Hacks'],
 	['Call of Duty: Warzone', 'Rust'],
 	['Call of Duty Warzone', 'Rust'],
 	['Call of Duty', 'Rust'],
 	['Warzone PC', 'Rust PC'],
-	['for Warzone', 'for Overwatch'],
+	['for Warzone', 'for War Thunder'],
 	['Warzone ', 'Rust '],
 	['warzone ', 'rust '],
 	['Ricochet maintenance', 'anti-cheat maintenance'],
-	['Ricochet anti-cheat', 'Blizzard anti-cheat (EAC)'],
-	['Ricochet', 'Blizzard anti-cheat (EAC)'],
+	['Ricochet anti-cheat', 'Gaijin Easy Anti-Cheat (EAC)'],
+	['Ricochet', 'Gaijin Easy Anti-Cheat (EAC)'],
 	['operatorEsp', 'playerEsp'],
 	['gulagFight', 'rebootFight'],
 	['alMazrah', 'battleRoyaleIsland'],
@@ -28,14 +28,14 @@ const UI_REPLACEMENTS = [
 	['operator', 'player'],
 	['Operators', 'Players'],
 	['Operator', 'Player'],
-	['Al Mazrah', 'Overwatch'],
-	['Verdansk', 'Overwatch'],
-	['Resurgence', 'control points'],
+	['Al Mazrah', 'War Thunder'],
+	['Verdansk', 'War Thunder'],
+	['Resurgence', 'capture zones'],
 	['gulag', 'control point'],
-	['warzonescheats.net', 'overwatchhacks.com'],
+	['warzonescheats.net', 'warthunderhacks.net'],
 	['Trucos Warzone', 'Trucos Rust'],
 	['Triches Warzone', 'Triches Rust'],
-	['Cheats Warzone', 'Cheats Overwatch'],
+	['Cheats Warzone', 'Cheats War Thunder'],
 ];
 
 function apply(content) {
@@ -56,7 +56,7 @@ for (const file of ['ui-strings-part1.mjs', 'ui-strings-part2.mjs']) {
 let pagesEn = await readFile(path.join(ROOT, 'scripts/i18n-data/pages-en.mjs'), 'utf8');
 pagesEn = pagesEn.replace(/\teac: \{/, "\t'eac-bypass': {");
 pagesEn = pagesEn.replace(/Rust Warzone/g, 'Rust');
-pagesEn = pagesEn.replace(/for Overwatch Warzone/g, 'for Overwatch');
+pagesEn = pagesEn.replace(/for War Thunder Warzone/g, 'for War Thunder');
 await writeFile(path.join(ROOT, 'scripts/i18n-data/pages-en.mjs'), pagesEn);
 
 // Fix pages-i18n

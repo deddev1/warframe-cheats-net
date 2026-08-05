@@ -6,7 +6,7 @@ export const LOCALES = [
 ];
 
 export const PAGE_IDS = [
-	'home', 'overwatch-esp', 'overwatch-aimbot', 'features', 'pricing', 'setup',
+	'home', 'war-thunder-esp', 'war-thunder-aimbot', 'features', 'pricing', 'setup',
 	'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'eac-bypass',
 	'cheats-2026', 'hacks', 'cheat-download', 'mod-menu', 'soft-aim', 'best-cheats',
 	'aimbot-hack', 'esp-hack', 'unlock-all', 'privacy', 'refund', 'terms',
@@ -17,31 +17,31 @@ export const PAGE_IDS = [
  * Topic pages keep thematic matches; utility/legal pages fill remaining slots.
  */
 export const HERO_IMAGES = {
-	home: '/images/overwatch-hacks-hero.webp',
-	'overwatch-esp': '/images/overwatch-esp-overlay.webp',
-	'overwatch-aimbot': '/images/overwatch-aimbot-menu.webp',
-	features: '/images/overwatch-esp-bots.webp',
-	pricing: '/images/overwatch-esp-hitbox.webp',
-	setup: '/images/overwatch-aimbot-menu.webp',
-	updates: '/images/overwatch-esp-overlay.webp',
-	faq: '/images/overwatch-esp-bots.webp',
-	support: '/images/overwatch-aimbot-menu.webp',
-	undetected: '/images/overwatch-hacks-hero.webp',
-	wallhack: '/images/overwatch-esp-hitbox.webp',
-	radar: '/images/overwatch-radar-hack.webp',
-	'eac-bypass': '/images/overwatch-esp-overlay.webp',
-	'cheats-2026': '/images/overwatch-hacks-hero.webp',
-	hacks: '/images/overwatch-esp-bots.webp',
-	'cheat-download': '/images/overwatch-esp-overlay.webp',
-	'mod-menu': '/images/overwatch-aimbot-menu.webp',
-	'soft-aim': '/images/overwatch-hacks-hero.webp',
-	'best-cheats': '/images/overwatch-esp-hitbox.webp',
-	'aimbot-hack': '/images/overwatch-aimbot-menu.webp',
-	'esp-hack': '/images/overwatch-esp-overlay.webp',
-	'unlock-all': '/images/overwatch-esp-bots.webp',
-	privacy: '/images/overwatch-esp-hitbox.webp',
-	refund: '/images/overwatch-aimbot-menu.webp',
-	terms: '/images/overwatch-esp-bots.webp',
+	home: '/images/war-thunder-hacks-hero.webp',
+	'war-thunder-esp': '/images/war-thunder-esp-overlay.webp',
+	'war-thunder-aimbot': '/images/war-thunder-aimbot-menu.webp',
+	features: '/images/war-thunder-esp-tanks.webp',
+	pricing: '/images/war-thunder-esp-modules.webp',
+	setup: '/images/war-thunder-aimbot-menu.webp',
+	updates: '/images/war-thunder-esp-overlay.webp',
+	faq: '/images/war-thunder-esp-tanks.webp',
+	support: '/images/war-thunder-aimbot-menu.webp',
+	undetected: '/images/war-thunder-hacks-hero.webp',
+	wallhack: '/images/war-thunder-esp-modules.webp',
+	radar: '/images/war-thunder-radar-hack.webp',
+	'eac-bypass': '/images/war-thunder-esp-overlay.webp',
+	'cheats-2026': '/images/war-thunder-hacks-hero.webp',
+	hacks: '/images/war-thunder-esp-tanks.webp',
+	'cheat-download': '/images/war-thunder-esp-overlay.webp',
+	'mod-menu': '/images/war-thunder-aimbot-menu.webp',
+	'soft-aim': '/images/war-thunder-hacks-hero.webp',
+	'best-cheats': '/images/war-thunder-esp-modules.webp',
+	'aimbot-hack': '/images/war-thunder-aimbot-menu.webp',
+	'esp-hack': '/images/war-thunder-esp-overlay.webp',
+	'unlock-all': '/images/war-thunder-esp-tanks.webp',
+	privacy: '/images/war-thunder-esp-modules.webp',
+	refund: '/images/war-thunder-aimbot-menu.webp',
+	terms: '/images/war-thunder-esp-tanks.webp',
 };
 
 export const TS_HEADER = `import type { LocaleCode } from './locales';
@@ -73,7 +73,7 @@ export type LocaleUi = {
 \t\theaderArt: string; cheatsPackage: string; rebootFight: string; battleRoyale: string; battleRoyaleIsland: string;
 \t};
 };
-export type PageId = 'home' | 'overwatch-esp' | 'overwatch-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'eac-bypass' | 'cheats-2026' | 'hacks' | 'cheat-download' | 'mod-menu' | 'soft-aim' | 'best-cheats' | 'aimbot-hack' | 'esp-hack' | 'unlock-all' | 'privacy' | 'refund' | 'terms';
+export type PageId = 'home' | 'war-thunder-esp' | 'war-thunder-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'eac-bypass' | 'cheats-2026' | 'hacks' | 'cheat-download' | 'mod-menu' | 'soft-aim' | 'best-cheats' | 'aimbot-hack' | 'esp-hack' | 'unlock-all' | 'privacy' | 'refund' | 'terms';
 `;
 
 /** Clamp meta strings to SEO limits without ugly ellipsis. */
@@ -104,7 +104,7 @@ export function stripZadeyoFromMeta(text) {
 		.replace(/\s*Zadeyo delivery\.?/gi, ' instant digital delivery.')
 		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
 		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy Overwatch Hacks/g, 'Buy Overwatch Hacks')
+		.replace(/Buy War Thunder Hacks/g, 'Buy War Thunder Hacks')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 }
@@ -126,8 +126,8 @@ export function section(h2, ...args) {
 
 /** Authoritative external citation helpers (open in new tab). */
 export const EXT = {
-	epic: '<a href="https://overwatch.blizzard.com/en-us/" target="_blank" rel="noopener noreferrer">Overwatch</a>',
-	rust: '<a href="https://overwatch.blizzard.com/en-us/" target="_blank" rel="noopener noreferrer">Overwatch</a>',
-	status: '<a href="https://overwatch.blizzard.com/en-us/" target="_blank" rel="noopener noreferrer">Overwatch</a>',
-	eac: '<a href="https://overwatch.blizzard.com/en-us/" target="_blank" rel="noopener noreferrer">Blizzard anti-cheat</a>',
+	epic: '<a href="https://warthunder.com/en" target="_blank" rel="noopener noreferrer">War Thunder</a>',
+	rust: '<a href="https://warthunder.com/en" target="_blank" rel="noopener noreferrer">War Thunder</a>',
+	status: '<a href="https://warthunder.com/en" target="_blank" rel="noopener noreferrer">War Thunder</a>',
+	eac: '<a href="https://warthunder.com/en" target="_blank" rel="noopener noreferrer">Gaijin Easy Anti-Cheat</a>',
 };

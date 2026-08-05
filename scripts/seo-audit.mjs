@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * SEO audit for overwatchhacks.com — Overwatch Hacks keyword focus.
+ * SEO audit for warthunderhacks.net — War Thunder Hacks keyword focus.
  * Run: node scripts/seo-audit.mjs
  * Exit 1 on critical failures.
  */
@@ -10,20 +10,21 @@ import { fileURLToPath } from 'node:url';
 import { englishPagesFinal } from './i18n-data/pages-en.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const DOMAIN = 'overwatchhacks.com';
+const DOMAIN = 'warthunderhacks.net';
 const ORIGIN = `https://${DOMAIN}`;
-const PRIMARY_KW = 'overwatch hacks';
-const SECONDARY_KWS = ['overwatch', 'overwatch esp', 'overwatch aimbot'];
+const PRIMARY_KW = 'war thunder hacks';
+const BRAND_KW = 'war thunder';
 
 const BANNED = [
 	/islecheat/i,
 	/the isle/i,
-	/\brust cheats\b/i,
 	/\bfacepunch\b/i,
 	/fortnitehack/i,
 	/rusthacks\.net/i,
 	/islecheat\.net/i,
 	/arcraidershacks\.com/i,
+	/overwatchhacks\.com/i,
+	/\boverwatch hacks\b/i,
 ];
 
 const warnings = [];
@@ -60,20 +61,20 @@ for (const id of pageIds) {
 	if (p.description.length > 160) fail(`${label}: description too long (${p.description.length})`);
 	if (p.description.length < 100) warn(`${label}: description short (${p.description.length})`);
 
-	if (!hasKeyword(p.title, 'overwatch')) {
-		fail(`${label}: title missing "overwatch" → ${p.title}`);
+	if (!hasKeyword(p.title, BRAND_KW)) {
+		fail(`${label}: title missing "war thunder" → ${p.title}`);
 	}
-	if (!hasKeyword(p.description, 'overwatch')) {
-		fail(`${label}: description missing "overwatch" → ${p.description.slice(0, 80)}`);
+	if (!hasKeyword(p.description, BRAND_KW)) {
+		fail(`${label}: description missing "war thunder" → ${p.description.slice(0, 80)}`);
 	}
-	if (!hasKeyword(p.h1, 'overwatch') && !['privacy', 'refund', 'terms'].includes(id)) {
-		fail(`${label}: h1 missing "overwatch" → ${p.h1}`);
+	if (!hasKeyword(p.h1, BRAND_KW) && !['privacy', 'refund', 'terms'].includes(id)) {
+		fail(`${label}: h1 missing "war thunder" → ${p.h1}`);
 	}
 
 	// Primary keyword in money pages
-	if (['home', 'hacks', 'overwatch-esp', 'overwatch-aimbot', 'pricing'].includes(id)) {
-		if (!hasKeyword(p.description, PRIMARY_KW) && !hasKeyword(p.description, 'overwatch hacks')) {
-			warn(`${label}: description should include primary keyword "overwatch hacks"`);
+	if (['home', 'hacks', 'war-thunder-esp', 'war-thunder-aimbot', 'pricing'].includes(id)) {
+		if (!hasKeyword(p.description, PRIMARY_KW) && !hasKeyword(p.description, 'war thunder hacks')) {
+			warn(`${label}: description should include primary keyword "war thunder hacks"`);
 		}
 	}
 }
@@ -100,8 +101,8 @@ const distIndex = join(root, 'dist/index.html');
 if (existsSync(distIndex)) {
 	const html = readFileSync(distIndex, 'utf8');
 	if (!html.includes(`href="${ORIGIN}/"`)) fail('dist/index.html canonical missing apex URL');
-	if (!html.includes('Overwatch') && !html.includes('Overwatch Hacks')) {
-		fail('dist/index.html missing Overwatch in title/meta');
+	if (!html.includes('War Thunder') && !html.includes('War Thunder Hacks')) {
+		fail('dist/index.html missing War Thunder in title/meta');
 	}
 	checkBanned('dist/index.html', html);
 }
@@ -110,16 +111,16 @@ if (existsSync(distIndex)) {
 for (const file of ['src/pages/reviews/index.astro', 'src/pages/reviews/[slug]/index.astro']) {
 	const src = readFileSync(join(root, file), 'utf8');
 	checkBanned(file, src);
-	if (!/overwatch hacks/i.test(src)) warn(`${file}: consider adding "Overwatch Hacks" keyword`);
+	if (!/war thunder hacks/i.test(src)) warn(`${file}: consider adding "War Thunder Hacks" keyword`);
 }
 
 // --- image alts ---
 const rustTs = readFileSync(join(root, 'src/data/rust.ts'), 'utf8');
-if (!/Overwatch/i.test(rustTs)) fail('rust.ts image alts missing Overwatch keyword');
+if (!/War Thunder/i.test(rustTs)) fail('rust.ts image alts missing War Thunder keyword');
 checkBanned('rust.ts', rustTs);
 
 // --- report ---
-console.log('\n=== SEO Audit: overwatchhacks.com ===\n');
+console.log('\n=== SEO Audit: warthunderhacks.net ===\n');
 console.log(`Pages checked: ${pageIds.length} EN landing pages`);
 console.log(`Primary keyword: "${PRIMARY_KW}"`);
 console.log(`Canonical: ${ORIGIN}\n`);

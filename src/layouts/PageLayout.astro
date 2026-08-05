@@ -38,9 +38,9 @@ const {
 	intro,
 	eyebrow,
 	heroImage = rustImages.hero,
-	heroAlt = 'Overwatch hacks product preview',
+	heroAlt = 'War Thunder hacks product preview',
 	gallery = rustImages.product.slice(0, 3),
-	galleryTitle = 'Overwatch hacks UI reference',
+	galleryTitle = 'War Thunder hacks UI reference',
 	ctaPrimary,
 	ctaSecondary,
 	showGallery = true,
@@ -72,7 +72,7 @@ const normalizedGallery = gallery
 			};
 		}
 
-		const file = item.split('/').pop()?.replace(/\.webp$/i, '') ?? 'overwatch-cheats';
+		const file = item.split('/').pop()?.replace(/\.webp$/i, '') ?? 'war-thunder-cheats';
 		const keywordAlt = file
 			.split('-')
 			.map((part) => part.charAt(0).toUpperCase() + part.slice(1))

@@ -12,8 +12,8 @@ export function absoluteReviewUrl(slug?: string): string {
 
 const reviewOgImage = {
 	url: new URL(siteConfig.defaultOgImage, siteConfig.url).href,
-	title: 'Overwatch Hacks customer reviews',
-	caption: 'Overwatch Hacks buyer reviews for ESP soft aim, radar, and cloud DMA',
+	title: 'War Thunder Hacks customer reviews',
+	caption: 'War Thunder Hacks buyer reviews for ESP soft aim, radar, and cloud DMA',
 };
 
 /** English review routes for sitemap.xml — /reviews/ index + one URL per review. */
@@ -48,7 +48,7 @@ export function getReviewSitemapEntries() {
 			images: [
 				{
 					url: reviewOgImage.url,
-					title: `Overwatch Hacks review by @${review.handle}`,
+					title: `War Thunder Hacks review by @${review.handle}`,
 					caption: review.seoDescription,
 				},
 			],

@@ -31,7 +31,7 @@ async function resolveDistRoot() {
 		'Could not find sitemap.xml in dist/ or dist/client/. Run `astro build` first.',
 	);
 }
-const SITE = 'https://overwatchhacks.com';
+const SITE = 'https://warthunderhacks.net';
 
 const MARKETING_SITEMAP_PAGES = 15;
 const BUILT_MARKETING_PAGES = 25; // thin landings still built; 301 to canonical URLs
@@ -50,11 +50,11 @@ const IMAGE_SITEMAP_ENTRIES = 7; // unique keyword assets in rustImages.sitemap
 
 const ENGLISH_PATHS = [
 	'/',
-	'/overwatch-hacks/',
-	'/overwatch-esp/',
-	'/overwatch-aimbot/',
-	'/overwatch-wallhack/',
-	'/overwatch-radar/',
+	'/war-thunder-hacks/',
+	'/war-thunder-esp/',
+	'/war-thunder-aimbot/',
+	'/war-thunder-wallhack/',
+	'/war-thunder-radar/',
 	'/features/',
 	'/pricing/',
 	'/setup/',

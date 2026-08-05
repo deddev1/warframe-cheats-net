@@ -12,13 +12,13 @@ const publicDir = path.resolve('public');
 
 /** Unsplash photos — industrial / wilderness / rusty metal atmosphere (not game IP). */
 const KEYWORD_ASSETS = [
-	{ file: 'overwatch-cheats-hero.webp', url: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1920&q=80' },
-	{ file: 'overwatch-cheats-cover.webp', url: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1920&q=80' },
+	{ file: 'war-thunder-cheats-hero.webp', url: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1920&q=80' },
+	{ file: 'war-thunder-cheats-cover.webp', url: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1920&q=80' },
 	{ file: 'rust-loadout-builder.webp', url: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1920&q=80' },
-	{ file: 'overwatch-cheats-aimbot-combat.webp', url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1920&q=80' },
+	{ file: 'war-thunder-cheats-aimbot-combat.webp', url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1920&q=80' },
 	{ file: 'rust-squad-fight.webp', url: 'https://images.unsplash.com/photo-1516937941344-00b4d548a9a4?auto=format&fit=crop&w=1920&q=80' },
-	{ file: 'overwatch-cheats-esp-wallhack.webp', url: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1920&q=80' },
-	{ file: 'overwatch-cheats-package.webp', url: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1920&q=80' },
+	{ file: 'war-thunder-cheats-esp-wallhack.webp', url: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1920&q=80' },
+	{ file: 'war-thunder-cheats-package.webp', url: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1920&q=80' },
 	{ file: 'rust-header-art.webp', url: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80' },
 	{ file: 'rust-battle-royale-combat.webp', url: 'https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1920&q=80' },
 	{ file: 'rust-reboot-van-fight.webp', url: 'https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&w=1920&q=80' },
@@ -55,7 +55,7 @@ async function generateBrandAssets(heroBuffer) {
 		.webp({ quality: 88 })
 		.toBuffer();
 
-	await writeFile(path.join(imagesDir, 'overwatch-cheats-logo.webp'), logoBuffer);
+	await writeFile(path.join(imagesDir, 'war-thunder-cheats-logo.webp'), logoBuffer);
 
 	const iconSizes = [
 		{ name: 'favicon-16x16.png', size: 16 },
@@ -83,7 +83,7 @@ for (const asset of KEYWORD_ASSETS) {
 		const webp = await fetchWebp(asset.url);
 		await writeFile(path.join(imagesDir, asset.file), webp);
 		console.log(`Saved ${asset.file} (${webp.length} bytes)`);
-		if (asset.file === 'overwatch-cheats-hero.webp') heroBuffer = webp;
+		if (asset.file === 'war-thunder-cheats-hero.webp') heroBuffer = webp;
 	} catch (err) {
 		console.warn(`Skip ${asset.file}: ${err.message}`);
 	}

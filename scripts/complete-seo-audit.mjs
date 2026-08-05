@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Completes overwatch-cheats SEO audit: add missing pages, fix leftovers, strip Zadeyo from meta.
+ * Completes war-thunder-cheats SEO audit: add missing pages, fix leftovers, strip Zadeyo from meta.
  * Run: node scripts/complete-seo-audit.mjs
  */
 import { readFile, writeFile, mkdir, access } from 'node:fs/promises';
@@ -11,19 +11,19 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const NODE = 'C:\\Program Files\\nodejs\\node.exe';
 
 const EXTRA_PAGES = [
-	{ id: 'hacks', dir: 'overwatch-hacks', pageId: 'hacks' },
-	{ id: 'cheat-download', dir: 'overwatch-cheat-download', pageId: 'cheat-download' },
-	{ id: 'mod-menu', dir: 'overwatch-mod-menu', pageId: 'mod-menu' },
-	{ id: 'soft-aim', dir: 'overwatch-soft-aim', pageId: 'soft-aim' },
-	{ id: 'best-cheats', dir: 'best-overwatch-cheats', pageId: 'best-cheats' },
-	{ id: 'aimbot-hack', dir: 'overwatch-aimbot-hack', pageId: 'aimbot-hack' },
-	{ id: 'esp-hack', dir: 'overwatch-esp-hack', pageId: 'esp-hack' },
-	{ id: 'unlock-all', dir: 'overwatch-unlock-all', pageId: 'unlock-all' },
+	{ id: 'hacks', dir: 'war-thunder-hacks', pageId: 'hacks' },
+	{ id: 'cheat-download', dir: 'war-thunder-cheat-download', pageId: 'cheat-download' },
+	{ id: 'mod-menu', dir: 'war-thunder-mod-menu', pageId: 'mod-menu' },
+	{ id: 'soft-aim', dir: 'war-thunder-soft-aim', pageId: 'soft-aim' },
+	{ id: 'best-cheats', dir: 'best-war-thunder-cheats', pageId: 'best-cheats' },
+	{ id: 'aimbot-hack', dir: 'war-thunder-aimbot-hack', pageId: 'aimbot-hack' },
+	{ id: 'esp-hack', dir: 'war-thunder-esp-hack', pageId: 'esp-hack' },
+	{ id: 'unlock-all', dir: 'war-thunder-unlock-all', pageId: 'unlock-all' },
 ];
 
 const GLOBAL_REPLACEMENTS = [
 	[/warzone-warzone/g, 'rust'],
-	[/eac-bypass-overwatch-warzone/g, 'eac-bypass-overwatch'],
+	[/eac-bypass-war-thunder-warzone/g, 'eac-bypass-war-thunder'],
 	[/Call of Duty: Warzone/g, 'Rust'],
 	[/Call of Duty Warzone/g, 'Rust'],
 	[/Call of Duty/g, 'Rust'],
@@ -34,15 +34,15 @@ const GLOBAL_REPLACEMENTS = [
 	[/Warzone Cheat Setup/g, 'Rust Cheat Setup'],
 	[/Warzone Cheat Status/g, 'Rust Cheat Status'],
 	[/Warzone Cheat Support/g, 'Rust Cheat Support'],
-	[/Warzone squad fight/g, 'Rust squad fight'],
+	[/Warzone platoon engagement/g, 'Rust platoon engagement'],
 	[/Warzone squad builder/g, 'Rust loadout builder'],
 	[/Warzone store header/g, 'Rust header'],
-	[/Warzone wasteland combat/g, 'Rust competitive combat'],
+	[/Warzone wasteland combat/g, 'Rust realistic battles combat'],
 	[/Warzone loadout builder/g, 'Rust loadout builder'],
 	[/Warzone pricing/g, 'Rust pricing'],
-	[/Warzone Blizzard anti-cheat/g, 'Rust Blizzard anti-cheat'],
+	[/Warzone Gaijin Easy Anti-Cheat/g, 'Rust Gaijin Easy Anti-Cheat'],
 	[/on Warzone/g, 'on Rust'],
-	[/for Warzone/g, 'for Overwatch'],
+	[/for Warzone/g, 'for War Thunder'],
 	[/Warzone guides/g, 'Rust guides'],
 	[/Warzone guide/g, 'Rust guide'],
 	[/Warzone hileleri/g, 'Rust hileleri'],
@@ -50,18 +50,18 @@ const GLOBAL_REPLACEMENTS = [
 	[/Warzone hileleri/g, 'Rust hileleri'],
 	[/cheatów Warzone/g, 'cheatów Rust'],
 	[/cheat Warzone/g, 'cheat Rust'],
-	[/cheats Warzone/g, 'cheats Overwatch'],
-	[/trucos Warzone/g, 'trucos Overwatch'],
+	[/cheats Warzone/g, 'cheats War Thunder'],
+	[/trucos Warzone/g, 'trucos War Thunder'],
 	[/triche Warzone/g, 'triche Rust'],
 	[/trucchi Warzone/g, 'trucchi Rust'],
 	[/Wallhack Warzone/g, 'Rust Wallhack'],
 	[/cheat Warzone undetected/g, 'cheat Rust undetected'],
-	[/cheats Warzone undetected/g, 'cheats Overwatch undetected'],
+	[/cheats Warzone undetected/g, 'cheats War Thunder undetected'],
 	[/Verdansk beams/g, 'long-range AR beams'],
 	[/Resurgence room clears/g, 'close-quarters room clears'],
-	[/Verdansk and Urzikstan/g, 'Overwatch and control points'],
-	[/Verdansk, Urzikstan/g, 'Overwatch, control points'],
-	[/competitive and Resurgence/g, 'competitive and control points'],
+	[/Verdansk and Urzikstan/g, 'War Thunder and capture zones'],
+	[/Verdansk, Urzikstan/g, 'War Thunder, capture zones'],
+	[/realistic battles and Resurgence/g, 'realistic battles and capture zones'],
 	[/Activision's anti-cheat/g, "Embark' anti-cheat"],
 	[/Activision anti-cheat/g, 'Embark anti-cheat'],
 	[/Activision ships/g, 'Embark ships'],
@@ -69,10 +69,10 @@ const GLOBAL_REPLACEMENTS = [
 	[/Activision bans/g, 'Embark bans'],
 	[/Activision/g, 'Embark'],
 	[/ricochet/gi, 'eac'],
-	[/Ricochet/g, 'Blizzard anti-cheat (EAC)'],
-	[/call-of-duty-warzone-cheats/g, 'overwatch-cheats'],
+	[/Ricochet/g, 'Gaijin Easy Anti-Cheat (EAC)'],
+	[/call-of-duty-warzone-cheats/g, 'war-thunder-cheats'],
 	[/call-of-duty-warzone/g, 'rust'],
-	[/Undetected Wallhack for Call of Duty/g, 'Undetected Wallhack for Overwatch'],
+	[/Undetected Wallhack for Call of Duty/g, 'Undetected Wallhack for War Thunder'],
 	[/How ESP wallhack, radar, and Aimbot rebuild after Call of Duty anti-cheat/g,
 		'How ESP wallhack, radar, and Aimbot rebuild after Rust anti-cheat'],
 ];
@@ -90,7 +90,7 @@ function stripZadeyoFromMeta(text) {
 		.replace(/\s*Zadeyo delivery\.?/gi, 'instant digital delivery.')
 		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
 		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy on Zadeyo/g, 'Buy Overwatch Hacks')
+		.replace(/Buy on Zadeyo/g, 'Buy War Thunder Hacks')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 }
@@ -174,8 +174,8 @@ async function fixLocalesBlogUi() {
 	content = content.replace(/Warzone hileleri/g, 'Rust hileleri');
 	content = content.replace(/Warzone hile/g, 'Rust hile');
 	content = content.replace(/cheat Warzone/g, 'cheat Rust');
-	content = content.replace(/cheats Warzone/g, 'cheats Overwatch');
-	content = content.replace(/trucos Warzone/g, 'trucos Overwatch');
+	content = content.replace(/cheats Warzone/g, 'cheats War Thunder');
+	content = content.replace(/trucos Warzone/g, 'trucos War Thunder');
 	content = content.replace(/triche Warzone/g, 'triche Rust');
 	content = content.replace(/trucchi Warzone/g, 'trucchi Rust');
 	content = content.replace(/cheatów Warzone/g, 'cheatów Rust');
@@ -200,7 +200,7 @@ async function fixLocalesBlogUi() {
 	console.log('Fixed locales.ts blogUi');
 }
 
-console.log('=== Overwatch Hacks SEO completion ===\n');
+console.log('=== War Thunder Hacks SEO completion ===\n');
 await applyGlobalFixes();
 await createExtraPages();
 await fixLocalesBlogUi();

@@ -16,7 +16,7 @@ function getLanIp() {
 
 const ip = getLanIp();
 console.log('');
-console.log('  Overwatch Hacks dev server');
+console.log('  War Thunder Hacks dev server');
 console.log('  --------------------');
 console.log(`  Local:   http://localhost:${PORT}/`);
 console.log(`  Network: http://${ip}:${PORT}/`);

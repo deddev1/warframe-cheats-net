@@ -1,40 +1,40 @@
 /**
- * Site-wide SEO keyword cluster — optimized for overwatchhacks.com
+ * Site-wide SEO keyword cluster — optimized for warthunderhacks.net
  */
-export const primaryKeyword = 'Overwatch Hacks';
+export const primaryKeyword = 'War Thunder Hacks';
 
-export const siteBrand = 'Overwatch Hacks';
-export const siteDomain = 'overwatchhacks.com';
+export const siteBrand = 'War Thunder Hacks';
+export const siteDomain = 'warthunderhacks.net';
 export const siteOrigin = `https://${siteDomain}`;
 
 /** Core keyword targets (title, meta, schema). */
 export const metaKeywords = [
-	'Overwatch Hacks',
-	'overwatch cheats',
-	'overwatch esp',
-	'overwatch aimbot',
-	'overwatch wallhack',
-	'undetected overwatch hacks',
-	'overwatch hacks 2026',
+	'War Thunder Hacks',
+	'war thunder cheats',
+	'war thunder esp',
+	'war thunder aimbot',
+	'war thunder wallhack',
+	'undetected war thunder hacks',
+	'war thunder hacks 2026',
 ] as const;
 
 export const metaKeywordsContent = metaKeywords.join(', ');
 
-export const defaultTitle = 'Overwatch Hacks 2026 | Undetected ESP & Aimbot';
+export const defaultTitle = 'War Thunder Hacks 2026 | Undetected ESP & Aimbot';
 export const defaultDescription =
-	'Overwatch hacks for PC — undetected ESP, aimbot, and wallhack at overwatchhacks.com. Monthly and lifetime plans, setup guides, and anti-cheat update status.';
+	'War Thunder hacks for PC — undetected ESP, aimbot, and wallhack at warthunderhacks.net. Monthly and lifetime plans, setup guides, and anti-cheat update status.';
 
 /** Append brand + domain to page titles when under the SEO limit. */
 export function buildPageTitle(topic: string): string {
-	const withBrand = `${topic} | Overwatch Hacks`;
+	const withBrand = `${topic} | War Thunder Hacks`;
 	if (withBrand.length <= 60) return withBrand;
-	const short = `${topic} | overwatchhacks.com`;
+	const short = `${topic} | warthunderhacks.net`;
 	return short.length <= 60 ? short : topic.slice(0, 60);
 }
 
 /** Clamp meta description with primary keyword near the front. */
 export function buildPageDescription(body: string): string {
 	const lead = body.trim();
-	if (lead.toLowerCase().includes('overwatch')) return lead.slice(0, 160);
-	return `Overwatch hacks — ${lead}`.slice(0, 160);
+	if (lead.toLowerCase().includes('war thunder')) return lead.slice(0, 160);
+	return `War Thunder hacks — ${lead}`.slice(0, 160);
 }

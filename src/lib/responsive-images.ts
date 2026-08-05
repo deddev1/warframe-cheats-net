@@ -50,10 +50,10 @@ export function contentSrc(baseSrc: string): string {
 }
 
 export const heroResponsive: ResponsiveWidth[] = [
-	{ src: '/images/overwatch-hacks-hero-480w.webp', width: 480 },
-	{ src: '/images/overwatch-hacks-hero-640w.webp', width: 640 },
-	{ src: '/images/overwatch-hacks-hero-960w.webp', width: 960 },
-	{ src: '/images/overwatch-hacks-hero-1400w.webp', width: 1400 },
+	{ src: '/images/war-thunder-hacks-hero-480w.webp', width: 480 },
+	{ src: '/images/war-thunder-hacks-hero-640w.webp', width: 640 },
+	{ src: '/images/war-thunder-hacks-hero-960w.webp', width: 960 },
+	{ src: '/images/war-thunder-hacks-hero-1400w.webp', width: 1400 },
 ];
 
 /** Desktop srcset (mobile uses a dedicated `<picture>` source — see Hero.astro). */

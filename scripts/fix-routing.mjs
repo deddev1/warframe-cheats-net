@@ -13,43 +13,43 @@ const REMOVE_IDS = [
 ];
 
 const REPLACEMENTS = [
-	['warzone-esp', 'overwatch-esp'],
-	['warzone-aimbot', 'overwatch-aimbot'],
+	['warzone-esp', 'war-thunder-esp'],
+	['warzone-aimbot', 'war-thunder-aimbot'],
 	['ricochet', 'eac-bypass'],
-	['undetected-warzone-cheats', 'undetected-overwatch-cheats'],
-	['warzone-wallhack', 'overwatch-wallhack'],
-	['warzone-radar-hack', 'overwatch-radar-hack'],
-	['warzone-cheats-2026', 'overwatch-cheats-2026'],
-	['ricochet-bypass', 'eac-bypass-overwatch'],
-	['warzonescheats.net', 'overwatchhacks.com'],
-	['trucos-warzone', 'trucos-overwatch'],
-	['triche-warzone', 'triche-overwatch'],
-	['warzone-cheats', 'overwatch-cheats'],
-	['cheats-warzone', 'cheats-overwatch'],
-	['trucchi-warzone', 'trucchi-overwatch'],
-	['cheaty-warzone', 'cheaty-overwatch'],
-	['chity-warzone', 'chity-overwatch'],
-	['chitov-warzone', 'chitov-overwatch'],
+	['undetected-warzone-cheats', 'undetected-war-thunder-cheats'],
+	['warzone-wallhack', 'war-thunder-wallhack'],
+	['warzone-radar-hack', 'war-thunder-radar-hack'],
+	['warzone-cheats-2026', 'war-thunder-cheats-2026'],
+	['ricochet-bypass', 'eac-bypass-war-thunder'],
+	['warzonescheats.net', 'warthunderhacks.net'],
+	['trucos-warzone', 'trucos-war-thunder'],
+	['triche-warzone', 'triche-war-thunder'],
+	['warzone-cheats', 'war-thunder-cheats'],
+	['cheats-warzone', 'cheats-war-thunder'],
+	['trucchi-warzone', 'trucchi-war-thunder'],
+	['cheaty-warzone', 'cheaty-war-thunder'],
+	['chity-warzone', 'chity-war-thunder'],
+	['chitov-warzone', 'chitov-war-thunder'],
 	['chitiv-warzone', 'chitiv-overwatch'],
-	['cheatow-warzone', 'cheatow-overwatch'],
-	['hile-warzone', 'hile-overwatch'],
-	['warzone-hile', 'overwatch-hile'],
-	['warzone-esp-chity', 'overwatch-esp-chity'],
-	['warzone-aimbot-chity', 'overwatch-aimbot-chity'],
-	['unentdeckte-warzone-cheats', 'unentdeckte-overwatch-cheats'],
-	['cheats-warzone-indetectaveis', 'cheats-overwatch-indetectaveis'],
-	['trucchi-warzone-indetectabili', 'trucchi-overwatch-indetectabili'],
-	['niewykrywalne-cheats-warzone', 'niewykrywalne-cheats-overwatch'],
-	['nedecektiruemye-chity-warzone', 'nedecektiruemye-chity-overwatch'],
-	['tespit-edilemeyen-warzone-hileleri', 'tespit-edilemeyen-overwatch-hileleri'],
-	['nedecektovani-chity-warzone', 'nedecektovani-chity-overwatch'],
-	['cheats-warzone-nedetectabile', 'cheats-overwatch-nedetectabile'],
-	['basta-warzone-cheats', 'basta-overwatch-cheats'],
-	['eac-bypass-overwatch-trucos-warzone', 'eac-bypass-overwatch-trucos-overwatch'],
-	['eac-bypass-overwatch-triche-warzone', 'eac-bypass-overwatch-triche-overwatch'],
-	['eac-bypass-overwatch-cheats-warzone', 'eac-bypass-overwatch-cheats-overwatch'],
-	['eac-bypass-overwatch-chity-warzone', 'eac-bypass-overwatch-chity-overwatch'],
-	['eac-bypass-overwatch-warzone', 'eac-bypass-overwatch'],
+	['cheatow-warzone', 'cheatow-war-thunder'],
+	['hile-warzone', 'hile-war-thunder'],
+	['warzone-hile', 'war-thunder-hile'],
+	['warzone-esp-chity', 'war-thunder-esp-chity'],
+	['warzone-aimbot-chity', 'war-thunder-aimbot-chity'],
+	['unentdeckte-warzone-cheats', 'unentdeckte-war-thunder-cheats'],
+	['cheats-warzone-indetectaveis', 'cheats-war-thunder-indetectaveis'],
+	['trucchi-warzone-indetectabili', 'trucchi-war-thunder-indetectabili'],
+	['niewykrywalne-cheats-warzone', 'niewykrywalne-cheats-war-thunder'],
+	['nedecektiruemye-chity-warzone', 'nedecektiruemye-chity-war-thunder'],
+	['tespit-edilemeyen-warzone-hileleri', 'tespit-edilemeyen-war-thunder-hileleri'],
+	['nedecektovani-chity-warzone', 'nedecektovani-chity-war-thunder'],
+	['cheats-warzone-nedetectabile', 'cheats-war-thunder-nedetectabile'],
+	['basta-warzone-cheats', 'basta-war-thunder-cheats'],
+	['eac-bypass-war-thunder-trucos-warzone', 'eac-bypass-war-thunder-trucos-war-thunder'],
+	['eac-bypass-war-thunder-triche-warzone', 'eac-bypass-war-thunder-triche-war-thunder'],
+	['eac-bypass-war-thunder-cheats-warzone', 'eac-bypass-war-thunder-cheats-war-thunder'],
+	['eac-bypass-war-thunder-chity-warzone', 'eac-bypass-war-thunder-chity-war-thunder'],
+	['eac-bypass-war-thunder-warzone', 'eac-bypass-war-thunder'],
 ];
 
 function apply(content) {
@@ -84,25 +84,25 @@ async function fixRouting() {
 }
 
 async function fixConstants() {
-	const heroImages = `/** Hero image per page topic — keyword-rich overwatch-cheats paths. */
+	const heroImages = `/** Hero image per page topic — keyword-rich war-thunder-cheats paths. */
 export const HERO_IMAGES = {
-	home: '/images/overwatch-cheats-hero.webp',
-	'overwatch-esp': '/images/overwatch-cheats-esp-wallhack.webp',
-	'overwatch-aimbot': '/images/overwatch-cheats-aimbot-combat.webp',
-	features: '/images/overwatch-cheats-package.webp',
-	pricing: '/images/overwatch-cheats-cover.webp',
+	home: '/images/war-thunder-cheats-hero.webp',
+	'war-thunder-esp': '/images/war-thunder-cheats-esp-wallhack.webp',
+	'war-thunder-aimbot': '/images/war-thunder-cheats-aimbot-combat.webp',
+	features: '/images/war-thunder-cheats-package.webp',
+	pricing: '/images/war-thunder-cheats-cover.webp',
 	setup: '/images/rust-loadout-builder.webp',
 	updates: '/images/rust-header-art.webp',
 	faq: '/images/rust-squad-fight.webp',
-	support: '/images/overwatch-cheats-package.webp',
+	support: '/images/war-thunder-cheats-package.webp',
 	undetected: '/images/rust-battle-royale-combat.webp',
-	wallhack: '/images/overwatch-cheats-esp-wallhack.webp',
+	wallhack: '/images/war-thunder-cheats-esp-wallhack.webp',
 	radar: '/images/rust-player-esp.webp',
 	'eac-bypass': '/images/rust-reboot-van-fight.webp',
-	'cheats-2026': '/images/overwatch-cheats-hero.webp',
-	privacy: '/images/overwatch-cheats-aimbot-combat.webp',
-	refund: '/images/overwatch-cheats-cover.webp',
-	terms: '/images/overwatch-cheats-package.webp',
+	'cheats-2026': '/images/war-thunder-cheats-hero.webp',
+	privacy: '/images/war-thunder-cheats-aimbot-combat.webp',
+	refund: '/images/war-thunder-cheats-cover.webp',
+	terms: '/images/war-thunder-cheats-package.webp',
 };`;
 
 	let content = await readFile(path.join(SRC, 'scripts/i18n-data/constants.mjs'), 'utf8');
@@ -112,12 +112,12 @@ export const HERO_IMAGES = {
 	}
 	content = content.replace(
 		/export const PAGE_IDS = \[[\s\S]*?\];/,
-		`export const PAGE_IDS = [\n\t'home', 'overwatch-esp', 'overwatch-aimbot', 'features', 'pricing', 'setup',\n\t'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'eac-bypass',\n\t'cheats-2026', 'privacy', 'refund', 'terms',\n];`,
+		`export const PAGE_IDS = [\n\t'home', 'war-thunder-esp', 'war-thunder-aimbot', 'features', 'pricing', 'setup',\n\t'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'eac-bypass',\n\t'cheats-2026', 'privacy', 'refund', 'terms',\n];`,
 	);
 	content = content.replace(/\/\*\* Hero image[\s\S]*?};/, heroImages);
 	content = content.replace(
 		/export type PageId = [^;]+;/,
-		"export type PageId = 'home' | 'overwatch-esp' | 'overwatch-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'eac-bypass' | 'cheats-2026' | 'privacy' | 'refund' | 'terms';",
+		"export type PageId = 'home' | 'war-thunder-esp' | 'war-thunder-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'eac-bypass' | 'cheats-2026' | 'privacy' | 'refund' | 'terms';",
 	);
 	content = content.replace(/operatorEsp/g, 'playerEsp');
 	content = content.replace(/gulagFight/g, 'rebootFight');
