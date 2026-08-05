@@ -1,5 +1,5 @@
 /**
- * Plays muted Arc Raiders Hacks background clips without blocking interaction.
+ * Plays muted Overwatch Hacks background clips without blocking interaction.
  * - hero: eager muted autoplay (real src in HTML; poster is first paint)
  * - product / lazy: hydrate data-src only when near the viewport
  */
@@ -118,7 +118,7 @@
 		if (reduceMq.matches) return;
 
 		var heroes = Array.prototype.slice.call(
-			document.querySelectorAll('[data-rust-hacks-video="hero"]'),
+			document.querySelectorAll('[data-overwatch-hacks-video="hero"]'),
 		);
 		if (!heroes.length) return;
 
@@ -140,7 +140,7 @@
 	observeLazy(
 		Array.prototype.slice.call(
 			document.querySelectorAll(
-				'[data-rust-hacks-video="product"], [data-rust-hacks-video="lazy"]',
+				'[data-overwatch-hacks-video="product"], [data-overwatch-hacks-video="lazy"]',
 			),
 		),
 	);

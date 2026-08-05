@@ -10,13 +10,14 @@ const HERO_WIDTHS = [480, 640, 960, 1400];
 /** Below-fold content images — smaller variants for gallery/product cards */
 const CONTENT_WIDTHS = [480, 960];
 
-const HERO_FILE = 'rust-hacks-hero.webp';
+const HERO_FILE = 'overwatch-hacks-hero.webp';
 
 const SKIP_PATTERNS = [
 	/-\d+w\.webp$/i,
 	/zadeyo-logo/i,
 	/favicon/i,
-	/rust-hacks-logo/i,
+	/overwatch-hacks-logo/i,
+	/^rust-/i,
 ];
 
 async function optimizeHero() {
@@ -26,7 +27,7 @@ async function optimizeHero() {
 
 	for (const width of HERO_WIDTHS) {
 		if (meta.width && width > meta.width) continue;
-		const file = `rust-hacks-hero-${width}w.webp`;
+		const file = `overwatch-hacks-hero-${width}w.webp`;
 		const dest = path.join(imagesDir, file);
 		const quality = width <= 480 ? 62 : width <= 640 ? 72 : 80;
 		const buffer = await sharp(source)
@@ -46,6 +47,7 @@ async function optimizeContentImages() {
 	const sources = files.filter(
 		(file) =>
 			file.endsWith('.webp') &&
+			file.startsWith('overwatch-') &&
 			!SKIP_PATTERNS.some((pattern) => pattern.test(file)) &&
 			file !== HERO_FILE,
 	);

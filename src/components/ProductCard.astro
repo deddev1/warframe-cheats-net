@@ -14,10 +14,13 @@ import {
 interface Props {
 	name?: string;
 	locale?: LocaleCode;
+	/** Set true only when this card is the page LCP (never on homepage — hero wins). */
+	priority?: boolean;
 }
 
 const locale = Astro.props.locale ?? defaultLocale;
 const ui = getUi(locale);
+const priority = Astro.props.priority ?? false;
 
 const { name = ui.product.title } = Astro.props;
 
@@ -30,15 +33,15 @@ const productAlts = [
 	ui.images.rebootFight,
 ] as const;
 
-/** Hero still + five unique product thumbs — six Arc Raiders images, no repeats. */
+/** Hero still + five unique product thumbs — six Overwatch images, no repeats. */
 const heroPreview = {
 	src: contentSrc(rustImages.hero),
 	fullSrc: rustImages.hero,
 	srcset: contentSrcSet(rustImages.hero),
-	alt: 'Arc Raiders hacks gameplay — extraction combat overview',
+	alt: 'Overwatch hacks gameplay — team fight combat overview',
 };
 
-/** Screenshot thumbs only — each unique Arc Raiders still. */
+/** Screenshot thumbs only — each unique Overwatch still. */
 const images = rustImages.product.map((image, index) => ({
 	src: contentSrc(image.src),
 	fullSrc: image.src,
@@ -60,11 +63,11 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 				height="720"
 				class="product__image"
 				data-main-image
-				loading="eager"
-				fetchpriority="high"
+				loading={priority ? 'eager' : 'lazy'}
+				fetchpriority={priority ? 'high' : 'auto'}
 				decoding="async"
 			/>
-			<span class="product__credit" aria-hidden="true">Arc Raiders</span>
+			<span class="product__credit" aria-hidden="true">Overwatch</span>
 		</figure>
 		<div class="product__thumbs" role="group" aria-label="Product preview images">
 			{
@@ -149,8 +152,8 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 		<div class="buy-also">
 			<p class="buy-also__label">{ui.common.relatedPages}</p>
 			<div class="buy-also__row">
-				<a href={getLocalizedPath('rust-esp', locale)} class="alt-link">{ui.nav.esp}</a>
-				<a href={getLocalizedPath('rust-aimbot', locale)} class="alt-link">{ui.nav.aimbot}</a>
+				<a href={getLocalizedPath('overwatch-esp', locale)} class="alt-link">{ui.nav.esp}</a>
+				<a href={getLocalizedPath('overwatch-aimbot', locale)} class="alt-link">{ui.nav.aimbot}</a>
 				<a href={getLocalizedPath('features', locale)} class="alt-link">{ui.nav.features}</a>
 				<a href={getLocalizedPath('setup', locale)} class="alt-link">{ui.nav.setup}</a>
 				<a href={getLocalizedPath('pricing', locale)} class="alt-link">{ui.nav.pricing}</a>

@@ -6,36 +6,42 @@ import sharp from 'sharp';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const outDir = join(root, 'public', 'images');
 
+/** Seven unique Overwatch 2 hack screenshots — keyword-mapped for overwatchhacks.com SEO. */
 const SOURCES = [
 	{
-		url: 'https://wh-satano.ru/storage/thumbnails/default/80/31/x2fzulsskksosc4gog04c.webp?p=ancient-arc-s1.webp&s=s3',
-		file: 'rust-hacks-hero.webp',
-		alt: 'Arc Raiders hacks gameplay — extraction combat overview',
+		url: 'https://wh-satano.ru/storage/thumbnails/default/2c/se/63abhhc0k40gccgk4o0w4.webp?p=mason-ow2-s1.webp&s=s3',
+		file: 'overwatch-hacks-hero.webp',
+		alt: 'Overwatch 2 hacks main menu with ESP, wallhack, and aimbot toggles on PC',
 	},
 	{
-		url: 'https://wh-satano.ru/storage/thumbnails/default/75/fz/c1f82mos8g4ww8owgg40k.webp?p=ancient-arc-s2.webp&s=s3',
-		file: 'rust-esp-overlay.webp',
-		alt: 'Arc Raiders ESP overlay showing enemy ARC units and raiders',
+		url: 'https://wh-satano.ru/storage/thumbnails/default/a0/q1/6u9rp8g0wsgssc08k0c8o.webp?p=mason-ow2-s2.webp&s=s3',
+		file: 'overwatch-esp-overlay.webp',
+		alt: 'Overwatch 2 ESP overlay showing enemy hero positions and health bars through walls',
 	},
 	{
-		url: 'https://wh-satano.ru/storage/thumbnails/default/68/es/jdt3yccg4ssok4c0ggc4g.webp?p=ancient-arc-s3.webp&s=s3',
-		alt: 'Arc Raiders wallhack view through industrial ruins',
-		file: 'rust-esp-bots.webp',
+		url: 'https://wh-satano.ru/storage/thumbnails/default/3z/c4/l5mli9mowkwokk4ogk4cw.webp?p=byster-overwatch-s1.webp&s=s3',
+		file: 'overwatch-esp-bots.webp',
+		alt: 'Overwatch wallhack ESP with hero skeleton boxes and distance readouts in ranked',
 	},
 	{
-		url: 'https://wh-satano.ru/storage/thumbnails/default/1r/df/28idk3wg4wcwwgkwo80wo.webp?p=ancient-arc-s4.webp&s=s3',
-		file: 'rust-esp-hitbox.webp',
-		alt: 'Arc Raiders aimbot targeting ARC machines in combat',
+		url: 'https://wh-satano.ru/storage/thumbnails/default/bq/1j/zvmc9twgw048kokc808sg.webp?p=byster-overwatch-s2.webp&s=s3',
+		file: 'overwatch-esp-hitbox.webp',
+		alt: 'Overwatch aimbot hitbox lock on enemy DPS hero during a team fight on PC',
 	},
 	{
-		url: 'https://wh-satano.ru/storage/thumbnails/default/z6/4o/gzmcbfkkksgcw4gsgcks.webp?p=ancient-arc-s5.webp&s=s3',
-		file: 'rust-aimbot-menu.webp',
-		alt: 'Arc Raiders cheat menu with ESP and aimbot toggles',
+		url: 'https://wh-satano.ru/storage/thumbnails/default/c8/5b/nnii90gg8ks4k8wsgwssk.webp?p=byster-overwatch-s3.webp&s=s3',
+		file: 'overwatch-aimbot-menu.webp',
+		alt: 'Overwatch hacks cheat menu with soft aim, FOV slider, and bone priority settings',
 	},
 	{
-		url: 'https://cdn.wh-satano.ru/ancient-arc-s6.webp',
-		file: 'rust-recoil-trainer.webp',
-		alt: 'Arc Raiders hacks squad push through collapsed city zone',
+		url: 'https://wh-satano.ru/storage/thumbnails/default/7x/6e/a58jkjwoso0ws4ggcko88.webp?p=byster-overwatch-s4.webp&s=s3',
+		file: 'overwatch-radar-hack.webp',
+		alt: 'Overwatch radar hack 2D minimap overlay showing flank routes and enemy heroes',
+	},
+	{
+		url: 'https://wh-satano.ru/storage/thumbnails/default/3p/sk/7h7dja04wwk4cw0w0gc8k.webp?p=byster-overwatch-s5.webp&s=s3',
+		file: 'overwatch-ranked-fight.webp',
+		alt: 'Overwatch hacks ranked team fight with ESP boxes and aimbot active on payload',
 	},
 ];
 
@@ -74,4 +80,4 @@ for (const item of SOURCES) {
 	console.log(`  ✓ ${item.file} (+ variants)`);
 }
 
-console.log('Done — 6 Arc Raiders images installed.');
+console.log('Done — 7 Overwatch 2 hack images installed.');

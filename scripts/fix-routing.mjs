@@ -13,43 +13,43 @@ const REMOVE_IDS = [
 ];
 
 const REPLACEMENTS = [
-	['warzone-esp', 'rust-esp'],
-	['warzone-aimbot', 'rust-aimbot'],
+	['warzone-esp', 'overwatch-esp'],
+	['warzone-aimbot', 'overwatch-aimbot'],
 	['ricochet', 'eac-bypass'],
-	['undetected-warzone-cheats', 'undetected-rust-cheats'],
-	['warzone-wallhack', 'rust-wallhack'],
-	['warzone-radar-hack', 'rust-radar-hack'],
-	['warzone-cheats-2026', 'rust-cheats-2026'],
-	['ricochet-bypass', 'eac-bypass-rust'],
-	['warzonescheats.net', 'arcraidershacks.net'],
-	['trucos-warzone', 'trucos-rust'],
-	['triche-warzone', 'triche-rust'],
-	['warzone-cheats', 'rust-cheats'],
-	['cheats-warzone', 'cheats-rust'],
-	['trucchi-warzone', 'trucchi-rust'],
-	['cheaty-warzone', 'cheaty-rust'],
-	['chity-warzone', 'chity-rust'],
-	['chitov-warzone', 'chitov-rust'],
-	['chitiv-warzone', 'chitiv-rust'],
-	['cheatow-warzone', 'cheatow-rust'],
-	['hile-warzone', 'hile-rust'],
-	['warzone-hile', 'rust-hile'],
-	['warzone-esp-chity', 'rust-esp-chity'],
-	['warzone-aimbot-chity', 'rust-aimbot-chity'],
-	['unentdeckte-warzone-cheats', 'unentdeckte-rust-cheats'],
-	['cheats-warzone-indetectaveis', 'cheats-rust-indetectaveis'],
-	['trucchi-warzone-indetectabili', 'trucchi-rust-indetectabili'],
-	['niewykrywalne-cheats-warzone', 'niewykrywalne-cheats-rust'],
-	['nedecektiruemye-chity-warzone', 'nedecektiruemye-chity-rust'],
-	['tespit-edilemeyen-warzone-hileleri', 'tespit-edilemeyen-rust-hileleri'],
-	['nedecektovani-chity-warzone', 'nedecektovani-chity-rust'],
-	['cheats-warzone-nedetectabile', 'cheats-rust-nedetectabile'],
-	['basta-warzone-cheats', 'basta-rust-cheats'],
-	['eac-bypass-rust-trucos-warzone', 'eac-bypass-rust-trucos-rust'],
-	['eac-bypass-rust-triche-warzone', 'eac-bypass-rust-triche-rust'],
-	['eac-bypass-rust-cheats-warzone', 'eac-bypass-rust-cheats-rust'],
-	['eac-bypass-rust-chity-warzone', 'eac-bypass-rust-chity-rust'],
-	['eac-bypass-rust-warzone', 'eac-bypass-rust'],
+	['undetected-warzone-cheats', 'undetected-overwatch-cheats'],
+	['warzone-wallhack', 'overwatch-wallhack'],
+	['warzone-radar-hack', 'overwatch-radar-hack'],
+	['warzone-cheats-2026', 'overwatch-cheats-2026'],
+	['ricochet-bypass', 'eac-bypass-overwatch'],
+	['warzonescheats.net', 'overwatchhacks.com'],
+	['trucos-warzone', 'trucos-overwatch'],
+	['triche-warzone', 'triche-overwatch'],
+	['warzone-cheats', 'overwatch-cheats'],
+	['cheats-warzone', 'cheats-overwatch'],
+	['trucchi-warzone', 'trucchi-overwatch'],
+	['cheaty-warzone', 'cheaty-overwatch'],
+	['chity-warzone', 'chity-overwatch'],
+	['chitov-warzone', 'chitov-overwatch'],
+	['chitiv-warzone', 'chitiv-overwatch'],
+	['cheatow-warzone', 'cheatow-overwatch'],
+	['hile-warzone', 'hile-overwatch'],
+	['warzone-hile', 'overwatch-hile'],
+	['warzone-esp-chity', 'overwatch-esp-chity'],
+	['warzone-aimbot-chity', 'overwatch-aimbot-chity'],
+	['unentdeckte-warzone-cheats', 'unentdeckte-overwatch-cheats'],
+	['cheats-warzone-indetectaveis', 'cheats-overwatch-indetectaveis'],
+	['trucchi-warzone-indetectabili', 'trucchi-overwatch-indetectabili'],
+	['niewykrywalne-cheats-warzone', 'niewykrywalne-cheats-overwatch'],
+	['nedecektiruemye-chity-warzone', 'nedecektiruemye-chity-overwatch'],
+	['tespit-edilemeyen-warzone-hileleri', 'tespit-edilemeyen-overwatch-hileleri'],
+	['nedecektovani-chity-warzone', 'nedecektovani-chity-overwatch'],
+	['cheats-warzone-nedetectabile', 'cheats-overwatch-nedetectabile'],
+	['basta-warzone-cheats', 'basta-overwatch-cheats'],
+	['eac-bypass-overwatch-trucos-warzone', 'eac-bypass-overwatch-trucos-overwatch'],
+	['eac-bypass-overwatch-triche-warzone', 'eac-bypass-overwatch-triche-overwatch'],
+	['eac-bypass-overwatch-cheats-warzone', 'eac-bypass-overwatch-cheats-overwatch'],
+	['eac-bypass-overwatch-chity-warzone', 'eac-bypass-overwatch-chity-overwatch'],
+	['eac-bypass-overwatch-warzone', 'eac-bypass-overwatch'],
 ];
 
 function apply(content) {
@@ -84,25 +84,25 @@ async function fixRouting() {
 }
 
 async function fixConstants() {
-	const heroImages = `/** Hero image per page topic — keyword-rich rust-cheats paths. */
+	const heroImages = `/** Hero image per page topic — keyword-rich overwatch-cheats paths. */
 export const HERO_IMAGES = {
-	home: '/images/rust-cheats-hero.webp',
-	'rust-esp': '/images/rust-cheats-esp-wallhack.webp',
-	'rust-aimbot': '/images/rust-cheats-aimbot-combat.webp',
-	features: '/images/rust-cheats-package.webp',
-	pricing: '/images/rust-cheats-cover.webp',
+	home: '/images/overwatch-cheats-hero.webp',
+	'overwatch-esp': '/images/overwatch-cheats-esp-wallhack.webp',
+	'overwatch-aimbot': '/images/overwatch-cheats-aimbot-combat.webp',
+	features: '/images/overwatch-cheats-package.webp',
+	pricing: '/images/overwatch-cheats-cover.webp',
 	setup: '/images/rust-loadout-builder.webp',
 	updates: '/images/rust-header-art.webp',
 	faq: '/images/rust-squad-fight.webp',
-	support: '/images/rust-cheats-package.webp',
+	support: '/images/overwatch-cheats-package.webp',
 	undetected: '/images/rust-battle-royale-combat.webp',
-	wallhack: '/images/rust-cheats-esp-wallhack.webp',
+	wallhack: '/images/overwatch-cheats-esp-wallhack.webp',
 	radar: '/images/rust-player-esp.webp',
 	'eac-bypass': '/images/rust-reboot-van-fight.webp',
-	'cheats-2026': '/images/rust-cheats-hero.webp',
-	privacy: '/images/rust-cheats-aimbot-combat.webp',
-	refund: '/images/rust-cheats-cover.webp',
-	terms: '/images/rust-cheats-package.webp',
+	'cheats-2026': '/images/overwatch-cheats-hero.webp',
+	privacy: '/images/overwatch-cheats-aimbot-combat.webp',
+	refund: '/images/overwatch-cheats-cover.webp',
+	terms: '/images/overwatch-cheats-package.webp',
 };`;
 
 	let content = await readFile(path.join(SRC, 'scripts/i18n-data/constants.mjs'), 'utf8');
@@ -112,12 +112,12 @@ export const HERO_IMAGES = {
 	}
 	content = content.replace(
 		/export const PAGE_IDS = \[[\s\S]*?\];/,
-		`export const PAGE_IDS = [\n\t'home', 'rust-esp', 'rust-aimbot', 'features', 'pricing', 'setup',\n\t'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'eac-bypass',\n\t'cheats-2026', 'privacy', 'refund', 'terms',\n];`,
+		`export const PAGE_IDS = [\n\t'home', 'overwatch-esp', 'overwatch-aimbot', 'features', 'pricing', 'setup',\n\t'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'eac-bypass',\n\t'cheats-2026', 'privacy', 'refund', 'terms',\n];`,
 	);
 	content = content.replace(/\/\*\* Hero image[\s\S]*?};/, heroImages);
 	content = content.replace(
 		/export type PageId = [^;]+;/,
-		"export type PageId = 'home' | 'rust-esp' | 'rust-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'eac-bypass' | 'cheats-2026' | 'privacy' | 'refund' | 'terms';",
+		"export type PageId = 'home' | 'overwatch-esp' | 'overwatch-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'eac-bypass' | 'cheats-2026' | 'privacy' | 'refund' | 'terms';",
 	);
 	content = content.replace(/operatorEsp/g, 'playerEsp');
 	content = content.replace(/gulagFight/g, 'rebootFight');

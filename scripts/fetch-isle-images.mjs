@@ -27,27 +27,27 @@ const STEAM_SHOTS = [
 
 /** Map existing SEO filenames → Steam screenshot index */
 const TARGETS = [
-	{ file: 'rust-hacks-hero.webp', shot: 0 },
-	{ file: 'rust-esp-overlay.webp', shot: 1 },
-	{ file: 'rust-esp-bots.webp', shot: 2 },
-	{ file: 'rust-esp-hitbox.webp', shot: 3 },
-	{ file: 'rust-aimbot-menu.webp', shot: 4 },
+	{ file: 'overwatch-hacks-hero.webp', shot: 0 },
+	{ file: 'overwatch-esp-overlay.webp', shot: 1 },
+	{ file: 'overwatch-esp-bots.webp', shot: 2 },
+	{ file: 'overwatch-esp-hitbox.webp', shot: 3 },
+	{ file: 'overwatch-aimbot-menu.webp', shot: 4 },
 	{ file: 'rust-recoil-trainer.webp', shot: 5 },
-	{ file: 'rust-aimbot-ui.webp', shot: 6 },
-	{ file: 'rust-wallhack-ui.webp', shot: 7 },
-	{ file: 'rust-cheats-menu.webp', shot: 8 },
-	{ file: 'rust-cheats-dashboard.webp', shot: 8 },
-	{ file: 'rust-hacks-cover.webp', shot: 9 },
-	{ file: 'rust-hacks-panel.webp', shot: 10 },
-	{ file: 'rust-hacks-status.webp', shot: 11 },
+	{ file: 'overwatch-aimbot-ui.webp', shot: 6 },
+	{ file: 'overwatch-wallhack-ui.webp', shot: 7 },
+	{ file: 'overwatch-cheats-menu.webp', shot: 8 },
+	{ file: 'overwatch-cheats-dashboard.webp', shot: 8 },
+	{ file: 'overwatch-hacks-cover.webp', shot: 9 },
+	{ file: 'overwatch-hacks-panel.webp', shot: 10 },
+	{ file: 'overwatch-hacks-status.webp', shot: 11 },
 	{ file: 'rust-radar-ui.webp', shot: 2 },
-	{ file: 'rust-soft-aim-ui.webp', shot: 4 },
-	{ file: 'rust-cheats-dashboard.webp', shot: 1 },
+	{ file: 'overwatch-soft-aim-ui.webp', shot: 4 },
+	{ file: 'overwatch-cheats-dashboard.webp', shot: 1 },
 ];
 
 async function fetchBuffer(url) {
 	const res = await fetch(url, {
-		headers: { 'User-Agent': 'Mozilla/5.0 (compatible; Arc Raiders HacksSite/1.0)' },
+		headers: { 'User-Agent': 'Mozilla/5.0 (compatible; Overwatch HacksSite/1.0)' },
 	});
 	if (!res.ok) throw new Error(`Failed ${url}: ${res.status}`);
 	return Buffer.from(await res.arrayBuffer());

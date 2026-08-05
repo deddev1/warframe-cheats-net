@@ -152,8 +152,8 @@ export function getBlogSitemapEntries() {
 			images: [
 				{
 					url: new URL(siteConfig.defaultOgImage, siteConfig.url).href,
-					title: 'Arc Raiders Hacks Intel blog',
-					caption: 'Rust Intel blog covering meta guides, ESP, Aimbot, and EAC notes',
+					title: 'Overwatch Hacks Intel blog',
+					caption: 'Overwatch Intel blog covering meta guides, ESP, Aimbot, and EAC notes',
 				},
 			],
 		},

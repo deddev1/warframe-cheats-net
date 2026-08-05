@@ -1,5 +1,5 @@
 {
-	"name": "arcraiders-hacks",
+	"name": "overwatch-hacks",
   "type": "module",
   "version": "1.0.0",
   "engines": {
@@ -21,7 +21,7 @@
     "generate:i18n": "node scripts/generate-i18n-content.mjs",
     "deploy": "npm run build && wrangler deploy",
     "cf:deploy": "npm run build:cf && wrangler deploy",
-    "pages:deploy": "wrangler pages deploy dist --project-name=arcraidershacks",
+    "pages:deploy": "wrangler pages deploy dist --project-name=overwatchhacks",
     "astro": "astro"
   },
   "dependencies": {

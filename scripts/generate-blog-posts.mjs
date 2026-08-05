@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Generates src/data/blog/posts.generated.ts with Rust Intel posts.
+ * Generates src/data/blog/posts.generated.ts with Overwatch Intel posts.
  * English content is the SEO source of truth for /blog/ routes.
  */
 import { writeFileSync } from 'node:fs';
@@ -13,10 +13,10 @@ const OUT = join(__dirname, '..', 'src', 'data', 'blog', 'posts.generated.ts');
 const LOCALES = ['en'];
 
 const EXT = {
-	epic: '<a href="https://rust.arcraiders.com/" target="_blank" rel="noopener noreferrer">Embark Rust</a>',
-	rust: '<a href="https://rust.arcraiders.com/" target="_blank" rel="noopener noreferrer">Rust.com</a>',
-	status: '<a href="https://rust.arcraiders.com/" target="_blank" rel="noopener noreferrer">Embark Rust status</a>',
-	competitive: '<a href="https://rust.arcraiders.com/competitive" target="_blank" rel="noopener noreferrer">Rust Competitive</a>',
+	epic: '<a href="https://overwatch.blizzard.com/en-us/" target="_blank" rel="noopener noreferrer">Blizzard Overwatch</a>',
+	rust: '<a href="https://overwatch.blizzard.com/en-us/" target="_blank" rel="noopener noreferrer">Rust.com</a>',
+	status: '<a href="https://overwatch.blizzard.com/en-us/" target="_blank" rel="noopener noreferrer">Blizzard Overwatch status</a>',
+	competitive: '<a href="https://overwatch.blizzard.com/en-us/" target="_blank" rel="noopener noreferrer">Rust Competitive</a>',
 };
 
 /** @typedef {{ h2: string, paragraphs: string[] }} Section */
@@ -34,12 +34,12 @@ const sources = [
 		slug: 'patch-notes-buffs-nerfs-vaults',
 		title: 'Patch Notes Breakdown: Buffs, Nerfs & Vaults That Matter',
 		metaDescription:
-			'Rust patch notes for Chapter 7 Season 3 — buffs, nerfs, and vaults that reshape loadouts. After EAC patches, check Arc Raiders Hacks updates.',
+			'Rust patch notes for Season 16 Season 3 — buffs, nerfs, and vaults that reshape loadouts. After anti-cheat patches, check Overwatch Hacks updates.',
 		h1: 'Patch Notes Breakdown: Buffs, Nerfs, and Vaults',
 		intro:
 			'Stop skimming patch notes. Here is how buffs, nerfs, and vaults actually reshuffle the loot pool and your ranked loadout priorities.',
-		keywords: ['rust patch notes', 'buffs', 'nerfs', 'vaults', 'loot pool', 'rust intel'],
-		imageAlt: 'Rust patch notes breakdown of buffs nerfs and vaults for Chapter 7 Season 3',
+		keywords: ['rust patch notes', 'buffs', 'nerfs', 'vaults', 'loot pool', 'overwatch intel'],
+		imageAlt: 'Rust patch notes breakdown of buffs nerfs and vaults for Season 16 Season 3',
 		sections: [
 			{
 				h2: 'Read patches like a player, not a spectator',
@@ -59,7 +59,7 @@ const sources = [
 			{
 				h2: 'How notes reshuffle loadout priority',
 				paragraphs: [
-					'When mid-range ARs are strong, prioritize rarity on AR earlier in loot routes. When mobility is nerfed or vaulted, uncontested chains with shorter hops beat hot drops that require escapes. When heals are buffed, aggressive third-parties become safer — which powers strategies in our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">monuments aggression guide</a>.',
+					'When mid-range ARs are strong, prioritize rarity on AR earlier in loot routes. When mobility is nerfed or vaulted, uncontested chains with shorter hops beat hot drops that require escapes. When heals are buffed, aggressive third-parties become safer — which powers strategies in our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">control points aggression guide</a>.',
 					'Also separate balance patches from cosmetic and shop notes. Skin leaks are fun; they do not change TTK. Keep patch-day focus on weapons, healing, movement, and map POI changes.',
 				],
 			},
@@ -67,7 +67,7 @@ const sources = [
 				h2: 'Late-season checklist and next steps',
 				paragraphs: [
 					'Post-patch checklist: skim official notes for vaults first, update your shotgun/AR/mobility/heals spine, play 10 intentional test games, revisit tier-list assumptions, and adjust drop routes if mobility or loot changed.',
-					`On big update mornings, confirm ${EXT.status} is healthy before blaming your settings. If you also use Arc Raiders Hacks in-match, check <a href="/updates/">Arc Raiders Hacks Updates</a> after Easy Anti-Cheat patches.`,
+					`On big update mornings, confirm ${EXT.status} is healthy before blaming your settings. If you also use Overwatch Hacks in-match, check <a href="/updates/">Overwatch Hacks Updates</a> after Blizzard anti-cheat patches.`,
 					'Try This Today: Open the latest official patch notes and highlight vaults. Rewrite your 5-slot priority on paper. Queue a focused 5-game test block and note which fights felt different at 30–60m vs 0–15m.',
 				],
 			},
@@ -81,21 +81,21 @@ const sources = [
 		category: 'Skin Leaks & Cosmetics',
 		featured: false,
 		slug: 'chapter-7-season-3-skin-leaks-vbucks',
-		title: 'Chapter 7 Season 3 Skin Leaks: V-Bucks Worth Buying',
+		title: 'Season 16 Season 3 Skin Leaks: V-Bucks Worth Buying',
 		metaDescription:
-			'Chapter 7 Season 3 Rust skin leaks and shop advice — which cosmetics are worth V-Bucks before Season 4. Save smart and skip FOMO bundles today.',
-		h1: 'Chapter 7 Season 3 Skin Leaks Worth Your V-Bucks',
+			'Season 16 Season 3 Rust skin leaks and shop advice — which cosmetics are worth V-Bucks before Season 4. Save smart and skip FOMO bundles today.',
+		h1: 'Season 16 Season 3 Skin Leaks Worth Your V-Bucks',
 		intro:
 			'Season 4 is coming. Here is which leaked and rotating cosmetics are actually worth buying before the shop resets hard.',
-		keywords: ['rust skin leaks', 'vbucks', 'cosmetics', 'item shop', 'season 4', 'rust intel'],
-		imageAlt: 'Rust Chapter 7 Season 3 skin leaks and V-Bucks shopping guide',
+		keywords: ['rust skin leaks', 'vbucks', 'cosmetics', 'item shop', 'season 4', 'overwatch intel'],
+		imageAlt: 'Rust Season 16 Season 3 skin leaks and V-Bucks shopping guide',
 		sections: [
 			{
 				h2: 'Stop impulse buying before Season 4',
 				paragraphs: [
 					'Most players blow V-Bucks the week before a new season and then cannot buy the Battle Pass. Controversial take: most Item Shop impulse buys do not improve your win rate or locker happiness a month later.',
 					`Shop rotations and Battle Pass exclusives are official through ${EXT.rust}. Leaks are entertainment — not a shopping list. Use them to decide what to skip.`,
-					'Pro Tip — Locker performance: Pros pick clean silhouettes. Busy outfits can hide enemy outlines in chaotic monuments endgames. Style is cool; readability wins games.',
+					'Pro Tip — Locker performance: Pros pick clean silhouettes. Busy outfits can hide enemy outlines in chaotic control points endgames. Style is cool; readability wins games.',
 				],
 			},
 			{
@@ -125,18 +125,18 @@ const sources = [
 		slug: 'hammer-ar-s-tier-data-analysis',
 		title: 'Weapon Tier List: Why Hammer AR Is Actually S-Tier',
 		metaDescription:
-			'Data-backed Rust weapon tier list: why Hammer AR is S-tier — TTK windows, bloom control, and loadout pairings for Chapter 7 Season 3 ranked.',
+			'Data-backed Rust weapon tier list: why Hammer AR is S-tier — TTK windows, bloom control, and loadout pairings for Season 16 Season 3 ranked.',
 		h1: 'Weapon Tier List: Why the Hammer AR Is S-Tier',
 		intro:
 			'Community tier lists underrate the Hammer AR. The damage-per-mag and mid-range TTK numbers say otherwise.',
-		keywords: ['hammer ar', 'rust tier list', 'weapons', 'ttk', 'rust intel'],
-		imageAlt: 'Rust Hammer AR S-tier weapon tier list data analysis Chapter 7 Season 3',
+		keywords: ['hammer ar', 'rust tier list', 'weapons', 'ttk', 'overwatch intel'],
+		imageAlt: 'Rust Hammer AR S-tier weapon tier list data analysis Season 16 Season 3',
 		sections: [
 			{
 				h2: 'Why the Hammer AR belongs in S-tier',
 				paragraphs: [
 					"Creator tier lists are entertainment, not science. They rank flashy mythics while the Hammer AR quietly prints mid-range eliminations because damage-per-second consistency beats higher-ceiling guns average players cannot control.",
-					'S-tier means best expected value across 100 ranked fights. Hammer wins at 30–70 meters — the distances where monuments and endgame actually happen. Shotguns own 0–15m. Snipers own 80m+. Everything between is AR country.',
+					'S-tier means best expected value across 100 ranked fights. Hammer wins at 30–70 meters — the distances where control points and endgame actually happen. Shotguns own 0–15m. Snipers own 80m+. Everything between is AR country.',
 					`Confirm live values after patches on ${EXT.rust}. Hierarchy logic stays useful even when decimals nudge.`,
 					'Pro Tip — Spray discipline: Pros tap or micro-burst until bloom settles, then commit. Treat Hammer like a laser until the enemy wide-peeks — then dump.',
 				],
@@ -152,10 +152,10 @@ const sources = [
 			{
 				h2: 'Loadout pairings, mistakes, and practice',
 				paragraphs: [
-					'Core: Hammer AR + high-burst shotgun + mobility + heals. In monuments, this supports the laddering strategies in our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">aggression guide</a>.',
+					'Core: Hammer AR + high-burst shotgun + mobility + heals. In control points, this supports the laddering strategies in our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">aggression guide</a>.',
 					'Common mistakes: full-spraying from 80m+, re-peeking the same pixel, swapping to SMG at 40m out of habit, never practicing crouch-spray in Creative.',
 					'Try This Today: Prioritize Hammer for 10 games. Count your first four bullets in every mid fight. If you die inside 15m without shotgun out, fix loadout timing — not the AR.',
-					'Players who also use aim-assist tooling can review <a href="/arc-raiders-aimbot/">Rust Aimbot</a> profiles after they lock a sens — mechanics first, tools second.',
+					'Players who also use aim-assist tooling can review <a href="/overwatch-aimbot/">Rust Aimbot</a> profiles after they lock a sens — mechanics first, tools second.',
 				],
 			},
 		],
@@ -165,23 +165,23 @@ const sources = [
 		imageKey: 'battleRoyaleCombat',
 		published: '2026-07-22',
 		updated: '2026-08-01',
-		category: 'monuments',
+		category: 'control points',
 		featured: true,
 		slug: 'zero-build-meta-broken-aggressive-strategies',
-		title: 'monuments Meta Broken: 5 Aggressive Pro Strategies',
+		title: 'control points Meta Broken: 5 Aggressive Pro Strategies',
 		metaDescription:
-			'Break the passive monuments meta with 5 aggressive Rust strategies — timings, damage windows, and fight paths that win ranked in Chapter 7 Season 3.',
-		h1: 'The monuments Meta Is Broken: 5 Aggressive Strategies',
+			'Break the passive control points meta with 5 aggressive Rust strategies — timings, damage windows, and fight paths that win ranked in Season 16 Season 3.',
+		h1: 'The control points Meta Is Broken: 5 Aggressive Strategies',
 		intro:
-			'Passive third-partying is dead weight. These five aggressive monuments strategies flip mid-game fights before the lobby even rotates.',
-		keywords: ['zero build', 'rust ranked', 'aggressive strategies', 'pro tips', 'rust intel'],
-		imageAlt: 'Rust monuments aggressive fight meta strategies Chapter 7 Season 3',
+			'Passive third-partying is dead weight. These five aggressive control points strategies flip mid-game fights before the lobby even rotates.',
+		keywords: ['Quick Play', 'rust ranked', 'aggressive strategies', 'pro tips', 'overwatch intel'],
+		imageAlt: 'Rust control points aggressive fight meta strategies Season 16 Season 3',
 		sections: [
 			{
-				h2: 'Why the monuments meta feels soft',
+				h2: 'Why the control points meta feels soft',
 				paragraphs: [
-					'Most monuments players wait behind a rock for the last two teams to trade, then spray into a mess. That soft meta is why ranks stall. Strong fighters manufacture first-shot advantage and leave before the third party arrives.',
-					'A clean first-shot AR spray at 40–55 meters can delete 80–120 HP before the opponent ads. That window is the game. Information tools like <a href="/arc-raiders-esp/">Rust ESP</a> help — but aggression still needs cover discipline.',
+					'Most control points players wait behind a rock for the last two teams to trade, then spray into a mess. That soft meta is why ranks stall. Strong fighters manufacture first-shot advantage and leave before the third party arrives.',
+					'A clean first-shot AR spray at 40–55 meters can delete 80–120 HP before the opponent ads. That window is the game. Information tools like <a href="/overwatch-esp/">Rust ESP</a> help — but aggression still needs cover discipline.',
 					'Pro Tip — Decide your exit before you swing. Take a 150+ damage window, then hard disengage with mobility before the usual 4–7 second third-party clock.',
 				],
 			},
@@ -198,7 +198,7 @@ const sources = [
 				paragraphs: [
 					'Before ranked: 10 minutes aim or peek maps, loadout priority AR + shotgun + mobility + heals, two POIs with strong cover ladders, and a 10-game first-shot aggression block.',
 					'Pair this article with <a href="/blog/secret-loot-routes-full-gold/">loot routes</a>, <a href="/blog/hammer-ar-s-tier-data-analysis/">Hammer AR tiers</a>, and <a href="/blog/creative-warmup-maps-pros-use/">Creative warmups</a>.',
-					'Try This Today: Queue monuments and force first contact when you have shield + AR. Track whether you disengaged before the 7-second third-party window.',
+					'Try This Today: Queue control points and force first contact when you have shield + AR. Track whether you disengaged before the 7-second third-party window.',
 				],
 			},
 		],
@@ -213,12 +213,12 @@ const sources = [
 		slug: 'fncs-meta-watch-tournament-drops',
 		title: 'FNCS Meta Watch: What Tournament Winners Drop',
 		metaDescription:
-			'FNCS meta watch for Chapter 7 Season 3 — what tournament winners drop, how they loot, and which mid-game habits translate to your ranked climb.',
+			'FNCS meta watch for Season 16 Season 3 — what tournament winners drop, how they loot, and which mid-game habits translate to your ranked climb.',
 		h1: 'FNCS Meta Watch: What Tournament Winners Drop and Why',
 		intro:
 			'Tournament winners are not lucky drop gods. Here is what their POIs, loadouts, and mid-game habits actually optimize for.',
-		keywords: ['fncs', 'rust esports', 'tournament drops', 'meta', 'rust intel'],
-		imageAlt: 'FNCS Rust tournament meta watch drop spots Chapter 7 Season 3',
+		keywords: ['fncs', 'rust esports', 'tournament drops', 'meta', 'overwatch intel'],
+		imageAlt: 'FNCS Rust tournament meta watch drop spots Season 16 Season 3',
 		sections: [
 			{
 				h2: 'Watch tournament film like a coach',
@@ -238,7 +238,7 @@ const sources = [
 				h2: 'What translates to ranked',
 				paragraphs: [
 					'Translate loot-timer discipline, loadout spine, early rotates, and selective fights. Do not blindly mirror a trio drop in solo queue.',
-					'Winners rotate early enough to choose sides. Zone edge pressure from our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">monuments guide</a> shows up constantly in endgames.',
+					'Winners rotate early enough to choose sides. Zone edge pressure from our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">control points guide</a> shows up constantly in endgames.',
 					'Try This Today: Watch 15 minutes of a winner VOD with five timestamps. Steal one mid-game habit only. Run it for a 6-game ranked block.',
 				],
 			},
@@ -249,17 +249,17 @@ const sources = [
 		imageKey: 'battleRoyaleIslandMap',
 		published: '2026-07-18',
 		updated: '2026-08-01',
-		category: 'survival Meta',
+		category: 'competitive Meta',
 		featured: true,
 		slug: 'secret-loot-routes-full-gold',
 		title: 'Secret Loot Routes: Leave Spawn Full Gold Every Game',
 		metaDescription:
-			'High-percentage Rust loot routes that leave spawn with gold guns, full shields, and mobility — Chapter 7 Season 3 drop paths that win mid-game.',
+			'High-percentage Rust loot routes that leave spawn with gold guns, full shields, and mobility — Season 16 Season 3 drop paths that win mid-game.',
 		h1: 'Secret Loot Routes: How to Leave Spawn with Full Gold',
 		intro:
 			'Winning starts before the first fight. These loot routes consistently convert drops into gold loadouts and full heals.',
-		keywords: ['rust loot routes', 'drops', 'gold loot', 'ranked', 'rust intel'],
-		imageAlt: 'Rust secret loot routes full gold spawn guide Chapter 7 Season 3',
+		keywords: ['rust loot routes', 'drops', 'gold loot', 'ranked', 'overwatch intel'],
+		imageAlt: 'Rust secret loot routes full gold spawn guide Season 16 Season 3',
 		sections: [
 			{
 				h2: 'The real ranked bottleneck is early inventory',
@@ -280,8 +280,8 @@ const sources = [
 			{
 				h2: 'Convert gold guns into wins',
 				paragraphs: [
-					'Pair these routes with <a href="/blog/zero-build-meta-broken-aggressive-strategies/">monuments aggression</a> and <a href="/blog/hammer-ar-s-tier-data-analysis/">Hammer AR tiers</a>. Leave spawn rich so mid-game becomes a skill check.',
-					'If you use loot ESP markers in practice, read <a href="/arc-raiders-esp/">Rust ESP</a> for category toggles — then still run the timer so habits stay sharp without overlays.',
+					'Pair these routes with <a href="/blog/zero-build-meta-broken-aggressive-strategies/">control points aggression</a> and <a href="/blog/hammer-ar-s-tier-data-analysis/">Hammer AR tiers</a>. Leave spawn rich so mid-game becomes a skill check.',
+					'If you use health pack ESP markers in practice, read <a href="/overwatch-esp/">Rust ESP</a> for category toggles — then still run the timer so habits stay sharp without overlays.',
 					'Try This Today: Run one uncontested chain for 8 games. Screenshot inventory at 2:30 and compare rarities before adding a contested edge day.',
 				],
 			},
@@ -297,11 +297,11 @@ const sources = [
 		slug: 'bugha-settings-pro-setup',
 		title: "Bugha's Settings: Copy a Champion Setup That Works",
 		metaDescription:
-			'Bugha-inspired Rust settings guide — sensitivity ranges, binds philosophy, and practice routines that still work in Chapter 7 Season 3 ranked.',
+			'Bugha-inspired Rust settings guide — sensitivity ranges, binds philosophy, and practice routines that still work in Season 16 Season 3 ranked.',
 		h1: "Bugha's Sensitivity & Settings: Champion-Inspired Setup",
 		intro:
 			'You do not need exact pro digits — you need champion settings philosophy. Here is a setup you can adapt today.',
-		keywords: ['bugha settings', 'rust sensitivity', 'binds', 'pro setup', 'rust intel'],
+		keywords: ['bugha settings', 'rust sensitivity', 'binds', 'pro setup', 'overwatch intel'],
 		imageAlt: 'Bugha Rust sensitivity settings pro player setup guide',
 		sections: [
 			{
@@ -323,7 +323,7 @@ const sources = [
 				h2: 'Champion-style practice routine',
 				paragraphs: [
 					'0–10 minutes aim tracker, 10–20 peek or edit drills, 20–30 realistic fights, then ranked. Pair with our <a href="/blog/creative-warmup-maps-pros-use/">Creative warmup map categories</a>.',
-					'If you later configure Aimbot smoothness for practice tooling, start from <a href="/arc-raiders-aimbot/">soft aim</a> after your raw sens is locked — never chase both variables at once.',
+					'If you later configure Aimbot smoothness for practice tooling, start from <a href="/overwatch-aimbot/">soft aim</a> after your raw sens is locked — never chase both variables at once.',
 					'Try This Today: Write dpi + sens, adjust at most once by a small percent, then play 5 games without touching settings again.',
 				],
 			},
@@ -339,11 +339,11 @@ const sources = [
 		slug: 'creative-warmup-maps-pros-use',
 		title: '10 Creative Warmup Maps Pros Use Before Ranked',
 		metaDescription:
-			'Ten Rust Creative warmup map categories and a 25-minute routine pros use before ranked — aim, peeks, edits, and monuments fight reps now.',
+			'Ten Rust Creative warmup map categories and a 25-minute routine pros use before ranked — aim, peeks, edits, and control points fight reps now.',
 		h1: '10 Creative Mode Maps Pros Use to Warm Up Before Ranked',
 		intro:
 			'Stop freezing in first fight. These Creative warmup categories get your mechanics hot before you touch ranked.',
-		keywords: ['rust creative', 'warmup maps', 'aim trainers', 'ranked', 'rust intel'],
+		keywords: ['rust creative', 'warmup maps', 'aim trainers', 'ranked', 'overwatch intel'],
 		imageAlt: 'Rust Creative Mode warmup maps pros use before ranked',
 		sections: [
 			{
@@ -357,140 +357,140 @@ const sources = [
 			{
 				h2: '25-minute routine and ten map categories',
 				paragraphs: [
-					'0–8 min aim tracker. 8–15 min edit course or monuments peek map. 15–22 min realistic fight / box fight / zone wars. 22–25 min reset, then ranked.',
-					'Categories: pure aim tracker, shotgun scenarios, mid-range AR tracking (Hammer practice), piece control/edits, monuments cover peeks, realistic 1v1s, zone wars, reload/swap timing, movement tech, scrim-style multi-fight maps.',
-					'monuments mains should replace edit courses with double-peek ladders from our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">aggression guide</a>.',
+					'0–8 min aim tracker. 8–15 min edit course or control points peek map. 15–22 min realistic fight / box fight / zone wars. 22–25 min reset, then ranked.',
+					'Categories: pure aim tracker, shotgun scenarios, mid-range AR tracking (Hammer practice), piece control/edits, control points cover peeks, realistic 1v1s, zone wars, reload/swap timing, movement tech, scrim-style multi-fight maps.',
+					'control points mains should replace edit courses with double-peek ladders from our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">aggression guide</a>.',
 				],
 			},
 			{
 				h2: 'Mistakes that waste warmup time',
 				paragraphs: [
 					'Only melting easy bots, ignoring mid-range, warming up 90 minutes then playing two tilted games, and changing binds mid-warmup all waste Elo.',
-					'After mechanics are hot, information tools like <a href="/arc-raiders-radar/">radar hack</a> or <a href="/arc-raiders-esp/">ESP</a> are optional overlays — they do not replace a cold shotgun timing. For the full stack overview, see <a href="/arc-raiders-hacks/">Arc Raiders Hacks</a>.',
+					'After mechanics are hot, information tools like <a href="/overwatch-radar/">radar hack</a> or <a href="/overwatch-esp/">ESP</a> are optional overlays — they do not replace a cold shotgun timing. For the full stack overview, see <a href="/overwatch-hacks/">Overwatch Hacks</a>.',
 					'Try This Today: Favorite four maps across aim, peeks, fights, and endgame. Run the 25-minute block, then play only six ranked games.',
 				],
 			},
 		],
 	},
 	{
-		id: 'rust-hacks-complete-guide',
+		id: 'overwatch-hacks-complete-guide',
 		imageKey: 'battleRoyaleCombat',
 		published: '2026-07-31',
 		updated: '2026-08-01',
-		category: 'Arc Raiders Hacks',
+		category: 'Overwatch Hacks',
 		featured: true,
-		slug: 'rust-hacks-complete-guide-2026',
-		title: 'Arc Raiders Hacks 2026: Complete Undetected Guide',
+		slug: 'overwatch-hacks-complete-guide-2026',
+		title: 'Overwatch Hacks 2026: Complete Undetected Guide',
 		metaDescription:
-			'Complete Arc Raiders Hacks guide for PC and controllers — ESP boxes, soft aim, cloud DMA, and EAC maintenance in 2026. Compare the full package and buy.',
-		h1: 'Arc Raiders Hacks 2026: The Complete Undetected Guide',
+			'Complete Overwatch Hacks guide for PC and controllers — ESP boxes, soft aim, cloud DMA, and anti-cheat maintenance in 2026. Compare the full package and buy.',
+		h1: 'Overwatch Hacks 2026: The Complete Undetected Guide',
 		intro:
-			'Searching for Arc Raiders Hacks in 2026? This guide covers ESP wallhack, Aimbot, radar, undetected maintenance, and how Arc Raiders hacks searchers map to the same Windows PC package.',
-		keywords: ['Arc Raiders Hacks', 'undetected Arc Raiders Hacks', 'Arc Raiders hacks', 'esp', 'aimbot', 'eac'],
-		imageAlt: 'Arc Raiders Hacks complete guide showing ESP wallhack and Aimbot for 2026',
+			'Searching for Overwatch Hacks in 2026? This guide covers ESP wallhack, Aimbot, radar, undetected maintenance, and how Overwatch hacks searchers map to the same Windows PC package.',
+		keywords: ['Overwatch Hacks', 'undetected Overwatch Hacks', 'Overwatch hacks', 'esp', 'aimbot', 'eac'],
+		imageAlt: 'Overwatch Hacks complete guide showing ESP wallhack and Aimbot for 2026',
 		sections: [
 			{
-				h2: 'What Arc Raiders Hacks actually include',
+				h2: 'What Overwatch Hacks actually include',
 				paragraphs: [
-					'Arc Raiders Hacks usually mean visibility plus combat assist: player ESP wallhack, loot markers, 2D radar threat cues, and configurable Aimbot. Buyers who type Arc Raiders hacks are looking for the same stack — different wording, same BR loop.',
-					`Official seasons and client updates publish through ${EXT.epic} and ${EXT.rust}. Anti-cheat context lives on Easy Anti-Cheat. Our <a href="/arc-raiders-hacks/">Arc Raiders Hacks pillar</a> is the commercial landing; this post is the long-form explainer.`,
+					'Overwatch Hacks usually mean visibility plus combat assist: player ESP wallhack, health pack markers, 2D radar threat cues, and configurable Aimbot. Buyers who type Overwatch hacks are looking for the same stack — different wording, same BR loop.',
+					`Official seasons and client updates publish through ${EXT.epic} and ${EXT.rust}. Anti-cheat context lives on Blizzard anti-cheat. Our <a href="/overwatch-hacks/">Overwatch Hacks pillar</a> is the commercial landing; this post is the long-form explainer.`,
 					'Pro Tip — One license, full loop: Prefer a maintained package over stacking single-feature downloads that break on every patch.',
 				],
 			},
 			{
 				h2: 'ESP, wallhack, Aimbot, and radar roles',
 				paragraphs: [
-					'ESP/wallhack answers where squads and loot sit. Radar covers flanks outside FOV. Aimbot covers firefight consistency once you commit. Soft aim profiles help when you want smoother tracking — see <a href="/arc-raiders-aimbot/">soft aim</a> and <a href="/arc-raiders-aimbot/">Aimbot controls</a>.',
-					'Deep pages: <a href="/arc-raiders-esp/">Rust ESP</a>, <a href="/arc-raiders-wallhack/">wallhack</a>, <a href="/arc-raiders-radar/">radar hack</a>, <a href="/arc-raiders-aimbot/">aimbot hack</a>, and <a href="/arc-raiders-esp/">ESP hack</a>.',
+					'ESP/wallhack answers where squads and loot sit. Radar covers flanks outside FOV. Aimbot covers firefight consistency once you commit. Soft aim profiles help when you want smoother tracking — see <a href="/overwatch-aimbot/">soft aim</a> and <a href="/overwatch-aimbot/">Aimbot controls</a>.',
+					'Deep pages: <a href="/overwatch-esp/">Rust ESP</a>, <a href="/overwatch-wallhack/">wallhack</a>, <a href="/overwatch-radar/">radar hack</a>, <a href="/overwatch-aimbot/">aimbot hack</a>, and <a href="/overwatch-esp/">ESP hack</a>.',
 				],
 			},
 			{
-				h2: 'Undetected Arc Raiders Hacks and EAC patches',
+				h2: 'Undetected Overwatch Hacks and anti-cheat patches',
 				paragraphs: [
-					'Undetected Arc Raiders Hacks require rebuilds after Easy Anti-Cheat and major Rust updates. No vendor can promise permanent undetected status — check <a href="/updates/">Updates</a> before you queue.',
-					`On patch mornings confirm ${EXT.status}, then read our <a href="/arc-raiders-hacks/">EAC bypass guide</a> and <a href="/blog/undetected-arc-raiders-hacks-eac/">undetected EAC notes</a>.`,
+					'Undetected Overwatch Hacks require rebuilds after Blizzard anti-cheat and major Rust updates. No vendor can promise permanent undetected status — check <a href="/updates/">Updates</a> before you queue.',
+					`On patch mornings confirm ${EXT.status}, then read our <a href="/overwatch-hacks/">anti-cheat bypass guide</a> and <a href="/blog/undetected-overwatch-hacks-eac/">undetected EAC notes</a>.`,
 					'Try This Today: Open the hacks pillar, skim Features, compare Pricing ($35 monthly / $150 lifetime), and bookmark Updates for the next Epic patch.',
 				],
 			},
 			{
 				h2: 'Next steps — pricing, setup, and cheats pages',
 				paragraphs: [
-					'Ready to buy? Start at the <a href="/arc-raiders-hacks/">Arc Raiders Hacks pillar page</a>, then <a href="/pricing/">Pricing</a> and <a href="/setup/">Setup</a>. Prefer cheats wording? Read <a href="/arc-raiders-hacks/">Arc Raiders hacks 2026</a> and <a href="/blog/arc-raiders-hacks-buyers-guide/">cheats buyers guide</a>.',
+					'Ready to buy? Start at the <a href="/overwatch-hacks/">Overwatch Hacks pillar page</a>, then <a href="/pricing/">Pricing</a> and <a href="/setup/">Setup</a>. Prefer cheats wording? Read <a href="/overwatch-hacks/">Overwatch hacks 2026</a> and <a href="/blog/overwatch-hacks-buyers-guide/">cheats buyers guide</a>.',
 					'Support: include your order ID on the <a href="/support/">Support</a> page after checkout.',
 				],
 			},
 		],
 	},
 	{
-		id: 'rust-cheats-buyers-guide',
+		id: 'overwatch-cheats-buyers-guide',
 		imageKey: 'cheatsPackage',
 		published: '2026-07-30',
 		updated: '2026-08-01',
-		category: 'Arc Raiders Hacks',
+		category: 'Overwatch Hacks',
 		featured: true,
-		slug: 'rust-cheats-buyers-guide',
-		title: 'Arc Raiders Hacks Buyers Guide: What to Check',
+		slug: 'overwatch-cheats-buyers-guide',
+		title: 'Overwatch Hacks Buyers Guide: What to Check',
 		metaDescription:
 			'Rust cheats buyers guide for PC and controllers — ESP boxes, soft aim, cloud DMA, pricing, and EAC status. Compare before checkout.',
-		h1: 'Arc Raiders Hacks Buyers Guide: What Matters in 2026',
+		h1: 'Overwatch Hacks Buyers Guide: What Matters in 2026',
 		intro:
-			'Shopping for Arc Raiders hacks? Use this checklist for ESP wallhack, Aimbot, radar, EAC maintenance, and license length — then cross-check the Arc Raiders Hacks pillar before checkout.',
-		keywords: ['Arc Raiders hacks', 'best Arc Raiders hacks', 'Arc Raiders Hacks', 'buyers guide', 'undetected'],
+			'Shopping for Overwatch hacks? Use this checklist for ESP wallhack, Aimbot, radar, anti-cheat maintenance, and license length — then cross-check the Overwatch Hacks pillar before checkout.',
+		keywords: ['Overwatch hacks', 'best Overwatch hacks', 'Overwatch Hacks', 'buyers guide', 'undetected'],
 		imageAlt: 'Rust cheats buyers guide checklist for ESP Aimbot and pricing',
 		sections: [
 			{
 				h2: 'Buyer checklist before you pay',
 				paragraphs: [
-					'Confirm Windows PC support, EAC maintenance cadence, ESP + Aimbot + radar in one license, clear pricing, and a live Updates log. Skip tools that only ship a wallhack with no rebuild notes.',
-					'Primary commercial pages: <a href="/arc-raiders-hacks/">best Rust cheats</a>, <a href="/arc-raiders-hacks/">cheats 2026</a>, and <a href="/arc-raiders-hacks/">Arc Raiders Hacks</a> (hacks is the main brand keyword).',
+					'Confirm Windows PC support, anti-cheat maintenance cadence, ESP + Aimbot + radar in one license, clear pricing, and a live Updates log. Skip tools that only ship a wallhack with no rebuild notes.',
+					'Primary commercial pages: <a href="/overwatch-hacks/">best Rust cheats</a>, <a href="/overwatch-hacks/">cheats 2026</a>, and <a href="/overwatch-hacks/">Overwatch Hacks</a> (hacks is the main brand keyword).',
 				],
 			},
 			{
 				h2: 'Hacks vs cheats wording',
 				paragraphs: [
-					'Arc Raiders Hacks and Arc Raiders hacks describe the same product category for most searchers. We lead with hacks on arcraidershacks.net while keeping cheats pages for buyers who use that query.',
+					'Overwatch Hacks and Overwatch hacks describe the same product category for most searchers. We lead with hacks on overwatchhacks.com while keeping cheats pages for buyers who use that query.',
 					`Balance and anti-cheat reality still come from ${EXT.epic}. Product rebuild timing is on our <a href="/updates/">Updates</a> page.`,
 				],
 			},
 			{
 				h2: 'Feature pages worth opening',
 				paragraphs: [
-					'Open <a href="/arc-raiders-esp/">ESP</a>, <a href="/arc-raiders-aimbot/">Aimbot</a>, <a href="/features/">Features</a>, and <a href="/pricing/">Pricing</a> before you buy. Delivery and activation steps live on <a href="/setup/">Setup</a>.',
-					'Related reading: <a href="/blog/arc-raiders-hacks-complete-guide-2026/">hacks complete guide</a> and <a href="/blog/arc-raiders-hacks-2026-whats-new/">cheats 2026 what\'s new</a>.',
+					'Open <a href="/overwatch-esp/">ESP</a>, <a href="/overwatch-aimbot/">Aimbot</a>, <a href="/features/">Features</a>, and <a href="/pricing/">Pricing</a> before you buy. Delivery and activation steps live on <a href="/setup/">Setup</a>.',
+					'Related reading: <a href="/blog/overwatch-hacks-complete-guide-2026/">hacks complete guide</a> and <a href="/blog/overwatch-hacks-2026-whats-new/">cheats 2026 what\'s new</a>.',
 					'Try This Today: Write your must-have list (ESP categories, Aimbot smoothness, lifetime vs monthly), then compare against Features once.',
 				],
 			},
 		],
 	},
 	{
-		id: 'rust-cheats-2026-whats-new',
+		id: 'overwatch-cheats-2026-whats-new',
 		imageKey: 'hero',
 		published: '2026-07-28',
 		updated: '2026-08-01',
-		category: 'Arc Raiders Hacks',
+		category: 'Overwatch Hacks',
 		featured: false,
-		slug: 'rust-cheats-2026-whats-new',
-		title: 'Arc Raiders Hacks 2026: What Changed This Year',
+		slug: 'overwatch-cheats-2026-whats-new',
+		title: 'Overwatch Hacks 2026: What Changed This Year',
 		metaDescription:
-			'Rust cheats 2026 overview — ESP boxes, soft aim, and cloud DMA for PC and controllers with EAC maintenance. Pair with the hacks pillar before buying.',
-		h1: 'Arc Raiders Hacks 2026: What Buyers Need Now',
+			'Rust cheats 2026 overview — ESP boxes, soft aim, and cloud DMA for PC and controllers with anti-cheat maintenance. Pair with the hacks pillar before buying.',
+		h1: 'Overwatch Hacks 2026: What Buyers Need Now',
 		intro:
-			'Rust cheats 2026 searches spike every season. Here is what still matters: maintained ESP wallhack, Aimbot profiles, radar awareness, and rebuilds after Easy Anti-Cheat patches.',
-		keywords: ['Arc Raiders hacks 2026', 'Arc Raiders Hacks', 'eac', 'esp', 'aimbot'],
+			'Rust cheats 2026 searches spike every season. Here is what still matters: maintained ESP wallhack, Aimbot profiles, radar awareness, and rebuilds after Blizzard anti-cheat patches.',
+		keywords: ['Overwatch hacks 2026', 'Overwatch Hacks', 'eac', 'esp', 'aimbot'],
 		imageAlt: 'Rust cheats 2026 overview for undetected ESP and Aimbot buyers',
 		sections: [
 			{
 				h2: 'Why 2026 buyers still need maintenance',
 				paragraphs: [
 					'Season maps, weapons, and EAC updates still break stale tools. A 2026-ready package publishes rebuild notes — not a frozen prior-year build.',
-					`Track official messaging on ${EXT.rust}, then confirm product status on <a href="/updates/">Updates</a> and <a href="/arc-raiders-hacks/">the cheats 2026 landing</a>.`,
+					`Track official messaging on ${EXT.rust}, then confirm product status on <a href="/updates/">Updates</a> and <a href="/overwatch-hacks/">the cheats 2026 landing</a>.`,
 				],
 			},
 			{
 				h2: 'Keyword map: cheats 2026 ↔ hacks',
 				paragraphs: [
-					'Use the <a href="/arc-raiders-hacks/">Rust cheats 2026 guide</a> for cheats-year intent and the <a href="/arc-raiders-hacks/">Arc Raiders Hacks pillar page</a> for the primary hacks intent. Both point to the same ESP + Aimbot + radar stack.',
-					'Also see <a href="/blog/arc-raiders-hacks-complete-guide-2026/">hacks guide</a> and <a href="/arc-raiders-hacks/">undetected status</a>.',
+					'Use the <a href="/overwatch-hacks/">Rust cheats 2026 guide</a> for cheats-year intent and the <a href="/overwatch-hacks/">Overwatch Hacks pillar page</a> for the primary hacks intent. Both point to the same ESP + Aimbot + radar stack.',
+					'Also see <a href="/blog/overwatch-hacks-complete-guide-2026/">hacks guide</a> and <a href="/overwatch-hacks/">undetected status</a>.',
 				],
 			},
 			{
@@ -503,114 +503,114 @@ const sources = [
 		],
 	},
 	{
-		id: 'rust-aimbot-settings-guide',
+		id: 'overwatch-aimbot-settings-guide',
 		imageKey: 'aimbotCombat',
 		published: '2026-07-26',
 		updated: '2026-08-01',
 		category: 'Aimbot',
 		featured: false,
-		slug: 'rust-aimbot-settings-guide',
+		slug: 'overwatch-aimbot-settings-guide',
 		title: 'Rust Aimbot Settings: Smooth FOV Guide',
 		metaDescription:
 			'Rust aimbot settings for PC and controllers — soft aim, FOV, bone priority, and per-weapon profiles. Tune assist, then review the hacks pages.',
 		h1: 'Rust Aimbot Settings: Smoothness, FOV & Soft Aim',
 		intro:
-			'Configure Rust Aimbot without snapping every fight. This guide covers smoothness, FOV, bone priority, per-weapon profiles, and how Aimbot fits into Arc Raiders Hacks packages.',
-		keywords: ['rust aimbot', 'aimbot settings', 'soft aim', 'Arc Raiders Hacks', 'fov'],
+			'Configure Rust Aimbot without snapping every fight. This guide covers smoothness, FOV, bone priority, per-weapon profiles, and how Aimbot fits into Overwatch Hacks packages.',
+		keywords: ['rust aimbot', 'aimbot settings', 'soft aim', 'Overwatch Hacks', 'fov'],
 		imageAlt: 'Rust Aimbot settings guide for smoothness FOV and bone priority',
 		sections: [
 			{
 				h2: 'Start conservative, then tune',
 				paragraphs: [
-					'Begin with moderate FOV and higher smoothness. Instant-snap configs look unnatural and are harder to control in monuments peeks. Hotkeys let you disable Aimbot mid-match.',
-					'Full control list: <a href="/arc-raiders-aimbot/">Rust Aimbot</a>, <a href="/arc-raiders-aimbot/">aimbot hack</a>, and <a href="/arc-raiders-aimbot/">soft aim</a>.',
+					'Begin with moderate FOV and higher smoothness. Instant-snap configs look unnatural and are harder to control in control points peeks. Hotkeys let you disable Aimbot mid-match.',
+					'Full control list: <a href="/overwatch-aimbot/">Rust Aimbot</a>, <a href="/overwatch-aimbot/">aimbot hack</a>, and <a href="/overwatch-aimbot/">soft aim</a>.',
 				],
 			},
 			{
 				h2: 'Pair Aimbot with ESP and radar',
 				paragraphs: [
-					'Aimbot alone does not solve rotations. Pair with <a href="/arc-raiders-esp/">ESP</a> and <a href="/arc-raiders-radar/">radar</a> inside the <a href="/arc-raiders-hacks/">Arc Raiders Hacks</a> package.',
+					'Aimbot alone does not solve rotations. Pair with <a href="/overwatch-esp/">ESP</a> and <a href="/overwatch-radar/">radar</a> inside the <a href="/overwatch-hacks/">Overwatch Hacks</a> package.',
 					`Weapon balance shifts on ${EXT.rust} — revisit FOV after combat patches.`,
 				],
 			},
 			{
 				h2: 'EAC notes and next steps',
 				paragraphs: [
-					'After Easy Anti-Cheat patches, confirm Aimbot modules on <a href="/updates/">Updates</a>. Background: <a href="/arc-raiders-hacks/">EAC guide</a>.',
+					'After Blizzard anti-cheat patches, confirm Aimbot modules on <a href="/updates/">Updates</a>. Background: <a href="/overwatch-hacks/">EAC guide</a>.',
 					'Try This Today: Create separate AR and SMG profiles, play five games, then adjust only one slider per session.',
 				],
 			},
 		],
 	},
 	{
-		id: 'rust-esp-wallhack-explained',
+		id: 'overwatch-esp-wallhack-explained',
 		imageKey: 'espWallhack',
 		published: '2026-07-24',
 		updated: '2026-08-01',
 		category: 'ESP & Wallhack',
 		featured: false,
-		slug: 'rust-esp-wallhack-explained',
+		slug: 'overwatch-esp-wallhack-explained',
 		title: 'Rust ESP & Wallhack Explained Clearly',
 		metaDescription:
-			'Rust ESP and wallhack explained — player boxes, loot markers, and distance readouts for PC and controllers. Learn overlays on the hacks pages.',
+			'Rust ESP and wallhack explained — player boxes, health pack markers, and distance readouts for PC and controllers. Learn overlays on the hacks pages.',
 		h1: 'Rust ESP and Wallhack Explained',
 		intro:
-			'Rust ESP (wallhack) shows players, loot, and threats through terrain. Here is how overlays work, what to toggle, and how ESP fits into Arc Raiders Hacks and Arc Raiders hacks packages.',
-		keywords: ['rust esp', 'rust wallhack', 'esp hack', 'Arc Raiders Hacks', 'loot esp'],
+			'Rust ESP (wallhack) shows players, loot, and threats through terrain. Here is how overlays work, what to toggle, and how ESP fits into Overwatch Hacks and Overwatch hacks packages.',
+		keywords: ['rust esp', 'rust wallhack', 'esp hack', 'Overwatch Hacks', 'loot esp'],
 		imageAlt: 'Rust ESP wallhack explained with player and loot overlays',
 		sections: [
 			{
 				h2: 'ESP categories that matter in BR',
 				paragraphs: [
-					'Toggle enemy outlines, loot/chest pins, vehicle cues, and distance readouts. Too many overlays create noise — keep BR-critical categories on during rotations.',
-					'Landings: <a href="/arc-raiders-esp/">Rust ESP</a>, <a href="/arc-raiders-wallhack/">wallhack</a>, <a href="/arc-raiders-esp/">ESP hack</a>.',
+					'Toggle enemy outlines, loot/chest pins, vehicle cues, and distance readouts. Too many overlays create noise — keep ranked-critical categories on during rotations.',
+					'Landings: <a href="/overwatch-esp/">Rust ESP</a>, <a href="/overwatch-wallhack/">wallhack</a>, <a href="/overwatch-esp/">ESP hack</a>.',
 				],
 			},
 			{
 				h2: 'Wallhack vs radar vs Aimbot',
 				paragraphs: [
-					'Wallhack/ESP is line-of-sight information through walls. Radar covers off-screen flanks. Aimbot is combat assist. The <a href="/arc-raiders-hacks/">hacks pillar</a> bundles all three.',
+					'Wallhack/ESP is line-of-sight information through walls. Radar covers off-screen flanks. Aimbot is combat assist. The <a href="/overwatch-hacks/">hacks pillar</a> bundles all three.',
 					`Map and loot systems evolve with ${EXT.epic} seasons — toggleable categories stay useful when POIs rotate.`,
 				],
 			},
 			{
 				h2: 'Undetected ESP maintenance',
 				paragraphs: [
-					'ESP modules rebuild with the package after EAC patches. Check <a href="/updates/">Updates</a> and <a href="/arc-raiders-hacks/">undetected status</a> before ranked blocks.',
-					'Try This Today: Enable player + loot ESP only for ten games, then add radar range once your eyes adjust.',
+					'ESP modules rebuild with the package after anti-cheat patches. Check <a href="/updates/">Updates</a> and <a href="/overwatch-hacks/">undetected status</a> before ranked blocks.',
+					'Try This Today: Enable player + health pack ESP only for ten games, then add radar range once your eyes adjust.',
 				],
 			},
 		],
 	},
 	{
-		id: 'undetected-rust-hacks-eac',
+		id: 'undetected-overwatch-hacks-eac',
 		imageKey: 'rebootFight',
 		published: '2026-07-22',
 		updated: '2026-08-01',
 		category: 'Undetected & EAC',
 		featured: true,
-		slug: 'undetected-rust-hacks-eac',
-		title: 'Undetected Arc Raiders Hacks & EAC Reality',
+		slug: 'undetected-overwatch-hacks-eac',
+		title: 'Undetected Overwatch Hacks & EAC Reality',
 		metaDescription:
-			'Undetected Arc Raiders Hacks and EAC reality — ESP boxes, soft aim, and cloud DMA rebuilds for PC and controllers. Check Updates before queueing post-patch.',
-		h1: 'Undetected Arc Raiders Hacks and Easy Anti-Cheat Reality',
+			'Undetected Overwatch Hacks and EAC reality — ESP boxes, soft aim, and cloud DMA rebuilds for PC and controllers. Check Updates before queueing post-patch.',
+		h1: 'Undetected Overwatch Hacks and Blizzard anti-cheat Reality',
 		intro:
-			'Undetected Arc Raiders Hacks mean active EAC maintenance — not a forever guarantee. Learn the patch-day workflow, where to check status, and how hacks/cheats pages fit together.',
-		keywords: ['undetected Arc Raiders Hacks', 'eac', 'Arc Raiders Hacks', 'Arc Raiders hacks', 'maintenance'],
-		imageAlt: 'Undetected Arc Raiders Hacks and Easy Anti-Cheat maintenance workflow',
+			'Undetected Overwatch Hacks mean active anti-cheat maintenance — not a forever guarantee. Learn the patch-day workflow, where to check status, and how hacks/cheats pages fit together.',
+		keywords: ['undetected Overwatch Hacks', 'eac', 'Overwatch Hacks', 'Overwatch hacks', 'maintenance'],
+		imageAlt: 'Undetected Overwatch Hacks and Blizzard anti-cheat maintenance workflow',
 		sections: [
 			{
 				h2: 'What undetected really means',
 				paragraphs: [
-					'Undetected Arc Raiders Hacks are rebuilt when Easy Anti-Cheat or Rust client patches change detection surface. Permanent undetected claims are marketing fiction.',
-					'Status pages: <a href="/updates/">Updates</a>, <a href="/arc-raiders-hacks/">undetected guide</a>, <a href="/arc-raiders-hacks/">EAC bypass</a>.',
+					'Undetected Overwatch Hacks are rebuilt when Blizzard anti-cheat or Rust client patches change detection surface. Permanent undetected claims are marketing fiction.',
+					'Status pages: <a href="/updates/">Updates</a>, <a href="/overwatch-hacks/">undetected guide</a>, <a href="/overwatch-hacks/">anti-cheat bypass</a>.',
 				],
 			},
 			{
 				h2: 'Patch-day workflow',
 				paragraphs: [
 					`Check ${EXT.status} for Epic health, wait for our Updates note, then launch. If services are degraded, do not assume the hack failed.`,
-					'Commercial entry points: <a href="/arc-raiders-hacks/">Arc Raiders Hacks</a> and <a href="/arc-raiders-hacks/">Arc Raiders hacks 2026</a>.',
+					'Commercial entry points: <a href="/overwatch-hacks/">Overwatch Hacks</a> and <a href="/overwatch-hacks/">Overwatch hacks 2026</a>.',
 				],
 			},
 			{
@@ -623,44 +623,44 @@ const sources = [
 		],
 	},
 	{
-		id: 'rust-hacks-vs-cheatvault',
+		id: 'overwatch-hacks-vs-cheatvault',
 		imageKey: 'cheatsPackage',
 		published: '2026-07-15',
 		updated: '2026-08-01',
 		category: 'Comparisons',
 		featured: true,
-		slug: 'rust-hacks-vs-cheatvault-comparison',
-		title: 'Arc Raiders Hacks vs CheatVault: Honest 2026 Comparison',
+		slug: 'overwatch-hacks-vs-cheatvault-comparison',
+		title: 'Overwatch Hacks vs CheatVault: Honest 2026 Comparison',
 		metaDescription:
-			'Arc Raiders Hacks vs CheatVault compared — pricing, ESP boxes, soft aim, cloud DMA, EAC detection history, and which package fits BR players in 2026.',
-		h1: 'Arc Raiders Hacks vs CheatVault: Honest Comparison',
+			'Overwatch Hacks vs CheatVault compared — pricing, ESP boxes, soft aim, cloud DMA, EAC detection history, and which package fits BR players in 2026.',
+		h1: 'Overwatch Hacks vs CheatVault: Honest Comparison',
 		intro:
-			'I ran both CheatVault and Arc Raiders Hacks through the same ranked block last season. Here is the straight comparison — price, features, patch-day behavior, and where each one actually wins.',
-		keywords: ['Arc Raiders Hacks vs cheatvault', 'cheatvault comparison', 'Arc Raiders hacks', 'esp', 'eac', 'pricing'],
-		imageAlt: 'Arc Raiders Hacks vs CheatVault feature and pricing comparison for 2026',
+			'I ran both CheatVault and Overwatch Hacks through the same ranked block last season. Here is the straight comparison — price, features, patch-day behavior, and where each one actually wins.',
+		keywords: ['Overwatch Hacks vs cheatvault', 'cheatvault comparison', 'Overwatch hacks', 'esp', 'eac', 'pricing'],
+		imageAlt: 'Overwatch Hacks vs CheatVault feature and pricing comparison for 2026',
 		sections: [
 			{
 				h2: 'Why I compared these two in the first place',
 				paragraphs: [
-					'CheatVault shows up in almost every Rust cheat thread alongside Arc Raiders Hacks. Both promise ESP, aim assist, and undetected status. Both list monthly and lifetime tiers. On paper they look identical — which is exactly why buyers get burned picking the wrong one.',
-					'I kept CheatVault for about six weeks in Chapter 7 Season 2, then switched to Arc Raiders Hacks for the back half of the season. Same PC, same sens, mostly monuments and some ranked squads. This is not a sponsored post — just what I noticed when I stopped reading feature bullets and started tracking patch days.',
-					'Fair warning: neither tool makes you invincible. Epic\'s Easy Anti-Cheat still updates. Your account still carries ban risk. This comparison is about which package maintained better and which features I actually used in BR — not which one guarantees wins.',
+					'CheatVault shows up in almost every Rust cheat thread alongside Overwatch Hacks. Both promise ESP, aim assist, and undetected status. Both list monthly and lifetime tiers. On paper they look identical — which is exactly why buyers get burned picking the wrong one.',
+					'I kept CheatVault for about six weeks in Season 16 Season 2, then switched to Overwatch Hacks for the back half of the season. Same PC, same sens, mostly control points and some ranked squads. This is not a sponsored post — just what I noticed when I stopped reading feature bullets and started tracking patch days.',
+					'Fair warning: neither tool makes you invincible. Epic\'s Blizzard anti-cheat still updates. Your account still carries ban risk. This comparison is about which package maintained better and which features I actually used in BR — not which one guarantees wins.',
 				],
 			},
 			{
 				h2: 'Price breakdown — monthly, lifetime, and hidden costs',
 				paragraphs: [
-					'Arc Raiders Hacks lists $35/month and $150 lifetime on the <a href="/pricing/">pricing page</a>. CheatVault was $42/month and $189 lifetime when I subscribed — prices shift, but CheatVault has consistently sat 15–20% higher in the tiers I saw.',
-					'CheatVault\'s lifetime looks cheaper than three years of monthly until you factor downtime. I lost nine days total waiting on CheatVault rebuilds after two EAC patches. Arc Raiders Hacks had two patch windows where I waited roughly 24–36 hours each. If you play daily, downtime has a real cost even if the sub fee is lower.',
-					'Both deliver digitally. Neither includes hardware. If you want cloud DMA on Arc Raiders Hacks, you already own or plan to buy compatible hardware — same story for CheatVault\'s DMA tier, which is a separate upsell above their standard sub.',
+					'Overwatch Hacks lists $35/month and $150 lifetime on the <a href="/pricing/">pricing page</a>. CheatVault was $42/month and $189 lifetime when I subscribed — prices shift, but CheatVault has consistently sat 15–20% higher in the tiers I saw.',
+					'CheatVault\'s lifetime looks cheaper than three years of monthly until you factor downtime. I lost nine days total waiting on CheatVault rebuilds after two anti-cheat patches. Overwatch Hacks had two patch windows where I waited roughly 24–36 hours each. If you play daily, downtime has a real cost even if the sub fee is lower.',
+					'Both deliver digitally. Neither includes hardware. If you want cloud DMA on Overwatch Hacks, you already own or plan to buy compatible hardware — same story for CheatVault\'s DMA tier, which is a separate upsell above their standard sub.',
 				],
 			},
 			{
 				h2: 'Feature table — ESP, soft aim, radar, and cloud DMA',
 				paragraphs: [
-					'<table><thead><tr><th>Feature</th><th>Arc Raiders Hacks</th><th>CheatVault</th></tr></thead><tbody><tr><td>Player ESP boxes</td><td>Yes, toggleable categories</td><td>Yes, fewer colour options</td></tr><tr><td>Loot / chest markers</td><td>Yes + distance readouts</td><td>Yes, no distance on loot</td></tr><tr><td>2D radar</td><td>Yes, configurable range</td><td>Yes, fixed size</td></tr><tr><td>Soft aim / Aimbot profiles</td><td>Per-weapon slots</td><td>Global + one profile</td></tr><tr><td>Controller support</td><td>Supported</td><td>Listed, awkward menu UX</td></tr><tr><td>Cloud DMA option</td><td>Included path in package</td><td>Premium tier add-on</td></tr><tr><td>In-client mod menu</td><td>Yes</td><td>Yes, heavier overlay</td></tr></tbody></table>',
-					'Arc Raiders Hacks wins on toggles and profile flexibility. I run ESP boxes + loot markers in early game, then drop loot categories after first AR. CheatVault\'s overlay felt busier — fine if you want everything on, noisy if you play ranked and need clean screen space.',
-					'Soft aim mattered more than I expected in monuments. Arc Raiders Hacks let me run a low-FOV Hammer AR profile and a separate SMG profile for box fights. CheatVault\'s single-profile setup worked, but I was constantly retuning mid-session.',
+					'<table><thead><tr><th>Feature</th><th>Overwatch Hacks</th><th>CheatVault</th></tr></thead><tbody><tr><td>Player ESP boxes</td><td>Yes, toggleable categories</td><td>Yes, fewer colour options</td></tr><tr><td>Loot / chest markers</td><td>Yes + distance readouts</td><td>Yes, no distance on loot</td></tr><tr><td>2D radar</td><td>Yes, configurable range</td><td>Yes, fixed size</td></tr><tr><td>Soft aim / Aimbot profiles</td><td>Per-weapon slots</td><td>Global + one profile</td></tr><tr><td>Controller support</td><td>Supported</td><td>Listed, awkward menu UX</td></tr><tr><td>Cloud DMA option</td><td>Included path in package</td><td>Premium tier add-on</td></tr><tr><td>In-client mod menu</td><td>Yes</td><td>Yes, heavier overlay</td></tr></tbody></table>',
+					'Overwatch Hacks wins on toggles and profile flexibility. I run ESP boxes + health pack markers in early game, then drop loot categories after first AR. CheatVault\'s overlay felt busier — fine if you want everything on, noisy if you play ranked and need clean screen space.',
+					'Soft aim mattered more than I expected in control points. Overwatch Hacks let me run a low-FOV Hammer AR profile and a separate SMG profile for box fights. CheatVault\'s single-profile setup worked, but I was constantly retuning mid-session.',
 				],
 			},
 			{
@@ -668,13 +668,13 @@ const sources = [
 				paragraphs: [
 					'Both brands had public downtime after major EAC updates in 2026 — anyone claiming zero detection events is lying. The difference is communication and rebuild speed.',
 					'CheatVault\'s Discord would go quiet for 48–72 hours after big patches. No ETA, just "working on it." I know two players in my stack who got flagged during a CheatVault lag window between patch and rebuild — could\'ve been coincidence, but it shook my confidence.',
-					'Arc Raiders Hacks posts on the <a href="/updates/">Updates page</a> within hours on patch mornings. Last major EAC update I tracked: status note same day, rebuild live roughly 30 hours later. Still annoying, but predictable. See also our <a href="/blog/undetected-arc-raiders-hacks-eac/">EAC reality guide</a> for the workflow I use before queueing.',
+					'Overwatch Hacks posts on the <a href="/updates/">Updates page</a> within hours on patch mornings. Last major EAC update I tracked: status note same day, rebuild live roughly 30 hours later. Still annoying, but predictable. See also our <a href="/blog/undetected-overwatch-hacks-eac/">EAC reality guide</a> for the workflow I use before queueing.',
 				],
 			},
 			{
 				h2: 'Where CheatVault still wins',
 				paragraphs: [
-					'Credit where it\'s due: CheatVault\'s Discord community is larger. More clip sharing, more config screenshots. If you learn best from crowd-sourced settings, that social layer helps — Arc Raiders Hacks support answered faster for me, but the community volume is smaller.',
+					'Credit where it\'s due: CheatVault\'s Discord community is larger. More clip sharing, more config screenshots. If you learn best from crowd-sourced settings, that social layer helps — Overwatch Hacks support answered faster for me, but the community volume is smaller.',
 					'CheatVault also bundles a standalone replay-style overlay tool in their premium tier. I did not use it much, but content creators might value the extra capture layer.',
 					'If you only play once or twice a week and just want basic ESP without caring about patch ETAs, CheatVault\'s feature floor is fine. Casual cadence hides downtime pain.',
 				],
@@ -682,9 +682,9 @@ const sources = [
 			{
 				h2: 'Verdict — who should pick which',
 				paragraphs: [
-					'Pick Arc Raiders Hacks if you play ranked or monuments multiple times a week, want per-weapon soft aim profiles, care about cloud DMA without a second upsell, and want a public Updates log before you launch after patches.',
+					'Pick Overwatch Hacks if you play ranked or control points multiple times a week, want per-weapon soft aim profiles, care about cloud DMA without a second upsell, and want a public Updates log before you launch after patches.',
 					'Pick CheatVault if community size matters more than rebuild transparency, you want the premium capture extras, and you do not mind paying slightly more for a similar core stack.',
-					'Try This Today: Write down your must-haves (ESP categories, radar size, controller, DMA). Open <a href="/features/">Features</a> and CheatVault\'s list side by side, then check both Updates channels before the next Epic patch. For the full Arc Raiders Hacks stack overview, start at <a href="/arc-raiders-hacks/">Arc Raiders Hacks</a>.',
+					'Try This Today: Write down your must-haves (ESP categories, radar size, controller, DMA). Open <a href="/features/">Features</a> and CheatVault\'s list side by side, then check both Updates channels before the next Epic patch. For the full Overwatch Hacks stack overview, start at <a href="/overwatch-hacks/">Overwatch Hacks</a>.',
 				],
 			},
 		],
@@ -696,29 +696,29 @@ const sources = [
 		updated: '2026-08-01',
 		category: 'Comparisons',
 		featured: false,
-		slug: 'elitefn-vs-rust-hacks-two-week-test',
+		slug: 'elitefn-vs-overwatch-hacks-two-week-test',
 		title: 'I Tried EliteFN for 2 Weeks Before Switching',
 		metaDescription:
-			'EliteFN vs Arc Raiders Hacks — a two-week test of ESP, soft aim, controller support, EAC downtime, and pricing before switching packages in 2026.',
-		h1: 'I Tried EliteFN for 2 Weeks Before Switching to Arc Raiders Hacks',
+			'EliteFN vs Overwatch Hacks — a two-week test of ESP, soft aim, controller support, EAC downtime, and pricing before switching packages in 2026.',
+		h1: 'I Tried EliteFN for 2 Weeks Before Switching to Overwatch Hacks',
 		intro:
-			'EliteFN was the popular pick in my squad\'s Discord. I gave it fourteen days — same hardware, same playlists — then moved to Arc Raiders Hacks. This is what actually differed.',
-		keywords: ['elitefn vs Arc Raiders Hacks', 'elitefn review', 'Arc Raiders hacks comparison', 'soft aim', 'esp boxes'],
-		imageAlt: 'EliteFN vs Arc Raiders Hacks two week comparison test for Arc Raiders cheats',
+			'EliteFN was the popular pick in my squad\'s Discord. I gave it fourteen days — same hardware, same playlists — then moved to Overwatch Hacks. This is what actually differed.',
+		keywords: ['elitefn vs Overwatch Hacks', 'elitefn review', 'Overwatch hacks comparison', 'soft aim', 'esp boxes'],
+		imageAlt: 'EliteFN vs Overwatch Hacks two week comparison test for Overwatch cheats',
 		sections: [
 			{
 				h2: 'Week one — setup, first impressions, and the menu learning curve',
 				paragraphs: [
-					'EliteFN delivery was fast — key in email within twenty minutes. Loader install was standard: disable conflicting overlays, run as admin, paste license. Took about twenty-five minutes my first time, same ballpark as Arc Raiders Hacks later.',
+					'EliteFN delivery was fast — key in email within twenty minutes. Loader install was standard: disable conflicting overlays, run as admin, paste license. Took about twenty-five minutes my first time, same ballpark as Overwatch Hacks later.',
 					'EliteFN\'s menu looked cleaner on screenshots. In game, I spent two evenings just mapping toggles. ESP categories are nested one level deeper than I liked. Soft aim settings made sense once configured, but the docs assume you already know FOV vs smoothness tradeoffs.',
-					'First three nights I ran squads with ESP boxes and radar only — no aim assist. EliteFN visibility was good. Player outlines readable at mid range. Loot ESP existed but felt an afterthought compared to player ESP. I died plenty; the tool did its info job fine.',
+					'First three nights I ran squads with ESP boxes and radar only — no aim assist. EliteFN visibility was good. Player outlines readable at mid range. Health pack ESP existed but felt an afterthought compared to player ESP. I died plenty; the tool did its info job fine.',
 				],
 			},
 			{
 				h2: 'Soft aim, weapons, and controller testing',
 				paragraphs: [
-					'Week one weekend I enabled soft aim with a conservative FOV. Worked on AR and SMG in monuments. Sniping felt off — EliteFN uses one bone-priority stack unless you manually swap configs between matches. Doable, not great for my play style.',
-					'I play controller two nights a week. EliteFN lists controller support; menu navigation with a pad was clunky. Arc Raiders Hacks later felt similar on pad menus honestly — neither is perfect — but EliteFN had no suggested controller baseline in docs. I wasted time guessing.',
+					'Week one weekend I enabled soft aim with a conservative FOV. Worked on AR and SMG in control points. Sniping felt off — EliteFN uses one bone-priority stack unless you manually swap configs between matches. Doable, not great for my play style.',
+					'I play controller two nights a week. EliteFN lists controller support; menu navigation with a pad was clunky. Overwatch Hacks later felt similar on pad menus honestly — neither is perfect — but EliteFN had no suggested controller baseline in docs. I wasted time guessing.',
 					'Hammer AR tracking at 40–50m was the benchmark test. EliteFN smooth aim was slightly snappier out of box. Snappier sounds good until you watch replay clips and notice the robotic corrections. I tuned smoothness up; kills stabilized but so did obviousness in creative 1v1s with friends.',
 				],
 			},
@@ -727,98 +727,98 @@ const sources = [
 				paragraphs: [
 					'Day eleven hit a Rust + EAC patch. Standard for any cheat user. EliteFN status channel said "investigating." No ETA. I skipped ranked for two days waiting — squad moved on without me.',
 					'Day thirteen a rebuild dropped. Loaded in, played two pubs, crashed once, relaunched fine. Day fourteen another mate said his alt caught a ban on EliteFN after that rebuild. Unverified story, but combined with downtime it was my cue to bail.',
-					'I switched to Arc Raiders Hacks lifetime partly because of the <a href="/updates/">Updates</a> cadence — I wanted patch notes in writing, not Discord rumor. Not saying EliteFN is a scam; plenty of players still run it. It just did not match my tolerance for silent patch windows.',
+					'I switched to Overwatch Hacks lifetime partly because of the <a href="/updates/">Updates</a> cadence — I wanted patch notes in writing, not Discord rumor. Not saying EliteFN is a scam; plenty of players still run it. It just did not match my tolerance for silent patch windows.',
 				],
 			},
 			{
 				h2: 'Side-by-side after switching — what improved',
 				paragraphs: [
-					'Arc Raiders Hacks ESP let me toggle loot and chest markers independently — huge for off-spawn routes without cluttering endgame. Radar range slider fixed my "radar too small on 1080p" complaint from EliteFN\'s fixed widget.',
+					'Overwatch Hacks ESP let me toggle loot and chest markers independently — huge for off-spawn routes without cluttering endgame. Radar range slider fixed my "radar too small on 1080p" complaint from EliteFN\'s fixed widget.',
 					'Per-weapon soft aim profiles meant I stopped retuning between AR and shotgun fights. Cloud DMA path was optional for my setup; I stayed on standard loader, but having DMA documented in one package beat EliteFN\'s "ask sales" flow.',
-					'Support reply time: EliteFN ticket answered in ~5 hours once. Arc Raiders Hacks support replied in ~2 hours when I asked about controller baseline settings. Small sample, but matched what I needed during setup week.',
+					'Support reply time: EliteFN ticket answered in ~5 hours once. Overwatch Hacks support replied in ~2 hours when I asked about controller baseline settings. Small sample, but matched what I needed during setup week.',
 				],
 			},
 			{
 				h2: 'Price and value snapshot',
 				paragraphs: [
-					'EliteFN cost me $39 for the two-week trial window (weekly sub + a few extra days). Arc Raiders Hacks monthly is $35; lifetime $150. If you hop tools every month, weekly pricing adds up fast.',
-					'Feature-per-dollar favors Arc Raiders Hacks for my use: combined ESP + radar + soft aim + rebuild notes in one license. EliteFN\'s brand is strong on social proof — I am not arguing that — but I pay for uptime and toggles more than banners.',
-					'Compare plans yourself on <a href="/pricing/">Pricing</a> and read the <a href="/blog/arc-raiders-hacks-vs-cheatvault-comparison/">CheatVault comparison</a> if you are still shopping three-wide.',
+					'EliteFN cost me $39 for the two-week trial window (weekly sub + a few extra days). Overwatch Hacks monthly is $35; lifetime $150. If you hop tools every month, weekly pricing adds up fast.',
+					'Feature-per-dollar favors Overwatch Hacks for my use: combined ESP + radar + soft aim + rebuild notes in one license. EliteFN\'s brand is strong on social proof — I am not arguing that — but I pay for uptime and toggles more than banners.',
+					'Compare plans yourself on <a href="/pricing/">Pricing</a> and read the <a href="/blog/overwatch-hacks-vs-cheatvault-comparison/">CheatVault comparison</a> if you are still shopping three-wide.',
 				],
 			},
 			{
 				h2: 'Would I recommend EliteFN to anyone?',
 				paragraphs: [
 					'Yes, with caveats. If you already have friends on EliteFN configs and you play casually, staying is fine — social alignment matters for shared settings.',
-					'If you are patch-sensitive, play ranked daily, or want granular ESP and weapon profiles, Arc Raiders Hacks fit me better after the two-week test. Your mileage varies; run your own patch-day checklist.',
-					'Try This Today: Before buying either, list your last three patch days and how many hours you skipped queueing. If downtime frustrates you, prioritize vendors with public Updates pages — then open <a href="/arc-raiders-hacks/">Arc Raiders Hacks</a> and <a href="/setup/">Setup</a> before checkout.',
+					'If you are patch-sensitive, play ranked daily, or want granular ESP and weapon profiles, Overwatch Hacks fit me better after the two-week test. Your mileage varies; run your own patch-day checklist.',
+					'Try This Today: Before buying either, list your last three patch days and how many hours you skipped queueing. If downtime frustrates you, prioritize vendors with public Updates pages — then open <a href="/overwatch-hacks/">Overwatch Hacks</a> and <a href="/setup/">Setup</a> before checkout.',
 				],
 			},
 		],
 	},
 	{
-		id: 'rust-hacks-vs-ghostware',
+		id: 'overwatch-hacks-vs-ghostware',
 		imageKey: 'espWallhack',
 		published: '2026-07-05',
 		updated: '2026-08-01',
 		category: 'Comparisons',
 		featured: false,
-		slug: 'rust-hacks-vs-ghostware-features-pricing',
-		title: 'Arc Raiders Hacks vs GhostWare: Features & Pricing',
+		slug: 'overwatch-hacks-vs-ghostware-features-pricing',
+		title: 'Overwatch Hacks vs GhostWare: Features & Pricing',
 		metaDescription:
-			'Arc Raiders Hacks vs GhostWare — feature tables, soft aim, ESP boxes, cloud DMA, controller support, EAC history, and honest pros/cons for 2026 buyers.',
-		h1: 'Arc Raiders Hacks vs GhostWare: Features, Pricing, and Detection Notes',
+			'Overwatch Hacks vs GhostWare — feature tables, soft aim, ESP boxes, cloud DMA, controller support, EAC history, and honest pros/cons for 2026 buyers.',
+		h1: 'Overwatch Hacks vs GhostWare: Features, Pricing, and Detection Notes',
 		intro:
-			'GhostWare markets hard on "stealth" branding. Arc Raiders Hacks markets on the full BR stack. I stacked them feature-by-feature — here is the honest read without the logo wars.',
-		keywords: ['ghostware vs Arc Raiders Hacks', 'ghostware rust', 'cheat comparison', 'esp boxes', 'cloud dma'],
-		imageAlt: 'Arc Raiders Hacks vs GhostWare features pricing and EAC comparison',
+			'GhostWare markets hard on "stealth" branding. Overwatch Hacks markets on the full BR stack. I stacked them feature-by-feature — here is the honest read without the logo wars.',
+		keywords: ['ghostware vs Overwatch Hacks', 'ghostware rust', 'cheat comparison', 'esp boxes', 'cloud dma'],
+		imageAlt: 'Overwatch Hacks vs GhostWare features pricing and EAC comparison',
 		sections: [
 			{
 				h2: 'Two different philosophies — minimal vs full-stack',
 				paragraphs: [
-					'GhostWare sells a slimmer Rust module: ESP-focused with light aim assist, fewer toggles, lower price entry. Arc Raiders Hacks bundles ESP wallhack, radar, soft aim profiles, controller paths, and cloud DMA documentation in one undetected license.',
+					'GhostWare sells a slimmer Rust module: ESP-focused with light aim assist, fewer toggles, lower price entry. Overwatch Hacks bundles ESP wallhack, radar, soft aim profiles, controller paths, and cloud DMA documentation in one undetected license.',
 					'Neither approach is wrong. Minimal tools break less surface area in theory. Full-stack tools win when you want one menu for ranked nights — visibility, flanks, and firefight assist without swapping executables.',
-					'I used GhostWare for ten days on an alt account while keeping Arc Raiders Hacks on main. Same monitor, same sens, different playlists to spread risk. Take ban risk seriously on any tool.',
+					'I used GhostWare for ten days on an alt account while keeping Overwatch Hacks on main. Same monitor, same sens, different playlists to spread risk. Take ban risk seriously on any tool.',
 				],
 			},
 			{
 				h2: 'Feature and pricing comparison table',
 				paragraphs: [
-					'<table><thead><tr><th></th><th>Arc Raiders Hacks</th><th>GhostWare</th></tr></thead><tbody><tr><td>Monthly price</td><td>$35</td><td>$28</td></tr><tr><td>Lifetime price</td><td>$150</td><td>$120</td></tr><tr><td>Player ESP boxes</td><td>Yes</td><td>Yes</td></tr><tr><td>Loot / chest ESP</td><td>Yes</td><td>Limited</td></tr><tr><td>2D radar</td><td>Yes</td><td>No</td></tr><tr><td>Soft aim profiles</td><td>Multiple weapon slots</td><td>Basic assist</td></tr><tr><td>Controller support</td><td>Yes</td><td>Partial</td></tr><tr><td>Cloud DMA path</td><td>Documented</td><td>Not offered</td></tr><tr><td>Public Updates log</td><td><a href="/updates/">Yes — public updates log</a></td><td>Discord only</td></tr></tbody></table>',
-					'GhostWare is cheaper on sticker price. Arc Raiders Hacks includes radar and richer loot ESP — features I use every session. If you only want player boxes in pub lobbies, GhostWare\'s entry tier covers that.',
-					'Lifetime math: GhostWare $120 vs Arc Raiders Hacks $150. The $30 gap closes if you value radar and rebuild transparency. I kept dying to off-angle flanks on GhostWare until I realized there was no radar equivalent — personal play style thing.',
+					'<table><thead><tr><th></th><th>Overwatch Hacks</th><th>GhostWare</th></tr></thead><tbody><tr><td>Monthly price</td><td>$35</td><td>$28</td></tr><tr><td>Lifetime price</td><td>$150</td><td>$120</td></tr><tr><td>Player ESP boxes</td><td>Yes</td><td>Yes</td></tr><tr><td>Loot / chest ESP</td><td>Yes</td><td>Limited</td></tr><tr><td>2D radar</td><td>Yes</td><td>No</td></tr><tr><td>Soft aim profiles</td><td>Multiple weapon slots</td><td>Basic assist</td></tr><tr><td>Controller support</td><td>Yes</td><td>Partial</td></tr><tr><td>Cloud DMA path</td><td>Documented</td><td>Not offered</td></tr><tr><td>Public Updates log</td><td><a href="/updates/">Yes — public updates log</a></td><td>Discord only</td></tr></tbody></table>',
+					'GhostWare is cheaper on sticker price. Overwatch Hacks includes radar and richer health pack ESP — features I use every session. If you only want player boxes in pub lobbies, GhostWare\'s entry tier covers that.',
+					'Lifetime math: GhostWare $120 vs Overwatch Hacks $150. The $30 gap closes if you value radar and rebuild transparency. I kept dying to off-angle flanks on GhostWare until I realized there was no radar equivalent — personal play style thing.',
 				],
 			},
 			{
 				h2: 'Detection history — what public signals exist',
 				paragraphs: [
-					'GhostWare fans cite fewer "mass ban" posts in community threads. That is anecdotal — smaller user bases generate fewer posts by default. Arc Raiders Hacks had a visible rebuild cycle after the last major EAC push; GhostWare\'s Discord announced an update two days later.',
+					'GhostWare fans cite fewer "mass ban" posts in community threads. That is anecdotal — smaller user bases generate fewer posts by default. Overwatch Hacks had a visible rebuild cycle after the last major EAC push; GhostWare\'s Discord announced an update two days later.',
 					'No vendor publishes audited detection rates. Treat claims as marketing. My rule: if Updates or Discord status is silent 24h after an EAC patch, I do not queue on that tool.',
-					'Arc Raiders Hacks documents maintenance on <a href="/arc-raiders-hacks/">EAC bypass workflow</a> and the <a href="/arc-raiders-hacks/">undetected guide</a>. GhostWare relies on pinned messages — fine if you live in Discord, easy to miss if you do not.',
+					'Overwatch Hacks documents maintenance on <a href="/overwatch-hacks/">anti-cheat bypass workflow</a> and the <a href="/overwatch-hacks/">undetected guide</a>. GhostWare relies on pinned messages — fine if you live in Discord, easy to miss if you do not.',
 				],
 			},
 			{
-				h2: 'Gameplay feel — monuments and ranked squads',
+				h2: 'Gameplay feel — control points and ranked squads',
 				paragraphs: [
-					'GhostWare ESP boxes were crisp — arguably cleaner outline rendering on low settings PCs. Arc Raiders Hacks boxes offer more colour and distance data; busier but more informative in squad comms ("220m west" calls).',
-					'Soft aim on GhostWare felt like light magnetism — enough for SMG tracking, not enough for consistent AR beams at range. Arc Raiders Hacks soft aim took tuning time but held Hammer AR fights better once profiles were set.',
-					'Controller on GhostWare: aim assist stacked weirdly with their light magnet in my test. Arc Raiders Hacks suggested baseline FOV values in support docs; less guesswork.',
+					'GhostWare ESP boxes were crisp — arguably cleaner outline rendering on low settings PCs. Overwatch Hacks boxes offer more colour and distance data; busier but more informative in squad comms ("220m west" calls).',
+					'Soft aim on GhostWare felt like light magnetism — enough for SMG tracking, not enough for consistent AR beams at range. Overwatch Hacks soft aim took tuning time but held Hammer AR fights better once profiles were set.',
+					'Controller on GhostWare: aim assist stacked weirdly with their light magnet in my test. Overwatch Hacks suggested baseline FOV values in support docs; less guesswork.',
 				],
 			},
 			{
 				h2: 'Pros and cons summary',
 				paragraphs: [
-					'<strong>Arc Raiders Hacks pros:</strong> full ESP + radar + soft aim stack, per-weapon profiles, cloud DMA path, public Updates page, controller docs. <strong>Cons:</strong> higher price, menu takes ~20 minutes to learn, radar size could use more presets.',
-					'<strong>GhostWare pros:</strong> lower entry price, clean minimal ESP, quick to launch, smaller feature surface. <strong>Cons:</strong> no radar, limited loot ESP, patch status mostly in Discord, no DMA option, lighter aim tools.',
-					'Neither replaces game sense. Pair either with fundamentals — see our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">monuments aggression guide</a> and <a href="/blog/arc-raiders-hacks-complete-guide-2026/">complete hacks guide</a>.',
+					'<strong>Overwatch Hacks pros:</strong> full ESP + radar + soft aim stack, per-weapon profiles, cloud DMA path, public Updates page, controller docs. <strong>Cons:</strong> higher price, menu takes ~20 minutes to learn, radar size could use more presets.',
+					'<strong>GhostWare pros:</strong> lower entry price, clean minimal ESP, quick to launch, smaller feature surface. <strong>Cons:</strong> no radar, limited health pack ESP, patch status mostly in Discord, no DMA option, lighter aim tools.',
+					'Neither replaces game sense. Pair either with fundamentals — see our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">control points aggression guide</a> and <a href="/blog/overwatch-hacks-complete-guide-2026/">complete hacks guide</a>.',
 				],
 			},
 			{
 				h2: 'Which one should you buy?',
 				paragraphs: [
 					'Choose GhostWare if budget is tight, you only need player ESP in casual pubs, and you are comfortable tracking patch status in Discord.',
-					'Choose Arc Raiders Hacks if you want radar for flanks, loot markers for faster spawns, configurable soft aim, optional cloud DMA, and a single Updates URL to check after every Epic patch.',
-					'Try This Today: Decide whether radar and loot ESP are must-haves or nice-to-haves. If must-have, open <a href="/arc-raiders-esp/">ESP</a>, <a href="/arc-raiders-radar/">radar</a>, and <a href="/pricing/">Pricing</a>. If skipping radar saves you money and matches your style, GhostWare stays in the conversation — just do not skip patch-day checks on either tool.',
+					'Choose Overwatch Hacks if you want radar for flanks, health pack markers for faster spawns, configurable soft aim, optional cloud DMA, and a single Updates URL to check after every Epic patch.',
+					'Try This Today: Decide whether radar and health pack ESP are must-haves or nice-to-haves. If must-have, open <a href="/overwatch-esp/">ESP</a>, <a href="/overwatch-radar/">radar</a>, and <a href="/pricing/">Pricing</a>. If skipping radar saves you money and matches your style, GhostWare stays in the conversation — just do not skip patch-day checks on either tool.',
 				],
 			},
 		],

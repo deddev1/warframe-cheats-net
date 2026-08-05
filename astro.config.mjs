@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 // Do not add @astrojs/cloudflare; sitemaps and HTML must emit to dist/ root.
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://arcraidershacks.net',
+	site: 'https://overwatchhacks.com',
 	trailingSlash: 'always',
 	compressHTML: true,
 	devToolbar: { enabled: false },

@@ -275,9 +275,18 @@
 		transform-origin: center center;
 	}
 
-	.media-frame:hover img,
-	.media-frame:hover video {
-		transform: scale(1.33);
+	@media (hover: hover) and (pointer: fine) {
+		.media-frame:hover img,
+		.media-frame:hover video {
+			transform: scale(1.33);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.media-frame img,
+		.media-frame video {
+			transform: none;
+		}
 	}
 
 	.media-frame::after {

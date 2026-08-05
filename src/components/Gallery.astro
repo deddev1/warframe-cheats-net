@@ -11,9 +11,12 @@ import {
 
 interface Props {
 	locale?: LocaleCode;
+	/** Homepage gallery sits below the hero — never compete for LCP. */
+	priority?: boolean;
 }
 
 const locale = Astro.props.locale ?? defaultLocale;
+const priority = Astro.props.priority ?? false;
 const ui = getUi(locale);
 const gallery = getGalleryUi(locale);
 
@@ -24,10 +27,11 @@ const galleryAlts = [
 	ui.images.battleRoyaleIsland,
 	ui.images.headerArt,
 	ui.images.espWallhack,
+	ui.images.rebootFight,
 	undefined,
 ] as const;
 
-/** Large featured still — first gallery image, unique from grid below. */
+/** Featured still — first gallery image. */
 const featuredStillSrc = rustImages.gallery[0].src;
 const featuredStill = {
 	src: contentSrc(featuredStillSrc),
@@ -35,7 +39,7 @@ const featuredStill = {
 	alt: rustImages.gallery[0].alt,
 } as const;
 
-/** Grid uses images 2–6 so each of the six assets appears once on the page. */
+/** Grid uses images 2–7 — all seven assets appear once on the page. */
 const gridTiles = rustImages.gallery.slice(1).map((image, index) => ({
 	src: contentSrc(image.src),
 	srcset: contentSrcSet(image.src),
@@ -67,12 +71,12 @@ const gridTiles = rustImages.gallery.slice(1).map((image, index) => ({
 				</div>
 
 				<aside class="gallery__advantages" aria-labelledby="gallery-advantages-title">
-					<h3 id="gallery-advantages-title" class="gallery__advantages-label">Arc Raiders hack advantages</h3>
+					<h3 id="gallery-advantages-title" class="gallery__advantages-label">Overwatch hack advantages</h3>
 					<ul class="gallery__advantages-list">
 						<li>Undetected-focused builds with public anti-cheat status after patches</li>
-						<li>Full Arc Raiders ESP + soft aim + radar in one package — no feature upsell maze</li>
+						<li>Full Overwatch ESP + soft aim + radar in one package — no feature upsell maze</li>
 						<li>Instant license delivery for Windows 10 &amp; 11</li>
-						<li>Real in-game Arc Raiders previews so you see ESP, aimbot menu, and wallhack before checkout</li>
+						<li>Real in-game Overwatch previews so you see ESP, aimbot menu, and wallhack before checkout</li>
 					</ul>
 				</aside>
 			</div>
@@ -86,8 +90,8 @@ const gridTiles = rustImages.gallery.slice(1).map((image, index) => ({
 						alt={featuredStill.alt}
 						width="1280"
 						height="720"
-						loading="eager"
-						fetchpriority="high"
+						loading={priority ? 'eager' : 'lazy'}
+						fetchpriority={priority ? 'high' : 'auto'}
 						decoding="async"
 					/>
 					<figcaption>{featuredStill.alt}</figcaption>
@@ -327,6 +331,20 @@ const gridTiles = rustImages.gallery.slice(1).map((image, index) => ({
 	.gallery__featured:hover img,
 	.gallery__item:hover img {
 		transform: scale(1.33);
+	}
+
+	@media (hover: none), (pointer: coarse) {
+		.gallery__featured:hover img,
+		.gallery__item:hover img {
+			transform: none;
+		}
+
+		.gallery__featured figcaption,
+		.gallery__still figcaption,
+		.gallery__item figcaption {
+			opacity: 1;
+			transform: none;
+		}
 	}
 
 	.gallery__featured figcaption,

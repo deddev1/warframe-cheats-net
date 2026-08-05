@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Completes rust-cheats SEO audit: add missing pages, fix leftovers, strip Zadeyo from meta.
+ * Completes overwatch-cheats SEO audit: add missing pages, fix leftovers, strip Zadeyo from meta.
  * Run: node scripts/complete-seo-audit.mjs
  */
 import { readFile, writeFile, mkdir, access } from 'node:fs/promises';
@@ -11,19 +11,19 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const NODE = 'C:\\Program Files\\nodejs\\node.exe';
 
 const EXTRA_PAGES = [
-	{ id: 'hacks', dir: 'rust-hacks', pageId: 'hacks' },
-	{ id: 'cheat-download', dir: 'rust-cheat-download', pageId: 'cheat-download' },
-	{ id: 'mod-menu', dir: 'rust-mod-menu', pageId: 'mod-menu' },
-	{ id: 'soft-aim', dir: 'rust-soft-aim', pageId: 'soft-aim' },
-	{ id: 'best-cheats', dir: 'best-rust-cheats', pageId: 'best-cheats' },
-	{ id: 'aimbot-hack', dir: 'rust-aimbot-hack', pageId: 'aimbot-hack' },
-	{ id: 'esp-hack', dir: 'rust-esp-hack', pageId: 'esp-hack' },
-	{ id: 'unlock-all', dir: 'rust-unlock-all', pageId: 'unlock-all' },
+	{ id: 'hacks', dir: 'overwatch-hacks', pageId: 'hacks' },
+	{ id: 'cheat-download', dir: 'overwatch-cheat-download', pageId: 'cheat-download' },
+	{ id: 'mod-menu', dir: 'overwatch-mod-menu', pageId: 'mod-menu' },
+	{ id: 'soft-aim', dir: 'overwatch-soft-aim', pageId: 'soft-aim' },
+	{ id: 'best-cheats', dir: 'best-overwatch-cheats', pageId: 'best-cheats' },
+	{ id: 'aimbot-hack', dir: 'overwatch-aimbot-hack', pageId: 'aimbot-hack' },
+	{ id: 'esp-hack', dir: 'overwatch-esp-hack', pageId: 'esp-hack' },
+	{ id: 'unlock-all', dir: 'overwatch-unlock-all', pageId: 'unlock-all' },
 ];
 
 const GLOBAL_REPLACEMENTS = [
 	[/warzone-warzone/g, 'rust'],
-	[/eac-bypass-rust-warzone/g, 'eac-bypass-rust'],
+	[/eac-bypass-overwatch-warzone/g, 'eac-bypass-overwatch'],
 	[/Call of Duty: Warzone/g, 'Rust'],
 	[/Call of Duty Warzone/g, 'Rust'],
 	[/Call of Duty/g, 'Rust'],
@@ -37,12 +37,12 @@ const GLOBAL_REPLACEMENTS = [
 	[/Warzone squad fight/g, 'Rust squad fight'],
 	[/Warzone squad builder/g, 'Rust loadout builder'],
 	[/Warzone store header/g, 'Rust header'],
-	[/Warzone wasteland combat/g, 'Rust survival combat'],
+	[/Warzone wasteland combat/g, 'Rust competitive combat'],
 	[/Warzone loadout builder/g, 'Rust loadout builder'],
 	[/Warzone pricing/g, 'Rust pricing'],
-	[/Warzone Easy Anti-Cheat/g, 'Rust Easy Anti-Cheat'],
+	[/Warzone Blizzard anti-cheat/g, 'Rust Blizzard anti-cheat'],
 	[/on Warzone/g, 'on Rust'],
-	[/for Warzone/g, 'for Arc Raiders'],
+	[/for Warzone/g, 'for Overwatch'],
 	[/Warzone guides/g, 'Rust guides'],
 	[/Warzone guide/g, 'Rust guide'],
 	[/Warzone hileleri/g, 'Rust hileleri'],
@@ -50,18 +50,18 @@ const GLOBAL_REPLACEMENTS = [
 	[/Warzone hileleri/g, 'Rust hileleri'],
 	[/cheatów Warzone/g, 'cheatów Rust'],
 	[/cheat Warzone/g, 'cheat Rust'],
-	[/cheats Warzone/g, 'cheats Arc Raiders'],
-	[/trucos Warzone/g, 'trucos Arc Raiders'],
+	[/cheats Warzone/g, 'cheats Overwatch'],
+	[/trucos Warzone/g, 'trucos Overwatch'],
 	[/triche Warzone/g, 'triche Rust'],
 	[/trucchi Warzone/g, 'trucchi Rust'],
 	[/Wallhack Warzone/g, 'Rust Wallhack'],
 	[/cheat Warzone undetected/g, 'cheat Rust undetected'],
-	[/cheats Warzone undetected/g, 'cheats Arc Raiders undetected'],
+	[/cheats Warzone undetected/g, 'cheats Overwatch undetected'],
 	[/Verdansk beams/g, 'long-range AR beams'],
 	[/Resurgence room clears/g, 'close-quarters room clears'],
-	[/Verdansk and Urzikstan/g, 'Arc Raiders and monuments'],
-	[/Verdansk, Urzikstan/g, 'Arc Raiders, monuments'],
-	[/survival and Resurgence/g, 'survival and monuments'],
+	[/Verdansk and Urzikstan/g, 'Overwatch and control points'],
+	[/Verdansk, Urzikstan/g, 'Overwatch, control points'],
+	[/competitive and Resurgence/g, 'competitive and control points'],
 	[/Activision's anti-cheat/g, "Embark' anti-cheat"],
 	[/Activision anti-cheat/g, 'Embark anti-cheat'],
 	[/Activision ships/g, 'Embark ships'],
@@ -69,10 +69,10 @@ const GLOBAL_REPLACEMENTS = [
 	[/Activision bans/g, 'Embark bans'],
 	[/Activision/g, 'Embark'],
 	[/ricochet/gi, 'eac'],
-	[/Ricochet/g, 'Easy Anti-Cheat (EAC)'],
-	[/call-of-duty-warzone-cheats/g, 'rust-cheats'],
+	[/Ricochet/g, 'Blizzard anti-cheat (EAC)'],
+	[/call-of-duty-warzone-cheats/g, 'overwatch-cheats'],
 	[/call-of-duty-warzone/g, 'rust'],
-	[/Undetected Wallhack for Call of Duty/g, 'Undetected Wallhack for Arc Raiders'],
+	[/Undetected Wallhack for Call of Duty/g, 'Undetected Wallhack for Overwatch'],
 	[/How ESP wallhack, radar, and Aimbot rebuild after Call of Duty anti-cheat/g,
 		'How ESP wallhack, radar, and Aimbot rebuild after Rust anti-cheat'],
 ];
@@ -90,7 +90,7 @@ function stripZadeyoFromMeta(text) {
 		.replace(/\s*Zadeyo delivery\.?/gi, 'instant digital delivery.')
 		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
 		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy on Zadeyo/g, 'Buy Arc Raiders Hacks')
+		.replace(/Buy on Zadeyo/g, 'Buy Overwatch Hacks')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 }
@@ -174,8 +174,8 @@ async function fixLocalesBlogUi() {
 	content = content.replace(/Warzone hileleri/g, 'Rust hileleri');
 	content = content.replace(/Warzone hile/g, 'Rust hile');
 	content = content.replace(/cheat Warzone/g, 'cheat Rust');
-	content = content.replace(/cheats Warzone/g, 'cheats Arc Raiders');
-	content = content.replace(/trucos Warzone/g, 'trucos Arc Raiders');
+	content = content.replace(/cheats Warzone/g, 'cheats Overwatch');
+	content = content.replace(/trucos Warzone/g, 'trucos Overwatch');
 	content = content.replace(/triche Warzone/g, 'triche Rust');
 	content = content.replace(/trucchi Warzone/g, 'trucchi Rust');
 	content = content.replace(/cheatów Warzone/g, 'cheatów Rust');
@@ -200,7 +200,7 @@ async function fixLocalesBlogUi() {
 	console.log('Fixed locales.ts blogUi');
 }
 
-console.log('=== Arc Raiders Hacks SEO completion ===\n');
+console.log('=== Overwatch Hacks SEO completion ===\n');
 await applyGlobalFixes();
 await createExtraPages();
 await fixLocalesBlogUi();

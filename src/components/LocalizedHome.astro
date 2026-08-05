@@ -98,7 +98,9 @@ const extraGraph: Record<string, unknown>[] =
 			subtitle={ui.hero.subtitle}
 			subtitleShort={ui.hero.subtitleShort}
 		/>
-		<TrustBar locale={locale} />
+		<section class="site__section site__section--trust">
+			<TrustBar locale={locale} />
+		</section>
 		<BreadcrumbBar
 			locale={locale}
 			items={[
@@ -155,6 +157,12 @@ const extraGraph: Record<string, unknown>[] =
 		padding-bottom: 1.25rem;
 		content-visibility: auto;
 		contain-intrinsic-size: 1px 640px;
+	}
+
+	.site__section--trust {
+		padding-block: 0.35rem 0.15rem;
+		content-visibility: auto;
+		contain-intrinsic-size: 1px 120px;
 	}
 
 	.site__section--store,

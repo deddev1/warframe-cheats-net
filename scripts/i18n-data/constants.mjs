@@ -6,7 +6,7 @@ export const LOCALES = [
 ];
 
 export const PAGE_IDS = [
-	'home', 'rust-esp', 'rust-aimbot', 'features', 'pricing', 'setup',
+	'home', 'overwatch-esp', 'overwatch-aimbot', 'features', 'pricing', 'setup',
 	'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'eac-bypass',
 	'cheats-2026', 'hacks', 'cheat-download', 'mod-menu', 'soft-aim', 'best-cheats',
 	'aimbot-hack', 'esp-hack', 'unlock-all', 'privacy', 'refund', 'terms',
@@ -17,31 +17,31 @@ export const PAGE_IDS = [
  * Topic pages keep thematic matches; utility/legal pages fill remaining slots.
  */
 export const HERO_IMAGES = {
-	home: '/images/rust-hacks-hero.webp',
-	'rust-esp': '/images/rust-esp-overlay.webp',
-	'rust-aimbot': '/images/rust-aimbot-menu.webp',
-	features: '/images/rust-esp-bots.webp',
-	pricing: '/images/rust-esp-hitbox.webp',
-	setup: '/images/rust-aimbot-menu.webp',
-	updates: '/images/rust-esp-overlay.webp',
-	faq: '/images/rust-esp-bots.webp',
-	support: '/images/rust-aimbot-menu.webp',
-	undetected: '/images/rust-hacks-hero.webp',
-	wallhack: '/images/rust-esp-hitbox.webp',
-	radar: '/images/rust-esp-bots.webp',
-	'eac-bypass': '/images/rust-esp-overlay.webp',
-	'cheats-2026': '/images/rust-hacks-hero.webp',
-	hacks: '/images/rust-esp-bots.webp',
-	'cheat-download': '/images/rust-esp-overlay.webp',
-	'mod-menu': '/images/rust-aimbot-menu.webp',
-	'soft-aim': '/images/rust-hacks-hero.webp',
-	'best-cheats': '/images/rust-esp-hitbox.webp',
-	'aimbot-hack': '/images/rust-aimbot-menu.webp',
-	'esp-hack': '/images/rust-esp-overlay.webp',
-	'unlock-all': '/images/rust-esp-bots.webp',
-	privacy: '/images/rust-esp-hitbox.webp',
-	refund: '/images/rust-aimbot-menu.webp',
-	terms: '/images/rust-esp-bots.webp',
+	home: '/images/overwatch-hacks-hero.webp',
+	'overwatch-esp': '/images/overwatch-esp-overlay.webp',
+	'overwatch-aimbot': '/images/overwatch-aimbot-menu.webp',
+	features: '/images/overwatch-esp-bots.webp',
+	pricing: '/images/overwatch-esp-hitbox.webp',
+	setup: '/images/overwatch-aimbot-menu.webp',
+	updates: '/images/overwatch-esp-overlay.webp',
+	faq: '/images/overwatch-esp-bots.webp',
+	support: '/images/overwatch-aimbot-menu.webp',
+	undetected: '/images/overwatch-hacks-hero.webp',
+	wallhack: '/images/overwatch-esp-hitbox.webp',
+	radar: '/images/overwatch-radar-hack.webp',
+	'eac-bypass': '/images/overwatch-esp-overlay.webp',
+	'cheats-2026': '/images/overwatch-hacks-hero.webp',
+	hacks: '/images/overwatch-esp-bots.webp',
+	'cheat-download': '/images/overwatch-esp-overlay.webp',
+	'mod-menu': '/images/overwatch-aimbot-menu.webp',
+	'soft-aim': '/images/overwatch-hacks-hero.webp',
+	'best-cheats': '/images/overwatch-esp-hitbox.webp',
+	'aimbot-hack': '/images/overwatch-aimbot-menu.webp',
+	'esp-hack': '/images/overwatch-esp-overlay.webp',
+	'unlock-all': '/images/overwatch-esp-bots.webp',
+	privacy: '/images/overwatch-esp-hitbox.webp',
+	refund: '/images/overwatch-aimbot-menu.webp',
+	terms: '/images/overwatch-esp-bots.webp',
 };
 
 export const TS_HEADER = `import type { LocaleCode } from './locales';
@@ -73,7 +73,7 @@ export type LocaleUi = {
 \t\theaderArt: string; cheatsPackage: string; rebootFight: string; battleRoyale: string; battleRoyaleIsland: string;
 \t};
 };
-export type PageId = 'home' | 'rust-esp' | 'rust-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'eac-bypass' | 'cheats-2026' | 'hacks' | 'cheat-download' | 'mod-menu' | 'soft-aim' | 'best-cheats' | 'aimbot-hack' | 'esp-hack' | 'unlock-all' | 'privacy' | 'refund' | 'terms';
+export type PageId = 'home' | 'overwatch-esp' | 'overwatch-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'eac-bypass' | 'cheats-2026' | 'hacks' | 'cheat-download' | 'mod-menu' | 'soft-aim' | 'best-cheats' | 'aimbot-hack' | 'esp-hack' | 'unlock-all' | 'privacy' | 'refund' | 'terms';
 `;
 
 /** Clamp meta strings to SEO limits without ugly ellipsis. */
@@ -104,7 +104,7 @@ export function stripZadeyoFromMeta(text) {
 		.replace(/\s*Zadeyo delivery\.?/gi, ' instant digital delivery.')
 		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
 		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy Arc Raiders Hacks/g, 'Buy Arc Raiders Hacks')
+		.replace(/Buy Overwatch Hacks/g, 'Buy Overwatch Hacks')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 }
@@ -126,8 +126,8 @@ export function section(h2, ...args) {
 
 /** Authoritative external citation helpers (open in new tab). */
 export const EXT = {
-	epic: '<a href="https://www.arcraiders.com/" target="_blank" rel="noopener noreferrer">Arc Raiders</a>',
-	rust: '<a href="https://www.arcraiders.com/" target="_blank" rel="noopener noreferrer">Arc Raiders</a>',
-	status: '<a href="https://www.arcraiders.com/" target="_blank" rel="noopener noreferrer">Arc Raiders</a>',
-	eac: '<a href="https://www.easy.ac/" target="_blank" rel="noopener noreferrer">Easy Anti-Cheat</a>',
+	epic: '<a href="https://overwatch.blizzard.com/en-us/" target="_blank" rel="noopener noreferrer">Overwatch</a>',
+	rust: '<a href="https://overwatch.blizzard.com/en-us/" target="_blank" rel="noopener noreferrer">Overwatch</a>',
+	status: '<a href="https://overwatch.blizzard.com/en-us/" target="_blank" rel="noopener noreferrer">Overwatch</a>',
+	eac: '<a href="https://overwatch.blizzard.com/en-us/" target="_blank" rel="noopener noreferrer">Blizzard anti-cheat</a>',
 };

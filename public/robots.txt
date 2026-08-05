@@ -4,5 +4,5 @@ Allow: /images/
 
 # English is the official language. Primary sitemaps: index + English pages.
 # Non-English UI locales are convenience translations and are not listed in sitemaps.
-Sitemap: https://arcraidershacks.net/sitemap-index.xml
-Sitemap: https://arcraidershacks.net/sitemap.xml
+Sitemap: https://overwatchhacks.com/sitemap-index.xml
+Sitemap: https://overwatchhacks.com/sitemap.xml

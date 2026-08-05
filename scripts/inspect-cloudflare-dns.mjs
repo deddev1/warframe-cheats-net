@@ -1,5 +1,5 @@
 /**
- * Inspect arcraidershacks.net zone DNS and Pages domain status.
+ * Inspect overwatchhacks.com zone DNS and Pages domain status.
  */
 import { readFileSync } from 'node:fs';
 import { homedir } from 'node:os';
@@ -38,7 +38,7 @@ async function api(path, { method = 'GET', body } = {}) {
 }
 
 async function main() {
-  const zones = await api('/zones?name=arcraidershacks.net');
+  const zones = await api('/zones?name=overwatchhacks.com');
   console.log('Zone:', zones[0]?.id, zones[0]?.name, zones[0]?.status);
 
   if (zones[0]?.id) {

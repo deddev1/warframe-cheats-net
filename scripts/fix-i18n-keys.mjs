@@ -8,19 +8,19 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SRC = path.resolve(ROOT, '..', 'amansand');
 
 const UI_REPLACEMENTS = [
-	['Warzone Cheats', 'Arc Raiders Hacks'],
+	['Warzone Cheats', 'Overwatch Hacks'],
 	['Warzone cheats', 'Rust cheats'],
-	['Warzone Cheats', 'Arc Raiders Hacks'],
+	['Warzone Cheats', 'Overwatch Hacks'],
 	['Call of Duty: Warzone', 'Rust'],
 	['Call of Duty Warzone', 'Rust'],
 	['Call of Duty', 'Rust'],
 	['Warzone PC', 'Rust PC'],
-	['for Warzone', 'for Arc Raiders'],
+	['for Warzone', 'for Overwatch'],
 	['Warzone ', 'Rust '],
 	['warzone ', 'rust '],
-	['Ricochet maintenance', 'EAC maintenance'],
-	['Ricochet anti-cheat', 'Easy Anti-Cheat (EAC)'],
-	['Ricochet', 'Easy Anti-Cheat (EAC)'],
+	['Ricochet maintenance', 'anti-cheat maintenance'],
+	['Ricochet anti-cheat', 'Blizzard anti-cheat (EAC)'],
+	['Ricochet', 'Blizzard anti-cheat (EAC)'],
 	['operatorEsp', 'playerEsp'],
 	['gulagFight', 'rebootFight'],
 	['alMazrah', 'battleRoyaleIsland'],
@@ -28,14 +28,14 @@ const UI_REPLACEMENTS = [
 	['operator', 'player'],
 	['Operators', 'Players'],
 	['Operator', 'Player'],
-	['Al Mazrah', 'Arc Raiders'],
-	['Verdansk', 'Arc Raiders'],
-	['Resurgence', 'monuments'],
-	['gulag', 'monument'],
-	['warzonescheats.net', 'arcraidershacks.net'],
+	['Al Mazrah', 'Overwatch'],
+	['Verdansk', 'Overwatch'],
+	['Resurgence', 'control points'],
+	['gulag', 'control point'],
+	['warzonescheats.net', 'overwatchhacks.com'],
 	['Trucos Warzone', 'Trucos Rust'],
 	['Triches Warzone', 'Triches Rust'],
-	['Cheats Warzone', 'Cheats Arc Raiders'],
+	['Cheats Warzone', 'Cheats Overwatch'],
 ];
 
 function apply(content) {
@@ -56,7 +56,7 @@ for (const file of ['ui-strings-part1.mjs', 'ui-strings-part2.mjs']) {
 let pagesEn = await readFile(path.join(ROOT, 'scripts/i18n-data/pages-en.mjs'), 'utf8');
 pagesEn = pagesEn.replace(/\teac: \{/, "\t'eac-bypass': {");
 pagesEn = pagesEn.replace(/Rust Warzone/g, 'Rust');
-pagesEn = pagesEn.replace(/for Arc Raiders Warzone/g, 'for Arc Raiders');
+pagesEn = pagesEn.replace(/for Overwatch Warzone/g, 'for Overwatch');
 await writeFile(path.join(ROOT, 'scripts/i18n-data/pages-en.mjs'), pagesEn);
 
 // Fix pages-i18n

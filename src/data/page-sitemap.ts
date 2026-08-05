@@ -28,56 +28,56 @@ const img = (path: string, title: string, caption: string): SitemapImage => ({
 /** Sitemap image assignments for indexable pages only (see sitemapPageIds in routing.ts). */
 const sitemapImagesByPageId: Partial<Record<PageId, SitemapImage[]>> = {
 	home: [
-		img(rustImages.hero, 'Arc Raiders Hacks', 'Arc Raiders Hacks homepage hero'),
-		img(rustImages.espWallhack, 'Arc Raiders ESP', 'Arc Raiders ESP wallhack overlay'),
-		img(rustImages.aimbotCombat, 'Arc Raiders Aimbot', 'Arc Raiders Aimbot combat preview'),
+		img(rustImages.hero, 'Overwatch Hacks', 'Overwatch Hacks homepage hero'),
+		img(rustImages.espWallhack, 'Overwatch ESP', 'Overwatch ESP wallhack overlay'),
+		img(rustImages.aimbotCombat, 'Overwatch Aimbot', 'Overwatch Aimbot combat preview'),
 	],
 	hacks: [
-		img(rustImages.battleRoyaleCombat, 'Arc Raiders Hacks', 'Arc Raiders Hacks pillar page'),
-		img(rustImages.espWallhack, 'Arc Raiders Hacks ESP', 'Arc Raiders Hacks ESP preview'),
+		img(rustImages.battleRoyaleCombat, 'Overwatch Hacks', 'Overwatch 2 hacks ranked team fight preview'),
+		img(rustImages.espWallhack, 'Overwatch Hacks ESP', 'Overwatch wallhack ESP on enemy heroes'),
 	],
-	'rust-esp': [
-		img(rustImages.espWallhack, 'Arc Raiders ESP', 'Arc Raiders ESP wallhack overlay'),
-		img(rustImages.playerEsp, 'Arc Raiders player ESP', 'Arc Raiders player ESP markers'),
+	'overwatch-esp': [
+		img(rustImages.espWallhack, 'Overwatch ESP', 'Overwatch ESP wallhack overlay'),
+		img(rustImages.playerEsp, 'Overwatch player ESP', 'Overwatch player ESP markers'),
 	],
-	'rust-aimbot': [
-		img(rustImages.aimbotCombat, 'Arc Raiders Aimbot', 'Arc Raiders Aimbot combat preview'),
-		img(rustImages.squadFight, 'Arc Raiders Aimbot squad fight', 'Arc Raiders Aimbot in squad combat'),
+	'overwatch-aimbot': [
+		img(rustImages.aimbotCombat, 'Overwatch Aimbot', 'Overwatch Aimbot combat preview'),
+		img(rustImages.squadFight, 'Overwatch Aimbot squad fight', 'Overwatch Aimbot in squad combat'),
 	],
 	wallhack: [
-		img(rustImages.espWallhack, 'Arc Raiders Wallhack', 'Arc Raiders wallhack ESP view'),
+		img(rustImages.espWallhack, 'Overwatch Wallhack', 'Overwatch wallhack ESP view'),
 	],
 	radar: [
-		img(rustImages.squadFight, 'Arc Raiders Radar', 'Arc Raiders radar hack overlay'),
+		img(rustImages.radarHack, 'Overwatch Radar Hack', 'Overwatch 2 radar hack minimap overlay'),
 	],
 	features: [
-		img(rustImages.hero, 'Arc Raiders Hacks Features', 'Arc Raiders Hacks feature overview'),
-		img(rustImages.loadoutBuilder, 'Arc Raiders Hacks menu', 'Arc Raiders Hacks in-client controls'),
+		img(rustImages.hero, 'Overwatch Hacks Features', 'Overwatch Hacks feature overview'),
+		img(rustImages.loadoutBuilder, 'Overwatch Hacks menu', 'Overwatch Hacks in-client controls'),
 	],
 	pricing: [
-		img(rustImages.cover, 'Arc Raiders Hacks Pricing', 'Arc Raiders Hacks license plans'),
-		img(rustImages.cheatsPackage, 'Arc Raiders Hacks package', 'Arc Raiders Hacks product package'),
+		img(rustImages.cover, 'Overwatch Hacks Pricing', 'Overwatch Hacks license plans'),
+		img(rustImages.cheatsPackage, 'Overwatch Hacks package', 'Overwatch Hacks product package'),
 	],
 	setup: [
-		img(rustImages.squadFight, 'Arc Raiders Hacks Setup', 'Arc Raiders Hacks installation guide'),
+		img(rustImages.squadFight, 'Overwatch Hacks Setup', 'Overwatch Hacks installation guide'),
 	],
 	updates: [
-		img(rustImages.hero, 'Arc Raiders Hacks Updates', 'Arc Raiders Hacks patch status'),
+		img(rustImages.hero, 'Overwatch Hacks Updates', 'Overwatch Hacks patch status'),
 	],
 	faq: [
-		img(rustImages.loadoutBuilder, 'Arc Raiders Hacks FAQ', 'Arc Raiders Hacks frequently asked questions'),
+		img(rustImages.loadoutBuilder, 'Overwatch Hacks FAQ', 'Overwatch Hacks frequently asked questions'),
 	],
 	support: [
-		img(rustImages.headerArt, 'Arc Raiders Hacks Support', 'Arc Raiders Hacks help center'),
+		img(rustImages.headerArt, 'Overwatch Hacks Support', 'Overwatch Hacks help center'),
 	],
 	privacy: [
-		img(rustImages.cover, 'Arc Raiders Hacks Privacy Policy', 'Arc Raiders Hacks privacy policy'),
+		img(rustImages.cover, 'Overwatch Hacks Privacy Policy', 'Overwatch Hacks privacy policy'),
 	],
 	refund: [
-		img(rustImages.cover, 'Arc Raiders Hacks Refund Policy', 'Arc Raiders Hacks refund policy'),
+		img(rustImages.cover, 'Overwatch Hacks Refund Policy', 'Overwatch Hacks refund policy'),
 	],
 	terms: [
-		img(rustImages.squadFight, 'Arc Raiders Hacks Terms', 'Arc Raiders Hacks terms of use'),
+		img(rustImages.squadFight, 'Overwatch Hacks Terms', 'Overwatch Hacks terms of use'),
 	],
 };
 
@@ -87,7 +87,7 @@ for (const pageId of sitemapPageIds) {
 	}
 }
 
-/** Canonical English sitemap entries — core arc-raiders-hacks URLs only. */
+/** Canonical English sitemap entries — core overwatch-hacks URLs only. */
 export const pageSitemapEntries: PageSitemapEntry[] = sitemapPageIds.map((pageId) => {
 	const meta = pageSitemapMeta[pageId];
 	return {

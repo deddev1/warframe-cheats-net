@@ -1,6 +1,6 @@
-# Arc Raiders Hacks — Marketing Site
+# Overwatch Hacks — Marketing Site
 
-Static Astro 7 site for [arcraidershacks.net](https://arcraidershacks.net). Primary SEO focus: **Arc Raiders Hacks** (supporting: Arc Raiders hacks, rust esp, rust aimbot).
+Static Astro 7 site for [overwatchhacks.com](https://overwatchhacks.com). Primary SEO focus: **Overwatch Hacks** (supporting: Overwatch hacks, overwatch esp, overwatch aimbot).
 
 ## Stack
 
@@ -22,7 +22,7 @@ Build and validate sitemaps:
 npm run build:validate
 ```
 
-Refresh Arc Raiders atmosphere images (optional):
+Refresh Overwatch atmosphere images (optional):
 
 ```bash
 npm run fetch:images
@@ -31,11 +31,11 @@ npm run optimize:images
 
 ## Deploy (Cloudflare Pages)
 
-1. Create a Cloudflare Pages project named **rusthacks**
+1. Create a Cloudflare Pages project named **overwatchhacks**
 2. Connect this repo or upload `dist/` after `npm run build`
 3. Build command: `npm run build`
 4. Output directory: `dist`
-5. Custom domain **arcraidershacks.net** (apex) and redirect **www** → apex
+5. Custom domain **overwatchhacks.com** (apex) and redirect **www** → apex
 6. Enable SSL **Always Use HTTPS**
 
 CLI deploy:
@@ -48,8 +48,8 @@ npm run pages:deploy
 
 - Node.js >= 22.12.0
 - Checkout URL in `src/data/site.ts` (`siteConfig.checkoutUrl`)
-- Canonical site URL: `https://arcraidershacks.net`
+- Canonical site URL: `https://overwatchhacks.com`
 
 ## License
 
-Private — for arcraidershacks.net deployment only.
+Private — for overwatchhacks.com deployment only.
