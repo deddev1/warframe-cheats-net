@@ -4,7 +4,7 @@
  * Finds the project root, installs dependencies, builds Astro to dist/, and validates output.
  */
 import { execSync } from 'node:child_process';
-import { existsSync, readdirSync } from 'node:fs';
+import { existsSync, readdirSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -74,3 +74,24 @@ if (!existsSync('dist/index.html')) {
 }
 
 console.log('[cloudflare-build] Build complete.');
+
+let buildId = 'unknown';
+try {
+	buildId = execSync('git rev-parse --short HEAD', { encoding: 'utf8' }).trim();
+} catch {
+	buildId = new Date().toISOString();
+}
+
+writeFileSync(
+	'dist/build-version.json',
+	JSON.stringify(
+		{
+			builtAt: new Date().toISOString(),
+			commit: buildId,
+			site: 'https://warthunderhacks.com',
+		},
+		null,
+		2,
+	) + '\n',
+);
+console.log(`[cloudflare-build] build-version.json → ${buildId}`);

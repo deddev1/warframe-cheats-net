@@ -150,7 +150,7 @@ const SECURITY_HEADERS = {
 		"media-src 'self'",
 		"font-src 'self' data:",
 		"style-src 'self' 'unsafe-inline'",
-		"script-src 'self'",
+		"script-src 'self' 'unsafe-inline'",
 		"connect-src 'self'",
 		"upgrade-insecure-requests",
 		"trusted-types default",
