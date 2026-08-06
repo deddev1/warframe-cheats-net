@@ -1,10 +1,10 @@
 /**
- * Site-wide SEO keyword cluster — optimized for warthunderhacks.net
+ * Site-wide SEO keyword cluster — optimized for warthunderhacks.com
  */
 export const primaryKeyword = 'War Thunder Hacks';
 
 export const siteBrand = 'War Thunder Hacks';
-export const siteDomain = 'warthunderhacks.net';
+export const siteDomain = 'warthunderhacks.com';
 export const siteOrigin = `https://${siteDomain}`;
 
 /** Core keyword targets (title, meta, schema). */
@@ -22,13 +22,13 @@ export const metaKeywordsContent = metaKeywords.join(', ');
 
 export const defaultTitle = 'War Thunder Hacks 2026 | Undetected ESP & Aimbot';
 export const defaultDescription =
-	'War Thunder hacks for PC — undetected ESP, aimbot, and wallhack at warthunderhacks.net. Monthly and lifetime plans, setup guides, and anti-cheat update status.';
+	'War Thunder hacks for PC — undetected ESP, aimbot, and wallhack at warthunderhacks.com. Monthly and lifetime plans, setup guides, and anti-cheat update status.';
 
 /** Append brand + domain to page titles when under the SEO limit. */
 export function buildPageTitle(topic: string): string {
 	const withBrand = `${topic} | War Thunder Hacks`;
 	if (withBrand.length <= 60) return withBrand;
-	const short = `${topic} | warthunderhacks.net`;
+	const short = `${topic} | warthunderhacks.com`;
 	return short.length <= 60 ? short : topic.slice(0, 60);
 }
 

@@ -1,22 +1,7 @@
 /**
- * Plays muted War Thunder Hacks background clips without blocking interaction.
- * - hero: desktop-only muted autoplay (mobile keeps the poster for LCP)
- * - product / lazy: hydrate data-src only when near the viewport
+ * Lazy-loads video sources only after explicit user interaction — no autoplay.
  */
 (function () {
-	var reduceMq = window.matchMedia('(prefers-reduced-motion: reduce)');
-	var desktopMq = window.matchMedia('(min-width: 761px)');
-
-	function armMuted(video) {
-		if (!(video instanceof HTMLVideoElement)) return;
-		video.muted = true;
-		video.defaultMuted = true;
-		video.setAttribute('muted', '');
-		video.setAttribute('playsinline', '');
-		video.setAttribute('webkit-playsinline', '');
-		video.playsInline = true;
-	}
-
 	function hydrateSrc(video) {
 		if (!(video instanceof HTMLVideoElement)) return false;
 		var dataSrc = video.getAttribute('data-src');
@@ -37,112 +22,26 @@
 		return true;
 	}
 
-	function markReady(video) {
-		video.classList.add('is-ready');
-	}
-
-	function tryPlay(video) {
-		if (!(video instanceof HTMLVideoElement)) return;
-		if (video.classList.contains('is-hidden')) return;
-		if (!hydrateSrc(video)) return;
-		armMuted(video);
-
-		function attempt() {
-			armMuted(video);
-			var playPromise = video.play();
-			if (playPromise && typeof playPromise.then === 'function') {
-				playPromise
-					.then(function () {
-						markReady(video);
-					})
-					.catch(function () {
-						window.setTimeout(function () {
-							armMuted(video);
-							video.play().then(function () {
-								markReady(video);
-							}).catch(function () {});
-						}, 200);
-					});
-			} else {
-				markReady(video);
-			}
-		}
-
-		if (video.readyState >= 2) {
-			attempt();
-			return;
-		}
-
-		video.addEventListener('loadeddata', attempt, { once: true });
-		video.addEventListener('canplay', attempt, { once: true });
-		video.addEventListener(
-			'playing',
-			function () {
-				markReady(video);
-			},
-			{ once: true },
-		);
-		try {
-			video.load();
-		} catch (_) {
-			/* ignore */
-		}
-		attempt();
-	}
-
-	function observeLazy(videos) {
-		if (!videos.length) return;
-
-		if (!('IntersectionObserver' in window)) {
-			videos.forEach(tryPlay);
-			return;
-		}
-
-		var observer = new IntersectionObserver(
-			function (entries) {
-				entries.forEach(function (entry) {
-					if (!entry.isIntersecting) return;
-					var video = entry.target;
-					tryPlay(video);
-					observer.unobserve(video);
-				});
-			},
-			{ rootMargin: '160px 0px', threshold: 0.01 },
-		);
-
+	function bindUserPlay(videos) {
 		videos.forEach(function (video) {
-			observer.observe(video);
-		});
-	}
-
-	function bindHero() {
-		if (reduceMq.matches || !desktopMq.matches) return;
-
-		var heroes = Array.prototype.slice.call(
-			document.querySelectorAll('[data-war-thunder-hacks-video="hero"]'),
-		);
-		if (!heroes.length) return;
-
-		heroes.forEach(function (video) {
-			tryPlay(video);
 			video.addEventListener(
-				'pause',
-				function () {
-					if (video.classList.contains('is-hidden')) return;
-					if (document.visibilityState === 'hidden') return;
-					tryPlay(video);
+				'play',
+				function onPlay() {
+					if (!hydrateSrc(video)) return;
+					try {
+						video.load();
+					} catch (_) {
+						/* ignore */
+					}
 				},
-				{ passive: true },
+				{ once: true },
 			);
 		});
 	}
 
-	bindHero();
-	observeLazy(
+	bindUserPlay(
 		Array.prototype.slice.call(
-			document.querySelectorAll(
-				'[data-war-thunder-hacks-video="product"], [data-war-thunder-hacks-video="lazy"]',
-			),
+			document.querySelectorAll('[data-war-thunder-hacks-video="lazy"]'),
 		),
 	);
 })();

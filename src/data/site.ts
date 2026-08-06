@@ -1,9 +1,9 @@
 export const siteConfig = {
 	name: 'War Thunder Hacks',
-	url: 'https://warthunderhacks.net',
+	url: 'https://warthunderhacks.com',
 	locale: 'en',
 	market: 'Worldwide',
-	supportEmail: 'support@warthunderhacks.net',
+	supportEmail: 'support@warthunderhacks.com',
 	logo: '/images/zadeyo-logo.webp',
 	logoRaster: '/images/zadeyo-logo.png',
 	logoRasterWidth: 453,
@@ -142,7 +142,7 @@ export const homeFaqs = [
 	{
 		question: 'How do I contact support?',
 		answer:
-			'Use the Support page or email support@warthunderhacks.net with your order details and a clear description of the issue.',
+			'Use the Support page or email support@warthunderhacks.com with your order details and a clear description of the issue.',
 	},
 ] as const;
 

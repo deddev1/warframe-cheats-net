@@ -4,5 +4,5 @@ Allow: /images/
 
 # English is the official language. Primary sitemaps: index + English pages.
 # Non-English UI locales are convenience translations and are not listed in sitemaps.
-Sitemap: https://warthunderhacks.net/sitemap-index.xml
-Sitemap: https://warthunderhacks.net/sitemap.xml
+Sitemap: https://warthunderhacks.com/sitemap-index.xml
+Sitemap: https://warthunderhacks.com/sitemap.xml

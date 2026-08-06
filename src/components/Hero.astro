@@ -3,7 +3,6 @@ import { getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { siteConfig } from '../data/site';
-import { rustHeroVideo } from '../data/rust';
 import { heroPreloadSrc, heroSizes, heroSrcSet } from '../lib/responsive-images';
 
 interface Props {
@@ -36,8 +35,7 @@ const featuresUrl = getLocalizedPath('features', locale);
 <section class="hero" aria-label={ui.images.hero}>
 	<div class="hero__media">
 		{/*
-		  Poster paints first (LCP / fallback). Hero MP4 uses a real src + autoplay
-		  so desktop and mobile get the muted loop like the old site — not poster-only.
+		  Poster paints first (LCP / fallback). No autoplay — static hero image only.
 		*/}
 		<picture class="hero__poster">
 			<source media="(max-width: 760px)" srcset={heroPreloadSrc} type="image/webp" />
@@ -58,20 +56,6 @@ const featuresUrl = getLocalizedPath('features', locale);
 				aria-hidden="true"
 			/>
 		</picture>
-		<video
-			class="hero__video"
-			data-war-thunder-hacks-video="hero"
-			data-src={rustHeroVideo.poster}
-			autoplay
-			muted
-			loop
-			playsinline
-			webkit-playsinline
-			preload="none"
-			title={rustHeroVideo.title}
-			aria-label={rustHeroVideo.ariaLabel}
-			hidden
-		></video>
 		<div class="hero__splash" aria-hidden="true"></div>
 		<div class="hero__veil" aria-hidden="true"></div>
 	</div>

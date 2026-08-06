@@ -52,7 +52,7 @@ const REPLACEMENTS = [
 	['Ricochet Bypass', 'EAC Bypass'],
 	['Ricochet', 'Gaijin Easy Anti-Cheat (EAC)'],
 	['ricochet', 'eac'],
-	['support@warzonescheats.net', 'support@warthunderhacks.net'],
+	['support@warzonescheats.net', 'support@warthunderhacks.com'],
 	['Verdansk, Urzikstan, and Rebirth Island', 'capture zones, convoy routes, and ranked seasons'],
 	['Verdansk, Urzikstan and Rebirth Island', 'capture zones, convoy routes and ranked seasons'],
 	['gulag fights', 'map rotations'],

@@ -444,7 +444,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "Hacks vs cheats wording",
 				paragraphs: [
-					"War Thunder Hacks and War Thunder hacks describe the same product category for most searchers. We lead with hacks on warthunderhacks.net while keeping cheats pages for buyers who use that query.",
+					"War Thunder Hacks and War Thunder hacks describe the same product category for most searchers. We lead with hacks on warthunderhacks.com while keeping cheats pages for buyers who use that query.",
 					"Balance and anti-cheat reality still come from <a href=\"https://warthunder.com/en\" target=\"_blank\" rel=\"noopener noreferrer\">Gaijin War Thunder</a>. Product rebuild timing is on our <a href=\"/updates/\">Updates</a> page.",
 				],
 			},

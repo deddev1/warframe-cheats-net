@@ -1,11 +1,11 @@
-# Deploy warthunderhacks.net
+# Deploy warthunderhacks.com
 
-Step-by-step guide to deploy the War Thunder Hacks static site to **warthunderhacks.net** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
+Step-by-step guide to deploy the War Thunder Hacks static site to **warthunderhacks.com** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
 
 ## Prerequisites
 
 - Node.js **≥ 22.12.0**
-- Cloudflare account with access to **warthunderhacks.net** DNS
+- Cloudflare account with access to **warthunderhacks.com** DNS
 - Wrangler CLI (included as dev dependency): `npx wrangler login`
 
 ## 1. Build and validate locally
@@ -71,9 +71,9 @@ Or for Pages: `npm run pages:deploy` (see `wrangler.toml`).
 
 ## 3. Custom domain and DNS
 
-Add **warthunderhacks.net** as the primary custom domain on the Pages project.
+Add **warthunderhacks.com** as the primary custom domain on the Pages project.
 
-### Apex (warthunderhacks.net)
+### Apex (warthunderhacks.com)
 
 In **Cloudflare DNS** for the zone:
 
@@ -87,8 +87,8 @@ Cloudflare CNAME flattening handles apex records automatically.
 
 1. Add a DNS record for `www` pointing to the same Pages project (proxied CNAME or A record).
 2. In **Rules** → **Redirect Rules** (or Bulk Redirects), create:
-   - **Source:** `www.warthunderhacks.net/*`
-   - **Target:** `https://warthunderhacks.net/${1}`
+   - **Source:** `www.warthunderhacks.com/*`
+   - **Target:** `https://warthunderhacks.com/${1}`
    - **Status:** 301
 
 The deployed `functions/_middleware.js` also enforces apex canonical host, legacy domain redirects (`rusthacks.xyz`, `.net`, `.com`), and legacy path redirects.
@@ -103,28 +103,28 @@ The deployed `functions/_middleware.js` also enforces apex canonical host, legac
 
 Verify these URLs return **200** with correct content:
 
-- `https://warthunderhacks.net/`
-- `https://warthunderhacks.net/es/`
-- `https://warthunderhacks.net/war-thunder-hacks/`
-- `https://warthunderhacks.net/war-thunder-aimbot/`
-- `https://warthunderhacks.net/sitemap-index.xml`
-- `https://warthunderhacks.net/robots.txt`
+- `https://warthunderhacks.com/`
+- `https://warthunderhacks.com/es/`
+- `https://warthunderhacks.com/war-thunder-hacks/`
+- `https://warthunderhacks.com/war-thunder-aimbot/`
+- `https://warthunderhacks.com/sitemap-index.xml`
+- `https://warthunderhacks.com/robots.txt`
 
 Verify redirects:
 
-- `https://warthunderhacks.net` → `https://warthunderhacks.net` (301)
-- `https://warthunderhacks.net` → `https://warthunderhacks.net` (301)
-- `https://rusthacks.xyz` → `https://warthunderhacks.net` (301)
+- `https://warthunderhacks.com` → `https://warthunderhacks.com` (301)
+- `https://warthunderhacks.com` → `https://warthunderhacks.com` (301)
+- `https://rusthacks.xyz` → `https://warthunderhacks.com` (301)
 - Legacy paths (e.g. `/warzone-aimbot/`) → Rust equivalents (301)
 
 ## 5. Google Search Console
 
 1. Go to [Google Search Console](https://search.google.com/search-console).
-2. **Add property** → choose **Domain** → enter `warthunderhacks.net`.
+2. **Add property** → choose **Domain** → enter `warthunderhacks.com`.
 3. Verify ownership via the **DNS TXT record** Cloudflare provides (add in Cloudflare DNS, wait for propagation, then confirm in GSC).
 4. After verification, open **Sitemaps** and submit:
    ```
-   https://warthunderhacks.net/sitemap-index.xml
+   https://warthunderhacks.com/sitemap-index.xml
    ```
 5. Use **URL Inspection** to request indexing for:
    - Homepage (`/`)
@@ -147,11 +147,11 @@ Verify redirects:
 
 - [ ] `npm run build:validate` passes locally
 - [ ] Cloudflare Pages project attached to this repo
-- [ ] Custom domain `warthunderhacks.net` attached and active
+- [ ] Custom domain `warthunderhacks.com` attached and active
 - [ ] `www` redirects to apex
-- [ ] Legacy domains 301 to `warthunderhacks.net`
+- [ ] Legacy domains 301 to `warthunderhacks.com`
 - [ ] Always Use HTTPS enabled
-- [ ] `robots.txt` and sitemaps serve from `https://warthunderhacks.net`
+- [ ] `robots.txt` and sitemaps serve from `https://warthunderhacks.com`
 - [ ] Google Search Console domain verified
 - [ ] `sitemap-index.xml` submitted in GSC
 - [ ] Homepage and `/war-thunder-hacks/` requested for indexing

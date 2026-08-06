@@ -1,6 +1,6 @@
-const CANONICAL_ORIGIN = 'https://warthunderhacks.net';
-const APEX_HOST = 'warthunderhacks.net';
-const WWW_HOST = 'www.warthunderhacks.net';
+const CANONICAL_ORIGIN = 'https://warthunderhacks.com';
+const APEX_HOST = 'warthunderhacks.com';
+const WWW_HOST = 'www.warthunderhacks.com';
 
 /** Old hosts → canonical apex (301). Never include the apex host itself. */
 const LEGACY_HOSTS = new Set([
@@ -10,8 +10,8 @@ const LEGACY_HOSTS = new Set([
 	'www.arcraidershacks.com',
 	'overwatchhacks.com',
 	'www.overwatchhacks.com',
-	'warthunderhacks.com',
-	'www.warthunderhacks.com',
+	'warthunderhacks.net',
+	'www.warthunderhacks.net',
 	'fortnitehack.net',
 	'www.fortnitehack.net',
 	'fortnitecheats.xyz',
@@ -25,26 +25,6 @@ const LEGACY_HOSTS = new Set([
 // Keep in sync with public/_redirects (which preserves query strings by default).
 // All targets are final canonical URLs — no chains/loops.
 const PATH_REDIRECTS = {
-	'/war-thunder-radar/': '/war-thunder-radar/',
-	'/overwatch-radar': '/war-thunder-radar/',
-	'/war-thunder-wallhack/': '/war-thunder-wallhack/',
-	'/overwatch-wallhack': '/war-thunder-wallhack/',
-	'/war-thunder-aimbot/': '/war-thunder-aimbot/',
-	'/overwatch-aimbot': '/war-thunder-aimbot/',
-	'/war-thunder-esp/': '/war-thunder-esp/',
-	'/overwatch-esp': '/war-thunder-esp/',
-	'/war-thunder-hacks/': '/war-thunder-hacks/',
-	'/overwatch-hacks': '/war-thunder-hacks/',
-	'/arc-raiders-radar/': '/war-thunder-radar/',
-	'/arc-raiders-radar': '/war-thunder-radar/',
-	'/arc-raiders-wallhack/': '/war-thunder-wallhack/',
-	'/arc-raiders-wallhack': '/war-thunder-wallhack/',
-	'/arc-raiders-aimbot/': '/war-thunder-aimbot/',
-	'/arc-raiders-aimbot': '/war-thunder-aimbot/',
-	'/arc-raiders-esp/': '/war-thunder-esp/',
-	'/arc-raiders-esp': '/war-thunder-esp/',
-	'/arc-raiders-hacks/': '/war-thunder-hacks/',
-	'/arc-raiders-hacks': '/war-thunder-hacks/',
 	'/sitemap-0.xml': '/sitemap.xml',
 	'/war-thunder-cheats': '/',
 	'/war-thunder-cheats/': '/',
@@ -70,7 +50,26 @@ const PATH_REDIRECTS = {
 	'/warzone-esp/': '/war-thunder-esp/',
 	'/ricochet-bypass': '/war-thunder-hacks/',
 	'/ricochet-bypass/': '/war-thunder-hacks/',
-	// Trailing-slash normalization for canonical overwatch URLs
+	'/overwatch-hacks': '/war-thunder-hacks/',
+	'/overwatch-hacks/': '/war-thunder-hacks/',
+	'/overwatch-esp': '/war-thunder-esp/',
+	'/overwatch-esp/': '/war-thunder-esp/',
+	'/overwatch-aimbot': '/war-thunder-aimbot/',
+	'/overwatch-aimbot/': '/war-thunder-aimbot/',
+	'/overwatch-wallhack': '/war-thunder-wallhack/',
+	'/overwatch-wallhack/': '/war-thunder-wallhack/',
+	'/overwatch-radar': '/war-thunder-radar/',
+	'/overwatch-radar/': '/war-thunder-radar/',
+	'/arc-raiders-hacks': '/war-thunder-hacks/',
+	'/arc-raiders-hacks/': '/war-thunder-hacks/',
+	'/arc-raiders-esp': '/war-thunder-esp/',
+	'/arc-raiders-esp/': '/war-thunder-esp/',
+	'/arc-raiders-aimbot': '/war-thunder-aimbot/',
+	'/arc-raiders-aimbot/': '/war-thunder-aimbot/',
+	'/arc-raiders-wallhack': '/war-thunder-wallhack/',
+	'/arc-raiders-wallhack/': '/war-thunder-wallhack/',
+	'/arc-raiders-radar': '/war-thunder-radar/',
+	'/arc-raiders-radar/': '/war-thunder-radar/',
 	'/war-thunder-hacks': '/war-thunder-hacks/',
 	'/war-thunder-esp': '/war-thunder-esp/',
 	'/war-thunder-aimbot': '/war-thunder-aimbot/',
@@ -127,7 +126,7 @@ const PATH_REDIRECTS = {
 	'/war-thunder-esp-hack': '/war-thunder-esp/',
 	'/war-thunder-esp-hack/': '/war-thunder-esp/',
 	'/war-thunder-unlock-all': '/features/',
-	'/features/': '/features/',
+	'/war-thunder-unlock-all/': '/features/',
 };
 
 const SECURITY_HEADERS = {

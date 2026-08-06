@@ -1,4 +1,5 @@
 import { customerReviews, siteConfig } from './site';
+import { rustImages } from './rust';
 
 export const reviewsBasePath = '/reviews/';
 
@@ -10,11 +11,34 @@ export function absoluteReviewUrl(slug?: string): string {
 	return new URL(slug ? getReviewPath(slug) : reviewsBasePath, siteConfig.url).href;
 }
 
-const reviewOgImage = {
+/** Unique War Thunder screenshots for each review sitemap entry. */
+const reviewImagePaths = [
+	rustImages.espWallhack,
+	rustImages.aimbotCombat,
+	rustImages.radarHack,
+	rustImages.cover,
+	rustImages.loadoutBuilder,
+	rustImages.playerEsp,
+	rustImages.squadFight,
+	rustImages.headerArt,
+	rustImages.cheatsPackage,
+	rustImages.battleRoyaleCombat,
+] as const;
+
+const reviewIndexOgImage = {
 	url: new URL(siteConfig.defaultOgImage, siteConfig.url).href,
 	title: 'War Thunder Hacks customer reviews',
-	caption: 'War Thunder Hacks buyer reviews for ESP soft aim, radar, and cloud DMA',
+	caption: 'War Thunder Hacks buyer reviews for ESP, aimbot, radar, and cloud DMA',
 };
+
+function reviewImageForIndex(index: number) {
+	const path = reviewImagePaths[index % reviewImagePaths.length];
+	return {
+		url: new URL(path, siteConfig.url).href,
+		title: 'War Thunder Hacks review screenshot',
+		caption: 'War Thunder Hacks ESP, aimbot, and radar preview from buyer reviews',
+	};
+}
 
 /** English review routes for sitemap.xml — /reviews/ index + one URL per review. */
 export function getReviewSitemapEntries() {
@@ -35,11 +59,12 @@ export function getReviewSitemapEntries() {
 			lastmod: indexLastmod,
 			priority: 0.85,
 			changefreq: 'weekly',
-			images: [reviewOgImage],
+			images: [reviewIndexOgImage, reviewImageForIndex(0)],
 		},
 	];
 
-	for (const review of customerReviews) {
+	customerReviews.forEach((review, index) => {
+		const image = reviewImageForIndex(index);
 		entries.push({
 			path: getReviewPath(review.slug),
 			lastmod: review.date,
@@ -47,13 +72,13 @@ export function getReviewSitemapEntries() {
 			changefreq: 'monthly',
 			images: [
 				{
-					url: reviewOgImage.url,
+					url: image.url,
 					title: `War Thunder Hacks review by @${review.handle}`,
 					caption: review.seoDescription,
 				},
 			],
 		});
-	}
+	});
 
 	return entries;
 }

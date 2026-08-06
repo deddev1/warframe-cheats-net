@@ -5,7 +5,7 @@ export const enPages = {
 	home: {
 		title: 'War Thunder Hacks 2026 | Undetected ESP & Aimbot',
 		description:
-			'War Thunder hacks for PC — undetected ESP, aimbot, and wallhack at warthunderhacks.net. Compare monthly and lifetime plans, setup, and anti-cheat updates.',
+			'War Thunder hacks for PC — undetected ESP, aimbot, and wallhack at warthunderhacks.com. Compare monthly and lifetime plans, setup, and anti-cheat updates.',
 		h1: 'War Thunder Hacks — ESP, Aimbot & Wallhack for PC',
 		intro:
 			'A focused Windows PC package for War Thunder: player ESP, aimbot controls, and wallhack overlays with anti-cheat maintenance after major patches.',
@@ -149,7 +149,7 @@ export const enPages = {
 			section(
 				'Licensing, delivery, and anti-cheat maintenance',
 				'Monthly ($35) and lifetime ($150) licenses with instant digital delivery. anti-cheat maintenance rebuilds publish on the <a href="/updates/">Updates page</a> after anti-cheat or game patches.',
-				`Monitor ${EXT.status} on patch days, then confirm rebuild notes before you queue. Setup and billing help lives on <a href="/support/">Support</a> and support@warthunderhacks.net.`,
+				`Monitor ${EXT.status} on patch days, then confirm rebuild notes before you queue. Setup and billing help lives on <a href="/support/">Support</a> and support@warthunderhacks.com.`,
 				'Next step: compare plans on <a href="/pricing/">Pricing</a> or read <a href="/war-thunder-hacks/">how undetected maintenance works</a>.',
 			),
 		],
@@ -281,7 +281,7 @@ export const enPages = {
 			section(
 				'Delivery, pricing, and support',
 				'Licenses deliver digitally after payment confirmation. Monthly is $35; lifetime is $150 USD — see <a href="/pricing/">Pricing</a>.',
-				'Contact support@warthunderhacks.net or the <a href="/support/">Support page</a> with order details for setup or billing help. First launch steps are on <a href="/setup/">Setup</a>.',
+				'Contact support@warthunderhacks.com or the <a href="/support/">Support page</a> with order details for setup or billing help. First launch steps are on <a href="/setup/">Setup</a>.',
 				'Refund eligibility is covered in the <a href="/refund-policy/">Refund Policy</a>.',
 			),
 		],
@@ -314,7 +314,7 @@ export const enPages = {
 			section(
 				'Self-service resources',
 				'Setup guide, Features list, Updates log, Refund Policy, and Terms of Use are linked from the footer. EAC bypass notes live on the dedicated <a href="/war-thunder-hacks/">Gaijin Easy Anti-Cheat page</a>.',
-				'Email: support@warthunderhacks.net',
+				'Email: support@warthunderhacks.com',
 				'Ready to purchase or renew? Open <a href="/pricing/">Pricing</a>. Need feature detail first? See <a href="/features/">Features</a>.',
 			),
 		],
@@ -480,7 +480,7 @@ export const enPages = {
 				'Before you buy in 2026',
 				'Read the <a href="/war-thunder-hacks/">War Thunder Hacks</a> pillar, Features, Pricing, Setup, and Updates pages. Check undetected status notes after every major patch — responsible use and maintenance awareness matter.',
 				'Also compare the <a href="/war-thunder-hacks/">best War Thunder hacks</a> checklist, <a href="/blog/war-thunder-hacks-2026-whats-new/">2026 blog guide</a>, and <a href="/faq/">FAQ</a>.',
-				'Support is available at support@warthunderhacks.net via the <a href="/support/">Support page</a>.',
+				'Support is available at support@warthunderhacks.com via the <a href="/support/">Support page</a>.',
 			),
 		],
 	},
@@ -757,9 +757,9 @@ export const enPages = {
 	privacy: {
 		title: 'Privacy Policy | War Thunder Hacks',
 		description:
-			'Privacy policy for War Thunder Hacks. How we handle support emails, order data, and checkout for War Thunder hacks licenses on warthunderhacks.net.',
+			'Privacy policy for War Thunder Hacks. How we handle support emails, order data, and checkout for War Thunder hacks licenses on warthunderhacks.com.',
 		h1: 'War Thunder Hacks Privacy Policy',
-		intro: 'How War Thunder Hacks handles information when you browse warthunderhacks.net or contact support about a War Thunder license.',
+		intro: 'How War Thunder Hacks handles information when you browse warthunderhacks.com or contact support about a War Thunder license.',
 		imageAlt: 'War Thunder ESP overlay visual for privacy policy page',
 		galleryTitle: 'War Thunder Hacks legal resources',
 		ctaPrimary: 'Email support',
@@ -779,8 +779,8 @@ export const enPages = {
 			),
 			section(
 				'Your choices and contact',
-				'You may request correction or deletion of support email data by contacting support@warthunderhacks.net with your request details.',
-				'Policy updates publish on this page. Continued use of warthunderhacks.net after updates means you accept the revised policy. Also see <a href="/terms/">Terms of Use</a> and <a href="/refund-policy/">Refund Policy</a>.',
+				'You may request correction or deletion of support email data by contacting support@warthunderhacks.com with your request details.',
+				'Policy updates publish on this page. Continued use of warthunderhacks.com after updates means you accept the revised policy. Also see <a href="/terms/">Terms of Use</a> and <a href="/refund-policy/">Refund Policy</a>.',
 			),
 		],
 	},
@@ -809,7 +809,7 @@ export const enPages = {
 			),
 			section(
 				'How to request a refund',
-				'Email support@warthunderhacks.net with subject "Refund Request", your order ID, purchase date, and issue summary — or use the <a href="/support/">Support page</a>.',
+				'Email support@warthunderhacks.com with subject "Refund Request", your order ID, purchase date, and issue summary — or use the <a href="/support/">Support page</a>.',
 				'Approved refunds process back to the original payment method when possible. Pricing details live on <a href="/pricing/">Pricing</a>.',
 			),
 		],
@@ -817,9 +817,9 @@ export const enPages = {
 	terms: {
 		title: 'Terms of Use 2026 | War Thunder Hacks Rules',
 		description:
-			'Terms of use for warthunderhacks.net and War Thunder Hacks licenses. Usage rules, anti-cheat risk, and liability for PC and controller cheats.',
+			'Terms of use for warthunderhacks.com and War Thunder Hacks licenses. Usage rules, anti-cheat risk, and liability for PC and controller cheats.',
 		h1: 'War Thunder Hacks Terms of Use',
-		intro: 'Terms governing use of warthunderhacks.net and War Thunder Hacks licenses for War Thunder on Windows PC.',
+		intro: 'Terms governing use of warthunderhacks.com and War Thunder Hacks licenses for War Thunder on Windows PC.',
 		imageAlt: 'War Thunder ESP overlay visual for terms of use page',
 		galleryTitle: 'War Thunder Hacks legal pages',
 		ctaPrimary: 'Email support',
@@ -839,7 +839,7 @@ export const enPages = {
 			section(
 				'Changes and governing law',
 				'We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.',
-				'Contact support@warthunderhacks.net for questions. Related policies: <a href="/privacy-policy/">Privacy</a> and <a href="/refund-policy/">Refunds</a>.',
+				'Contact support@warthunderhacks.com for questions. Related policies: <a href="/privacy-policy/">Privacy</a> and <a href="/refund-policy/">Refunds</a>.',
 			),
 		],
 	},

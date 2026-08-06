@@ -6,7 +6,7 @@ import sharp from 'sharp';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const outDir = join(root, 'public', 'images');
 
-/** Seven unique War Thunder hack screenshots — keyword-mapped for warthunderhacks.net SEO. */
+/** Seven unique War Thunder hack screenshots — keyword-mapped for warthunderhacks.com SEO. */
 const SOURCES = [
 	{
 		url: 'https://cdn.wh-satano.ru/arcane-wt-s1.webp',

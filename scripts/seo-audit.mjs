@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * SEO audit for warthunderhacks.net — War Thunder Hacks keyword focus.
+ * SEO audit for warthunderhacks.com — War Thunder Hacks keyword focus.
  * Run: node scripts/seo-audit.mjs
  * Exit 1 on critical failures.
  */
@@ -10,7 +10,7 @@ import { fileURLToPath } from 'node:url';
 import { englishPagesFinal } from './i18n-data/pages-en.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const DOMAIN = 'warthunderhacks.net';
+const DOMAIN = 'warthunderhacks.com';
 const ORIGIN = `https://${DOMAIN}`;
 const PRIMARY_KW = 'war thunder hacks';
 const BRAND_KW = 'war thunder';
@@ -120,7 +120,7 @@ if (!/War Thunder/i.test(rustTs)) fail('rust.ts image alts missing War Thunder k
 checkBanned('rust.ts', rustTs);
 
 // --- report ---
-console.log('\n=== SEO Audit: warthunderhacks.net ===\n');
+console.log('\n=== SEO Audit: warthunderhacks.com ===\n');
 console.log(`Pages checked: ${pageIds.length} EN landing pages`);
 console.log(`Primary keyword: "${PRIMARY_KW}"`);
 console.log(`Canonical: ${ORIGIN}\n`);

@@ -46,9 +46,11 @@ const sitemapImagesByPageId: Partial<Record<PageId, SitemapImage[]>> = {
 	],
 	wallhack: [
 		img(rustImages.espWallhack, 'War Thunder Wallhack', 'War Thunder wallhack ESP view'),
+		img(rustImages.cover, 'War Thunder Wallhack overlay', 'War Thunder ESP boxes through terrain'),
 	],
 	radar: [
 		img(rustImages.radarHack, 'War Thunder Radar Hack', 'War Thunder radar hack minimap overlay'),
+		img(rustImages.rebootFight, 'War Thunder Radar Hack overlay', 'War Thunder 2D radar for flank detection'),
 	],
 	features: [
 		img(rustImages.hero, 'War Thunder Hacks Features', 'War Thunder Hacks feature overview'),

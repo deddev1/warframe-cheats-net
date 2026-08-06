@@ -10,12 +10,15 @@ export const rustHeroVideo = {
 } as const;
 
 export const rustVideo = {
-	src: '/images/war-thunder-battle.webp',
-	poster: '/images/war-thunder-battle.webp',
+	src: 'https://ooszazcwzmwhitdxwtom.supabase.co/storage/v1/object/public/ef/fafa.mp4',
+	poster: '/images/war-thunder-hacks-video-poster.webp',
 	title: 'War Thunder hacks Realistic Battle preview',
 	ariaLabel: 'War Thunder hacks preview — ground battle with ESP and aimbot',
 	caption: 'War Thunder hacks gameplay with ESP wallhack and aimbot overlays',
 } as const;
+
+/** Homepage product card — click-to-play preview (poster = 5th video frame). */
+export const productPreviewVideo = rustVideo;
 
 const wt1 = '/images/war-thunder-hacks-hero.webp';
 const wt2 = '/images/war-thunder-esp-overlay.webp';

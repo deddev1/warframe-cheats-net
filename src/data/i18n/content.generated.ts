@@ -104,7 +104,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			pages: {
 				home: {
 					title: "War Thunder Hacks 2026 | Undetected ESP & Aimbot",
-					description: "War Thunder hacks for PC — undetected ESP, aimbot, and wallhack at warthunderhacks.net. Compare monthly and lifetime plans, setup, and anti-cheat updates.",
+					description: "War Thunder hacks for PC — undetected ESP, aimbot, and wallhack at warthunderhacks.com. Compare monthly and lifetime plans, setup, and anti-cheat updates.",
 					h1: "War Thunder Hacks — ESP, Aimbot & Wallhack for PC",
 					intro: "A focused Windows PC package for War Thunder: player ESP, aimbot controls, and wallhack overlays with anti-cheat maintenance after major patches.",
 					imageAlt: "War Thunder hacks main menu with ESP wallhack and soft aim toggles on PC",
@@ -269,7 +269,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Licensing, delivery, and anti-cheat maintenance",
 							paragraphs: [
 								"Monthly ($35) and lifetime ($150) licenses with instant digital delivery. anti-cheat maintenance rebuilds publish on the <a href=\"/updates/\">Updates page</a> after anti-cheat or game patches.",
-								"Monitor <a href=\"https://warthunder.com/en\" target=\"_blank\" rel=\"noopener noreferrer\">War Thunder</a> on patch days, then confirm rebuild notes before you queue. Setup and billing help lives on <a href=\"/support/\">Support</a> and support@warthunderhacks.net.",
+								"Monitor <a href=\"https://warthunder.com/en\" target=\"_blank\" rel=\"noopener noreferrer\">War Thunder</a> on patch days, then confirm rebuild notes before you queue. Setup and billing help lives on <a href=\"/support/\">Support</a> and support@warthunderhacks.com.",
 								"Next step: compare plans on <a href=\"/pricing/\">Pricing</a> or read <a href=\"/war-thunder-hacks/\">how undetected maintenance works</a>.",
 							],
 						},
@@ -421,7 +421,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Delivery, pricing, and support",
 							paragraphs: [
 								"Licenses deliver digitally after payment confirmation. Monthly is $35; lifetime is $150 USD — see <a href=\"/pricing/\">Pricing</a>.",
-								"Contact support@warthunderhacks.net or the <a href=\"/support/\">Support page</a> with order details for setup or billing help. First launch steps are on <a href=\"/setup/\">Setup</a>.",
+								"Contact support@warthunderhacks.com or the <a href=\"/support/\">Support page</a> with order details for setup or billing help. First launch steps are on <a href=\"/setup/\">Setup</a>.",
 								"Refund eligibility is covered in the <a href=\"/refund-policy/\">Refund Policy</a>.",
 							],
 						},
@@ -459,7 +459,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Self-service resources",
 							paragraphs: [
 								"Setup guide, Features list, Updates log, Refund Policy, and Terms of Use are linked from the footer. EAC bypass notes live on the dedicated <a href=\"/war-thunder-hacks/\">Gaijin Easy Anti-Cheat page</a>.",
-								"Email: support@warthunderhacks.net",
+								"Email: support@warthunderhacks.com",
 								"Ready to purchase or renew? Open <a href=\"/pricing/\">Pricing</a>. Need feature detail first? See <a href=\"/features/\">Features</a>.",
 							],
 						},
@@ -650,7 +650,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Read the <a href=\"/war-thunder-hacks/\">War Thunder Hacks</a> pillar, Features, Pricing, Setup, and Updates pages. Check undetected status notes after every major patch — responsible use and maintenance awareness matter.",
 								"Also compare the <a href=\"/war-thunder-hacks/\">best War Thunder hacks</a> checklist, <a href=\"/blog/war-thunder-hacks-2026-whats-new/\">2026 blog guide</a>, and <a href=\"/faq/\">FAQ</a>.",
-								"Support is available at support@warthunderhacks.net via the <a href=\"/support/\">Support page</a>.",
+								"Support is available at support@warthunderhacks.com via the <a href=\"/support/\">Support page</a>.",
 							],
 						},
 					],
@@ -970,9 +970,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				privacy: {
 					title: "Privacy Policy | War Thunder Hacks",
-					description: "Privacy policy for War Thunder Hacks. How we handle support emails, order data, and checkout for War Thunder hacks licenses on warthunderhacks.net.",
+					description: "Privacy policy for War Thunder Hacks. How we handle support emails, order data, and checkout for War Thunder hacks licenses on warthunderhacks.com.",
 					h1: "War Thunder Hacks Privacy Policy",
-					intro: "How War Thunder Hacks handles information when you browse warthunderhacks.net or contact support about a War Thunder license.",
+					intro: "How War Thunder Hacks handles information when you browse warthunderhacks.com or contact support about a War Thunder license.",
 					imageAlt: "War Thunder ESP overlay visual for privacy policy page",
 					galleryTitle: "War Thunder Hacks legal resources",
 					ctaPrimary: "Email support",
@@ -1001,8 +1001,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your choices and contact",
 							paragraphs: [
-								"You may request correction or deletion of support email data by contacting support@warthunderhacks.net with your request details.",
-								"Policy updates publish on this page. Continued use of warthunderhacks.net after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">Refund Policy</a>.",
+								"You may request correction or deletion of support email data by contacting support@warthunderhacks.com with your request details.",
+								"Policy updates publish on this page. Continued use of warthunderhacks.com after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">Refund Policy</a>.",
 							],
 						},
 					],
@@ -1036,7 +1036,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request a refund",
 							paragraphs: [
-								"Email support@warthunderhacks.net with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">Support page</a>.",
+								"Email support@warthunderhacks.com with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">Support page</a>.",
 								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">Pricing</a>.",
 							],
 						},
@@ -1045,9 +1045,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				terms: {
 					title: "Terms of Use 2026 | War Thunder Hacks Rules",
-					description: "Terms of use for warthunderhacks.net and War Thunder Hacks licenses. Usage rules, anti-cheat risk, and liability for PC and controller cheats.",
+					description: "Terms of use for warthunderhacks.com and War Thunder Hacks licenses. Usage rules, anti-cheat risk, and liability for PC and controller cheats.",
 					h1: "War Thunder Hacks Terms of Use",
-					intro: "Terms governing use of warthunderhacks.net and War Thunder Hacks licenses for War Thunder on Windows PC.",
+					intro: "Terms governing use of warthunderhacks.com and War Thunder Hacks licenses for War Thunder on Windows PC.",
 					imageAlt: "War Thunder ESP overlay visual for terms of use page",
 					galleryTitle: "War Thunder Hacks legal pages",
 					ctaPrimary: "Email support",
@@ -1072,7 +1072,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Changes and governing law",
 							paragraphs: [
 								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
-								"Contact support@warthunderhacks.net for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">Refunds</a>.",
+								"Contact support@warthunderhacks.com for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">Refunds</a>.",
 							],
 						},
 					],
@@ -1919,7 +1919,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Política de privacidad | War Thunder Hacks",
 					description: "Política de privacidad for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Política de privacidad",
-					intro: "War Thunder Hacks ofrece ESP wallhack, radar hack y Aimbot indetectables para War Thunder en Windows PC. Política de privacidad for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks ofrece ESP wallhack, radar hack y Aimbot indetectables para War Thunder en Windows PC. Política de privacidad for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks privacy resources",
 					heroImage: "/images/war-thunder-esp-modules.webp",
@@ -1931,7 +1931,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Información que recopilamos",
 							paragraphs: [
 								"War Thunder Hacks ofrece ESP wallhack, radar hack y Aimbot indetectables para War Thunder en Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.com.",
 							],
 						},
 						{
@@ -1944,8 +1944,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Tus derechos",
 							paragraphs: [
-								"Contacta support@warthunderhacks.net para solicitudes legales o de soporte.",
-								"Email: support@warthunderhacks.net",
+								"Contacta support@warthunderhacks.com para solicitudes legales o de soporte.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -1954,7 +1954,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Política de reembolso | War Thunder Hacks",
 					description: "Política de reembolso for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Política de reembolso",
-					intro: "War Thunder Hacks ofrece ESP wallhack, radar hack y Aimbot indetectables para War Thunder en Windows PC. Política de reembolso for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks ofrece ESP wallhack, radar hack y Aimbot indetectables para War Thunder en Windows PC. Política de reembolso for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks refund ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks refund resources",
 					heroImage: "/images/war-thunder-aimbot-menu.webp",
@@ -1979,8 +1979,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Cómo solicitar",
 							paragraphs: [
-								"Contacta support@warthunderhacks.net para solicitudes legales o de soporte.",
-								"Email: support@warthunderhacks.net",
+								"Contacta support@warthunderhacks.com para solicitudes legales o de soporte.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -1989,7 +1989,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Términos de uso | War Thunder Hacks",
 					description: "Términos de uso for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Términos de uso",
-					intro: "War Thunder Hacks ofrece ESP wallhack, radar hack y Aimbot indetectables para War Thunder en Windows PC. Términos de uso for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks ofrece ESP wallhack, radar hack y Aimbot indetectables para War Thunder en Windows PC. Términos de uso for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks terms ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks terms resources",
 					heroImage: "/images/war-thunder-esp-tanks.webp",
@@ -2014,8 +2014,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Cambios",
 							paragraphs: [
-								"Contacta support@warthunderhacks.net para solicitudes legales o de soporte.",
-								"Email: support@warthunderhacks.net",
+								"Contacta support@warthunderhacks.com para solicitudes legales o de soporte.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -2861,7 +2861,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Politique de confidentialité | War Thunder Hacks",
 					description: "Politique de confidentialité for War Thunder Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Politique de confidentialité",
-					intro: "War Thunder Hacks combine ESP wallhack, radar hack et Aimbot indétectables pour War Thunder sur PC Windows. Politique de confidentialité for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks combine ESP wallhack, radar hack et Aimbot indétectables pour War Thunder sur PC Windows. Politique de confidentialité for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks privacy resources",
 					heroImage: "/images/war-thunder-esp-modules.webp",
@@ -2873,7 +2873,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Informations collectées",
 							paragraphs: [
 								"War Thunder Hacks combine ESP wallhack, radar hack et Aimbot indétectables pour War Thunder sur PC Windows. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.com.",
 							],
 						},
 						{
@@ -2886,8 +2886,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Vos droits",
 							paragraphs: [
-								"Contactez support@warthunderhacks.net pour le support ou les demandes légales.",
-								"Email: support@warthunderhacks.net",
+								"Contactez support@warthunderhacks.com pour le support ou les demandes légales.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -2896,7 +2896,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Politique de remboursement | War Thunder Hacks",
 					description: "Politique de remboursement for War Thunder Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Politique de remboursement",
-					intro: "War Thunder Hacks combine ESP wallhack, radar hack et Aimbot indétectables pour War Thunder sur PC Windows. Politique de remboursement for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks combine ESP wallhack, radar hack et Aimbot indétectables pour War Thunder sur PC Windows. Politique de remboursement for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks refund ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks refund resources",
 					heroImage: "/images/war-thunder-aimbot-menu.webp",
@@ -2921,8 +2921,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Comment demander",
 							paragraphs: [
-								"Contactez support@warthunderhacks.net pour le support ou les demandes légales.",
-								"Email: support@warthunderhacks.net",
+								"Contactez support@warthunderhacks.com pour le support ou les demandes légales.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -2931,7 +2931,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Conditions d'utilisation | War Thunder Hacks",
 					description: "Conditions d'utilisation for War Thunder Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Conditions d'utilisation",
-					intro: "War Thunder Hacks combine ESP wallhack, radar hack et Aimbot indétectables pour War Thunder sur PC Windows. Conditions d'utilisation for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks combine ESP wallhack, radar hack et Aimbot indétectables pour War Thunder sur PC Windows. Conditions d'utilisation for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks terms ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks terms resources",
 					heroImage: "/images/war-thunder-esp-tanks.webp",
@@ -2956,8 +2956,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Modifications",
 							paragraphs: [
-								"Contactez support@warthunderhacks.net pour le support ou les demandes légales.",
-								"Email: support@warthunderhacks.net",
+								"Contactez support@warthunderhacks.com pour le support ou les demandes légales.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -3803,7 +3803,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Datenschutz | War Thunder Hacks",
 					description: "Datenschutz for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Datenschutz",
-					intro: "War Thunder Hacks bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für War Thunder auf Windows PC. Datenschutz for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für War Thunder auf Windows PC. Datenschutz for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks privacy resources",
 					heroImage: "/images/war-thunder-esp-modules.webp",
@@ -3815,7 +3815,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Erhobene Daten",
 							paragraphs: [
 								"War Thunder Hacks bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für War Thunder auf Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.com.",
 							],
 						},
 						{
@@ -3828,8 +3828,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Ihre Rechte",
 							paragraphs: [
-								"support@warthunderhacks.net für Support und rechtliche Anfragen.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com für Support und rechtliche Anfragen.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -3838,7 +3838,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Rückerstattung | War Thunder Hacks",
 					description: "Rückerstattung for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Rückerstattung",
-					intro: "War Thunder Hacks bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für War Thunder auf Windows PC. Rückerstattung for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für War Thunder auf Windows PC. Rückerstattung for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks refund ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks refund resources",
 					heroImage: "/images/war-thunder-aimbot-menu.webp",
@@ -3863,8 +3863,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Anfrage stellen",
 							paragraphs: [
-								"support@warthunderhacks.net für Support und rechtliche Anfragen.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com für Support und rechtliche Anfragen.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -3873,7 +3873,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Nutzungsbedingungen | War Thunder Hacks",
 					description: "Nutzungsbedingungen for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Nutzungsbedingungen",
-					intro: "War Thunder Hacks bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für War Thunder auf Windows PC. Nutzungsbedingungen for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für War Thunder auf Windows PC. Nutzungsbedingungen for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks terms ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks terms resources",
 					heroImage: "/images/war-thunder-esp-tanks.webp",
@@ -3898,8 +3898,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Änderungen",
 							paragraphs: [
-								"support@warthunderhacks.net für Support und rechtliche Anfragen.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com für Support und rechtliche Anfragen.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -4745,7 +4745,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Política de privacidade | War Thunder Hacks",
 					description: "Política de privacidade for War Thunder Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Política de privacidade",
-					intro: "War Thunder Hacks reúne ESP wallhack, radar hack e Aimbot indetectáveis para War Thunder no PC Windows. Política de privacidade for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks reúne ESP wallhack, radar hack e Aimbot indetectáveis para War Thunder no PC Windows. Política de privacidade for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks privacy resources",
 					heroImage: "/images/war-thunder-esp-modules.webp",
@@ -4757,7 +4757,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"War Thunder Hacks reúne ESP wallhack, radar hack e Aimbot indetectáveis para War Thunder no PC Windows. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.com.",
 							],
 						},
 						{
@@ -4770,8 +4770,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"Contacte support@warthunderhacks.net para suporte ou questões legais.",
-								"Email: support@warthunderhacks.net",
+								"Contacte support@warthunderhacks.com para suporte ou questões legais.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -4780,7 +4780,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Política de reembolso | War Thunder Hacks",
 					description: "Política de reembolso for War Thunder Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Política de reembolso",
-					intro: "War Thunder Hacks reúne ESP wallhack, radar hack e Aimbot indetectáveis para War Thunder no PC Windows. Política de reembolso for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks reúne ESP wallhack, radar hack e Aimbot indetectáveis para War Thunder no PC Windows. Política de reembolso for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks refund ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks refund resources",
 					heroImage: "/images/war-thunder-aimbot-menu.webp",
@@ -4805,8 +4805,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"Contacte support@warthunderhacks.net para suporte ou questões legais.",
-								"Email: support@warthunderhacks.net",
+								"Contacte support@warthunderhacks.com para suporte ou questões legais.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -4815,7 +4815,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Termos de uso | War Thunder Hacks",
 					description: "Termos de uso for War Thunder Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Termos de uso",
-					intro: "War Thunder Hacks reúne ESP wallhack, radar hack e Aimbot indetectáveis para War Thunder no PC Windows. Termos de uso for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks reúne ESP wallhack, radar hack e Aimbot indetectáveis para War Thunder no PC Windows. Termos de uso for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks terms ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks terms resources",
 					heroImage: "/images/war-thunder-esp-tanks.webp",
@@ -4840,8 +4840,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"Contacte support@warthunderhacks.net para suporte ou questões legais.",
-								"Email: support@warthunderhacks.net",
+								"Contacte support@warthunderhacks.com para suporte ou questões legais.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -5687,7 +5687,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Informativa privacy | War Thunder Hacks",
 					description: "Informativa privacy for War Thunder Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Informativa privacy",
-					intro: "War Thunder Hacks unisce ESP wallhack, radar hack e Aimbot indetectable per War Thunder su PC Windows. Informativa privacy for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks unisce ESP wallhack, radar hack e Aimbot indetectable per War Thunder su PC Windows. Informativa privacy for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks privacy resources",
 					heroImage: "/images/war-thunder-esp-modules.webp",
@@ -5699,7 +5699,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"War Thunder Hacks unisce ESP wallhack, radar hack e Aimbot indetectable per War Thunder su PC Windows. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.com.",
 							],
 						},
 						{
@@ -5712,8 +5712,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"Contatta support@warthunderhacks.net per supporto o richieste legali.",
-								"Email: support@warthunderhacks.net",
+								"Contatta support@warthunderhacks.com per supporto o richieste legali.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -5722,7 +5722,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Politica di rimborso | War Thunder Hacks",
 					description: "Politica di rimborso for War Thunder Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Politica di rimborso",
-					intro: "War Thunder Hacks unisce ESP wallhack, radar hack e Aimbot indetectable per War Thunder su PC Windows. Politica di rimborso for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks unisce ESP wallhack, radar hack e Aimbot indetectable per War Thunder su PC Windows. Politica di rimborso for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks refund ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks refund resources",
 					heroImage: "/images/war-thunder-aimbot-menu.webp",
@@ -5747,8 +5747,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"Contatta support@warthunderhacks.net per supporto o richieste legali.",
-								"Email: support@warthunderhacks.net",
+								"Contatta support@warthunderhacks.com per supporto o richieste legali.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -5757,7 +5757,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Termini di utilizzo | War Thunder Hacks",
 					description: "Termini di utilizzo for War Thunder Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Termini di utilizzo",
-					intro: "War Thunder Hacks unisce ESP wallhack, radar hack e Aimbot indetectable per War Thunder su PC Windows. Termini di utilizzo for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks unisce ESP wallhack, radar hack e Aimbot indetectable per War Thunder su PC Windows. Termini di utilizzo for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks terms ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks terms resources",
 					heroImage: "/images/war-thunder-esp-tanks.webp",
@@ -5782,8 +5782,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"Contatta support@warthunderhacks.net per supporto o richieste legali.",
-								"Email: support@warthunderhacks.net",
+								"Contatta support@warthunderhacks.com per supporto o richieste legali.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -6629,7 +6629,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Privacybeleid | War Thunder Hacks",
 					description: "Privacybeleid for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Privacybeleid",
-					intro: "War Thunder Hacks bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor War Thunder op Windows PC. Privacybeleid for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor War Thunder op Windows PC. Privacybeleid for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks privacy resources",
 					heroImage: "/images/war-thunder-esp-modules.webp",
@@ -6641,7 +6641,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"War Thunder Hacks bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor War Thunder op Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.com.",
 							],
 						},
 						{
@@ -6654,8 +6654,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@warthunderhacks.net voor support en juridische vragen.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com voor support en juridische vragen.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -6664,7 +6664,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Restitutiebeleid | War Thunder Hacks",
 					description: "Restitutiebeleid for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Restitutiebeleid",
-					intro: "War Thunder Hacks bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor War Thunder op Windows PC. Restitutiebeleid for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor War Thunder op Windows PC. Restitutiebeleid for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks refund ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks refund resources",
 					heroImage: "/images/war-thunder-aimbot-menu.webp",
@@ -6689,8 +6689,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@warthunderhacks.net voor support en juridische vragen.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com voor support en juridische vragen.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -6699,7 +6699,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Gebruiksvoorwaarden | War Thunder Hacks",
 					description: "Gebruiksvoorwaarden for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Gebruiksvoorwaarden",
-					intro: "War Thunder Hacks bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor War Thunder op Windows PC. Gebruiksvoorwaarden for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor War Thunder op Windows PC. Gebruiksvoorwaarden for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks terms ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks terms resources",
 					heroImage: "/images/war-thunder-esp-tanks.webp",
@@ -6724,8 +6724,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@warthunderhacks.net voor support en juridische vragen.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com voor support en juridische vragen.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -7571,7 +7571,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Polityka prywatności | War Thunder Hacks",
 					description: "Polityka prywatności for War Thunder Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Polityka prywatności",
-					intro: "War Thunder Hacks łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla War Thunder na PC Windows. Polityka prywatności for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla War Thunder na PC Windows. Polityka prywatności for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks privacy resources",
 					heroImage: "/images/war-thunder-esp-modules.webp",
@@ -7583,7 +7583,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"War Thunder Hacks łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla War Thunder na PC Windows. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.com.",
 							],
 						},
 						{
@@ -7596,8 +7596,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@warthunderhacks.net w sprawach wsparcia i prawnych.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com w sprawach wsparcia i prawnych.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -7606,7 +7606,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Polityka zwrotów | War Thunder Hacks",
 					description: "Polityka zwrotów for War Thunder Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Polityka zwrotów",
-					intro: "War Thunder Hacks łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla War Thunder na PC Windows. Polityka zwrotów for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla War Thunder na PC Windows. Polityka zwrotów for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks refund ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks refund resources",
 					heroImage: "/images/war-thunder-aimbot-menu.webp",
@@ -7631,8 +7631,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@warthunderhacks.net w sprawach wsparcia i prawnych.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com w sprawach wsparcia i prawnych.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -7641,7 +7641,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Warunki użytkowania | War Thunder Hacks",
 					description: "Warunki użytkowania for War Thunder Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Warunki użytkowania",
-					intro: "War Thunder Hacks łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla War Thunder na PC Windows. Warunki użytkowania for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla War Thunder na PC Windows. Warunki użytkowania for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks terms ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks terms resources",
 					heroImage: "/images/war-thunder-esp-tanks.webp",
@@ -7666,8 +7666,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@warthunderhacks.net w sprawach wsparcia i prawnych.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com w sprawach wsparcia i prawnych.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -8513,7 +8513,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Политика конфиденциальности | War Thunder Hacks",
 					description: "Политика конфиденциальности for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Политика конфиденциальности",
-					intro: "War Thunder Hacks объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для War Thunder на Windows PC. Политика конфиденциальности for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для War Thunder на Windows PC. Политика конфиденциальности for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks privacy resources",
 					heroImage: "/images/war-thunder-esp-modules.webp",
@@ -8525,7 +8525,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"War Thunder Hacks объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для War Thunder на Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.com.",
 							],
 						},
 						{
@@ -8538,8 +8538,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@warthunderhacks.net для поддержки и юридических вопросов.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com для поддержки и юридических вопросов.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -8548,7 +8548,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Политика возврата | War Thunder Hacks",
 					description: "Политика возврата for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Политика возврата",
-					intro: "War Thunder Hacks объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для War Thunder на Windows PC. Политика возврата for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для War Thunder на Windows PC. Политика возврата for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks refund ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks refund resources",
 					heroImage: "/images/war-thunder-aimbot-menu.webp",
@@ -8573,8 +8573,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@warthunderhacks.net для поддержки и юридических вопросов.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com для поддержки и юридических вопросов.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -8583,7 +8583,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Условия использования | War Thunder Hacks",
 					description: "Условия использования for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Условия использования",
-					intro: "War Thunder Hacks объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для War Thunder на Windows PC. Условия использования for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для War Thunder на Windows PC. Условия использования for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks terms ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks terms resources",
 					heroImage: "/images/war-thunder-esp-tanks.webp",
@@ -8608,8 +8608,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@warthunderhacks.net для поддержки и юридических вопросов.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com для поддержки и юридических вопросов.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -9455,7 +9455,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Gizlilik politikası | War Thunder Hacks",
 					description: "Gizlilik politikası for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Gizlilik politikası",
-					intro: "War Thunder Hacks, War Thunder için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Gizlilik politikası for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks, War Thunder için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Gizlilik politikası for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks privacy resources",
 					heroImage: "/images/war-thunder-esp-modules.webp",
@@ -9467,7 +9467,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"War Thunder Hacks, War Thunder için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.com.",
 							],
 						},
 						{
@@ -9480,8 +9480,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"Destek ve yasal sorular için support@warthunderhacks.net.",
-								"Email: support@warthunderhacks.net",
+								"Destek ve yasal sorular için support@warthunderhacks.com.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -9490,7 +9490,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "İade politikası | War Thunder Hacks",
 					description: "İade politikası for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "İade politikası",
-					intro: "War Thunder Hacks, War Thunder için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. İade politikası for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks, War Thunder için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. İade politikası for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks refund ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks refund resources",
 					heroImage: "/images/war-thunder-aimbot-menu.webp",
@@ -9515,8 +9515,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"Destek ve yasal sorular için support@warthunderhacks.net.",
-								"Email: support@warthunderhacks.net",
+								"Destek ve yasal sorular için support@warthunderhacks.com.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -9525,7 +9525,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Kullanım şartları | War Thunder Hacks",
 					description: "Kullanım şartları for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Kullanım şartları",
-					intro: "War Thunder Hacks, War Thunder için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Kullanım şartları for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks, War Thunder için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Kullanım şartları for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks terms ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks terms resources",
 					heroImage: "/images/war-thunder-esp-tanks.webp",
@@ -9550,8 +9550,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"Destek ve yasal sorular için support@warthunderhacks.net.",
-								"Email: support@warthunderhacks.net",
+								"Destek ve yasal sorular için support@warthunderhacks.com.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -10397,7 +10397,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "سياسة الخصوصية | War Thunder Hacks",
 					description: "سياسة الخصوصية for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "سياسة الخصوصية",
-					intro: "War Thunder Hacks يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ War Thunder على Windows PC. سياسة الخصوصية for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ War Thunder على Windows PC. سياسة الخصوصية for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks privacy resources",
 					heroImage: "/images/war-thunder-esp-modules.webp",
@@ -10409,7 +10409,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "المعلومات التي نجمعها",
 							paragraphs: [
 								"War Thunder Hacks يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ War Thunder على Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.com.",
 							],
 						},
 						{
@@ -10422,8 +10422,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "حقوقك",
 							paragraphs: [
-								"support@warthunderhacks.net للدعم والطلبات القانونية.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com للدعم والطلبات القانونية.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -10432,7 +10432,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "سياسة الاسترداد | War Thunder Hacks",
 					description: "سياسة الاسترداد for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "سياسة الاسترداد",
-					intro: "War Thunder Hacks يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ War Thunder على Windows PC. سياسة الاسترداد for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ War Thunder على Windows PC. سياسة الاسترداد for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks refund ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks refund resources",
 					heroImage: "/images/war-thunder-aimbot-menu.webp",
@@ -10457,8 +10457,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "كيفية الطلب",
 							paragraphs: [
-								"support@warthunderhacks.net للدعم والطلبات القانونية.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com للدعم والطلبات القانونية.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -10467,7 +10467,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "شروط الاستخدام | War Thunder Hacks",
 					description: "شروط الاستخدام for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "شروط الاستخدام",
-					intro: "War Thunder Hacks يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ War Thunder على Windows PC. شروط الاستخدام for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ War Thunder على Windows PC. شروط الاستخدام for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks terms ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks terms resources",
 					heroImage: "/images/war-thunder-esp-tanks.webp",
@@ -10492,8 +10492,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "التغييرات",
 							paragraphs: [
-								"support@warthunderhacks.net للدعم والطلبات القانونية.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com للدعم والطلبات القانونية.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -11339,7 +11339,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "プライバシーポリシー | War Thunder Hacks",
 					description: "プライバシーポリシー for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "プライバシーポリシー",
-					intro: "War Thunder HacksはWar Thunder向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。プライバシーポリシー for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder HacksはWar Thunder向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。プライバシーポリシー for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks privacy resources",
 					heroImage: "/images/war-thunder-esp-modules.webp",
@@ -11351,7 +11351,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "収集する情報",
 							paragraphs: [
 								"War Thunder HacksはWar Thunder向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.com.",
 							],
 						},
 						{
@@ -11364,8 +11364,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "あなたの権利",
 							paragraphs: [
-								"サポート・法務: support@warthunderhacks.net",
-								"Email: support@warthunderhacks.net",
+								"サポート・法務: support@warthunderhacks.com",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -11374,7 +11374,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "返金ポリシー | War Thunder Hacks",
 					description: "返金ポリシー for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "返金ポリシー",
-					intro: "War Thunder HacksはWar Thunder向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。返金ポリシー for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder HacksはWar Thunder向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。返金ポリシー for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks refund ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks refund resources",
 					heroImage: "/images/war-thunder-aimbot-menu.webp",
@@ -11399,8 +11399,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "申請方法",
 							paragraphs: [
-								"サポート・法務: support@warthunderhacks.net",
-								"Email: support@warthunderhacks.net",
+								"サポート・法務: support@warthunderhacks.com",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -11409,7 +11409,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "利用規約 | War Thunder Hacks",
 					description: "利用規約 for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "利用規約",
-					intro: "War Thunder HacksはWar Thunder向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。利用規約 for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder HacksはWar Thunder向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。利用規約 for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks terms ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks terms resources",
 					heroImage: "/images/war-thunder-esp-tanks.webp",
@@ -11434,8 +11434,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "変更",
 							paragraphs: [
-								"サポート・法務: support@warthunderhacks.net",
-								"Email: support@warthunderhacks.net",
+								"サポート・法務: support@warthunderhacks.com",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -12281,7 +12281,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "개인정보 처리방침 | War Thunder Hacks",
 					description: "개인정보 처리방침 for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "개인정보 처리방침",
-					intro: "War Thunder Hacks는 War Thunder Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. 개인정보 처리방침 for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks는 War Thunder Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. 개인정보 처리방침 for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks privacy resources",
 					heroImage: "/images/war-thunder-esp-modules.webp",
@@ -12293,7 +12293,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"War Thunder Hacks는 War Thunder Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.com.",
 							],
 						},
 						{
@@ -12306,8 +12306,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"지원 및 법무: support@warthunderhacks.net",
-								"Email: support@warthunderhacks.net",
+								"지원 및 법무: support@warthunderhacks.com",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -12316,7 +12316,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "환불 정책 | War Thunder Hacks",
 					description: "환불 정책 for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "환불 정책",
-					intro: "War Thunder Hacks는 War Thunder Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. 환불 정책 for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks는 War Thunder Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. 환불 정책 for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks refund ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks refund resources",
 					heroImage: "/images/war-thunder-aimbot-menu.webp",
@@ -12341,8 +12341,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"지원 및 법무: support@warthunderhacks.net",
-								"Email: support@warthunderhacks.net",
+								"지원 및 법무: support@warthunderhacks.com",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -12351,7 +12351,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "이용 약관 | War Thunder Hacks",
 					description: "이용 약관 for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "이용 약관",
-					intro: "War Thunder Hacks는 War Thunder Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. 이용 약관 for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks는 War Thunder Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. 이용 약관 for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks terms ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks terms resources",
 					heroImage: "/images/war-thunder-esp-tanks.webp",
@@ -12376,8 +12376,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"지원 및 법무: support@warthunderhacks.net",
-								"Email: support@warthunderhacks.net",
+								"지원 및 법무: support@warthunderhacks.com",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -13223,7 +13223,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "隐私政策 | War Thunder Hacks",
 					description: "隐私政策 for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "隐私政策",
-					intro: "War Thunder Hacks为War ThunderWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。隐私政策 for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks为War ThunderWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。隐私政策 for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks privacy resources",
 					heroImage: "/images/war-thunder-esp-modules.webp",
@@ -13235,7 +13235,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"War Thunder Hacks为War ThunderWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.com.",
 							],
 						},
 						{
@@ -13248,8 +13248,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"支持与法务：support@warthunderhacks.net",
-								"Email: support@warthunderhacks.net",
+								"支持与法务：support@warthunderhacks.com",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -13258,7 +13258,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "退款政策 | War Thunder Hacks",
 					description: "退款政策 for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "退款政策",
-					intro: "War Thunder Hacks为War ThunderWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。退款政策 for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks为War ThunderWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。退款政策 for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks refund ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks refund resources",
 					heroImage: "/images/war-thunder-aimbot-menu.webp",
@@ -13283,8 +13283,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"支持与法务：support@warthunderhacks.net",
-								"Email: support@warthunderhacks.net",
+								"支持与法务：support@warthunderhacks.com",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -13293,7 +13293,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "使用条款 | War Thunder Hacks",
 					description: "使用条款 for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "使用条款",
-					intro: "War Thunder Hacks为War ThunderWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。使用条款 for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks为War ThunderWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。使用条款 for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks terms ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks terms resources",
 					heroImage: "/images/war-thunder-esp-tanks.webp",
@@ -13318,8 +13318,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"支持与法务：support@warthunderhacks.net",
-								"Email: support@warthunderhacks.net",
+								"支持与法务：support@warthunderhacks.com",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -14165,7 +14165,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "गोपनीयता नीति | War Thunder Hacks",
 					description: "गोपनीयता नीति for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "गोपनीयता नीति",
-					intro: "War Thunder Hacks War Thunder के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। गोपनीयता नीति for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks War Thunder के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। गोपनीयता नीति for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks privacy resources",
 					heroImage: "/images/war-thunder-esp-modules.webp",
@@ -14177,7 +14177,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"War Thunder Hacks War Thunder के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.com.",
 							],
 						},
 						{
@@ -14190,8 +14190,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"सहायता: support@warthunderhacks.net",
-								"Email: support@warthunderhacks.net",
+								"सहायता: support@warthunderhacks.com",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -14200,7 +14200,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "रिफंड नीति | War Thunder Hacks",
 					description: "रिफंड नीति for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "रिफंड नीति",
-					intro: "War Thunder Hacks War Thunder के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। रिफंड नीति for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks War Thunder के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। रिफंड नीति for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks refund ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks refund resources",
 					heroImage: "/images/war-thunder-aimbot-menu.webp",
@@ -14225,8 +14225,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"सहायता: support@warthunderhacks.net",
-								"Email: support@warthunderhacks.net",
+								"सहायता: support@warthunderhacks.com",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -14235,7 +14235,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "उपयोग की शर्तें | War Thunder Hacks",
 					description: "उपयोग की शर्तें for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "उपयोग की शर्तें",
-					intro: "War Thunder Hacks War Thunder के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। उपयोग की शर्तें for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks War Thunder के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। उपयोग की शर्तें for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks terms ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks terms resources",
 					heroImage: "/images/war-thunder-esp-tanks.webp",
@@ -14260,8 +14260,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"सहायता: support@warthunderhacks.net",
-								"Email: support@warthunderhacks.net",
+								"सहायता: support@warthunderhacks.com",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -15107,7 +15107,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Kebijakan privasi | War Thunder Hacks",
 					description: "Kebijakan privasi for War Thunder Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Kebijakan privasi",
-					intro: "War Thunder Hacks menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk War Thunder di PC Windows. Kebijakan privasi for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk War Thunder di PC Windows. Kebijakan privasi for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks privacy resources",
 					heroImage: "/images/war-thunder-esp-modules.webp",
@@ -15119,7 +15119,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"War Thunder Hacks menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk War Thunder di PC Windows. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.com.",
 							],
 						},
 						{
@@ -15132,8 +15132,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@warthunderhacks.net untuk dukungan dan legal.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com untuk dukungan dan legal.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -15142,7 +15142,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Kebijakan refund | War Thunder Hacks",
 					description: "Kebijakan refund for War Thunder Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Kebijakan refund",
-					intro: "War Thunder Hacks menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk War Thunder di PC Windows. Kebijakan refund for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk War Thunder di PC Windows. Kebijakan refund for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks refund ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks refund resources",
 					heroImage: "/images/war-thunder-aimbot-menu.webp",
@@ -15167,8 +15167,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@warthunderhacks.net untuk dukungan dan legal.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com untuk dukungan dan legal.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -15177,7 +15177,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Syarat penggunaan | War Thunder Hacks",
 					description: "Syarat penggunaan for War Thunder Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Syarat penggunaan",
-					intro: "War Thunder Hacks menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk War Thunder di PC Windows. Syarat penggunaan for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk War Thunder di PC Windows. Syarat penggunaan for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks terms ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks terms resources",
 					heroImage: "/images/war-thunder-esp-tanks.webp",
@@ -15202,8 +15202,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@warthunderhacks.net untuk dukungan dan legal.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com untuk dukungan dan legal.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -16049,7 +16049,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "นโยบายความเป็นส่วนตัว | War Thunder Hacks",
 					description: "นโยบายความเป็นส่วนตัว for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "นโยบายความเป็นส่วนตัว",
-					intro: "War Thunder Hacks รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ War Thunder บน Windows PC นโยบายความเป็นส่วนตัว for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ War Thunder บน Windows PC นโยบายความเป็นส่วนตัว for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks privacy resources",
 					heroImage: "/images/war-thunder-esp-modules.webp",
@@ -16061,7 +16061,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"War Thunder Hacks รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ War Thunder บน Windows PC Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.com.",
 							],
 						},
 						{
@@ -16074,8 +16074,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@warthunderhacks.net สำหรับการสนับสนุน",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com สำหรับการสนับสนุน",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -16084,7 +16084,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "นโยบายการคืนเงิน | War Thunder Hacks",
 					description: "นโยบายการคืนเงิน for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "นโยบายการคืนเงิน",
-					intro: "War Thunder Hacks รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ War Thunder บน Windows PC นโยบายการคืนเงิน for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ War Thunder บน Windows PC นโยบายการคืนเงิน for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks refund ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks refund resources",
 					heroImage: "/images/war-thunder-aimbot-menu.webp",
@@ -16109,8 +16109,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@warthunderhacks.net สำหรับการสนับสนุน",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com สำหรับการสนับสนุน",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -16119,7 +16119,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "ข้อกำหนดการใช้งาน | War Thunder Hacks",
 					description: "ข้อกำหนดการใช้งาน for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "ข้อกำหนดการใช้งาน",
-					intro: "War Thunder Hacks รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ War Thunder บน Windows PC ข้อกำหนดการใช้งาน for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ War Thunder บน Windows PC ข้อกำหนดการใช้งาน for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks terms ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks terms resources",
 					heroImage: "/images/war-thunder-esp-tanks.webp",
@@ -16144,8 +16144,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@warthunderhacks.net สำหรับการสนับสนุน",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com สำหรับการสนับสนุน",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -16991,7 +16991,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Chính sách bảo mật | War Thunder Hacks",
 					description: "Chính sách bảo mật for War Thunder Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Chính sách bảo mật",
-					intro: "War Thunder Hacks cung cấp ESP wallhack, radar hack và Aimbot undetected cho War Thunder trên PC Windows. Chính sách bảo mật for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks cung cấp ESP wallhack, radar hack và Aimbot undetected cho War Thunder trên PC Windows. Chính sách bảo mật for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks privacy resources",
 					heroImage: "/images/war-thunder-esp-modules.webp",
@@ -17003,7 +17003,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"War Thunder Hacks cung cấp ESP wallhack, radar hack và Aimbot undetected cho War Thunder trên PC Windows. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.com.",
 							],
 						},
 						{
@@ -17016,8 +17016,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@warthunderhacks.net cho hỗ trợ và pháp lý.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com cho hỗ trợ và pháp lý.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -17026,7 +17026,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Chính sách hoàn tiền | War Thunder Hacks",
 					description: "Chính sách hoàn tiền for War Thunder Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Chính sách hoàn tiền",
-					intro: "War Thunder Hacks cung cấp ESP wallhack, radar hack và Aimbot undetected cho War Thunder trên PC Windows. Chính sách hoàn tiền for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks cung cấp ESP wallhack, radar hack và Aimbot undetected cho War Thunder trên PC Windows. Chính sách hoàn tiền for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks refund ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks refund resources",
 					heroImage: "/images/war-thunder-aimbot-menu.webp",
@@ -17051,8 +17051,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@warthunderhacks.net cho hỗ trợ và pháp lý.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com cho hỗ trợ và pháp lý.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -17061,7 +17061,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Điều khoản sử dụng | War Thunder Hacks",
 					description: "Điều khoản sử dụng for War Thunder Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Điều khoản sử dụng",
-					intro: "War Thunder Hacks cung cấp ESP wallhack, radar hack và Aimbot undetected cho War Thunder trên PC Windows. Điều khoản sử dụng for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks cung cấp ESP wallhack, radar hack và Aimbot undetected cho War Thunder trên PC Windows. Điều khoản sử dụng for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks terms ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks terms resources",
 					heroImage: "/images/war-thunder-esp-tanks.webp",
@@ -17086,8 +17086,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@warthunderhacks.net cho hỗ trợ và pháp lý.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com cho hỗ trợ và pháp lý.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -17933,7 +17933,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Політика конфіденційності | War Thunder Hacks",
 					description: "Політика конфіденційності for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Політика конфіденційності",
-					intro: "War Thunder Hacks об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для War Thunder на Windows PC. Політика конфіденційності for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для War Thunder на Windows PC. Політика конфіденційності for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks privacy resources",
 					heroImage: "/images/war-thunder-esp-modules.webp",
@@ -17945,7 +17945,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"War Thunder Hacks об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для War Thunder на Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.com.",
 							],
 						},
 						{
@@ -17958,8 +17958,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@warthunderhacks.net для підтримки та правових питань.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com для підтримки та правових питань.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -17968,7 +17968,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Політика повернення | War Thunder Hacks",
 					description: "Політика повернення for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Політика повернення",
-					intro: "War Thunder Hacks об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для War Thunder на Windows PC. Політика повернення for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для War Thunder на Windows PC. Політика повернення for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks refund ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks refund resources",
 					heroImage: "/images/war-thunder-aimbot-menu.webp",
@@ -17993,8 +17993,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@warthunderhacks.net для підтримки та правових питань.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com для підтримки та правових питань.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -18003,7 +18003,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Умови використання | War Thunder Hacks",
 					description: "Умови використання for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Умови використання",
-					intro: "War Thunder Hacks об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для War Thunder на Windows PC. Умови використання for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для War Thunder на Windows PC. Умови використання for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks terms ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks terms resources",
 					heroImage: "/images/war-thunder-esp-tanks.webp",
@@ -18028,8 +18028,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@warthunderhacks.net для підтримки та правових питань.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com для підтримки та правових питань.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -18875,7 +18875,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Zásady ochrany soukromí | War Thunder Hacks",
 					description: "Zásady ochrany soukromí for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Zásady ochrany soukromí",
-					intro: "War Thunder Hacks spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro War Thunder na Windows PC. Zásady ochrany soukromí for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro War Thunder na Windows PC. Zásady ochrany soukromí for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks privacy resources",
 					heroImage: "/images/war-thunder-esp-modules.webp",
@@ -18887,7 +18887,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"War Thunder Hacks spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro War Thunder na Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.com.",
 							],
 						},
 						{
@@ -18900,8 +18900,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@warthunderhacks.net pro podporu a právní dotazy.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com pro podporu a právní dotazy.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -18910,7 +18910,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Zásady vrácení peněz | War Thunder Hacks",
 					description: "Zásady vrácení peněz for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Zásady vrácení peněz",
-					intro: "War Thunder Hacks spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro War Thunder na Windows PC. Zásady vrácení peněz for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro War Thunder na Windows PC. Zásady vrácení peněz for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks refund ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks refund resources",
 					heroImage: "/images/war-thunder-aimbot-menu.webp",
@@ -18935,8 +18935,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@warthunderhacks.net pro podporu a právní dotazy.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com pro podporu a právní dotazy.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -18945,7 +18945,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Podmínky použití | War Thunder Hacks",
 					description: "Podmínky použití for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Podmínky použití",
-					intro: "War Thunder Hacks spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro War Thunder na Windows PC. Podmínky použití for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro War Thunder na Windows PC. Podmínky použití for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks terms ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks terms resources",
 					heroImage: "/images/war-thunder-esp-tanks.webp",
@@ -18970,8 +18970,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@warthunderhacks.net pro podporu a právní dotazy.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com pro podporu a právní dotazy.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -19817,7 +19817,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Politica de confidențialitate | War Thunder Hacks",
 					description: "Politica de confidențialitate for War Thunder Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Politica de confidențialitate",
-					intro: "War Thunder Hacks combină ESP wallhack, radar hack și Aimbot undetected pentru War Thunder pe PC Windows. Politica de confidențialitate for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks combină ESP wallhack, radar hack și Aimbot undetected pentru War Thunder pe PC Windows. Politica de confidențialitate for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks privacy resources",
 					heroImage: "/images/war-thunder-esp-modules.webp",
@@ -19829,7 +19829,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"War Thunder Hacks combină ESP wallhack, radar hack și Aimbot undetected pentru War Thunder pe PC Windows. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.com.",
 							],
 						},
 						{
@@ -19842,8 +19842,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@warthunderhacks.net pentru suport și legal.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com pentru suport și legal.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -19852,7 +19852,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Politica de rambursare | War Thunder Hacks",
 					description: "Politica de rambursare for War Thunder Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Politica de rambursare",
-					intro: "War Thunder Hacks combină ESP wallhack, radar hack și Aimbot undetected pentru War Thunder pe PC Windows. Politica de rambursare for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks combină ESP wallhack, radar hack și Aimbot undetected pentru War Thunder pe PC Windows. Politica de rambursare for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks refund ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks refund resources",
 					heroImage: "/images/war-thunder-aimbot-menu.webp",
@@ -19877,8 +19877,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@warthunderhacks.net pentru suport și legal.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com pentru suport și legal.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -19887,7 +19887,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Termeni de utilizare | War Thunder Hacks",
 					description: "Termeni de utilizare for War Thunder Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Termeni de utilizare",
-					intro: "War Thunder Hacks combină ESP wallhack, radar hack și Aimbot undetected pentru War Thunder pe PC Windows. Termeni de utilizare for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks combină ESP wallhack, radar hack și Aimbot undetected pentru War Thunder pe PC Windows. Termeni de utilizare for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks terms ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks terms resources",
 					heroImage: "/images/war-thunder-esp-tanks.webp",
@@ -19912,8 +19912,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@warthunderhacks.net pentru suport și legal.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com pentru suport și legal.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -20759,7 +20759,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Integritetspolicy | War Thunder Hacks",
 					description: "Integritetspolicy for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Integritetspolicy",
-					intro: "War Thunder Hacks kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för War Thunder på Windows PC. Integritetspolicy for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för War Thunder på Windows PC. Integritetspolicy for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks privacy ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks privacy resources",
 					heroImage: "/images/war-thunder-esp-modules.webp",
@@ -20771,7 +20771,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"War Thunder Hacks kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för War Thunder på Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.net.",
+								"Payment details are processed by Zadeyo checkout — not stored on warthunderhacks.com.",
 							],
 						},
 						{
@@ -20784,8 +20784,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@warthunderhacks.net för support och juridik.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com för support och juridik.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -20794,7 +20794,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Återbetalningspolicy | War Thunder Hacks",
 					description: "Återbetalningspolicy for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Återbetalningspolicy",
-					intro: "War Thunder Hacks kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för War Thunder på Windows PC. Återbetalningspolicy for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för War Thunder på Windows PC. Återbetalningspolicy for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks refund ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks refund resources",
 					heroImage: "/images/war-thunder-aimbot-menu.webp",
@@ -20819,8 +20819,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@warthunderhacks.net för support och juridik.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com för support och juridik.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],
@@ -20829,7 +20829,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Användarvillkor | War Thunder Hacks",
 					description: "Användarvillkor for War Thunder Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Användarvillkor",
-					intro: "War Thunder Hacks kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för War Thunder på Windows PC. Användarvillkor for warthunderhacks.net and War Thunder licenses.",
+					intro: "War Thunder Hacks kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för War Thunder på Windows PC. Användarvillkor for warthunderhacks.com and War Thunder licenses.",
 					imageAlt: "war-thunder-hacks terms ESP wallhack Aimbot legal page",
 					galleryTitle: "War Thunder Hacks terms resources",
 					heroImage: "/images/war-thunder-esp-tanks.webp",
@@ -20854,8 +20854,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@warthunderhacks.net för support och juridik.",
-								"Email: support@warthunderhacks.net",
+								"support@warthunderhacks.com för support och juridik.",
+								"Email: support@warthunderhacks.com",
 							],
 						},
 					],

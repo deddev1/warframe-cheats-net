@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Bulk rebrand Overwatch Hacks → War Thunder Hacks (warthunderhacks.net)
+ * Bulk rebrand Overwatch Hacks → War Thunder Hacks (warthunderhacks.com)
  */
 import { readFileSync, writeFileSync, readdirSync, renameSync, existsSync, copyFileSync, unlinkSync } from 'node:fs';
 import { join, dirname, extname } from 'node:path';
@@ -23,13 +23,13 @@ const SKIP_FILES = new Set([
 /** Longest / most specific replacements first. */
 const REPLACEMENTS = [
 	// Domain & email
-	['https://www.overwatchhacks.com', 'https://warthunderhacks.net'],
-	['https://overwatchhacks.com', 'https://warthunderhacks.net'],
-	['http://www.overwatchhacks.com', 'https://warthunderhacks.net'],
-	['http://overwatchhacks.com', 'https://warthunderhacks.net'],
-	['www.overwatchhacks.com', 'www.warthunderhacks.net'],
-	['overwatchhacks.com', 'warthunderhacks.net'],
-	['support@overwatchhacks.com', 'support@warthunderhacks.net'],
+	['https://www.overwatchhacks.com', 'https://warthunderhacks.com'],
+	['https://overwatchhacks.com', 'https://warthunderhacks.com'],
+	['http://www.overwatchhacks.com', 'https://warthunderhacks.com'],
+	['http://overwatchhacks.com', 'https://warthunderhacks.com'],
+	['www.overwatchhacks.com', 'www.warthunderhacks.com'],
+	['overwatchhacks.com', 'warthunderhacks.com'],
+	['support@overwatchhacks.com', 'support@warthunderhacks.com'],
 	// Canonical URL paths
 	['/overwatch-wallhack/', '/war-thunder-wallhack/'],
 	['/overwatch-aimbot/', '/war-thunder-aimbot/'],
@@ -233,14 +233,14 @@ const REPLACEMENTS = [
 	['"overwatch-hacks"', '"war-thunder-hacks"'],
 	['Buy Overwatch Hacks', 'Buy War Thunder Hacks'],
 	// Middleware hosts
-	["const APEX_HOST = 'overwatchhacks.com'", "const APEX_HOST = 'warthunderhacks.net'"],
-	["const WWW_HOST = 'www.overwatchhacks.com'", "const WWW_HOST = 'www.warthunderhacks.net'"],
-	["const CANONICAL_ORIGIN = 'https://overwatchhacks.com'", "const CANONICAL_ORIGIN = 'https://warthunderhacks.net'"],
+	["const APEX_HOST = 'overwatchhacks.com'", "const APEX_HOST = 'warthunderhacks.com'"],
+	["const WWW_HOST = 'www.overwatchhacks.com'", "const WWW_HOST = 'www.warthunderhacks.com'"],
+	["const CANONICAL_ORIGIN = 'https://overwatchhacks.com'", "const CANONICAL_ORIGIN = 'https://warthunderhacks.com'"],
 	// seo.ts helper
 	["if (lead.toLowerCase().includes('overwatch'))", "if (lead.toLowerCase().includes('war thunder'))"],
 	['return `Overwatch hacks — ${lead}`', 'return `War Thunder hacks — ${lead}`'],
-	['optimized for overwatchhacks.com', 'optimized for warthunderhacks.net'],
-	['| overwatchhacks.com', '| warthunderhacks.net'],
+	['optimized for overwatchhacks.com', 'optimized for warthunderhacks.com'],
+	['| overwatchhacks.com', '| warthunderhacks.com'],
 	['| Overwatch Hacks', '| War Thunder Hacks'],
 	["shortName: 'OW'", "shortName: 'WT'"],
 	["game: 'Overwatch'", "game: 'War Thunder'"],

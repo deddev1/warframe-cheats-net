@@ -1,5 +1,5 @@
 ---
-import { rustImages } from '../data/rust';
+import { rustImages, productPreviewVideo } from '../data/rust';
 import { getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
@@ -61,12 +61,23 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 				alt={heroPreview.alt}
 				width="1280"
 				height="720"
-				class="product__image"
+				class="product__image is-hidden"
 				data-main-image
 				loading={priority ? 'eager' : 'lazy'}
 				fetchpriority={priority ? 'high' : 'auto'}
 				decoding="async"
 			/>
+			<video
+				class="product__video"
+				data-main-video
+				data-src={productPreviewVideo.src}
+				poster={productPreviewVideo.poster}
+				controls
+				preload="none"
+				playsinline
+				title={productPreviewVideo.title}
+				aria-label={productPreviewVideo.ariaLabel}
+			></video>
 			<span class="product__credit" aria-hidden="true">War Thunder</span>
 		</figure>
 		<div class="product__thumbs" role="group" aria-label="Product preview images">
@@ -180,28 +191,25 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 		const thumbs = Array.from(root.querySelectorAll('[data-thumb]'));
 		if (!(mainImage instanceof HTMLImageElement) || thumbs.length === 0) return;
 
-		const armAndPlay = (video: HTMLVideoElement) => {
+		const hydrateVideo = (video: HTMLVideoElement) => {
 			const dataSrc = video.getAttribute('data-src');
 			if (dataSrc && video.getAttribute('src') !== dataSrc) {
 				video.setAttribute('src', dataSrc);
-			}
-			video.muted = true;
-			video.defaultMuted = true;
-			video.setAttribute('muted', '');
-			video.playsInline = true;
-			const play = () => video.play().catch(() => {});
-			if (video.readyState >= 2) play();
-			else {
-				video.addEventListener('loadeddata', play, { once: true });
-				video.addEventListener('canplay', play, { once: true });
 				try {
 					video.load();
 				} catch {
 					/* ignore */
 				}
-				play();
 			}
 		};
+
+		if (mainVideo instanceof HTMLVideoElement) {
+			const prepareVideo = () => hydrateVideo(mainVideo);
+			mainVideo.addEventListener('pointerdown', prepareVideo, { once: true });
+			mainVideo.addEventListener('keydown', (event) => {
+				if (event.key === 'Enter' || event.key === ' ') prepareVideo();
+			}, { once: true });
+		}
 
 		const showVideo = () => {
 			thumbs.forEach((btn) => {
@@ -210,8 +218,8 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 			});
 			mainImage.classList.add('is-hidden');
 			if (mainVideo instanceof HTMLVideoElement) {
+				mainVideo.pause();
 				mainVideo.classList.remove('is-hidden');
-				armAndPlay(mainVideo);
 			}
 		};
 
@@ -304,8 +312,9 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 
 	.product__video {
 		z-index: 1;
-		pointer-events: none;
+		pointer-events: auto;
 		background: #0a0612;
+		transform: none;
 	}
 
 	.product__image {
@@ -319,9 +328,14 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 		pointer-events: none;
 	}
 
-	.product__figure:hover .product__image:not(.is-hidden),
-	.product__figure:hover .product__video:not(.is-hidden) {
+	.product__figure:hover .product__image:not(.is-hidden) {
 		transform: scale(1.025);
+	}
+
+	@media (hover: hover) and (pointer: fine) {
+		.product__figure.media-frame:hover .product__video:not(.is-hidden) {
+			transform: none;
+		}
 	}
 
 	.product__credit {

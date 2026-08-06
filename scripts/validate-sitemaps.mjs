@@ -6,7 +6,7 @@
  * Policy: English is official (canonical + x-default). Thin locale UI routes
  * stay built for UX but are omitted from sitemaps / multi-locale hreflang.
  */
-import { access, readFile, readdir } from 'node:fs/promises';
+import { access, readFile, readdir, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -31,7 +31,7 @@ async function resolveDistRoot() {
 		'Could not find sitemap.xml in dist/ or dist/client/. Run `astro build` first.',
 	);
 }
-const SITE = 'https://warthunderhacks.net';
+const SITE = 'https://warthunderhacks.com';
 
 const MARKETING_SITEMAP_PAGES = 15;
 const BUILT_MARKETING_PAGES = 25; // thin landings still built; 301 to canonical URLs
@@ -111,6 +111,52 @@ function fail(msg) {
 
 function ok(msg) {
 	console.log(`✓ ${msg}`);
+}
+
+function extractUrlBlocks(xml) {
+	return [...xml.matchAll(/<url>([\s\S]*?)<\/url>/g)].map((m) => m[1]);
+}
+
+function extractImageLocs(block) {
+	return [...block.matchAll(/<image:loc>([^<]+)<\/image:loc>/g)].map((m) => m[1]);
+}
+
+async function validateSitemapImages(xml, label, bump) {
+	const blocks = extractUrlBlocks(xml);
+	let imageCount = 0;
+	let localErrors = 0;
+	for (const block of blocks) {
+		const locMatch = block.match(/<loc>([^<]+)<\/loc>/);
+		const loc = locMatch?.[1];
+		const images = extractImageLocs(block);
+		if (!images.length) {
+			fail(`${label}: URL missing image:image → ${loc ?? 'unknown'}`);
+			localErrors += 1;
+			bump();
+			continue;
+		}
+		for (const imageUrl of images) {
+			imageCount += 1;
+			if (!imageUrl.startsWith(`${SITE}/`)) {
+				fail(`${label}: image URL must use ${SITE} → ${imageUrl}`);
+				localErrors += 1;
+				bump();
+				continue;
+			}
+			const filePath = path.join(ROOT, 'public', new URL(imageUrl).pathname);
+			try {
+				await stat(filePath);
+			} catch {
+				fail(`${label}: image file missing on disk → ${filePath}`);
+				localErrors += 1;
+				bump();
+			}
+		}
+	}
+	if (localErrors === 0) {
+		ok(`${label}: all ${blocks.length} URLs include ${imageCount} verified image entries`);
+	}
+	return localErrors === 0;
 }
 
 async function main() {
@@ -193,6 +239,9 @@ async function main() {
 		}
 	}
 	if (errors === 0) ok('All English sitemap URLs use HTTPS with trailing slashes');
+
+	await validateSitemapImages(sitemapEn, 'sitemap.xml', bump);
+	await validateSitemapImages(sitemapImages, 'sitemap-images.xml', bump);
 
 	const homeHreflang = extractHreflangCount(sitemapEn, `${SITE}/`);
 	const homeLangs = extractHreflangs(sitemapEn, `${SITE}/`);

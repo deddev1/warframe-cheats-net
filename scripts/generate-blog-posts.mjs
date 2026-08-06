@@ -448,7 +448,7 @@ const sources = [
 			{
 				h2: 'Hacks vs cheats wording',
 				paragraphs: [
-					'War Thunder Hacks and War Thunder hacks describe the same product category for most searchers. We lead with hacks on warthunderhacks.net while keeping cheats pages for buyers who use that query.',
+					'War Thunder Hacks and War Thunder hacks describe the same product category for most searchers. We lead with hacks on warthunderhacks.com while keeping cheats pages for buyers who use that query.',
 					`Balance and anti-cheat reality still come from ${EXT.epic}. Product rebuild timing is on our <a href="/updates/">Updates</a> page.`,
 				],
 			},
