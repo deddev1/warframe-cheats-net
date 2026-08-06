@@ -15,17 +15,19 @@ import sharp from 'sharp';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const VIDEO_URL =
 	'https://ooszazcwzmwhitdxwtom.supabase.co/storage/v1/object/public/ef/fafa.mp4';
+const videoDir = join(root, 'public', 'videos');
+const outVideo = join(videoDir, 'war-thunder-hacks-preview.mp4');
 const outDir = join(root, 'public', 'images');
-const tmpVideo = join(outDir, '.tmp-product-preview.mp4');
 const tmpFrame = join(outDir, '.tmp-product-poster.png');
 const outWebp = join(outDir, 'war-thunder-hacks-video-poster.webp');
 
+mkdirSync(videoDir, { recursive: true });
 mkdirSync(outDir, { recursive: true });
 
 async function downloadVideo() {
 	const res = await fetch(VIDEO_URL);
 	if (!res.ok) throw new Error(`Failed to download video: ${res.status} ${res.statusText}`);
-	await pipeline(Readable.fromWeb(res.body), createWriteStream(tmpVideo));
+	await pipeline(Readable.fromWeb(res.body), createWriteStream(outVideo));
 }
 
 function extractFifthFrame() {
@@ -33,7 +35,7 @@ function extractFifthFrame() {
 	// Frame index 4 = the 5th frame (0-based).
 	execFileSync(
 		ffmpegPath,
-		['-y', '-i', tmpVideo, '-vf', 'select=eq(n\\,4)', '-frames:v', '1', '-update', '1', tmpFrame],
+		['-y', '-i', outVideo, '-vf', 'select=eq(n\\,4)', '-frames:v', '1', '-update', '1', tmpFrame],
 		{ stdio: 'inherit' },
 	);
 }
@@ -43,9 +45,7 @@ async function toWebp() {
 }
 
 function cleanup() {
-	for (const file of [tmpVideo, tmpFrame]) {
-		if (existsSync(file)) unlinkSync(file);
-	}
+	if (existsSync(tmpFrame)) unlinkSync(tmpFrame);
 }
 
 try {
@@ -56,6 +56,7 @@ try {
 	console.log('Optimizing poster WebP…');
 	await toWebp();
 	cleanup();
+	console.log(`✓ Video saved → ${outVideo}`);
 	console.log(`✓ Poster saved → ${outWebp}`);
 } catch (err) {
 	cleanup();

@@ -10,7 +10,7 @@ export const rustHeroVideo = {
 } as const;
 
 export const rustVideo = {
-	src: 'https://ooszazcwzmwhitdxwtom.supabase.co/storage/v1/object/public/ef/fafa.mp4',
+	src: '/videos/war-thunder-hacks-preview.mp4',
 	poster: '/images/war-thunder-hacks-video-poster.webp',
 	title: 'War Thunder hacks Realistic Battle preview',
 	ariaLabel: 'War Thunder hacks preview — ground battle with ESP and aimbot',
