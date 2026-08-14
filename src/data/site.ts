@@ -17,9 +17,9 @@ export const productInfo = {
 	name: 'War Thunder Hacks',
 	shortName: 'WT',
 	brand: 'War Thunder Hacks',
-	tagline: 'Undetected War Thunder hacks for PC — tank ESP, aimbot, and radar with EAC update support',
+	tagline: 'War Thunder hacks for PC — ESP, aimbot, and wallhack with updates after EAC patches',
 	summary:
-		'War Thunder Hacks is a Windows PC package for ESP, aimbot, and wallhack in War Thunder. Built for Realistic Battles, air RB, and ground RB with maintenance after EAC and game patches.',
+		'War Thunder Hacks is a Windows PC package with ESP, aimbot, and wallhack for War Thunder. It works in Realistic Battles, air RB, and ground RB, and we update it after Easy Anti-Cheat and game patches.',
 	game: 'War Thunder',
 	delivery: 'Digital license delivery after purchase confirmation',
 	platforms: ['Windows PC', 'Controllers'],
@@ -30,6 +30,20 @@ export const productInfo = {
 		{ id: 'lifetime', label: 'Lifetime', price: 150, duration: 'P99Y' },
 	],
 	currency: 'USD',
+	planSummaries: {
+		monthly: [
+			'ESP, aimbot, wallhack, and radar',
+			'30 days access — $35',
+			'EAC updates while your license is active',
+			'Instant digital delivery on Windows PC',
+		],
+		lifetime: [
+			'ESP, aimbot, wallhack, and radar',
+			'One-time $150 — no renewals',
+			'EAC updates for as long as you play',
+			'Instant digital delivery on Windows PC',
+		],
+	},
 	features: {
 		esp: [
 			'Vehicle ESP across ground RB, air RB, and naval battles',

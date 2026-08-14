@@ -6,8 +6,8 @@
 		"node": ">=22.12.0"
 	},
 	"scripts": {
-		"dev": "astro dev --host 0.0.0.0 --port 8080",
-		"start": "astro preview --host 0.0.0.0 --port 8080",
+		"dev": "astro dev --host :: --port 8080",
+		"start": "astro preview --host :: --port 8080",
 		"dev:ip": "node scripts/dev-with-ip.mjs",
 		"build": "astro build",
 		"build:cf": "node scripts/cloudflare-build.mjs",
@@ -17,7 +17,7 @@
 		"fetch:images": "node scripts/fetch-arc-raiders-images.mjs",
     "fetch:logo": "node scripts/fetch-zadeyo-logo.mjs",
     "extract:video-poster": "node scripts/extract-video-poster.mjs",
-		"preview": "astro preview --host 0.0.0.0 --port 8080",
+		"preview": "astro preview --host :: --port 8080",
 		"validate:sitemaps": "node scripts/validate-sitemaps.mjs",
 		"generate:i18n": "node scripts/generate-i18n-content.mjs",
 		"deploy": "npm run build && wrangler deploy",

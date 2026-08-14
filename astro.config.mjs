@@ -11,12 +11,12 @@ export default defineConfig({
 	compressHTML: true,
 	devToolbar: { enabled: false },
 	server: {
-		host: '0.0.0.0',
+		host: '::',
 		port: 8080,
 		strictPort: true,
 	},
 	preview: {
-		host: '0.0.0.0',
+		host: '::',
 		port: 8080,
 		strictPort: true,
 	},

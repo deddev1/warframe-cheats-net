@@ -409,7 +409,7 @@ const lcpImageSizes = isHeroLcp ? heroSizes : undefined;
 		color: var(--color-muted);
 	}
 
-	.article :global(ul) {
+	.article :global(.card-panel ul) {
 		margin: 0;
 		padding: 0;
 		list-style: none;
@@ -417,7 +417,7 @@ const lcpImageSizes = isHeroLcp ? heroSizes : undefined;
 		gap: 0.5rem;
 	}
 
-	.article :global(li) {
+	.article :global(.card-panel li) {
 		position: relative;
 		padding: 0.55rem 0.75rem 0.55rem 2rem;
 		border-radius: 0.65rem;
@@ -427,7 +427,7 @@ const lcpImageSizes = isHeroLcp ? heroSizes : undefined;
 		font-size: 0.95rem;
 	}
 
-	.article :global(li::before) {
+	.article :global(.card-panel li::before) {
 		content: '';
 		position: absolute;
 		left: 0.8rem;

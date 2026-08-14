@@ -3,63 +3,74 @@ import { homeFaqs, productInfo, siteConfig } from '../data/site';
 
 const shareUrl = encodeURIComponent(siteConfig.url + '/');
 const shareText = encodeURIComponent('War Thunder Hacks — undetected ESP & aimbot for PC');
+
+const packageIncludes = [
+	...productInfo.features.esp.slice(0, 3),
+	...productInfo.features.aimbot.slice(0, 2),
+	...productInfo.features.general.slice(0, 2),
+];
 ---
 
 <section class="home-seo shell" aria-labelledby="home-seo-title">
 	<div class="home-seo__panel card-surface">
 		<h2 id="home-seo-title">War Thunder Hacks for Windows PC</h2>
 		<p>
-			{productInfo.summary} Use this page to compare ESP, aimbot, wallhack, pricing, and where to check
-			status after Gaijin Easy Anti-Cheat patches.
+			War Thunder Hacks is a Windows PC package for War Thunder. It includes ESP, aimbot, and wallhack for
+			Realistic Battles, air RB, and ground RB.
 		</p>
 		<p>
-			War Thunder is a high-information game: capture zones, flank vectors, and team pushes punish guesswork. War Thunder Hacks
-			is built for that pressure — readable ESP and aimbot controls on Windows PC, with maintenance notes
-			after patches instead of empty “always undetected” claims.
+			We update the package after War Thunder and Easy Anti-Cheat (EAC) patches. We do not claim it stays
+			undetected forever — check status here before you play.
 		</p>
+		<p>This page helps you:</p>
+		<ul>
+			<li>Compare <a href="/war-thunder-esp/">ESP</a>, <a href="/war-thunder-aimbot/">aimbot</a>, and <a href="/war-thunder-wallhack/">wallhack</a></li>
+			<li>See <a href="/pricing/">monthly ($35) and lifetime ($150) pricing</a></li>
+			<li>Check if the latest build is live after an EAC patch</li>
+		</ul>
 		<p>
-			Start with the <a href="/war-thunder-hacks/">War Thunder Hacks guide</a>, then check
+			Start with the <a href="/war-thunder-hacks/">War Thunder Hacks guide</a>, then open
 			<a href="/war-thunder-esp/">ESP</a>, <a href="/war-thunder-aimbot/">Aimbot</a>,
 			<a href="/features/">Features</a>, and <a href="/pricing/">Pricing</a>.
-			Official client updates ship from
-			<a href="https://warthunder.com/" target="_blank" rel="noopener noreferrer">War Thunder</a>;
-			anti-cheat context from
-			<a href="https://www.easy.ac/" target="_blank" rel="noopener noreferrer">Gaijin Easy Anti-Cheat</a>.
-			Confirm our <a href="/updates/">Updates log</a> before you load in.
+			Game updates come from
+			<a href="https://warthunder.com/" target="_blank" rel="noopener noreferrer">War Thunder</a>.
+			Anti-cheat updates come from
+			<a href="https://www.easy.ac/" target="_blank" rel="noopener noreferrer">Easy Anti-Cheat</a>.
+			Always read our <a href="/updates/">Updates log</a> before you load into a match.
 		</p>
 
 		<div class="home-seo__grid">
 			<article>
 				<h3><a href="/war-thunder-hacks/">War Thunder Hacks guide</a></h3>
-				<p>Pillar overview: ESP, aimbot, wallhack, and how maintenance works after patches.</p>
+				<p>What the package includes: ESP, aimbot, wallhack, and how updates work after patches.</p>
 			</article>
 			<article>
 				<h3><a href="/war-thunder-esp/">War Thunder ESP</a></h3>
-				<p>Player and loot visibility with distance readouts for control point play.</p>
+				<p>See enemy tanks, aircraft, and ships through cover, with distance on screen.</p>
 			</article>
 			<article>
 				<h3><a href="/war-thunder-aimbot/">War Thunder Aimbot</a></h3>
-				<p>Smoothness, FOV, bone priority, and hotkeys for PC and controllers.</p>
+				<p>Aim assist with smoothness, FOV, and hotkeys for mouse and controller.</p>
 			</article>
 			<article>
 				<h3><a href="/war-thunder-wallhack/">War Thunder wallhack</a></h3>
-				<p>Wallhack-style overlays for players and containers when ESP categories stay on.</p>
+				<p>Wallhack overlays that show enemies through terrain when ESP is on.</p>
 			</article>
 			<article>
 				<h3><a href="/war-thunder-hacks/">Undetected status</a></h3>
-				<p>How EAC rebuilds ship, what “undetected” means here, and where to check status.</p>
+				<p>What “undetected” means here, and where to check status after an EAC patch.</p>
 			</article>
 			<article>
 				<h3><a href="/pricing/">Pricing</a></h3>
-				<p>Monthly and lifetime licenses with digital delivery after payment confirmation.</p>
+				<p>Monthly $35 or lifetime $150. Digital delivery after you pay.</p>
 			</article>
 			<article>
 				<h3><a href="/setup/">Setup</a></h3>
-				<p>Activate the package, tune overlays, and get ready for your first session.</p>
+				<p>How to activate the license and turn on ESP and aimbot for the first time.</p>
 			</article>
 			<article>
 				<h3><a href="/faq/">FAQ</a></h3>
-				<p>Straight answers on delivery, maintenance, platforms, and support.</p>
+				<p>Common questions on delivery, updates, Windows PC support, and billing help.</p>
 			</article>
 		</div>
 	</div>
@@ -67,27 +78,39 @@ const shareText = encodeURIComponent('War Thunder Hacks — undetected ESP & aim
 	<div class="home-seo__panel card-surface">
 		<h2>What the package includes</h2>
 		<p>
-			Sold for War Thunder on Windows PC. ESP covers players, loot, and distance. Aimbot adds assisted targeting
-			with smoothness and hotkeys. General options include in-client toggles, monthly and lifetime plans,
-			patch notices, and support.
+			For War Thunder on Windows PC. ESP, aimbot, and radar in one license. Monthly or lifetime plans.
+			Updates after EAC patches. Support included.
 		</p>
 		<ul>
-			{productInfo.features.esp.slice(0, 3).map((item) => <li>{item}</li>)}
-			{productInfo.features.aimbot.slice(0, 2).map((item) => <li>{item}</li>)}
-			{productInfo.features.general.slice(0, 2).map((item) => <li>{item}</li>)}
+			{packageIncludes.map((item) => <li>{item}</li>)}
 		</ul>
 		<p>
-			Compare plans on <a href="/pricing/">Pricing</a>. Watch
-			<a href="/updates/">Updates</a> after game patches. Policies live in the footer.
+			Compare monthly and lifetime plans on <a href="/pricing/">Pricing</a>. After a game patch, check
+			<a href="/updates/">Updates</a> before you play. Refund, privacy, and terms links are in the footer.
 		</p>
 	</div>
 
 	<div class="home-seo__panel card-surface">
-		<h2>How to evaluate before you buy</h2>
-		<p>
-			If threat awareness comes first, open the ESP page. If firefights matter more, review Aimbot controls.
-			Most buyers check both, then pick monthly or lifetime on Pricing. Platforms today:
-			{productInfo.platforms.join(', ')}. Market: {siteConfig.market}.
+		<h2>How to choose before you buy</h2>
+		<ul class="home-seo__choose">
+			<li>
+				<span class="home-seo__choose-q">See enemies first?</span>
+				<span class="home-seo__choose-a">Read the <a href="/war-thunder-esp/">ESP page</a></span>
+			</li>
+			<li>
+				<span class="home-seo__choose-q">Need help aiming?</span>
+				<span class="home-seo__choose-a">Read the <a href="/war-thunder-aimbot/">Aimbot page</a></span>
+			</li>
+			<li>
+				<span class="home-seo__choose-q">Ready to buy?</span>
+				<span class="home-seo__choose-a">
+					Check both pages, then pick <a href="/pricing/">monthly ($35)</a> or
+					<a href="/pricing/">lifetime ($150)</a> on Pricing
+				</span>
+			</li>
+		</ul>
+		<p class="home-seo__choose-note">
+			Works on {productInfo.platforms.join(' and ')}. Available {siteConfig.market}.
 		</p>
 	</div>
 
@@ -139,6 +162,51 @@ const shareText = encodeURIComponent('War Thunder Hacks — undetected ESP & aim
 		color: var(--color-muted);
 		line-height: 1.65;
 		font-size: 0.98rem;
+	}
+
+	.home-seo__panel ul {
+		margin: 0.5rem 0 1rem;
+		padding-left: 1.25rem;
+		display: grid;
+		gap: 0.4rem;
+		list-style: disc;
+	}
+
+	.home-seo__choose {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		gap: 0.55rem;
+	}
+
+	.home-seo__choose li {
+		display: grid;
+		gap: 0.15rem;
+		padding: 0.7rem 0.85rem;
+		border-radius: 0.7rem;
+		border: 1px solid rgba(168, 85, 247, 0.14);
+		background: rgba(18, 16, 26, 0.55);
+	}
+
+	.home-seo__choose-q {
+		font-size: 0.88rem;
+		font-weight: 700;
+		color: var(--color-ink);
+	}
+
+	.home-seo__choose-a {
+		font-size: 0.9rem;
+		color: var(--color-muted);
+		line-height: 1.5;
+	}
+
+	.home-seo__choose-note {
+		margin: 0.75rem 0 0;
+		padding-top: 0.75rem;
+		border-top: 1px solid rgba(168, 85, 247, 0.12);
+		font-size: 0.88rem;
+		color: var(--color-faint);
 	}
 
 	.home-seo__panel a {

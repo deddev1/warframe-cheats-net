@@ -53,15 +53,15 @@ export const rustImages = {
 		{ src: wt5, alt: 'War Thunder hacks cheat menu with aimbot, ballistic prediction, and FOV controls' },
 		{ src: wt6, alt: 'War Thunder radar hack 2D overlay showing flank vectors and enemy aircraft' },
 	],
-	/** Gallery grid — seven unique War Thunder hack stills, no duplicates. */
+	/** Gallery marquee — seven unique War Thunder hack stills with simple page URLs. */
 	gallery: [
-		{ src: wt1, alt: 'War Thunder hacks main menu with ESP, wallhack, and aimbot toggles' },
-		{ src: wt2, alt: 'War Thunder ESP overlay showing enemy tanks and aircraft through terrain' },
-		{ src: wt3, alt: 'War Thunder wallhack ESP with vehicle module boxes in Realistic Battles' },
-		{ src: wt4, alt: 'War Thunder aimbot ballistic prediction targeting enemy tank weak spots' },
-		{ src: wt5, alt: 'War Thunder hacks settings menu with aimbot profiles and hotkeys' },
-		{ src: wt6, alt: 'War Thunder radar hack 2D overlay for reading flanks outside FOV' },
-		{ src: wt7, alt: 'War Thunder hacks capture zone fight with ESP and aimbot active' },
+		{ src: wt1, alt: 'War Thunder hacks main menu with ESP, wallhack, and aimbot toggles', href: '/war-thunder-hacks/' },
+		{ src: wt2, alt: 'War Thunder ESP overlay showing enemy tanks and aircraft through terrain', href: '/war-thunder-esp/' },
+		{ src: wt3, alt: 'War Thunder wallhack ESP with vehicle module boxes in Realistic Battles', href: '/war-thunder-wallhack/' },
+		{ src: wt4, alt: 'War Thunder aimbot ballistic prediction targeting enemy tank weak spots', href: '/war-thunder-aimbot/' },
+		{ src: wt5, alt: 'War Thunder hacks settings menu with aimbot profiles and hotkeys', href: '/features/' },
+		{ src: wt6, alt: 'War Thunder radar hack 2D overlay for reading flanks outside FOV', href: '/war-thunder-radar/' },
+		{ src: wt7, alt: 'War Thunder hacks capture zone fight with ESP and aimbot active', href: '/war-thunder-hacks/' },
 	],
 	sitemap: [
 		{ src: wt1, title: 'War Thunder Hacks | Undetected ESP & Aimbot', caption: 'War Thunder hacks main menu with ESP and aimbot toggles' },

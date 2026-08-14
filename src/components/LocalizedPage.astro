@@ -8,6 +8,7 @@ import { seoFaqs, siteConfig } from '../data/site';
 import { rustImages } from '../data/rust';
 import { buildPageExtraGraph, pageFaqClusters } from '../data/schema';
 import SeoFaqPanel from '../components/SeoFaqPanel.astro';
+import PricingPlans from '../components/PricingPlans.astro';
 
 interface Props {
 	locale: LocaleCode;
@@ -68,6 +69,7 @@ const ctaSecondaryHref = page.ctaSecondaryHref
 			: undefined
 	}
 >
+	{pageId === 'pricing' && <PricingPlans locale={locale} />}
 	{
 		page.sections.map((section) => (
 			<section class="card-panel">

@@ -1,122 +1,90 @@
 ---
 import { rustImages } from '../data/rust';
-import { getUi } from '../data/i18n';
 import { getGalleryUi } from '../data/i18n/gallery-ui';
+import { localizeInternalHref } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
-import {
-	contentSrc,
-	contentSrcSet,
-	galleryTileSizes,
-} from '../lib/responsive-images';
+import { contentSrc, contentSrcSet, galleryTileSizes } from '../lib/responsive-images';
 
 interface Props {
 	locale?: LocaleCode;
-	/** Homepage gallery sits below the hero — never compete for LCP. */
 	priority?: boolean;
 }
 
 const locale = Astro.props.locale ?? defaultLocale;
-const priority = Astro.props.priority ?? false;
-const ui = getUi(locale);
 const gallery = getGalleryUi(locale);
 
-// Featured media = full gameplay video. Grid stills below; large filler still under grid.
-const galleryAlts = [
-	ui.images.squadFight,
-	ui.images.cheatsPackage,
-	ui.images.battleRoyaleIsland,
-	ui.images.headerArt,
-	ui.images.espWallhack,
-	ui.images.rebootFight,
-	undefined,
-] as const;
+const galleryBoxes = [
+	{
+		title: 'ESP & wallhack',
+		copy: 'See enemy tanks, planes, and ships through cover.',
+		href: '/war-thunder-esp/',
+	},
+	{
+		title: 'Aimbot',
+		copy: 'Lead calculator with smoothness and FOV controls.',
+		href: '/war-thunder-aimbot/',
+	},
+	{
+		title: 'Radar',
+		copy: 'Track flanks and threats outside your view.',
+		href: '/war-thunder-radar/',
+	},
+	{
+		title: 'One license',
+		copy: 'ESP, aimbot, and radar in one package.',
+		href: '/features/',
+	},
+];
 
-/** Featured still — first gallery image. */
-const featuredStillSrc = rustImages.gallery[0].src;
-const featuredStill = {
-	src: contentSrc(featuredStillSrc),
-	srcset: contentSrcSet(featuredStillSrc),
-	alt: rustImages.gallery[0].alt,
-} as const;
-
-/** Grid uses images 2–7 — all seven assets appear once on the page. */
-const gridTiles = rustImages.gallery.slice(1).map((image, index) => ({
+const slides = rustImages.gallery.map((image) => ({
 	src: contentSrc(image.src),
 	srcset: contentSrcSet(image.src),
-	alt: galleryAlts[index + 1] ?? image.alt,
+	alt: image.alt,
+	href: localizeInternalHref(image.href, locale),
 }));
+const marqueeSlides = [...slides, ...slides];
 ---
 
 <section class="gallery" id="gallery" aria-labelledby="gallery-title">
 	<header class="gallery__head">
 		<p class="gallery__eyebrow">{gallery.eyebrow}</p>
 		<h2 id="gallery-title" class="gallery__title">{gallery.title}</h2>
-		<p class="gallery__sub">{gallery.subtitle}</p>
+		<p class="gallery__sub">In-game ESP, aimbot, and radar screenshots. Click any image to open that page.</p>
 	</header>
 
 	<div class="gallery__layout">
-		<div class="gallery__content">
-			<div class="gallery__summary">
-				<p class="gallery__lead">{gallery.lead}</p>
-
-				<div class="gallery__highlights">
-					{
-						gallery.highlights.map((item) => (
-							<article class="gallery__info-card">
-								<h3>{item.title}</h3>
-								<p>{item.copy}</p>
-							</article>
-						))
-					}
-				</div>
-
-				<aside class="gallery__advantages" aria-labelledby="gallery-advantages-title">
-					<h3 id="gallery-advantages-title" class="gallery__advantages-label">War Thunder hack advantages</h3>
-					<ul class="gallery__advantages-list">
-						<li>Undetected-focused builds with public anti-cheat status after patches</li>
-						<li>Full War Thunder ESP + soft aim + radar in one package — no feature upsell maze</li>
-						<li>Instant license delivery for Windows 10 &amp; 11</li>
-						<li>Real in-game War Thunder previews so you see ESP, aimbot menu, and wallhack before checkout</li>
-					</ul>
-				</aside>
+		<div class="gallery__marquee" aria-label="War Thunder hacks image gallery">
+			<div class="gallery__marquee-track">
+				{
+					marqueeSlides.map((slide, index) => (
+						<a href={slide.href} class="gallery__marquee-slide">
+							<img
+								src={slide.src}
+								srcset={slide.srcset}
+								sizes={galleryTileSizes}
+								alt={slide.alt}
+								width="1280"
+								height="720"
+								loading={index === 0 ? 'eager' : 'lazy'}
+								decoding="async"
+								draggable="false"
+							/>
+							<span class="gallery__marquee-url">{slide.href}</span>
+						</a>
+					))
+				}
 			</div>
+		</div>
 
-			<div class="gallery__media">
-				<figure class="gallery__featured gallery__still media-frame">
-					<img
-						src={featuredStill.src}
-						srcset={featuredStill.srcset}
-						sizes="(max-width: 560px) 100vw, (max-width: 900px) 100vw, 52vw"
-						alt={featuredStill.alt}
-						width="1280"
-						height="720"
-						loading={priority ? 'eager' : 'lazy'}
-						fetchpriority={priority ? 'high' : 'auto'}
-						decoding="async"
-					/>
-					<figcaption>{featuredStill.alt}</figcaption>
-				</figure>
-
-				<div class="gallery__grid">
-					{
-						gridTiles.map((image) => (
-							<figure class="gallery__item media-frame">
-								<img
-									src={image.src}
-									srcset={image.srcset}
-									sizes={galleryTileSizes}
-									alt={image.alt}
-									width="1280"
-									height="720"
-									loading="lazy"
-									decoding="async"
-								/>
-								<figcaption>{image.alt}</figcaption>
-							</figure>
-						))
-					}
-				</div>
-			</div>
+		<div class="gallery__boxes">
+			{
+				galleryBoxes.map((box) => (
+					<a href={localizeInternalHref(box.href, locale)} class="gallery__box">
+						<strong>{box.title}</strong>
+						<span>{box.copy}</span>
+					</a>
+				))
+			}
 		</div>
 	</div>
 </section>
@@ -125,16 +93,16 @@ const gridTiles = rustImages.gallery.slice(1).map((image, index) => ({
 	.gallery {
 		width: 100%;
 		content-visibility: auto;
-		contain-intrinsic-size: 1px 900px;
+		contain-intrinsic-size: 1px 420px;
 	}
 
 	.gallery__head {
-		margin-bottom: 1.25rem;
+		margin-bottom: 0.85rem;
 	}
 
 	.gallery__eyebrow {
-		margin: 0 0 0.4rem;
-		font-size: 0.75rem;
+		margin: 0 0 0.35rem;
+		font-size: 0.72rem;
 		font-weight: 700;
 		letter-spacing: 0.14em;
 		text-transform: uppercase;
@@ -144,352 +112,149 @@ const gridTiles = rustImages.gallery.slice(1).map((image, index) => ({
 	.gallery__title {
 		margin: 0;
 		font-family: var(--font-display);
-		font-size: clamp(1.6rem, 3vw, 2.2rem);
+		font-size: clamp(1.35rem, 2.6vw, 1.85rem);
 		font-weight: 800;
 		letter-spacing: -0.03em;
 	}
 
 	.gallery__sub {
-		margin: 0.55rem 0 0;
+		margin: 0.4rem 0 0;
 		color: var(--color-muted);
-		max-width: 36rem;
-		line-height: 1.55;
+		max-width: 34rem;
+		font-size: 0.88rem;
+		line-height: 1.45;
 	}
 
 	.gallery__layout {
+		display: grid;
+		gap: 0.65rem;
 		border: 1px solid rgba(168, 85, 247, 0.12);
-		border-radius: 1.1rem;
+		border-radius: 1rem;
 		background: rgba(18, 16, 26, 0.46);
 		overflow: hidden;
 	}
 
-	.gallery__content {
-		display: grid;
-		grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.35fr);
-		align-items: stretch;
-		gap: 1rem;
-		padding: 1rem;
+	.gallery__marquee {
+		overflow: hidden;
+		width: 100%;
+		padding: 0.75rem 0 0.35rem;
+		mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
 	}
 
-	.gallery__summary {
+	.gallery__marquee-track {
 		display: flex;
-		flex-direction: column;
+		width: max-content;
 		gap: 0.75rem;
-		align-self: stretch;
-		min-height: 0;
+		animation: gallery-marquee 48s linear infinite;
+		will-change: transform;
 	}
 
-	.gallery__lead {
-		margin: 0;
-		padding: 1rem 1.05rem;
-		border-radius: 0.95rem;
-		border: 1px solid rgba(168, 85, 247, 0.14);
-		background: rgba(26, 22, 38, 0.72);
-		color: #e2d9ef;
-		line-height: 1.7;
-	}
-
-	.gallery__highlights {
-		display: flex;
-		flex-direction: column;
-		gap: 0.75rem;
-		min-height: 0;
-		flex: 1 1 auto;
-	}
-
-	.gallery__info-card {
-		padding: 0.95rem 1rem;
-		border-radius: 0.9rem;
-		border: 1px solid rgba(168, 85, 247, 0.14);
-		background: rgba(10, 6, 18, 0.34);
-	}
-
-	.gallery__advantages {
-		margin-top: auto;
-		padding: 1rem 1.05rem;
-		border-radius: 0.95rem;
-		border: 1px solid rgba(192, 132, 252, 0.28);
-		background:
-			linear-gradient(145deg, rgba(124, 58, 237, 0.18), transparent 55%),
-			rgba(26, 22, 38, 0.88);
-	}
-
-	.gallery__advantages-label {
-		margin: 0 0 0.65rem;
-		font-size: 0.72rem;
-		font-weight: 700;
-		letter-spacing: 0.12em;
-		text-transform: uppercase;
-		color: var(--color-orchid);
-	}
-
-	.gallery__advantages-list {
-		margin: 0;
-		padding: 0;
-		list-style: none;
+	.gallery__marquee-slide {
 		display: grid;
-		gap: 0.55rem;
+		gap: 0.3rem;
+		flex: 0 0 auto;
+		width: clamp(220px, 28vw, 320px);
+		text-decoration: none;
+		color: inherit;
 	}
 
-	.gallery__advantages-list li {
-		position: relative;
-		padding-left: 1.05rem;
-		color: #e2d9ef;
-		font-size: 0.9rem;
-		line-height: 1.55;
-		font-weight: 600;
-	}
-
-	.gallery__advantages-list li::before {
-		content: '';
-		position: absolute;
-		left: 0;
-		top: 0.45em;
-		width: 0.45rem;
-		height: 0.45rem;
-		border-radius: 999px;
-		background: var(--color-violet);
-		box-shadow: 0 0 10px rgba(168, 85, 247, 0.55);
-	}
-
-	.gallery__info-card h3 {
-		margin: 0;
-		font-size: 0.98rem;
-		font-weight: 750;
-		color: var(--color-ink);
-	}
-
-	.gallery__info-card p {
-		margin: 0.45rem 0 0;
-		color: var(--color-muted);
-		font-size: 0.92rem;
-		line-height: 1.6;
-	}
-
-	.gallery__media {
-		display: grid;
-		gap: 0.45rem;
-		grid-template-rows: auto auto;
-		align-self: stretch;
-		min-height: 100%;
-	}
-
-	.gallery__featured,
-	.gallery__video,
-	.gallery__still,
-	.gallery__item {
-		margin: 0;
-	}
-
-	.gallery__featured,
-	.gallery__video {
-		aspect-ratio: 16 / 9;
-		border: 1px solid rgba(192, 132, 252, 0.22);
-		box-shadow: 0 12px 28px rgba(0, 0, 0, 0.26);
-	}
-
-	.gallery__still {
-		min-height: 11rem;
-		height: 100%;
-		border: 1px solid rgba(192, 132, 252, 0.22);
-		box-shadow: 0 12px 28px rgba(0, 0, 0, 0.26);
-	}
-
-	.gallery__video video {
+	.gallery__marquee-slide img {
 		display: block;
 		width: 100%;
-		height: 100%;
+		aspect-ratio: 16 / 10;
 		object-fit: cover;
+		border-radius: 0.75rem;
+		border: 1px solid rgba(192, 132, 252, 0.24);
 		background: #0a0612;
 	}
 
-	@media (prefers-reduced-motion: reduce) {
-		.gallery__video {
-			display: none;
-		}
-	}
-
-	.gallery__grid {
-		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: 0.45rem;
-	}
-
-	.gallery__item {
-		aspect-ratio: 16 / 11;
-	}
-
-	.gallery__featured img,
-	.gallery__still img,
-	.gallery__item img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		transition: transform 0.45s ease;
-	}
-
-	.gallery__featured:hover img,
-	.gallery__item:hover img {
-		transform: scale(1.33);
-	}
-
-	@media (hover: none), (pointer: coarse) {
-		.gallery__featured:hover img,
-		.gallery__item:hover img {
-			transform: none;
-		}
-
-		.gallery__featured figcaption,
-		.gallery__still figcaption,
-		.gallery__item figcaption {
-			opacity: 1;
-			transform: none;
-		}
-	}
-
-	.gallery__featured figcaption,
-	.gallery__video figcaption,
-	.gallery__still figcaption,
-	.gallery__item figcaption {
-		position: absolute;
-		inset: auto 0 0;
-		z-index: 2;
-		padding: 1.6rem 0.95rem 0.8rem;
-		background: linear-gradient(transparent, rgba(10, 6, 18, 0.92));
-		color: #ddd4ec;
-		font-size: 0.75rem;
+	.gallery__marquee-url {
+		font-size: 0.68rem;
 		font-weight: 600;
-		opacity: 0;
-		transform: translateY(6px);
-		transition:
-			opacity 0.25s ease,
-			transform 0.25s ease;
+		color: var(--color-orchid);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 
-	.gallery__featured:hover figcaption,
-	.gallery__still:hover figcaption,
-	.gallery__item:hover figcaption {
-		opacity: 1;
-		transform: translateY(0);
+	.gallery__marquee-slide:hover img {
+		border-color: rgba(192, 132, 252, 0.45);
 	}
 
-	.gallery__video figcaption {
-		opacity: 1;
-		transform: none;
+	.gallery__marquee-slide:hover .gallery__marquee-url {
+		color: #e9d5ff;
 	}
 
-	@media (max-width: 900px) {
-		.gallery__content {
-			grid-template-columns: 1fr;
-			grid-template-rows: auto auto;
-			align-items: start;
-			gap: 0.85rem;
+	.gallery__boxes {
+		display: grid;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		gap: 0.55rem;
+		padding: 0 0.85rem 0.85rem;
+	}
+
+	.gallery__box {
+		display: grid;
+		gap: 0.25rem;
+		padding: 0.7rem 0.75rem;
+		border-radius: 0.7rem;
+		border: 1px solid rgba(168, 85, 247, 0.16);
+		background: rgba(22, 18, 32, 0.75);
+		text-decoration: none;
+		transition: border-color 0.2s ease, background 0.2s ease;
+	}
+
+	.gallery__box:hover {
+		border-color: rgba(192, 132, 252, 0.38);
+		background: rgba(30, 24, 44, 0.85);
+	}
+
+	.gallery__box strong {
+		font-size: 0.82rem;
+		font-weight: 700;
+		color: var(--color-ink);
+	}
+
+	.gallery__box span {
+		font-size: 0.76rem;
+		line-height: 1.4;
+		color: var(--color-muted);
+	}
+
+	@keyframes gallery-marquee {
+		from {
+			transform: translateX(0);
+		}
+		to {
+			transform: translateX(-50%);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.gallery__marquee {
+			overflow-x: auto;
+			mask-image: none;
+			scrollbar-width: thin;
 		}
 
-		.gallery__summary {
-			order: 0;
-			width: 100%;
-			height: auto;
+		.gallery__marquee-track {
+			animation: none;
 		}
+	}
 
-		.gallery__media {
-			order: 1;
-			width: 100%;
-			margin-top: 0;
-		}
-
-		.gallery__grid {
+	@media (max-width: 760px) {
+		.gallery__boxes {
 			grid-template-columns: repeat(2, minmax(0, 1fr));
 		}
 	}
 
 	@media (max-width: 560px) {
-		.gallery__head {
-			margin-bottom: 0.85rem;
+		.gallery__marquee-slide {
+			width: clamp(200px, 72vw, 280px);
 		}
 
-		.gallery__title {
-			font-size: clamp(1.35rem, 5.5vw, 1.65rem);
-		}
-
-		.gallery__sub {
-			font-size: 0.9rem;
-		}
-
-		.gallery__content {
-			padding: 0.75rem;
-			gap: 0.75rem;
-		}
-
-		.gallery__summary {
-			gap: 0.65rem;
-		}
-
-		.gallery__highlights {
-			gap: 0.65rem;
-		}
-
-		.gallery__lead {
-			padding: 0.85rem;
-			font-size: 0.92rem;
-			line-height: 1.6;
-		}
-
-		.gallery__info-card {
-			padding: 0.8rem 0.85rem;
-		}
-
-		.gallery__info-card h3 {
-			font-size: 0.92rem;
-		}
-
-		.gallery__info-card p {
-			font-size: 0.86rem;
-		}
-
-		.gallery__advantages {
-			padding: 0.85rem;
-		}
-
-		.gallery__advantages-list li {
-			font-size: 0.86rem;
-		}
-
-		.gallery__grid {
+		.gallery__boxes {
 			grid-template-columns: 1fr;
-			gap: 0.4rem;
-		}
-
-		.gallery__media {
-			gap: 0.4rem;
-		}
-
-		.gallery__featured {
-			aspect-ratio: 4 / 3;
-		}
-
-		.gallery__video {
-			aspect-ratio: 16 / 9;
-		}
-
-		.gallery__media {
-			grid-template-rows: auto auto auto;
-		}
-
-		.gallery__still {
-			aspect-ratio: 16 / 10;
-			min-height: 0;
-			height: auto;
-		}
-
-		.gallery__featured figcaption,
-		.gallery__video figcaption,
-		.gallery__still figcaption,
-		.gallery__item figcaption {
-			opacity: 1;
-			transform: none;
-			font-size: 0.7rem;
-			padding: 1.2rem 0.75rem 0.65rem;
+			padding-inline: 0.75rem;
 		}
 	}
 </style>
