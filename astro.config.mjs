@@ -11,14 +11,14 @@ export default defineConfig({
 	compressHTML: true,
 	devToolbar: { enabled: false },
 	server: {
-		host: '::',
-		port: 8080,
-		strictPort: true,
+		host: true,
+		port: 4321,
+		strictPort: false,
 	},
 	preview: {
-		host: '::',
-		port: 8080,
-		strictPort: true,
+		host: true,
+		port: 4321,
+		strictPort: false,
 	},
 	build: {
 		// 'auto' keeps small styles inline but emits the large Tailwind bundle as a
