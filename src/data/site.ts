@@ -407,6 +407,7 @@ export const seoFaqs = [
 
 export type CustomerReview = {
 	handle: string;
+	title: string;
 	rating: 3 | 4 | 5;
 	text: string;
 	short: string;
@@ -417,9 +418,16 @@ export type CustomerReview = {
 	tag?: string;
 };
 
+export const customerStats = [
+	{ value: '98%', label: 'Were satisfied with their cheat.' },
+	{ value: '92%', label: 'Said the setting up process was easy.' },
+	{ value: '86%', label: 'Bought another key after their first purchase.' },
+] as const;
+
 export const customerReviews = [
 	{
 		handle: 'xKrypt0_ARC',
+		title: 'soft aim feels clean',
 		rating: 5,
 		text: 'soft aim feels clean on smgs in Steel Path missions. took me like 20 mins to figure out the menu tho lol. once u get it its smooth',
 		short: 'soft aim feels clean on smgs in Steel Path missions. once u get the menu its smooth',
@@ -432,6 +440,7 @@ export const customerReviews = [
 	},
 	{
 		handle: 'extractR4K',
+		title: 'esp boxes are actually useful',
 		rating: 4,
 		text: "esp boxes in mission objectives are actually useful, can see who's holding rooftops before u push. radar could be bigger on 1080p — wish there was a size slider. still worth it for the price",
 		short: "esp boxes in mission objectives are actually useful, can see who's holding rooftops before u push. still worth it for the price",
@@ -444,6 +453,7 @@ export const customerReviews = [
 	},
 	{
 		handle: 'dma_wizard',
+		title: 'cloud dma setup was easy',
 		rating: 5,
 		text: 'switched from a kernel only tool last season. cloud dma setup was easier than i expected, support walked me through the dma part on discord. survived the last patch while my old sub got flagged. lifetime was the move',
 		short: 'cloud dma setup was easier than i expected. survived the last patch while my old sub got flagged',
@@ -456,6 +466,7 @@ export const customerReviews = [
 	},
 	{
 		handle: 'ctrl_player99',
+		title: 'works great on controller',
 		rating: 4,
 		text: "finally warframe cheats that don't feel like garbage on controller. aimbot with xbox pad works, had to tweak fov a bit. menu navigation with pad is kinda awkward but doable",
 		short: "finally warframe cheats that don't feel like garbage on controller. aimbot with xbox pad works",
@@ -468,6 +479,7 @@ export const customerReviews = [
 	},
 	{
 		handle: 'stormChaser_07',
+		title: 'solid esp when it works',
 		rating: 3,
 		text: 'features are good when it works. first launch took forever bc windows defender flagged the loader — not their fault but annoying. support replied in like 2 hours and sent a fix. esp and health pickup markers solid in ranked, just wish setup docs were clearer upfront',
 		short: 'features are good when it works. esp and health pickup markers solid in ranked, just wish setup docs were clearer upfront',
@@ -480,6 +492,7 @@ export const customerReviews = [
 	},
 	{
 		handle: 'lootGoblinx',
+		title: 'loot esp pays for itself',
 		rating: 5,
 		text: 'loot esp alone pays for monthly imo. ability cooldown and health markers + distance readouts = way faster extractions',
 		short: 'loot esp alone pays for monthly imo. ability cooldown and health markers + distance readouts = way faster extractions',
@@ -491,6 +504,7 @@ export const customerReviews = [
 	},
 	{
 		handle: 'rankedGrind42',
+		title: 'per-weapon aim profiles',
 		rating: 4,
 		text: 'been using since early access. soft aim profiles per weapon is nice — smg profile vs ar profile actually makes a diff in close fights. only complaint is updates page could show eta when patches hit, had to wait a day once',
 		short: 'soft aim profiles per weapon is nice — smg profile vs ar profile actually makes a diff in close fights',
@@ -503,6 +517,7 @@ export const customerReviews = [
 	},
 	{
 		handle: 'vanLifeARC',
+		title: 'radar saved me so many times',
 		rating: 5,
 		text: 'radar saved me so many times during map rotations. seeing the third party before they slide in is huge in squads. boxes + radar combo is clean',
 		short: 'radar saved me so many times during map rotations. boxes + radar combo is clean',
@@ -515,6 +530,7 @@ export const customerReviews = [
 	},
 	{
 		handle: 'patchDayMike',
+		title: 'fast updates after patches',
 		rating: 4,
 		text: 'every cheat goes down on patch day, thats life. difference here is they actually posted on updates within a few hours last patch. was back online next morning.',
 		short: 'every cheat goes down on patch day, thats life. difference here is they actually posted on updates within a few hours',
@@ -527,6 +543,7 @@ export const customerReviews = [
 	},
 	{
 		handle: 'snipezOnly_',
+		title: 'sniper profile is chef kiss',
 		rating: 5,
 		text: 'sniper soft aim profile + esp for tag = chef kiss. dont @ me',
 		short: 'sniper soft aim profile + esp for tag = chef kiss. dont @ me',
@@ -541,4 +558,5 @@ export const customerReviews = [
 export const customerReviewStats = {
 	averageRating: 4.4,
 	totalCount: customerReviews.length,
+	displayCount: '3,000+',
 } as const;

@@ -6,7 +6,7 @@ import BreadcrumbBar from '../components/BreadcrumbBar.astro';
 import PricingPlans from '../components/PricingPlans.astro';
 import PricingFeatureList from '../components/PricingFeatureList.astro';
 import Gallery from '../components/Gallery.astro';
-import HomeSeo from '../components/HomeSeo.astro';
+import HomeFaq from '../components/HomeFaq.astro';
 import CustomerReviews from '../components/CustomerReviews.astro';
 import TrustBar from '../components/TrustBar.astro';
 import SiteFooter from '../components/SiteFooter.astro';
@@ -115,35 +115,16 @@ const extraGraph: Record<string, unknown>[] =
 				<PricingFeatureList locale={locale} />
 			</div>
 		</section>
-		<section class="site__section site__section--seo">
-			{
-				locale === 'en' ? (
-					<HomeSeo />
-				) : (
-					<div class="shell home-seo-intro">
-						<h2>{home.h1}</h2>
-						<p>{home.intro}</p>
-						{
-							home.sections.map((section) => (
-								<div class="home-seo-block">
-									<h3>{section.h2}</h3>
-									{section.paragraphs.map((p) => (
-										<p set:html={p} />
-									))}
-								</div>
-							))
-						}
-					</div>
-				)
-			}
+		<section class="site__section site__section--reviews">
+			<CustomerReviews locale={locale} />
+		</section>
+		<section class="site__section site__section--faq">
+			<HomeFaq />
 		</section>
 		<section class="site__section site__section--gallery">
 			<div class="shell">
 				<Gallery locale={locale} />
 			</div>
-		</section>
-		<section class="site__section site__section--reviews">
-			<CustomerReviews locale={locale} />
 		</section>
 		<SiteFooter locale={locale} />
 	</main>
@@ -156,9 +137,16 @@ const extraGraph: Record<string, unknown>[] =
 
 	.site__section--reviews {
 		padding-top: 0.25rem;
-		padding-bottom: 1.25rem;
+		padding-bottom: 0.5rem;
 		content-visibility: auto;
-		contain-intrinsic-size: 1px 640px;
+		contain-intrinsic-size: 1px 720px;
+	}
+
+	.site__section--faq {
+		padding-top: 0.15rem;
+		padding-bottom: 0.5rem;
+		content-visibility: auto;
+		contain-intrinsic-size: 1px 520px;
 	}
 
 	.site__section--trust {
@@ -169,7 +157,7 @@ const extraGraph: Record<string, unknown>[] =
 
 	.site__section--store,
 	.site__section--reviews,
-	.site__section--seo,
+	.site__section--faq,
 	.site__section--gallery {
 		content-visibility: auto;
 		contain-intrinsic-size: 1px 720px;
@@ -190,46 +178,9 @@ const extraGraph: Record<string, unknown>[] =
 		gap: 1.25rem;
 	}
 
-	.site__section--seo {
-		padding-top: 0.15rem;
-	}
-
 	.site__section--gallery {
 		padding-top: 0.35rem;
 		padding-bottom: 1.25rem;
-	}
-
-	.home-seo-intro {
-		display: grid;
-		gap: 1rem;
-	}
-
-	.home-seo-intro h2 {
-		margin: 0;
-		font-family: var(--font-display);
-		font-size: clamp(1.35rem, 3vw, 1.75rem);
-		font-weight: 800;
-	}
-
-	.home-seo-intro p {
-		margin: 0;
-		color: var(--color-muted);
-		line-height: 1.65;
-	}
-
-	.home-seo-block {
-		padding: 1rem 1.1rem;
-		border-radius: 0.9rem;
-		border: 1px solid rgba(168, 85, 247, 0.14);
-		background: rgba(26, 22, 38, 0.72);
-		display: grid;
-		gap: 0.65rem;
-	}
-
-	.home-seo-block h3 {
-		margin: 0;
-		font-size: 1rem;
-		font-weight: 750;
 	}
 
 	@media (max-width: 768px) {

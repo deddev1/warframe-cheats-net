@@ -65,7 +65,7 @@ export type LocaleUi = {
 \thero: { accent: string; accentShort: string; subtitle: string; subtitleShort: string; buyNow: string; seeFeatures: string };
 \ttrust: { status: string; statusNote: string; statusShort: string; delivery: string; platform: string; antiCheat: string; antiCheatShort: string };
 \tproduct: { title: string; addToCart: string; monthly: string; lifetime: string; available: string; gameBadge: string; platformBadge: string; statusBadge: string };
-\treviews: { title: string; subtitle: string; outOf: string; countLabel: string };
+\treviews: { title: string; subtitle: string; outOf: string; countLabel: string; verifiedLabel?: string; seeAll?: string };
 \tcommon: { buyNow: string; readGuide: string; language: string; officialLanguageNote: string; relatedPages: string };
 \tfooter: { explore: string; help: string; tagline: string };
 \timages: {

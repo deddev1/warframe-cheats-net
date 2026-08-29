@@ -19,7 +19,7 @@ export type LocaleUi = {
 	hero: { accent: string; accentShort: string; subtitle: string; subtitleShort: string; buyNow: string; seeFeatures: string };
 	trust: { status: string; statusNote: string; statusShort: string; delivery: string; platform: string; antiCheat: string; antiCheatShort: string };
 	product: { title: string; addToCart: string; monthly: string; lifetime: string; available: string; gameBadge: string; platformBadge: string; statusBadge: string };
-	reviews: { title: string; subtitle: string; outOf: string; countLabel: string };
+	reviews: { title: string; subtitle: string; outOf: string; countLabel: string; verifiedLabel?: string; seeAll?: string };
 	common: { buyNow: string; readGuide: string; language: string; officialLanguageNote: string; relatedPages: string };
 	footer: { explore: string; help: string; tagline: string };
 	images: {
@@ -71,10 +71,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					statusBadge: "Maintained package",
 				},
 				reviews: {
-					title: "What players say",
-					subtitle: "Recent feedback from Warframe Cheats buyers",
+					title: "Customer reviews",
+					subtitle: "3,000+ reviews from real customers",
 					outOf: "out of 5",
 					countLabel: "reviews",
+					verifiedLabel: "Verified customer",
+					seeAll: "See all {count} reviews",
 				},
 				common: {
 					buyNow: "Buy Now",
