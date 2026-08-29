@@ -25,6 +25,7 @@ interface Props {
 	ctaPrimary?: { href: string; label: string };
 	ctaSecondary?: { href: string; label: string };
 	showGallery?: boolean;
+	hideBanner?: boolean;
 	locale?: import('../data/i18n/locales').LocaleCode;
 	pageId?: import('../data/i18n/content.generated').PageId;
 	extraGraph?: Record<string, unknown>[];
@@ -44,6 +45,7 @@ const {
 	ctaPrimary,
 	ctaSecondary,
 	showGallery = true,
+	hideBanner = false,
 	locale = defaultLocale,
 	pageId: pageIdProp,
 	extraGraph = [],
@@ -112,7 +114,9 @@ const lcpImageSizes = isHeroLcp ? heroSizes : undefined;
 	lcpImageSizes={lcpImageSizes}
 >
 	<Navbar locale={locale} pageId={pageId} />
-	<main class="page">
+	<main class:list={['page', hideBanner && 'page--compact']}>
+		{
+			!hideBanner && (
 		<section class="banner">
 			<div class="banner__media">
 				{
@@ -190,6 +194,8 @@ const lcpImageSizes = isHeroLcp ? heroSizes : undefined;
 				}
 			</div>
 		</section>
+			)
+		}
 
 		<div class="shell page__wrap">
 			<article class="article">
@@ -232,6 +238,10 @@ const lcpImageSizes = isHeroLcp ? heroSizes : undefined;
 	.page {
 		overflow-x: clip;
 		padding-bottom: calc(3.25rem + env(safe-area-inset-bottom, 0px));
+	}
+
+	.page--compact .page__wrap {
+		padding-top: 1.25rem;
 	}
 
 	.banner {

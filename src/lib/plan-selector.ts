@@ -19,7 +19,8 @@ function applyPlanSelection(root: HTMLElement, plan: HTMLElement) {
 		buyBtn.href = checkoutUrl;
 		const buyLabel = buyBtn.querySelector('[data-plan-buy-label]');
 		const prefix = root.dataset.buyPrefix ?? 'Buy Now';
-		const text = price ? `${prefix} — $${price}` : prefix;
+		const showPrice = root.dataset.buyShowPrice !== 'false';
+		const text = showPrice && price ? `${prefix} — $${price}` : prefix;
 		if (buyLabel) {
 			buyLabel.textContent = text;
 		} else {

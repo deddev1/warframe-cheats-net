@@ -1,8 +1,15 @@
 ---
+import { warframeImages, productPreviewVideo } from '../data/warframe';
 import { getUi } from '../data/i18n';
+import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { productInfo, siteConfig } from '../data/site';
-import PlanSummaryPanels from './PlanSummaryPanels.astro';
+import {
+	contentSrc,
+	contentSrcSet,
+	productMainSizes,
+	productThumbSizes,
+} from '../lib/responsive-images';
 
 interface Props {
 	locale?: LocaleCode;
@@ -11,210 +18,761 @@ interface Props {
 const locale = Astro.props.locale ?? defaultLocale;
 const ui = getUi(locale);
 
-const planCopy = {
-	monthly: {
-		note: ui.product.available,
-		period: ui.product.monthly,
-	},
-	lifetime: {
-		note: ui.product.available,
-		period: ui.product.lifetime,
-	},
-} as const;
+const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? productInfo.plans[0];
+const lifetimePlan = productInfo.plans.find((plan) => plan.id === 'lifetime');
+const defaultPlan = monthlyPlan;
 
-const defaultPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? productInfo.plans[0];
+const heroPreview = {
+	src: contentSrc(warframeImages.hero),
+	srcset: contentSrcSet(warframeImages.hero),
+	alt: 'Warframe cheats gameplay preview — ESP and aimbot on PC',
+};
+
+const thumbImages = warframeImages.product.slice(0, 2).map((image) => ({
+	src: contentSrc(image.src),
+	srcset: contentSrcSet(image.src),
+	alt: image.alt,
+}));
+
+const monthlyPerDay = (monthlyPlan.price / 30).toFixed(2);
+const featuresHref = getLocalizedPath('features', locale);
+
+const featurePills = [
+	{ icon: 'bolt', label: ui.trust.delivery },
+	{ icon: 'sliders', label: 'Easy to use' },
+	{ icon: 'shield', label: 'Undetected' },
+	{ icon: 'headset', label: '24/7 support' },
+] as const;
 ---
 
 <section
-	class="plans"
-	data-plan-selector
-	data-default-plan={defaultPlan.id}
-	data-buy-prefix={ui.common.buyNow}
+	class="pricing-showcase surface-card"
+	id="pricing"
+	data-product
 	aria-label={ui.nav.pricing}
 >
-	<div class="plans__grid">
-		{
-			productInfo.plans.map((plan) => {
-				const copy = planCopy[plan.id as keyof typeof planCopy] ?? planCopy.monthly;
-				const featured = plan.id === 'lifetime';
-				const selected = plan.id === defaultPlan.id;
-				return (
+	<div class="pricing-showcase__media">
+		<figure class="pricing-showcase__figure media-frame">
+			<img
+				src={heroPreview.src}
+				srcset={heroPreview.srcset}
+				sizes={productMainSizes}
+				alt={heroPreview.alt}
+				width="1280"
+				height="720"
+				class="pricing-showcase__image is-hidden"
+				data-main-image
+				loading="eager"
+				fetchpriority="high"
+				decoding="async"
+			/>
+			<div class="pricing-showcase__player" data-video-player>
+				<video
+					class="pricing-showcase__video"
+					data-main-video
+					src={productPreviewVideo.src}
+					poster={productPreviewVideo.poster}
+					preload="metadata"
+					playsinline
+					controls
+					controlslist="nodownload noplaybackrate"
+					disablepictureinpicture
+					title={productPreviewVideo.title}
+					aria-label={productPreviewVideo.ariaLabel}
+				></video>
+				<button
+					type="button"
+					class="pricing-showcase__play"
+					data-video-play
+					aria-label="Play Warframe cheats preview"
+				>
+					<span class="pricing-showcase__play-icon" aria-hidden="true">
+						<svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+							<path
+								d="M8 5.5v13l11-6.5-11-6.5z"
+								fill="currentColor"
+								stroke="currentColor"
+								stroke-width="0.5"
+								stroke-linejoin="round"></path>
+						</svg>
+					</span>
+				</button>
+			</div>
+		</figure>
+		<div class="pricing-showcase__thumbs" role="group" aria-label="Product preview images">
+			<button
+				type="button"
+				class="pricing-showcase__thumb pricing-showcase__thumb--video is-active"
+				aria-label="Show video preview"
+				aria-pressed="true"
+				data-thumb-video
+			>
+				<img
+					src={contentSrc(warframeImages.hero)}
+					srcset={contentSrcSet(warframeImages.hero)}
+					sizes={productThumbSizes}
+					alt="Video preview thumbnail"
+					width="320"
+					height="200"
+					loading="lazy"
+					decoding="async"
+				/>
+				<span class="pricing-showcase__thumb-play" aria-hidden="true">
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+						<path d="M8 5.5v13l11-6.5-11-6.5z"></path>
+					</svg>
+				</span>
+			</button>
+			{
+				thumbImages.map((image, index) => (
 					<button
 						type="button"
-						class:list={[
-							'plans__card',
-							featured && 'plans__card--featured',
-							selected && 'is-selected',
-						]}
-						data-plan={plan.id}
-						data-plan-label={copy.period}
-						data-plan-price={plan.price}
-						data-checkout-url={siteConfig.checkoutUrl}
-						aria-pressed={selected}
+						class="pricing-showcase__thumb"
+						aria-label={`Show ${image.alt}`}
+						aria-pressed="false"
+						data-thumb
+						data-index={String(index)}
+						data-src={image.src}
+						data-srcset={image.srcset}
+						data-alt={image.alt}
 					>
-						{featured ? (
-							<p class="plans__badge">{ui.product.lifetime}</p>
-						) : (
-							<span class="plans__badge plans__badge--spacer" aria-hidden="true">
-								{ui.product.lifetime}
-							</span>
-						)}
-						<p class="plans__name">{copy.period}</p>
-						<p class="plans__price">
-							<span class="plans__amount">${plan.price}</span>
-							<span class="plans__period">{copy.note}</span>
-						</p>
+						<img
+							src={image.src}
+							srcset={image.srcset}
+							sizes={productThumbSizes}
+							alt={image.alt}
+							width="320"
+							height="200"
+							loading="lazy"
+							decoding="async"
+						/>
 					</button>
-				);
-			})
-		}
+				))
+			}
+		</div>
 	</div>
 
-	<PlanSummaryPanels defaultPlanId={defaultPlan.id} class="plans__summary" />
-
-	<a
-		href={siteConfig.checkoutUrl}
-		class="plans__cta btn-buy"
-		data-plan-buy
-		rel="noopener noreferrer"
+	<div
+		class="pricing-showcase__checkout"
+		data-plan-selector
+		data-default-plan={defaultPlan.id}
+		data-buy-prefix={ui.product.addToCart}
+		data-buy-show-price="false"
 	>
-		<span data-plan-buy-label>{ui.common.buyNow} — ${defaultPlan.price}</span>
-	</a>
+		<div class="pricing-showcase__header">
+			<h1 class="pricing-showcase__title">{productInfo.name}</h1>
+			<span class="pricing-showcase__status">
+				<span class="pricing-showcase__status-dot" aria-hidden="true"></span>
+				Undetected
+			</span>
+		</div>
+
+		<p class="pricing-showcase__social">
+			<span class="pricing-showcase__social-dot" aria-hidden="true"></span>
+			100+ others have purchased
+		</p>
+
+		<div class="pricing-showcase__plans" role="group" aria-label="Select a license plan">
+			<button
+				type="button"
+				class="pricing-showcase__plan is-selected"
+				data-plan={monthlyPlan.id}
+				data-plan-label={ui.product.monthly}
+				data-plan-price={monthlyPlan.price}
+				data-checkout-url={siteConfig.checkoutUrl}
+				aria-pressed="true"
+			>
+				<span class="pricing-showcase__plan-main">
+					<span class="pricing-showcase__plan-name">{ui.product.monthly}</span>
+					<span class="pricing-showcase__plan-price">${monthlyPlan.price}</span>
+				</span>
+				<span class="pricing-showcase__plan-sub">${monthlyPerDay}/day</span>
+			</button>
+
+			{
+				lifetimePlan && (
+					<button
+						type="button"
+						class="pricing-showcase__plan pricing-showcase__plan--featured"
+						data-plan={lifetimePlan.id}
+						data-plan-label={ui.product.lifetime}
+						data-plan-price={lifetimePlan.price}
+						data-checkout-url={siteConfig.checkoutUrl}
+						aria-pressed="false"
+					>
+						<span class="pricing-showcase__plan-badge">
+							<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+								<path d="M12 3l2.2 4.5 5 .7-3.6 3.5.9 5.1L12 14.8 7.5 16.8l.9-5.1L4.8 8.2l5-.7L12 3z"></path>
+							</svg>
+							Most popular
+						</span>
+						<span class="pricing-showcase__plan-main">
+							<span class="pricing-showcase__plan-name">{ui.product.lifetime}</span>
+							<span class="pricing-showcase__plan-price">${lifetimePlan.price}</span>
+						</span>
+						<span class="pricing-showcase__plan-sub">One-time payment</span>
+					</button>
+				)
+			}
+		</div>
+
+		<a
+			href={siteConfig.checkoutUrl}
+			class="pricing-showcase__cart btn-buy"
+			data-plan-buy
+			rel="noopener noreferrer"
+		>
+			<svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+				<path
+					d="M6 6h15l-1.5 9h-12L4 3H2"
+					stroke="currentColor"
+					stroke-width="1.8"
+					stroke-linecap="round"
+					stroke-linejoin="round"></path>
+				<circle cx="9" cy="20" r="1.25" fill="currentColor"></circle>
+				<circle cx="18" cy="20" r="1.25" fill="currentColor"></circle>
+			</svg>
+			<span data-plan-buy-label>{ui.product.addToCart}</span>
+		</a>
+
+		<div class="pricing-showcase__pills" aria-label="Package highlights">
+			{
+				featurePills.map((pill) => (
+					<span class="pricing-showcase__pill">
+						<span class="pricing-showcase__pill-icon" data-icon={pill.icon} aria-hidden="true">
+							{pill.icon === 'bolt' && (
+								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+									<path d="M13 3 5.5 13.5H12l-1 7.5L19.5 10H13l0-7Z" stroke-linejoin="round"></path>
+								</svg>
+							)}
+							{pill.icon === 'sliders' && (
+								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+									<path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M4 14h0M12 12h0M20 16h0" stroke-linecap="round"></path>
+								</svg>
+							)}
+							{pill.icon === 'shield' && (
+								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+									<path d="M12 3.5 5 6.5v5.2c0 4.2 2.9 7.8 7 8.8 4.1-1 7-4.6 7-8.8V6.5L12 3.5Z" stroke-linejoin="round"></path>
+								</svg>
+							)}
+							{pill.icon === 'headset' && (
+								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+									<path d="M4 14v-2a8 8 0 0 1 16 0v2M4 14a2 2 0 0 0 2 2h1v-5H6a2 2 0 0 0-2 2Zm16 0a2 2 0 0 1-2 2h-1v-5h1a2 2 0 0 1 2 2Z" stroke-linecap="round"></path>
+								</svg>
+							)}
+						</span>
+						{pill.label}
+					</span>
+				))
+			}
+		</div>
+
+		<div class="pricing-showcase__guarantee">
+			<span class="pricing-showcase__guarantee-icon" aria-hidden="true">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+					<path d="M12 3.5 5 6.5v5.2c0 4.2 2.9 7.8 7 8.8 4.1-1 7-4.6 7-8.8V6.5L12 3.5Z" stroke-linejoin="round"></path>
+					<path d="m9.5 12 1.8 1.8 3.7-3.8" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</span>
+			<p>
+				Your purchase is backed by years of development, continuous updates, and a dedicated support
+				team committed to your success.
+			</p>
+		</div>
+
+		<a href={featuresHref} class="pricing-showcase__features-link">
+			View product features
+			<svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+				<path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+			</svg>
+		</a>
+	</div>
 </section>
 
 <script>
 	import { initPlanSelectors } from '../lib/plan-selector';
 	initPlanSelectors();
+
+	document.querySelectorAll('[data-product]').forEach((root) => {
+		const videoThumb = root.querySelector('[data-thumb-video]');
+		const imageThumbs = root.querySelectorAll('[data-thumb]');
+		const videoPlayer = root.querySelector('[data-video-player]');
+		const mainImage = root.querySelector('[data-main-image]');
+
+		function showVideo() {
+			videoPlayer?.classList.remove('is-hidden');
+			mainImage?.classList.add('is-hidden');
+			videoThumb?.classList.add('is-active');
+			videoThumb?.setAttribute('aria-pressed', 'true');
+			imageThumbs.forEach((thumb) => {
+				thumb.classList.remove('is-active');
+				thumb.setAttribute('aria-pressed', 'false');
+			});
+		}
+
+		videoThumb?.addEventListener('click', showVideo);
+
+		imageThumbs.forEach((thumb) => {
+			thumb.addEventListener('click', () => {
+				if (!(mainImage instanceof HTMLImageElement)) return;
+				const src = thumb.getAttribute('data-src');
+				const srcset = thumb.getAttribute('data-srcset');
+				const alt = thumb.getAttribute('data-alt');
+				if (src) mainImage.src = src;
+				if (srcset) mainImage.srcset = srcset;
+				if (alt) mainImage.alt = alt;
+				videoPlayer?.classList.add('is-hidden');
+				mainImage.classList.remove('is-hidden');
+				videoThumb?.classList.remove('is-active');
+				videoThumb?.setAttribute('aria-pressed', 'false');
+				imageThumbs.forEach((item) => {
+					const active = item === thumb;
+					item.classList.toggle('is-active', active);
+					item.setAttribute('aria-pressed', active ? 'true' : 'false');
+				});
+			});
+		});
+	});
 </script>
 
 <style>
-	.plans {
+	.pricing-showcase {
 		display: grid;
-		gap: 0.65rem;
+		grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+		gap: clamp(1.25rem, 2.5vw, 2rem);
+		align-items: start;
 		width: 100%;
-		box-sizing: border-box;
+		margin: 0 0 1.5rem;
+		padding: clamp(1rem, 2vw, 1.5rem);
+		border-radius: var(--radius-card);
+		border: 1px solid rgba(168, 85, 247, 0.2);
+		background:
+			linear-gradient(145deg, rgba(26, 22, 38, 0.95) 0%, rgba(12, 10, 18, 0.98) 100%);
+		box-shadow:
+			0 0 0 1px rgba(192, 132, 252, 0.06) inset,
+			0 20px 50px rgba(0, 0, 0, 0.35);
 	}
 
-	.plans__grid {
-		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: 0.75rem;
-		align-items: stretch;
-		width: 100%;
-	}
-
-	.plans__summary {
-		width: 100%;
-	}
-
-	.plans__cta {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		box-sizing: border-box;
-		margin: 0;
-	}
-
-	.plans__card {
+	.pricing-showcase__media {
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-start;
-		gap: 0.35rem;
-		min-height: 7.5rem;
-		width: 100%;
+		gap: 0.75rem;
+		min-width: 0;
+	}
+
+	.pricing-showcase__figure {
 		margin: 0;
-		padding: 1rem 1.15rem;
-		border-radius: 0.9rem;
-		border: 1px solid rgba(168, 85, 247, 0.16);
-		background: rgba(22, 18, 32, 0.92);
-		color: inherit;
-		font: inherit;
-		text-align: left;
+		aspect-ratio: 16 / 10;
+		border: 1px solid rgba(192, 132, 252, 0.35);
+		border-radius: 0.85rem;
+		box-shadow:
+			0 0 0 1px rgba(192, 132, 252, 0.12),
+			0 0 40px rgba(168, 85, 247, 0.18);
+		overflow: hidden;
+	}
+
+	.pricing-showcase__player {
+		position: absolute;
+		inset: 0;
+		z-index: 1;
+		background: #0a0612;
+	}
+
+	.pricing-showcase__player.is-hidden {
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+	}
+
+	.pricing-showcase__video,
+	.pricing-showcase__image {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.pricing-showcase__image.is-hidden {
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+	}
+
+	.pricing-showcase__play {
+		position: absolute;
+		inset: 0;
+		z-index: 2;
+		display: grid;
+		place-items: center;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		background: linear-gradient(180deg, rgba(10, 6, 18, 0.1), rgba(10, 6, 18, 0.45));
+		color: #f8f4ff;
 		cursor: pointer;
-		box-sizing: border-box;
+		transition: opacity 0.2s ease;
+	}
+
+	.pricing-showcase__play.is-hidden {
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+	}
+
+	.pricing-showcase__play-icon {
+		display: grid;
+		place-items: center;
+		width: 3.75rem;
+		height: 3.75rem;
+		border-radius: 999px;
+		background: rgba(124, 58, 237, 0.92);
+		box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+	}
+
+	.pricing-showcase__thumbs {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 0.65rem;
+	}
+
+	.pricing-showcase__thumb {
+		position: relative;
+		padding: 0;
+		aspect-ratio: 16 / 10;
+		border: 2px solid rgba(168, 85, 247, 0.2);
+		border-radius: 0.65rem;
+		background: rgba(18, 16, 26, 0.8);
+		cursor: pointer;
+		overflow: hidden;
 		transition:
 			border-color 0.2s ease,
 			box-shadow 0.2s ease;
 	}
 
-	.plans__card.is-selected {
-		border-color: rgba(192, 132, 252, 0.55);
-		box-shadow: inset 0 0 0 1px rgba(192, 132, 252, 0.35);
+	.pricing-showcase__thumb img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 
-	.plans__card--featured {
-		border-color: rgba(192, 132, 252, 0.45);
-		background:
-			linear-gradient(180deg, rgba(88, 28, 135, 0.28), rgba(22, 18, 32, 0.94));
+	.pricing-showcase__thumb.is-active,
+	.pricing-showcase__thumb:hover {
+		border-color: rgba(192, 132, 252, 0.75);
+		box-shadow: 0 0 20px rgba(168, 85, 247, 0.25);
 	}
 
-	.plans__card--featured.is-selected {
-		border-color: rgba(216, 180, 254, 0.65);
-		box-shadow: inset 0 0 0 1px rgba(216, 180, 254, 0.4);
+	.pricing-showcase__thumb-play {
+		position: absolute;
+		inset: 0;
+		display: grid;
+		place-items: center;
+		background: rgba(10, 6, 18, 0.35);
+		color: white;
 	}
 
-	.plans__badge {
-		margin: 0 0 0.15rem;
-		align-self: flex-start;
-		padding: 0.28rem 0.65rem;
-		border-radius: 999px;
-		border: 1px solid rgba(192, 132, 252, 0.35);
-		background: rgba(124, 58, 237, 0.22);
-		color: var(--color-orchid);
-		font-size: 0.68rem;
-		font-weight: 700;
-		line-height: 1.2;
-		letter-spacing: 0.1em;
+	.pricing-showcase__checkout {
+		display: flex;
+		flex-direction: column;
+		gap: 0.85rem;
+		min-width: 0;
+	}
+
+	.pricing-showcase__header {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 0.75rem;
+	}
+
+	.pricing-showcase__title {
+		margin: 0;
+		font-family: var(--font-display);
+		font-size: clamp(1.35rem, 2.8vw, 1.85rem);
+		font-weight: 800;
+		letter-spacing: -0.02em;
+		line-height: 1.15;
 		text-transform: uppercase;
 	}
 
-	.plans__badge--spacer {
-		visibility: hidden;
-		border-color: transparent;
-		background: transparent;
+	.pricing-showcase__status {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
+		flex-shrink: 0;
+		padding: 0.35rem 0.7rem;
+		border-radius: 999px;
+		border: 1px solid rgba(52, 211, 153, 0.35);
+		background: rgba(52, 211, 153, 0.1);
+		color: var(--color-mint);
+		font-size: 0.68rem;
+		font-weight: 800;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
 	}
 
-	.plans__name {
+	.pricing-showcase__status-dot {
+		width: 0.45rem;
+		height: 0.45rem;
+		border-radius: 999px;
+		background: var(--color-mint);
+		box-shadow: 0 0 8px rgba(52, 211, 153, 0.65);
+	}
+
+	.pricing-showcase__social {
+		display: flex;
+		align-items: center;
+		gap: 0.45rem;
+		margin: -0.25rem 0 0;
+		color: var(--color-mint);
+		font-size: 0.82rem;
+		font-weight: 600;
+	}
+
+	.pricing-showcase__social-dot {
+		width: 0.4rem;
+		height: 0.4rem;
+		border-radius: 999px;
+		background: var(--color-mint);
+	}
+
+	.pricing-showcase__plans {
+		display: grid;
+		gap: 0.55rem;
+	}
+
+	.pricing-showcase__plan {
+		display: grid;
+		gap: 0.15rem;
+		width: 100%;
 		margin: 0;
+		padding: 0.9rem 1rem;
+		border-radius: 0.75rem;
+		border: 1px solid rgba(168, 85, 247, 0.22);
+		background: rgba(18, 16, 26, 0.85);
+		color: inherit;
+		font: inherit;
+		text-align: left;
+		cursor: pointer;
+		transition:
+			border-color 0.2s ease,
+			box-shadow 0.2s ease,
+			background 0.2s ease;
+	}
+
+	.pricing-showcase__plan:hover {
+		border-color: rgba(192, 132, 252, 0.45);
+	}
+
+	.pricing-showcase__plan.is-selected {
+		border-color: rgba(192, 132, 252, 0.75);
+		background: rgba(88, 28, 135, 0.18);
+		box-shadow:
+			0 0 0 1px rgba(192, 132, 252, 0.35) inset,
+			0 0 24px rgba(168, 85, 247, 0.15);
+	}
+
+	.pricing-showcase__plan--featured {
+		position: relative;
+		padding-top: 1.65rem;
+	}
+
+	.pricing-showcase__plan-badge {
+		position: absolute;
+		top: 0.55rem;
+		left: 0.85rem;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.3rem;
+		padding: 0.2rem 0.55rem;
+		border-radius: 999px;
+		background: rgba(124, 58, 237, 0.35);
+		border: 1px solid rgba(192, 132, 252, 0.35);
+		color: var(--color-orchid);
+		font-size: 0.62rem;
+		font-weight: 800;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+	}
+
+	.pricing-showcase__plan-main {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.75rem;
+	}
+
+	.pricing-showcase__plan-name {
+		font-size: 0.95rem;
+		font-weight: 700;
+		color: var(--color-ink);
+	}
+
+	.pricing-showcase__plan.is-selected .pricing-showcase__plan-name {
+		color: var(--color-orchid);
+	}
+
+	.pricing-showcase__plan-price {
 		font-family: var(--font-display);
-		font-size: 1.1rem;
+		font-size: 1.15rem;
 		font-weight: 800;
 		letter-spacing: -0.02em;
 		color: var(--color-ink);
 	}
 
-	.plans__price {
-		display: flex;
-		align-items: baseline;
-		flex-wrap: wrap;
-		gap: 0.35rem 0.65rem;
-		margin: 0;
-		margin-top: auto;
-	}
-
-	.plans__amount {
-		font-family: var(--font-display);
-		font-size: clamp(1.85rem, 3.5vw, 2.35rem);
-		font-weight: 800;
-		letter-spacing: -0.03em;
-		line-height: 1;
-		color: var(--color-ink);
-	}
-
-	.plans__period {
-		font-size: 0.8rem;
+	.pricing-showcase__plan-sub {
+		font-size: 0.78rem;
 		font-weight: 600;
-		color: var(--color-muted);
+		color: var(--color-faint);
 	}
 
-	@media (max-width: 640px) {
-		.plans__grid {
+	.pricing-showcase__cart {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.6rem;
+		width: 100%;
+		margin: 0.15rem 0 0;
+		padding: 1rem 1.25rem;
+		border-radius: 0.75rem;
+		font-size: 1rem;
+		font-weight: 700;
+		text-transform: none;
+		box-shadow: 0 8px 24px rgba(124, 58, 237, 0.35);
+	}
+
+	.pricing-showcase__pills {
+		display: grid;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		gap: 0.45rem;
+	}
+
+	.pricing-showcase__pill {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 0.35rem;
+		min-height: 4.5rem;
+		padding: 0.55rem 0.35rem;
+		border-radius: 0.65rem;
+		border: 1px solid rgba(168, 85, 247, 0.16);
+		background: rgba(18, 16, 26, 0.75);
+		color: var(--color-muted);
+		font-size: 0.68rem;
+		font-weight: 650;
+		line-height: 1.25;
+		text-align: center;
+	}
+
+	.pricing-showcase__pill-icon {
+		display: grid;
+		place-items: center;
+		width: 1.35rem;
+		height: 1.35rem;
+		color: var(--color-orchid);
+	}
+
+	.pricing-showcase__pill-icon svg {
+		width: 100%;
+		height: 100%;
+	}
+
+	.pricing-showcase__guarantee {
+		display: flex;
+		align-items: flex-start;
+		gap: 0.75rem;
+		padding: 0.85rem 1rem;
+		border-radius: 0.75rem;
+		border: 1px solid rgba(168, 85, 247, 0.16);
+		background: rgba(18, 16, 26, 0.65);
+	}
+
+	.pricing-showcase__guarantee-icon {
+		flex-shrink: 0;
+		display: grid;
+		place-items: center;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 999px;
+		background: rgba(52, 211, 153, 0.12);
+		border: 1px solid rgba(52, 211, 153, 0.3);
+		color: var(--color-mint);
+	}
+
+	.pricing-showcase__guarantee-icon svg {
+		width: 1.1rem;
+		height: 1.1rem;
+	}
+
+	.pricing-showcase__guarantee p {
+		margin: 0;
+		color: var(--color-muted);
+		font-size: 0.82rem;
+		line-height: 1.55;
+	}
+
+	.pricing-showcase__summary.is-collapsed :global(.plan-summary__panel) {
+		padding: 0.75rem 0.95rem;
+	}
+
+	.pricing-showcase__summary :global(.plan-summary__label) {
+		font-size: 0.72rem;
+	}
+
+	.pricing-showcase__summary :global(.plan-summary__panel ul) {
+		grid-template-columns: 1fr;
+		gap: 0.15rem;
+	}
+
+	.pricing-showcase__summary :global(.plan-summary__panel li) {
+		font-size: 0.8rem;
+	}
+
+	.pricing-showcase__features-link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.45rem;
+		width: 100%;
+		padding: 0.85rem 1rem;
+		border-radius: 0.75rem;
+		border: 1px solid rgba(168, 85, 247, 0.2);
+		background: rgba(18, 16, 26, 0.8);
+		color: var(--color-muted);
+		font-size: 0.88rem;
+		font-weight: 650;
+		text-decoration: none;
+		transition:
+			color 0.2s ease,
+			border-color 0.2s ease,
+			background 0.2s ease;
+	}
+
+	.pricing-showcase__features-link:hover {
+		color: var(--color-ink);
+		border-color: rgba(192, 132, 252, 0.45);
+		background: rgba(34, 28, 48, 0.9);
+	}
+
+	@media (max-width: 900px) {
+		.pricing-showcase {
 			grid-template-columns: 1fr;
 		}
 
-		.plans__card {
-			min-height: 0;
+		.pricing-showcase__pills {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+	}
+
+	@media (max-width: 480px) {
+		.pricing-showcase__header {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.pricing-showcase__thumbs {
+			grid-template-columns: repeat(3, minmax(5.5rem, 1fr));
 		}
 	}
 </style>

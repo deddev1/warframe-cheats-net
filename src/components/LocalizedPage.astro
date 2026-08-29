@@ -61,6 +61,8 @@ const ctaSecondaryHref = page.ctaSecondaryHref
 	galleryTitle={page.galleryTitle}
 	locale={locale}
 	pageId={pageId}
+	showGallery={pageId !== 'pricing'}
+	hideBanner={pageId === 'pricing'}
 	extraGraph={extraGraph}
 	ctaPrimary={{ href: siteConfig.checkoutUrl, label: page.ctaPrimary }}
 	ctaSecondary={
