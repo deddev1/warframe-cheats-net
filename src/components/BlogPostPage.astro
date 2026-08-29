@@ -10,7 +10,10 @@ import {
 } from '../data/blog/helpers';
 import type { ResolvedBlogPost } from '../data/blog/types';
 import { siteConfig } from '../data/site';
+import RelatedPages from './RelatedPages.astro';
+import { getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
+import { getBlogProductLinks } from '../lib/internal-links';
 
 interface Props {
 	locale: LocaleCode;
@@ -19,6 +22,16 @@ interface Props {
 
 const { locale, post } = Astro.props;
 const ui = blogUi[locale];
+const navUi = getUi(locale);
+const productLinks = getBlogProductLinks(locale, {
+	esp: navUi.nav.esp,
+	aimbot: navUi.nav.aimbot,
+	features: navUi.nav.features,
+	setup: navUi.nav.setup,
+	pricing: navUi.nav.pricing,
+	updates: navUi.nav.updates,
+	faq: navUi.nav.faq,
+});
 const t = post.translation;
 const homeHref = getLocalizedPath('home', locale);
 const blogHref = getBlogBasePath(locale);
@@ -141,6 +154,8 @@ function pageTitle(headline: string): string {
 				</section>
 			)
 		}
+
+		<RelatedPages locale={locale} links={productLinks} title="Explore Warframe Cheats" />
 	</main>
 	<SiteFooter locale={locale} />
 </Layout>

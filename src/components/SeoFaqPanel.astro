@@ -20,7 +20,7 @@ const { items, title = 'Common questions' } = Astro.props;
 				{items.map((item) => (
 					<details class="seo-faq__item">
 						<summary>{item.question}</summary>
-						<p>{item.answer}</p>
+						<p set:html={item.answer} />
 					</details>
 				))}
 			</div>
@@ -49,5 +49,11 @@ const { items, title = 'Common questions' } = Astro.props;
 		margin: 0.55rem 0 0;
 		color: var(--color-muted);
 		line-height: 1.65;
+	}
+
+	.seo-faq__item :global(a) {
+		color: var(--color-orchid);
+		text-decoration: underline;
+		text-underline-offset: 0.15em;
 	}
 </style>

@@ -3,6 +3,7 @@ import { getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { paymentMethods, productFeatureCategories, productInfo } from '../data/site';
+import RelatedPages from './RelatedPages.astro';
 
 interface Props {
 	locale?: LocaleCode;
@@ -13,13 +14,17 @@ const locale = Astro.props.locale ?? defaultLocale;
 const showFullLink = Astro.props.showFullLink ?? true;
 const ui = getUi(locale);
 const featuresHref = getLocalizedPath('features', locale);
+const espHref = getLocalizedPath('warframe-esp', locale);
+const aimbotHref = getLocalizedPath('warframe-aimbot', locale);
+const pricingHref = getLocalizedPath('pricing', locale);
 ---
 
 <section class="pricing-features" aria-labelledby="pricing-features-title">
 	<header class="pricing-features__head">
 		<h2 id="pricing-features-title" class="pricing-features__title">Features</h2>
 		<p class="pricing-features__subtitle">
-			Everything included with {productInfo.name}, straight from the product sheet.
+			Everything included with {productInfo.name}, straight from the product sheet. Compare
+			<a href={espHref}>ESP</a>, <a href={aimbotHref}>Aimbot</a>, and <a href={pricingHref}>Pricing</a>.
 		</p>
 		<div class="pricing-features__badges">
 			<span class="pricing-features__badge">
@@ -88,6 +93,8 @@ const featuresHref = getLocalizedPath('features', locale);
 			</a>
 		)
 	}
+
+	<RelatedPages locale={locale} />
 </section>
 
 <style>
@@ -138,6 +145,12 @@ const featuresHref = getLocalizedPath('features', locale);
 		color: var(--color-muted);
 		font-size: 0.92rem;
 		line-height: 1.55;
+	}
+
+	.pricing-features__subtitle a {
+		color: var(--color-orchid);
+		text-decoration: underline;
+		text-underline-offset: 0.15em;
 	}
 
 	.pricing-features__badges {

@@ -4,6 +4,8 @@ import Navbar from '../../components/Navbar.astro';
 import SiteFooter from '../../components/SiteFooter.astro';
 import { customerReviewStats, customerReviews, productInfo, siteConfig } from '../../data/site';
 import { getReviewPath, reviewsBasePath } from '../../data/reviews';
+import RelatedPages from '../../components/RelatedPages.astro';
+import { getReviewTagHref } from '../../lib/internal-links';
 
 const title = 'Warframe Cheats Reviews | ESP Soft Aim Feedback';
 const description =
@@ -124,7 +126,17 @@ const extraGraph: Record<string, unknown>[] = [
 									{stars(review.rating)}
 								</p>
 							</div>
-							{review.tag ? <p class="reviews-index__tag">{review.tag}</p> : null}
+							{
+								review.tag ? (
+									getReviewTagHref(review.tag) ? (
+										<a class="reviews-index__tag" href={getReviewTagHref(review.tag)}>
+											{review.tag}
+										</a>
+									) : (
+										<p class="reviews-index__tag">{review.tag}</p>
+									)
+								) : null
+							}
 							<p class="reviews-index__text">{review.text}</p>
 							<a class="reviews-index__more" href={getReviewPath(review.slug)}>
 								Read full review
@@ -148,8 +160,13 @@ const extraGraph: Record<string, unknown>[] = [
 						Buy Now — ${productInfo.plans[0].price}
 					</a>
 					<a href="/pricing/" class="reviews-index__link-btn">Compare pricing</a>
+					<a href="/features/" class="reviews-index__link-btn">See features</a>
+					<a href="/warframe-esp/" class="reviews-index__link-btn">ESP guide</a>
+					<a href="/warframe-aimbot/" class="reviews-index__link-btn">Aimbot guide</a>
 				</div>
 			</section>
+
+			<RelatedPages />
 		</div>
 	</main>
 	<SiteFooter />
@@ -331,6 +348,12 @@ const extraGraph: Record<string, unknown>[] = [
 		font-weight: 700;
 		letter-spacing: 0.04em;
 		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+	a.reviews-index__tag:hover {
+		border-color: rgba(192, 132, 252, 0.45);
+		color: var(--color-ink);
 	}
 
 	.reviews-index__text {

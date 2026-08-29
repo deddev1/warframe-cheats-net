@@ -807,6 +807,7 @@ export function getNavForLocale(locale: LocaleCode, labels: Record<string, strin
 		{ label: labels.setup, href: getLocalizedPath('setup', locale), pageId: 'setup' },
 		{ label: labels.updates, href: getLocalizedPath('updates', locale), pageId: 'updates' },
 		{ label: labels.faq, href: getLocalizedPath('faq', locale), pageId: 'faq' },
+		{ label: 'Reviews', href: '/reviews/' },
 	];
 	return items;
 }

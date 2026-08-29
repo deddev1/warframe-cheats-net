@@ -4,6 +4,8 @@ import Navbar from '../../../components/Navbar.astro';
 import SiteFooter from '../../../components/SiteFooter.astro';
 import { customerReviewStats, customerReviews, productInfo, siteConfig } from '../../../data/site';
 import { getReviewPath, reviewsBasePath } from '../../../data/reviews';
+import RelatedPages from '../../../components/RelatedPages.astro';
+import { getReviewTagHref } from '../../../lib/internal-links';
 import type { CustomerReview } from '../../../data/site';
 
 export function getStaticPaths() {
@@ -28,6 +30,8 @@ const dateLabel = new Intl.DateTimeFormat('en', {
 	year: 'numeric',
 	timeZone: 'UTC',
 }).format(new Date(`${review.date}T00:00:00Z`));
+
+const tagHref = getReviewTagHref(review.tag);
 
 // Neighbouring reviews for internal linking between review pages.
 const currentIndex = customerReviews.findIndex((r) => r.slug === review.slug);
@@ -106,7 +110,17 @@ const extraGraph: Record<string, unknown>[] = [
 						</p>
 						<p class="review-detail__date">
 							<time datetime={review.date}>{dateLabel}</time>
-							{review.tag ? <span class="review-detail__tag">{review.tag}</span> : null}
+							{
+								review.tag ? (
+									tagHref ? (
+										<a class="review-detail__tag" href={tagHref}>
+											{review.tag}
+										</a>
+									) : (
+										<span class="review-detail__tag">{review.tag}</span>
+									)
+								) : null
+							}
 							<span class="review-detail__verified">Verified buyer</span>
 						</p>
 					</div>
@@ -121,6 +135,9 @@ const extraGraph: Record<string, unknown>[] = [
 						Buy Warframe Cheats — ${productInfo.plans[0].price}
 					</a>
 					<a href="/pricing/" class="review-detail__link-btn">Compare pricing</a>
+					<a href="/features/" class="review-detail__link-btn">See features</a>
+					<a href="/warframe-esp/" class="review-detail__link-btn">ESP guide</a>
+					<a href="/warframe-aimbot/" class="review-detail__link-btn">Aimbot guide</a>
 					<a href="/" class="review-detail__link-btn">Warframe Cheats home</a>
 				</div>
 			</article>
@@ -146,6 +163,8 @@ const extraGraph: Record<string, unknown>[] = [
 					<a href={reviewsBasePath}>All {customerReviewStats.totalCount} Warframe Cheats reviews</a>
 				</p>
 			</section>
+
+			<RelatedPages />
 		</div>
 	</main>
 	<SiteFooter />
@@ -271,6 +290,12 @@ const extraGraph: Record<string, unknown>[] = [
 		border: 1px solid rgba(192, 132, 252, 0.25);
 		background: rgba(10, 6, 18, 0.45);
 		color: var(--color-orchid);
+		text-decoration: none;
+	}
+
+	a.review-detail__tag:hover {
+		border-color: rgba(192, 132, 252, 0.45);
+		color: var(--color-ink);
 	}
 
 	.review-detail__verified {

@@ -30,6 +30,8 @@ const headingDetail = heading.includes('—')
 
 const buyUrl = siteConfig.checkoutUrl;
 const featuresUrl = getLocalizedPath('features', locale);
+const pricingUrl = getLocalizedPath('pricing', locale);
+const espUrl = getLocalizedPath('warframe-esp', locale);
 ---
 
 <section class="hero" aria-label={ui.images.hero}>
@@ -76,7 +78,14 @@ const featuresUrl = getLocalizedPath('features', locale);
 				<a href={featuresUrl} class="hero__btn hero__btn--ghost">
 					{ui.hero.seeFeatures}
 				</a>
+				<a href={pricingUrl} class="hero__btn hero__btn--ghost">
+					{ui.nav.pricing}
+				</a>
 			</div>
+			<p class="hero__links">
+				Compare <a href={espUrl}>ESP</a>, <a href={getLocalizedPath('warframe-aimbot', locale)}>Aimbot</a>,
+				and <a href={getLocalizedPath('hacks', locale)}>Warframe Cheats</a> before checkout.
+			</p>
 		</div>
 	</div>
 </section>
@@ -272,6 +281,21 @@ const featuresUrl = getLocalizedPath('features', locale);
 		gap: 0.75rem;
 		margin-top: 1.6rem;
 		animation: rise-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.18s both;
+	}
+
+	.hero__links {
+		margin: 0.85rem 0 0;
+		color: var(--color-muted);
+		font-size: 0.88rem;
+		line-height: 1.55;
+		max-width: 34rem;
+		animation: rise-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.22s both;
+	}
+
+	.hero__links a {
+		color: var(--color-orchid);
+		text-decoration: underline;
+		text-underline-offset: 0.15em;
 	}
 
 	.hero__btn {

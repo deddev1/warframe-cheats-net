@@ -347,37 +347,37 @@ export const homeFaqs = [
 	{
 		question: 'What is Warframe Cheats?',
 		answer:
-			'Warframe Cheats is a Windows PC package for Warframe with ESP, wallhack, and aimbot controls. Licenses include anti-cheat maintenance updates and setup support.',
+			'Warframe Cheats is a Windows PC package for Warframe with <a href="/warframe-esp/">ESP</a>, <a href="/warframe-wallhack/">wallhack</a>, and <a href="/warframe-aimbot/">aimbot</a> controls. Licenses include anti-cheat maintenance updates and <a href="/setup/">setup</a> support.',
 	},
 	{
 		question: 'Is Warframe Cheats permanently undetected?',
 		answer:
-			'No package can promise that. We rebuild after anti-cheat and game patches and post status on Updates. Check there before you load in.',
+			'No package can promise that. We rebuild after anti-cheat and game patches and post status on <a href="/updates/">Updates</a>. Check there before you load in — read the <a href="/warframe-cheats/">undetected guide</a> for how maintenance works.',
 	},
 	{
 		question: 'Does this fit Steel Path missions and open world missions?',
 		answer:
-			'Yes. ESP and radar help you read nearby Warframes, Sentients, and mission objectives; aimbot covers targeting and weak-spot priority. Tuned for solo and squad play.',
+			'Yes. <a href="/warframe-esp/">ESP</a> and <a href="/warframe-radar/">radar</a> help you read nearby Warframes, Sentients, and mission objectives; <a href="/warframe-aimbot/">aimbot</a> covers targeting and weak-spot priority. Tuned for solo and squad play.',
 	},
 	{
 		question: 'What is included?',
 		answer:
-			'Enemy ESP, health pickup markers, radar cues, and configurable aimbot in one license. See Features, ESP, and Aimbot for control detail.',
+			'Enemy ESP, health pickup markers, radar cues, and configurable aimbot in one license. See <a href="/features/">Features</a>, <a href="/warframe-esp/">ESP</a>, and <a href="/warframe-aimbot/">Aimbot</a> for control detail.',
 	},
 	{
 		question: 'How are licenses delivered?',
 		answer:
-			'Digitally after payment confirmation. Timing can vary by payment method — keep your order confirmation if you contact support.',
+			'Digitally after payment confirmation on <a href="/pricing/">Pricing</a>. Timing can vary by payment method — keep your order confirmation if you contact <a href="/support/">Support</a>.',
 	},
 	{
 		question: 'Where do I check updates after a patch?',
 		answer:
-			'On the Updates page. That is the fastest place to confirm whether a new build is live after a Warframe or EAC patch.',
+			'On the <a href="/updates/">Updates page</a>. That is the fastest place to confirm whether a new build is live after a Warframe or EAC patch.',
 	},
 	{
 		question: 'How do I contact support?',
 		answer:
-			'Use the Support page or email support@warframecheats.net with your order details and a clear description of the issue.',
+			'Use the <a href="/support/">Support page</a> or email support@warframecheats.net with your order details and a clear description of the issue.',
 	},
 ] as const;
 
@@ -386,22 +386,22 @@ export const seoFaqs = [
 	{
 		question: 'What is a Warframe wallhack?',
 		answer:
-			'A Warframe wallhack is an ESP overlay that shows enemy Warframes and heavy units through terrain. Warframe Cheats wallhack includes distance readouts, team colours, and toggleable categories for Steel Path and open world missions.',
+			'A Warframe wallhack is an ESP overlay that shows enemy Warframes and heavy units through terrain. Warframe Cheats <a href="/warframe-wallhack/">wallhack</a> includes distance readouts, team colours, and toggleable categories for Steel Path and open world missions.',
 	},
 	{
 		question: 'Does Warframe Cheats include a radar hack?',
 		answer:
-			'Yes. Warframe Cheats includes 2D radar-style overlays that highlight nearby threats outside your direct view — useful for reading flanks during team pushes.',
+			'Yes. Warframe Cheats includes <a href="/warframe-radar/">2D radar-style overlays</a> that highlight nearby threats outside your direct view — useful for reading flanks during team pushes.',
 	},
 	{
 		question: 'How does anti-cheat affect Warframe Cheats?',
 		answer:
-			'Anti-cheat monitors Warframe on Windows PC. Warframe Cheats publishes maintenance notes after patches that may require a rebuild. Read the maintenance guide page for how updates are handled.',
+			'Anti-cheat monitors Warframe on Windows PC. Warframe Cheats publishes maintenance notes on <a href="/updates/">Updates</a> after patches that may require a rebuild. Read the <a href="/warframe-cheats/">maintenance guide</a> for how updates are handled.',
 	},
 	{
 		question: 'Can I buy undetected Warframe cheats for Windows PC?',
 		answer:
-			'Yes — Warframe Cheats sells monthly and lifetime licenses for Warframe on Windows PC with ESP, radar, and aimbot. Compare plans on Pricing and review the undetected guide before checkout.',
+			'Yes — Warframe Cheats sells monthly and lifetime licenses for Warframe on Windows PC with ESP, radar, and aimbot. Compare plans on <a href="/pricing/">Pricing</a> and review the <a href="/warframe-cheats/">undetected guide</a> before checkout.',
 	},
 ] as const;
 

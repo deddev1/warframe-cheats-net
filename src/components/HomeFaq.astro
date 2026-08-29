@@ -1,11 +1,16 @@
 ---
 import { homeFaqs } from '../data/site';
+import { getLocalizedPath } from '../data/i18n/routing';
+import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 
 interface Props {
 	title?: string;
+	locale?: LocaleCode;
 }
 
+const locale = Astro.props.locale ?? defaultLocale;
 const { title = 'FAQ' } = Astro.props;
+const faqHref = getLocalizedPath('faq', locale);
 ---
 
 <section class="home-faq shell" aria-labelledby="home-faq-title">
@@ -24,6 +29,10 @@ const { title = 'FAQ' } = Astro.props;
 			))
 		}
 	</div>
+
+	<p class="home-faq__more">
+		<a href={faqHref}>See all FAQ questions</a>
+	</p>
 </section>
 
 <style>
@@ -102,5 +111,18 @@ const { title = 'FAQ' } = Astro.props;
 		color: var(--color-orchid);
 		text-decoration: underline;
 		text-underline-offset: 0.15em;
+	}
+
+	.home-faq__more {
+		margin: 0.85rem 0 0;
+	}
+
+	.home-faq__more a {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
+		color: var(--color-orchid);
+		font-size: 0.9rem;
+		font-weight: 700;
 	}
 </style>
