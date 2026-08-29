@@ -14,7 +14,7 @@ import { getCanonicalPath, getLocalizedPath } from '../data/i18n/routing';
 import type { LocaleCode } from '../data/i18n/locales';
 import { defaultLocale } from '../data/i18n/locales';
 import { homeFaqs, productInfo, siteConfig, customerReviewStats, customerReviews } from '../data/site';
-import { rustImages } from '../data/rust';
+import { warframeImages } from '../data/warframe';
 import {
 	buildAggregateOffer,
 	buildFaqSchemaNode,
@@ -35,7 +35,7 @@ const description = home.description;
 /** SEO consolidates to English; locale routes remain for UX. */
 const canonicalPath = getCanonicalPath('home', locale);
 const canonicalURL = new URL(canonicalPath, siteConfig.url).href;
-const heroImage = new URL(rustImages.hero, siteConfig.url).href;
+const heroImage = new URL(warframeImages.hero, siteConfig.url).href;
 
 const extraGraph: Record<string, unknown>[] =
 	locale === defaultLocale

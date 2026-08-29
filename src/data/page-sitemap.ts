@@ -1,5 +1,5 @@
 import { siteConfig } from './site';
-import { rustImages } from './rust';
+import { warframeImages } from './warframe';
 import { englishPaths, sitemapPageIds, type PageId } from './i18n/routing';
 import { pageSitemapMeta } from './sitemap-meta';
 
@@ -28,58 +28,58 @@ const img = (path: string, title: string, caption: string): SitemapImage => ({
 /** Sitemap image assignments for indexable pages only (see sitemapPageIds in routing.ts). */
 const sitemapImagesByPageId: Partial<Record<PageId, SitemapImage[]>> = {
 	home: [
-		img(rustImages.hero, 'War Thunder Hacks', 'War Thunder Hacks homepage hero'),
-		img(rustImages.espWallhack, 'War Thunder ESP', 'War Thunder ESP wallhack overlay'),
-		img(rustImages.aimbotCombat, 'War Thunder Aimbot', 'War Thunder Aimbot combat preview'),
+		img(warframeImages.hero, 'Warframe Cheats', 'Warframe Cheats homepage hero'),
+		img(warframeImages.espWallhack, 'Warframe ESP', 'Warframe ESP wallhack overlay'),
+		img(warframeImages.aimbotCombat, 'Warframe Aimbot', 'Warframe Aimbot combat preview'),
 	],
 	hacks: [
-		img(rustImages.battleRoyaleCombat, 'War Thunder Hacks', 'War Thunder hacks ranked ground battle preview'),
-		img(rustImages.espWallhack, 'War Thunder Hacks ESP', 'War Thunder wallhack ESP on enemy tanks and aircraft'),
+		img(warframeImages.battleRoyaleCombat, 'Warframe Cheats', 'Warframe cheats ranked mission fight preview'),
+		img(warframeImages.espWallhack, 'Warframe Cheats ESP', 'Warframe wallhack ESP on enemy Warframes and Sentients'),
 	],
-	'war-thunder-esp': [
-		img(rustImages.espWallhack, 'War Thunder ESP', 'War Thunder ESP wallhack overlay'),
-		img(rustImages.playerEsp, 'War Thunder player ESP', 'War Thunder player ESP markers'),
+	'warframe-esp': [
+		img(warframeImages.espWallhack, 'Warframe ESP', 'Warframe ESP wallhack overlay'),
+		img(warframeImages.playerEsp, 'Warframe player ESP', 'Warframe player ESP markers'),
 	],
-	'war-thunder-aimbot': [
-		img(rustImages.aimbotCombat, 'War Thunder Aimbot', 'War Thunder Aimbot combat preview'),
-		img(rustImages.squadFight, 'War Thunder Aimbot platoon engagement', 'War Thunder Aimbot in platoon combat'),
+	'warframe-aimbot': [
+		img(warframeImages.aimbotCombat, 'Warframe Aimbot', 'Warframe Aimbot combat preview'),
+		img(warframeImages.squadFight, 'Warframe Aimbot squad fight', 'Warframe Aimbot in squad combat'),
 	],
 	wallhack: [
-		img(rustImages.espWallhack, 'War Thunder Wallhack', 'War Thunder wallhack ESP view'),
-		img(rustImages.cover, 'War Thunder Wallhack overlay', 'War Thunder ESP boxes through terrain'),
+		img(warframeImages.espWallhack, 'Warframe Wallhack', 'Warframe wallhack ESP view'),
+		img(warframeImages.cover, 'Warframe Wallhack overlay', 'Warframe ESP boxes through terrain'),
 	],
 	radar: [
-		img(rustImages.radarHack, 'War Thunder Radar Hack', 'War Thunder radar hack minimap overlay'),
-		img(rustImages.rebootFight, 'War Thunder Radar Hack overlay', 'War Thunder 2D radar for flank detection'),
+		img(warframeImages.radarHack, 'Warframe Radar Hack', 'Warframe radar hack minimap overlay'),
+		img(warframeImages.rebootFight, 'Warframe Radar Hack overlay', 'Warframe 2D radar for flank detection'),
 	],
 	features: [
-		img(rustImages.hero, 'War Thunder Hacks Features', 'War Thunder Hacks feature overview'),
-		img(rustImages.loadoutBuilder, 'War Thunder Hacks menu', 'War Thunder Hacks in-client controls'),
+		img(warframeImages.hero, 'Warframe Cheats Features', 'Warframe Cheats feature overview'),
+		img(warframeImages.loadoutBuilder, 'Warframe Cheats menu', 'Warframe Cheats in-client controls'),
 	],
 	pricing: [
-		img(rustImages.cover, 'War Thunder Hacks Pricing', 'War Thunder Hacks license plans'),
-		img(rustImages.cheatsPackage, 'War Thunder Hacks package', 'War Thunder Hacks product package'),
+		img(warframeImages.cover, 'Warframe Cheats Pricing', 'Warframe Cheats license plans'),
+		img(warframeImages.cheatsPackage, 'Warframe Cheats package', 'Warframe Cheats product package'),
 	],
 	setup: [
-		img(rustImages.squadFight, 'War Thunder Hacks Setup', 'War Thunder Hacks installation guide'),
+		img(warframeImages.squadFight, 'Warframe Cheats Setup', 'Warframe Cheats installation guide'),
 	],
 	updates: [
-		img(rustImages.hero, 'War Thunder Hacks Updates', 'War Thunder Hacks patch status'),
+		img(warframeImages.hero, 'Warframe Cheats Updates', 'Warframe Cheats patch status'),
 	],
 	faq: [
-		img(rustImages.loadoutBuilder, 'War Thunder Hacks FAQ', 'War Thunder Hacks frequently asked questions'),
+		img(warframeImages.loadoutBuilder, 'Warframe Cheats FAQ', 'Warframe Cheats frequently asked questions'),
 	],
 	support: [
-		img(rustImages.headerArt, 'War Thunder Hacks Support', 'War Thunder Hacks help center'),
+		img(warframeImages.headerArt, 'Warframe Cheats Support', 'Warframe Cheats help center'),
 	],
 	privacy: [
-		img(rustImages.cover, 'War Thunder Hacks Privacy Policy', 'War Thunder Hacks privacy policy'),
+		img(warframeImages.cover, 'Warframe Cheats Privacy Policy', 'Warframe Cheats privacy policy'),
 	],
 	refund: [
-		img(rustImages.cover, 'War Thunder Hacks Refund Policy', 'War Thunder Hacks refund policy'),
+		img(warframeImages.cover, 'Warframe Cheats Refund Policy', 'Warframe Cheats refund policy'),
 	],
 	terms: [
-		img(rustImages.squadFight, 'War Thunder Hacks Terms', 'War Thunder Hacks terms of use'),
+		img(warframeImages.squadFight, 'Warframe Cheats Terms', 'Warframe Cheats terms of use'),
 	],
 };
 
@@ -89,7 +89,7 @@ for (const pageId of sitemapPageIds) {
 	}
 }
 
-/** Canonical English sitemap entries — core war-thunder-hacks URLs only. */
+/** Canonical English sitemap entries — core warframe-cheats URLs only. */
 export const pageSitemapEntries: PageSitemapEntry[] = sitemapPageIds.map((pageId) => {
 	const meta = pageSitemapMeta[pageId];
 	return {
@@ -102,7 +102,7 @@ export const pageSitemapEntries: PageSitemapEntry[] = sitemapPageIds.map((pageId
 });
 
 /** Unique keyword images for the dedicated image sitemap. */
-export const imageSitemapEntries: SitemapImage[] = rustImages.sitemap.map((entry) =>
+export const imageSitemapEntries: SitemapImage[] = warframeImages.sitemap.map((entry) =>
 	img(entry.src, entry.title, entry.caption),
 );
 

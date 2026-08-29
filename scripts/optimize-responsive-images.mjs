@@ -10,13 +10,13 @@ const HERO_WIDTHS = [480, 640, 960, 1400];
 /** Below-fold content images — smaller variants for gallery/product cards */
 const CONTENT_WIDTHS = [480, 960];
 
-const HERO_FILE = 'war-thunder-hacks-hero.webp';
+const HERO_FILE = 'warframe-cheats-hero.webp';
 
 const SKIP_PATTERNS = [
 	/-\d+w\.webp$/i,
 	/zadeyo-logo/i,
 	/favicon/i,
-	/war-thunder-hacks-logo/i,
+	/warframe-cheats-logo/i,
 	/^rust-/i,
 ];
 
@@ -27,7 +27,7 @@ async function optimizeHero() {
 
 	for (const width of HERO_WIDTHS) {
 		if (meta.width && width > meta.width) continue;
-		const file = `war-thunder-hacks-hero-${width}w.webp`;
+		const file = `warframe-cheats-hero-${width}w.webp`;
 		const dest = path.join(imagesDir, file);
 		const quality = width <= 480 ? 62 : width <= 640 ? 72 : 80;
 		const buffer = await sharp(source)

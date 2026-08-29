@@ -31,7 +31,7 @@ async function resolveDistRoot() {
 		'Could not find sitemap.xml in dist/ or dist/client/. Run `astro build` first.',
 	);
 }
-const SITE = 'https://warthunderhacks.com';
+const SITE = 'https://warframecheats.net';
 
 const MARKETING_SITEMAP_PAGES = 15;
 const BUILT_MARKETING_PAGES = 25; // thin landings still built; 301 to canonical URLs
@@ -46,15 +46,15 @@ const LOCALE_UI_PAGES = I18N_LOCALES * PAGES_PER_LOCALE;
 const TOTAL_HTML_PAGES = BUILT_ENGLISH_PAGES + LOCALE_UI_PAGES;
 const HREFLANG_PER_URL = 2; // en + x-default
 const SITEMAP_INDEX_ENTRIES = 2; // EN + images
-const IMAGE_SITEMAP_ENTRIES = 7; // unique keyword assets in rustImages.sitemap
+const IMAGE_SITEMAP_ENTRIES = 7; // unique keyword assets in warframeImages.sitemap
 
 const ENGLISH_PATHS = [
 	'/',
-	'/war-thunder-hacks/',
-	'/war-thunder-esp/',
-	'/war-thunder-aimbot/',
-	'/war-thunder-wallhack/',
-	'/war-thunder-radar/',
+	'/warframe-cheats/',
+	'/warframe-esp/',
+	'/warframe-aimbot/',
+	'/warframe-wallhack/',
+	'/warframe-radar/',
 	'/features/',
 	'/pricing/',
 	'/setup/',

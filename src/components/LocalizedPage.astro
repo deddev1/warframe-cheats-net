@@ -5,7 +5,7 @@ import { getCanonicalPath, getLocalizedPath, localizeInternalHref } from '../dat
 import type { LocaleCode } from '../data/i18n/locales';
 import { defaultLocale } from '../data/i18n/locales';
 import { seoFaqs, siteConfig } from '../data/site';
-import { rustImages } from '../data/rust';
+import { warframeImages } from '../data/warframe';
 import { buildPageExtraGraph, pageFaqClusters } from '../data/schema';
 import SeoFaqPanel from '../components/SeoFaqPanel.astro';
 import PricingPlans from '../components/PricingPlans.astro';
@@ -25,14 +25,14 @@ function localizeParagraphHtml(html: string): string {
 }
 
 const galleryPool = [
-	rustImages.product[0],
-	rustImages.product[1],
-	rustImages.product[2],
+	warframeImages.product[0],
+	warframeImages.product[1],
+	warframeImages.product[2],
 ];
 
 const canonicalPath = getCanonicalPath(pageId, locale);
 const canonicalURL = new URL(canonicalPath, siteConfig.url).href;
-const heroImageUrl = new URL(page.heroImage ?? rustImages.hero, siteConfig.url).href;
+const heroImageUrl = new URL(page.heroImage ?? warframeImages.hero, siteConfig.url).href;
 
 const extraGraph =
 	locale === defaultLocale

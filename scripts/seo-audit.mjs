@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * SEO audit for warthunderhacks.com — War Thunder Hacks keyword focus.
+ * SEO audit for warframecheats.net — Warframe Cheats keyword focus.
  * Run: node scripts/seo-audit.mjs
  * Exit 1 on critical failures.
  */
@@ -10,7 +10,7 @@ import { fileURLToPath } from 'node:url';
 import { englishPagesFinal } from './i18n-data/pages-en.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const DOMAIN = 'warthunderhacks.com';
+const DOMAIN = 'warframecheats.net';
 const ORIGIN = `https://${DOMAIN}`;
 const PRIMARY_KW = 'war thunder hacks';
 const BRAND_KW = 'war thunder';
@@ -72,7 +72,7 @@ for (const id of pageIds) {
 	}
 
 	// Primary keyword in money pages
-	if (['home', 'hacks', 'war-thunder-esp', 'war-thunder-aimbot', 'pricing'].includes(id)) {
+	if (['home', 'hacks', 'warframe-esp', 'warframe-aimbot', 'pricing'].includes(id)) {
 		if (!hasKeyword(p.description, PRIMARY_KW) && !hasKeyword(p.description, 'war thunder hacks')) {
 			warn(`${label}: description should include primary keyword "war thunder hacks"`);
 		}
@@ -101,8 +101,8 @@ const distIndex = join(root, 'dist/index.html');
 if (existsSync(distIndex)) {
 	const html = readFileSync(distIndex, 'utf8');
 	if (!html.includes(`href="${ORIGIN}/"`)) fail('dist/index.html canonical missing apex URL');
-	if (!html.includes('War Thunder') && !html.includes('War Thunder Hacks')) {
-		fail('dist/index.html missing War Thunder in title/meta');
+	if (!html.includes('Warframe') && !html.includes('Warframe Cheats')) {
+		fail('dist/index.html missing Warframe in title/meta');
 	}
 	checkBanned('dist/index.html', html);
 }
@@ -111,16 +111,16 @@ if (existsSync(distIndex)) {
 for (const file of ['src/pages/reviews/index.astro', 'src/pages/reviews/[slug]/index.astro']) {
 	const src = readFileSync(join(root, file), 'utf8');
 	checkBanned(file, src);
-	if (!/war thunder hacks/i.test(src)) warn(`${file}: consider adding "War Thunder Hacks" keyword`);
+	if (!/war thunder hacks/i.test(src)) warn(`${file}: consider adding "Warframe Cheats" keyword`);
 }
 
 // --- image alts ---
 const rustTs = readFileSync(join(root, 'src/data/rust.ts'), 'utf8');
-if (!/War Thunder/i.test(rustTs)) fail('rust.ts image alts missing War Thunder keyword');
+if (!/Warframe/i.test(rustTs)) fail('rust.ts image alts missing Warframe keyword');
 checkBanned('rust.ts', rustTs);
 
 // --- report ---
-console.log('\n=== SEO Audit: warthunderhacks.com ===\n');
+console.log('\n=== SEO Audit: warframecheats.net ===\n');
 console.log(`Pages checked: ${pageIds.length} EN landing pages`);
 console.log(`Primary keyword: "${PRIMARY_KW}"`);
 console.log(`Canonical: ${ORIGIN}\n`);

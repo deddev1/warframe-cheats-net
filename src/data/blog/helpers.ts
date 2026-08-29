@@ -1,5 +1,5 @@
 import { siteConfig } from '../site';
-import { rustImages } from '../rust';
+import { warframeImages } from '../warframe';
 import {
 	defaultLocale,
 	localeCodes,
@@ -10,16 +10,16 @@ import type { BlogImageKey, BlogPostDefinition, BlogTranslation, ResolvedBlogPos
 import { blogPosts as rawBlogPosts } from './posts.generated';
 
 const imageMap: Record<BlogImageKey, string> = {
-	hero: rustImages.hero,
-	espWallhack: rustImages.espWallhack,
-	aimbotCombat: rustImages.aimbotCombat,
-	squadFight: rustImages.squadFight,
-	headerArt: rustImages.headerArt,
-	cheatsPackage: rustImages.cheatsPackage,
-	playerEsp: rustImages.playerEsp,
-	rebootFight: rustImages.rebootFight,
-	battleRoyaleCombat: rustImages.battleRoyaleCombat,
-	battleRoyaleIslandMap: rustImages.battleRoyaleIsland,
+	hero: warframeImages.hero,
+	espWallhack: warframeImages.espWallhack,
+	aimbotCombat: warframeImages.aimbotCombat,
+	squadFight: warframeImages.squadFight,
+	headerArt: warframeImages.headerArt,
+	cheatsPackage: warframeImages.cheatsPackage,
+	playerEsp: warframeImages.playerEsp,
+	rebootFight: warframeImages.rebootFight,
+	battleRoyaleCombat: warframeImages.battleRoyaleCombat,
+	battleRoyaleIslandMap: warframeImages.battleRoyaleIsland,
 };
 
 function expandTranslations(
@@ -152,8 +152,8 @@ export function getBlogSitemapEntries() {
 			images: [
 				{
 					url: new URL(siteConfig.defaultOgImage, siteConfig.url).href,
-					title: 'War Thunder Hacks Intel blog',
-					caption: 'War Thunder Intel blog covering meta guides, ESP, Aimbot, and EAC notes',
+					title: 'Warframe Cheats Intel blog',
+					caption: 'Warframe Intel blog covering meta guides, ESP, Aimbot, and EAC notes',
 				},
 			],
 		},

@@ -18,7 +18,7 @@ for (const id of REMOVE) {
 	content = content.replace(re, '');
 }
 // Fix eac-bypass slugs that got double-replaced
-content = content.replace(/eac-bypass-bypass/g, 'eac-bypass-war-thunder');
-content = content.replace(/eac-bypass-war-thunder-trucos-war-thunder/g, 'eac-bypass-war-thunder-trucos-war-thunder');
+content = content.replace(/eac-bypass-bypass/g, 'eac-bypass-warframe');
+content = content.replace(/eac-bypass-warframe-trucos-warframe/g, 'eac-bypass-warframe-trucos-warframe');
 await writeFile(file, content);
 console.log('Cleaned routing.ts localizedSlugs');

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Generates src/data/blog/posts.generated.ts with War Thunder Intel posts.
+ * Generates src/data/blog/posts.generated.ts with Warframe Intel posts.
  * English content is the SEO source of truth for /blog/ routes.
  */
 import { writeFileSync } from 'node:fs';
@@ -13,10 +13,10 @@ const OUT = join(__dirname, '..', 'src', 'data', 'blog', 'posts.generated.ts');
 const LOCALES = ['en'];
 
 const EXT = {
-	epic: '<a href="https://warthunder.com/en" target="_blank" rel="noopener noreferrer">Gaijin War Thunder</a>',
-	rust: '<a href="https://warthunder.com/en" target="_blank" rel="noopener noreferrer">War Thunder</a>',
-	status: '<a href="https://warthunder.com/en" target="_blank" rel="noopener noreferrer">Gaijin War Thunder status</a>',
-	realisticBattles: '<a href="https://warthunder.com/en/gameplay/game-modes/realistic-battles" target="_blank" rel="noopener noreferrer">War Thunder Realistic Battles</a>',
+	epic: '<a href="https://www.warframe.com/" target="_blank" rel="noopener noreferrer">Digital Extremes Warframe</a>',
+	rust: '<a href="https://www.warframe.com/" target="_blank" rel="noopener noreferrer">Warframe</a>',
+	status: '<a href="https://www.warframe.com/" target="_blank" rel="noopener noreferrer">Digital Extremes Warframe status</a>',
+	realisticBattles: '<a href="https://www.warframe.com//gameplay/game-modes/realistic-battles" target="_blank" rel="noopener noreferrer">Warframe Steel Path missions</a>',
 };
 
 /** @typedef {{ h2: string, paragraphs: string[] }} Section */
@@ -34,12 +34,12 @@ const sources = [
 		slug: 'patch-notes-buffs-nerfs-vaults',
 		title: 'Patch Notes Breakdown: Buffs, Nerfs & Vaults That Matter',
 		metaDescription:
-			'Rust patch notes for major update Season 3 — buffs, nerfs, and vaults that reshape loadouts. After anti-cheat patches, check War Thunder Hacks updates.',
+			'Warframe patch notes for major update Season 3 — buffs, nerfs, and vaults that reshape loadouts. After anti-cheat patches, check Warframe Cheats updates.',
 		h1: 'Patch Notes Breakdown: Buffs, Nerfs, and Vaults',
 		intro:
 			'Stop skimming patch notes. Here is how buffs, nerfs, and vaults actually reshuffle the loot pool and your ranked loadout priorities.',
-		keywords: ['rust patch notes', 'buffs', 'nerfs', 'vaults', 'loot pool', 'war thunder intel'],
-		imageAlt: 'Rust patch notes breakdown of buffs nerfs and vaults for major update Season 3',
+		keywords: ['rust patch notes', 'buffs', 'nerfs', 'vaults', 'loot pool', 'warframe intel'],
+		imageAlt: 'Warframe patch notes breakdown of buffs nerfs and vaults for major update Season 3',
 		sections: [
 			{
 				h2: 'Read patches like a player, not a spectator',
@@ -59,7 +59,7 @@ const sources = [
 			{
 				h2: 'How notes reshuffle loadout priority',
 				paragraphs: [
-					'When mid-range ARs are strong, prioritize rarity on AR earlier in loot routes. When mobility is nerfed or vaulted, uncontested chains with shorter hops beat hot drops that require escapes. When heals are buffed, aggressive third-parties become safer — which powers strategies in our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">capture zones aggression guide</a>.',
+					'When mid-range ARs are strong, prioritize rarity on AR earlier in loot routes. When mobility is nerfed or vaulted, uncontested chains with shorter hops beat hot drops that require escapes. When heals are buffed, aggressive third-parties become safer — which powers strategies in our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">mission objectives aggression guide</a>.',
 					'Also separate balance patches from cosmetic and shop notes. Skin leaks are fun; they do not change TTK. Keep patch-day focus on weapons, healing, movement, and map POI changes.',
 				],
 			},
@@ -67,7 +67,7 @@ const sources = [
 				h2: 'Late-season checklist and next steps',
 				paragraphs: [
 					'Post-patch checklist: skim official notes for vaults first, update your shotgun/AR/mobility/heals spine, play 10 intentional test games, revisit tier-list assumptions, and adjust drop routes if mobility or loot changed.',
-					`On big update mornings, confirm ${EXT.status} is healthy before blaming your settings. If you also use War Thunder Hacks in-match, check <a href="/updates/">War Thunder Hacks Updates</a> after Gaijin Easy Anti-Cheat patches.`,
+					`On big update mornings, confirm ${EXT.status} is healthy before blaming your settings. If you also use Warframe Cheats in-match, check <a href="/updates/">Warframe Cheats Updates</a> after Digital Extremes anti-cheat patches.`,
 					'Try This Today: Open the latest official patch notes and highlight vaults. Rewrite your 5-slot priority on paper. Queue a focused 5-game test block and note which fights felt different at 30–60m vs 0–15m.',
 				],
 			},
@@ -83,19 +83,19 @@ const sources = [
 		slug: 'chapter-7-season-3-skin-leaks-vbucks',
 		title: 'major update Season 3 Skin Leaks: V-Bucks Worth Buying',
 		metaDescription:
-			'major update Season 3 Rust skin leaks and shop advice — which cosmetics are worth V-Bucks before Season 4. Save smart and skip FOMO bundles today.',
+			'major update Season 3 Warframe skin leaks and shop advice — which cosmetics are worth V-Bucks before Season 4. Save smart and skip FOMO bundles today.',
 		h1: 'major update Season 3 Skin Leaks Worth Your V-Bucks',
 		intro:
 			'Season 4 is coming. Here is which leaked and rotating cosmetics are actually worth buying before the shop resets hard.',
-		keywords: ['rust skin leaks', 'vbucks', 'cosmetics', 'item shop', 'season 4', 'war thunder intel'],
-		imageAlt: 'Rust major update Season 3 skin leaks and V-Bucks shopping guide',
+		keywords: ['rust skin leaks', 'vbucks', 'cosmetics', 'item shop', 'season 4', 'warframe intel'],
+		imageAlt: 'Warframe major update Season 3 skin leaks and V-Bucks shopping guide',
 		sections: [
 			{
 				h2: 'Stop impulse buying before Season 4',
 				paragraphs: [
 					'Most players blow V-Bucks the week before a new season and then cannot buy the Battle Pass. Controversial take: most Item Shop impulse buys do not improve your win rate or locker happiness a month later.',
 					`Shop rotations and Battle Pass exclusives are official through ${EXT.rust}. Leaks are entertainment — not a shopping list. Use them to decide what to skip.`,
-					'Pro Tip — Locker performance: Pros pick clean silhouettes. Busy outfits can hide enemy outlines in chaotic capture zones endgames. Style is cool; readability wins games.',
+					'Pro Tip — Locker performance: Pros pick clean silhouettes. Busy outfits can hide enemy outlines in chaotic mission objectives endgames. Style is cool; readability wins games.',
 				],
 			},
 			{
@@ -109,7 +109,7 @@ const sources = [
 				h2: 'Leak watchlist and shop ritual',
 				paragraphs: [
 					'Treat late-season leak waves as theme previews, not confirmed shop dates. If a high-demand collab leaks, decide budget before it hits — not during the five-minute panic.',
-					'Daily reset ritual: open shop for 60 seconds, check wishlist, leave. Liquidity is power at season transitions. For realistic battles readability tips, pair this with our <a href="/blog/bugha-settings-pro-setup/">pro settings breakdown</a>.',
+					'Daily reset ritual: open shop for 60 seconds, check wishlist, leave. Liquidity is power at season transitions. For Steel Path missions readability tips, pair this with our <a href="/blog/bugha-settings-pro-setup/">pro settings breakdown</a>.',
 					'Try This Today: Write a 5-skin wishlist max. Set a V-Bucks floor you will not spend below until Season 4. Skip one FOMO bundle on purpose this week.',
 				],
 			},
@@ -125,18 +125,18 @@ const sources = [
 		slug: 'hammer-ar-s-tier-data-analysis',
 		title: 'Weapon Tier List: Why Hammer AR Is Actually S-Tier',
 		metaDescription:
-			'Data-backed Rust weapon tier list: why Hammer AR is S-tier — TTK windows, bloom control, and loadout pairings for major update Season 3 ranked.',
+			'Data-backed Warframe weapon tier list: why Hammer AR is S-tier — TTK windows, bloom control, and loadout pairings for major update Season 3 ranked.',
 		h1: 'Weapon Tier List: Why the Hammer AR Is S-Tier',
 		intro:
 			'Community tier lists underrate the Hammer AR. The damage-per-mag and mid-range TTK numbers say otherwise.',
-		keywords: ['hammer ar', 'rust tier list', 'weapons', 'ttk', 'war thunder intel'],
-		imageAlt: 'Rust Hammer AR S-tier weapon tier list data analysis major update Season 3',
+		keywords: ['hammer ar', 'rust tier list', 'weapons', 'ttk', 'warframe intel'],
+		imageAlt: 'Warframe Hammer AR S-tier weapon tier list data analysis major update Season 3',
 		sections: [
 			{
 				h2: 'Why the Hammer AR belongs in S-tier',
 				paragraphs: [
 					"Creator tier lists are entertainment, not science. They rank flashy mythics while the Hammer AR quietly prints mid-range eliminations because damage-per-second consistency beats higher-ceiling guns average players cannot control.",
-					'S-tier means best expected value across 100 ranked fights. Hammer wins at 30–70 meters — the distances where capture zones and endgame actually happen. Shotguns own 0–15m. Snipers own 80m+. Everything between is AR country.',
+					'S-tier means best expected value across 100 ranked fights. Hammer wins at 30–70 meters — the distances where mission objectives and endgame actually happen. Shotguns own 0–15m. Snipers own 80m+. Everything between is AR country.',
 					`Confirm live values after patches on ${EXT.rust}. Hierarchy logic stays useful even when decimals nudge.`,
 					'Pro Tip — Spray discipline: Pros tap or micro-burst until bloom settles, then commit. Treat Hammer like a laser until the enemy wide-peeks — then dump.',
 				],
@@ -152,10 +152,10 @@ const sources = [
 			{
 				h2: 'Loadout pairings, mistakes, and practice',
 				paragraphs: [
-					'Core: Hammer AR + high-burst shotgun + mobility + heals. In capture zones, this supports the laddering strategies in our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">aggression guide</a>.',
+					'Core: Hammer AR + high-burst shotgun + mobility + heals. In mission objectives, this supports the laddering strategies in our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">aggression guide</a>.',
 					'Common mistakes: full-spraying from 80m+, re-peeking the same pixel, swapping to SMG at 40m out of habit, never practicing crouch-spray in Creative.',
 					'Try This Today: Prioritize Hammer for 10 games. Count your first four bullets in every mid fight. If you die inside 15m without shotgun out, fix loadout timing — not the AR.',
-					'Players who also use aim-assist tooling can review <a href="/war-thunder-aimbot/">War Thunder Aimbot</a> profiles after they lock a sens — mechanics first, tools second.',
+					'Players who also use aim-assist tooling can review <a href="/warframe-aimbot/">Warframe Aimbot</a> profiles after they lock a sens — mechanics first, tools second.',
 				],
 			},
 		],
@@ -165,23 +165,23 @@ const sources = [
 		imageKey: 'battleRoyaleCombat',
 		published: '2026-07-22',
 		updated: '2026-08-01',
-		category: 'capture zones',
+		category: 'mission objectives',
 		featured: true,
 		slug: 'zero-build-meta-broken-aggressive-strategies',
-		title: 'capture zones Meta Broken: 5 Aggressive Pro Strategies',
+		title: 'mission objectives Meta Broken: 5 Aggressive Pro Strategies',
 		metaDescription:
-			'Break the passive capture zones meta with 5 aggressive Rust strategies — timings, damage windows, and fight paths that win ranked in major update Season 3.',
-		h1: 'The capture zones Meta Is Broken: 5 Aggressive Strategies',
+			'Break the passive mission objectives meta with 5 aggressive Warframe strategies — timings, damage windows, and fight paths that win ranked in major update Season 3.',
+		h1: 'The mission objectives Meta Is Broken: 5 Aggressive Strategies',
 		intro:
-			'Passive third-partying is dead weight. These five aggressive capture zones strategies flip mid-game fights before the lobby even rotates.',
-		keywords: ['Arcade Battles', 'rust ranked', 'aggressive strategies', 'pro tips', 'war thunder intel'],
-		imageAlt: 'Rust capture zones aggressive fight meta strategies major update Season 3',
+			'Passive third-partying is dead weight. These five aggressive mission objectives strategies flip mid-game fights before the lobby even rotates.',
+		keywords: ['open world missions', 'rust ranked', 'aggressive strategies', 'pro tips', 'warframe intel'],
+		imageAlt: 'Warframe mission objectives aggressive fight meta strategies major update Season 3',
 		sections: [
 			{
-				h2: 'Why the capture zones meta feels soft',
+				h2: 'Why the mission objectives meta feels soft',
 				paragraphs: [
-					'Most capture zones players wait behind a rock for the last two teams to trade, then spray into a mess. That soft meta is why ranks stall. Strong fighters manufacture first-shot advantage and leave before the third party arrives.',
-					'A clean first-shot AR spray at 40–55 meters can delete 80–120 HP before the opponent ads. That window is the game. Information tools like <a href="/war-thunder-esp/">War Thunder ESP</a> help — but aggression still needs cover discipline.',
+					'Most mission objectives players wait behind a rock for the last two teams to trade, then spray into a mess. That soft meta is why ranks stall. Strong fighters manufacture first-shot advantage and leave before the third party arrives.',
+					'A clean first-shot AR spray at 40–55 meters can delete 80–120 HP before the opponent ads. That window is the game. Information tools like <a href="/warframe-esp/">Warframe ESP</a> help — but aggression still needs cover discipline.',
 					'Pro Tip — Decide your exit before you swing. Take a 150+ damage window, then hard disengage with mobility before the usual 4–7 second third-party clock.',
 				],
 			},
@@ -198,7 +198,7 @@ const sources = [
 				paragraphs: [
 					'Before ranked: 10 minutes aim or peek maps, loadout priority AR + shotgun + mobility + heals, two POIs with strong cover ladders, and a 10-game first-shot aggression block.',
 					'Pair this article with <a href="/blog/secret-loot-routes-full-gold/">loot routes</a>, <a href="/blog/hammer-ar-s-tier-data-analysis/">Hammer AR tiers</a>, and <a href="/blog/creative-warmup-maps-pros-use/">Creative warmups</a>.',
-					'Try This Today: Queue capture zones and force first contact when you have shield + AR. Track whether you disengaged before the 7-second third-party window.',
+					'Try This Today: Queue mission objectives and force first contact when you have shield + AR. Track whether you disengaged before the 7-second third-party window.',
 				],
 			},
 		],
@@ -217,8 +217,8 @@ const sources = [
 		h1: 'FNCS Meta Watch: What Tournament Winners Drop and Why',
 		intro:
 			'Tournament winners are not lucky drop gods. Here is what their POIs, loadouts, and mid-game habits actually optimize for.',
-		keywords: ['fncs', 'rust esports', 'tournament drops', 'meta', 'war thunder intel'],
-		imageAlt: 'FNCS Rust tournament meta watch drop spots major update Season 3',
+		keywords: ['fncs', 'warframe esports', 'tournament drops', 'meta', 'warframe intel'],
+		imageAlt: 'FNCS Warframe tournament meta watch drop spots major update Season 3',
 		sections: [
 			{
 				h2: 'Watch tournament film like a coach',
@@ -238,7 +238,7 @@ const sources = [
 				h2: 'What translates to ranked',
 				paragraphs: [
 					'Translate loot-timer discipline, loadout spine, early rotates, and selective fights. Do not blindly mirror a trio drop in solo queue.',
-					'Winners rotate early enough to choose sides. Zone edge pressure from our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">capture zones guide</a> shows up constantly in endgames.',
+					'Winners rotate early enough to choose sides. Zone edge pressure from our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">mission objectives guide</a> shows up constantly in endgames.',
 					'Try This Today: Watch 15 minutes of a winner VOD with five timestamps. Steal one mid-game habit only. Run it for a 6-game ranked block.',
 				],
 			},
@@ -249,17 +249,17 @@ const sources = [
 		imageKey: 'battleRoyaleIslandMap',
 		published: '2026-07-18',
 		updated: '2026-08-01',
-		category: 'realistic battles Meta',
+		category: 'Steel Path missions Meta',
 		featured: true,
 		slug: 'secret-loot-routes-full-gold',
 		title: 'Secret Loot Routes: Leave Spawn Full Gold Every Game',
 		metaDescription:
-			'High-percentage Rust loot routes that leave spawn with gold guns, full shields, and mobility — major update Season 3 drop paths that win mid-game.',
+			'High-percentage Warframe loot routes that leave spawn with gold guns, full shields, and mobility — major update Season 3 drop paths that win mid-game.',
 		h1: 'Secret Loot Routes: How to Leave Spawn with Full Gold',
 		intro:
 			'Winning starts before the first fight. These loot routes consistently convert drops into gold loadouts and full heals.',
-		keywords: ['rust loot routes', 'drops', 'gold loot', 'ranked', 'war thunder intel'],
-		imageAlt: 'Rust secret loot routes full gold spawn guide major update Season 3',
+		keywords: ['rust loot routes', 'drops', 'gold loot', 'ranked', 'warframe intel'],
+		imageAlt: 'Warframe secret loot routes full gold spawn guide major update Season 3',
 		sections: [
 			{
 				h2: 'The real ranked bottleneck is early inventory',
@@ -280,8 +280,8 @@ const sources = [
 			{
 				h2: 'Convert gold guns into wins',
 				paragraphs: [
-					'Pair these routes with <a href="/blog/zero-build-meta-broken-aggressive-strategies/">capture zones aggression</a> and <a href="/blog/hammer-ar-s-tier-data-analysis/">Hammer AR tiers</a>. Leave spawn rich so mid-game becomes a skill check.',
-					'If you use module ESP markers in practice, read <a href="/war-thunder-esp/">War Thunder ESP</a> for category toggles — then still run the timer so habits stay sharp without overlays.',
+					'Pair these routes with <a href="/blog/zero-build-meta-broken-aggressive-strategies/">mission objectives aggression</a> and <a href="/blog/hammer-ar-s-tier-data-analysis/">Hammer AR tiers</a>. Leave spawn rich so mid-game becomes a skill check.',
+					'If you use ability ESP markers in practice, read <a href="/warframe-esp/">Warframe ESP</a> for category toggles — then still run the timer so habits stay sharp without overlays.',
 					'Try This Today: Run one uncontested chain for 8 games. Screenshot inventory at 2:30 and compare rarities before adding a contested edge day.',
 				],
 			},
@@ -297,12 +297,12 @@ const sources = [
 		slug: 'bugha-settings-pro-setup',
 		title: "Bugha's Settings: Copy a Champion Setup That Works",
 		metaDescription:
-			'Bugha-inspired Rust settings guide — sensitivity ranges, binds philosophy, and practice routines that still work in major update Season 3 ranked.',
+			'Bugha-inspired Warframe settings guide — sensitivity ranges, binds philosophy, and practice routines that still work in major update Season 3 ranked.',
 		h1: "Bugha's Sensitivity & Settings: Champion-Inspired Setup",
 		intro:
 			'You do not need exact pro digits — you need champion settings philosophy. Here is a setup you can adapt today.',
-		keywords: ['bugha settings', 'rust sensitivity', 'binds', 'pro setup', 'war thunder intel'],
-		imageAlt: 'Bugha Rust sensitivity settings pro player setup guide',
+		keywords: ['bugha settings', 'rust sensitivity', 'binds', 'pro setup', 'warframe intel'],
+		imageAlt: 'Bugha Warframe sensitivity settings pro player setup guide',
 		sections: [
 			{
 				h2: 'Settings remove friction — they are not magic',
@@ -316,14 +316,14 @@ const sources = [
 				paragraphs: [
 					'Use an eDPI band that lets you 180 with a controlled swipe without over-flicking shotguns. If you overshoot close targets, lower slightly. If you cannot track strafers at 40m with Hammer AR, raise cautiously — then lock settings for 14 days.',
 					'Put edit, crouch, and mobility on keys you can hit while still aiming. Make slot 1 shotgun and slot 2 AR muscle memory. Prefer performance clarity over cinema settings; motion blur off.',
-					`Hardware and realistic battles context evolve, but fundamentals stay — see ${EXT.realisticBattles} for high-level play standards.`,
+					`Hardware and Steel Path missions context evolve, but fundamentals stay — see ${EXT.realisticBattles} for high-level play standards.`,
 				],
 			},
 			{
 				h2: 'Champion-style practice routine',
 				paragraphs: [
 					'0–10 minutes aim tracker, 10–20 peek or edit drills, 20–30 realistic fights, then ranked. Pair with our <a href="/blog/creative-warmup-maps-pros-use/">Creative warmup map categories</a>.',
-					'If you later configure Aimbot smoothness for practice tooling, start from <a href="/war-thunder-aimbot/">soft aim</a> after your raw sens is locked — never chase both variables at once.',
+					'If you later configure Aimbot smoothness for practice tooling, start from <a href="/warframe-aimbot/">soft aim</a> after your raw sens is locked — never chase both variables at once.',
 					'Try This Today: Write dpi + sens, adjust at most once by a small percent, then play 5 games without touching settings again.',
 				],
 			},
@@ -339,12 +339,12 @@ const sources = [
 		slug: 'creative-warmup-maps-pros-use',
 		title: '10 Creative Warmup Maps Pros Use Before Ranked',
 		metaDescription:
-			'Ten Rust Creative warmup map categories and a 25-minute routine pros use before ranked — aim, peeks, edits, and capture zones fight reps now.',
+			'Ten Warframe Creative warmup map categories and a 25-minute routine pros use before ranked — aim, peeks, edits, and mission objectives fight reps now.',
 		h1: '10 Creative Mode Maps Pros Use to Warm Up Before Ranked',
 		intro:
 			'Stop freezing in first fight. These Creative warmup categories get your mechanics hot before you touch ranked.',
-		keywords: ['rust creative', 'warmup maps', 'aim trainers', 'ranked', 'war thunder intel'],
-		imageAlt: 'Rust Creative Mode warmup maps pros use before ranked',
+		keywords: ['rust creative', 'warmup maps', 'aim trainers', 'ranked', 'warframe intel'],
+		imageAlt: 'Warframe Creative Mode warmup maps pros use before ranked',
 		sections: [
 			{
 				h2: 'Warmups win Elo before the queue starts',
@@ -357,140 +357,140 @@ const sources = [
 			{
 				h2: '25-minute routine and ten map categories',
 				paragraphs: [
-					'0–8 min aim tracker. 8–15 min edit course or capture zones peek map. 15–22 min realistic fight / box fight / zone wars. 22–25 min reset, then ranked.',
-					'Categories: pure aim tracker, shotgun scenarios, mid-range AR tracking (Hammer practice), piece control/edits, capture zones cover peeks, realistic 1v1s, zone wars, reload/swap timing, movement tech, scrim-style multi-fight maps.',
-					'capture zones mains should replace edit courses with double-peek ladders from our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">aggression guide</a>.',
+					'0–8 min aim tracker. 8–15 min edit course or mission objectives peek map. 15–22 min realistic fight / box fight / zone wars. 22–25 min reset, then ranked.',
+					'Categories: pure aim tracker, shotgun scenarios, mid-range AR tracking (Hammer practice), piece control/edits, mission objectives cover peeks, realistic 1v1s, zone wars, reload/swap timing, movement tech, scrim-style multi-fight maps.',
+					'mission objectives mains should replace edit courses with double-peek ladders from our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">aggression guide</a>.',
 				],
 			},
 			{
 				h2: 'Mistakes that waste warmup time',
 				paragraphs: [
 					'Only melting easy bots, ignoring mid-range, warming up 90 minutes then playing two tilted games, and changing binds mid-warmup all waste Elo.',
-					'After mechanics are hot, information tools like <a href="/war-thunder-radar/">radar hack</a> or <a href="/war-thunder-esp/">ESP</a> are optional overlays — they do not replace a cold shotgun timing. For the full stack overview, see <a href="/war-thunder-hacks/">War Thunder Hacks</a>.',
+					'After mechanics are hot, information tools like <a href="/warframe-radar/">radar hack</a> or <a href="/warframe-esp/">ESP</a> are optional overlays — they do not replace a cold shotgun timing. For the full stack overview, see <a href="/warframe-cheats/">Warframe Cheats</a>.',
 					'Try This Today: Favorite four maps across aim, peeks, fights, and endgame. Run the 25-minute block, then play only six ranked games.',
 				],
 			},
 		],
 	},
 	{
-		id: 'war-thunder-hacks-complete-guide',
+		id: 'warframe-cheats-complete-guide',
 		imageKey: 'battleRoyaleCombat',
 		published: '2026-07-31',
 		updated: '2026-08-01',
-		category: 'War Thunder Hacks',
+		category: 'Warframe Cheats',
 		featured: true,
-		slug: 'war-thunder-hacks-complete-guide-2026',
-		title: 'War Thunder Hacks 2026: Complete Undetected Guide',
+		slug: 'warframe-cheats-complete-guide-2026',
+		title: 'Warframe Cheats 2026: Complete Undetected Guide',
 		metaDescription:
-			'Complete War Thunder Hacks guide for PC and controllers — ESP boxes, soft aim, cloud DMA, and anti-cheat maintenance in 2026. Compare the full package and buy.',
-		h1: 'War Thunder Hacks 2026: The Complete Undetected Guide',
+			'Complete Warframe Cheats guide for PC and controllers — ESP boxes, soft aim, cloud DMA, and anti-cheat maintenance in 2026. Compare the full package and buy.',
+		h1: 'Warframe Cheats 2026: The Complete Undetected Guide',
 		intro:
-			'Searching for War Thunder Hacks in 2026? This guide covers ESP wallhack, Aimbot, radar, undetected maintenance, and how War Thunder hacks searchers map to the same Windows PC package.',
-		keywords: ['War Thunder Hacks', 'undetected War Thunder Hacks', 'War Thunder hacks', 'esp', 'aimbot', 'eac'],
-		imageAlt: 'War Thunder Hacks complete guide showing ESP wallhack and Aimbot for 2026',
+			'Searching for Warframe Cheats in 2026? This guide covers ESP wallhack, Aimbot, radar, undetected maintenance, and how Warframe cheats searchers map to the same Windows PC package.',
+		keywords: ['Warframe Cheats', 'undetected Warframe Cheats', 'Warframe cheats', 'esp', 'aimbot', 'eac'],
+		imageAlt: 'Warframe Cheats complete guide showing ESP wallhack and Aimbot for 2026',
 		sections: [
 			{
-				h2: 'What War Thunder Hacks actually include',
+				h2: 'What Warframe Cheats actually include',
 				paragraphs: [
-					'War Thunder Hacks usually mean visibility plus combat assist: player ESP wallhack, repair point markers, 2D radar threat cues, and configurable Aimbot. Buyers who type War Thunder hacks are looking for the same stack — different wording, same BR loop.',
-					`Official seasons and client updates publish through ${EXT.epic} and ${EXT.rust}. Anti-cheat context lives on Gaijin Easy Anti-Cheat. Our <a href="/war-thunder-hacks/">War Thunder Hacks pillar</a> is the commercial landing; this post is the long-form explainer.`,
+					'Warframe Cheats usually mean visibility plus combat assist: player ESP wallhack, health pickup markers, 2D radar threat cues, and configurable Aimbot. Buyers who type Warframe cheats are looking for the same stack — different wording, same BR loop.',
+					`Official seasons and client updates publish through ${EXT.epic} and ${EXT.rust}. Anti-cheat context lives on Digital Extremes anti-cheat. Our <a href="/warframe-cheats/">Warframe Cheats pillar</a> is the commercial landing; this post is the long-form explainer.`,
 					'Pro Tip — One license, full loop: Prefer a maintained package over stacking single-feature downloads that break on every patch.',
 				],
 			},
 			{
 				h2: 'ESP, wallhack, Aimbot, and radar roles',
 				paragraphs: [
-					'ESP/wallhack answers where squads and loot sit. Radar covers flanks outside FOV. Aimbot covers firefight consistency once you commit. Soft aim profiles help when you want smoother tracking — see <a href="/war-thunder-aimbot/">soft aim</a> and <a href="/war-thunder-aimbot/">Aimbot controls</a>.',
-					'Deep pages: <a href="/war-thunder-esp/">War Thunder ESP</a>, <a href="/war-thunder-wallhack/">wallhack</a>, <a href="/war-thunder-radar/">radar hack</a>, <a href="/war-thunder-aimbot/">aimbot hack</a>, and <a href="/war-thunder-esp/">ESP hack</a>.',
+					'ESP/wallhack answers where squads and loot sit. Radar covers flanks outside FOV. Aimbot covers firefight consistency once you commit. Soft aim profiles help when you want smoother tracking — see <a href="/warframe-aimbot/">soft aim</a> and <a href="/warframe-aimbot/">Aimbot controls</a>.',
+					'Deep pages: <a href="/warframe-esp/">Warframe ESP</a>, <a href="/warframe-wallhack/">wallhack</a>, <a href="/warframe-radar/">radar hack</a>, <a href="/warframe-aimbot/">aimbot hack</a>, and <a href="/warframe-esp/">ESP hack</a>.',
 				],
 			},
 			{
-				h2: 'Undetected War Thunder Hacks and anti-cheat patches',
+				h2: 'Undetected Warframe Cheats and anti-cheat patches',
 				paragraphs: [
-					'Undetected War Thunder Hacks require rebuilds after Gaijin Easy Anti-Cheat and major Rust updates. No vendor can promise permanent undetected status — check <a href="/updates/">Updates</a> before you queue.',
-					`On patch mornings confirm ${EXT.status}, then read our <a href="/war-thunder-hacks/">EAC bypass guide</a> and <a href="/blog/undetected-war-thunder-hacks-eac/">undetected EAC notes</a>.`,
+					'Undetected Warframe Cheats require rebuilds after Digital Extremes anti-cheat and major Warframe updates. No vendor can promise permanent undetected status — check <a href="/updates/">Updates</a> before you queue.',
+					`On patch mornings confirm ${EXT.status}, then read our <a href="/warframe-cheats/">anti-cheat bypass guide</a> and <a href="/blog/undetected-warframe-cheats-eac/">undetected anti-cheat notes</a>.`,
 					'Try This Today: Open the hacks pillar, skim Features, compare Pricing ($35 monthly / $150 lifetime), and bookmark Updates for the next Epic patch.',
 				],
 			},
 			{
 				h2: 'Next steps — pricing, setup, and cheats pages',
 				paragraphs: [
-					'Ready to buy? Start at the <a href="/war-thunder-hacks/">War Thunder Hacks pillar page</a>, then <a href="/pricing/">Pricing</a> and <a href="/setup/">Setup</a>. Prefer cheats wording? Read <a href="/war-thunder-hacks/">War Thunder hacks 2026</a> and <a href="/blog/war-thunder-hacks-buyers-guide/">cheats buyers guide</a>.',
+					'Ready to buy? Start at the <a href="/warframe-cheats/">Warframe Cheats pillar page</a>, then <a href="/pricing/">Pricing</a> and <a href="/setup/">Setup</a>. Prefer cheats wording? Read <a href="/warframe-cheats/">Warframe cheats 2026</a> and <a href="/blog/warframe-cheats-buyers-guide/">cheats buyers guide</a>.',
 					'Support: include your order ID on the <a href="/support/">Support</a> page after checkout.',
 				],
 			},
 		],
 	},
 	{
-		id: 'war-thunder-cheats-buyers-guide',
+		id: 'warframe-cheats-buyers-guide',
 		imageKey: 'cheatsPackage',
 		published: '2026-07-30',
 		updated: '2026-08-01',
-		category: 'War Thunder Hacks',
+		category: 'Warframe Cheats',
 		featured: true,
-		slug: 'war-thunder-cheats-buyers-guide',
-		title: 'War Thunder Hacks Buyers Guide: What to Check',
+		slug: 'warframe-cheats-buyers-guide',
+		title: 'Warframe Cheats Buyers Guide: What to Check',
 		metaDescription:
-			'War Thunder cheats buyers guide for PC and controllers — ESP boxes, soft aim, cloud DMA, pricing, and EAC status. Compare before checkout.',
-		h1: 'War Thunder Hacks Buyers Guide: What Matters in 2026',
+			'Warframe cheats buyers guide for PC and controllers — ESP boxes, soft aim, cloud DMA, pricing, and anti-cheat status. Compare before checkout.',
+		h1: 'Warframe Cheats Buyers Guide: What Matters in 2026',
 		intro:
-			'Shopping for War Thunder hacks? Use this checklist for ESP wallhack, Aimbot, radar, anti-cheat maintenance, and license length — then cross-check the War Thunder Hacks pillar before checkout.',
-		keywords: ['War Thunder hacks', 'best War Thunder hacks', 'War Thunder Hacks', 'buyers guide', 'undetected'],
-		imageAlt: 'War Thunder cheats buyers guide checklist for ESP Aimbot and pricing',
+			'Shopping for Warframe cheats? Use this checklist for ESP wallhack, Aimbot, radar, anti-cheat maintenance, and license length — then cross-check the Warframe Cheats pillar before checkout.',
+		keywords: ['Warframe cheats', 'best Warframe cheats', 'Warframe Cheats', 'buyers guide', 'undetected'],
+		imageAlt: 'Warframe cheats buyers guide checklist for ESP Aimbot and pricing',
 		sections: [
 			{
 				h2: 'Buyer checklist before you pay',
 				paragraphs: [
 					'Confirm Windows PC support, anti-cheat maintenance cadence, ESP + Aimbot + radar in one license, clear pricing, and a live Updates log. Skip tools that only ship a wallhack with no rebuild notes.',
-					'Primary commercial pages: <a href="/war-thunder-hacks/">best War Thunder cheats</a>, <a href="/war-thunder-hacks/">cheats 2026</a>, and <a href="/war-thunder-hacks/">War Thunder Hacks</a> (hacks is the main brand keyword).',
+					'Primary commercial pages: <a href="/warframe-cheats/">best Warframe cheats</a>, <a href="/warframe-cheats/">cheats 2026</a>, and <a href="/warframe-cheats/">Warframe Cheats</a> (hacks is the main brand keyword).',
 				],
 			},
 			{
 				h2: 'Hacks vs cheats wording',
 				paragraphs: [
-					'War Thunder Hacks and War Thunder hacks describe the same product category for most searchers. We lead with hacks on warthunderhacks.com while keeping cheats pages for buyers who use that query.',
+					'Warframe Cheats and Warframe cheats describe the same product category for most searchers. We lead with hacks on warframecheats.net while keeping cheats pages for buyers who use that query.',
 					`Balance and anti-cheat reality still come from ${EXT.epic}. Product rebuild timing is on our <a href="/updates/">Updates</a> page.`,
 				],
 			},
 			{
 				h2: 'Feature pages worth opening',
 				paragraphs: [
-					'Open <a href="/war-thunder-esp/">ESP</a>, <a href="/war-thunder-aimbot/">Aimbot</a>, <a href="/features/">Features</a>, and <a href="/pricing/">Pricing</a> before you buy. Delivery and activation steps live on <a href="/setup/">Setup</a>.',
-					'Related reading: <a href="/blog/war-thunder-hacks-complete-guide-2026/">hacks complete guide</a> and <a href="/blog/war-thunder-hacks-2026-whats-new/">cheats 2026 what\'s new</a>.',
+					'Open <a href="/warframe-esp/">ESP</a>, <a href="/warframe-aimbot/">Aimbot</a>, <a href="/features/">Features</a>, and <a href="/pricing/">Pricing</a> before you buy. Delivery and activation steps live on <a href="/setup/">Setup</a>.',
+					'Related reading: <a href="/blog/warframe-cheats-complete-guide-2026/">hacks complete guide</a> and <a href="/blog/warframe-cheats-2026-whats-new/">cheats 2026 what\'s new</a>.',
 					'Try This Today: Write your must-have list (ESP categories, Aimbot smoothness, lifetime vs monthly), then compare against Features once.',
 				],
 			},
 		],
 	},
 	{
-		id: 'war-thunder-cheats-2026-whats-new',
+		id: 'warframe-cheats-2026-whats-new',
 		imageKey: 'hero',
 		published: '2026-07-28',
 		updated: '2026-08-01',
-		category: 'War Thunder Hacks',
+		category: 'Warframe Cheats',
 		featured: false,
-		slug: 'war-thunder-cheats-2026-whats-new',
-		title: 'War Thunder Hacks 2026: What Changed This Year',
+		slug: 'warframe-cheats-2026-whats-new',
+		title: 'Warframe Cheats 2026: What Changed This Year',
 		metaDescription:
-			'War Thunder cheats 2026 overview — ESP boxes, soft aim, and cloud DMA for PC and controllers with anti-cheat maintenance. Pair with the hacks pillar before buying.',
-		h1: 'War Thunder Hacks 2026: What Buyers Need Now',
+			'Warframe cheats 2026 overview — ESP boxes, soft aim, and cloud DMA for PC and controllers with anti-cheat maintenance. Pair with the hacks pillar before buying.',
+		h1: 'Warframe Cheats 2026: What Buyers Need Now',
 		intro:
-			'War Thunder cheats 2026 searches spike every season. Here is what still matters: maintained ESP wallhack, Aimbot profiles, radar awareness, and rebuilds after Gaijin Easy Anti-Cheat patches.',
-		keywords: ['War Thunder hacks 2026', 'War Thunder Hacks', 'eac', 'esp', 'aimbot'],
-		imageAlt: 'War Thunder cheats 2026 overview for undetected ESP and Aimbot buyers',
+			'Warframe cheats 2026 searches spike every season. Here is what still matters: maintained ESP wallhack, Aimbot profiles, radar awareness, and rebuilds after Digital Extremes anti-cheat patches.',
+		keywords: ['Warframe cheats 2026', 'Warframe Cheats', 'eac', 'esp', 'aimbot'],
+		imageAlt: 'Warframe cheats 2026 overview for undetected ESP and Aimbot buyers',
 		sections: [
 			{
 				h2: 'Why 2026 buyers still need maintenance',
 				paragraphs: [
-					'Season maps, weapons, and EAC updates still break stale tools. A 2026-ready package publishes rebuild notes — not a frozen prior-year build.',
-					`Track official messaging on ${EXT.rust}, then confirm product status on <a href="/updates/">Updates</a> and <a href="/war-thunder-hacks/">the cheats 2026 landing</a>.`,
+					'Season maps, weapons, and anti-cheat updates still break stale tools. A 2026-ready package publishes rebuild notes — not a frozen prior-year build.',
+					`Track official messaging on ${EXT.rust}, then confirm product status on <a href="/updates/">Updates</a> and <a href="/warframe-cheats/">the cheats 2026 landing</a>.`,
 				],
 			},
 			{
 				h2: 'Keyword map: cheats 2026 ↔ hacks',
 				paragraphs: [
-					'Use the <a href="/war-thunder-hacks/">War Thunder cheats 2026 guide</a> for cheats-year intent and the <a href="/war-thunder-hacks/">War Thunder Hacks pillar page</a> for the primary hacks intent. Both point to the same ESP + Aimbot + radar stack.',
-					'Also see <a href="/blog/war-thunder-hacks-complete-guide-2026/">hacks guide</a> and <a href="/war-thunder-hacks/">undetected status</a>.',
+					'Use the <a href="/warframe-cheats/">Warframe cheats 2026 guide</a> for cheats-year intent and the <a href="/warframe-cheats/">Warframe Cheats pillar page</a> for the primary hacks intent. Both point to the same ESP + Aimbot + radar stack.',
+					'Also see <a href="/blog/warframe-cheats-complete-guide-2026/">hacks guide</a> and <a href="/warframe-cheats/">undetected status</a>.',
 				],
 			},
 			{
@@ -503,114 +503,114 @@ const sources = [
 		],
 	},
 	{
-		id: 'war-thunder-aimbot-settings-guide',
+		id: 'warframe-aimbot-settings-guide',
 		imageKey: 'aimbotCombat',
 		published: '2026-07-26',
 		updated: '2026-08-01',
 		category: 'Aimbot',
 		featured: false,
-		slug: 'war-thunder-aimbot-settings-guide',
-		title: 'War Thunder Aimbot Settings: Smooth FOV Guide',
+		slug: 'warframe-aimbot-settings-guide',
+		title: 'Warframe Aimbot Settings: Smooth FOV Guide',
 		metaDescription:
-			'Rust aimbot settings for PC and controllers — soft aim, FOV, bone priority, and per-weapon profiles. Tune assist, then review the hacks pages.',
-		h1: 'War Thunder Aimbot Settings: Smoothness, FOV & Soft Aim',
+			'Warframe aimbot settings for PC and controllers — soft aim, FOV, bone priority, and per-weapon profiles. Tune assist, then review the hacks pages.',
+		h1: 'Warframe Aimbot Settings: Smoothness, FOV & Soft Aim',
 		intro:
-			'Configure War Thunder Aimbot without snapping every fight. This guide covers smoothness, FOV, bone priority, per-weapon profiles, and how Aimbot fits into War Thunder Hacks packages.',
-		keywords: ['rust aimbot', 'aimbot settings', 'soft aim', 'War Thunder Hacks', 'fov'],
-		imageAlt: 'War Thunder Aimbot settings guide for smoothness FOV and bone priority',
+			'Configure Warframe Aimbot without snapping every fight. This guide covers smoothness, FOV, bone priority, per-weapon profiles, and how Aimbot fits into Warframe Cheats packages.',
+		keywords: ['warframe aimbot', 'aimbot settings', 'soft aim', 'Warframe Cheats', 'fov'],
+		imageAlt: 'Warframe Aimbot settings guide for smoothness FOV and bone priority',
 		sections: [
 			{
 				h2: 'Start conservative, then tune',
 				paragraphs: [
-					'Begin with moderate FOV and higher smoothness. Instant-snap configs look unnatural and are harder to control in capture zones peeks. Hotkeys let you disable Aimbot mid-match.',
-					'Full control list: <a href="/war-thunder-aimbot/">War Thunder Aimbot</a>, <a href="/war-thunder-aimbot/">aimbot hack</a>, and <a href="/war-thunder-aimbot/">soft aim</a>.',
+					'Begin with moderate FOV and higher smoothness. Instant-snap configs look unnatural and are harder to control in mission objectives peeks. Hotkeys let you disable Aimbot mid-match.',
+					'Full control list: <a href="/warframe-aimbot/">Warframe Aimbot</a>, <a href="/warframe-aimbot/">aimbot hack</a>, and <a href="/warframe-aimbot/">soft aim</a>.',
 				],
 			},
 			{
 				h2: 'Pair Aimbot with ESP and radar',
 				paragraphs: [
-					'Aimbot alone does not solve rotations. Pair with <a href="/war-thunder-esp/">ESP</a> and <a href="/war-thunder-radar/">radar</a> inside the <a href="/war-thunder-hacks/">War Thunder Hacks</a> package.',
+					'Aimbot alone does not solve rotations. Pair with <a href="/warframe-esp/">ESP</a> and <a href="/warframe-radar/">radar</a> inside the <a href="/warframe-cheats/">Warframe Cheats</a> package.',
 					`Weapon balance shifts on ${EXT.rust} — revisit FOV after combat patches.`,
 				],
 			},
 			{
-				h2: 'EAC notes and next steps',
+				h2: 'anti-cheat notes and next steps',
 				paragraphs: [
-					'After Gaijin Easy Anti-Cheat patches, confirm Aimbot modules on <a href="/updates/">Updates</a>. Background: <a href="/war-thunder-hacks/">EAC guide</a>.',
+					'After Digital Extremes anti-cheat patches, confirm Aimbot modules on <a href="/updates/">Updates</a>. Background: <a href="/warframe-cheats/">anti-cheat guide</a>.',
 					'Try This Today: Create separate AR and SMG profiles, play five games, then adjust only one slider per session.',
 				],
 			},
 		],
 	},
 	{
-		id: 'war-thunder-esp-wallhack-explained',
+		id: 'warframe-esp-wallhack-explained',
 		imageKey: 'espWallhack',
 		published: '2026-07-24',
 		updated: '2026-08-01',
 		category: 'ESP & Wallhack',
 		featured: false,
-		slug: 'war-thunder-esp-wallhack-explained',
-		title: 'War Thunder ESP & Wallhack Explained Clearly',
+		slug: 'warframe-esp-wallhack-explained',
+		title: 'Warframe ESP & Wallhack Explained Clearly',
 		metaDescription:
-			'War Thunder ESP and wallhack explained — player boxes, repair point markers, and distance readouts for PC and controllers. Learn overlays on the hacks pages.',
-		h1: 'War Thunder ESP and Wallhack Explained',
+			'Warframe ESP and wallhack explained — player boxes, health pickup markers, and distance readouts for PC and controllers. Learn overlays on the hacks pages.',
+		h1: 'Warframe ESP and Wallhack Explained',
 		intro:
-			'War Thunder ESP (wallhack) shows players, loot, and threats through terrain. Here is how overlays work, what to toggle, and how ESP fits into War Thunder Hacks and War Thunder hacks packages.',
-		keywords: ['rust esp', 'rust wallhack', 'esp hack', 'War Thunder Hacks', 'loot esp'],
-		imageAlt: 'War Thunder ESP wallhack explained with player and loot overlays',
+			'Warframe ESP (wallhack) shows players, loot, and threats through terrain. Here is how overlays work, what to toggle, and how ESP fits into Warframe Cheats and Warframe cheats packages.',
+		keywords: ['warframe esp', 'rust wallhack', 'esp hack', 'Warframe Cheats', 'loot esp'],
+		imageAlt: 'Warframe ESP wallhack explained with player and loot overlays',
 		sections: [
 			{
 				h2: 'ESP categories that matter in BR',
 				paragraphs: [
 					'Toggle enemy outlines, loot/chest pins, vehicle cues, and distance readouts. Too many overlays create noise — keep ranked-critical categories on during rotations.',
-					'Landings: <a href="/war-thunder-esp/">War Thunder ESP</a>, <a href="/war-thunder-wallhack/">wallhack</a>, <a href="/war-thunder-esp/">ESP hack</a>.',
+					'Landings: <a href="/warframe-esp/">Warframe ESP</a>, <a href="/warframe-wallhack/">wallhack</a>, <a href="/warframe-esp/">ESP hack</a>.',
 				],
 			},
 			{
 				h2: 'Wallhack vs radar vs Aimbot',
 				paragraphs: [
-					'Wallhack/ESP is line-of-sight information through walls. Radar covers off-screen flanks. Aimbot is combat assist. The <a href="/war-thunder-hacks/">hacks pillar</a> bundles all three.',
+					'Wallhack/ESP is line-of-sight information through walls. Radar covers off-screen flanks. Aimbot is combat assist. The <a href="/warframe-cheats/">hacks pillar</a> bundles all three.',
 					`Map and loot systems evolve with ${EXT.epic} seasons — toggleable categories stay useful when POIs rotate.`,
 				],
 			},
 			{
 				h2: 'Undetected ESP maintenance',
 				paragraphs: [
-					'ESP modules rebuild with the package after anti-cheat patches. Check <a href="/updates/">Updates</a> and <a href="/war-thunder-hacks/">undetected status</a> before ranked blocks.',
-					'Try This Today: Enable player + module ESP only for ten games, then add radar range once your eyes adjust.',
+					'ESP modules rebuild with the package after anti-cheat patches. Check <a href="/updates/">Updates</a> and <a href="/warframe-cheats/">undetected status</a> before ranked blocks.',
+					'Try This Today: Enable player + ability ESP only for ten games, then add radar range once your eyes adjust.',
 				],
 			},
 		],
 	},
 	{
-		id: 'undetected-war-thunder-hacks-eac',
+		id: 'undetected-warframe-cheats-eac',
 		imageKey: 'rebootFight',
 		published: '2026-07-22',
 		updated: '2026-08-01',
-		category: 'Undetected & EAC',
+		category: 'Undetected & anti-cheat',
 		featured: true,
-		slug: 'undetected-war-thunder-hacks-eac',
-		title: 'Undetected War Thunder Hacks & EAC Reality',
+		slug: 'undetected-warframe-cheats-eac',
+		title: 'Undetected Warframe Cheats & anti-cheat Reality',
 		metaDescription:
-			'Undetected War Thunder Hacks and EAC reality — ESP boxes, soft aim, and cloud DMA rebuilds for PC and controllers. Check Updates before queueing post-patch.',
-		h1: 'Undetected War Thunder Hacks and Gaijin Easy Anti-Cheat Reality',
+			'Undetected Warframe Cheats and anti-cheat reality — ESP boxes, soft aim, and cloud DMA rebuilds for PC and controllers. Check Updates before queueing post-patch.',
+		h1: 'Undetected Warframe Cheats and Digital Extremes anti-cheat Reality',
 		intro:
-			'Undetected War Thunder Hacks mean active anti-cheat maintenance — not a forever guarantee. Learn the patch-day workflow, where to check status, and how hacks/cheats pages fit together.',
-		keywords: ['undetected War Thunder Hacks', 'eac', 'War Thunder Hacks', 'War Thunder hacks', 'maintenance'],
-		imageAlt: 'Undetected War Thunder Hacks and Gaijin Easy Anti-Cheat maintenance workflow',
+			'Undetected Warframe Cheats mean active anti-cheat maintenance — not a forever guarantee. Learn the patch-day workflow, where to check status, and how hacks/cheats pages fit together.',
+		keywords: ['undetected Warframe Cheats', 'eac', 'Warframe Cheats', 'Warframe cheats', 'maintenance'],
+		imageAlt: 'Undetected Warframe Cheats and Digital Extremes anti-cheat maintenance workflow',
 		sections: [
 			{
 				h2: 'What undetected really means',
 				paragraphs: [
-					'Undetected War Thunder Hacks are rebuilt when Gaijin Easy Anti-Cheat or Rust client patches change detection surface. Permanent undetected claims are marketing fiction.',
-					'Status pages: <a href="/updates/">Updates</a>, <a href="/war-thunder-hacks/">undetected guide</a>, <a href="/war-thunder-hacks/">EAC bypass</a>.',
+					'Undetected Warframe Cheats are rebuilt when Digital Extremes anti-cheat or Warframe client patches change detection surface. Permanent undetected claims are marketing fiction.',
+					'Status pages: <a href="/updates/">Updates</a>, <a href="/warframe-cheats/">undetected guide</a>, <a href="/warframe-cheats/">anti-cheat bypass</a>.',
 				],
 			},
 			{
 				h2: 'Patch-day workflow',
 				paragraphs: [
 					`Check ${EXT.status} for Epic health, wait for our Updates note, then launch. If services are degraded, do not assume the hack failed.`,
-					'Commercial entry points: <a href="/war-thunder-hacks/">War Thunder Hacks</a> and <a href="/war-thunder-hacks/">War Thunder hacks 2026</a>.',
+					'Commercial entry points: <a href="/warframe-cheats/">Warframe Cheats</a> and <a href="/warframe-cheats/">Warframe cheats 2026</a>.',
 				],
 			},
 			{
@@ -623,58 +623,58 @@ const sources = [
 		],
 	},
 	{
-		id: 'war-thunder-hacks-vs-cheatvault',
+		id: 'warframe-cheats-vs-cheatvault',
 		imageKey: 'cheatsPackage',
 		published: '2026-07-15',
 		updated: '2026-08-01',
 		category: 'Comparisons',
 		featured: true,
-		slug: 'war-thunder-hacks-vs-cheatvault-comparison',
-		title: 'War Thunder Hacks vs CheatVault: Honest 2026 Comparison',
+		slug: 'warframe-cheats-vs-cheatvault-comparison',
+		title: 'Warframe Cheats vs CheatVault: Honest 2026 Comparison',
 		metaDescription:
-			'War Thunder Hacks vs CheatVault compared — pricing, ESP boxes, soft aim, cloud DMA, EAC detection history, and which package fits BR players in 2026.',
-		h1: 'War Thunder Hacks vs CheatVault: Honest Comparison',
+			'Warframe Cheats vs CheatVault compared — pricing, ESP boxes, soft aim, cloud DMA, anti-cheat detection history, and which package fits BR players in 2026.',
+		h1: 'Warframe Cheats vs CheatVault: Honest Comparison',
 		intro:
-			'I ran both CheatVault and War Thunder Hacks through the same ranked block last season. Here is the straight comparison — price, features, patch-day behavior, and where each one actually wins.',
-		keywords: ['War Thunder Hacks vs cheatvault', 'cheatvault comparison', 'War Thunder hacks', 'esp', 'eac', 'pricing'],
-		imageAlt: 'War Thunder Hacks vs CheatVault feature and pricing comparison for 2026',
+			'I ran both CheatVault and Warframe Cheats through the same ranked block last season. Here is the straight comparison — price, features, patch-day behavior, and where each one actually wins.',
+		keywords: ['Warframe Cheats vs cheatvault', 'cheatvault comparison', 'Warframe cheats', 'esp', 'eac', 'pricing'],
+		imageAlt: 'Warframe Cheats vs CheatVault feature and pricing comparison for 2026',
 		sections: [
 			{
 				h2: 'Why I compared these two in the first place',
 				paragraphs: [
-					'CheatVault shows up in almost every Rust cheat thread alongside War Thunder Hacks. Both promise ESP, aim assist, and undetected status. Both list monthly and lifetime tiers. On paper they look identical — which is exactly why buyers get burned picking the wrong one.',
-					'I kept CheatVault for about six weeks in major update Season 2, then switched to War Thunder Hacks for the back half of the season. Same PC, same sens, mostly capture zones and some ranked squads. This is not a sponsored post — just what I noticed when I stopped reading feature bullets and started tracking patch days.',
-					'Fair warning: neither tool makes you invincible. Epic\'s Gaijin Easy Anti-Cheat still updates. Your account still carries ban risk. This comparison is about which package maintained better and which features I actually used in BR — not which one guarantees wins.',
+					'CheatVault shows up in almost every Warframe cheat thread alongside Warframe Cheats. Both promise ESP, aim assist, and undetected status. Both list monthly and lifetime tiers. On paper they look identical — which is exactly why buyers get burned picking the wrong one.',
+					'I kept CheatVault for about six weeks in major update Season 2, then switched to Warframe Cheats for the back half of the season. Same PC, same sens, mostly mission objectives and some ranked squads. This is not a sponsored post — just what I noticed when I stopped reading feature bullets and started tracking patch days.',
+					'Fair warning: neither tool makes you invincible. Epic\'s Digital Extremes anti-cheat still updates. Your account still carries ban risk. This comparison is about which package maintained better and which features I actually used in BR — not which one guarantees wins.',
 				],
 			},
 			{
 				h2: 'Price breakdown — monthly, lifetime, and hidden costs',
 				paragraphs: [
-					'War Thunder Hacks lists $35/month and $150 lifetime on the <a href="/pricing/">pricing page</a>. CheatVault was $42/month and $189 lifetime when I subscribed — prices shift, but CheatVault has consistently sat 15–20% higher in the tiers I saw.',
-					'CheatVault\'s lifetime looks cheaper than three years of monthly until you factor downtime. I lost nine days total waiting on CheatVault rebuilds after two anti-cheat patches. War Thunder Hacks had two patch windows where I waited roughly 24–36 hours each. If you play daily, downtime has a real cost even if the sub fee is lower.',
-					'Both deliver digitally. Neither includes hardware. If you want cloud DMA on War Thunder Hacks, you already own or plan to buy compatible hardware — same story for CheatVault\'s DMA tier, which is a separate upsell above their standard sub.',
+					'Warframe Cheats lists $35/month and $150 lifetime on the <a href="/pricing/">pricing page</a>. CheatVault was $42/month and $189 lifetime when I subscribed — prices shift, but CheatVault has consistently sat 15–20% higher in the tiers I saw.',
+					'CheatVault\'s lifetime looks cheaper than three years of monthly until you factor downtime. I lost nine days total waiting on CheatVault rebuilds after two anti-cheat patches. Warframe Cheats had two patch windows where I waited roughly 24–36 hours each. If you play daily, downtime has a real cost even if the sub fee is lower.',
+					'Both deliver digitally. Neither includes hardware. If you want cloud DMA on Warframe Cheats, you already own or plan to buy compatible hardware — same story for CheatVault\'s DMA tier, which is a separate upsell above their standard sub.',
 				],
 			},
 			{
 				h2: 'Feature table — ESP, soft aim, radar, and cloud DMA',
 				paragraphs: [
-					'<table><thead><tr><th>Feature</th><th>War Thunder Hacks</th><th>CheatVault</th></tr></thead><tbody><tr><td>Player ESP boxes</td><td>Yes, toggleable categories</td><td>Yes, fewer colour options</td></tr><tr><td>Loot / chest markers</td><td>Yes + distance readouts</td><td>Yes, no distance on loot</td></tr><tr><td>2D radar</td><td>Yes, configurable range</td><td>Yes, fixed size</td></tr><tr><td>Soft aim / Aimbot profiles</td><td>Per-weapon slots</td><td>Global + one profile</td></tr><tr><td>Controller support</td><td>Supported</td><td>Listed, awkward menu UX</td></tr><tr><td>Cloud DMA option</td><td>Included path in package</td><td>Premium tier add-on</td></tr><tr><td>In-client mod menu</td><td>Yes</td><td>Yes, heavier overlay</td></tr></tbody></table>',
-					'War Thunder Hacks wins on toggles and profile flexibility. I run ESP boxes + repair point markers in early game, then drop loot categories after first AR. CheatVault\'s overlay felt busier — fine if you want everything on, noisy if you play ranked and need clean screen space.',
-					'Soft aim mattered more than I expected in capture zones. War Thunder Hacks let me run a low-FOV Hammer AR profile and a separate SMG profile for box fights. CheatVault\'s single-profile setup worked, but I was constantly retuning mid-session.',
+					'<table><thead><tr><th>Feature</th><th>Warframe Cheats</th><th>CheatVault</th></tr></thead><tbody><tr><td>Player ESP boxes</td><td>Yes, toggleable categories</td><td>Yes, fewer colour options</td></tr><tr><td>Loot / chest markers</td><td>Yes + distance readouts</td><td>Yes, no distance on loot</td></tr><tr><td>2D radar</td><td>Yes, configurable range</td><td>Yes, fixed size</td></tr><tr><td>Soft aim / Aimbot profiles</td><td>Per-weapon slots</td><td>Global + one profile</td></tr><tr><td>Controller support</td><td>Supported</td><td>Listed, awkward menu UX</td></tr><tr><td>Cloud DMA option</td><td>Included path in package</td><td>Premium tier add-on</td></tr><tr><td>In-client mod menu</td><td>Yes</td><td>Yes, heavier overlay</td></tr></tbody></table>',
+					'Warframe Cheats wins on toggles and profile flexibility. I run ESP boxes + health pickup markers in early game, then drop loot categories after first AR. CheatVault\'s overlay felt busier — fine if you want everything on, noisy if you play ranked and need clean screen space.',
+					'Soft aim mattered more than I expected in mission objectives. Warframe Cheats let me run a low-FOV Hammer AR profile and a separate SMG profile for box fights. CheatVault\'s single-profile setup worked, but I was constantly retuning mid-session.',
 				],
 			},
 			{
 				h2: 'Detection history and patch-day behavior',
 				paragraphs: [
-					'Both brands had public downtime after major EAC updates in 2026 — anyone claiming zero detection events is lying. The difference is communication and rebuild speed.',
+					'Both brands had public downtime after major anti-cheat updates in 2026 — anyone claiming zero detection events is lying. The difference is communication and rebuild speed.',
 					'CheatVault\'s Discord would go quiet for 48–72 hours after big patches. No ETA, just "working on it." I know two players in my stack who got flagged during a CheatVault lag window between patch and rebuild — could\'ve been coincidence, but it shook my confidence.',
-					'War Thunder Hacks posts on the <a href="/updates/">Updates page</a> within hours on patch mornings. Last major EAC update I tracked: status note same day, rebuild live roughly 30 hours later. Still annoying, but predictable. See also our <a href="/blog/undetected-war-thunder-hacks-eac/">EAC reality guide</a> for the workflow I use before queueing.',
+					'Warframe Cheats posts on the <a href="/updates/">Updates page</a> within hours on patch mornings. Last major anti-cheat update I tracked: status note same day, rebuild live roughly 30 hours later. Still annoying, but predictable. See also our <a href="/blog/undetected-warframe-cheats-eac/">anti-cheat reality guide</a> for the workflow I use before queueing.',
 				],
 			},
 			{
 				h2: 'Where CheatVault still wins',
 				paragraphs: [
-					'Credit where it\'s due: CheatVault\'s Discord community is larger. More clip sharing, more config screenshots. If you learn best from crowd-sourced settings, that social layer helps — War Thunder Hacks support answered faster for me, but the community volume is smaller.',
+					'Credit where it\'s due: CheatVault\'s Discord community is larger. More clip sharing, more config screenshots. If you learn best from crowd-sourced settings, that social layer helps — Warframe Cheats support answered faster for me, but the community volume is smaller.',
 					'CheatVault also bundles a standalone replay-style overlay tool in their premium tier. I did not use it much, but content creators might value the extra capture layer.',
 					'If you only play once or twice a week and just want basic ESP without caring about patch ETAs, CheatVault\'s feature floor is fine. Casual cadence hides downtime pain.',
 				],
@@ -682,9 +682,9 @@ const sources = [
 			{
 				h2: 'Verdict — who should pick which',
 				paragraphs: [
-					'Pick War Thunder Hacks if you play ranked or capture zones multiple times a week, want per-weapon soft aim profiles, care about cloud DMA without a second upsell, and want a public Updates log before you launch after patches.',
+					'Pick Warframe Cheats if you play ranked or mission objectives multiple times a week, want per-weapon soft aim profiles, care about cloud DMA without a second upsell, and want a public Updates log before you launch after patches.',
 					'Pick CheatVault if community size matters more than rebuild transparency, you want the premium capture extras, and you do not mind paying slightly more for a similar core stack.',
-					'Try This Today: Write down your must-haves (ESP categories, radar size, controller, DMA). Open <a href="/features/">Features</a> and CheatVault\'s list side by side, then check both Updates channels before the next Epic patch. For the full War Thunder Hacks stack overview, start at <a href="/war-thunder-hacks/">War Thunder Hacks</a>.',
+					'Try This Today: Write down your must-haves (ESP categories, radar size, controller, DMA). Open <a href="/features/">Features</a> and CheatVault\'s list side by side, then check both Updates channels before the next Epic patch. For the full Warframe Cheats stack overview, start at <a href="/warframe-cheats/">Warframe Cheats</a>.',
 				],
 			},
 		],
@@ -696,129 +696,129 @@ const sources = [
 		updated: '2026-08-01',
 		category: 'Comparisons',
 		featured: false,
-		slug: 'elitefn-vs-war-thunder-hacks-two-week-test',
+		slug: 'elitefn-vs-warframe-cheats-two-week-test',
 		title: 'I Tried EliteFN for 2 Weeks Before Switching',
 		metaDescription:
-			'EliteFN vs War Thunder Hacks — a two-week test of ESP, soft aim, controller support, EAC downtime, and pricing before switching packages in 2026.',
-		h1: 'I Tried EliteFN for 2 Weeks Before Switching to War Thunder Hacks',
+			'EliteFN vs Warframe Cheats — a two-week test of ESP, soft aim, controller support, anti-cheat downtime, and pricing before switching packages in 2026.',
+		h1: 'I Tried EliteFN for 2 Weeks Before Switching to Warframe Cheats',
 		intro:
-			'EliteFN was the popular pick in my squad\'s Discord. I gave it fourteen days — same hardware, same playlists — then moved to War Thunder Hacks. This is what actually differed.',
-		keywords: ['elitefn vs War Thunder Hacks', 'elitefn review', 'War Thunder hacks comparison', 'soft aim', 'esp boxes'],
-		imageAlt: 'EliteFN vs War Thunder Hacks two week comparison test for War Thunder cheats',
+			'EliteFN was the popular pick in my squad\'s Discord. I gave it fourteen days — same hardware, same playlists — then moved to Warframe Cheats. This is what actually differed.',
+		keywords: ['elitefn vs Warframe Cheats', 'elitefn review', 'Warframe cheats comparison', 'soft aim', 'esp boxes'],
+		imageAlt: 'EliteFN vs Warframe Cheats two week comparison test for Warframe cheats',
 		sections: [
 			{
 				h2: 'Week one — setup, first impressions, and the menu learning curve',
 				paragraphs: [
-					'EliteFN delivery was fast — key in email within twenty minutes. Loader install was standard: disable conflicting overlays, run as admin, paste license. Took about twenty-five minutes my first time, same ballpark as War Thunder Hacks later.',
+					'EliteFN delivery was fast — key in email within twenty minutes. Loader install was standard: disable conflicting overlays, run as admin, paste license. Took about twenty-five minutes my first time, same ballpark as Warframe Cheats later.',
 					'EliteFN\'s menu looked cleaner on screenshots. In game, I spent two evenings just mapping toggles. ESP categories are nested one level deeper than I liked. Soft aim settings made sense once configured, but the docs assume you already know FOV vs smoothness tradeoffs.',
-					'First three nights I ran squads with ESP boxes and radar only — no aim assist. EliteFN visibility was good. Player outlines readable at mid range. Module ESP existed but felt an afterthought compared to player ESP. I died plenty; the tool did its info job fine.',
+					'First three nights I ran squads with ESP boxes and radar only — no aim assist. EliteFN visibility was good. Player outlines readable at mid range. Ability ESP existed but felt an afterthought compared to player ESP. I died plenty; the tool did its info job fine.',
 				],
 			},
 			{
 				h2: 'Soft aim, weapons, and controller testing',
 				paragraphs: [
-					'Week one weekend I enabled soft aim with a conservative FOV. Worked on AR and SMG in capture zones. Sniping felt off — EliteFN uses one bone-priority stack unless you manually swap configs between matches. Doable, not great for my play style.',
-					'I play controller two nights a week. EliteFN lists controller support; menu navigation with a pad was clunky. War Thunder Hacks later felt similar on pad menus honestly — neither is perfect — but EliteFN had no suggested controller baseline in docs. I wasted time guessing.',
+					'Week one weekend I enabled soft aim with a conservative FOV. Worked on AR and SMG in mission objectives. Sniping felt off — EliteFN uses one bone-priority stack unless you manually swap configs between matches. Doable, not great for my play style.',
+					'I play controller two nights a week. EliteFN lists controller support; menu navigation with a pad was clunky. Warframe Cheats later felt similar on pad menus honestly — neither is perfect — but EliteFN had no suggested controller baseline in docs. I wasted time guessing.',
 					'Hammer AR tracking at 40–50m was the benchmark test. EliteFN smooth aim was slightly snappier out of box. Snappier sounds good until you watch replay clips and notice the robotic corrections. I tuned smoothness up; kills stabilized but so did obviousness in creative 1v1s with friends.',
 				],
 			},
 			{
 				h2: 'The patch that ended my EliteFN trial',
 				paragraphs: [
-					'Day eleven hit a Rust + EAC patch. Standard for any cheat user. EliteFN status channel said "investigating." No ETA. I skipped ranked for two days waiting — squad moved on without me.',
+					'Day eleven hit a Warframe + anti-cheat patch. Standard for any cheat user. EliteFN status channel said "investigating." No ETA. I skipped ranked for two days waiting — squad moved on without me.',
 					'Day thirteen a rebuild dropped. Loaded in, played two pubs, crashed once, relaunched fine. Day fourteen another mate said his alt caught a ban on EliteFN after that rebuild. Unverified story, but combined with downtime it was my cue to bail.',
-					'I switched to War Thunder Hacks lifetime partly because of the <a href="/updates/">Updates</a> cadence — I wanted patch notes in writing, not Discord rumor. Not saying EliteFN is a scam; plenty of players still run it. It just did not match my tolerance for silent patch windows.',
+					'I switched to Warframe Cheats lifetime partly because of the <a href="/updates/">Updates</a> cadence — I wanted patch notes in writing, not Discord rumor. Not saying EliteFN is a scam; plenty of players still run it. It just did not match my tolerance for silent patch windows.',
 				],
 			},
 			{
 				h2: 'Side-by-side after switching — what improved',
 				paragraphs: [
-					'War Thunder Hacks ESP let me toggle loot and chest markers independently — huge for off-spawn routes without cluttering endgame. Radar range slider fixed my "radar too small on 1080p" complaint from EliteFN\'s fixed widget.',
+					'Warframe Cheats ESP let me toggle loot and chest markers independently — huge for off-spawn routes without cluttering endgame. Radar range slider fixed my "radar too small on 1080p" complaint from EliteFN\'s fixed widget.',
 					'Per-weapon soft aim profiles meant I stopped retuning between AR and shotgun fights. Cloud DMA path was optional for my setup; I stayed on standard loader, but having DMA documented in one package beat EliteFN\'s "ask sales" flow.',
-					'Support reply time: EliteFN ticket answered in ~5 hours once. War Thunder Hacks support replied in ~2 hours when I asked about controller baseline settings. Small sample, but matched what I needed during setup week.',
+					'Support reply time: EliteFN ticket answered in ~5 hours once. Warframe Cheats support replied in ~2 hours when I asked about controller baseline settings. Small sample, but matched what I needed during setup week.',
 				],
 			},
 			{
 				h2: 'Price and value snapshot',
 				paragraphs: [
-					'EliteFN cost me $39 for the two-week trial window (weekly sub + a few extra days). War Thunder Hacks monthly is $35; lifetime $150. If you hop tools every month, weekly pricing adds up fast.',
-					'Feature-per-dollar favors War Thunder Hacks for my use: combined ESP + radar + soft aim + rebuild notes in one license. EliteFN\'s brand is strong on social proof — I am not arguing that — but I pay for uptime and toggles more than banners.',
-					'Compare plans yourself on <a href="/pricing/">Pricing</a> and read the <a href="/blog/war-thunder-hacks-vs-cheatvault-comparison/">CheatVault comparison</a> if you are still shopping three-wide.',
+					'EliteFN cost me $39 for the two-week trial window (weekly sub + a few extra days). Warframe Cheats monthly is $35; lifetime $150. If you hop tools every month, weekly pricing adds up fast.',
+					'Feature-per-dollar favors Warframe Cheats for my use: combined ESP + radar + soft aim + rebuild notes in one license. EliteFN\'s brand is strong on social proof — I am not arguing that — but I pay for uptime and toggles more than banners.',
+					'Compare plans yourself on <a href="/pricing/">Pricing</a> and read the <a href="/blog/warframe-cheats-vs-cheatvault-comparison/">CheatVault comparison</a> if you are still shopping three-wide.',
 				],
 			},
 			{
 				h2: 'Would I recommend EliteFN to anyone?',
 				paragraphs: [
 					'Yes, with caveats. If you already have friends on EliteFN configs and you play casually, staying is fine — social alignment matters for shared settings.',
-					'If you are patch-sensitive, play ranked daily, or want granular ESP and weapon profiles, War Thunder Hacks fit me better after the two-week test. Your mileage varies; run your own patch-day checklist.',
-					'Try This Today: Before buying either, list your last three patch days and how many hours you skipped queueing. If downtime frustrates you, prioritize vendors with public Updates pages — then open <a href="/war-thunder-hacks/">War Thunder Hacks</a> and <a href="/setup/">Setup</a> before checkout.',
+					'If you are patch-sensitive, play ranked daily, or want granular ESP and weapon profiles, Warframe Cheats fit me better after the two-week test. Your mileage varies; run your own patch-day checklist.',
+					'Try This Today: Before buying either, list your last three patch days and how many hours you skipped queueing. If downtime frustrates you, prioritize vendors with public Updates pages — then open <a href="/warframe-cheats/">Warframe Cheats</a> and <a href="/setup/">Setup</a> before checkout.',
 				],
 			},
 		],
 	},
 	{
-		id: 'war-thunder-hacks-vs-ghostware',
+		id: 'warframe-cheats-vs-ghostware',
 		imageKey: 'espWallhack',
 		published: '2026-07-05',
 		updated: '2026-08-01',
 		category: 'Comparisons',
 		featured: false,
-		slug: 'war-thunder-hacks-vs-ghostware-features-pricing',
-		title: 'War Thunder Hacks vs GhostWare: Features & Pricing',
+		slug: 'warframe-cheats-vs-ghostware-features-pricing',
+		title: 'Warframe Cheats vs GhostWare: Features & Pricing',
 		metaDescription:
-			'War Thunder Hacks vs GhostWare — feature tables, soft aim, ESP boxes, cloud DMA, controller support, EAC history, and honest pros/cons for 2026 buyers.',
-		h1: 'War Thunder Hacks vs GhostWare: Features, Pricing, and Detection Notes',
+			'Warframe Cheats vs GhostWare — feature tables, soft aim, ESP boxes, cloud DMA, controller support, EAC history, and honest pros/cons for 2026 buyers.',
+		h1: 'Warframe Cheats vs GhostWare: Features, Pricing, and Detection Notes',
 		intro:
-			'GhostWare markets hard on "stealth" branding. War Thunder Hacks markets on the full BR stack. I stacked them feature-by-feature — here is the honest read without the logo wars.',
-		keywords: ['ghostware vs War Thunder Hacks', 'ghostware rust', 'cheat comparison', 'esp boxes', 'cloud dma'],
-		imageAlt: 'War Thunder Hacks vs GhostWare features pricing and EAC comparison',
+			'GhostWare markets hard on "stealth" branding. Warframe Cheats markets on the full BR stack. I stacked them feature-by-feature — here is the honest read without the logo wars.',
+		keywords: ['ghostware vs Warframe Cheats', 'ghostware rust', 'cheat comparison', 'esp boxes', 'cloud dma'],
+		imageAlt: 'Warframe Cheats vs GhostWare features pricing and EAC comparison',
 		sections: [
 			{
 				h2: 'Two different philosophies — minimal vs full-stack',
 				paragraphs: [
-					'GhostWare sells a slimmer Rust module: ESP-focused with light aim assist, fewer toggles, lower price entry. War Thunder Hacks bundles ESP wallhack, radar, soft aim profiles, controller paths, and cloud DMA documentation in one undetected license.',
+					'GhostWare sells a slimmer Warframe module: ESP-focused with light aim assist, fewer toggles, lower price entry. Warframe Cheats bundles ESP wallhack, radar, soft aim profiles, controller paths, and cloud DMA documentation in one undetected license.',
 					'Neither approach is wrong. Minimal tools break less surface area in theory. Full-stack tools win when you want one menu for ranked nights — visibility, flanks, and firefight assist without swapping executables.',
-					'I used GhostWare for ten days on an alt account while keeping War Thunder Hacks on main. Same monitor, same sens, different playlists to spread risk. Take ban risk seriously on any tool.',
+					'I used GhostWare for ten days on an alt account while keeping Warframe Cheats on main. Same monitor, same sens, different playlists to spread risk. Take ban risk seriously on any tool.',
 				],
 			},
 			{
 				h2: 'Feature and pricing comparison table',
 				paragraphs: [
-					'<table><thead><tr><th></th><th>War Thunder Hacks</th><th>GhostWare</th></tr></thead><tbody><tr><td>Monthly price</td><td>$35</td><td>$28</td></tr><tr><td>Lifetime price</td><td>$150</td><td>$120</td></tr><tr><td>Player ESP boxes</td><td>Yes</td><td>Yes</td></tr><tr><td>Loot / chest ESP</td><td>Yes</td><td>Limited</td></tr><tr><td>2D radar</td><td>Yes</td><td>No</td></tr><tr><td>Soft aim profiles</td><td>Multiple weapon slots</td><td>Basic assist</td></tr><tr><td>Controller support</td><td>Yes</td><td>Partial</td></tr><tr><td>Cloud DMA path</td><td>Documented</td><td>Not offered</td></tr><tr><td>Public Updates log</td><td><a href="/updates/">Yes — public updates log</a></td><td>Discord only</td></tr></tbody></table>',
-					'GhostWare is cheaper on sticker price. War Thunder Hacks includes radar and richer module ESP — features I use every session. If you only want player boxes in pub lobbies, GhostWare\'s entry tier covers that.',
-					'Lifetime math: GhostWare $120 vs War Thunder Hacks $150. The $30 gap closes if you value radar and rebuild transparency. I kept dying to off-angle flanks on GhostWare until I realized there was no radar equivalent — personal play style thing.',
+					'<table><thead><tr><th></th><th>Warframe Cheats</th><th>GhostWare</th></tr></thead><tbody><tr><td>Monthly price</td><td>$35</td><td>$28</td></tr><tr><td>Lifetime price</td><td>$150</td><td>$120</td></tr><tr><td>Player ESP boxes</td><td>Yes</td><td>Yes</td></tr><tr><td>Loot / chest ESP</td><td>Yes</td><td>Limited</td></tr><tr><td>2D radar</td><td>Yes</td><td>No</td></tr><tr><td>Soft aim profiles</td><td>Multiple weapon slots</td><td>Basic assist</td></tr><tr><td>Controller support</td><td>Yes</td><td>Partial</td></tr><tr><td>Cloud DMA path</td><td>Documented</td><td>Not offered</td></tr><tr><td>Public Updates log</td><td><a href="/updates/">Yes — public updates log</a></td><td>Discord only</td></tr></tbody></table>',
+					'GhostWare is cheaper on sticker price. Warframe Cheats includes radar and richer ability ESP — features I use every session. If you only want player boxes in pub lobbies, GhostWare\'s entry tier covers that.',
+					'Lifetime math: GhostWare $120 vs Warframe Cheats $150. The $30 gap closes if you value radar and rebuild transparency. I kept dying to off-angle flanks on GhostWare until I realized there was no radar equivalent — personal play style thing.',
 				],
 			},
 			{
 				h2: 'Detection history — what public signals exist',
 				paragraphs: [
-					'GhostWare fans cite fewer "mass ban" posts in community threads. That is anecdotal — smaller user bases generate fewer posts by default. War Thunder Hacks had a visible rebuild cycle after the last major EAC push; GhostWare\'s Discord announced an update two days later.',
-					'No vendor publishes audited detection rates. Treat claims as marketing. My rule: if Updates or Discord status is silent 24h after an EAC patch, I do not queue on that tool.',
-					'War Thunder Hacks documents maintenance on <a href="/war-thunder-hacks/">EAC bypass workflow</a> and the <a href="/war-thunder-hacks/">undetected guide</a>. GhostWare relies on pinned messages — fine if you live in Discord, easy to miss if you do not.',
+					'GhostWare fans cite fewer "mass ban" posts in community threads. That is anecdotal — smaller user bases generate fewer posts by default. Warframe Cheats had a visible rebuild cycle after the last major anti-cheat push; GhostWare\'s Discord announced an update two days later.',
+					'No vendor publishes audited detection rates. Treat claims as marketing. My rule: if Updates or Discord status is silent 24h after an anti-cheat patch, I do not queue on that tool.',
+					'Warframe Cheats documents maintenance on <a href="/warframe-cheats/">anti-cheat bypass workflow</a> and the <a href="/warframe-cheats/">undetected guide</a>. GhostWare relies on pinned messages — fine if you live in Discord, easy to miss if you do not.',
 				],
 			},
 			{
-				h2: 'Gameplay feel — capture zones and ranked squads',
+				h2: 'Gameplay feel — mission objectives and ranked squads',
 				paragraphs: [
-					'GhostWare ESP boxes were crisp — arguably cleaner outline rendering on low settings PCs. War Thunder Hacks boxes offer more colour and distance data; busier but more informative in squad comms ("220m west" calls).',
-					'Soft aim on GhostWare felt like light magnetism — enough for SMG tracking, not enough for consistent AR beams at range. War Thunder Hacks soft aim took tuning time but held Hammer AR fights better once profiles were set.',
-					'Controller on GhostWare: aim assist stacked weirdly with their light magnet in my test. War Thunder Hacks suggested baseline FOV values in support docs; less guesswork.',
+					'GhostWare ESP boxes were crisp — arguably cleaner outline rendering on low settings PCs. Warframe Cheats boxes offer more colour and distance data; busier but more informative in squad comms ("220m west" calls).',
+					'Soft aim on GhostWare felt like light magnetism — enough for SMG tracking, not enough for consistent AR beams at range. Warframe Cheats soft aim took tuning time but held Hammer AR fights better once profiles were set.',
+					'Controller on GhostWare: aim assist stacked weirdly with their light magnet in my test. Warframe Cheats suggested baseline FOV values in support docs; less guesswork.',
 				],
 			},
 			{
 				h2: 'Pros and cons summary',
 				paragraphs: [
-					'<strong>War Thunder Hacks pros:</strong> full ESP + radar + soft aim stack, per-weapon profiles, cloud DMA path, public Updates page, controller docs. <strong>Cons:</strong> higher price, menu takes ~20 minutes to learn, radar size could use more presets.',
-					'<strong>GhostWare pros:</strong> lower entry price, clean minimal ESP, quick to launch, smaller feature surface. <strong>Cons:</strong> no radar, limited module ESP, patch status mostly in Discord, no DMA option, lighter aim tools.',
-					'Neither replaces game sense. Pair either with fundamentals — see our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">capture zones aggression guide</a> and <a href="/blog/war-thunder-hacks-complete-guide-2026/">complete hacks guide</a>.',
+					'<strong>Warframe Cheats pros:</strong> full ESP + radar + soft aim stack, per-weapon profiles, cloud DMA path, public Updates page, controller docs. <strong>Cons:</strong> higher price, menu takes ~20 minutes to learn, radar size could use more presets.',
+					'<strong>GhostWare pros:</strong> lower entry price, clean minimal ESP, quick to launch, smaller feature surface. <strong>Cons:</strong> no radar, limited ability ESP, patch status mostly in Discord, no DMA option, lighter aim tools.',
+					'Neither replaces game sense. Pair either with fundamentals — see our <a href="/blog/zero-build-meta-broken-aggressive-strategies/">mission objectives aggression guide</a> and <a href="/blog/warframe-cheats-complete-guide-2026/">complete hacks guide</a>.',
 				],
 			},
 			{
 				h2: 'Which one should you buy?',
 				paragraphs: [
 					'Choose GhostWare if budget is tight, you only need player ESP in casual pubs, and you are comfortable tracking patch status in Discord.',
-					'Choose War Thunder Hacks if you want radar for flanks, repair point markers for faster spawns, configurable soft aim, optional cloud DMA, and a single Updates URL to check after every Epic patch.',
-					'Try This Today: Decide whether radar and module ESP are must-haves or nice-to-haves. If must-have, open <a href="/war-thunder-esp/">ESP</a>, <a href="/war-thunder-radar/">radar</a>, and <a href="/pricing/">Pricing</a>. If skipping radar saves you money and matches your style, GhostWare stays in the conversation — just do not skip patch-day checks on either tool.',
+					'Choose Warframe Cheats if you want radar for flanks, health pickup markers for faster spawns, configurable soft aim, optional cloud DMA, and a single Updates URL to check after every Epic patch.',
+					'Try This Today: Decide whether radar and ability ESP are must-haves or nice-to-haves. If must-have, open <a href="/warframe-esp/">ESP</a>, <a href="/warframe-radar/">radar</a>, and <a href="/pricing/">Pricing</a>. If skipping radar saves you money and matches your style, GhostWare stays in the conversation — just do not skip patch-day checks on either tool.',
 				],
 			},
 		],

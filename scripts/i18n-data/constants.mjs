@@ -6,7 +6,7 @@ export const LOCALES = [
 ];
 
 export const PAGE_IDS = [
-	'home', 'war-thunder-esp', 'war-thunder-aimbot', 'features', 'pricing', 'setup',
+	'home', 'warframe-esp', 'warframe-aimbot', 'features', 'pricing', 'setup',
 	'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'eac-bypass',
 	'cheats-2026', 'hacks', 'cheat-download', 'mod-menu', 'soft-aim', 'best-cheats',
 	'aimbot-hack', 'esp-hack', 'unlock-all', 'privacy', 'refund', 'terms',
@@ -17,31 +17,31 @@ export const PAGE_IDS = [
  * Topic pages keep thematic matches; utility/legal pages fill remaining slots.
  */
 export const HERO_IMAGES = {
-	home: '/images/war-thunder-hacks-hero.webp',
-	'war-thunder-esp': '/images/war-thunder-esp-overlay.webp',
-	'war-thunder-aimbot': '/images/war-thunder-aimbot-menu.webp',
-	features: '/images/war-thunder-esp-tanks.webp',
-	pricing: '/images/war-thunder-esp-modules.webp',
-	setup: '/images/war-thunder-aimbot-menu.webp',
-	updates: '/images/war-thunder-esp-overlay.webp',
-	faq: '/images/war-thunder-esp-tanks.webp',
-	support: '/images/war-thunder-aimbot-menu.webp',
-	undetected: '/images/war-thunder-hacks-hero.webp',
-	wallhack: '/images/war-thunder-esp-modules.webp',
-	radar: '/images/war-thunder-radar-hack.webp',
-	'eac-bypass': '/images/war-thunder-esp-overlay.webp',
-	'cheats-2026': '/images/war-thunder-hacks-hero.webp',
-	hacks: '/images/war-thunder-esp-tanks.webp',
-	'cheat-download': '/images/war-thunder-esp-overlay.webp',
-	'mod-menu': '/images/war-thunder-aimbot-menu.webp',
-	'soft-aim': '/images/war-thunder-hacks-hero.webp',
-	'best-cheats': '/images/war-thunder-esp-modules.webp',
-	'aimbot-hack': '/images/war-thunder-aimbot-menu.webp',
-	'esp-hack': '/images/war-thunder-esp-overlay.webp',
-	'unlock-all': '/images/war-thunder-esp-tanks.webp',
-	privacy: '/images/war-thunder-esp-modules.webp',
-	refund: '/images/war-thunder-aimbot-menu.webp',
-	terms: '/images/war-thunder-esp-tanks.webp',
+	home: '/images/warframe-cheats-hero.webp',
+	'warframe-esp': '/images/warframe-esp-overlay.webp',
+	'warframe-aimbot': '/images/warframe-aimbot-menu.webp',
+	features: '/images/warframe-esp-tanks.webp',
+	pricing: '/images/warframe-esp-modules.webp',
+	setup: '/images/warframe-aimbot-menu.webp',
+	updates: '/images/warframe-esp-overlay.webp',
+	faq: '/images/warframe-esp-tanks.webp',
+	support: '/images/warframe-aimbot-menu.webp',
+	undetected: '/images/warframe-cheats-hero.webp',
+	wallhack: '/images/warframe-esp-modules.webp',
+	radar: '/images/warframe-radar-hack.webp',
+	'eac-bypass': '/images/warframe-esp-overlay.webp',
+	'cheats-2026': '/images/warframe-cheats-hero.webp',
+	hacks: '/images/warframe-esp-tanks.webp',
+	'cheat-download': '/images/warframe-esp-overlay.webp',
+	'mod-menu': '/images/warframe-aimbot-menu.webp',
+	'soft-aim': '/images/warframe-cheats-hero.webp',
+	'best-cheats': '/images/warframe-esp-modules.webp',
+	'aimbot-hack': '/images/warframe-aimbot-menu.webp',
+	'esp-hack': '/images/warframe-esp-overlay.webp',
+	'unlock-all': '/images/warframe-esp-tanks.webp',
+	privacy: '/images/warframe-esp-modules.webp',
+	refund: '/images/warframe-aimbot-menu.webp',
+	terms: '/images/warframe-esp-tanks.webp',
 };
 
 export const TS_HEADER = `import type { LocaleCode } from './locales';
@@ -73,7 +73,7 @@ export type LocaleUi = {
 \t\theaderArt: string; cheatsPackage: string; rebootFight: string; battleRoyale: string; battleRoyaleIsland: string;
 \t};
 };
-export type PageId = 'home' | 'war-thunder-esp' | 'war-thunder-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'eac-bypass' | 'cheats-2026' | 'hacks' | 'cheat-download' | 'mod-menu' | 'soft-aim' | 'best-cheats' | 'aimbot-hack' | 'esp-hack' | 'unlock-all' | 'privacy' | 'refund' | 'terms';
+export type PageId = 'home' | 'warframe-esp' | 'warframe-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'eac-bypass' | 'cheats-2026' | 'hacks' | 'cheat-download' | 'mod-menu' | 'soft-aim' | 'best-cheats' | 'aimbot-hack' | 'esp-hack' | 'unlock-all' | 'privacy' | 'refund' | 'terms';
 `;
 
 /** Clamp meta strings to SEO limits without ugly ellipsis. */
@@ -104,7 +104,7 @@ export function stripZadeyoFromMeta(text) {
 		.replace(/\s*Zadeyo delivery\.?/gi, ' instant digital delivery.')
 		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
 		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy War Thunder Hacks/g, 'Buy War Thunder Hacks')
+		.replace(/Buy Warframe Cheats/g, 'Buy Warframe Cheats')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 }
@@ -126,8 +126,8 @@ export function section(h2, ...args) {
 
 /** Authoritative external citation helpers (open in new tab). */
 export const EXT = {
-	epic: '<a href="https://warthunder.com/en" target="_blank" rel="noopener noreferrer">War Thunder</a>',
-	rust: '<a href="https://warthunder.com/en" target="_blank" rel="noopener noreferrer">War Thunder</a>',
-	status: '<a href="https://warthunder.com/en" target="_blank" rel="noopener noreferrer">War Thunder</a>',
-	eac: '<a href="https://warthunder.com/en" target="_blank" rel="noopener noreferrer">Gaijin Easy Anti-Cheat</a>',
+	epic: '<a href="https://www.warframe.com/" target="_blank" rel="noopener noreferrer">Warframe</a>',
+	rust: '<a href="https://www.warframe.com/" target="_blank" rel="noopener noreferrer">Warframe</a>',
+	status: '<a href="https://www.warframe.com/" target="_blank" rel="noopener noreferrer">Warframe</a>',
+	eac: '<a href="https://www.warframe.com/" target="_blank" rel="noopener noreferrer">Digital Extremes anti-cheat</a>',
 };

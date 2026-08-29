@@ -88,7 +88,7 @@ writeFileSync(
 		{
 			builtAt: new Date().toISOString(),
 			commit: buildId,
-			site: 'https://warthunderhacks.com',
+			site: 'https://warframecheats.net',
 		},
 		null,
 		2,

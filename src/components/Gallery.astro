@@ -1,5 +1,5 @@
 ---
-import { rustImages } from '../data/rust';
+import { warframeImages } from '../data/warframe';
 import { getGalleryUi } from '../data/i18n/gallery-ui';
 import { localizeInternalHref } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
@@ -16,18 +16,18 @@ const gallery = getGalleryUi(locale);
 const galleryBoxes = [
 	{
 		title: 'ESP & wallhack',
-		copy: 'See enemy tanks, planes, and ships through cover.',
-		href: '/war-thunder-esp/',
+		copy: 'See enemy Warframes, planes, and ships through cover.',
+		href: '/warframe-esp/',
 	},
 	{
 		title: 'Aimbot',
 		copy: 'Lead calculator with smoothness and FOV controls.',
-		href: '/war-thunder-aimbot/',
+		href: '/warframe-aimbot/',
 	},
 	{
 		title: 'Radar',
 		copy: 'Track flanks and threats outside your view.',
-		href: '/war-thunder-radar/',
+		href: '/warframe-radar/',
 	},
 	{
 		title: 'One license',
@@ -36,7 +36,7 @@ const galleryBoxes = [
 	},
 ];
 
-const slides = rustImages.gallery.map((image) => ({
+const slides = warframeImages.gallery.map((image) => ({
 	src: contentSrc(image.src),
 	srcset: contentSrcSet(image.src),
 	alt: image.alt,
@@ -53,7 +53,7 @@ const marqueeSlides = [...slides, ...slides];
 	</header>
 
 	<div class="gallery__layout">
-		<div class="gallery__marquee" aria-label="War Thunder hacks image gallery">
+		<div class="gallery__marquee" aria-label="Warframe cheats image gallery">
 			<div class="gallery__marquee-track">
 				{
 					marqueeSlides.map((slide, index) => (

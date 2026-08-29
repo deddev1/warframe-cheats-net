@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Completes war-thunder-cheats SEO audit: add missing pages, fix leftovers, strip Zadeyo from meta.
+ * Completes warframe-cheats SEO audit: add missing pages, fix leftovers, strip Zadeyo from meta.
  * Run: node scripts/complete-seo-audit.mjs
  */
 import { readFile, writeFile, mkdir, access } from 'node:fs/promises';
@@ -11,57 +11,57 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const NODE = 'C:\\Program Files\\nodejs\\node.exe';
 
 const EXTRA_PAGES = [
-	{ id: 'hacks', dir: 'war-thunder-hacks', pageId: 'hacks' },
-	{ id: 'cheat-download', dir: 'war-thunder-cheat-download', pageId: 'cheat-download' },
-	{ id: 'mod-menu', dir: 'war-thunder-mod-menu', pageId: 'mod-menu' },
-	{ id: 'soft-aim', dir: 'war-thunder-soft-aim', pageId: 'soft-aim' },
-	{ id: 'best-cheats', dir: 'best-war-thunder-cheats', pageId: 'best-cheats' },
-	{ id: 'aimbot-hack', dir: 'war-thunder-aimbot-hack', pageId: 'aimbot-hack' },
-	{ id: 'esp-hack', dir: 'war-thunder-esp-hack', pageId: 'esp-hack' },
-	{ id: 'unlock-all', dir: 'war-thunder-unlock-all', pageId: 'unlock-all' },
+	{ id: 'hacks', dir: 'warframe-cheats', pageId: 'hacks' },
+	{ id: 'cheat-download', dir: 'warframe-cheat-download', pageId: 'cheat-download' },
+	{ id: 'mod-menu', dir: 'warframe-mod-menu', pageId: 'mod-menu' },
+	{ id: 'soft-aim', dir: 'warframe-soft-aim', pageId: 'soft-aim' },
+	{ id: 'best-cheats', dir: 'best-warframe-cheats', pageId: 'best-cheats' },
+	{ id: 'aimbot-hack', dir: 'warframe-aimbot-hack', pageId: 'aimbot-hack' },
+	{ id: 'esp-hack', dir: 'warframe-esp-hack', pageId: 'esp-hack' },
+	{ id: 'unlock-all', dir: 'warframe-unlock-all', pageId: 'unlock-all' },
 ];
 
 const GLOBAL_REPLACEMENTS = [
 	[/warzone-warzone/g, 'rust'],
-	[/eac-bypass-war-thunder-warzone/g, 'eac-bypass-war-thunder'],
-	[/Call of Duty: Warzone/g, 'Rust'],
-	[/Call of Duty Warzone/g, 'Rust'],
-	[/Call of Duty/g, 'Rust'],
-	[/Warzone Wallhack/g, 'Rust Wallhack'],
-	[/Warzone Radar Hack/g, 'Rust Radar Hack'],
-	[/Warzone Cheat Features/g, 'Rust Cheat Features'],
-	[/Warzone Cheat Pricing/g, 'Rust Cheat Pricing'],
-	[/Warzone Cheat Setup/g, 'Rust Cheat Setup'],
-	[/Warzone Cheat Status/g, 'Rust Cheat Status'],
-	[/Warzone Cheat Support/g, 'Rust Cheat Support'],
-	[/Warzone platoon engagement/g, 'Rust platoon engagement'],
-	[/Warzone squad builder/g, 'Rust loadout builder'],
-	[/Warzone store header/g, 'Rust header'],
-	[/Warzone wasteland combat/g, 'Rust realistic battles combat'],
-	[/Warzone loadout builder/g, 'Rust loadout builder'],
-	[/Warzone pricing/g, 'Rust pricing'],
-	[/Warzone Gaijin Easy Anti-Cheat/g, 'Rust Gaijin Easy Anti-Cheat'],
-	[/on Warzone/g, 'on Rust'],
-	[/for Warzone/g, 'for War Thunder'],
-	[/Warzone guides/g, 'Rust guides'],
-	[/Warzone guide/g, 'Rust guide'],
-	[/Warzone hileleri/g, 'Rust hileleri'],
-	[/Warzone hile/g, 'Rust hile'],
-	[/Warzone hileleri/g, 'Rust hileleri'],
-	[/cheatów Warzone/g, 'cheatów Rust'],
-	[/cheat Warzone/g, 'cheat Rust'],
-	[/cheats Warzone/g, 'cheats War Thunder'],
-	[/trucos Warzone/g, 'trucos War Thunder'],
-	[/triche Warzone/g, 'triche Rust'],
-	[/trucchi Warzone/g, 'trucchi Rust'],
-	[/Wallhack Warzone/g, 'Rust Wallhack'],
-	[/cheat Warzone undetected/g, 'cheat Rust undetected'],
-	[/cheats Warzone undetected/g, 'cheats War Thunder undetected'],
+	[/eac-bypass-warframe-warzone/g, 'eac-bypass-warframe'],
+	[/Call of Duty: Warzone/g, 'Warframe'],
+	[/Call of Duty Warzone/g, 'Warframe'],
+	[/Call of Duty/g, 'Warframe'],
+	[/Warzone Wallhack/g, 'Warframe Wallhack'],
+	[/Warzone Radar Hack/g, 'Warframe Radar Hack'],
+	[/Warzone Cheat Features/g, 'Warframe Cheat Features'],
+	[/Warzone Cheat Pricing/g, 'Warframe Cheat Pricing'],
+	[/Warzone Cheat Setup/g, 'Warframe Cheat Setup'],
+	[/Warzone Cheat Status/g, 'Warframe Cheat Status'],
+	[/Warzone Cheat Support/g, 'Warframe Cheat Support'],
+	[/Warzone squad fight/g, 'Warframe squad fight'],
+	[/Warzone squad builder/g, 'Warframe loadout builder'],
+	[/Warzone store header/g, 'Warframe header'],
+	[/Warzone wasteland combat/g, 'Warframe Steel Path missions combat'],
+	[/Warzone loadout builder/g, 'Warframe loadout builder'],
+	[/Warzone pricing/g, 'Warframe pricing'],
+	[/Warzone Digital Extremes anti-cheat/g, 'Warframe Digital Extremes anti-cheat'],
+	[/on Warzone/g, 'on Warframe'],
+	[/for Warzone/g, 'for Warframe'],
+	[/Warzone guides/g, 'Warframe guides'],
+	[/Warzone guide/g, 'Warframe guide'],
+	[/Warzone hileleri/g, 'Warframe hileleri'],
+	[/Warzone hile/g, 'Warframe hile'],
+	[/Warzone hileleri/g, 'Warframe hileleri'],
+	[/cheatów Warzone/g, 'cheatów Warframe'],
+	[/cheat Warzone/g, 'cheat Warframe'],
+	[/cheats Warzone/g, 'cheats Warframe'],
+	[/trucos Warzone/g, 'trucos Warframe'],
+	[/triche Warzone/g, 'triche Warframe'],
+	[/trucchi Warzone/g, 'trucchi Warframe'],
+	[/Wallhack Warzone/g, 'Warframe Wallhack'],
+	[/cheat Warzone undetected/g, 'cheat Warframe undetected'],
+	[/cheats Warzone undetected/g, 'cheats Warframe undetected'],
 	[/Verdansk beams/g, 'long-range AR beams'],
 	[/Resurgence room clears/g, 'close-quarters room clears'],
-	[/Verdansk and Urzikstan/g, 'War Thunder and capture zones'],
-	[/Verdansk, Urzikstan/g, 'War Thunder, capture zones'],
-	[/realistic battles and Resurgence/g, 'realistic battles and capture zones'],
+	[/Verdansk and Urzikstan/g, 'Warframe and mission objectives'],
+	[/Verdansk, Urzikstan/g, 'Warframe, mission objectives'],
+	[/Steel Path missions and Resurgence/g, 'Steel Path missions and mission objectives'],
 	[/Activision's anti-cheat/g, "Embark' anti-cheat"],
 	[/Activision anti-cheat/g, 'Embark anti-cheat'],
 	[/Activision ships/g, 'Embark ships'],
@@ -69,12 +69,12 @@ const GLOBAL_REPLACEMENTS = [
 	[/Activision bans/g, 'Embark bans'],
 	[/Activision/g, 'Embark'],
 	[/ricochet/gi, 'eac'],
-	[/Ricochet/g, 'Gaijin Easy Anti-Cheat (EAC)'],
-	[/call-of-duty-warzone-cheats/g, 'war-thunder-cheats'],
+	[/Ricochet/g, 'Digital Extremes anti-cheat (EAC)'],
+	[/call-of-duty-warzone-cheats/g, 'warframe-cheats'],
 	[/call-of-duty-warzone/g, 'rust'],
-	[/Undetected Wallhack for Call of Duty/g, 'Undetected Wallhack for War Thunder'],
+	[/Undetected Wallhack for Call of Duty/g, 'Undetected Wallhack for Warframe'],
 	[/How ESP wallhack, radar, and Aimbot rebuild after Call of Duty anti-cheat/g,
-		'How ESP wallhack, radar, and Aimbot rebuild after Rust anti-cheat'],
+		'How ESP wallhack, radar, and Aimbot rebuild after Warframe anti-cheat'],
 ];
 
 /** Remove Zadeyo from meta description/title strings only */
@@ -90,7 +90,7 @@ function stripZadeyoFromMeta(text) {
 		.replace(/\s*Zadeyo delivery\.?/gi, 'instant digital delivery.')
 		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
 		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy on Zadeyo/g, 'Buy War Thunder Hacks')
+		.replace(/Buy on Zadeyo/g, 'Buy Warframe Cheats')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 }
@@ -169,38 +169,38 @@ import LocalizedPage from '../../components/LocalizedPage.astro';
 async function fixLocalesBlogUi() {
 	const file = path.join(ROOT, 'src', 'data', 'i18n', 'locales.ts');
 	let content = await readFile(file, 'utf8');
-	content = content.replace(/Warzone guides/g, 'Rust guides');
-	content = content.replace(/Warzone guide/g, 'Rust guide');
-	content = content.replace(/Warzone hileleri/g, 'Rust hileleri');
-	content = content.replace(/Warzone hile/g, 'Rust hile');
-	content = content.replace(/cheat Warzone/g, 'cheat Rust');
-	content = content.replace(/cheats Warzone/g, 'cheats War Thunder');
-	content = content.replace(/trucos Warzone/g, 'trucos War Thunder');
-	content = content.replace(/triche Warzone/g, 'triche Rust');
-	content = content.replace(/trucchi Warzone/g, 'trucchi Rust');
-	content = content.replace(/cheatów Warzone/g, 'cheatów Rust');
-	content = content.replace(/читов Warzone/g, 'читов Rust');
-	content = content.replace(/читів Warzone/g, 'читів Rust');
-	content = content.replace(/Warzoneチート/g, 'Rustチート');
-	content = content.replace(/Warzone 치트/g, 'Rust 치트');
-	content = content.replace(/Warzone作弊/g, 'Rust作弊');
-	content = content.replace(/Warzone rehberleri/g, 'Rust rehberleri');
-	content = content.replace(/Warzone gidsen/g, 'Rust gidsen');
-	content = content.replace(/Warzone průvodce/g, 'Rust průvodce');
-	content = content.replace(/Warzone guider/g, 'Rust guider');
-	content = content.replace(/Warzone related/g, 'Rust related');
-	content = content.replace(/Warzone ガイド/g, 'Rust ガイド');
-	content = content.replace(/Warzone 가이드/g, 'Rust 가이드');
-	content = content.replace(/Warzone指南/g, 'Rust指南');
-	content = content.replace(/Warzone गाइड/g, 'Rust गाइड');
-	content = content.replace(/Warzone panduan/g, 'Rust panduan');
-	content = content.replace(/Warzone คู่มือ/g, 'Rust คู่มือ');
-	content = content.replace(/Warzone hướng dẫn/g, 'Rust hướng dẫn');
+	content = content.replace(/Warzone guides/g, 'Warframe guides');
+	content = content.replace(/Warzone guide/g, 'Warframe guide');
+	content = content.replace(/Warzone hileleri/g, 'Warframe hileleri');
+	content = content.replace(/Warzone hile/g, 'Warframe hile');
+	content = content.replace(/cheat Warzone/g, 'cheat Warframe');
+	content = content.replace(/cheats Warzone/g, 'cheats Warframe');
+	content = content.replace(/trucos Warzone/g, 'trucos Warframe');
+	content = content.replace(/triche Warzone/g, 'triche Warframe');
+	content = content.replace(/trucchi Warzone/g, 'trucchi Warframe');
+	content = content.replace(/cheatów Warzone/g, 'cheatów Warframe');
+	content = content.replace(/читов Warzone/g, 'читов Warframe');
+	content = content.replace(/читів Warzone/g, 'читів Warframe');
+	content = content.replace(/Warzoneチート/g, 'Warframeチート');
+	content = content.replace(/Warzone 치트/g, 'Warframe 치트');
+	content = content.replace(/Warzone作弊/g, 'Warframe作弊');
+	content = content.replace(/Warzone rehberleri/g, 'Warframe rehberleri');
+	content = content.replace(/Warzone gidsen/g, 'Warframe gidsen');
+	content = content.replace(/Warzone průvodce/g, 'Warframe průvodce');
+	content = content.replace(/Warzone guider/g, 'Warframe guider');
+	content = content.replace(/Warzone related/g, 'Warframe related');
+	content = content.replace(/Warzone ガイド/g, 'Warframe ガイド');
+	content = content.replace(/Warzone 가이드/g, 'Warframe 가이드');
+	content = content.replace(/Warzone指南/g, 'Warframe指南');
+	content = content.replace(/Warzone गाइड/g, 'Warframe गाइड');
+	content = content.replace(/Warzone panduan/g, 'Warframe panduan');
+	content = content.replace(/Warzone คู่มือ/g, 'Warframe คู่มือ');
+	content = content.replace(/Warzone hướng dẫn/g, 'Warframe hướng dẫn');
 	await writeFile(file, content, 'utf8');
 	console.log('Fixed locales.ts blogUi');
 }
 
-console.log('=== War Thunder Hacks SEO completion ===\n');
+console.log('=== Warframe Cheats SEO completion ===\n');
 await applyGlobalFixes();
 await createExtraPages();
 await fixLocalesBlogUi();

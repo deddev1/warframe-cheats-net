@@ -6,42 +6,42 @@ import sharp from 'sharp';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const outDir = join(root, 'public', 'images');
 
-/** Seven unique War Thunder hack screenshots — keyword-mapped for warthunderhacks.com SEO. */
+/** Seven unique Warframe cheat screenshots — keyword-mapped for warframecheats.net SEO. */
 const SOURCES = [
 	{
 		url: 'https://cdn.wh-satano.ru/arcane-wt-s1.webp',
-		file: 'war-thunder-hacks-hero.webp',
-		alt: 'War Thunder hacks main menu with ESP, wallhack, and aimbot toggles on PC',
+		file: 'warframe-cheats-hero.webp',
+		alt: 'Warframe cheats main menu with ESP, wallhack, and aimbot toggles on PC',
 	},
 	{
 		url: 'https://cdn.wh-satano.ru/arcane-wt-s2.webp',
-		file: 'war-thunder-esp-overlay.webp',
-		alt: 'War Thunder ESP overlay showing enemy tank positions and module health through terrain',
+		file: 'warframe-esp-overlay.webp',
+		alt: 'Warframe ESP overlay showing enemy Warframe positions and module health through terrain',
 	},
 	{
 		url: 'https://cdn.wh-satano.ru/arcane-wt-s3.webp',
-		file: 'war-thunder-esp-tanks.webp',
-		alt: 'War Thunder wallhack ESP with vehicle module boxes and distance readouts in Realistic Battles',
+		file: 'warframe-esp-enemies.webp',
+		alt: 'Warframe wallhack ESP with enemy outline boxes and distance readouts in Steel Path missions',
 	},
 	{
 		url: 'https://cdn.wh-satano.ru/smg-wt-s1.webp',
-		file: 'war-thunder-esp-modules.webp',
-		alt: 'War Thunder aimbot lead calculator lock on enemy tank turret during ground battle',
+		file: 'warframe-esp-modules.webp',
+		alt: 'Warframe aimbot lead calculator lock on enemy Warframe turret during mission fight',
 	},
 	{
 		url: 'https://cdn.wh-satano.ru/smg-wt-s2.webp',
-		file: 'war-thunder-aimbot-menu.webp',
-		alt: 'War Thunder hacks cheat menu with aimbot, ballistic prediction, and FOV settings',
+		file: 'warframe-aimbot-menu.webp',
+		alt: 'Warframe cheats cheat menu with aimbot, ballistic prediction, and FOV settings',
 	},
 	{
 		url: 'https://cdn.wh-satano.ru/smg-wt-s3.webp',
-		file: 'war-thunder-radar-hack.webp',
-		alt: 'War Thunder radar hack 2D overlay showing flank vectors and enemy aircraft',
+		file: 'warframe-radar-hack.webp',
+		alt: 'Warframe radar hack 2D overlay showing spawn routes and enemy aircraft',
 	},
 	{
 		url: 'https://cdn.wh-satano.ru/wtfecs1.webp',
-		file: 'war-thunder-battle.webp',
-		alt: 'War Thunder hacks Realistic Battle with ESP boxes and aimbot active on capture zone',
+		file: 'warframe-mission.webp',
+		alt: 'Warframe cheats Steel Path mission with ESP boxes and aimbot active on capture zone',
 	},
 ];
 
@@ -80,4 +80,4 @@ for (const item of SOURCES) {
 	console.log(`  ✓ ${item.file} (+ variants)`);
 }
 
-console.log('Done — 7 War Thunder hack images installed.');
+console.log('Done — 7 Warframe cheat images installed.');

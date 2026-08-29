@@ -27,27 +27,27 @@ const STEAM_SHOTS = [
 
 /** Map existing SEO filenames → Steam screenshot index */
 const TARGETS = [
-	{ file: 'war-thunder-hacks-hero.webp', shot: 0 },
-	{ file: 'war-thunder-esp-overlay.webp', shot: 1 },
-	{ file: 'war-thunder-esp-tanks.webp', shot: 2 },
-	{ file: 'war-thunder-esp-modules.webp', shot: 3 },
-	{ file: 'war-thunder-aimbot-menu.webp', shot: 4 },
+	{ file: 'warframe-cheats-hero.webp', shot: 0 },
+	{ file: 'warframe-esp-overlay.webp', shot: 1 },
+	{ file: 'warframe-esp-enemies.webp', shot: 2 },
+	{ file: 'warframe-esp-modules.webp', shot: 3 },
+	{ file: 'warframe-aimbot-menu.webp', shot: 4 },
 	{ file: 'rust-recoil-trainer.webp', shot: 5 },
-	{ file: 'war-thunder-aimbot-ui.webp', shot: 6 },
-	{ file: 'war-thunder-wallhack-ui.webp', shot: 7 },
-	{ file: 'war-thunder-cheats-menu.webp', shot: 8 },
-	{ file: 'war-thunder-cheats-dashboard.webp', shot: 8 },
-	{ file: 'war-thunder-hacks-cover.webp', shot: 9 },
-	{ file: 'war-thunder-hacks-panel.webp', shot: 10 },
-	{ file: 'war-thunder-hacks-status.webp', shot: 11 },
-	{ file: 'rust-radar-ui.webp', shot: 2 },
-	{ file: 'war-thunder-soft-aim-ui.webp', shot: 4 },
-	{ file: 'war-thunder-cheats-dashboard.webp', shot: 1 },
+	{ file: 'warframe-aimbot-ui.webp', shot: 6 },
+	{ file: 'warframe-wallhack-ui.webp', shot: 7 },
+	{ file: 'warframe-cheats-menu.webp', shot: 8 },
+	{ file: 'warframe-cheats-dashboard.webp', shot: 8 },
+	{ file: 'warframe-cheats-cover.webp', shot: 9 },
+	{ file: 'warframe-cheats-panel.webp', shot: 10 },
+	{ file: 'warframe-cheats-status.webp', shot: 11 },
+	{ file: 'warframe-radar-ui.webp', shot: 2 },
+	{ file: 'warframe-soft-aim-ui.webp', shot: 4 },
+	{ file: 'warframe-cheats-dashboard.webp', shot: 1 },
 ];
 
 async function fetchBuffer(url) {
 	const res = await fetch(url, {
-		headers: { 'User-Agent': 'Mozilla/5.0 (compatible; War Thunder HacksSite/1.0)' },
+		headers: { 'User-Agent': 'Mozilla/5.0 (compatible; Warframe CheatsSite/1.0)' },
 	});
 	if (!res.ok) throw new Error(`Failed ${url}: ${res.status}`);
 	return Buffer.from(await res.arrayBuffer());

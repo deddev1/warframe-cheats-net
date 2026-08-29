@@ -1,5 +1,5 @@
 import { customerReviews, siteConfig } from './site';
-import { rustImages } from './rust';
+import { warframeImages } from './warframe';
 
 export const reviewsBasePath = '/reviews/';
 
@@ -11,32 +11,32 @@ export function absoluteReviewUrl(slug?: string): string {
 	return new URL(slug ? getReviewPath(slug) : reviewsBasePath, siteConfig.url).href;
 }
 
-/** Unique War Thunder screenshots for each review sitemap entry. */
+/** Unique Warframe screenshots for each review sitemap entry. */
 const reviewImagePaths = [
-	rustImages.espWallhack,
-	rustImages.aimbotCombat,
-	rustImages.radarHack,
-	rustImages.cover,
-	rustImages.loadoutBuilder,
-	rustImages.playerEsp,
-	rustImages.squadFight,
-	rustImages.headerArt,
-	rustImages.cheatsPackage,
-	rustImages.battleRoyaleCombat,
+	warframeImages.espWallhack,
+	warframeImages.aimbotCombat,
+	warframeImages.radarHack,
+	warframeImages.cover,
+	warframeImages.loadoutBuilder,
+	warframeImages.playerEsp,
+	warframeImages.squadFight,
+	warframeImages.headerArt,
+	warframeImages.cheatsPackage,
+	warframeImages.battleRoyaleCombat,
 ] as const;
 
 const reviewIndexOgImage = {
 	url: new URL(siteConfig.defaultOgImage, siteConfig.url).href,
-	title: 'War Thunder Hacks customer reviews',
-	caption: 'War Thunder Hacks buyer reviews for ESP, aimbot, radar, and cloud DMA',
+	title: 'Warframe Cheats customer reviews',
+	caption: 'Warframe Cheats buyer reviews for ESP, aimbot, radar, and cloud DMA',
 };
 
 function reviewImageForIndex(index: number) {
 	const path = reviewImagePaths[index % reviewImagePaths.length];
 	return {
 		url: new URL(path, siteConfig.url).href,
-		title: 'War Thunder Hacks review screenshot',
-		caption: 'War Thunder Hacks ESP, aimbot, and radar preview from buyer reviews',
+		title: 'Warframe Cheats review screenshot',
+		caption: 'Warframe Cheats ESP, aimbot, and radar preview from buyer reviews',
 	};
 }
 
@@ -73,7 +73,7 @@ export function getReviewSitemapEntries() {
 			images: [
 				{
 					url: image.url,
-					title: `War Thunder Hacks review by @${review.handle}`,
+					title: `Warframe Cheats review by @${review.handle}`,
 					caption: review.seoDescription,
 				},
 			],

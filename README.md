@@ -1,6 +1,6 @@
-# War Thunder Hacks — Marketing Site
+# Warframe Cheats — Marketing Site
 
-Static Astro 7 site for [warthunderhacks.com](https://warthunderhacks.com). Primary SEO focus: **War Thunder Hacks** (supporting: War Thunder hacks, war thunder esp, war thunder aimbot).
+Static Astro 7 site for [warframecheats.net](https://warframecheats.net). Primary SEO focus: **Warframe Cheats** (supporting: Warframe cheats, warframe esp, warframe aimbot).
 
 ## Stack
 
@@ -22,7 +22,7 @@ Build and validate sitemaps:
 npm run build:validate
 ```
 
-Refresh War Thunder atmosphere images (optional):
+Refresh Warframe atmosphere images (optional):
 
 ```bash
 npm run fetch:images
@@ -31,11 +31,11 @@ npm run optimize:images
 
 ## Deploy (Cloudflare Pages)
 
-1. Create a Cloudflare Pages project named **warthunderhacks**
+1. Create a Cloudflare Pages project named **warframecheats**
 2. Connect this repo or upload `dist/` after `npm run build`
 3. Build command: `npm run build`
 4. Output directory: `dist`
-5. Custom domain **warthunderhacks.com** (apex) and redirect **www** → apex
+5. Custom domain **warframecheats.net** (apex) and redirect **www** → apex
 6. Enable SSL **Always Use HTTPS**
 
 CLI deploy:
@@ -48,8 +48,8 @@ npm run pages:deploy
 
 - Node.js >= 22.12.0
 - Checkout URL in `src/data/site.ts` (`siteConfig.checkoutUrl`)
-- Canonical site URL: `https://warthunderhacks.com`
+- Canonical site URL: `https://warframecheats.net`
 
 ## License
 
-Private — for warthunderhacks.com deployment only.
+Private — for warframecheats.net deployment only.

@@ -1,5 +1,5 @@
 ---
-import { rustImages, productPreviewVideo } from '../data/rust';
+import { warframeImages, productPreviewVideo } from '../data/warframe';
 import { getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
@@ -26,7 +26,7 @@ const priority = Astro.props.priority ?? false;
 
 const { name = ui.product.title } = Astro.props;
 
-/** Localized alts aligned 1:1 with rustImages.product; undefined falls back to data alt. */
+/** Localized alts aligned 1:1 with warframeImages.product; undefined falls back to data alt. */
 const productAlts = [
 	ui.images.battleRoyale,
 	ui.images.playerEsp,
@@ -35,16 +35,16 @@ const productAlts = [
 	ui.images.rebootFight,
 ] as const;
 
-/** Hero still + five unique product thumbs — six War Thunder images, no repeats. */
+/** Hero still + five unique product thumbs — six Warframe images, no repeats. */
 const heroPreview = {
-	src: contentSrc(rustImages.hero),
-	fullSrc: rustImages.hero,
-	srcset: contentSrcSet(rustImages.hero),
-	alt: 'War Thunder hacks gameplay — ground battle combat overview',
+	src: contentSrc(warframeImages.hero),
+	fullSrc: warframeImages.hero,
+	srcset: contentSrcSet(warframeImages.hero),
+	alt: 'Warframe cheats gameplay — mission fight combat overview',
 };
 
-/** Screenshot thumbs only — each unique War Thunder still. */
-const images = rustImages.product.map((image, index) => ({
+/** Screenshot thumbs only — each unique Warframe still. */
+const images = warframeImages.product.map((image, index) => ({
 	src: contentSrc(image.src),
 	fullSrc: image.src,
 	alt: productAlts[index] ?? image.alt,
@@ -88,7 +88,7 @@ const lifetimePlan = productInfo.plans.find((plan) => plan.id === 'lifetime');
 					type="button"
 					class="product__play"
 					data-video-play
-					aria-label="Play War Thunder hacks gameplay preview"
+					aria-label="Play Warframe cheats gameplay preview"
 				>
 					<span class="product__play-icon" aria-hidden="true">
 						<svg width="28" height="28" viewBox="0 0 24 24" fill="none">
@@ -103,7 +103,7 @@ const lifetimePlan = productInfo.plans.find((plan) => plan.id === 'lifetime');
 					<span class="product__play-label">Play preview</span>
 				</button>
 			</div>
-			<span class="product__credit" aria-hidden="true">War Thunder</span>
+			<span class="product__credit" aria-hidden="true">Warframe</span>
 		</figure>
 		<div class="product__thumbs" role="group" aria-label="Product preview images">
 			{
@@ -225,8 +225,8 @@ const lifetimePlan = productInfo.plans.find((plan) => plan.id === 'lifetime');
 		<div class="buy-also">
 			<p class="buy-also__label">{ui.common.relatedPages}</p>
 			<div class="buy-also__row">
-				<a href={getLocalizedPath('war-thunder-esp', locale)} class="alt-link">{ui.nav.esp}</a>
-				<a href={getLocalizedPath('war-thunder-aimbot', locale)} class="alt-link">{ui.nav.aimbot}</a>
+				<a href={getLocalizedPath('warframe-esp', locale)} class="alt-link">{ui.nav.esp}</a>
+				<a href={getLocalizedPath('warframe-aimbot', locale)} class="alt-link">{ui.nav.aimbot}</a>
 				<a href={getLocalizedPath('features', locale)} class="alt-link">{ui.nav.features}</a>
 				<a href={getLocalizedPath('setup', locale)} class="alt-link">{ui.nav.setup}</a>
 				<a href={getLocalizedPath('pricing', locale)} class="alt-link">{ui.nav.pricing}</a>

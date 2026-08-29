@@ -8,19 +8,19 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SRC = path.resolve(ROOT, '..', 'amansand');
 
 const UI_REPLACEMENTS = [
-	['Warzone Cheats', 'War Thunder Hacks'],
-	['Warzone cheats', 'Rust cheats'],
-	['Warzone Cheats', 'War Thunder Hacks'],
-	['Call of Duty: Warzone', 'Rust'],
-	['Call of Duty Warzone', 'Rust'],
-	['Call of Duty', 'Rust'],
-	['Warzone PC', 'Rust PC'],
-	['for Warzone', 'for War Thunder'],
-	['Warzone ', 'Rust '],
+	['Warzone Cheats', 'Warframe Cheats'],
+	['Warzone cheats', 'Warframe cheats'],
+	['Warzone Cheats', 'Warframe Cheats'],
+	['Call of Duty: Warzone', 'Warframe'],
+	['Call of Duty Warzone', 'Warframe'],
+	['Call of Duty', 'Warframe'],
+	['Warzone PC', 'Warframe PC'],
+	['for Warzone', 'for Warframe'],
+	['Warzone ', 'Warframe '],
 	['warzone ', 'rust '],
 	['Ricochet maintenance', 'anti-cheat maintenance'],
-	['Ricochet anti-cheat', 'Gaijin Easy Anti-Cheat (EAC)'],
-	['Ricochet', 'Gaijin Easy Anti-Cheat (EAC)'],
+	['Ricochet anti-cheat', 'Digital Extremes anti-cheat (EAC)'],
+	['Ricochet', 'Digital Extremes anti-cheat (EAC)'],
 	['operatorEsp', 'playerEsp'],
 	['gulagFight', 'rebootFight'],
 	['alMazrah', 'battleRoyaleIsland'],
@@ -28,14 +28,14 @@ const UI_REPLACEMENTS = [
 	['operator', 'player'],
 	['Operators', 'Players'],
 	['Operator', 'Player'],
-	['Al Mazrah', 'War Thunder'],
-	['Verdansk', 'War Thunder'],
-	['Resurgence', 'capture zones'],
+	['Al Mazrah', 'Warframe'],
+	['Verdansk', 'Warframe'],
+	['Resurgence', 'mission objectives'],
 	['gulag', 'control point'],
-	['warzonescheats.net', 'warthunderhacks.com'],
-	['Trucos Warzone', 'Trucos Rust'],
-	['Triches Warzone', 'Triches Rust'],
-	['Cheats Warzone', 'Cheats War Thunder'],
+	['warzonescheats.net', 'warframecheats.net'],
+	['Trucos Warzone', 'Trucos Warframe'],
+	['Triches Warzone', 'Triches Warframe'],
+	['Cheats Warzone', 'Cheats Warframe'],
 ];
 
 function apply(content) {
@@ -55,8 +55,8 @@ for (const file of ['ui-strings-part1.mjs', 'ui-strings-part2.mjs']) {
 // Fix pages-en eac key
 let pagesEn = await readFile(path.join(ROOT, 'scripts/i18n-data/pages-en.mjs'), 'utf8');
 pagesEn = pagesEn.replace(/\teac: \{/, "\t'eac-bypass': {");
-pagesEn = pagesEn.replace(/Rust Warzone/g, 'Rust');
-pagesEn = pagesEn.replace(/for War Thunder Warzone/g, 'for War Thunder');
+pagesEn = pagesEn.replace(/Warframe Warzone/g, 'Warframe');
+pagesEn = pagesEn.replace(/for Warframe Warzone/g, 'for Warframe');
 await writeFile(path.join(ROOT, 'scripts/i18n-data/pages-en.mjs'), pagesEn);
 
 // Fix pages-i18n

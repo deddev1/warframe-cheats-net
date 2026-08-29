@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import { getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
-import { rustImages } from '../data/rust';
+import { warframeImages } from '../data/warframe';
 import { heroPreloadSrc, heroSizes, heroSrcSet, contentSrc, contentSrcSet, galleryTileSizes } from '../lib/responsive-images';
 import { englishPaths, pageIds, type PageId } from '../data/i18n/routing';
 import { defaultLocale } from '../data/i18n/locales';
@@ -37,10 +37,10 @@ const {
 	heading,
 	intro,
 	eyebrow,
-	heroImage = rustImages.hero,
-	heroAlt = 'War Thunder hacks product preview',
-	gallery = rustImages.product.slice(0, 3),
-	galleryTitle = 'War Thunder hacks UI reference',
+	heroImage = warframeImages.hero,
+	heroAlt = 'Warframe cheats product preview',
+	gallery = warframeImages.product.slice(0, 3),
+	galleryTitle = 'Warframe cheats UI reference',
 	ctaPrimary,
 	ctaSecondary,
 	showGallery = true,
@@ -72,7 +72,7 @@ const normalizedGallery = gallery
 			};
 		}
 
-		const file = item.split('/').pop()?.replace(/\.webp$/i, '') ?? 'war-thunder-cheats';
+		const file = item.split('/').pop()?.replace(/\.webp$/i, '') ?? 'warframe-cheats';
 		const keywordAlt = file
 			.split('-')
 			.map((part) => part.charAt(0).toUpperCase() + part.slice(1))
@@ -91,7 +91,7 @@ const breadcrumbs = [
 	{ label: heading },
 ];
 
-const isHeroLcp = heroImage === rustImages.hero;
+const isHeroLcp = heroImage === warframeImages.hero;
 const lcpImage = isHeroLcp ? heroPreloadSrc : undefined;
 const lcpImageSrcSet = isHeroLcp ? heroSrcSet : undefined;
 const lcpImageSizes = isHeroLcp ? heroSizes : undefined;
