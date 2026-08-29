@@ -10,6 +10,7 @@ import { buildPageExtraGraph, pageFaqClusters } from '../data/schema';
 import SeoFaqPanel from '../components/SeoFaqPanel.astro';
 import PricingPlans from '../components/PricingPlans.astro';
 import PricingFeatureList from '../components/PricingFeatureList.astro';
+import FeaturesDetail from '../components/FeaturesDetail.astro';
 
 interface Props {
 	locale: LocaleCode;
@@ -62,8 +63,8 @@ const ctaSecondaryHref = page.ctaSecondaryHref
 	galleryTitle={page.galleryTitle}
 	locale={locale}
 	pageId={pageId}
-	showGallery={pageId !== 'pricing'}
-	hideBanner={pageId === 'pricing'}
+	showGallery={pageId !== 'pricing' && pageId !== 'features'}
+	hideBanner={pageId === 'pricing' || pageId === 'features'}
 	extraGraph={extraGraph}
 	ctaPrimary={{ href: siteConfig.checkoutUrl, label: page.ctaPrimary }}
 	ctaSecondary={
@@ -74,8 +75,10 @@ const ctaSecondaryHref = page.ctaSecondaryHref
 >
 	{pageId === 'pricing' && <PricingPlans locale={locale} />}
 	{pageId === 'pricing' && <PricingFeatureList locale={locale} />}
+	{pageId === 'features' && <PricingFeatureList locale={locale} showFullLink={false} />}
+	{pageId === 'features' && <FeaturesDetail locale={locale} />}
 	{
-		!(pageId === 'pricing') &&
+		!(pageId === 'pricing' || pageId === 'features') &&
 		page.sections.map((section) => (
 			<section class="card-panel">
 				<h2>{section.h2}</h2>

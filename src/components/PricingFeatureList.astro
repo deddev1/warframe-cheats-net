@@ -6,9 +6,11 @@ import { paymentMethods, productFeatureCategories, productInfo } from '../data/s
 
 interface Props {
 	locale?: LocaleCode;
+	showFullLink?: boolean;
 }
 
 const locale = Astro.props.locale ?? defaultLocale;
+const showFullLink = Astro.props.showFullLink ?? true;
 const ui = getUi(locale);
 const featuresHref = getLocalizedPath('features', locale);
 ---
@@ -76,12 +78,16 @@ const featuresHref = getLocalizedPath('features', locale);
 		}
 	</div>
 
-	<a href={featuresHref} class="pricing-features__full-link">
-		{ui.nav.features} — full breakdown &amp; explanations
-		<svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-			<path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
-		</svg>
-	</a>
+	{
+		showFullLink && (
+			<a href={featuresHref} class="pricing-features__full-link">
+				{ui.nav.features} — full breakdown &amp; explanations
+				<svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+					<path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+				</svg>
+			</a>
+		)
+	}
 </section>
 
 <style>

@@ -3,7 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Hero from '../components/Hero.astro';
 import BreadcrumbBar from '../components/BreadcrumbBar.astro';
-import ProductCard from '../components/ProductCard.astro';
+import PricingPlans from '../components/PricingPlans.astro';
+import PricingFeatureList from '../components/PricingFeatureList.astro';
 import Gallery from '../components/Gallery.astro';
 import HomeSeo from '../components/HomeSeo.astro';
 import CustomerReviews from '../components/CustomerReviews.astro';
@@ -109,8 +110,9 @@ const extraGraph: Record<string, unknown>[] =
 			]}
 		/>
 		<section class="site__section site__section--store" id="store" aria-label={ui.product.title}>
-			<div class="shell">
-				<ProductCard locale={locale} />
+			<div class="shell store-stack">
+				<PricingPlans locale={locale} />
+				<PricingFeatureList locale={locale} />
 			</div>
 		</section>
 		<section class="site__section site__section--seo">
@@ -181,6 +183,11 @@ const extraGraph: Record<string, unknown>[] =
 
 	.site__section {
 		padding-block: var(--section-space);
+	}
+
+	.store-stack {
+		display: grid;
+		gap: 1.25rem;
 	}
 
 	.site__section--seo {

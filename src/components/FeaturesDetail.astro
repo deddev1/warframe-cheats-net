@@ -1,0 +1,201 @@
+---
+import { getUi } from '../data/i18n';
+import { getLocalizedPath } from '../data/i18n/routing';
+import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
+import { productFeatureDetails, productInfo, siteConfig } from '../data/site';
+
+interface Props {
+	locale?: LocaleCode;
+}
+
+const locale = Astro.props.locale ?? defaultLocale;
+const ui = getUi(locale);
+const pricingHref = getLocalizedPath('pricing', locale);
+---
+
+<section class="features-detail" aria-labelledby="features-detail-title">
+	<header class="features-detail__head">
+		<h2 id="features-detail-title">Full feature breakdown</h2>
+		<p>
+			Every control in {productInfo.name} explained — what it does, when to use it, and how it
+			fits Steel Path, Sorties, and open world farming.
+		</p>
+	</header>
+
+	{
+		productFeatureDetails.map((section) => (
+			<article class="features-detail__section" id={`feature-${section.id}`}>
+				<div class="features-detail__section-head">
+					<h3>{section.title}</h3>
+					<p>{section.summary}</p>
+				</div>
+				<div class="features-detail__grid">
+					{section.items.map((item) => (
+						<div class="features-detail__item">
+							<h4>
+								<span class="features-detail__chevron" aria-hidden="true">&gt;</span>
+								{item.name}
+							</h4>
+							<p>{item.description}</p>
+						</div>
+					))}
+				</div>
+			</article>
+		))
+	}
+
+	<div class="features-detail__cta">
+		<a href={pricingHref} class="features-detail__pricing-link btn-buy">
+			{ui.common.buyNow} — from ${productInfo.plans[0].price}/mo
+		</a>
+		<a href={siteConfig.checkoutUrl} class="features-detail__checkout-link" rel="noopener noreferrer">
+			{ui.product.addToCart}
+		</a>
+	</div>
+</section>
+
+<style>
+	.features-detail {
+		display: grid;
+		gap: 1.5rem;
+		width: 100%;
+		margin: 0 0 2rem;
+	}
+
+	.features-detail__head {
+		text-align: center;
+		display: grid;
+		gap: 0.55rem;
+	}
+
+	.features-detail__head h2 {
+		margin: 0;
+		font-family: var(--font-display);
+		font-size: clamp(1.5rem, 3vw, 2rem);
+		font-weight: 800;
+		letter-spacing: -0.02em;
+	}
+
+	.features-detail__head p {
+		margin: 0 auto;
+		max-width: 40rem;
+		color: var(--color-muted);
+		font-size: 0.95rem;
+		line-height: 1.6;
+	}
+
+	.features-detail__section {
+		padding: 1.25rem 1.35rem;
+		border-radius: var(--radius-card);
+		border: 1px solid rgba(168, 85, 247, 0.16);
+		background: rgba(14, 12, 20, 0.92);
+	}
+
+	.features-detail__section-head {
+		margin-bottom: 1rem;
+		padding-bottom: 0.85rem;
+		border-bottom: 1px solid rgba(168, 85, 247, 0.14);
+	}
+
+	.features-detail__section-head h3 {
+		margin: 0 0 0.4rem;
+		font-size: 1.15rem;
+		font-weight: 800;
+		color: var(--color-ink);
+	}
+
+	.features-detail__section-head p {
+		margin: 0;
+		color: var(--color-muted);
+		font-size: 0.88rem;
+		line-height: 1.55;
+	}
+
+	.features-detail__grid {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.75rem;
+	}
+
+	.features-detail__item {
+		padding: 0.85rem 0.95rem;
+		border-radius: 0.7rem;
+		border: 1px solid rgba(168, 85, 247, 0.12);
+		background: rgba(22, 18, 30, 0.75);
+	}
+
+	.features-detail__item h4 {
+		display: flex;
+		align-items: center;
+		gap: 0.45rem;
+		margin: 0 0 0.35rem;
+		font-size: 0.88rem;
+		font-weight: 750;
+		color: var(--color-ink);
+	}
+
+	.features-detail__chevron {
+		color: #e879f9;
+		font-size: 0.75rem;
+		font-weight: 800;
+	}
+
+	.features-detail__item p {
+		margin: 0;
+		color: var(--color-muted);
+		font-size: 0.82rem;
+		line-height: 1.5;
+	}
+
+	.features-detail__cta {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+		justify-content: center;
+		padding-top: 0.5rem;
+	}
+
+	.features-detail__pricing-link {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.95rem 1.35rem;
+		border-radius: 0.75rem;
+		font-weight: 700;
+		text-decoration: none;
+	}
+
+	.features-detail__checkout-link {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.95rem 1.35rem;
+		border-radius: 0.75rem;
+		border: 1px solid rgba(192, 132, 252, 0.35);
+		background: rgba(22, 18, 30, 0.9);
+		color: var(--color-muted);
+		font-weight: 650;
+		text-decoration: none;
+		transition: color 0.2s ease, border-color 0.2s ease;
+	}
+
+	.features-detail__checkout-link:hover {
+		color: var(--color-ink);
+		border-color: rgba(216, 180, 254, 0.55);
+	}
+
+	@media (max-width: 768px) {
+		.features-detail__grid {
+			grid-template-columns: 1fr;
+		}
+
+		.features-detail__cta {
+			flex-direction: column;
+		}
+
+		.features-detail__pricing-link,
+		.features-detail__checkout-link {
+			width: 100%;
+		}
+	}
+</style>
