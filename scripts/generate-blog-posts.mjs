@@ -13,10 +13,10 @@ const OUT = join(__dirname, '..', 'src', 'data', 'blog', 'posts.generated.ts');
 const LOCALES = ['en'];
 
 const EXT = {
-	epic: '<a href="https://www.warframe.com/" target="_blank" rel="noopener noreferrer">Digital Extremes Warframe</a>',
-	rust: '<a href="https://www.warframe.com/" target="_blank" rel="noopener noreferrer">Warframe</a>',
-	status: '<a href="https://www.warframe.com/" target="_blank" rel="noopener noreferrer">Digital Extremes Warframe status</a>',
-	realisticBattles: '<a href="https://www.warframe.com//gameplay/game-modes/realistic-battles" target="_blank" rel="noopener noreferrer">Warframe Steel Path missions</a>',
+	epic: '<a href="https://www.digitalextremes.com/" target="_blank" rel="noopener noreferrer">Digital Extremes</a>',
+	rust: '<a href="https://www.warframe.com/" target="_blank" rel="noopener noreferrer">official Warframe patch notes</a>',
+	status: '<a href="https://forums.warframe.com/forum/3-pc-update-notes/" target="_blank" rel="noopener noreferrer">Warframe PC update notes</a>',
+	realisticBattles: '<a href="https://www.warframe.com/game-guide" target="_blank" rel="noopener noreferrer">Warframe Steel Path missions</a>',
 };
 
 /** @typedef {{ h2: string, paragraphs: string[] }} Section */
@@ -44,7 +44,7 @@ const sources = [
 			{
 				h2: 'Read patches like a player, not a spectator',
 				paragraphs: [
-					'Most players misread patch notes by chasing the loudest bullet point. A small SMG nerf gets a rant video while a quiet mobility tweak silently rewires mid-game. The best Steel Path players treat patches like accountants — what changed in expected value?',
+					'Most players misread patch notes by chasing the loudest bullet point. A small shotgun nerf gets a rant video while a quiet mobility tweak silently rewires mid-game. The best Steel Path players treat patches like accountants — what changed in expected value?',
 					`Official notes publish through ${EXT.rust} and ${EXT.epic}. Use those primary sources first, then translate each line into inventory decisions for your playlist.`,
 					'Pro Tip — Three-question filter: For every note ask: (1) Does this change my farm route? (2) Does this change my 5-slot priority? (3) Does this change my fight distance? If all three are no, ignore the drama.',
 				],
@@ -53,13 +53,13 @@ const sources = [
 				h2: 'Buff, nerf, and vault framework',
 				paragraphs: [
 					'Vaults are binary — remove the item from your mental loot pool immediately. Heavy nerfs demote a weapon from core to flex. Light nerfs keep a gun if your accuracy is above lobby average. Buffs deserve a 10-game test before full buy-in. New items need spawn rate and best distance learning first.',
-					'If Hammer AR takes a minor bloom or damage trim, it can still be S-tier on expected value — see our <a href="/blog/hammer-ar-s-tier-data-analysis/">Hammer AR tier analysis</a>. If a shotgun loses substantial headshot multiplier, close-range TTK windows shift the same day.',
+					'If Soma Prime takes a minor bloom or damage trim, it can still be S-tier on expected value — see our <a href="/blog/hammer-ar-s-tier-data-analysis/">Soma Prime tier analysis</a>. If a shotgun loses substantial headshot multiplier, close-range TTK windows shift the same day.',
 				],
 			},
 			{
 				h2: 'How notes reshuffle loadout priority',
 				paragraphs: [
-					'When mid-range ARs are strong, prioritize rarity on AR earlier in farm routes. When mobility is nerfed or vaulted, uncontested chains with shorter hops beat hot drops that require escapes. When heals are buffed, aggressive third-parties become safer — which powers strategies in our <a href="/blog/ability-only-meta-broken-aggressive-strategies/">mission objectives aggression guide</a>.',
+					'When mid-range ARs are strong, prioritize rarity on AR earlier in farm routes. When mobility is nerfed or vaulted, uncontested chains with shorter hops beat hot drops that require escapes. When heals are buffed, aggressive third-parties become safer — which powers strategies in our <a href="/blog/warframe-cheats-complete-guide-2026/">co-op missions aggression guide</a>.',
 					'Also separate balance patches from cosmetic and shop notes. Skin leaks are fun; they do not change TTK. Keep patch-day focus on weapons, healing, movement, and map tileset area changes.',
 				],
 			},
@@ -81,21 +81,21 @@ const sources = [
 		category: 'Skin Leaks & Cosmetics',
 		featured: false,
 		slug: 'chapter-7-season-3-skin-leaks-Platinum',
-		title: 'major update Season 3 Skin Leaks: V-Bucks Worth Buying',
+		title: 'major update Season 3 Skin Leaks: Platinum Worth Buying',
 		metaDescription:
-			'major update Season 3 Warframe skin leaks and shop advice — which cosmetics are worth V-Bucks before Season 4. Save smart and skip FOMO bundles today.',
-		h1: 'major update Season 3 Skin Leaks Worth Your V-Bucks',
+			'major update Season 3 Warframe skin leaks and shop advice — which cosmetics are worth Platinum before Season 4. Save smart and skip FOMO bundles today.',
+		h1: 'major update Season 3 Skin Leaks Worth Your Platinum',
 		intro:
 			'Season 4 is coming. Here is which leaked and rotating cosmetics are actually worth buying before the shop resets hard.',
 		keywords: ['rust skin leaks', 'Platinum', 'cosmetics', 'item shop', 'season 4', 'warframe intel'],
-		imageAlt: 'Warframe major update Season 3 skin leaks and V-Bucks shopping guide',
+		imageAlt: 'Warframe major update Season 3 skin leaks and Platinum shopping guide',
 		sections: [
 			{
 				h2: 'Stop impulse buying before Season 4',
 				paragraphs: [
-					'Most players blow V-Bucks the week before a new season and then cannot buy the Prime Access. Controversial take: most Item Shop impulse buys do not improve your win rate or locker happiness a month later.',
+					'Most players blow Platinum the week before a new season and then cannot buy the Prime Access. Controversial take: most Item Shop impulse buys do not improve your win rate or locker happiness a month later.',
 					`Shop rotations and Prime Access exclusives are official through ${EXT.rust}. Leaks are entertainment — not a shopping list. Use them to decide what to skip.`,
-					'Pro Tip — Locker performance: Pros pick clean silhouettes. Busy outfits can hide enemy outlines in chaotic mission objectives endgames. Style is cool; readability wins games.',
+					'Pro Tip — Locker performance: Pros pick clean silhouettes. Busy outfits can hide enemy outlines in chaotic co-op missions endgames. Style is cool; readability wins games.',
 				],
 			},
 			{
@@ -110,7 +110,7 @@ const sources = [
 				paragraphs: [
 					'Treat late-season leak waves as theme previews, not confirmed shop dates. If a high-demand collab leaks, decide budget before it hits — not during the five-minute panic.',
 					'Daily reset ritual: open shop for 60 seconds, check wishlist, leave. Liquidity is power at season transitions. For Steel Path missions readability tips, pair this with our <a href="/blog/pro Tenno-settings-pro-setup/">pro settings breakdown</a>.',
-					'Try This Today: Write a 5-skin wishlist max. Set a V-Bucks floor you will not spend below until Season 4. Skip one FOMO bundle on purpose this week.',
+					'Try This Today: Write a 5-skin wishlist max. Set a Platinum floor you will not spend below until Season 4. Skip one FOMO bundle on purpose this week.',
 				],
 			},
 		],
@@ -123,20 +123,20 @@ const sources = [
 		category: 'Weapon Tier Lists',
 		featured: true,
 		slug: 'hammer-ar-s-tier-data-analysis',
-		title: 'Weapon Tier List: Why Hammer AR Is Actually S-Tier',
+		title: 'Weapon Tier List: Why Soma Prime Is Actually S-Tier',
 		metaDescription:
-			'Data-backed Warframe weapon tier list: why Hammer AR is S-tier — TTK windows, bloom control, and loadout pairings for major update Season 3 Steel Path.',
-		h1: 'Weapon Tier List: Why the Hammer AR Is S-Tier',
+			'Data-backed Warframe weapon tier list: why Soma Prime is S-tier — TTK windows, bloom control, and loadout pairings for major update Season 3 Steel Path.',
+		h1: 'Weapon Tier List: Why the Soma Prime Is S-Tier',
 		intro:
-			'Community tier lists underrate the Hammer AR. The damage-per-mag and mid-range TTK numbers say otherwise.',
-		keywords: ['hammer ar', 'rust tier list', 'weapons', 'ttk', 'warframe intel'],
-		imageAlt: 'Warframe Hammer AR S-tier weapon tier list data analysis major update Season 3',
+			'Community tier lists underrate the Soma Prime. The damage-per-mag and mid-range TTK numbers say otherwise.',
+		keywords: ['Soma Prime', 'rust tier list', 'weapons', 'ttk', 'warframe intel'],
+		imageAlt: 'Warframe Soma Prime S-tier weapon tier list data analysis major update Season 3',
 		sections: [
 			{
-				h2: 'Why the Hammer AR belongs in S-tier',
+				h2: 'Why the Soma Prime belongs in S-tier',
 				paragraphs: [
-					"Creator tier lists are entertainment, not science. They rank flashy mythics while the Hammer AR quietly prints mid-range eliminations because damage-per-second consistency beats higher-ceiling guns average players cannot control.",
-					'S-tier means best expected value across 100 Steel Path fights. Hammer wins at 30–70 meters — the distances where mission objectives and endgame actually happen. Shotguns own 0–15m. Snipers own 80m+. Everything between is AR country.',
+					"Creator tier lists are entertainment, not science. They rank flashy mythics while the Soma Prime quietly prints mid-range eliminations because damage-per-second consistency beats higher-ceiling guns average players cannot control.",
+					'S-tier means best expected value across 100 Steel Path fights. Hammer wins at 30–70 meters — the distances where co-op missions and endgame actually happen. Shotguns own 0–15m. Snipers own 80m+. Everything between is AR country.',
 					`Confirm live values after patches on ${EXT.rust}. Hierarchy logic stays useful even when decimals nudge.`,
 					'Pro Tip — Spray discipline: Pros tap or micro-burst until bloom settles, then commit. Treat Hammer like a laser until the enemy wide-peeks — then dump.',
 				],
@@ -152,8 +152,8 @@ const sources = [
 			{
 				h2: 'Loadout pairings, mistakes, and practice',
 				paragraphs: [
-					'Core: Hammer AR + high-burst shotgun + mobility + heals. In mission objectives, this supports the laddering strategies in our <a href="/blog/ability-only-meta-broken-aggressive-strategies/">aggression guide</a>.',
-					'Common mistakes: full-spraying from 80m+, re-peeking the same pixel, swapping to SMG at 40m out of habit, never practicing crouch-spray in Creative.',
+					'Core: Soma Prime + high-burst shotgun + mobility + heals. In co-op missions, this supports the laddering strategies in our <a href="/blog/warframe-cheats-complete-guide-2026/">aggression guide</a>.',
+					'Common mistakes: full-spraying from 80m+, re-peeking the same pixel, swapping to shotgun at 40m out of habit, never practicing crouch-spray in Creative.',
 					'Try This Today: Prioritize Hammer for 10 games. Count your first four bullets in every mid fight. If you die inside 15m without shotgun out, fix loadout timing — not the AR.',
 					'Players who also use aim-assist tooling can review <a href="/warframe-aimbot/">Warframe Aimbot</a> profiles after they lock a sens — mechanics first, tools second.',
 				],
@@ -165,22 +165,22 @@ const sources = [
 		imageKey: 'battleRoyaleCombat',
 		published: '2026-07-22',
 		updated: '2026-08-01',
-		category: 'mission objectives',
+		category: 'co-op missions',
 		featured: true,
-		slug: 'ability-only-meta-broken-aggressive-strategies',
-		title: 'mission objectives Meta Broken: 5 Aggressive Pro Strategies',
+		slug: 'warframe-cheats-complete-guide-2026',
+		title: 'co-op missions Meta Broken: 5 Aggressive Pro Strategies',
 		metaDescription:
-			'Break the passive mission objectives meta with 5 aggressive Warframe strategies — timings, damage windows, and fight paths that win Steel Path in major update Season 3.',
-		h1: 'The mission objectives Meta Is Broken: 5 Aggressive Strategies',
+			'Break the passive co-op missions meta with 5 aggressive Warframe strategies — timings, damage windows, and fight paths that win Steel Path in major update Season 3.',
+		h1: 'The co-op missions Meta Is Broken: 5 Aggressive Strategies',
 		intro:
-			'Passive flankinging is dead weight. These five aggressive mission objectives strategies flip mid-game fights before the lobby even rotates.',
+			'Passive flankinging is dead weight. These five aggressive co-op missions strategies flip mid-game fights before the lobby even rotates.',
 		keywords: ['open world missions', 'rust Steel Path', 'aggressive strategies', 'pro tips', 'warframe intel'],
-		imageAlt: 'Warframe mission objectives aggressive fight meta strategies major update Season 3',
+		imageAlt: 'Warframe co-op missions aggressive fight meta strategies major update Season 3',
 		sections: [
 			{
-				h2: 'Why the mission objectives meta feels soft',
+				h2: 'Why the co-op missions meta feels soft',
 				paragraphs: [
-					'Most mission objectives players wait behind a rock for the last two teams to trade, then spray into a mess. That soft meta is why ranks stall. Strong fighters manufacture first-shot advantage and leave before the flank arrives.',
+					'Most co-op missions players wait behind a rock for the last two teams to trade, then spray into a mess. That soft meta is why ranks stall. Strong fighters manufacture first-shot advantage and leave before the flank arrives.',
 					'A clean first-shot AR spray at 40–55 meters can delete 80–120 HP before the opponent ads. That window is the game. Information tools like <a href="/warframe-esp/">Warframe ESP</a> help — but aggression still needs cover discipline.',
 					'Pro Tip — Decide your exit before you swing. Take a 150+ damage window, then hard disengage with mobility before the usual 4–7 second flanking clock.',
 				],
@@ -197,8 +197,8 @@ const sources = [
 				h2: 'Warmup checklist and next guides',
 				paragraphs: [
 					'before Steel Path: 10 minutes aim or peek maps, loadout priority AR + shotgun + mobility + heals, two tileset areas with strong cover ladders, and a 10-game first-shot aggression block.',
-					'Pair this article with <a href="/blog/secret-loot-routes-full-gold/">farm routes</a>, <a href="/blog/hammer-ar-s-tier-data-analysis/">Hammer AR tiers</a>, and <a href="/blog/creative-warmup-maps-pros-use/">Creative warmups</a>.',
-					'Try This Today: Queue mission objectives and force first contact when you have shield + AR. Track whether you disengaged before the 7-second flanking window.',
+					'Pair this article with <a href="/blog/secret-loot-routes-full-gold/">farm routes</a>, <a href="/blog/hammer-ar-s-tier-data-analysis/">Soma Prime tiers</a>, and <a href="/blog/creative-warmup-maps-pros-use/">Simulacrum warmups</a>.',
+					'Try This Today: Queue co-op missions and force first contact when you have shield + AR. Track whether you disengaged before the 7-second flanking window.',
 				],
 			},
 		],
@@ -231,14 +231,14 @@ const sources = [
 				h2: 'Drop EV and loadout patterns',
 				paragraphs: [
 					'Score every tileset area on contest rate, loot quality by ~2:00, zone pain, exit path, and split potential. Edge tileset areas with clean exits often beat sexy mid tileset areas that look good on stream.',
-					'Expect shotgun + mid AR (often Hammer-class) + mobility + heals as the spine. Mythics are taken when free, not forced — matching our <a href="/blog/hammer-ar-s-tier-data-analysis/">Hammer AR analysis</a>.',
+					'Expect shotgun + mid AR (often Hammer-class) + mobility + heals as the spine. Mythics are taken when free, not forced — matching our <a href="/blog/hammer-ar-s-tier-data-analysis/">Soma Prime analysis</a>.',
 				],
 			},
 			{
 				h2: 'What translates to Steel Path',
 				paragraphs: [
 					'Translate loot-timer discipline, loadout spine, early rotates, and selective fights. Do not blindly mirror a trio drop in solo queue.',
-					'Winners rotate early enough to choose sides. Zone edge pressure from our <a href="/blog/ability-only-meta-broken-aggressive-strategies/">mission objectives guide</a> shows up constantly in endgames.',
+					'Winners rotate early enough to choose sides. Zone edge pressure from our <a href="/blog/warframe-cheats-complete-guide-2026/">co-op missions guide</a> shows up constantly in endgames.',
 					'Try This Today: Watch 15 minutes of a winner VOD with five timestamps. Steal one mid-game habit only. Run it for a 6-game mission session.',
 				],
 			},
@@ -246,7 +246,7 @@ const sources = [
 	},
 	{
 		id: 'secret-loot-routes',
-		imageKey: 'battleRoyaleIslandMap',
+		imageKey: 'openWorldTilesetMap',
 		published: '2026-07-18',
 		updated: '2026-08-01',
 		category: 'Steel Path missions Meta',
@@ -280,7 +280,7 @@ const sources = [
 			{
 				h2: 'Convert gold guns into wins',
 				paragraphs: [
-					'Pair these routes with <a href="/blog/ability-only-meta-broken-aggressive-strategies/">mission objectives aggression</a> and <a href="/blog/hammer-ar-s-tier-data-analysis/">Hammer AR tiers</a>. Leave spawn rich so mid-game becomes a skill check.',
+					'Pair these routes with <a href="/blog/warframe-cheats-complete-guide-2026/">co-op missions aggression</a> and <a href="/blog/hammer-ar-s-tier-data-analysis/">Soma Prime tiers</a>. Leave spawn rich so mid-game becomes a skill check.',
 					'If you use ability ESP markers in practice, read <a href="/warframe-esp/">Warframe ESP</a> for category toggles — then still run the timer so habits stay sharp without overlays.',
 					'Try This Today: Run one uncontested chain for 8 games. Screenshot inventory at 2:30 and compare rarities before adding a contested edge day.',
 				],
@@ -314,7 +314,7 @@ const sources = [
 			{
 				h2: 'Sensitivity, binds, and performance',
 				paragraphs: [
-					'Use an eDPI band that lets you 180 with a controlled swipe without over-flicking shotguns. If you overshoot close targets, lower slightly. If you cannot track strafers at 40m with Hammer AR, raise cautiously — then lock settings for 14 days.',
+					'Use an eDPI band that lets you 180 with a controlled swipe without over-flicking shotguns. If you overshoot close targets, lower slightly. If you cannot track strafers at 40m with Soma Prime, raise cautiously — then lock settings for 14 days.',
 					'Put edit, crouch, and mobility on keys you can hit while still aiming. Make slot 1 shotgun and slot 2 AR muscle memory. Prefer performance clarity over cinema settings; motion blur off.',
 					`Hardware and Steel Path missions context evolve, but fundamentals stay — see ${EXT.realisticBattles} for high-level play standards.`,
 				],
@@ -322,7 +322,7 @@ const sources = [
 			{
 				h2: 'Champion-style practice routine',
 				paragraphs: [
-					'0–10 minutes aim tracker, 10–20 peek or edit drills, 20–30 realistic fights, then Steel Path. Pair with our <a href="/blog/creative-warmup-maps-pros-use/">Creative warmup map categories</a>.',
+					'0–10 minutes aim tracker, 10–20 peek or edit drills, 20–30 realistic fights, then Steel Path. Pair with our <a href="/blog/creative-warmup-maps-pros-use/">Simulacrum warmup map categories</a>.',
 					'If you later configure Aimbot smoothness for practice tooling, start from <a href="/warframe-aimbot/">soft aim</a> after your raw sens is locked — never chase both variables at once.',
 					'Try This Today: Write dpi + sens, adjust at most once by a small percent, then play 5 games without touching settings again.',
 				],
@@ -334,32 +334,32 @@ const sources = [
 		imageKey: 'playerEsp',
 		published: '2026-07-08',
 		updated: '2026-08-01',
-		category: 'Creative Mode',
+		category: 'Simulacrum',
 		featured: false,
 		slug: 'creative-warmup-maps-pros-use',
-		title: '10 Creative Warmup Maps Pros Use before Steel Path',
+		title: '10 Simulacrum warmup Maps Pros Use before Steel Path',
 		metaDescription:
-			'Ten Warframe Creative warmup map categories and a 25-minute routine pros use before Steel Path — aim, peeks, edits, and mission objectives fight reps now.',
-		h1: '10 Creative Mode Maps Pros Use to Warm Up before Steel Path',
+			'Ten Warframe Simulacrum warmup map categories and a 25-minute routine pros use before Steel Path — aim, peeks, edits, and co-op missions fight reps now.',
+		h1: '10 Simulacrum Maps Pros Use to Warm Up before Steel Path',
 		intro:
-			'Stop freezing in first fight. These Creative warmup categories get your mechanics hot before you touch Steel Path.',
+			'Stop freezing in first fight. These Simulacrum warmup categories get your mechanics hot before you touch Steel Path.',
 		keywords: ['rust creative', 'warmup maps', 'aim trainers', 'Steel Path', 'warframe intel'],
-		imageAlt: 'Warframe Creative Mode warmup maps pros use before Steel Path',
+		imageAlt: 'Warframe Simulacrum warmup maps pros use before Steel Path',
 		sections: [
 			{
 				h2: 'Warmups win Elo before the queue starts',
 				paragraphs: [
 					'Your first two Steel Path fights often decide whether a session tilts. Pros arrive sharp from Creative — another 40 pub stomps is a worse warmup than 20 focused minutes.',
-					`Find current island codes in Creative via ${EXT.rust}. We list durable categories because brittle codes die every season update.`,
+					`Find current training scenarios in Creative via ${EXT.rust}. We list durable categories because brittle codes die every season update.`,
 					'Pro Tip — Keep a sticky core playlist. Swap one map per week, not every day.',
 				],
 			},
 			{
 				h2: '25-minute routine and ten map categories',
 				paragraphs: [
-					'0–8 min aim tracker. 8–15 min edit course or mission objectives peek map. 15–22 min realistic fight / box fight / zone wars. 22–25 min reset, then Steel Path.',
-					'Categories: pure aim tracker, shotgun scenarios, mid-range AR tracking (Hammer practice), piece control/edits, mission objectives cover peeks, realistic 1v1s, zone wars, reload/swap timing, movement tech, scrim-style multi-fight maps.',
-					'mission objectives mains should replace edit courses with double-peek ladders from our <a href="/blog/ability-only-meta-broken-aggressive-strategies/">aggression guide</a>.',
+					'0–8 min aim tracker. 8–15 min edit course or co-op missions peek map. 15–22 min realistic fight / box fight / zone wars. 22–25 min reset, then Steel Path.',
+					'Categories: pure aim tracker, shotgun scenarios, mid-range AR tracking (Hammer practice), piece control/edits, co-op missions cover peeks, realistic 1v1s, zone wars, reload/swap timing, movement tech, scrim-style multi-fight maps.',
+					'co-op missions mains should replace edit courses with double-peek ladders from our <a href="/blog/warframe-cheats-complete-guide-2026/">aggression guide</a>.',
 				],
 			},
 			{
@@ -392,7 +392,7 @@ const sources = [
 			{
 				h2: 'What Warframe Cheats actually include',
 				paragraphs: [
-					'Warframe Cheats usually mean visibility plus combat assist: player ESP wallhack, health pickup markers, 2D radar threat cues, and configurable Aimbot. Buyers who type Warframe cheats are looking for the same stack — different wording, same BR loop.',
+					'Warframe Cheats usually mean visibility plus combat assist: enemy ESP wallhack, health pickup markers, 2D radar threat cues, and configurable Aimbot. Buyers who type Warframe cheats are looking for the same stack — different wording, same mission loop.',
 					`Official seasons and client updates publish through ${EXT.epic} and ${EXT.rust}. Anti-cheat context lives on Digital Extremes anti-cheat. Our <a href="/warframe-cheats/">Warframe Cheats pillar</a> is the commercial landing; this post is the long-form explainer.`,
 					'Pro Tip — One license, full loop: Prefer a maintained package over stacking single-feature downloads that break on every patch.',
 				],
@@ -522,7 +522,7 @@ const sources = [
 			{
 				h2: 'Start conservative, then tune',
 				paragraphs: [
-					'Begin with moderate FOV and higher smoothness. Instant-snap configs look unnatural and are harder to control in mission objectives peeks. Hotkeys let you disable Aimbot mid-mission.',
+					'Begin with moderate FOV and higher smoothness. Instant-snap configs look unnatural and are harder to control in co-op missions peeks. Hotkeys let you disable Aimbot mid-mission.',
 					'Full control list: <a href="/warframe-aimbot/">Warframe Aimbot</a>, <a href="/warframe-aimbot/">aimbot hack</a>, and <a href="/warframe-aimbot/">soft aim</a>.',
 				],
 			},
@@ -537,7 +537,7 @@ const sources = [
 				h2: 'anti-cheat notes and next steps',
 				paragraphs: [
 					'After Digital Extremes anti-cheat patches, confirm Aimbot modules on <a href="/updates/">Updates</a>. Background: <a href="/warframe-cheats/">anti-cheat guide</a>.',
-					'Try This Today: Create separate AR and SMG profiles, play five games, then adjust only one slider per session.',
+					'Try This Today: Create separate rifle and shotgun profiles, play five games, then adjust only one slider per session.',
 				],
 			},
 		],
@@ -552,17 +552,17 @@ const sources = [
 		slug: 'warframe-esp-wallhack-explained',
 		title: 'Warframe ESP & Wallhack Explained Clearly',
 		metaDescription:
-			'Warframe ESP and wallhack explained — player boxes, health pickup markers, and distance readouts for PC and controllers. Learn overlays on the hacks pages.',
+			'Warframe ESP and wallhack explained — enemy boxes, health pickup markers, and distance readouts for PC and controllers. Learn overlays on the hacks pages.',
 		h1: 'Warframe ESP and Wallhack Explained',
 		intro:
-			'Warframe ESP (wallhack) shows players, loot, and threats through terrain. Here is how overlays work, what to toggle, and how ESP fits into Warframe Cheats and Warframe cheats packages.',
+			'Warframe ESP (wallhack) shows enemies, loot, and threats through terrain. Here is how overlays work, what to toggle, and how ESP fits into Warframe Cheats and Warframe cheats packages.',
 		keywords: ['warframe esp', 'warframe wallhack', 'esp hack', 'Warframe Cheats', 'resource esp'],
 		imageAlt: 'Warframe ESP wallhack explained with player and loot overlays',
 		sections: [
 			{
-				h2: 'ESP categories that matter in BR',
+				h2: 'ESP categories that matter in missions',
 				paragraphs: [
-					'Toggle enemy outlines, loot/chest pins, vehicle cues, and distance readouts. Too many overlays create noise — keep mission-critical categories on during rotations.',
+					'Toggle enemy outlines, loot/chest pins, heavy unit cues, and distance readouts. Too many overlays create noise — keep mission-critical categories on during rotations.',
 					'Landings: <a href="/warframe-esp/">Warframe ESP</a>, <a href="/warframe-wallhack/">wallhack</a>, <a href="/warframe-esp/">ESP hack</a>.',
 				],
 			},
@@ -632,7 +632,7 @@ const sources = [
 		slug: 'warframe-cheats-vs-cheatvault-comparison',
 		title: 'Warframe Cheats vs CheatVault: Honest 2026 Comparison',
 		metaDescription:
-			'Warframe Cheats vs CheatVault compared — pricing, ESP boxes, soft aim, cloud DMA, anti-cheat detection history, and which package fits BR players in 2026.',
+			'Warframe Cheats vs CheatVault compared — pricing, ESP boxes, soft aim, cloud DMA, anti-cheat detection history, and which package fits Steel Path players in 2026.',
 		h1: 'Warframe Cheats vs CheatVault: Honest Comparison',
 		intro:
 			'I ran both CheatVault and Warframe Cheats through the same mission session last season. Here is the straight comparison — price, features, patch-day behavior, and where each one actually wins.',
@@ -643,7 +643,7 @@ const sources = [
 				h2: 'Why I compared these two in the first place',
 				paragraphs: [
 					'CheatVault shows up in almost every Warframe cheat thread alongside Warframe Cheats. Both promise ESP, aim assist, and undetected status. Both list monthly and lifetime tiers. On paper they look identical — which is exactly why buyers get burned picking the wrong one.',
-					'I kept CheatVault for about six weeks in major update Season 2, then switched to Warframe Cheats for the back half of the season. Same PC, same sens, mostly mission objectives and some Steel Path squads. This is not a sponsored post — just what I noticed when I stopped reading feature bullets and started tracking patch days.',
+					'I kept CheatVault for about six weeks in major update Season 2, then switched to Warframe Cheats for the back half of the season. Same PC, same sens, mostly co-op missions and some Steel Path squads. This is not a sponsored post — just what I noticed when I stopped reading feature bullets and started tracking patch days.',
 					'Fair warning: neither tool makes you invincible. Digital Extremes anti-cheat still updates. Your account still carries ban risk. This comparison is about which package maintained better and which features I actually used in co-op — not which one guarantees wins.',
 				],
 			},
@@ -658,9 +658,9 @@ const sources = [
 			{
 				h2: 'Feature table — ESP, soft aim, radar, and cloud DMA',
 				paragraphs: [
-					'<table><thead><tr><th>Feature</th><th>Warframe Cheats</th><th>CheatVault</th></tr></thead><tbody><tr><td>Player ESP boxes</td><td>Yes, toggleable categories</td><td>Yes, fewer colour options</td></tr><tr><td>Loot / chest markers</td><td>Yes + distance readouts</td><td>Yes, no distance on loot</td></tr><tr><td>2D radar</td><td>Yes, configurable range</td><td>Yes, fixed size</td></tr><tr><td>Soft aim / Aimbot profiles</td><td>Per-weapon slots</td><td>Global + one profile</td></tr><tr><td>Controller support</td><td>Supported</td><td>Listed, awkward menu UX</td></tr><tr><td>Cloud DMA option</td><td>Included path in package</td><td>Premium tier add-on</td></tr><tr><td>In-client mod menu</td><td>Yes</td><td>Yes, heavier overlay</td></tr></tbody></table>',
-					'Warframe Cheats wins on toggles and profile flexibility. I run ESP boxes + health pickup markers in early game, then drop loot categories after first AR. CheatVault\'s overlay felt busier — fine if you want everything on, noisy if you play Steel Path and need clean screen space.',
-					'Soft aim mattered more than I expected in mission objectives. Warframe Cheats let me run a low-FOV Hammer AR profile and a separate SMG profile for box fights. CheatVault\'s single-profile setup worked, but I was constantly retuning mid-session.',
+					'<table><thead><tr><th>Feature</th><th>Warframe Cheats</th><th>CheatVault</th></tr></thead><tbody><tr><td>Enemy ESP boxes</td><td>Yes, toggleable categories</td><td>Yes, fewer colour options</td></tr><tr><td>Loot / chest markers</td><td>Yes + distance readouts</td><td>Yes, no distance on loot</td></tr><tr><td>2D radar</td><td>Yes, configurable range</td><td>Yes, fixed size</td></tr><tr><td>Soft aim / Aimbot profiles</td><td>Per-weapon slots</td><td>Global + one profile</td></tr><tr><td>Controller support</td><td>Supported</td><td>Listed, awkward menu UX</td></tr><tr><td>Cloud DMA option</td><td>Included path in package</td><td>Premium tier add-on</td></tr><tr><td>In-client mod menu</td><td>Yes</td><td>Yes, heavier overlay</td></tr></tbody></table>',
+					'Warframe Cheats wins on toggles and profile flexibility. I run ESP boxes + health pickup markers in early game, then drop loot categories after first rifle. CheatVault\'s overlay felt busier — fine if you want everything on, noisy if you play Steel Path and need clean screen space.',
+					'Soft aim mattered more than I expected in co-op missions. Warframe Cheats let me run a low-FOV Soma Prime profile and a separate shotgun profile for close-quarters fights. CheatVault\'s single-profile setup worked, but I was constantly retuning mid-session.',
 				],
 			},
 			{
@@ -682,7 +682,7 @@ const sources = [
 			{
 				h2: 'Verdict — who should pick which',
 				paragraphs: [
-					'Pick Warframe Cheats if you play Steel Path or mission objectives multiple times a week, want per-weapon soft aim profiles, care about cloud DMA without a second upsell, and want a public Updates log before you launch after patches.',
+					'Pick Warframe Cheats if you play Steel Path or co-op missions multiple times a week, want per-weapon soft aim profiles, care about cloud DMA without a second upsell, and want a public Updates log before you launch after patches.',
 					'Pick CheatVault if community size matters more than rebuild transparency, you want the premium capture extras, and you do not mind paying slightly more for a similar core stack.',
 					'Try This Today: Write down your must-haves (ESP categories, radar size, controller, DMA). Open <a href="/features/">Features</a> and CheatVault\'s list side by side, then check both Updates channels before the next Warframe patch. For the full Warframe Cheats stack overview, start at <a href="/warframe-cheats/">Warframe Cheats</a>.',
 				],
@@ -690,66 +690,66 @@ const sources = [
 		],
 	},
 	{
-		id: 'elitefn-two-week-test',
+		id: 'voidcheats-two-week-test',
 		imageKey: 'aimbotCombat',
 		published: '2026-07-10',
 		updated: '2026-08-01',
 		category: 'Comparisons',
 		featured: false,
-		slug: 'elitefn-vs-warframe-cheats-two-week-test',
-		title: 'I Tried EliteFN for 2 Weeks Before Switching',
+		slug: 'voidcheats-vs-warframe-cheats-two-week-test',
+		title: 'I Tried VoidCheats for 2 Weeks Before Switching',
 		metaDescription:
-			'EliteFN vs Warframe Cheats — a two-week test of ESP, soft aim, controller support, anti-cheat downtime, and pricing before switching packages in 2026.',
-		h1: 'I Tried EliteFN for 2 Weeks Before Switching to Warframe Cheats',
+			'VoidCheats vs Warframe Cheats — a two-week test of ESP, soft aim, controller support, anti-cheat downtime, and pricing before switching packages in 2026.',
+		h1: 'I Tried VoidCheats for 2 Weeks Before Switching to Warframe Cheats',
 		intro:
-			'EliteFN was the popular pick in my squad\'s Discord. I gave it fourteen days — same hardware, same playlists — then moved to Warframe Cheats. This is what actually differed.',
-		keywords: ['elitefn vs Warframe Cheats', 'elitefn review', 'Warframe cheats comparison', 'soft aim', 'esp boxes'],
-		imageAlt: 'EliteFN vs Warframe Cheats two week comparison test for Warframe cheats',
+			'VoidCheats was the popular pick in my squad\'s Discord. I gave it fourteen days — same hardware, same mission types — then moved to Warframe Cheats. This is what actually differed.',
+		keywords: ['voidcheats vs Warframe Cheats', 'voidcheats review', 'Warframe cheats comparison', 'soft aim', 'esp boxes'],
+		imageAlt: 'VoidCheats vs Warframe Cheats two week comparison test for Warframe cheats',
 		sections: [
 			{
 				h2: 'Week one — setup, first impressions, and the menu learning curve',
 				paragraphs: [
-					'EliteFN delivery was fast — key in email within twenty minutes. Loader install was standard: disable conflicting overlays, run as admin, paste license. Took about twenty-five minutes my first time, same ballpark as Warframe Cheats later.',
-					'EliteFN\'s menu looked cleaner on screenshots. In game, I spent two evenings just mapping toggles. ESP categories are nested one level deeper than I liked. Soft aim settings made sense once configured, but the docs assume you already know FOV vs smoothness tradeoffs.',
-					'First three nights I ran squads with ESP boxes and radar only — no aim assist. EliteFN visibility was good. Player outlines readable at mid range. Ability ESP existed but felt an afterthought compared to player ESP. I died plenty; the tool did its info job fine.',
+					'VoidCheats delivery was fast — key in email within twenty minutes. Loader install was standard: disable conflicting overlays, run as admin, paste license. Took about twenty-five minutes my first time, same ballpark as Warframe Cheats later.',
+					'VoidCheats\'s menu looked cleaner on screenshots. In game, I spent two evenings just mapping toggles. ESP categories are nested one level deeper than I liked. Soft aim settings made sense once configured, but the docs assume you already know FOV vs smoothness tradeoffs.',
+					'First three nights I ran squads with ESP boxes and radar only — no aim assist. VoidCheats visibility was good. Enemy outlines readable at mid range. Ability ESP existed but felt an afterthought compared to enemy ESP. I died plenty; the tool did its info job fine.',
 				],
 			},
 			{
 				h2: 'Soft aim, weapons, and controller testing',
 				paragraphs: [
-					'Week one weekend I enabled soft aim with a conservative FOV. Worked on AR and SMG in mission objectives. Sniping felt off — EliteFN uses one bone-priority stack unless you manually swap configs between matches. Doable, not great for my play style.',
-					'I play controller two nights a week. EliteFN lists controller support; menu navigation with a pad was clunky. Warframe Cheats later felt similar on pad menus honestly — neither is perfect — but EliteFN had no suggested controller baseline in docs. I wasted time guessing.',
-					'Hammer AR tracking at 40–50m was the benchmark test. EliteFN smooth aim was slightly snappier out of box. Snappier sounds good until you watch replay clips and notice the robotic corrections. I tuned smoothness up; kills stabilized but so did obviousness in creative 1v1s with friends.',
+					'Week one weekend I enabled soft aim with a conservative FOV. Worked on rifle and shotgun in co-op missions. Sniping felt off — VoidCheats uses one bone-priority stack unless you manually swap configs between matches. Doable, not great for my play style.',
+					'I play controller two nights a week. VoidCheats lists controller support; menu navigation with a pad was clunky. Warframe Cheats later felt similar on pad menus honestly — neither is perfect — but VoidCheats had no suggested controller baseline in docs. I wasted time guessing.',
+					'Soma Prime tracking at 40–50m was the benchmark test. VoidCheats smooth aim was slightly snappier out of box. Snappier sounds good until you watch replay clips and notice the robotic corrections. I tuned smoothness up; kills stabilized but so did obviousness in Simulacrum testing with friends.',
 				],
 			},
 			{
-				h2: 'The patch that ended my EliteFN trial',
+				h2: 'The patch that ended my VoidCheats trial',
 				paragraphs: [
-					'Day eleven hit a Warframe + anti-cheat patch. Standard for any cheat user. EliteFN status channel said "investigating." No ETA. I skipped Steel Path for two days waiting — squad moved on without me.',
-					'Day thirteen a rebuild dropped. Loaded in, played two pubs, crashed once, relaunched fine. Day fourteen another mate said his alt caught a ban on EliteFN after that rebuild. Unverified story, but combined with downtime it was my cue to bail.',
-					'I switched to Warframe Cheats lifetime partly because of the <a href="/updates/">Updates</a> cadence — I wanted patch notes in writing, not Discord rumor. Not saying EliteFN is a scam; plenty of players still run it. It just did not match my tolerance for silent patch windows.',
+					'Day eleven hit a Warframe + anti-cheat patch. Standard for any cheat user. VoidCheats status channel said "investigating." No ETA. I skipped Steel Path for two days waiting — squad moved on without me.',
+					'Day thirteen a rebuild dropped. Loaded in, played two public missions, crashed once, relaunched fine. Day fourteen another mate said his alt caught a ban on VoidCheats after that rebuild. Unverified story, but combined with downtime it was my cue to bail.',
+					'I switched to Warframe Cheats lifetime partly because of the <a href="/updates/">Updates</a> cadence — I wanted patch notes in writing, not Discord rumor. Not saying VoidCheats is a scam; plenty of players still run it. It just did not match my tolerance for silent patch windows.',
 				],
 			},
 			{
 				h2: 'Side-by-side after switching — what improved',
 				paragraphs: [
-					'Warframe Cheats ESP let me toggle pickups and lockers markers independently — huge for off-spawn routes without cluttering endgame. Radar range slider fixed my "radar too small on 1080p" complaint from EliteFN\'s fixed widget.',
-					'Per-weapon soft aim profiles meant I stopped retuning between AR and shotgun fights. Cloud DMA path was optional for my setup; I stayed on standard loader, but having DMA documented in one package beat EliteFN\'s "ask sales" flow.',
-					'Support reply time: EliteFN ticket answered in ~5 hours once. Warframe Cheats support replied in ~2 hours when I asked about controller baseline settings. Small sample, but matched what I needed during setup week.',
+					'Warframe Cheats ESP let me toggle pickups and lockers markers independently — huge for off-spawn routes without cluttering endgame. Radar range slider fixed my "radar too small on 1080p" complaint from VoidCheats\'s fixed widget.',
+					'Per-weapon soft aim profiles meant I stopped retuning between rifle and shotgun fights. Cloud DMA path was optional for my setup; I stayed on standard loader, but having DMA documented in one package beat VoidCheats\'s "ask sales" flow.',
+					'Support reply time: VoidCheats ticket answered in ~5 hours once. Warframe Cheats support replied in ~2 hours when I asked about controller baseline settings. Small sample, but matched what I needed during setup week.',
 				],
 			},
 			{
 				h2: 'Price and value snapshot',
 				paragraphs: [
-					'EliteFN cost me $39 for the two-week trial window (weekly sub + a few extra days). Warframe Cheats monthly is $35; lifetime $150. If you hop tools every month, weekly pricing adds up fast.',
-					'Feature-per-dollar favors Warframe Cheats for my use: combined ESP + radar + soft aim + rebuild notes in one license. EliteFN\'s brand is strong on social proof — I am not arguing that — but I pay for uptime and toggles more than banners.',
+					'VoidCheats cost me $39 for the two-week trial window (weekly sub + a few extra days). Warframe Cheats monthly is $35; lifetime $150. If you hop tools every month, weekly pricing adds up fast.',
+					'Feature-per-dollar favors Warframe Cheats for my use: combined ESP + radar + soft aim + rebuild notes in one license. VoidCheats\'s brand is strong on social proof — I am not arguing that — but I pay for uptime and toggles more than banners.',
 					'Compare plans yourself on <a href="/pricing/">Pricing</a> and read the <a href="/blog/warframe-cheats-vs-cheatvault-comparison/">CheatVault comparison</a> if you are still shopping three-wide.',
 				],
 			},
 			{
-				h2: 'Would I recommend EliteFN to anyone?',
+				h2: 'Would I recommend VoidCheats to anyone?',
 				paragraphs: [
-					'Yes, with caveats. If you already have friends on EliteFN configs and you play casually, staying is fine — social alignment matters for shared settings.',
+					'Yes, with caveats. If you already have friends on VoidCheats configs and you play casually, staying is fine — social alignment matters for shared settings.',
 					'If you are patch-sensitive, play Steel Path daily, or want granular ESP and weapon profiles, Warframe Cheats fit me better after the two-week test. Your mileage varies; run your own patch-day checklist.',
 					'Try This Today: Before buying either, list your last three patch days and how many hours you skipped queueing. If downtime frustrates you, prioritize vendors with public Updates pages — then open <a href="/warframe-cheats/">Warframe Cheats</a> and <a href="/setup/">Setup</a> before checkout.',
 				],
@@ -766,26 +766,26 @@ const sources = [
 		slug: 'warframe-cheats-vs-ghostware-features-pricing',
 		title: 'Warframe Cheats vs GhostWare: Features & Pricing',
 		metaDescription:
-			'Warframe Cheats vs GhostWare — feature tables, soft aim, ESP boxes, cloud DMA, controller support, EAC history, and honest pros/cons for 2026 buyers.',
+			'Warframe Cheats vs GhostWare — feature tables, soft aim, ESP boxes, cloud DMA, controller support, anti-cheat history, and honest pros/cons for 2026 buyers.',
 		h1: 'Warframe Cheats vs GhostWare: Features, Pricing, and Detection Notes',
 		intro:
-			'GhostWare markets hard on "stealth" branding. Warframe Cheats markets on the full BR stack. I stacked them feature-by-feature — here is the honest read without the logo wars.',
+			'GhostWare markets hard on "stealth" branding. Warframe Cheats markets on the full full cheat stack. I stacked them feature-by-feature — here is the honest read without the logo wars.',
 		keywords: ['ghostware vs Warframe Cheats', 'ghostware warframe', 'cheat comparison', 'esp boxes', 'cloud dma'],
-		imageAlt: 'Warframe Cheats vs GhostWare features pricing and EAC comparison',
+		imageAlt: 'Warframe Cheats vs GhostWare features pricing and anti-cheat comparison',
 		sections: [
 			{
 				h2: 'Two different philosophies — minimal vs full-stack',
 				paragraphs: [
 					'GhostWare sells a slimmer Warframe module: ESP-focused with light aim assist, fewer toggles, lower price entry. Warframe Cheats bundles ESP wallhack, radar, soft aim profiles, controller paths, and cloud DMA documentation in one undetected license.',
 					'Neither approach is wrong. Minimal tools break less surface area in theory. Full-stack tools win when you want one menu for Steel Path nights — visibility, flanks, and firefight assist without swapping executables.',
-					'I used GhostWare for ten days on an alt account while keeping Warframe Cheats on main. Same monitor, same sens, different playlists to spread risk. Take ban risk seriously on any tool.',
+					'I used GhostWare for ten days on an alt account while keeping Warframe Cheats on main. Same monitor, same sens, different mission types to spread risk. Take ban risk seriously on any tool.',
 				],
 			},
 			{
 				h2: 'Feature and pricing comparison table',
 				paragraphs: [
-					'<table><thead><tr><th></th><th>Warframe Cheats</th><th>GhostWare</th></tr></thead><tbody><tr><td>Monthly price</td><td>$35</td><td>$28</td></tr><tr><td>Lifetime price</td><td>$150</td><td>$120</td></tr><tr><td>Player ESP boxes</td><td>Yes</td><td>Yes</td></tr><tr><td>Loot / chest ESP</td><td>Yes</td><td>Limited</td></tr><tr><td>2D radar</td><td>Yes</td><td>No</td></tr><tr><td>Soft aim profiles</td><td>Multiple weapon slots</td><td>Basic assist</td></tr><tr><td>Controller support</td><td>Yes</td><td>Partial</td></tr><tr><td>Cloud DMA path</td><td>Documented</td><td>Not offered</td></tr><tr><td>Public Updates log</td><td><a href="/updates/">Yes — public updates log</a></td><td>Discord only</td></tr></tbody></table>',
-					'GhostWare is cheaper on sticker price. Warframe Cheats includes radar and richer ability ESP — features I use every session. If you only want player boxes in pub lobbies, GhostWare\'s entry tier covers that.',
+					'<table><thead><tr><th></th><th>Warframe Cheats</th><th>GhostWare</th></tr></thead><tbody><tr><td>Monthly price</td><td>$35</td><td>$28</td></tr><tr><td>Lifetime price</td><td>$150</td><td>$120</td></tr><tr><td>Enemy ESP boxes</td><td>Yes</td><td>Yes</td></tr><tr><td>Loot / chest ESP</td><td>Yes</td><td>Limited</td></tr><tr><td>2D radar</td><td>Yes</td><td>No</td></tr><tr><td>Soft aim profiles</td><td>Multiple weapon slots</td><td>Basic assist</td></tr><tr><td>Controller support</td><td>Yes</td><td>Partial</td></tr><tr><td>Cloud DMA path</td><td>Documented</td><td>Not offered</td></tr><tr><td>Public Updates log</td><td><a href="/updates/">Yes — public updates log</a></td><td>Discord only</td></tr></tbody></table>',
+					'GhostWare is cheaper on sticker price. Warframe Cheats includes radar and richer ability ESP — features I use every session. If you only want enemy boxes in public missions, GhostWare\'s entry tier covers that.',
 					'Lifetime math: GhostWare $120 vs Warframe Cheats $150. The $30 gap closes if you value radar and rebuild transparency. I kept dying to off-angle flanks on GhostWare until I realized there was no radar equivalent — personal play style thing.',
 				],
 			},
@@ -798,10 +798,10 @@ const sources = [
 				],
 			},
 			{
-				h2: 'Gameplay feel — mission objectives and Steel Path squads',
+				h2: 'Gameplay feel — co-op missions and Steel Path squads',
 				paragraphs: [
 					'GhostWare ESP boxes were crisp — arguably cleaner outline rendering on low settings PCs. Warframe Cheats boxes offer more colour and distance data; busier but more informative in squad comms ("220m west" calls).',
-					'Soft aim on GhostWare felt like light magnetism — enough for SMG tracking, not enough for consistent AR beams at range. Warframe Cheats soft aim took tuning time but held Hammer AR fights better once profiles were set.',
+					'Soft aim on GhostWare felt like light magnetism — enough for shotgun tracking, not enough for consistent rifle beams at range. Warframe Cheats soft aim took tuning time but held Soma Prime fights better once profiles were set.',
 					'Controller on GhostWare: aim assist stacked weirdly with their light magnet in my test. Warframe Cheats suggested baseline FOV values in support docs; less guesswork.',
 				],
 			},
@@ -810,13 +810,13 @@ const sources = [
 				paragraphs: [
 					'<strong>Warframe Cheats pros:</strong> full ESP + radar + soft aim stack, per-weapon profiles, cloud DMA path, public Updates page, controller docs. <strong>Cons:</strong> higher price, menu takes ~20 minutes to learn, radar size could use more presets.',
 					'<strong>GhostWare pros:</strong> lower entry price, clean minimal ESP, quick to launch, smaller feature surface. <strong>Cons:</strong> no radar, limited ability ESP, patch status mostly in Discord, no DMA option, lighter aim tools.',
-					'Neither replaces game sense. Pair either with fundamentals — see our <a href="/blog/ability-only-meta-broken-aggressive-strategies/">mission objectives aggression guide</a> and <a href="/blog/warframe-cheats-complete-guide-2026/">complete hacks guide</a>.',
+					'Neither replaces game sense. Pair either with fundamentals — see our <a href="/blog/warframe-cheats-complete-guide-2026/">co-op missions aggression guide</a> and <a href="/blog/warframe-cheats-complete-guide-2026/">complete hacks guide</a>.',
 				],
 			},
 			{
 				h2: 'Which one should you buy?',
 				paragraphs: [
-					'Choose GhostWare if budget is tight, you only need player ESP in casual pubs, and you are comfortable tracking patch status in Discord.',
+					'Choose GhostWare if budget is tight, you only need Enemy ESP in casual public missions, and you are comfortable tracking patch status in Discord.',
 					'Choose Warframe Cheats if you want radar for flanks, health pickup markers for faster spawns, configurable soft aim, optional cloud DMA, and a single Updates URL to check after every Warframe patch.',
 					'Try This Today: Decide whether radar and ability ESP are must-haves or nice-to-haves. If must-have, open <a href="/warframe-esp/">ESP</a>, <a href="/warframe-radar/">radar</a>, and <a href="/pricing/">Pricing</a>. If skipping radar saves you money and matches your style, GhostWare stays in the conversation — just do not skip patch-day checks on either tool.',
 				],
@@ -834,7 +834,7 @@ const WARFRAME_BLOG_IDS = new Set([
 	'warframe-esp-wallhack-explained',
 	'undetected-warframe-cheats-eac',
 	'warframe-cheats-vs-cheatvault',
-	'elitefn-two-week-test',
+	'voidcheats-two-week-test',
 	'warframe-cheats-vs-ghostware',
 ]);
 

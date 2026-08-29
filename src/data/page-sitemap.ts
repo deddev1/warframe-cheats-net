@@ -38,7 +38,7 @@ const sitemapImagesByPageId: Partial<Record<PageId, SitemapImage[]>> = {
 	],
 	'warframe-esp': [
 		img(warframeImages.espWallhack, 'Warframe ESP', 'Warframe ESP wallhack overlay'),
-		img(warframeImages.playerEsp, 'Warframe player ESP', 'Warframe player ESP markers'),
+		img(warframeImages.playerEsp, 'Warframe Enemy ESP', 'Warframe Enemy ESP markers'),
 	],
 	'warframe-aimbot': [
 		img(warframeImages.aimbotCombat, 'Warframe Aimbot', 'Warframe Aimbot combat preview'),

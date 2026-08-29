@@ -357,7 +357,7 @@ export const homeFaqs = [
 	{
 		question: 'Does this fit Steel Path missions and open world missions?',
 		answer:
-			'Yes. <a href="/warframe-esp/">ESP</a> and <a href="/warframe-radar/">radar</a> help you read nearby Warframes, Sentients, and mission objectives; <a href="/warframe-aimbot/">aimbot</a> covers targeting and weak-spot priority. Tuned for solo and squad play.',
+			'Yes. <a href="/warframe-esp/">ESP</a> and <a href="/warframe-radar/">radar</a> help you read nearby Warframes, Sentients, and co-op missions; <a href="/warframe-aimbot/">aimbot</a> covers targeting and weak-spot priority. Tuned for solo and squad play.',
 	},
 	{
 		question: 'What is included?',

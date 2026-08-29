@@ -44,7 +44,7 @@ export const warframeImages = {
 	radarHack: wt6,
 	zeroBuildCombat: wt1,
 	zeroBuildMode: wt3,
-	battleRoyaleIsland: wt5,
+	openWorldTileset: wt5,
 	/** Product thumbs — five unique stills; main media is the hero still. */
 	product: [
 		{ src: wt2, alt: 'Warframe ESP overlay with enemy unit boxes and health bars' },

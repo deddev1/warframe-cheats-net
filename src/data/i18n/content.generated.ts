@@ -98,9 +98,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					playerEsp: "Warframe wallhack ESP boxes on Grineer, Corpus, and Sentient units in Steel Path",
 					headerArt: "Warframe ESP wallhack overlay on enemy heavy unit hero",
 					cheatsPackage: "Warframe cheats cheat menu with soft aim FOV and bone priority",
-					rebootFight: "Warframe radar hack 2D minimap showing spawn routes",
+					rebootFight: "Warframe Sortie defense fight with aimbot cheats active",
 					battleRoyale: "Warframe Steel Path fight with undetected ESP overlays",
-					battleRoyaleIsland: "Warframe cheats menu with per-weapon aimbot profiles",
+					openWorldTileset: "Warframe cheats menu with per-weapon aimbot profiles",
 				},
 			},
 			pages: {
@@ -108,7 +108,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Warframe Cheats 2026 | Undetected ESP & Aimbot",
 					description: "Warframe cheats for PC — undetected ESP, aimbot, and wallhack at warframecheats.net. Compare monthly and lifetime plans, setup, and anti-cheat updates.",
 					h1: "Warframe Cheats — ESP, Aimbot & Wallhack for PC",
-					intro: "A focused Windows PC package for Warframe: player ESP, aimbot controls, and wallhack overlays with anti-cheat maintenance after major patches.",
+					intro: "A focused Windows PC package for Warframe: Enemy ESP, aimbot controls, and wallhack overlays with anti-cheat maintenance after major patches.",
 					imageAlt: "Warframe cheats main menu with ESP wallhack and soft aim toggles on PC",
 					galleryTitle: "Warframe Cheats visuals",
 					ctaPrimary: "Buy Warframe Cheats",
@@ -118,8 +118,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Built for Steel Path pressure",
 							paragraphs: [
-								"Warframe punishes incomplete information. Warframe Cheats puts ESP, wallhack, and aimbot in one license so you can read mission objectives, flank pushes, and team pushes before you commit.",
-								"Client and anti-cheat updates come from <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a> and <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Digital Extremes anti-cheat</a>. When a patch needs a rebuild, we post status on the <a href=\"/updates/\">Updates page</a> — no permanent “undetected forever” promises.",
+								"Warframe punishes incomplete information. Warframe Cheats puts ESP, wallhack, and aimbot in one license so you can read co-op missions, flank pushes, and team pushes before you commit.",
+								"Client and anti-cheat updates come from <a href=\"https://www.digitalextremes.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Digital Extremes</a> and <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe anti-cheat</a>. When a patch needs a rebuild, we post status on the <a href=\"/updates/\">Updates page</a> — no permanent “undetected forever” promises.",
 								"Monthly ($35) and lifetime ($150) licenses ship digitally after payment confirmation, with maintenance rebuilds when anti-cheat or game updates require them.",
 								"Compare the <a href=\"/warframe-cheats/\">Warframe Cheats guide</a>, <a href=\"/warframe-esp/\">ESP</a>, <a href=\"/warframe-aimbot/\">Aimbot</a>, and <a href=\"/warframe-cheats/\">undetected status</a> pages before checkout.",
 							],
@@ -127,9 +127,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "One license, clear controls",
 							paragraphs: [
-								"Instead of stacking separate tools, you get player ESP, health pickup markers, radar cues, and aimbot profiles in a single package aimed at open world missions and Steel Path missions play.",
+								"Instead of stacking separate tools, you get Enemy ESP, health pickup markers, radar cues, and aimbot profiles in a single package aimed at open world and Steel Path missions.",
 								"Details live on the <a href=\"/warframe-esp/\">ESP</a>, <a href=\"/warframe-aimbot/\">Aimbot</a>, <a href=\"/warframe-wallhack/\">wallhack</a>, and <a href=\"/features/\">features</a> pages — or jump to <a href=\"/pricing/\">Pricing</a> for plans.",
-								"On patch mornings, check <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a>, then confirm our maintenance notes so you are not loading an outdated build.",
+								"On patch mornings, check <a href=\"https://forums.warframe.com/forum/3-pc-update-notes/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe PC update notes</a>, then confirm our maintenance notes so you are not loading an outdated build.",
 								"Ready? Open <a href=\"/pricing/\">Pricing</a>, follow <a href=\"/setup/\">Setup</a> after delivery, and keep <a href=\"/faq/\">FAQ</a> / <a href=\"/support/\">Support</a> handy.",
 							],
 						},
@@ -137,9 +137,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/warframe-cheats-hero.webp",
 				},
 				"warframe-esp": {
-					title: "Warframe ESP 2026 | Player Boxes & Wallhack",
-					description: "Warframe ESP for PC and controllers — player boxes, health pickup markers, and distance readouts. Part of our undetected Warframe Cheats with cloud DMA support.",
-					h1: "Warframe ESP — Player Boxes & Wallhack",
+					title: "Warframe ESP 2026 | enemy boxes & Wallhack",
+					description: "Warframe ESP for PC and controllers — enemy boxes, health pickup markers, and distance readouts. Part of our undetected Warframe Cheats with cloud DMA support.",
+					h1: "Warframe ESP — enemy boxes & Wallhack",
 					intro: "Visibility tools for Warframe. Read enemy units, lockers, resource caches, and pickups, and distance before you commit to a fight — with toggleable ESP wallhack overlays for open world missions and Steel Path missions.",
 					imageAlt: "Warframe ESP overlay with enemy outline boxes, health bars, and distance readouts",
 					galleryTitle: "Warframe ESP overlay visuals",
@@ -151,21 +151,21 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "What Warframe ESP solves in Steel Path missions",
 							paragraphs: [
 								"Warframe missions punish incomplete information. Warframe Cheats ESP wallhack helps you spot enemy units early, spot heavy units before they push your position, and mark lockers and caches worth the detour.",
-								"On Steel Path missions, mission objectives, and Steel Path missions lobbies, that visibility gap is often the difference between a clean flanking and a wiped squad. ESP ships bundled with radar overlays and Aimbot in one license.",
-								"Warframe’ live seasons and map updates are published by <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a>. When tileset areas or loot rules shift, ESP categories stay useful because they track enemies and containers — not a single static landmark.",
+								"On Steel Path missions, co-op missions, and Steel Path missions, that visibility gap is often the difference between a clean flanking and a wiped squad. ESP ships bundled with radar overlays and Aimbot in one license.",
+								"Warframe live updates and tileset changes are published by <a href=\"https://www.digitalextremes.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Digital Extremes</a>. When tileset areas or loot rules shift, ESP categories stay useful because they track enemies and containers — not a single static landmark.",
 							],
 						},
 						{
-							h2: "Player, vehicle, and ability ESP wallhack categories",
+							h2: "Enemy, heavy unit, and ability ESP wallhack categories",
 							paragraphs: [
-								"Toggle enemy unit outlines, vehicle threat cues, pickup awareness markers, and loot or chest pins so only mission-critical ESP wallhack overlays stay active during rotations.",
-								"Distance readouts and snapline options help you control engagement range. Team and enemy colour coding supports mission objectives and co-op squads alike.",
+								"Toggle enemy unit outlines, heavy unit threat cues, pickup awareness markers, and loot or chest pins so only mission-critical ESP wallhack overlays stay active during rotations.",
+								"Distance readouts and snapline options help you control engagement range. Team and enemy colour coding supports co-op missions and co-op squads alike.",
 								"Compare category detail on the <a href=\"/warframe-wallhack/\">wallhack page</a> and pair visibility with the <a href=\"/warframe-radar/\">radar hack</a> for flanks outside your FOV.",
 							],
 							list: [
 								"enemy unit ESP outlines with distance",
 								"pickups and lockers markers for faster rotations",
-								"Vehicle and pickup threat cues",
+								"heavy unit and pickup threat cues",
 								"Toggleable categories to reduce overlay noise",
 							],
 						},
@@ -173,7 +173,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Undetected ESP with anti-cheat maintenance",
 							paragraphs: [
 								"Warframe Cheats ESP wallhack is maintained for Warframe with rebuilds after Digital Extremes anti-cheat patches. Check the <a href=\"/updates/\">Updates page</a> before you queue — no cheat guarantees permanent undetected status.",
-								"Read <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Digital Extremes anti-cheat</a> for how anti-cheat updates ship, then cross-check our <a href=\"/warframe-cheats/\">anti-cheat bypass maintenance guide</a> after major patches.",
+								"Read <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe anti-cheat</a> for how anti-cheat updates ship, then cross-check our <a href=\"/warframe-cheats/\">anti-cheat bypass maintenance guide</a> after major patches.",
 								"Checkout includes instant digital delivery for Windows 10 and 11. After purchase, follow the <a href=\"/setup/\">Setup guide</a> and tune overlays before your first mission session.",
 							],
 						},
@@ -202,15 +202,15 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Aimbot tuned for Warframe combat pace",
 							paragraphs: [
-								"Warframe mixes long-range AR fights with close-quarters SMG pushes. Warframe Cheats Aimbot includes smoothness, FOV, and sensitivity controls tuned for that pace — with hotkey toggles mid-mission.",
-								"Bone priority and target selection options cover closest player, lowest health, or highest-threat targets during squad fights and extraction phase rounds.",
-								"Weapon balance and season rules change via <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a>. Revisit Aimbot FOV and smoothness after major combat patches so assist still matches the live TTK windows.",
+								"Warframe mixes long-range rifle fights with close-quarters shotgun pushes. Warframe Cheats Aimbot includes smoothness, FOV, and sensitivity controls tuned for that pace — with hotkey toggles mid-mission.",
+								"Bone priority and target selection options cover closest enemy, lowest health, or highest-threat targets during squad fights and defense waves and Sortie modifiers.",
+								"Weapon balance and season rules change via <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">official Warframe patch notes</a>. Revisit Aimbot FOV and smoothness after major combat patches so assist still matches the live TTK windows.",
 							],
 						},
 						{
 							h2: "Per-weapon Aimbot profiles",
 							paragraphs: [
-								"Save separate Aimbot profiles for assault rifles, SMGs, and snipers. Switch between long-range AR beams and close-quarters room clears without reopening menus every spawn.",
+								"Save separate Aimbot profiles for rifles, shotguns, and snipers. Switch between long-range rifle beams and close-quarters room clears without reopening menus every spawn.",
 								"Prefer softer tracking? Read the <a href=\"/warframe-aimbot/\">soft aim guide</a>. Want the search term most players use? See <a href=\"/warframe-aimbot/\">aimbot hack</a>.",
 								"Aimbot ships alongside <a href=\"/warframe-esp/\">ESP wallhack</a> and <a href=\"/warframe-radar/\">2D radar</a> in the same Warframe Cheats license.",
 							],
@@ -218,14 +218,14 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Smoothness, FOV, and sensitivity sliders",
 								"Bone priority and threat-based targeting",
 								"Hotkeys to toggle Aimbot mid-mission",
-								"Per-weapon profile slots for AR / SMG / sniper",
+								"Per-weapon profile slots for rifle/ shotgun / sniper",
 							],
 						},
 						{
 							h2: "anti-cheat maintenance for undetected Aimbot",
 							paragraphs: [
 								"Warframe Cheats rebuilds Aimbot behavior when Digital Extremes anti-cheat or major Warframe patches land. Maintenance notes appear on the <a href=\"/updates/\">Updates page</a> so you know when a new build is live.",
-								"Cross-check service health on <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a> and anti-cheat context on <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Digital Extremes anti-cheat</a>, then follow our <a href=\"/warframe-cheats/\">anti-cheat maintenance guide</a> before queueing on patch day.",
+								"Cross-check service health on <a href=\"https://forums.warframe.com/forum/3-pc-update-notes/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe PC update notes</a> and anti-cheat context on <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe anti-cheat</a>, then follow our <a href=\"/warframe-cheats/\">anti-cheat maintenance guide</a> before queueing on patch day.",
 								"Responsible settings matter — undetected status requires ongoing maintenance, not set-and-forget configs. Start with conservative smoothness, then tune.",
 							],
 						},
@@ -254,9 +254,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "ESP wallhack and visibility features",
 							paragraphs: [
-								"enemy unit ESP wallhack, vehicle and pickup threat cues, pickups and lockers markers, distance readouts, snaplines, and toggleable ESP categories for mission-critical overlays only.",
-								"Team and enemy colour coding supports mission objectives and Steel Path. Deep-dive the <a href=\"/warframe-esp/\">ESP page</a> and <a href=\"/warframe-wallhack/\">wallhack guide</a> for category-level detail.",
-								"Map and loot systems evolve with <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a> season updates — toggleable ESP categories keep overlays useful when tileset areas rotate.",
+								"enemy unit ESP wallhack, heavy unit and pickup threat cues, pickups and lockers markers, distance readouts, snaplines, and toggleable ESP categories for mission-critical overlays only.",
+								"Team and enemy colour coding supports co-op missions and Steel Path. Deep-dive the <a href=\"/warframe-esp/\">ESP page</a> and <a href=\"/warframe-wallhack/\">wallhack guide</a> for category-level detail.",
+								"Map and loot systems evolve with <a href=\"https://www.digitalextremes.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Digital Extremes</a> season updates — toggleable ESP categories keep overlays useful when tileset areas rotate.",
 							],
 						},
 						{
@@ -271,7 +271,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Licensing, delivery, and anti-cheat maintenance",
 							paragraphs: [
 								"Monthly ($35) and lifetime ($150) licenses with instant digital delivery. anti-cheat maintenance rebuilds publish on the <a href=\"/updates/\">Updates page</a> after anti-cheat or game patches.",
-								"Monitor <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a> on patch days, then confirm rebuild notes before you queue. Setup and billing help lives on <a href=\"/support/\">Support</a> and support@warframecheats.net.",
+								"Monitor <a href=\"https://forums.warframe.com/forum/3-pc-update-notes/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe PC update notes</a> on patch days, then confirm rebuild notes before you queue. Setup and billing help lives on <a href=\"/support/\">Support</a> and support@warframecheats.net.",
 								"Next step: compare plans on <a href=\"/pricing/\">Pricing</a> or read <a href=\"/warframe-cheats/\">how undetected maintenance works</a>.",
 							],
 						},
@@ -300,8 +300,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "What every plan includes",
 							paragraphs: [
-								"Player ESP wallhack, health pickup markers, 2D radar overlays, Aimbot controls, in-client toggles, and maintenance rebuilds after Digital Extremes anti-cheat or major Warframe patches.",
-								"update calendars and client updates come from <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a>. Active licenses receive rebuild access when we publish maintenance on <a href=\"/updates/\">Updates</a>.",
+								"enemy ESP wallhack, health pickup markers, 2D radar overlays, Aimbot controls, in-client toggles, and maintenance rebuilds after Digital Extremes anti-cheat or major Warframe patches.",
+								"update calendars and client updates come from <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">official Warframe patch notes</a>. Active licenses receive rebuild access when we publish maintenance on <a href=\"/updates/\">Updates</a>.",
 								"Digital delivery starts after payment confirmation. Keep your order reference for <a href=\"/support/\">Support</a> requests and follow <a href=\"/setup/\">Setup</a> for first launch.",
 							],
 						},
@@ -331,7 +331,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Before you install Warframe Cheats",
 							paragraphs: [
 								"Confirm your order email and license details. Check the <a href=\"/updates/\">Updates page</a> for the latest anti-cheat maintenance build before launching Warframe.",
-								"Also glance at <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a> if Warframe servers look unstable on patch day — a platform outage is not a license fault.",
+								"Also glance at <a href=\"https://forums.warframe.com/forum/3-pc-update-notes/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe PC update notes</a> if Warframe servers look unstable on patch day — a platform outage is not a license fault.",
 								"Warframe Cheats requires Windows 10 or 11. Close conflicting overlay software that may interfere with ESP wallhack or Aimbot toggles.",
 							],
 						},
@@ -347,7 +347,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "After Warframe or Digital Extremes anti-cheat patches",
 							paragraphs: [
 								"When Digital Extremes ships a major Warframe update or Digital Extremes anti-cheat patch, revisit Updates before queueing. Download maintenance rebuilds when posted.",
-								"Official anti-cheat background: <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Digital Extremes anti-cheat</a>. Our practical workflow is documented on the <a href=\"/warframe-cheats/\">anti-cheat bypass page</a> and <a href=\"/warframe-cheats/\">undetected guide</a>.",
+								"Official anti-cheat background: <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe anti-cheat</a>. Our practical workflow is documented on the <a href=\"/warframe-cheats/\">anti-cheat bypass page</a> and <a href=\"/warframe-cheats/\">undetected guide</a>.",
 								"Contact <a href=\"/support/\">Support</a> with your order ID if activation fails after a patch — include Windows version and error details for faster replies.",
 							],
 						},
@@ -369,8 +369,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Why the Updates page matters",
 							paragraphs: [
 								"Warframe and Digital Extremes anti-cheat receive frequent patches. Warframe Cheats publishes maintenance notes when ESP wallhack, radar, or Aimbot behavior needs a rebuild.",
-								"Use <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a> for Warframe launcher health and this page for Warframe Cheats build status — both matter on big update days.",
-								"Checking this log before you queue reduces surprises after game days or seasonal launches on Steel Path missions and mission objectives.",
+								"Use <a href=\"https://forums.warframe.com/forum/3-pc-update-notes/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe PC update notes</a> for Warframe launcher health and this page for Warframe Cheats build status — both matter on big update days.",
+								"Checking this log before you queue reduces surprises after game days or seasonal launches on Steel Path missions and co-op missions.",
 							],
 						},
 						{
@@ -385,7 +385,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Staying undetected after patches",
 							paragraphs: [
 								"No cheat guarantees permanent undetected status. Combine maintenance updates with responsible in-game settings and patch awareness.",
-								"Follow patch notes from <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a>, then confirm our rebuild is live before Steel Path.",
+								"Follow patch notes from <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">official Warframe patch notes</a>, then confirm our rebuild is live before Steel Path.",
 								"For urgent status questions after an anti-cheat update, contact <a href=\"/support/\">Support</a> with your license tier and last played build version.",
 							],
 						},
@@ -407,8 +407,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "What is Warframe Cheats?",
 							paragraphs: [
 								"Warframe Cheats is an undetected cheat package for Warframe on Windows PC. It includes ESP wallhack, 2D radar-style awareness, and Aimbot controls with anti-cheat maintenance updates.",
-								"Packages cover Steel Path missions and mission objectives. Explore <a href=\"/features/\">Features</a> for the full control list and <a href=\"/warframe-esp/\">ESP</a> / <a href=\"/warframe-aimbot/\">Aimbot</a> for module detail.",
-								"Warframe itself is published by <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a>. Cheats are third-party tools and may violate Digital Extremes' Terms of Service — use is at your own risk.",
+								"Packages cover Steel Path missions and co-op missions. Explore <a href=\"/features/\">Features</a> for the full control list and <a href=\"/warframe-esp/\">ESP</a> / <a href=\"/warframe-aimbot/\">Aimbot</a> for module detail.",
+								"Warframe is developed and published by <a href=\"https://www.digitalextremes.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Digital Extremes</a>. Cheats are third-party tools and may violate Digital Extremes' Terms of Service — use is at your own risk.",
 							],
 						},
 						{
@@ -453,7 +453,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Response times and scope",
 							paragraphs: [
 								"Support requests are reviewed daily. Warframe Cheats support covers delivery, billing, setup, and maintenance — not in-game coaching or account recovery for Digital Extremes bans.",
-								"Account and game policy questions belong with <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a>. We can help with license delivery and product configuration only.",
+								"Account and game policy questions belong with <a href=\"https://www.digitalextremes.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Digital Extremes</a>. We can help with license delivery and product configuration only.",
 								"Check the Updates page and FAQ before opening a ticket — many post-patch questions are answered there.",
 							],
 						},
@@ -484,14 +484,14 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Undetected Warframe Cheats means the package is actively maintained against Digital Extremes anti-cheat and major Warframe patches — not that detection is impossible forever.",
 								"Rebuilds target ESP wallhack overlays, radar behavior, and Aimbot signatures after Digital Extremes anti-cheat updates.",
-								"Anti-cheat technology is documented by <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Digital Extremes anti-cheat</a>; Warframe client updates ship through <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a>. Undetected status is an ongoing process tied to those releases.",
+								"Anti-cheat technology is documented by <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe anti-cheat</a>; Warframe client updates ship through <a href=\"https://www.digitalextremes.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Digital Extremes</a>. Undetected status is an ongoing process tied to those releases.",
 							],
 						},
 						{
 							h2: "anti-cheat maintenance workflow",
 							paragraphs: [
 								"When Digital Extremes anti-cheat or Warframe updates ship, the team assesses ESP, radar, and Aimbot modules, publishes status on the <a href=\"/updates/\">Updates page</a>, and delivers rebuilt builds to active licenses.",
-								"On patch mornings, also check <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a> for Warframe outages that can look like product failures.",
+								"On patch mornings, also check <a href=\"https://forums.warframe.com/forum/3-pc-update-notes/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe PC update notes</a> for Warframe outages that can look like product failures.",
 								"Deep technical workflow: <a href=\"/warframe-cheats/\">anti-cheat bypass Warframe guide</a>. Feature stack: <a href=\"/features/\">Features</a>.",
 							],
 						},
@@ -508,7 +508,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				wallhack: {
 					title: "Warframe Wallhack 2026 | ESP Boxes & Visibility",
-					description: "Warframe wallhack ESP with player boxes and health pickup markers for PC and controllers. Undetected Warframe cheats with cloud DMA — learn overlays and buy.",
+					description: "Warframe wallhack ESP with enemy boxes and health pickup markers for PC and controllers. Undetected Warframe cheats with cloud DMA — learn overlays and buy.",
 					h1: "Warframe Wallhack — ESP Boxes & Visibility",
 					intro: "Warframe wallhack ESP for Warframe — see enemies, pickups, and lockers through toggleable wallhack overlays built for open world missions and Steel Path missions.",
 					imageAlt: "Warframe wallhack ESP skeleton boxes on enemy unit hero in Steel Path",
@@ -520,7 +520,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Wallhack ESP vs raw aim tools",
 							paragraphs: [
-								"A Warframe wallhack focuses on information — player outlines, loot pins, vehicle threat cues — rather than automatic aiming. Warframe Cheats bundles wallhack ESP with radar and optional Aimbot in one license.",
+								"A Warframe wallhack focuses on information — enemy outlines, loot pins, heavy unit threat cues — rather than automatic aiming. Warframe Cheats bundles wallhack ESP with radar and optional Aimbot in one license.",
 								"Toggle categories so only the wallhack overlays you need stay active during rotations and defense waves.",
 								"For the broader ESP keyword page see <a href=\"/warframe-esp/\">Warframe ESP</a>; for combat assist see <a href=\"/warframe-aimbot/\">Aimbot</a>.",
 							],
@@ -528,8 +528,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Map coverage for wallhack ESP",
 							paragraphs: [
-								"Wallhack overlays support Steel Path missions, mission objectives, and Steel Path missions lobbies with distance readouts and snaplines for engagement control.",
-								"tileset updates and tileset area changes are announced via <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a>. Wallhack remains useful because it tracks entities, not fixed landmarks alone.",
+								"Wallhack overlays support Steel Path missions, co-op missions, and Steel Path missions with distance readouts and snaplines for engagement control.",
+								"tileset updates and tileset area changes are announced via <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">official Warframe patch notes</a>. Wallhack remains useful because it tracks entities, not fixed landmarks alone.",
 								"Pair wallhack awareness with <a href=\"/warframe-radar/\">radar hack</a> cues for flanks during building and rooftop fights.",
 							],
 						},
@@ -560,13 +560,13 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Multi-floor tilesets stack vertical fights — catwalks, doorways, and side spawns. A 2D radar overlay shows nearby enemy threats outside direct line of sight so you can reposition before a flank wave.",
 								"Warframe Cheats radar complements <a href=\"/warframe-esp/\">ESP wallhack</a> markers during squad pushes and final-circle scrims.",
-								"Mode rules and seasonal changes come from <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a>. Radar range remains configurable when map scale or mobility meta shifts.",
+								"Mode rules and seasonal changes come from <a href=\"https://www.digitalextremes.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Digital Extremes</a>. Radar range remains configurable when map scale or mobility meta shifts.",
 							],
 						},
 						{
 							h2: "Configurable radar range",
 							paragraphs: [
-								"Adjust radar range for early rotations versus tight defense waves. Directional cues highlight flanks during building clears and vehicle pushes across Steel Path missions and mission objectives.",
+								"Adjust radar range for early rotations versus tight defense waves. Directional cues highlight flanks during tileset clears and heavy unit pushes across Steel Path missions and co-op missions.",
 								"Toggle radar alongside ESP and Aimbot with in-client hotkeys during live missions — see the <a href=\"/features/\">mod menu</a> page.",
 								"Combat follow-up lives on <a href=\"/warframe-aimbot/\">Aimbot</a> when you convert radar info into a fight.",
 							],
@@ -596,8 +596,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Digital Extremes anti-cheat overview",
 							paragraphs: [
-								"Digital Extremes anti-cheat is Digital Extremes’ anti-cheat for Warframe on PC (see <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Digital Extremes anti-cheat</a>). Security updates can affect ESP wallhack, radar, and Aimbot behavior — requiring maintenance rebuilds for undetected packages.",
-								"Warframe Cheats monitors anti-cheat patch notes and Warframe seasonal updates from <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a> to schedule module reviews.",
+								"Digital Extremes anti-cheat is Digital Extremes’ anti-cheat for Warframe on PC (see <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe anti-cheat</a>). Security updates can affect ESP wallhack, radar, and Aimbot behavior — requiring maintenance rebuilds for undetected packages.",
+								"Warframe Cheats monitors anti-cheat patch notes and Warframe seasonal updates from <a href=\"https://www.digitalextremes.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Digital Extremes</a> to schedule module reviews.",
 								"“anti-cheat bypass” in our wording means timely maintenance — not a permanent free pass around anti-cheat.",
 							],
 						},
@@ -605,7 +605,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "What happens after an anti-cheat patch",
 							paragraphs: [
 								"The team tests ESP overlays, radar signatures, and Aimbot profiles against the new build, publishes status on <a href=\"/updates/\">Updates</a>, and ships rebuilt packages to active licenses.",
-								"Confirm Warframe service health on <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a> if the launcher or matchmaking fails during the same window.",
+								"Confirm Warframe service health on <a href=\"https://forums.warframe.com/forum/3-pc-update-notes/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe PC update notes</a> if the launcher or matchmaking fails during the same window.",
 								"Avoid queueing on old builds after major patch days until maintenance notes confirm a new release. Related reading: <a href=\"/warframe-cheats/\">undetected Warframe cheats</a>.",
 							],
 						},
@@ -635,14 +635,14 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Why Warframe Cheats leads in 2026",
 							paragraphs: [
 								"2026 seasons bring new maps, weapons, and Digital Extremes anti-cheat updates. Warframe Cheats bundles ESP wallhack, radar hack, and Aimbot with active maintenance — not a stale prior-year build.",
-								"Track official official patch messaging on <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a>, then use our <a href=\"/updates/\">Updates log</a> for product rebuild timing.",
-								"Monthly ($35) and lifetime ($150) plans cover Steel Path missions and mission objectives loops — see <a href=\"/pricing/\">Pricing</a>.",
+								"Track official official patch messaging on <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">official Warframe patch notes</a>, then use our <a href=\"/updates/\">Updates log</a> for product rebuild timing.",
+								"Monthly ($35) and lifetime ($150) plans cover Steel Path missions and co-op missions loops — see <a href=\"/pricing/\">Pricing</a>.",
 							],
 						},
 						{
 							h2: "Full feature stack for 2026 buyers",
 							paragraphs: [
-								"Player ESP wallhack, health pickup markers, 2D radar overlays, Aimbot profiles, in-client toggles, and post-patch rebuilds — one license instead of stacking separate tools.",
+								"enemy ESP wallhack, health pickup markers, 2D radar overlays, Aimbot profiles, in-client toggles, and post-patch rebuilds — one license instead of stacking separate tools.",
 								"Deep links: <a href=\"/warframe-cheats/\">Warframe Cheats pillar</a>, <a href=\"/warframe-esp/\">ESP</a>, <a href=\"/warframe-aimbot/\">Aimbot</a>, <a href=\"/warframe-wallhack/\">wallhack</a>, <a href=\"/warframe-radar/\">radar</a>, <a href=\"/warframe-cheats/\">undetected</a>.",
 								"Instant digital delivery after checkout confirmation worldwide.",
 							],
@@ -662,7 +662,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Warframe Cheats 2026 | Undetected ESP Aimbot Guide",
 					description: "Warframe Cheats for Windows PC: undetected ESP wallhack, radar hack, and Aimbot with anti-cheat maintenance. Compare Warframe cheats options and buy the full",
 					h1: "Warframe Cheats — Undetected ESP, Aimbot & Wallhack",
-					intro: "Warframe Cheats for Steel Path missions and mission objectives combine ESP wallhack visibility, 2D radar-style threat cues, and Aimbot controls in one undetected Windows PC license — maintained after Digital Extremes anti-cheat patches. This is the pillar guide for Warframe Cheats in 2026.",
+					intro: "Warframe Cheats for Steel Path missions and co-op missions combine ESP wallhack visibility, 2D radar-style threat cues, and Aimbot controls in one undetected Windows PC license — maintained after Digital Extremes anti-cheat patches. This is the pillar guide for Warframe Cheats in 2026.",
 					imageAlt: "Warframe cheats Steel Path objective fight with ESP boxes and aimbot active",
 					galleryTitle: "Warframe Cheats gallery — ESP, Aimbot, wallhack",
 					ctaPrimary: "Buy Warframe Cheats",
@@ -672,9 +672,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "What Warframe Cheats include in 2026",
 							paragraphs: [
-								"Players searching for Warframe Cheats usually want visibility and combat tools without stacking separate downloads. Warframe Cheats bundles player ESP wallhack, health pickup markers, 2D radar overlays, and configurable Aimbot in one maintained package — the same toolkit often called Warframe cheats.",
-								"Coverage spans Steel Path missions and mission objectives with in-client toggles for live missions. Monthly ($35) and lifetime ($150) licenses unlock the full stack.",
-								"Official game updates come from <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a>; our hacks package tracks those releases via the <a href=\"/updates/\">Updates page</a>. Cross-check platform health on <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a> before patch-day queues.",
+								"Players searching for Warframe Cheats usually want visibility and combat tools without stacking separate downloads. Warframe Cheats bundles enemy ESP wallhack, health pickup markers, 2D radar overlays, and configurable Aimbot in one maintained package — the same toolkit often called Warframe cheats.",
+								"Coverage spans Steel Path missions and co-op missions with in-client toggles for live missions. Monthly ($35) and lifetime ($150) licenses unlock the full stack.",
+								"Official game updates come from <a href=\"https://www.digitalextremes.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Digital Extremes</a>; our hacks package tracks those releases via the <a href=\"/updates/\">Updates page</a>. Cross-check platform health on <a href=\"https://forums.warframe.com/forum/3-pc-update-notes/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe PC update notes</a> before patch-day queues.",
 							],
 						},
 						{
@@ -697,7 +697,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Undetected Warframe Cheats with anti-cheat maintenance",
 							paragraphs: [
 								"Undetected Warframe Cheats require rebuilds after Digital Extremes anti-cheat and major Warframe patches. Check Updates before queueing — maintenance notes confirm when a new build is live. No package can promise permanent undetected status.",
-								"See <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Digital Extremes anti-cheat</a> for anti-cheat background and our <a href=\"/warframe-cheats/\">anti-cheat bypass guide</a> for the practical workflow. Pair with <a href=\"/warframe-cheats/\">undetected Warframe cheats</a> for status language buyers expect.",
+								"See <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe anti-cheat</a> for anti-cheat background and our <a href=\"/warframe-cheats/\">anti-cheat bypass guide</a> for the practical workflow. Pair with <a href=\"/warframe-cheats/\">undetected Warframe cheats</a> for status language buyers expect.",
 								"Digital delivery runs after checkout for Windows 10 and 11 PCs worldwide. After purchase, follow <a href=\"/setup/\">Setup</a> and keep <a href=\"/support/\">Support</a> ready with your order ID.",
 							],
 						},
@@ -720,13 +720,13 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"After checkout confirms payment, Warframe Cheats license details arrive digitally by email. No physical shipment — access begins once activation instructions are delivered.",
 								"Keep your order confirmation and license email ready for the <a href=\"/setup/\">Setup guide</a> and Support requests.",
-								"If Warframe servers are down, check <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a> before assuming a download failure.",
+								"If Warframe servers are down, check <a href=\"https://forums.warframe.com/forum/3-pc-update-notes/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe PC update notes</a> before assuming a download failure.",
 							],
 						},
 						{
 							h2: "What your download unlocks",
 							paragraphs: [
-								"Every Warframe cheat download includes player ESP wallhack, pickups and lockers markers, 2D radar overlays, Aimbot profiles, and in-client toggles for open world missions and Steel Path missions.",
+								"Every Warframe cheat download includes enemy ESP wallhack, pickups and lockers markers, 2D radar overlays, Aimbot profiles, and in-client toggles for open world missions and Steel Path missions.",
 								"Monthly ($35) and lifetime ($150) plans share the same feature stack — compare options on the <a href=\"/pricing/\">Pricing page</a>.",
 								"Feature detail: <a href=\"/features/\">Features</a>. Module pages: <a href=\"/warframe-esp/\">ESP</a>, <a href=\"/warframe-aimbot/\">Aimbot</a>.",
 							],
@@ -757,7 +757,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "What a Warframe mod menu controls",
 							paragraphs: [
 								"A Warframe mod menu is the in-client panel where you enable ESP wallhack overlays, adjust radar range, and switch Aimbot profiles during live missions. Warframe Cheats keeps those toggles accessible with hotkeys.",
-								"Toggle player outlines, health pickup markers, vehicle cues, and per-weapon Aimbot settings without alt-tabbing out of Warframe.",
+								"Toggle enemy outlines, health pickup markers, heavy unit cues, and per-weapon Aimbot settings without alt-tabbing out of Warframe.",
 								"Control deep-dives: <a href=\"/warframe-esp/\">ESP</a>, <a href=\"/warframe-aimbot/\">Aimbot</a>, <a href=\"/warframe-radar/\">radar</a>.",
 							],
 						},
@@ -794,16 +794,16 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "What Warframe aimbot means",
 							paragraphs: [
-								"Warframe aimbot refers to Aimbot behavior tuned for smooth, natural-looking tracking rather than instant snap. Warframe Cheats exposes smoothness, FOV, and sensitivity sliders so you control how assist feels in BR firefights.",
-								"Bone priority and target selection cover closest player, lowest health, or highest-threat targets during squad fights.",
+								"Warframe aimbot refers to Aimbot behavior tuned for smooth, natural-looking tracking rather than instant snap. Warframe Cheats exposes smoothness, FOV, and sensitivity sliders so you control how assist feels in missions firefights.",
+								"Bone priority and target selection cover closest enemy, lowest health, or highest-threat targets during squad fights.",
 								"Full Aimbot documentation: <a href=\"/warframe-aimbot/\">Warframe Aimbot</a>. Alternate wording: <a href=\"/warframe-aimbot/\">aimbot hack</a>.",
 							],
 						},
 						{
 							h2: "Soft aim profiles per weapon class",
 							paragraphs: [
-								"Save separate soft aim profiles for assault rifles, SMGs, and snipers. Switch between long-range AR beams and close-quarters room clears with hotkeys mid-mission.",
-								"Weapon TTKs shift with <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a> balance patches — retune smoothness after major combat updates.",
+								"Save separate soft aim profiles for rifles, shotguns, and snipers. Switch between long-range rifle beams and close-quarters room clears with hotkeys mid-mission.",
+								"Weapon TTKs shift with <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">official Warframe patch notes</a> balance patches — retune smoothness after major combat updates.",
 								"Soft aim ships alongside <a href=\"/warframe-esp/\">ESP wallhack</a> and <a href=\"/warframe-radar/\">2D radar</a> overlays.",
 							],
 						},
@@ -833,14 +833,14 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "What makes the best Warframe cheats in 2026",
 							paragraphs: [
 								"The best Warframe cheats combine active anti-cheat maintenance, a full ESP wallhack and radar stack, configurable Aimbot, and clear update communication — not a stale build from a prior season.",
-								"Warframe Cheats covers Steel Path missions and mission objectives with in-client toggles and post-patch rebuilds.",
-								"Verify the live game is healthy via <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a>, then confirm our <a href=\"/updates/\">Updates</a> note before you judge any package “best.”",
+								"Warframe Cheats covers Steel Path missions and co-op missions with in-client toggles and post-patch rebuilds.",
+								"Verify the live game is healthy via <a href=\"https://forums.warframe.com/forum/3-pc-update-notes/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe PC update notes</a>, then confirm our <a href=\"/updates/\">Updates</a> note before you judge any package “best.”",
 							],
 						},
 						{
 							h2: "Best Warframe cheats feature checklist",
 							paragraphs: [
-								"Look for player ESP wallhack, health pickup markers, 2D radar overlays, Aimbot profiles, hotkey toggles, and documented maintenance after Warframe patches.",
+								"Look for enemy ESP wallhack, health pickup markers, 2D radar overlays, Aimbot profiles, hotkey toggles, and documented maintenance after Warframe patches.",
 								"Review <a href=\"/features/\">Features</a>, <a href=\"/warframe-cheats/\">undetected status</a>, and <a href=\"/warframe-cheats/\">Warframe cheats 2026</a> before checkout — monthly ($35) and lifetime ($150) plans available.",
 								"Module pages worth opening: <a href=\"/warframe-esp/\">ESP</a>, <a href=\"/warframe-aimbot/\">Aimbot</a>, <a href=\"/warframe-cheats/\">hacks</a>.",
 							],
@@ -850,7 +850,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Purchase through secure checkout for instant digital delivery. Read Setup, FAQ, and Updates pages before your first queue — and contact Support with order details if activation needs help.",
 								"No cheat guarantees permanent undetected status — combine maintenance with responsible in-game settings.",
-								"Remember: using cheats can violate <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a> terms. Proceed only if you accept that risk.",
+								"Remember: using cheats can violate Digital Extremes terms. Proceed only if you accept that risk.",
 							],
 						},
 					],
@@ -879,8 +879,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Aimbot hack controls and hotkeys",
 							paragraphs: [
 								"Bone priority options cover head, chest, or dynamic targets. Hotkeys enable or disable aimbot hack mid-mission without opening menus during rotations or final circles.",
-								"Per-weapon profile slots separate long-range AR tuning from close-quarters SMG settings.",
-								"Balance patches from <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a> can change ideal FOV — retune after major weapon updates.",
+								"Per-weapon profile slots separate long-range rifle tuning from close-quarters shotgun settings.",
+								"Balance patches from <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">official Warframe patch notes</a> can change ideal FOV — retune after major weapon updates.",
 							],
 						},
 						{
@@ -895,10 +895,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/warframe-aimbot-menu.webp",
 				},
 				"esp-hack": {
-					title: "Warframe ESP Hack 2026 | Player Boxes & Loot",
-					description: "Warframe ESP hack with player boxes and health pickup markers for PC and controllers. Undetected Warframe cheats with cloud DMA — see overlays and buy.",
-					h1: "Warframe ESP Hack — Player Boxes Guide",
-					intro: "Warframe ESP hack overlays for Warframe — player outlines, vehicle threat cues, pickups and lockers markers with distance readouts across Steel Path missions and mission objectives.",
+					title: "Warframe ESP Hack 2026 | enemy boxes & Loot",
+					description: "Warframe ESP hack with enemy boxes and health pickup markers for PC and controllers. Undetected Warframe cheats with cloud DMA — see overlays and buy.",
+					h1: "Warframe ESP Hack — enemy boxes Guide",
+					intro: "Warframe ESP hack overlays for Warframe — enemy outlines, heavy unit threat cues, pickups and lockers markers with distance readouts across Steel Path missions and co-op missions.",
 					imageAlt: "Warframe ESP hack with hero skeleton, bounding box, and ult tracking labels",
 					galleryTitle: "Warframe ESP hack gallery",
 					ctaPrimary: "Buy Warframe Cheats",
@@ -908,7 +908,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "What a Warframe ESP hack shows",
 							paragraphs: [
-								"A Warframe ESP hack renders enemy unit outlines, vehicle positions, and loot pins through walls and terrain — closing the information gap before you commit to a fight.",
+								"A Warframe ESP hack renders enemy unit outlines, heavy unit positions, and loot pins through walls and terrain — closing the information gap before you commit to a fight.",
 								"Distance readouts and snapline options help control engagement range during squad pushes and flanking scenarios.",
 								"Canonical visibility guide: <a href=\"/warframe-esp/\">Warframe ESP</a>. Wallhack wording: <a href=\"/warframe-wallhack/\">wallhack</a>.",
 							],
@@ -916,9 +916,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "ESP hack categories for Steel Path missions",
 							paragraphs: [
-								"Toggle player ESP hack, health pickup markers, chest pins, and vehicle cues independently so only mission-critical overlays stay active during rotations.",
-								"Team and enemy colour coding supports mission objectives and Steel Path.",
-								"tileset area and loot changes publish through <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a> — keep categories toggled to what the current map rewards.",
+								"Toggle Enemy ESP hack, health pickup markers, chest pins, and heavy unit cues independently so only mission-critical overlays stay active during rotations.",
+								"Team and enemy colour coding supports co-op missions and Steel Path.",
+								"tileset area and loot changes publish through <a href=\"https://www.digitalextremes.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Digital Extremes</a> — keep categories toggled to what the current map rewards.",
 							],
 						},
 						{
@@ -947,8 +947,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "What Warframe unlock all usually means",
 							paragraphs: [
 								"Warframe unlock all searches often refer to instant access to weapons, camos, skins, or Prime Access tiers. Those claims differ from visibility and combat-assist tools like ESP wallhack and Aimbot.",
-								"Warframe Cheats focuses on in-match awareness — player ESP, health pickup markers, radar overlays, and configurable Aimbot — not account-wide cosmetic unlocks.",
-								"Cosmetics and Prime Access items are sold through <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a>. Be wary of unlock-all downloads that promise free skins — they are often scams.",
+								"Warframe Cheats focuses on in-match awareness — Enemy ESP, health pickup markers, radar overlays, and configurable Aimbot — not account-wide cosmetic unlocks.",
+								"Cosmetics and Prime Access items are sold through <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">official Warframe patch notes</a>. Be wary of unlock-all downloads that promise free skins — they are often scams.",
 							],
 						},
 						{
@@ -1066,7 +1066,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Risk and anti-cheat disclaimer",
 							paragraphs: [
-								"Using cheats in Warframe may violate <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe</a> terms and result in account penalties. Warframe Cheats provides maintenance but does not guarantee undetected status or account safety.",
+								"Using cheats in Warframe may violate Digital Extremes terms and result in account penalties. Warframe Cheats provides maintenance but does not guarantee undetected status or account safety.",
 								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/warframe-cheats/\">undetected status</a>.",
 							],
 						},
@@ -1148,9 +1148,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					playerEsp: "Overlay ESP wallhack de operador Warframe para Warframe",
 					headerArt: "Arte de cabecera Warframe para páginas Warframe Cheats",
 					cheatsPackage: "Paquete Warframe cheats con ESP wallhack y Aimbot",
-					rebootFight: "Pelea del control point Warframe para trucos Aimbot",
+					rebootFight: "Warframe Sortie defense fight with aimbot cheats active",
 					battleRoyale: "Combate Steel Path missions Warframe para trucos indetectables",
-					battleRoyaleIsland: "Mapa Warframe para rutas ESP wallhack Warframe",
+					openWorldTileset: "Mapa Warframe para rutas ESP wallhack Warframe",
 				},
 			},
 			pages: {
@@ -1169,7 +1169,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Por qué eligen Warframe Cheats en 2026",
 							paragraphs: [
-								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Ideal para leer escuadrones enemigos en BR y mission objectives.",
+								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Ideal para leer escuadrones enemigos en misiones y co-op missions.",
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Digital Extremes anti-cheat maintenance.",
 							],
 						},
@@ -1183,11 +1183,11 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					],
 				},
 				"warframe-esp": {
-					title: "Warframe ESP 2026 | Player Boxes & Wallhack",
-					description: "Warframe ESP: player boxes, health pickup markers, and wallhack overlays for Warframe. entrega digital instantánea. anti-cheat maintenance included.",
-					h1: "Warframe ESP — Player Boxes & Wallhack",
-					intro: "Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Warframe ESP for mission objectives, spawn routes, and mission objectives: player boxes, health pickup markers, and wallhack overlays.",
-					imageAlt: "warframe-cheats warframe-esp player boxes, health pickup markers, and wallhack overlays preview",
+					title: "Warframe ESP 2026 | enemy boxes & Wallhack",
+					description: "Warframe ESP: enemy boxes, health pickup markers, and wallhack overlays for Warframe. entrega digital instantánea. anti-cheat maintenance included.",
+					h1: "Warframe ESP — enemy boxes & Wallhack",
+					intro: "Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Warframe ESP for mission objectives, spawn routes, and mission objectives: enemy boxes, health pickup markers, and wallhack overlays.",
+					imageAlt: "warframe-cheats warframe-esp enemy boxes, health pickup markers, and wallhack overlays preview",
 					galleryTitle: "Warframe Cheats Warframe ESP gallery",
 					heroImage: "/images/warframe-esp-overlay.webp",
 					ctaPrimary: "Comprar Warframe Cheats",
@@ -1197,7 +1197,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy units with ESP wallhack.",
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Digital Extremes anti-cheat maintenance.",
 							],
 						},
@@ -1232,7 +1232,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy units with ESP wallhack.",
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Digital Extremes anti-cheat maintenance.",
 							],
 						},
@@ -1267,7 +1267,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Funciones — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy units with ESP wallhack.",
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Digital Extremes anti-cheat maintenance.",
 							],
 						},
@@ -1302,7 +1302,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Precios — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy units with ESP wallhack.",
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Digital Extremes anti-cheat maintenance.",
 							],
 						},
@@ -1337,7 +1337,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Instalación — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy units with ESP wallhack.",
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Digital Extremes anti-cheat maintenance.",
 							],
 						},
@@ -1372,7 +1372,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Actualizaciones — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy units with ESP wallhack.",
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Digital Extremes anti-cheat maintenance.",
 							],
 						},
@@ -1394,10 +1394,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				faq: {
 					title: "FAQ 2026 | Warframe Cheats Common Answers",
-					description: "FAQ: ESP, soft aim, delivery, and EAC questions for Warframe. entrega digital instantánea. anti-cheat maintenance included.",
+					description: "FAQ: ESP, soft aim, delivery, and anti-cheat questions for Warframe. entrega digital instantánea. anti-cheat maintenance included.",
 					h1: "FAQ — Common Answers",
-					intro: "Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and EAC questions.",
-					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and EAC questions preview",
+					intro: "Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and anti-cheat questions.",
+					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and anti-cheat questions preview",
 					galleryTitle: "Warframe Cheats FAQ gallery",
 					heroImage: "/images/warframe-esp-tanks.webp",
 					ctaPrimary: "Comprar Warframe Cheats",
@@ -1407,7 +1407,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "FAQ — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy units with ESP wallhack.",
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Digital Extremes anti-cheat maintenance.",
 							],
 						},
@@ -1442,7 +1442,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Soporte — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy units with ESP wallhack.",
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Digital Extremes anti-cheat maintenance.",
 							],
 						},
@@ -1477,7 +1477,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Trucos indetectables — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy units with ESP wallhack.",
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Digital Extremes anti-cheat maintenance.",
 							],
 						},
@@ -1512,7 +1512,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Wallhack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy units with ESP wallhack.",
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Digital Extremes anti-cheat maintenance.",
 							],
 						},
@@ -1547,7 +1547,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Radar hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy units with ESP wallhack.",
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Digital Extremes anti-cheat maintenance.",
 							],
 						},
@@ -1582,7 +1582,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Bypass Digital Extremes anti-cheat — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy units with ESP wallhack.",
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Digital Extremes anti-cheat maintenance.",
 							],
 						},
@@ -1617,7 +1617,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats 2026 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy units with ESP wallhack.",
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Digital Extremes anti-cheat maintenance.",
 							],
 						},
@@ -1652,7 +1652,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy units with ESP wallhack.",
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Digital Extremes anti-cheat maintenance.",
 							],
 						},
@@ -1687,7 +1687,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Descarga Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy units with ESP wallhack.",
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Digital Extremes anti-cheat maintenance.",
 							],
 						},
@@ -1722,7 +1722,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Mod Menu — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy units with ESP wallhack.",
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Digital Extremes anti-cheat maintenance.",
 							],
 						},
@@ -1757,7 +1757,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Soft Aim — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy units with ESP wallhack.",
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Digital Extremes anti-cheat maintenance.",
 							],
 						},
@@ -1792,7 +1792,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Mejores Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy units with ESP wallhack.",
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Digital Extremes anti-cheat maintenance.",
 							],
 						},
@@ -1827,7 +1827,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy units with ESP wallhack.",
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Digital Extremes anti-cheat maintenance.",
 							],
 						},
@@ -1862,7 +1862,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy units with ESP wallhack.",
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Digital Extremes anti-cheat maintenance.",
 							],
 						},
@@ -1897,7 +1897,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Unlock All — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats ofrece ESP wallhack, radar hack y Aimbot indetectables para Warframe en Windows PC. Read enemy units with ESP wallhack.",
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Digital Extremes anti-cheat maintenance.",
 							],
 						},
@@ -2090,9 +2090,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					playerEsp: "Overlay ESP wallhack opérateur Warframe pour Warframe",
 					headerArt: "Art en-tête Warframe pour pages Warframe Cheats",
 					cheatsPackage: "Pack Warframe cheats ESP wallhack et Aimbot",
-					rebootFight: "Combat control point Warframe pour triches Aimbot",
+					rebootFight: "Warframe Sortie defense fight with aimbot cheats active",
 					battleRoyale: "Combat Steel Path missions Warframe pour triches indétectables",
-					battleRoyaleIsland: "Carte Warframe pour routes ESP wallhack Warframe",
+					openWorldTileset: "Carte Warframe pour routes ESP wallhack Warframe",
 				},
 			},
 			pages: {
@@ -2111,7 +2111,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Pourquoi choisir Warframe Cheats en 2026",
 							paragraphs: [
-								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Parfait pour lire les escouades ennemies en BR et mission objectives.",
+								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Parfait pour lire les escouades ennemies en misiones et co-op missions.",
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Digital Extremes anti-cheat.",
 							],
 						},
@@ -2125,11 +2125,11 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					],
 				},
 				"warframe-esp": {
-					title: "Warframe ESP 2026 | Player Boxes & Wallhack",
-					description: "Warframe ESP: player boxes, health pickup markers, and wallhack overlays for Warframe. livraison numérique instantanée. anti-cheat maintenance included.",
-					h1: "Warframe ESP — Player Boxes & Wallhack",
-					intro: "Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Warframe ESP for mission objectives, spawn routes, and mission objectives: player boxes, health pickup markers, and wallhack overlays.",
-					imageAlt: "warframe-cheats warframe-esp player boxes, health pickup markers, and wallhack overlays preview",
+					title: "Warframe ESP 2026 | enemy boxes & Wallhack",
+					description: "Warframe ESP: enemy boxes, health pickup markers, and wallhack overlays for Warframe. livraison numérique instantanée. anti-cheat maintenance included.",
+					h1: "Warframe ESP — enemy boxes & Wallhack",
+					intro: "Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Warframe ESP for mission objectives, spawn routes, and mission objectives: enemy boxes, health pickup markers, and wallhack overlays.",
+					imageAlt: "warframe-cheats warframe-esp enemy boxes, health pickup markers, and wallhack overlays preview",
 					galleryTitle: "Warframe Cheats Warframe ESP gallery",
 					heroImage: "/images/warframe-esp-overlay.webp",
 					ctaPrimary: "Acheter Warframe Cheats",
@@ -2139,7 +2139,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy units with ESP wallhack.",
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Digital Extremes anti-cheat.",
 							],
 						},
@@ -2174,7 +2174,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy units with ESP wallhack.",
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Digital Extremes anti-cheat.",
 							],
 						},
@@ -2209,7 +2209,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Fonctions — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy units with ESP wallhack.",
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Digital Extremes anti-cheat.",
 							],
 						},
@@ -2244,7 +2244,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Tarifs — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy units with ESP wallhack.",
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Digital Extremes anti-cheat.",
 							],
 						},
@@ -2279,7 +2279,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Installation — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy units with ESP wallhack.",
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Digital Extremes anti-cheat.",
 							],
 						},
@@ -2314,7 +2314,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Mises à jour — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy units with ESP wallhack.",
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Digital Extremes anti-cheat.",
 							],
 						},
@@ -2336,10 +2336,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				faq: {
 					title: "FAQ 2026 | Warframe Cheats Common Answers",
-					description: "FAQ: ESP, soft aim, delivery, and EAC questions for Warframe. livraison numérique instantanée. anti-cheat maintenance included.",
+					description: "FAQ: ESP, soft aim, delivery, and anti-cheat questions for Warframe. livraison numérique instantanée. anti-cheat maintenance included.",
 					h1: "FAQ — Common Answers",
-					intro: "Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and EAC questions.",
-					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and EAC questions preview",
+					intro: "Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and anti-cheat questions.",
+					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and anti-cheat questions preview",
 					galleryTitle: "Warframe Cheats FAQ gallery",
 					heroImage: "/images/warframe-esp-tanks.webp",
 					ctaPrimary: "Acheter Warframe Cheats",
@@ -2349,7 +2349,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "FAQ — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy units with ESP wallhack.",
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Digital Extremes anti-cheat.",
 							],
 						},
@@ -2384,7 +2384,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Support — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy units with ESP wallhack.",
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Digital Extremes anti-cheat.",
 							],
 						},
@@ -2419,7 +2419,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Triches indétectables — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy units with ESP wallhack.",
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Digital Extremes anti-cheat.",
 							],
 						},
@@ -2454,7 +2454,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Wallhack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy units with ESP wallhack.",
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Digital Extremes anti-cheat.",
 							],
 						},
@@ -2489,7 +2489,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Radar hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy units with ESP wallhack.",
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Digital Extremes anti-cheat.",
 							],
 						},
@@ -2524,7 +2524,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Bypass Digital Extremes anti-cheat — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy units with ESP wallhack.",
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Digital Extremes anti-cheat.",
 							],
 						},
@@ -2559,7 +2559,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats 2026 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy units with ESP wallhack.",
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Digital Extremes anti-cheat.",
 							],
 						},
@@ -2594,7 +2594,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy units with ESP wallhack.",
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Digital Extremes anti-cheat.",
 							],
 						},
@@ -2629,7 +2629,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Téléchargement Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy units with ESP wallhack.",
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Digital Extremes anti-cheat.",
 							],
 						},
@@ -2664,7 +2664,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Mod Menu — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy units with ESP wallhack.",
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Digital Extremes anti-cheat.",
 							],
 						},
@@ -2699,7 +2699,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Soft Aim — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy units with ESP wallhack.",
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Digital Extremes anti-cheat.",
 							],
 						},
@@ -2734,7 +2734,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Meilleures Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy units with ESP wallhack.",
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Digital Extremes anti-cheat.",
 							],
 						},
@@ -2769,7 +2769,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy units with ESP wallhack.",
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Digital Extremes anti-cheat.",
 							],
 						},
@@ -2804,7 +2804,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy units with ESP wallhack.",
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Digital Extremes anti-cheat.",
 							],
 						},
@@ -2839,7 +2839,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Unlock All — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combine ESP wallhack, radar hack et Aimbot indétectables pour Warframe sur PC Windows. Read enemy units with ESP wallhack.",
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Digital Extremes anti-cheat.",
 							],
 						},
@@ -3029,12 +3029,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					espWallhack: "Warframe Cheats ESP Wallhack Player-Overlay auf Warframe",
 					aimbotCombat: "Warframe Aimbot Gefecht Vorschau",
 					squadFight: "Warframe Cheats Squad Fight Vorschau für Aimbot",
-					playerEsp: "Warframe Player ESP Wallhack Overlay für Warframe",
+					playerEsp: "Warframe enemy ESP wallhack Overlay für Warframe",
 					headerArt: "Warframe Header-Art für Warframe Cheats Seiten",
 					cheatsPackage: "Warframe Cheats Paket mit ESP Wallhack und Aimbot",
-					rebootFight: "Warframe Reboot Van Fight für Warframe Cheats Aimbot",
+					rebootFight: "Warframe Sortie defense fight with aimbot cheats active",
 					battleRoyale: "Warframe Steel Path missions Kampf für undetected Cheats",
-					battleRoyaleIsland: "Warframe Karte für Warframe ESP Wallhack Routen",
+					openWorldTileset: "Warframe Karte für Warframe ESP Wallhack Routen",
 				},
 			},
 			pages: {
@@ -3053,7 +3053,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warum Warframe Cheats 2026 führt",
 							paragraphs: [
-								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Ideal um feindliche Squads in BR und mission objectives zu lesen.",
+								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Ideal um feindliche Squads in missions und co-op missions zu lesen.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Digital Extremes anti-cheat-Wartung.",
 							],
 						},
@@ -3067,11 +3067,11 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					],
 				},
 				"warframe-esp": {
-					title: "Warframe ESP 2026 | Player Boxes & Wallhack",
-					description: "Warframe ESP: player boxes, health pickup markers, and wallhack overlays for Warframe. sofortige digitale Lieferung. anti-cheat maintenance included.",
-					h1: "Warframe ESP — Player Boxes & Wallhack",
-					intro: "Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Warframe ESP for mission objectives, spawn routes, and mission objectives: player boxes, health pickup markers, and wallhack overlays.",
-					imageAlt: "warframe-cheats warframe-esp player boxes, health pickup markers, and wallhack overlays preview",
+					title: "Warframe ESP 2026 | enemy boxes & Wallhack",
+					description: "Warframe ESP: enemy boxes, health pickup markers, and wallhack overlays for Warframe. sofortige digitale Lieferung. anti-cheat maintenance included.",
+					h1: "Warframe ESP — enemy boxes & Wallhack",
+					intro: "Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Warframe ESP for mission objectives, spawn routes, and mission objectives: enemy boxes, health pickup markers, and wallhack overlays.",
+					imageAlt: "warframe-cheats warframe-esp enemy boxes, health pickup markers, and wallhack overlays preview",
 					galleryTitle: "Warframe Cheats Warframe ESP gallery",
 					heroImage: "/images/warframe-esp-overlay.webp",
 					ctaPrimary: "Warframe Cheats kaufen",
@@ -3081,7 +3081,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy units with ESP wallhack.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Digital Extremes anti-cheat-Wartung.",
 							],
 						},
@@ -3116,7 +3116,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy units with ESP wallhack.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Digital Extremes anti-cheat-Wartung.",
 							],
 						},
@@ -3151,7 +3151,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Features — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy units with ESP wallhack.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Digital Extremes anti-cheat-Wartung.",
 							],
 						},
@@ -3186,7 +3186,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Preise — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy units with ESP wallhack.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Digital Extremes anti-cheat-Wartung.",
 							],
 						},
@@ -3221,7 +3221,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Setup — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy units with ESP wallhack.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Digital Extremes anti-cheat-Wartung.",
 							],
 						},
@@ -3256,7 +3256,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Updates — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy units with ESP wallhack.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Digital Extremes anti-cheat-Wartung.",
 							],
 						},
@@ -3278,10 +3278,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				faq: {
 					title: "FAQ 2026 | Warframe Cheats Common Answers",
-					description: "FAQ: ESP, soft aim, delivery, and EAC questions for Warframe. sofortige digitale Lieferung. anti-cheat maintenance included.",
+					description: "FAQ: ESP, soft aim, delivery, and anti-cheat questions for Warframe. sofortige digitale Lieferung. anti-cheat maintenance included.",
 					h1: "FAQ — Common Answers",
-					intro: "Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and EAC questions.",
-					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and EAC questions preview",
+					intro: "Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and anti-cheat questions.",
+					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and anti-cheat questions preview",
 					galleryTitle: "Warframe Cheats FAQ gallery",
 					heroImage: "/images/warframe-esp-tanks.webp",
 					ctaPrimary: "Warframe Cheats kaufen",
@@ -3291,7 +3291,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "FAQ — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy units with ESP wallhack.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Digital Extremes anti-cheat-Wartung.",
 							],
 						},
@@ -3326,7 +3326,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Support — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy units with ESP wallhack.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Digital Extremes anti-cheat-Wartung.",
 							],
 						},
@@ -3361,7 +3361,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Undetected Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy units with ESP wallhack.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Digital Extremes anti-cheat-Wartung.",
 							],
 						},
@@ -3396,7 +3396,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Wallhack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy units with ESP wallhack.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Digital Extremes anti-cheat-Wartung.",
 							],
 						},
@@ -3431,7 +3431,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Radar Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy units with ESP wallhack.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Digital Extremes anti-cheat-Wartung.",
 							],
 						},
@@ -3466,7 +3466,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Anti-cheat bypass — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy units with ESP wallhack.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Digital Extremes anti-cheat-Wartung.",
 							],
 						},
@@ -3501,7 +3501,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats 2026 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy units with ESP wallhack.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Digital Extremes anti-cheat-Wartung.",
 							],
 						},
@@ -3536,7 +3536,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy units with ESP wallhack.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Digital Extremes anti-cheat-Wartung.",
 							],
 						},
@@ -3571,7 +3571,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats Download — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy units with ESP wallhack.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Digital Extremes anti-cheat-Wartung.",
 							],
 						},
@@ -3606,7 +3606,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Mod Menu — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy units with ESP wallhack.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Digital Extremes anti-cheat-Wartung.",
 							],
 						},
@@ -3641,7 +3641,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Soft Aim — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy units with ESP wallhack.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Digital Extremes anti-cheat-Wartung.",
 							],
 						},
@@ -3676,7 +3676,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Beste Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy units with ESP wallhack.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Digital Extremes anti-cheat-Wartung.",
 							],
 						},
@@ -3711,7 +3711,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy units with ESP wallhack.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Digital Extremes anti-cheat-Wartung.",
 							],
 						},
@@ -3746,7 +3746,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy units with ESP wallhack.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Digital Extremes anti-cheat-Wartung.",
 							],
 						},
@@ -3781,7 +3781,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Unlock All — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bündelt ESP wallhack, radar hack und Aimbot als undetected Paket für Warframe auf Windows PC. Read enemy units with ESP wallhack.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Digital Extremes anti-cheat-Wartung.",
 							],
 						},
@@ -3974,9 +3974,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					playerEsp: "Overlay ESP wallhack operador Warframe para Warframe",
 					headerArt: "Arte de cabeçalho Warframe para páginas Warframe Cheats",
 					cheatsPackage: "Pacote Warframe cheats com ESP wallhack e Aimbot",
-					rebootFight: "Luta do control point Warframe para cheats Aimbot",
+					rebootFight: "Warframe Sortie defense fight with aimbot cheats active",
 					battleRoyale: "Combate Steel Path missions Warframe para cheats indetectáveis",
-					battleRoyaleIsland: "Mapa Warframe para rotas ESP wallhack Warframe",
+					openWorldTileset: "Mapa Warframe para rotas ESP wallhack Warframe",
 				},
 			},
 			pages: {
@@ -3995,7 +3995,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Por que escolher Warframe Cheats em 2026",
 							paragraphs: [
-								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Ideal para ler esquadrões inimigos em BR e mission objectives.",
+								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Ideal para ler esquadrões inimigos em BR e co-op missions.",
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Digital Extremes anti-cheat.",
 							],
 						},
@@ -4009,11 +4009,11 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					],
 				},
 				"warframe-esp": {
-					title: "Warframe ESP 2026 | Player Boxes & Wallhack",
-					description: "Warframe ESP: player boxes, health pickup markers, and wallhack overlays for Warframe. entrega digital instantânea. anti-cheat maintenance included.",
-					h1: "Warframe ESP — Player Boxes & Wallhack",
-					intro: "Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Warframe ESP for mission objectives, spawn routes, and mission objectives: player boxes, health pickup markers, and wallhack overlays.",
-					imageAlt: "warframe-cheats warframe-esp player boxes, health pickup markers, and wallhack overlays preview",
+					title: "Warframe ESP 2026 | enemy boxes & Wallhack",
+					description: "Warframe ESP: enemy boxes, health pickup markers, and wallhack overlays for Warframe. entrega digital instantânea. anti-cheat maintenance included.",
+					h1: "Warframe ESP — enemy boxes & Wallhack",
+					intro: "Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Warframe ESP for mission objectives, spawn routes, and mission objectives: enemy boxes, health pickup markers, and wallhack overlays.",
+					imageAlt: "warframe-cheats warframe-esp enemy boxes, health pickup markers, and wallhack overlays preview",
 					galleryTitle: "Warframe Cheats Warframe ESP gallery",
 					heroImage: "/images/warframe-esp-overlay.webp",
 					ctaPrimary: "Comprar Warframe Cheats",
@@ -4023,7 +4023,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy units with ESP wallhack.",
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Digital Extremes anti-cheat.",
 							],
 						},
@@ -4058,7 +4058,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy units with ESP wallhack.",
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Digital Extremes anti-cheat.",
 							],
 						},
@@ -4093,7 +4093,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Recursos — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy units with ESP wallhack.",
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Digital Extremes anti-cheat.",
 							],
 						},
@@ -4128,7 +4128,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Preços — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy units with ESP wallhack.",
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Digital Extremes anti-cheat.",
 							],
 						},
@@ -4163,7 +4163,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Instalação — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy units with ESP wallhack.",
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Digital Extremes anti-cheat.",
 							],
 						},
@@ -4198,7 +4198,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Atualizações — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy units with ESP wallhack.",
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Digital Extremes anti-cheat.",
 							],
 						},
@@ -4220,10 +4220,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				faq: {
 					title: "FAQ 2026 | Warframe Cheats Common Answers",
-					description: "FAQ: ESP, soft aim, delivery, and EAC questions for Warframe. entrega digital instantânea. anti-cheat maintenance included.",
+					description: "FAQ: ESP, soft aim, delivery, and anti-cheat questions for Warframe. entrega digital instantânea. anti-cheat maintenance included.",
 					h1: "FAQ — Common Answers",
-					intro: "Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and EAC questions.",
-					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and EAC questions preview",
+					intro: "Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and anti-cheat questions.",
+					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and anti-cheat questions preview",
 					galleryTitle: "Warframe Cheats FAQ gallery",
 					heroImage: "/images/warframe-esp-tanks.webp",
 					ctaPrimary: "Comprar Warframe Cheats",
@@ -4233,7 +4233,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "FAQ — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy units with ESP wallhack.",
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Digital Extremes anti-cheat.",
 							],
 						},
@@ -4268,7 +4268,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Suporte — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy units with ESP wallhack.",
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Digital Extremes anti-cheat.",
 							],
 						},
@@ -4303,7 +4303,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Cheats indetectáveis — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy units with ESP wallhack.",
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Digital Extremes anti-cheat.",
 							],
 						},
@@ -4338,7 +4338,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Wallhack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy units with ESP wallhack.",
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Digital Extremes anti-cheat.",
 							],
 						},
@@ -4373,7 +4373,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Radar hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy units with ESP wallhack.",
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Digital Extremes anti-cheat.",
 							],
 						},
@@ -4408,7 +4408,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Bypass Digital Extremes anti-cheat — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy units with ESP wallhack.",
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Digital Extremes anti-cheat.",
 							],
 						},
@@ -4443,7 +4443,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats 2026 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy units with ESP wallhack.",
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Digital Extremes anti-cheat.",
 							],
 						},
@@ -4478,7 +4478,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy units with ESP wallhack.",
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Digital Extremes anti-cheat.",
 							],
 						},
@@ -4513,7 +4513,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Download Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy units with ESP wallhack.",
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Digital Extremes anti-cheat.",
 							],
 						},
@@ -4548,7 +4548,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Mod Menu — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy units with ESP wallhack.",
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Digital Extremes anti-cheat.",
 							],
 						},
@@ -4583,7 +4583,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Soft Aim — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy units with ESP wallhack.",
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Digital Extremes anti-cheat.",
 							],
 						},
@@ -4618,7 +4618,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Melhores Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy units with ESP wallhack.",
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Digital Extremes anti-cheat.",
 							],
 						},
@@ -4653,7 +4653,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy units with ESP wallhack.",
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Digital Extremes anti-cheat.",
 							],
 						},
@@ -4688,7 +4688,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy units with ESP wallhack.",
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Digital Extremes anti-cheat.",
 							],
 						},
@@ -4723,7 +4723,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Unlock All — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats reúne ESP wallhack, radar hack e Aimbot indetectáveis para Warframe no PC Windows. Read enemy units with ESP wallhack.",
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Digital Extremes anti-cheat.",
 							],
 						},
@@ -4916,9 +4916,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					playerEsp: "Overlay ESP wallhack playere Warframe per Warframe",
 					headerArt: "Arte header Warframe per pagine Warframe Cheats",
 					cheatsPackage: "Pacchetto Warframe cheats ESP wallhack e Aimbot",
-					rebootFight: "Scontro control point Warframe per cheat Aimbot",
+					rebootFight: "Warframe Sortie defense fight with aimbot cheats active",
 					battleRoyale: "Combattimento Steel Path missions Warframe per cheat indetectable",
-					battleRoyaleIsland: "Mappa Warframe per rotte ESP wallhack Warframe",
+					openWorldTileset: "Mappa Warframe per rotte ESP wallhack Warframe",
 				},
 			},
 			pages: {
@@ -4937,7 +4937,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Perché scegliere Warframe Cheats nel 2026",
 							paragraphs: [
-								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Ideale per leggere squadre nemiche in BR e mission objectives.",
+								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Ideale per leggere squadre nemiche in missions e co-op missions.",
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Digital Extremes anti-cheat.",
 							],
 						},
@@ -4951,11 +4951,11 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					],
 				},
 				"warframe-esp": {
-					title: "Warframe ESP 2026 | Player Boxes & Wallhack",
-					description: "Warframe ESP: player boxes, health pickup markers, and wallhack overlays for Warframe. consegna digitale istantanea. anti-cheat maintenance included.",
-					h1: "Warframe ESP — Player Boxes & Wallhack",
-					intro: "Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Warframe ESP for mission objectives, spawn routes, and mission objectives: player boxes, health pickup markers, and wallhack overlays.",
-					imageAlt: "warframe-cheats warframe-esp player boxes, health pickup markers, and wallhack overlays preview",
+					title: "Warframe ESP 2026 | enemy boxes & Wallhack",
+					description: "Warframe ESP: enemy boxes, health pickup markers, and wallhack overlays for Warframe. consegna digitale istantanea. anti-cheat maintenance included.",
+					h1: "Warframe ESP — enemy boxes & Wallhack",
+					intro: "Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Warframe ESP for mission objectives, spawn routes, and mission objectives: enemy boxes, health pickup markers, and wallhack overlays.",
+					imageAlt: "warframe-cheats warframe-esp enemy boxes, health pickup markers, and wallhack overlays preview",
 					galleryTitle: "Warframe Cheats Warframe ESP gallery",
 					heroImage: "/images/warframe-esp-overlay.webp",
 					ctaPrimary: "Acquista Warframe Cheats",
@@ -4965,7 +4965,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy units with ESP wallhack.",
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Digital Extremes anti-cheat.",
 							],
 						},
@@ -5000,7 +5000,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy units with ESP wallhack.",
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Digital Extremes anti-cheat.",
 							],
 						},
@@ -5035,7 +5035,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Funzioni — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy units with ESP wallhack.",
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Digital Extremes anti-cheat.",
 							],
 						},
@@ -5070,7 +5070,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Prezzi — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy units with ESP wallhack.",
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Digital Extremes anti-cheat.",
 							],
 						},
@@ -5105,7 +5105,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Setup — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy units with ESP wallhack.",
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Digital Extremes anti-cheat.",
 							],
 						},
@@ -5140,7 +5140,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Aggiornamenti — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy units with ESP wallhack.",
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Digital Extremes anti-cheat.",
 							],
 						},
@@ -5162,10 +5162,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				faq: {
 					title: "FAQ 2026 | Warframe Cheats Common Answers",
-					description: "FAQ: ESP, soft aim, delivery, and EAC questions for Warframe. consegna digitale istantanea. anti-cheat maintenance included.",
+					description: "FAQ: ESP, soft aim, delivery, and anti-cheat questions for Warframe. consegna digitale istantanea. anti-cheat maintenance included.",
 					h1: "FAQ — Common Answers",
-					intro: "Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and EAC questions.",
-					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and EAC questions preview",
+					intro: "Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and anti-cheat questions.",
+					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and anti-cheat questions preview",
 					galleryTitle: "Warframe Cheats FAQ gallery",
 					heroImage: "/images/warframe-esp-tanks.webp",
 					ctaPrimary: "Acquista Warframe Cheats",
@@ -5175,7 +5175,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "FAQ — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy units with ESP wallhack.",
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Digital Extremes anti-cheat.",
 							],
 						},
@@ -5210,7 +5210,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Supporto — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy units with ESP wallhack.",
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Digital Extremes anti-cheat.",
 							],
 						},
@@ -5245,7 +5245,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Cheat indetectable — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy units with ESP wallhack.",
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Digital Extremes anti-cheat.",
 							],
 						},
@@ -5280,7 +5280,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Wallhack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy units with ESP wallhack.",
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Digital Extremes anti-cheat.",
 							],
 						},
@@ -5315,7 +5315,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Radar hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy units with ESP wallhack.",
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Digital Extremes anti-cheat.",
 							],
 						},
@@ -5350,7 +5350,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Bypass Digital Extremes anti-cheat — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy units with ESP wallhack.",
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Digital Extremes anti-cheat.",
 							],
 						},
@@ -5385,7 +5385,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats 2026 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy units with ESP wallhack.",
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Digital Extremes anti-cheat.",
 							],
 						},
@@ -5420,7 +5420,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy units with ESP wallhack.",
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Digital Extremes anti-cheat.",
 							],
 						},
@@ -5455,7 +5455,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Download Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy units with ESP wallhack.",
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Digital Extremes anti-cheat.",
 							],
 						},
@@ -5490,7 +5490,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Mod Menu — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy units with ESP wallhack.",
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Digital Extremes anti-cheat.",
 							],
 						},
@@ -5525,7 +5525,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Soft Aim — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy units with ESP wallhack.",
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Digital Extremes anti-cheat.",
 							],
 						},
@@ -5560,7 +5560,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Migliori Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy units with ESP wallhack.",
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Digital Extremes anti-cheat.",
 							],
 						},
@@ -5595,7 +5595,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy units with ESP wallhack.",
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Digital Extremes anti-cheat.",
 							],
 						},
@@ -5630,7 +5630,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy units with ESP wallhack.",
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Digital Extremes anti-cheat.",
 							],
 						},
@@ -5665,7 +5665,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Unlock All — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats unisce ESP wallhack, radar hack e Aimbot indetectable per Warframe su PC Windows. Read enemy units with ESP wallhack.",
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Digital Extremes anti-cheat.",
 							],
 						},
@@ -5855,12 +5855,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					espWallhack: "Warframe cheats ESP wallhack overlay op Warframe",
 					aimbotCombat: "Warframe Aimbot gevecht preview",
 					squadFight: "Warframe cheats squad fight preview voor Aimbot",
-					playerEsp: "Warframe player ESP wallhack overlay voor Warframe",
+					playerEsp: "Warframe enemy ESP wallhack overlay voor Warframe",
 					headerArt: "Warframe header art voor Warframe Cheats pagina's",
 					cheatsPackage: "Warframe cheats pakket met ESP wallhack en Aimbot",
-					rebootFight: "Warframe extraction route fight voor Warframe cheats Aimbot",
+					rebootFight: "Warframe Sortie defense fight with aimbot cheats active",
 					battleRoyale: "Warframe Steel Path missions gevecht voor undetected cheats",
-					battleRoyaleIsland: "Warframe kaart voor Warframe ESP wallhack routes",
+					openWorldTileset: "Warframe kaart voor Warframe ESP wallhack routes",
 				},
 			},
 			pages: {
@@ -5879,7 +5879,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Waarom Warframe Cheats in 2026",
 							paragraphs: [
-								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Ideaal om vijandelijke squads te lezen in BR en mission objectives.",
+								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Ideaal om vijandelijke squads te lezen in missions en co-op missions.",
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Digital Extremes anti-cheat-onderhoud.",
 							],
 						},
@@ -5893,11 +5893,11 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					],
 				},
 				"warframe-esp": {
-					title: "Warframe ESP 2026 | Player Boxes & Wallhack",
-					description: "Warframe ESP: player boxes, health pickup markers, and wallhack overlays for Warframe. directe digitale levering. anti-cheat maintenance included.",
-					h1: "Warframe ESP — Player Boxes & Wallhack",
-					intro: "Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Warframe ESP for mission objectives, spawn routes, and mission objectives: player boxes, health pickup markers, and wallhack overlays.",
-					imageAlt: "warframe-cheats warframe-esp player boxes, health pickup markers, and wallhack overlays preview",
+					title: "Warframe ESP 2026 | enemy boxes & Wallhack",
+					description: "Warframe ESP: enemy boxes, health pickup markers, and wallhack overlays for Warframe. directe digitale levering. anti-cheat maintenance included.",
+					h1: "Warframe ESP — enemy boxes & Wallhack",
+					intro: "Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Warframe ESP for mission objectives, spawn routes, and mission objectives: enemy boxes, health pickup markers, and wallhack overlays.",
+					imageAlt: "warframe-cheats warframe-esp enemy boxes, health pickup markers, and wallhack overlays preview",
 					galleryTitle: "Warframe Cheats Warframe ESP gallery",
 					heroImage: "/images/warframe-esp-overlay.webp",
 					ctaPrimary: "Warframe Cheats kopen",
@@ -5907,7 +5907,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy units with ESP wallhack.",
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Digital Extremes anti-cheat-onderhoud.",
 							],
 						},
@@ -5942,7 +5942,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy units with ESP wallhack.",
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Digital Extremes anti-cheat-onderhoud.",
 							],
 						},
@@ -5977,7 +5977,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Functies — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy units with ESP wallhack.",
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Digital Extremes anti-cheat-onderhoud.",
 							],
 						},
@@ -6012,7 +6012,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Prijzen — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy units with ESP wallhack.",
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Digital Extremes anti-cheat-onderhoud.",
 							],
 						},
@@ -6047,7 +6047,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Setup — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy units with ESP wallhack.",
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Digital Extremes anti-cheat-onderhoud.",
 							],
 						},
@@ -6082,7 +6082,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Updates — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy units with ESP wallhack.",
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Digital Extremes anti-cheat-onderhoud.",
 							],
 						},
@@ -6104,10 +6104,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				faq: {
 					title: "FAQ 2026 | Warframe Cheats Common Answers",
-					description: "FAQ: ESP, soft aim, delivery, and EAC questions for Warframe. directe digitale levering. anti-cheat maintenance included.",
+					description: "FAQ: ESP, soft aim, delivery, and anti-cheat questions for Warframe. directe digitale levering. anti-cheat maintenance included.",
 					h1: "FAQ — Common Answers",
-					intro: "Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and EAC questions.",
-					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and EAC questions preview",
+					intro: "Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and anti-cheat questions.",
+					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and anti-cheat questions preview",
 					galleryTitle: "Warframe Cheats FAQ gallery",
 					heroImage: "/images/warframe-esp-tanks.webp",
 					ctaPrimary: "Warframe Cheats kopen",
@@ -6117,7 +6117,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "FAQ — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy units with ESP wallhack.",
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Digital Extremes anti-cheat-onderhoud.",
 							],
 						},
@@ -6152,7 +6152,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Support — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy units with ESP wallhack.",
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Digital Extremes anti-cheat-onderhoud.",
 							],
 						},
@@ -6187,7 +6187,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Undetected Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy units with ESP wallhack.",
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Digital Extremes anti-cheat-onderhoud.",
 							],
 						},
@@ -6222,7 +6222,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Wallhack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy units with ESP wallhack.",
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Digital Extremes anti-cheat-onderhoud.",
 							],
 						},
@@ -6257,7 +6257,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Radar Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy units with ESP wallhack.",
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Digital Extremes anti-cheat-onderhoud.",
 							],
 						},
@@ -6292,7 +6292,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Anti-cheat bypass — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy units with ESP wallhack.",
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Digital Extremes anti-cheat-onderhoud.",
 							],
 						},
@@ -6327,7 +6327,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats 2026 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy units with ESP wallhack.",
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Digital Extremes anti-cheat-onderhoud.",
 							],
 						},
@@ -6362,7 +6362,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy units with ESP wallhack.",
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Digital Extremes anti-cheat-onderhoud.",
 							],
 						},
@@ -6397,7 +6397,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats Download — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy units with ESP wallhack.",
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Digital Extremes anti-cheat-onderhoud.",
 							],
 						},
@@ -6432,7 +6432,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Mod Menu — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy units with ESP wallhack.",
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Digital Extremes anti-cheat-onderhoud.",
 							],
 						},
@@ -6467,7 +6467,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Soft Aim — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy units with ESP wallhack.",
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Digital Extremes anti-cheat-onderhoud.",
 							],
 						},
@@ -6502,7 +6502,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Beste Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy units with ESP wallhack.",
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Digital Extremes anti-cheat-onderhoud.",
 							],
 						},
@@ -6537,7 +6537,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy units with ESP wallhack.",
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Digital Extremes anti-cheat-onderhoud.",
 							],
 						},
@@ -6572,7 +6572,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy units with ESP wallhack.",
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Digital Extremes anti-cheat-onderhoud.",
 							],
 						},
@@ -6607,7 +6607,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Unlock All — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats bundelt ESP wallhack, radar hack en Aimbot als undetected pakket voor Warframe op Windows PC. Read enemy units with ESP wallhack.",
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Digital Extremes anti-cheat-onderhoud.",
 							],
 						},
@@ -6800,9 +6800,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					playerEsp: "Overlay ESP wallhack playera Warframe dla Warframe",
 					headerArt: "Grafika nagłówka Warframe dla stron Warframe Cheats",
 					cheatsPackage: "Pakiet Warframe cheats ESP wallhack i Aimbot",
-					rebootFight: "Walka w control pointu Warframe dla cheatów Aimbot",
+					rebootFight: "Warframe Sortie defense fight with aimbot cheats active",
 					battleRoyale: "Walka Steel Path missions Warframe dla undetected cheatów",
-					battleRoyaleIsland: "Mapa Warframe dla tras ESP wallhack Warframe",
+					openWorldTileset: "Mapa Warframe dla tras ESP wallhack Warframe",
 				},
 			},
 			pages: {
@@ -6821,7 +6821,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Dlaczego Warframe Cheats w 2026",
 							paragraphs: [
-								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Idealny do czytania wrogich squadów w BR i mission objectives.",
+								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Idealny do czytania wrogich squadów w BR i co-op missions.",
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Digital Extremes anti-cheat.",
 							],
 						},
@@ -6835,11 +6835,11 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					],
 				},
 				"warframe-esp": {
-					title: "Warframe ESP 2026 | Player Boxes & Wallhack",
-					description: "Warframe ESP: player boxes, health pickup markers, and wallhack overlays for Warframe. natychmiastowa dostawa cyfrowa. anti-cheat maintenance included.",
-					h1: "Warframe ESP — Player Boxes & Wallhack",
-					intro: "Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Warframe ESP for mission objectives, spawn routes, and mission objectives: player boxes, health pickup markers, and wallhack overlays.",
-					imageAlt: "warframe-cheats warframe-esp player boxes, health pickup markers, and wallhack overlays preview",
+					title: "Warframe ESP 2026 | enemy boxes & Wallhack",
+					description: "Warframe ESP: enemy boxes, health pickup markers, and wallhack overlays for Warframe. natychmiastowa dostawa cyfrowa. anti-cheat maintenance included.",
+					h1: "Warframe ESP — enemy boxes & Wallhack",
+					intro: "Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Warframe ESP for mission objectives, spawn routes, and mission objectives: enemy boxes, health pickup markers, and wallhack overlays.",
+					imageAlt: "warframe-cheats warframe-esp enemy boxes, health pickup markers, and wallhack overlays preview",
 					galleryTitle: "Warframe Cheats Warframe ESP gallery",
 					heroImage: "/images/warframe-esp-overlay.webp",
 					ctaPrimary: "Kup Warframe Cheats",
@@ -6849,7 +6849,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy units with ESP wallhack.",
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Digital Extremes anti-cheat.",
 							],
 						},
@@ -6884,7 +6884,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy units with ESP wallhack.",
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Digital Extremes anti-cheat.",
 							],
 						},
@@ -6919,7 +6919,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Funkcje — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy units with ESP wallhack.",
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Digital Extremes anti-cheat.",
 							],
 						},
@@ -6954,7 +6954,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Cennik — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy units with ESP wallhack.",
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Digital Extremes anti-cheat.",
 							],
 						},
@@ -6989,7 +6989,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Instalacja — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy units with ESP wallhack.",
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Digital Extremes anti-cheat.",
 							],
 						},
@@ -7024,7 +7024,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Aktualizacje — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy units with ESP wallhack.",
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Digital Extremes anti-cheat.",
 							],
 						},
@@ -7046,10 +7046,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				faq: {
 					title: "FAQ 2026 | Warframe Cheats Common Answers",
-					description: "FAQ: ESP, soft aim, delivery, and EAC questions for Warframe. natychmiastowa dostawa cyfrowa. anti-cheat maintenance included.",
+					description: "FAQ: ESP, soft aim, delivery, and anti-cheat questions for Warframe. natychmiastowa dostawa cyfrowa. anti-cheat maintenance included.",
 					h1: "FAQ — Common Answers",
-					intro: "Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and EAC questions.",
-					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and EAC questions preview",
+					intro: "Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and anti-cheat questions.",
+					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and anti-cheat questions preview",
 					galleryTitle: "Warframe Cheats FAQ gallery",
 					heroImage: "/images/warframe-esp-tanks.webp",
 					ctaPrimary: "Kup Warframe Cheats",
@@ -7059,7 +7059,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "FAQ — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy units with ESP wallhack.",
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Digital Extremes anti-cheat.",
 							],
 						},
@@ -7094,7 +7094,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Wsparcie — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy units with ESP wallhack.",
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Digital Extremes anti-cheat.",
 							],
 						},
@@ -7129,7 +7129,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Cheaty undetected — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy units with ESP wallhack.",
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Digital Extremes anti-cheat.",
 							],
 						},
@@ -7164,7 +7164,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Wallhack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy units with ESP wallhack.",
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Digital Extremes anti-cheat.",
 							],
 						},
@@ -7199,7 +7199,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Radar hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy units with ESP wallhack.",
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Digital Extremes anti-cheat.",
 							],
 						},
@@ -7234,7 +7234,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Bypass Digital Extremes anti-cheat — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy units with ESP wallhack.",
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Digital Extremes anti-cheat.",
 							],
 						},
@@ -7269,7 +7269,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats 2026 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy units with ESP wallhack.",
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Digital Extremes anti-cheat.",
 							],
 						},
@@ -7304,7 +7304,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy units with ESP wallhack.",
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Digital Extremes anti-cheat.",
 							],
 						},
@@ -7339,7 +7339,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Pobieranie Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy units with ESP wallhack.",
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Digital Extremes anti-cheat.",
 							],
 						},
@@ -7374,7 +7374,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Mod Menu — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy units with ESP wallhack.",
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Digital Extremes anti-cheat.",
 							],
 						},
@@ -7409,7 +7409,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Soft Aim — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy units with ESP wallhack.",
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Digital Extremes anti-cheat.",
 							],
 						},
@@ -7444,7 +7444,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Najlepsze Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy units with ESP wallhack.",
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Digital Extremes anti-cheat.",
 							],
 						},
@@ -7479,7 +7479,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy units with ESP wallhack.",
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Digital Extremes anti-cheat.",
 							],
 						},
@@ -7514,7 +7514,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy units with ESP wallhack.",
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Digital Extremes anti-cheat.",
 							],
 						},
@@ -7549,7 +7549,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Unlock All — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats łączy ESP wallhack, radar hack i Aimbot jako pakiet undetected dla Warframe na PC Windows. Read enemy units with ESP wallhack.",
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Digital Extremes anti-cheat.",
 							],
 						},
@@ -7742,9 +7742,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					playerEsp: "ESP wallhack оверлей игрока Warframe",
 					headerArt: "Header-арт Warframe для страниц Warframe Cheats",
 					cheatsPackage: "Пакет Warframe cheats ESP wallhack и Aimbot",
-					rebootFight: "Бой в Reboot Van Warframe для читов Aimbot",
+					rebootFight: "Warframe Sortie defense fight with aimbot cheats active",
 					battleRoyale: "Бой Steel Path missions Warframe для undetected читов",
-					battleRoyaleIsland: "Карта Warframe для маршрутов ESP wallhack Warframe",
+					openWorldTileset: "Карта Warframe для маршрутов ESP wallhack Warframe",
 				},
 			},
 			pages: {
@@ -7763,7 +7763,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Почему выбирают Warframe Cheats в 2026",
 							paragraphs: [
-								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Идеально для чтения вражеских отрядов в BR и mission objectives.",
+								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Идеально для чтения вражеских отрядов в BR и co-op missions.",
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Digital Extremes anti-cheat.",
 							],
 						},
@@ -7777,11 +7777,11 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					],
 				},
 				"warframe-esp": {
-					title: "Warframe ESP 2026 | Player Boxes & Wallhack",
-					description: "Warframe ESP: player boxes, health pickup markers, and wallhack overlays for Warframe. мгновенная цифровая доставка. anti-cheat maintenance included.",
-					h1: "Warframe ESP — Player Boxes & Wallhack",
-					intro: "Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Warframe ESP for mission objectives, spawn routes, and mission objectives: player boxes, health pickup markers, and wallhack overlays.",
-					imageAlt: "warframe-cheats warframe-esp player boxes, health pickup markers, and wallhack overlays preview",
+					title: "Warframe ESP 2026 | enemy boxes & Wallhack",
+					description: "Warframe ESP: enemy boxes, health pickup markers, and wallhack overlays for Warframe. мгновенная цифровая доставка. anti-cheat maintenance included.",
+					h1: "Warframe ESP — enemy boxes & Wallhack",
+					intro: "Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Warframe ESP for mission objectives, spawn routes, and mission objectives: enemy boxes, health pickup markers, and wallhack overlays.",
+					imageAlt: "warframe-cheats warframe-esp enemy boxes, health pickup markers, and wallhack overlays preview",
 					galleryTitle: "Warframe Cheats Warframe ESP gallery",
 					heroImage: "/images/warframe-esp-overlay.webp",
 					ctaPrimary: "Купить Warframe Cheats",
@@ -7791,7 +7791,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Digital Extremes anti-cheat.",
 							],
 						},
@@ -7826,7 +7826,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Digital Extremes anti-cheat.",
 							],
 						},
@@ -7861,7 +7861,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Функции — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Digital Extremes anti-cheat.",
 							],
 						},
@@ -7896,7 +7896,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Цены — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Digital Extremes anti-cheat.",
 							],
 						},
@@ -7931,7 +7931,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Установка — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Digital Extremes anti-cheat.",
 							],
 						},
@@ -7966,7 +7966,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Обновления — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Digital Extremes anti-cheat.",
 							],
 						},
@@ -7988,10 +7988,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				faq: {
 					title: "FAQ 2026 | Warframe Cheats Common Answers",
-					description: "FAQ: ESP, soft aim, delivery, and EAC questions for Warframe. мгновенная цифровая доставка. anti-cheat maintenance included.",
+					description: "FAQ: ESP, soft aim, delivery, and anti-cheat questions for Warframe. мгновенная цифровая доставка. anti-cheat maintenance included.",
 					h1: "FAQ — Common Answers",
-					intro: "Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and EAC questions.",
-					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and EAC questions preview",
+					intro: "Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and anti-cheat questions.",
+					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and anti-cheat questions preview",
 					galleryTitle: "Warframe Cheats FAQ gallery",
 					heroImage: "/images/warframe-esp-tanks.webp",
 					ctaPrimary: "Купить Warframe Cheats",
@@ -8001,7 +8001,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "FAQ — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Digital Extremes anti-cheat.",
 							],
 						},
@@ -8036,7 +8036,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Поддержка — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Digital Extremes anti-cheat.",
 							],
 						},
@@ -8071,7 +8071,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Undetected читы — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Digital Extremes anti-cheat.",
 							],
 						},
@@ -8106,7 +8106,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Wallhack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Digital Extremes anti-cheat.",
 							],
 						},
@@ -8141,7 +8141,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Radar hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Digital Extremes anti-cheat.",
 							],
 						},
@@ -8176,7 +8176,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Bypass Digital Extremes anti-cheat — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Digital Extremes anti-cheat.",
 							],
 						},
@@ -8211,7 +8211,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats 2026 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Digital Extremes anti-cheat.",
 							],
 						},
@@ -8246,7 +8246,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Digital Extremes anti-cheat.",
 							],
 						},
@@ -8281,7 +8281,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Скачать Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Digital Extremes anti-cheat.",
 							],
 						},
@@ -8316,7 +8316,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Mod Menu — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Digital Extremes anti-cheat.",
 							],
 						},
@@ -8351,7 +8351,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Soft Aim — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Digital Extremes anti-cheat.",
 							],
 						},
@@ -8386,7 +8386,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Лучшие Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Digital Extremes anti-cheat.",
 							],
 						},
@@ -8421,7 +8421,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Digital Extremes anti-cheat.",
 							],
 						},
@@ -8456,7 +8456,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Digital Extremes anti-cheat.",
 							],
 						},
@@ -8491,7 +8491,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Unlock All — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats объединяет ESP wallhack, radar hack и Aimbot в undetected пакете для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Digital Extremes anti-cheat.",
 							],
 						},
@@ -8684,9 +8684,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					playerEsp: "Warframe için Warframe operatör ESP wallhack overlay",
 					headerArt: "Warframe Cheats sayfaları için Warframe header art",
 					cheatsPackage: "ESP wallhack ve Aimbot içeren Warframe cheats paketi",
-					rebootFight: "Warframe cheats Aimbot için Warframe control point savaşı",
+					rebootFight: "Warframe Sortie defense fight with aimbot cheats active",
 					battleRoyale: "Undetected hileler için Warframe Steel Path missions çatışması",
-					battleRoyaleIsland: "Warframe ESP wallhack rotaları için Warframe haritası",
+					openWorldTileset: "Warframe ESP wallhack rotaları için Warframe haritası",
 				},
 			},
 			pages: {
@@ -8705,7 +8705,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "2026'da neden Warframe Cheats",
 							paragraphs: [
-								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. BR ve mission objectives'da düşman squad okumak için ideal.",
+								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. BR ve co-op missions'da düşman squad okumak için ideal.",
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Digital Extremes anti-cheat bakımı içerir.",
 							],
 						},
@@ -8719,11 +8719,11 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					],
 				},
 				"warframe-esp": {
-					title: "Warframe ESP 2026 | Player Boxes & Wallhack",
-					description: "Warframe ESP: player boxes, health pickup markers, and wallhack overlays for Warframe. anında dijital teslimat. anti-cheat maintenance included.",
-					h1: "Warframe ESP — Player Boxes & Wallhack",
-					intro: "Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Warframe ESP for mission objectives, spawn routes, and mission objectives: player boxes, health pickup markers, and wallhack overlays.",
-					imageAlt: "warframe-cheats warframe-esp player boxes, health pickup markers, and wallhack overlays preview",
+					title: "Warframe ESP 2026 | enemy boxes & Wallhack",
+					description: "Warframe ESP: enemy boxes, health pickup markers, and wallhack overlays for Warframe. anında dijital teslimat. anti-cheat maintenance included.",
+					h1: "Warframe ESP — enemy boxes & Wallhack",
+					intro: "Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Warframe ESP for mission objectives, spawn routes, and mission objectives: enemy boxes, health pickup markers, and wallhack overlays.",
+					imageAlt: "warframe-cheats warframe-esp enemy boxes, health pickup markers, and wallhack overlays preview",
 					galleryTitle: "Warframe Cheats Warframe ESP gallery",
 					heroImage: "/images/warframe-esp-overlay.webp",
 					ctaPrimary: "Warframe Cheats satın al",
@@ -8733,7 +8733,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Digital Extremes anti-cheat bakımı içerir.",
 							],
 						},
@@ -8768,7 +8768,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Digital Extremes anti-cheat bakımı içerir.",
 							],
 						},
@@ -8803,7 +8803,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Özellikler — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Digital Extremes anti-cheat bakımı içerir.",
 							],
 						},
@@ -8838,7 +8838,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Fiyatlar — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Digital Extremes anti-cheat bakımı içerir.",
 							],
 						},
@@ -8873,7 +8873,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Kurulum — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Digital Extremes anti-cheat bakımı içerir.",
 							],
 						},
@@ -8908,7 +8908,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Güncellemeler — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Digital Extremes anti-cheat bakımı içerir.",
 							],
 						},
@@ -8930,10 +8930,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				faq: {
 					title: "SSS 2026 | Warframe Cheats Common Answers",
-					description: "SSS: ESP, soft aim, delivery, and EAC questions for Warframe. anında dijital teslimat. anti-cheat maintenance included.",
+					description: "SSS: ESP, soft aim, delivery, and anti-cheat questions for Warframe. anında dijital teslimat. anti-cheat maintenance included.",
 					h1: "SSS — Common Answers",
-					intro: "Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. SSS for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and EAC questions.",
-					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and EAC questions preview",
+					intro: "Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. SSS for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and anti-cheat questions.",
+					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and anti-cheat questions preview",
 					galleryTitle: "Warframe Cheats SSS gallery",
 					heroImage: "/images/warframe-esp-tanks.webp",
 					ctaPrimary: "Warframe Cheats satın al",
@@ -8943,7 +8943,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "SSS — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Digital Extremes anti-cheat bakımı içerir.",
 							],
 						},
@@ -8978,7 +8978,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Destek — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Digital Extremes anti-cheat bakımı içerir.",
 							],
 						},
@@ -9013,7 +9013,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Undetected hileler — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Digital Extremes anti-cheat bakımı içerir.",
 							],
 						},
@@ -9048,7 +9048,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Wallhack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Digital Extremes anti-cheat bakımı içerir.",
 							],
 						},
@@ -9083,7 +9083,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Radar hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Digital Extremes anti-cheat bakımı içerir.",
 							],
 						},
@@ -9118,7 +9118,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "anti-cheat bypass — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Digital Extremes anti-cheat bakımı içerir.",
 							],
 						},
@@ -9153,7 +9153,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats 2026 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Digital Extremes anti-cheat bakımı içerir.",
 							],
 						},
@@ -9188,7 +9188,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Digital Extremes anti-cheat bakımı içerir.",
 							],
 						},
@@ -9223,7 +9223,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Hile İndir — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Digital Extremes anti-cheat bakımı içerir.",
 							],
 						},
@@ -9258,7 +9258,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Mod Menu — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Digital Extremes anti-cheat bakımı içerir.",
 							],
 						},
@@ -9293,7 +9293,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Soft Aim — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Digital Extremes anti-cheat bakımı içerir.",
 							],
 						},
@@ -9328,7 +9328,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "En İyi Warframe Hileleri — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Digital Extremes anti-cheat bakımı içerir.",
 							],
 						},
@@ -9363,7 +9363,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Digital Extremes anti-cheat bakımı içerir.",
 							],
 						},
@@ -9398,7 +9398,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Digital Extremes anti-cheat bakımı içerir.",
 							],
 						},
@@ -9433,7 +9433,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Unlock All — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats, Warframe için Windows PC üzerinde ESP wallhack, radar hack ve Aimbot undetected paket sunar. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Digital Extremes anti-cheat bakımı içerir.",
 							],
 						},
@@ -9626,9 +9626,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					playerEsp: "تراكب ESP wallhack لمشغّل Warframe لـ Warframe",
 					headerArt: "فن رأس Warframe لصفحات Warframe Cheats",
 					cheatsPackage: "حزمة Warframe cheats مع ESP wallhack وAimbot",
-					rebootFight: "معركة control point في Warframe لغش Aimbot",
+					rebootFight: "Warframe Sortie defense fight with aimbot cheats active",
 					battleRoyale: "معركة Steel Path missions Warframe للغش غير المكتشف",
-					battleRoyaleIsland: "خريطة Warframe لمسارات ESP wallhack Warframe",
+					openWorldTileset: "خريطة Warframe لمسارات ESP wallhack Warframe",
 				},
 			},
 			pages: {
@@ -9647,7 +9647,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "لماذا Warframe Cheats في 2026",
 							paragraphs: [
-								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. مثالي لقراءة فرق العدو في BR وmission objectives.",
+								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. مثالي لقراءة فرق العدو في BR وco-op missions.",
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Digital Extremes anti-cheat.",
 							],
 						},
@@ -9661,11 +9661,11 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					],
 				},
 				"warframe-esp": {
-					title: "Warframe ESP 2026 | Player Boxes & Wallhack",
-					description: "Warframe ESP: player boxes, health pickup markers, and wallhack overlays for Warframe. تسليم رقمي فوري. anti-cheat maintenance included.",
-					h1: "Warframe ESP — Player Boxes & Wallhack",
-					intro: "Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Warframe ESP for mission objectives, spawn routes, and mission objectives: player boxes, health pickup markers, and wallhack overlays.",
-					imageAlt: "warframe-cheats warframe-esp player boxes, health pickup markers, and wallhack overlays preview",
+					title: "Warframe ESP 2026 | enemy boxes & Wallhack",
+					description: "Warframe ESP: enemy boxes, health pickup markers, and wallhack overlays for Warframe. تسليم رقمي فوري. anti-cheat maintenance included.",
+					h1: "Warframe ESP — enemy boxes & Wallhack",
+					intro: "Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Warframe ESP for mission objectives, spawn routes, and mission objectives: enemy boxes, health pickup markers, and wallhack overlays.",
+					imageAlt: "warframe-cheats warframe-esp enemy boxes, health pickup markers, and wallhack overlays preview",
 					galleryTitle: "Warframe Cheats Warframe ESP gallery",
 					heroImage: "/images/warframe-esp-overlay.webp",
 					ctaPrimary: "اشترِ Warframe Cheats",
@@ -9675,7 +9675,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy units with ESP wallhack.",
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Digital Extremes anti-cheat.",
 							],
 						},
@@ -9710,7 +9710,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy units with ESP wallhack.",
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Digital Extremes anti-cheat.",
 							],
 						},
@@ -9745,7 +9745,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "الميزات — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy units with ESP wallhack.",
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Digital Extremes anti-cheat.",
 							],
 						},
@@ -9780,7 +9780,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "الأسعار — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy units with ESP wallhack.",
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Digital Extremes anti-cheat.",
 							],
 						},
@@ -9815,7 +9815,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "التثبيت — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy units with ESP wallhack.",
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Digital Extremes anti-cheat.",
 							],
 						},
@@ -9850,7 +9850,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "التحديثات — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy units with ESP wallhack.",
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Digital Extremes anti-cheat.",
 							],
 						},
@@ -9872,10 +9872,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				faq: {
 					title: "الأسئلة 2026 | Warframe Cheats Common Answers",
-					description: "الأسئلة: ESP, soft aim, delivery, and EAC questions for Warframe. تسليم رقمي فوري. anti-cheat maintenance included.",
+					description: "الأسئلة: ESP, soft aim, delivery, and anti-cheat questions for Warframe. تسليم رقمي فوري. anti-cheat maintenance included.",
 					h1: "الأسئلة — Common Answers",
-					intro: "Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. الأسئلة for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and EAC questions.",
-					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and EAC questions preview",
+					intro: "Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. الأسئلة for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and anti-cheat questions.",
+					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and anti-cheat questions preview",
 					galleryTitle: "Warframe Cheats الأسئلة gallery",
 					heroImage: "/images/warframe-esp-tanks.webp",
 					ctaPrimary: "اشترِ Warframe Cheats",
@@ -9885,7 +9885,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "الأسئلة — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy units with ESP wallhack.",
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Digital Extremes anti-cheat.",
 							],
 						},
@@ -9920,7 +9920,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "الدعم — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy units with ESP wallhack.",
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Digital Extremes anti-cheat.",
 							],
 						},
@@ -9955,7 +9955,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "غش undetected — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy units with ESP wallhack.",
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Digital Extremes anti-cheat.",
 							],
 						},
@@ -9990,7 +9990,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Wallhack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy units with ESP wallhack.",
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Digital Extremes anti-cheat.",
 							],
 						},
@@ -10025,7 +10025,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Radar hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy units with ESP wallhack.",
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Digital Extremes anti-cheat.",
 							],
 						},
@@ -10060,7 +10060,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Bypass Digital Extremes anti-cheat — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy units with ESP wallhack.",
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Digital Extremes anti-cheat.",
 							],
 						},
@@ -10095,7 +10095,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats 2026 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy units with ESP wallhack.",
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Digital Extremes anti-cheat.",
 							],
 						},
@@ -10130,7 +10130,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy units with ESP wallhack.",
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Digital Extremes anti-cheat.",
 							],
 						},
@@ -10165,7 +10165,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats Download — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy units with ESP wallhack.",
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Digital Extremes anti-cheat.",
 							],
 						},
@@ -10200,7 +10200,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Mod Menu — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy units with ESP wallhack.",
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Digital Extremes anti-cheat.",
 							],
 						},
@@ -10235,7 +10235,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Soft Aim — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy units with ESP wallhack.",
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Digital Extremes anti-cheat.",
 							],
 						},
@@ -10270,7 +10270,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Best Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy units with ESP wallhack.",
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Digital Extremes anti-cheat.",
 							],
 						},
@@ -10305,7 +10305,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy units with ESP wallhack.",
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Digital Extremes anti-cheat.",
 							],
 						},
@@ -10340,7 +10340,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy units with ESP wallhack.",
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Digital Extremes anti-cheat.",
 							],
 						},
@@ -10375,7 +10375,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Unlock All — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats يجمع ESP wallhack وradar hack وAimbot غير مكتشف لـ Warframe على Windows PC. Read enemy units with ESP wallhack.",
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Digital Extremes anti-cheat.",
 							],
 						},
@@ -10568,9 +10568,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					playerEsp: "Warframe向けWarframeオペレーターESP wallhack",
 					headerArt: "Warframe Cheatsページ用Warframeヘッダーアート",
 					cheatsPackage: "ESP wallhackとAimbot付きWarframe cheatsパッケージ",
-					rebootFight: "Warframe cheats Aimbot向けWarframe control point戦",
+					rebootFight: "Warframe Sortie defense fight with aimbot cheats active",
 					battleRoyale: "undetectedチート向けWarframeバトルロイヤル戦闘",
-					battleRoyaleIsland: "Warframe ESP wallhackルート用Warframeマップ",
+					openWorldTileset: "Warframe ESP wallhackルート用Warframeマップ",
 				},
 			},
 			pages: {
@@ -10589,7 +10589,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "2026年にWarframe Cheatsを選ぶ理由",
 							paragraphs: [
-								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。BRとmission objectivesで敵スクワッドを読むのに最適。",
+								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。BRとco-op missionsで敵スクワッドを読むのに最適。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにDigital Extremes anti-cheatメンテナンス含む。",
 							],
 						},
@@ -10603,11 +10603,11 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					],
 				},
 				"warframe-esp": {
-					title: "Warframe ESP 2026 | Player Boxes & Wallhack",
-					description: "Warframe ESP: player boxes, health pickup markers, and wallhack overlays for Warframe. 即時デジタル配信. anti-cheat maintenance included.",
-					h1: "Warframe ESP — Player Boxes & Wallhack",
-					intro: "Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Warframe ESP for mission objectives, spawn routes, and mission objectives: player boxes, health pickup markers, and wallhack overlays.",
-					imageAlt: "warframe-cheats warframe-esp player boxes, health pickup markers, and wallhack overlays preview",
+					title: "Warframe ESP 2026 | enemy boxes & Wallhack",
+					description: "Warframe ESP: enemy boxes, health pickup markers, and wallhack overlays for Warframe. 即時デジタル配信. anti-cheat maintenance included.",
+					h1: "Warframe ESP — enemy boxes & Wallhack",
+					intro: "Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Warframe ESP for mission objectives, spawn routes, and mission objectives: enemy boxes, health pickup markers, and wallhack overlays.",
+					imageAlt: "warframe-cheats warframe-esp enemy boxes, health pickup markers, and wallhack overlays preview",
 					galleryTitle: "Warframe Cheats Warframe ESP gallery",
 					heroImage: "/images/warframe-esp-overlay.webp",
 					ctaPrimary: "Warframe Cheatsを購入",
@@ -10617,7 +10617,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy squads with ESP wallhack.",
+								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy units with ESP wallhack.",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにDigital Extremes anti-cheatメンテナンス含む。",
 							],
 						},
@@ -10652,7 +10652,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy squads with ESP wallhack.",
+								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy units with ESP wallhack.",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにDigital Extremes anti-cheatメンテナンス含む。",
 							],
 						},
@@ -10687,7 +10687,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "機能 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy squads with ESP wallhack.",
+								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy units with ESP wallhack.",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにDigital Extremes anti-cheatメンテナンス含む。",
 							],
 						},
@@ -10722,7 +10722,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "料金 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy squads with ESP wallhack.",
+								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy units with ESP wallhack.",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにDigital Extremes anti-cheatメンテナンス含む。",
 							],
 						},
@@ -10757,7 +10757,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "セットアップ — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy squads with ESP wallhack.",
+								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy units with ESP wallhack.",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにDigital Extremes anti-cheatメンテナンス含む。",
 							],
 						},
@@ -10792,7 +10792,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "更新 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy squads with ESP wallhack.",
+								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy units with ESP wallhack.",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにDigital Extremes anti-cheatメンテナンス含む。",
 							],
 						},
@@ -10814,10 +10814,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				faq: {
 					title: "FAQ 2026 | Warframe Cheats Common Answers",
-					description: "FAQ: ESP, soft aim, delivery, and EAC questions for Warframe. 即時デジタル配信. anti-cheat maintenance included.",
+					description: "FAQ: ESP, soft aim, delivery, and anti-cheat questions for Warframe. 即時デジタル配信. anti-cheat maintenance included.",
 					h1: "FAQ — Common Answers",
-					intro: "Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and EAC questions.",
-					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and EAC questions preview",
+					intro: "Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and anti-cheat questions.",
+					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and anti-cheat questions preview",
 					galleryTitle: "Warframe Cheats FAQ gallery",
 					heroImage: "/images/warframe-esp-tanks.webp",
 					ctaPrimary: "Warframe Cheatsを購入",
@@ -10827,7 +10827,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "FAQ — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy squads with ESP wallhack.",
+								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy units with ESP wallhack.",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにDigital Extremes anti-cheatメンテナンス含む。",
 							],
 						},
@@ -10862,7 +10862,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "サポート — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy squads with ESP wallhack.",
+								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy units with ESP wallhack.",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにDigital Extremes anti-cheatメンテナンス含む。",
 							],
 						},
@@ -10897,7 +10897,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Undetectedチート — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy squads with ESP wallhack.",
+								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy units with ESP wallhack.",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにDigital Extremes anti-cheatメンテナンス含む。",
 							],
 						},
@@ -10932,7 +10932,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Wallhack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy squads with ESP wallhack.",
+								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy units with ESP wallhack.",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにDigital Extremes anti-cheatメンテナンス含む。",
 							],
 						},
@@ -10967,7 +10967,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Radar Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy squads with ESP wallhack.",
+								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy units with ESP wallhack.",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにDigital Extremes anti-cheatメンテナンス含む。",
 							],
 						},
@@ -11002,7 +11002,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Anti-cheat bypass — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy squads with ESP wallhack.",
+								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy units with ESP wallhack.",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにDigital Extremes anti-cheatメンテナンス含む。",
 							],
 						},
@@ -11037,7 +11037,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats 2026 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy squads with ESP wallhack.",
+								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy units with ESP wallhack.",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにDigital Extremes anti-cheatメンテナンス含む。",
 							],
 						},
@@ -11072,7 +11072,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy squads with ESP wallhack.",
+								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy units with ESP wallhack.",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにDigital Extremes anti-cheatメンテナンス含む。",
 							],
 						},
@@ -11107,7 +11107,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats Download — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy squads with ESP wallhack.",
+								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy units with ESP wallhack.",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにDigital Extremes anti-cheatメンテナンス含む。",
 							],
 						},
@@ -11142,7 +11142,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Mod Menu — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy squads with ESP wallhack.",
+								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy units with ESP wallhack.",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにDigital Extremes anti-cheatメンテナンス含む。",
 							],
 						},
@@ -11177,7 +11177,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Soft Aim — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy squads with ESP wallhack.",
+								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy units with ESP wallhack.",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにDigital Extremes anti-cheatメンテナンス含む。",
 							],
 						},
@@ -11212,7 +11212,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Best Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy squads with ESP wallhack.",
+								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy units with ESP wallhack.",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにDigital Extremes anti-cheatメンテナンス含む。",
 							],
 						},
@@ -11247,7 +11247,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy squads with ESP wallhack.",
+								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy units with ESP wallhack.",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにDigital Extremes anti-cheatメンテナンス含む。",
 							],
 						},
@@ -11282,7 +11282,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy squads with ESP wallhack.",
+								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy units with ESP wallhack.",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにDigital Extremes anti-cheatメンテナンス含む。",
 							],
 						},
@@ -11317,7 +11317,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Unlock All — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy squads with ESP wallhack.",
+								"Warframe CheatsはWarframe向けWindows PC用ESP wallhack、radar hack、Aimbotのundetectedパッケージです。Read enemy units with ESP wallhack.",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにDigital Extremes anti-cheatメンテナンス含む。",
 							],
 						},
@@ -11510,9 +11510,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					playerEsp: "Warframe용 Warframe 오퍼레이터 ESP wallhack",
 					headerArt: "Warframe Cheats 페이지용 Warframe 헤더 아트",
 					cheatsPackage: "ESP wallhack과 Aimbot이 포함된 Warframe cheats 패키지",
-					rebootFight: "Warframe cheats Aimbot용 Warframe control point 전투",
+					rebootFight: "Warframe Sortie defense fight with aimbot cheats active",
 					battleRoyale: "undetected 치트용 Warframe 배틀로얄 전투",
-					battleRoyaleIsland: "Warframe ESP wallhack 경로용 Warframe 맵",
+					openWorldTileset: "Warframe ESP wallhack 경로용 Warframe 맵",
 				},
 			},
 			pages: {
@@ -11531,7 +11531,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "2026년 Warframe Cheats를 선택하는 이유",
 							paragraphs: [
-								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. BR 및 mission objectives에서 적 분대 읽기에 이상적.",
+								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. BR 및 co-op missions에서 적 분대 읽기에 이상적.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Digital Extremes anti-cheat 유지보수 포함.",
 							],
 						},
@@ -11545,11 +11545,11 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					],
 				},
 				"warframe-esp": {
-					title: "Warframe ESP 2026 | Player Boxes & Wallhack",
-					description: "Warframe ESP: player boxes, health pickup markers, and wallhack overlays for Warframe. 즉시 디지털 배송. anti-cheat maintenance included.",
-					h1: "Warframe ESP — Player Boxes & Wallhack",
-					intro: "Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Warframe ESP for mission objectives, spawn routes, and mission objectives: player boxes, health pickup markers, and wallhack overlays.",
-					imageAlt: "warframe-cheats warframe-esp player boxes, health pickup markers, and wallhack overlays preview",
+					title: "Warframe ESP 2026 | enemy boxes & Wallhack",
+					description: "Warframe ESP: enemy boxes, health pickup markers, and wallhack overlays for Warframe. 즉시 디지털 배송. anti-cheat maintenance included.",
+					h1: "Warframe ESP — enemy boxes & Wallhack",
+					intro: "Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Warframe ESP for mission objectives, spawn routes, and mission objectives: enemy boxes, health pickup markers, and wallhack overlays.",
+					imageAlt: "warframe-cheats warframe-esp enemy boxes, health pickup markers, and wallhack overlays preview",
 					galleryTitle: "Warframe Cheats Warframe ESP gallery",
 					heroImage: "/images/warframe-esp-overlay.webp",
 					ctaPrimary: "Warframe Cheats 구매",
@@ -11559,7 +11559,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Digital Extremes anti-cheat 유지보수 포함.",
 							],
 						},
@@ -11594,7 +11594,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Digital Extremes anti-cheat 유지보수 포함.",
 							],
 						},
@@ -11629,7 +11629,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "기능 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Digital Extremes anti-cheat 유지보수 포함.",
 							],
 						},
@@ -11664,7 +11664,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "가격 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Digital Extremes anti-cheat 유지보수 포함.",
 							],
 						},
@@ -11699,7 +11699,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "설치 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Digital Extremes anti-cheat 유지보수 포함.",
 							],
 						},
@@ -11734,7 +11734,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "업데이트 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Digital Extremes anti-cheat 유지보수 포함.",
 							],
 						},
@@ -11756,10 +11756,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				faq: {
 					title: "FAQ 2026 | Warframe Cheats Common Answers",
-					description: "FAQ: ESP, soft aim, delivery, and EAC questions for Warframe. 즉시 디지털 배송. anti-cheat maintenance included.",
+					description: "FAQ: ESP, soft aim, delivery, and anti-cheat questions for Warframe. 즉시 디지털 배송. anti-cheat maintenance included.",
 					h1: "FAQ — Common Answers",
-					intro: "Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and EAC questions.",
-					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and EAC questions preview",
+					intro: "Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and anti-cheat questions.",
+					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and anti-cheat questions preview",
 					galleryTitle: "Warframe Cheats FAQ gallery",
 					heroImage: "/images/warframe-esp-tanks.webp",
 					ctaPrimary: "Warframe Cheats 구매",
@@ -11769,7 +11769,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "FAQ — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Digital Extremes anti-cheat 유지보수 포함.",
 							],
 						},
@@ -11804,7 +11804,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "지원 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Digital Extremes anti-cheat 유지보수 포함.",
 							],
 						},
@@ -11839,7 +11839,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Undetected 치트 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Digital Extremes anti-cheat 유지보수 포함.",
 							],
 						},
@@ -11874,7 +11874,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Wallhack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Digital Extremes anti-cheat 유지보수 포함.",
 							],
 						},
@@ -11909,7 +11909,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Radar Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Digital Extremes anti-cheat 유지보수 포함.",
 							],
 						},
@@ -11944,7 +11944,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Anti-cheat bypass — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Digital Extremes anti-cheat 유지보수 포함.",
 							],
 						},
@@ -11979,7 +11979,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats 2026 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Digital Extremes anti-cheat 유지보수 포함.",
 							],
 						},
@@ -12014,7 +12014,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Digital Extremes anti-cheat 유지보수 포함.",
 							],
 						},
@@ -12049,7 +12049,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats Download — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Digital Extremes anti-cheat 유지보수 포함.",
 							],
 						},
@@ -12084,7 +12084,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Mod Menu — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Digital Extremes anti-cheat 유지보수 포함.",
 							],
 						},
@@ -12119,7 +12119,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Soft Aim — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Digital Extremes anti-cheat 유지보수 포함.",
 							],
 						},
@@ -12154,7 +12154,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Best Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Digital Extremes anti-cheat 유지보수 포함.",
 							],
 						},
@@ -12189,7 +12189,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Digital Extremes anti-cheat 유지보수 포함.",
 							],
 						},
@@ -12224,7 +12224,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Digital Extremes anti-cheat 유지보수 포함.",
 							],
 						},
@@ -12259,7 +12259,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Unlock All — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats는 Warframe Windows PC용 ESP wallhack, radar hack, Aimbot undetected 패키지입니다. Read enemy units with ESP wallhack.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Digital Extremes anti-cheat 유지보수 포함.",
 							],
 						},
@@ -12452,9 +12452,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					playerEsp: "Warframe操作员ESP wallhack覆盖",
 					headerArt: "Warframe Cheats页面Warframe头部艺术图",
 					cheatsPackage: "含ESP wallhack和Aimbot的Warframe cheats套餐",
-					rebootFight: "Warframe cheats Aimbot Warframe control point战斗",
+					rebootFight: "Warframe Sortie defense fight with aimbot cheats active",
 					battleRoyale: "undetected作弊Warframe大逃杀战斗",
-					battleRoyaleIsland: "Warframe ESP wallhack路线Warframe地图",
+					openWorldTileset: "Warframe ESP wallhack路线Warframe地图",
 				},
 			},
 			pages: {
@@ -12473,7 +12473,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "2026年选择Warframe Cheats的原因",
 							paragraphs: [
-								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。适合在BR和mission objectives中读取敌方小队。",
+								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。适合在BR和co-op missions中读取敌方小队。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Digital Extremes anti-cheat维护。",
 							],
 						},
@@ -12487,11 +12487,11 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					],
 				},
 				"warframe-esp": {
-					title: "Warframe ESP 2026 | Player Boxes & Wallhack",
-					description: "Warframe ESP: player boxes, health pickup markers, and wallhack overlays for Warframe. 即时数字交付. anti-cheat maintenance included.",
-					h1: "Warframe ESP — Player Boxes & Wallhack",
-					intro: "Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Warframe ESP for mission objectives, spawn routes, and mission objectives: player boxes, health pickup markers, and wallhack overlays.",
-					imageAlt: "warframe-cheats warframe-esp player boxes, health pickup markers, and wallhack overlays preview",
+					title: "Warframe ESP 2026 | enemy boxes & Wallhack",
+					description: "Warframe ESP: enemy boxes, health pickup markers, and wallhack overlays for Warframe. 即时数字交付. anti-cheat maintenance included.",
+					h1: "Warframe ESP — enemy boxes & Wallhack",
+					intro: "Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Warframe ESP for mission objectives, spawn routes, and mission objectives: enemy boxes, health pickup markers, and wallhack overlays.",
+					imageAlt: "warframe-cheats warframe-esp enemy boxes, health pickup markers, and wallhack overlays preview",
 					galleryTitle: "Warframe Cheats Warframe ESP gallery",
 					heroImage: "/images/warframe-esp-overlay.webp",
 					ctaPrimary: "购买 Warframe Cheats",
@@ -12501,7 +12501,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy squads with ESP wallhack.",
+								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy units with ESP wallhack.",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Digital Extremes anti-cheat维护。",
 							],
 						},
@@ -12536,7 +12536,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy squads with ESP wallhack.",
+								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy units with ESP wallhack.",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Digital Extremes anti-cheat维护。",
 							],
 						},
@@ -12571,7 +12571,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "功能 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy squads with ESP wallhack.",
+								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy units with ESP wallhack.",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Digital Extremes anti-cheat维护。",
 							],
 						},
@@ -12606,7 +12606,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "价格 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy squads with ESP wallhack.",
+								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy units with ESP wallhack.",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Digital Extremes anti-cheat维护。",
 							],
 						},
@@ -12641,7 +12641,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "安装 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy squads with ESP wallhack.",
+								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy units with ESP wallhack.",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Digital Extremes anti-cheat维护。",
 							],
 						},
@@ -12676,7 +12676,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "更新 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy squads with ESP wallhack.",
+								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy units with ESP wallhack.",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Digital Extremes anti-cheat维护。",
 							],
 						},
@@ -12698,10 +12698,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				faq: {
 					title: "常见问题 2026 | Warframe Cheats Common Answers",
-					description: "常见问题: ESP, soft aim, delivery, and EAC questions for Warframe. 即时数字交付. anti-cheat maintenance included.",
+					description: "常见问题: ESP, soft aim, delivery, and anti-cheat questions for Warframe. 即时数字交付. anti-cheat maintenance included.",
 					h1: "常见问题 — Common Answers",
-					intro: "Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。常见问题 for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and EAC questions.",
-					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and EAC questions preview",
+					intro: "Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。常见问题 for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and anti-cheat questions.",
+					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and anti-cheat questions preview",
 					galleryTitle: "Warframe Cheats 常见问题 gallery",
 					heroImage: "/images/warframe-esp-tanks.webp",
 					ctaPrimary: "购买 Warframe Cheats",
@@ -12711,7 +12711,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "常见问题 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy squads with ESP wallhack.",
+								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy units with ESP wallhack.",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Digital Extremes anti-cheat维护。",
 							],
 						},
@@ -12746,7 +12746,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "支持 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy squads with ESP wallhack.",
+								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy units with ESP wallhack.",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Digital Extremes anti-cheat维护。",
 							],
 						},
@@ -12781,7 +12781,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Undetected作弊 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy squads with ESP wallhack.",
+								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy units with ESP wallhack.",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Digital Extremes anti-cheat维护。",
 							],
 						},
@@ -12816,7 +12816,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Wallhack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy squads with ESP wallhack.",
+								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy units with ESP wallhack.",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Digital Extremes anti-cheat维护。",
 							],
 						},
@@ -12851,7 +12851,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Radar Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy squads with ESP wallhack.",
+								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy units with ESP wallhack.",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Digital Extremes anti-cheat维护。",
 							],
 						},
@@ -12886,7 +12886,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Anti-cheat bypass — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy squads with ESP wallhack.",
+								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy units with ESP wallhack.",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Digital Extremes anti-cheat维护。",
 							],
 						},
@@ -12921,7 +12921,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats 2026 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy squads with ESP wallhack.",
+								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy units with ESP wallhack.",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Digital Extremes anti-cheat维护。",
 							],
 						},
@@ -12956,7 +12956,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy squads with ESP wallhack.",
+								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy units with ESP wallhack.",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Digital Extremes anti-cheat维护。",
 							],
 						},
@@ -12991,7 +12991,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats Download — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy squads with ESP wallhack.",
+								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy units with ESP wallhack.",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Digital Extremes anti-cheat维护。",
 							],
 						},
@@ -13026,7 +13026,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Mod Menu — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy squads with ESP wallhack.",
+								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy units with ESP wallhack.",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Digital Extremes anti-cheat维护。",
 							],
 						},
@@ -13061,7 +13061,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Soft Aim — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy squads with ESP wallhack.",
+								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy units with ESP wallhack.",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Digital Extremes anti-cheat维护。",
 							],
 						},
@@ -13096,7 +13096,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Best Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy squads with ESP wallhack.",
+								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy units with ESP wallhack.",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Digital Extremes anti-cheat维护。",
 							],
 						},
@@ -13131,7 +13131,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy squads with ESP wallhack.",
+								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy units with ESP wallhack.",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Digital Extremes anti-cheat维护。",
 							],
 						},
@@ -13166,7 +13166,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy squads with ESP wallhack.",
+								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy units with ESP wallhack.",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Digital Extremes anti-cheat维护。",
 							],
 						},
@@ -13201,7 +13201,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Unlock All — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy squads with ESP wallhack.",
+								"Warframe Cheats为WarframeWindows PC提供ESP wallhack、radar hack和Aimbotundetected套餐。Read enemy units with ESP wallhack.",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Digital Extremes anti-cheat维护。",
 							],
 						},
@@ -13391,12 +13391,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					espWallhack: "Warframe पर Warframe cheats ESP wallhack ओवरले",
 					aimbotCombat: "Warframe Aimbot combat preview",
 					squadFight: "Warframe cheats Aimbot squad fight preview",
-					playerEsp: "Warframe के लिए Warframe player ESP wallhack",
+					playerEsp: "Warframe के लिए Warframe enemy ESP wallhack",
 					headerArt: "Warframe Cheats पेज के लिए Warframe header art",
 					cheatsPackage: "ESP wallhack और Aimbot वाला Warframe cheats पैकेज",
-					rebootFight: "Warframe cheats Aimbot के लिए Warframe extraction route fight",
+					rebootFight: "Warframe Sortie defense fight with aimbot cheats active",
 					battleRoyale: "undetected cheats के लिए Warframe Steel Path missions combat",
-					battleRoyaleIsland: "Warframe ESP wallhack routes के लिए Warframe map",
+					openWorldTileset: "Warframe ESP wallhack routes के लिए Warframe map",
 				},
 			},
 			pages: {
@@ -13415,7 +13415,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "2026 में Warframe Cheats क्यों",
 							paragraphs: [
-								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। BR और mission objectives में दुश्मन squad पढ़ने के लिए आदर्श.",
+								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। BR और co-op missions में दुश्मन squad पढ़ने के लिए आदर्श.",
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Digital Extremes anti-cheat maintenance शामिल।",
 							],
 						},
@@ -13429,11 +13429,11 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					],
 				},
 				"warframe-esp": {
-					title: "Warframe ESP 2026 | Player Boxes & Wallhack",
-					description: "Warframe ESP: player boxes, health pickup markers, and wallhack overlays for Warframe. तुरंत डिजिटल डिलीवरी. anti-cheat maintenance included.",
-					h1: "Warframe ESP — Player Boxes & Wallhack",
-					intro: "Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Warframe ESP for mission objectives, spawn routes, and mission objectives: player boxes, health pickup markers, and wallhack overlays.",
-					imageAlt: "warframe-cheats warframe-esp player boxes, health pickup markers, and wallhack overlays preview",
+					title: "Warframe ESP 2026 | enemy boxes & Wallhack",
+					description: "Warframe ESP: enemy boxes, health pickup markers, and wallhack overlays for Warframe. तुरंत डिजिटल डिलीवरी. anti-cheat maintenance included.",
+					h1: "Warframe ESP — enemy boxes & Wallhack",
+					intro: "Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Warframe ESP for mission objectives, spawn routes, and mission objectives: enemy boxes, health pickup markers, and wallhack overlays.",
+					imageAlt: "warframe-cheats warframe-esp enemy boxes, health pickup markers, and wallhack overlays preview",
 					galleryTitle: "Warframe Cheats Warframe ESP gallery",
 					heroImage: "/images/warframe-esp-overlay.webp",
 					ctaPrimary: "Warframe Cheats खरीदें",
@@ -13443,7 +13443,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy squads with ESP wallhack.",
+								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy units with ESP wallhack.",
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Digital Extremes anti-cheat maintenance शामिल।",
 							],
 						},
@@ -13478,7 +13478,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy squads with ESP wallhack.",
+								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy units with ESP wallhack.",
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Digital Extremes anti-cheat maintenance शामिल।",
 							],
 						},
@@ -13513,7 +13513,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "फ़ीचर्स — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy squads with ESP wallhack.",
+								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy units with ESP wallhack.",
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Digital Extremes anti-cheat maintenance शामिल।",
 							],
 						},
@@ -13548,7 +13548,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "कीमत — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy squads with ESP wallhack.",
+								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy units with ESP wallhack.",
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Digital Extremes anti-cheat maintenance शामिल।",
 							],
 						},
@@ -13583,7 +13583,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "सेटअप — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy squads with ESP wallhack.",
+								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy units with ESP wallhack.",
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Digital Extremes anti-cheat maintenance शामिल।",
 							],
 						},
@@ -13618,7 +13618,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "अपडेट — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy squads with ESP wallhack.",
+								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy units with ESP wallhack.",
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Digital Extremes anti-cheat maintenance शामिल।",
 							],
 						},
@@ -13640,10 +13640,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				faq: {
 					title: "FAQ 2026 | Warframe Cheats Common Answers",
-					description: "FAQ: ESP, soft aim, delivery, and EAC questions for Warframe. तुरंत डिजिटल डिलीवरी. anti-cheat maintenance included.",
+					description: "FAQ: ESP, soft aim, delivery, and anti-cheat questions for Warframe. तुरंत डिजिटल डिलीवरी. anti-cheat maintenance included.",
 					h1: "FAQ — Common Answers",
-					intro: "Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and EAC questions.",
-					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and EAC questions preview",
+					intro: "Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and anti-cheat questions.",
+					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and anti-cheat questions preview",
 					galleryTitle: "Warframe Cheats FAQ gallery",
 					heroImage: "/images/warframe-esp-tanks.webp",
 					ctaPrimary: "Warframe Cheats खरीदें",
@@ -13653,7 +13653,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "FAQ — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy squads with ESP wallhack.",
+								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy units with ESP wallhack.",
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Digital Extremes anti-cheat maintenance शामिल।",
 							],
 						},
@@ -13688,7 +13688,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "सहायता — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy squads with ESP wallhack.",
+								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy units with ESP wallhack.",
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Digital Extremes anti-cheat maintenance शामिल।",
 							],
 						},
@@ -13723,7 +13723,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Undetected cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy squads with ESP wallhack.",
+								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy units with ESP wallhack.",
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Digital Extremes anti-cheat maintenance शामिल।",
 							],
 						},
@@ -13758,7 +13758,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Wallhack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy squads with ESP wallhack.",
+								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy units with ESP wallhack.",
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Digital Extremes anti-cheat maintenance शामिल।",
 							],
 						},
@@ -13793,7 +13793,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Radar Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy squads with ESP wallhack.",
+								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy units with ESP wallhack.",
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Digital Extremes anti-cheat maintenance शामिल।",
 							],
 						},
@@ -13828,7 +13828,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Anti-cheat bypass — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy squads with ESP wallhack.",
+								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy units with ESP wallhack.",
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Digital Extremes anti-cheat maintenance शामिल।",
 							],
 						},
@@ -13863,7 +13863,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats 2026 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy squads with ESP wallhack.",
+								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy units with ESP wallhack.",
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Digital Extremes anti-cheat maintenance शामिल।",
 							],
 						},
@@ -13898,7 +13898,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy squads with ESP wallhack.",
+								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy units with ESP wallhack.",
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Digital Extremes anti-cheat maintenance शामिल।",
 							],
 						},
@@ -13933,7 +13933,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats Download — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy squads with ESP wallhack.",
+								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy units with ESP wallhack.",
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Digital Extremes anti-cheat maintenance शामिल।",
 							],
 						},
@@ -13968,7 +13968,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Mod Menu — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy squads with ESP wallhack.",
+								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy units with ESP wallhack.",
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Digital Extremes anti-cheat maintenance शामिल।",
 							],
 						},
@@ -14003,7 +14003,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Soft Aim — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy squads with ESP wallhack.",
+								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy units with ESP wallhack.",
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Digital Extremes anti-cheat maintenance शामिल।",
 							],
 						},
@@ -14038,7 +14038,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Best Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy squads with ESP wallhack.",
+								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy units with ESP wallhack.",
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Digital Extremes anti-cheat maintenance शामिल।",
 							],
 						},
@@ -14073,7 +14073,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy squads with ESP wallhack.",
+								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy units with ESP wallhack.",
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Digital Extremes anti-cheat maintenance शामिल।",
 							],
 						},
@@ -14108,7 +14108,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy squads with ESP wallhack.",
+								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy units with ESP wallhack.",
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Digital Extremes anti-cheat maintenance शामिल।",
 							],
 						},
@@ -14143,7 +14143,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Unlock All — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy squads with ESP wallhack.",
+								"Warframe Cheats Warframe के लिए Windows PC पर ESP wallhack, radar hack और Aimbot undetected पैकेज देता है। Read enemy units with ESP wallhack.",
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Digital Extremes anti-cheat maintenance शामिल।",
 							],
 						},
@@ -14336,9 +14336,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					playerEsp: "Overlay ESP wallhack player Warframe untuk Warframe",
 					headerArt: "Header art Warframe untuk halaman Warframe Cheats",
 					cheatsPackage: "Paket Warframe cheats ESP wallhack dan Aimbot",
-					rebootFight: "Pertempuran control point Warframe untuk cheat Aimbot",
+					rebootFight: "Warframe Sortie defense fight with aimbot cheats active",
 					battleRoyale: "Pertempuran Steel Path missions Warframe untuk cheat undetected",
-					battleRoyaleIsland: "Peta Warframe untuk rute ESP wallhack Warframe",
+					openWorldTileset: "Peta Warframe untuk rute ESP wallhack Warframe",
 				},
 			},
 			pages: {
@@ -14357,7 +14357,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Mengapa Warframe Cheats di 2026",
 							paragraphs: [
-								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Ideal membaca squad musuh di BR dan mission objectives.",
+								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Ideal membaca squad musuh di BR dan co-op missions.",
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Digital Extremes anti-cheat.",
 							],
 						},
@@ -14371,11 +14371,11 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					],
 				},
 				"warframe-esp": {
-					title: "Warframe ESP 2026 | Player Boxes & Wallhack",
-					description: "Warframe ESP: player boxes, health pickup markers, and wallhack overlays for Warframe. pengiriman digital instan. anti-cheat maintenance included.",
-					h1: "Warframe ESP — Player Boxes & Wallhack",
-					intro: "Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Warframe ESP for mission objectives, spawn routes, and mission objectives: player boxes, health pickup markers, and wallhack overlays.",
-					imageAlt: "warframe-cheats warframe-esp player boxes, health pickup markers, and wallhack overlays preview",
+					title: "Warframe ESP 2026 | enemy boxes & Wallhack",
+					description: "Warframe ESP: enemy boxes, health pickup markers, and wallhack overlays for Warframe. pengiriman digital instan. anti-cheat maintenance included.",
+					h1: "Warframe ESP — enemy boxes & Wallhack",
+					intro: "Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Warframe ESP for mission objectives, spawn routes, and mission objectives: enemy boxes, health pickup markers, and wallhack overlays.",
+					imageAlt: "warframe-cheats warframe-esp enemy boxes, health pickup markers, and wallhack overlays preview",
 					galleryTitle: "Warframe Cheats Warframe ESP gallery",
 					heroImage: "/images/warframe-esp-overlay.webp",
 					ctaPrimary: "Beli Warframe Cheats",
@@ -14385,7 +14385,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy units with ESP wallhack.",
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Digital Extremes anti-cheat.",
 							],
 						},
@@ -14420,7 +14420,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy units with ESP wallhack.",
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Digital Extremes anti-cheat.",
 							],
 						},
@@ -14455,7 +14455,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Fitur — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy units with ESP wallhack.",
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Digital Extremes anti-cheat.",
 							],
 						},
@@ -14490,7 +14490,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Harga — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy units with ESP wallhack.",
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Digital Extremes anti-cheat.",
 							],
 						},
@@ -14525,7 +14525,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Setup — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy units with ESP wallhack.",
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Digital Extremes anti-cheat.",
 							],
 						},
@@ -14560,7 +14560,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Pembaruan — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy units with ESP wallhack.",
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Digital Extremes anti-cheat.",
 							],
 						},
@@ -14582,10 +14582,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				faq: {
 					title: "FAQ 2026 | Warframe Cheats Common Answers",
-					description: "FAQ: ESP, soft aim, delivery, and EAC questions for Warframe. pengiriman digital instan. anti-cheat maintenance included.",
+					description: "FAQ: ESP, soft aim, delivery, and anti-cheat questions for Warframe. pengiriman digital instan. anti-cheat maintenance included.",
 					h1: "FAQ — Common Answers",
-					intro: "Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and EAC questions.",
-					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and EAC questions preview",
+					intro: "Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and anti-cheat questions.",
+					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and anti-cheat questions preview",
 					galleryTitle: "Warframe Cheats FAQ gallery",
 					heroImage: "/images/warframe-esp-tanks.webp",
 					ctaPrimary: "Beli Warframe Cheats",
@@ -14595,7 +14595,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "FAQ — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy units with ESP wallhack.",
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Digital Extremes anti-cheat.",
 							],
 						},
@@ -14630,7 +14630,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Dukungan — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy units with ESP wallhack.",
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Digital Extremes anti-cheat.",
 							],
 						},
@@ -14665,7 +14665,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Cheat undetected — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy units with ESP wallhack.",
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Digital Extremes anti-cheat.",
 							],
 						},
@@ -14700,7 +14700,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Wallhack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy units with ESP wallhack.",
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Digital Extremes anti-cheat.",
 							],
 						},
@@ -14735,7 +14735,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Radar hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy units with ESP wallhack.",
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Digital Extremes anti-cheat.",
 							],
 						},
@@ -14770,7 +14770,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Bypass Digital Extremes anti-cheat — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy units with ESP wallhack.",
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Digital Extremes anti-cheat.",
 							],
 						},
@@ -14805,7 +14805,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats 2026 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy units with ESP wallhack.",
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Digital Extremes anti-cheat.",
 							],
 						},
@@ -14840,7 +14840,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy units with ESP wallhack.",
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Digital Extremes anti-cheat.",
 							],
 						},
@@ -14875,7 +14875,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats Download — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy units with ESP wallhack.",
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Digital Extremes anti-cheat.",
 							],
 						},
@@ -14910,7 +14910,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Mod Menu — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy units with ESP wallhack.",
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Digital Extremes anti-cheat.",
 							],
 						},
@@ -14945,7 +14945,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Soft Aim — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy units with ESP wallhack.",
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Digital Extremes anti-cheat.",
 							],
 						},
@@ -14980,7 +14980,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Best Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy units with ESP wallhack.",
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Digital Extremes anti-cheat.",
 							],
 						},
@@ -15015,7 +15015,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy units with ESP wallhack.",
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Digital Extremes anti-cheat.",
 							],
 						},
@@ -15050,7 +15050,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy units with ESP wallhack.",
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Digital Extremes anti-cheat.",
 							],
 						},
@@ -15085,7 +15085,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Unlock All — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats menyediakan ESP wallhack, radar hack, dan Aimbot undetected untuk Warframe di PC Windows. Read enemy units with ESP wallhack.",
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Digital Extremes anti-cheat.",
 							],
 						},
@@ -15278,9 +15278,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					playerEsp: "ESP wallhack overlay ของ Warframe player สำหรับ Warframe",
 					headerArt: "Header art Warframe สำหรับหน้า Warframe Cheats",
 					cheatsPackage: "แพ็กเกจ Warframe cheats ESP wallhack และ Aimbot",
-					rebootFight: "การต่อสู้ control point Warframe สำหรับ cheat Aimbot",
+					rebootFight: "Warframe Sortie defense fight with aimbot cheats active",
 					battleRoyale: "การต่อสู้ Steel Path missions Warframe สำหรับ cheat ไม่ถูกตรวจจับ",
-					battleRoyaleIsland: "แผนที่ Warframe สำหรับเส้นทาง ESP wallhack Warframe",
+					openWorldTileset: "แผนที่ Warframe สำหรับเส้นทาง ESP wallhack Warframe",
 				},
 			},
 			pages: {
@@ -15299,7 +15299,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "ทำไมเลือก Warframe Cheats ปี 2026",
 							paragraphs: [
-								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC เหมาะสำหรับอ่าน squad ศัตรูใน BR และ mission objectives",
+								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC เหมาะสำหรับอ่าน squad ศัตรูใน BR และ co-op missions",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Digital Extremes anti-cheat",
 							],
 						},
@@ -15313,11 +15313,11 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					],
 				},
 				"warframe-esp": {
-					title: "Warframe ESP 2026 | Player Boxes & Wallhack",
-					description: "Warframe ESP: player boxes, health pickup markers, and wallhack overlays for Warframe. จัดส่งดิจิทัลทันที. anti-cheat maintenance included.",
-					h1: "Warframe ESP — Player Boxes & Wallhack",
-					intro: "Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Warframe ESP for mission objectives, spawn routes, and mission objectives: player boxes, health pickup markers, and wallhack overlays.",
-					imageAlt: "warframe-cheats warframe-esp player boxes, health pickup markers, and wallhack overlays preview",
+					title: "Warframe ESP 2026 | enemy boxes & Wallhack",
+					description: "Warframe ESP: enemy boxes, health pickup markers, and wallhack overlays for Warframe. จัดส่งดิจิทัลทันที. anti-cheat maintenance included.",
+					h1: "Warframe ESP — enemy boxes & Wallhack",
+					intro: "Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Warframe ESP for mission objectives, spawn routes, and mission objectives: enemy boxes, health pickup markers, and wallhack overlays.",
+					imageAlt: "warframe-cheats warframe-esp enemy boxes, health pickup markers, and wallhack overlays preview",
 					galleryTitle: "Warframe Cheats Warframe ESP gallery",
 					heroImage: "/images/warframe-esp-overlay.webp",
 					ctaPrimary: "ซื้อ Warframe Cheats",
@@ -15327,7 +15327,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy squads with ESP wallhack.",
+								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy units with ESP wallhack.",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Digital Extremes anti-cheat",
 							],
 						},
@@ -15362,7 +15362,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy squads with ESP wallhack.",
+								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy units with ESP wallhack.",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Digital Extremes anti-cheat",
 							],
 						},
@@ -15397,7 +15397,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "ฟีเจอร์ — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy squads with ESP wallhack.",
+								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy units with ESP wallhack.",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Digital Extremes anti-cheat",
 							],
 						},
@@ -15432,7 +15432,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "ราคา — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy squads with ESP wallhack.",
+								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy units with ESP wallhack.",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Digital Extremes anti-cheat",
 							],
 						},
@@ -15467,7 +15467,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "ติดตั้ง — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy squads with ESP wallhack.",
+								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy units with ESP wallhack.",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Digital Extremes anti-cheat",
 							],
 						},
@@ -15502,7 +15502,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "อัปเดต — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy squads with ESP wallhack.",
+								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy units with ESP wallhack.",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Digital Extremes anti-cheat",
 							],
 						},
@@ -15524,10 +15524,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				faq: {
 					title: "FAQ 2026 | Warframe Cheats Common Answers",
-					description: "FAQ: ESP, soft aim, delivery, and EAC questions for Warframe. จัดส่งดิจิทัลทันที. anti-cheat maintenance included.",
+					description: "FAQ: ESP, soft aim, delivery, and anti-cheat questions for Warframe. จัดส่งดิจิทัลทันที. anti-cheat maintenance included.",
 					h1: "FAQ — Common Answers",
-					intro: "Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and EAC questions.",
-					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and EAC questions preview",
+					intro: "Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and anti-cheat questions.",
+					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and anti-cheat questions preview",
 					galleryTitle: "Warframe Cheats FAQ gallery",
 					heroImage: "/images/warframe-esp-tanks.webp",
 					ctaPrimary: "ซื้อ Warframe Cheats",
@@ -15537,7 +15537,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "FAQ — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy squads with ESP wallhack.",
+								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy units with ESP wallhack.",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Digital Extremes anti-cheat",
 							],
 						},
@@ -15572,7 +15572,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "สนับสนุน — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy squads with ESP wallhack.",
+								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy units with ESP wallhack.",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Digital Extremes anti-cheat",
 							],
 						},
@@ -15607,7 +15607,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Cheats undetected — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy squads with ESP wallhack.",
+								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy units with ESP wallhack.",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Digital Extremes anti-cheat",
 							],
 						},
@@ -15642,7 +15642,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Wallhack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy squads with ESP wallhack.",
+								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy units with ESP wallhack.",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Digital Extremes anti-cheat",
 							],
 						},
@@ -15677,7 +15677,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Radar Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy squads with ESP wallhack.",
+								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy units with ESP wallhack.",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Digital Extremes anti-cheat",
 							],
 						},
@@ -15712,7 +15712,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Anti-cheat bypass — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy squads with ESP wallhack.",
+								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy units with ESP wallhack.",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Digital Extremes anti-cheat",
 							],
 						},
@@ -15747,7 +15747,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats 2026 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy squads with ESP wallhack.",
+								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy units with ESP wallhack.",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Digital Extremes anti-cheat",
 							],
 						},
@@ -15782,7 +15782,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy squads with ESP wallhack.",
+								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy units with ESP wallhack.",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Digital Extremes anti-cheat",
 							],
 						},
@@ -15817,7 +15817,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats Download — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy squads with ESP wallhack.",
+								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy units with ESP wallhack.",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Digital Extremes anti-cheat",
 							],
 						},
@@ -15852,7 +15852,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Mod Menu — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy squads with ESP wallhack.",
+								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy units with ESP wallhack.",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Digital Extremes anti-cheat",
 							],
 						},
@@ -15887,7 +15887,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Soft Aim — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy squads with ESP wallhack.",
+								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy units with ESP wallhack.",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Digital Extremes anti-cheat",
 							],
 						},
@@ -15922,7 +15922,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Best Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy squads with ESP wallhack.",
+								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy units with ESP wallhack.",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Digital Extremes anti-cheat",
 							],
 						},
@@ -15957,7 +15957,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy squads with ESP wallhack.",
+								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy units with ESP wallhack.",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Digital Extremes anti-cheat",
 							],
 						},
@@ -15992,7 +15992,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy squads with ESP wallhack.",
+								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy units with ESP wallhack.",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Digital Extremes anti-cheat",
 							],
 						},
@@ -16027,7 +16027,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Unlock All — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy squads with ESP wallhack.",
+								"Warframe Cheats รวม ESP wallhack, radar hack และ Aimbot แบบ undetected สำหรับ Warframe บน Windows PC Read enemy units with ESP wallhack.",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Digital Extremes anti-cheat",
 							],
 						},
@@ -16220,9 +16220,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					playerEsp: "Overlay ESP wallhack player Warframe cho Warframe",
 					headerArt: "Header art Warframe cho trang Warframe Cheats",
 					cheatsPackage: "Gói Warframe cheats ESP wallhack và Aimbot",
-					rebootFight: "Trận control point Warframe cho cheat Aimbot",
+					rebootFight: "Warframe Sortie defense fight with aimbot cheats active",
 					battleRoyale: "Chiến đấu Steel Path missions Warframe cho cheat undetected",
-					battleRoyaleIsland: "Bản đồ Warframe cho tuyến ESP wallhack Warframe",
+					openWorldTileset: "Bản đồ Warframe cho tuyến ESP wallhack Warframe",
 				},
 			},
 			pages: {
@@ -16241,7 +16241,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Vì sao chọn Warframe Cheats 2026",
 							paragraphs: [
-								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Lý tưởng đọc squad địch trong BR và mission objectives.",
+								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Lý tưởng đọc squad địch trong BR và co-op missions.",
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Digital Extremes anti-cheat.",
 							],
 						},
@@ -16255,11 +16255,11 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					],
 				},
 				"warframe-esp": {
-					title: "Warframe ESP 2026 | Player Boxes & Wallhack",
-					description: "Warframe ESP: player boxes, health pickup markers, and wallhack overlays for Warframe. giao hàng kỹ thuật số tức thì. anti-cheat maintenance included.",
-					h1: "Warframe ESP — Player Boxes & Wallhack",
-					intro: "Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Warframe ESP for mission objectives, spawn routes, and mission objectives: player boxes, health pickup markers, and wallhack overlays.",
-					imageAlt: "warframe-cheats warframe-esp player boxes, health pickup markers, and wallhack overlays preview",
+					title: "Warframe ESP 2026 | enemy boxes & Wallhack",
+					description: "Warframe ESP: enemy boxes, health pickup markers, and wallhack overlays for Warframe. giao hàng kỹ thuật số tức thì. anti-cheat maintenance included.",
+					h1: "Warframe ESP — enemy boxes & Wallhack",
+					intro: "Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Warframe ESP for mission objectives, spawn routes, and mission objectives: enemy boxes, health pickup markers, and wallhack overlays.",
+					imageAlt: "warframe-cheats warframe-esp enemy boxes, health pickup markers, and wallhack overlays preview",
 					galleryTitle: "Warframe Cheats Warframe ESP gallery",
 					heroImage: "/images/warframe-esp-overlay.webp",
 					ctaPrimary: "Mua Warframe Cheats",
@@ -16269,7 +16269,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy units with ESP wallhack.",
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Digital Extremes anti-cheat.",
 							],
 						},
@@ -16304,7 +16304,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy units with ESP wallhack.",
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Digital Extremes anti-cheat.",
 							],
 						},
@@ -16339,7 +16339,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Tính năng — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy units with ESP wallhack.",
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Digital Extremes anti-cheat.",
 							],
 						},
@@ -16374,7 +16374,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Giá — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy units with ESP wallhack.",
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Digital Extremes anti-cheat.",
 							],
 						},
@@ -16409,7 +16409,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Cài đặt — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy units with ESP wallhack.",
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Digital Extremes anti-cheat.",
 							],
 						},
@@ -16444,7 +16444,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Cập nhật — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy units with ESP wallhack.",
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Digital Extremes anti-cheat.",
 							],
 						},
@@ -16466,10 +16466,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				faq: {
 					title: "FAQ 2026 | Warframe Cheats Common Answers",
-					description: "FAQ: ESP, soft aim, delivery, and EAC questions for Warframe. giao hàng kỹ thuật số tức thì. anti-cheat maintenance included.",
+					description: "FAQ: ESP, soft aim, delivery, and anti-cheat questions for Warframe. giao hàng kỹ thuật số tức thì. anti-cheat maintenance included.",
 					h1: "FAQ — Common Answers",
-					intro: "Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and EAC questions.",
-					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and EAC questions preview",
+					intro: "Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and anti-cheat questions.",
+					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and anti-cheat questions preview",
 					galleryTitle: "Warframe Cheats FAQ gallery",
 					heroImage: "/images/warframe-esp-tanks.webp",
 					ctaPrimary: "Mua Warframe Cheats",
@@ -16479,7 +16479,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "FAQ — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy units with ESP wallhack.",
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Digital Extremes anti-cheat.",
 							],
 						},
@@ -16514,7 +16514,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Hỗ trợ — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy units with ESP wallhack.",
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Digital Extremes anti-cheat.",
 							],
 						},
@@ -16549,7 +16549,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Cheat undetected — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy units with ESP wallhack.",
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Digital Extremes anti-cheat.",
 							],
 						},
@@ -16584,7 +16584,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Wallhack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy units with ESP wallhack.",
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Digital Extremes anti-cheat.",
 							],
 						},
@@ -16619,7 +16619,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Radar hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy units with ESP wallhack.",
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Digital Extremes anti-cheat.",
 							],
 						},
@@ -16654,7 +16654,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Bypass Digital Extremes anti-cheat — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy units with ESP wallhack.",
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Digital Extremes anti-cheat.",
 							],
 						},
@@ -16689,7 +16689,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats 2026 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy units with ESP wallhack.",
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Digital Extremes anti-cheat.",
 							],
 						},
@@ -16724,7 +16724,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy units with ESP wallhack.",
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Digital Extremes anti-cheat.",
 							],
 						},
@@ -16759,7 +16759,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats Download — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy units with ESP wallhack.",
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Digital Extremes anti-cheat.",
 							],
 						},
@@ -16794,7 +16794,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Mod Menu — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy units with ESP wallhack.",
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Digital Extremes anti-cheat.",
 							],
 						},
@@ -16829,7 +16829,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Soft Aim — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy units with ESP wallhack.",
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Digital Extremes anti-cheat.",
 							],
 						},
@@ -16864,7 +16864,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Best Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy units with ESP wallhack.",
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Digital Extremes anti-cheat.",
 							],
 						},
@@ -16899,7 +16899,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy units with ESP wallhack.",
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Digital Extremes anti-cheat.",
 							],
 						},
@@ -16934,7 +16934,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy units with ESP wallhack.",
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Digital Extremes anti-cheat.",
 							],
 						},
@@ -16969,7 +16969,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Unlock All — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats cung cấp ESP wallhack, radar hack và Aimbot undetected cho Warframe trên PC Windows. Read enemy units with ESP wallhack.",
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Digital Extremes anti-cheat.",
 							],
 						},
@@ -17162,9 +17162,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					playerEsp: "ESP wallhack оверлей гравця Warframe",
 					headerArt: "Header-арт Warframe для сторінок Warframe Cheats",
 					cheatsPackage: "Пакет Warframe cheats ESP wallhack і Aimbot",
-					rebootFight: "Бій у Reboot Van Warframe для чітів Aimbot",
+					rebootFight: "Warframe Sortie defense fight with aimbot cheats active",
 					battleRoyale: "Бій Steel Path missions Warframe для undetected чітів",
-					battleRoyaleIsland: "Карта Warframe для маршрутів ESP wallhack Warframe",
+					openWorldTileset: "Карта Warframe для маршрутів ESP wallhack Warframe",
 				},
 			},
 			pages: {
@@ -17183,7 +17183,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Чому Warframe Cheats у 2026",
 							paragraphs: [
-								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Ідеально для читання ворожих загонів у BR і mission objectives.",
+								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Ідеально для читання ворожих загонів у BR і co-op missions.",
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Digital Extremes anti-cheat.",
 							],
 						},
@@ -17197,11 +17197,11 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					],
 				},
 				"warframe-esp": {
-					title: "Warframe ESP 2026 | Player Boxes & Wallhack",
-					description: "Warframe ESP: player boxes, health pickup markers, and wallhack overlays for Warframe. миттєва цифрова доставка. anti-cheat maintenance included.",
-					h1: "Warframe ESP — Player Boxes & Wallhack",
-					intro: "Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Warframe ESP for mission objectives, spawn routes, and mission objectives: player boxes, health pickup markers, and wallhack overlays.",
-					imageAlt: "warframe-cheats warframe-esp player boxes, health pickup markers, and wallhack overlays preview",
+					title: "Warframe ESP 2026 | enemy boxes & Wallhack",
+					description: "Warframe ESP: enemy boxes, health pickup markers, and wallhack overlays for Warframe. миттєва цифрова доставка. anti-cheat maintenance included.",
+					h1: "Warframe ESP — enemy boxes & Wallhack",
+					intro: "Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Warframe ESP for mission objectives, spawn routes, and mission objectives: enemy boxes, health pickup markers, and wallhack overlays.",
+					imageAlt: "warframe-cheats warframe-esp enemy boxes, health pickup markers, and wallhack overlays preview",
 					galleryTitle: "Warframe Cheats Warframe ESP gallery",
 					heroImage: "/images/warframe-esp-overlay.webp",
 					ctaPrimary: "Купити Warframe Cheats",
@@ -17211,7 +17211,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Digital Extremes anti-cheat.",
 							],
 						},
@@ -17246,7 +17246,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Digital Extremes anti-cheat.",
 							],
 						},
@@ -17281,7 +17281,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Функції — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Digital Extremes anti-cheat.",
 							],
 						},
@@ -17316,7 +17316,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Ціни — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Digital Extremes anti-cheat.",
 							],
 						},
@@ -17351,7 +17351,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Встановлення — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Digital Extremes anti-cheat.",
 							],
 						},
@@ -17386,7 +17386,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Оновлення — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Digital Extremes anti-cheat.",
 							],
 						},
@@ -17408,10 +17408,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				faq: {
 					title: "FAQ 2026 | Warframe Cheats Common Answers",
-					description: "FAQ: ESP, soft aim, delivery, and EAC questions for Warframe. миттєва цифрова доставка. anti-cheat maintenance included.",
+					description: "FAQ: ESP, soft aim, delivery, and anti-cheat questions for Warframe. миттєва цифрова доставка. anti-cheat maintenance included.",
 					h1: "FAQ — Common Answers",
-					intro: "Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and EAC questions.",
-					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and EAC questions preview",
+					intro: "Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and anti-cheat questions.",
+					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and anti-cheat questions preview",
 					galleryTitle: "Warframe Cheats FAQ gallery",
 					heroImage: "/images/warframe-esp-tanks.webp",
 					ctaPrimary: "Купити Warframe Cheats",
@@ -17421,7 +17421,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "FAQ — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Digital Extremes anti-cheat.",
 							],
 						},
@@ -17456,7 +17456,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Підтримка — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Digital Extremes anti-cheat.",
 							],
 						},
@@ -17491,7 +17491,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Undetected чіти — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Digital Extremes anti-cheat.",
 							],
 						},
@@ -17526,7 +17526,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Wallhack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Digital Extremes anti-cheat.",
 							],
 						},
@@ -17561,7 +17561,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Radar hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Digital Extremes anti-cheat.",
 							],
 						},
@@ -17596,7 +17596,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Bypass Digital Extremes anti-cheat — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Digital Extremes anti-cheat.",
 							],
 						},
@@ -17631,7 +17631,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats 2026 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Digital Extremes anti-cheat.",
 							],
 						},
@@ -17666,7 +17666,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Digital Extremes anti-cheat.",
 							],
 						},
@@ -17701,7 +17701,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Завантаження Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Digital Extremes anti-cheat.",
 							],
 						},
@@ -17736,7 +17736,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Mod Menu — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Digital Extremes anti-cheat.",
 							],
 						},
@@ -17771,7 +17771,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Soft Aim — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Digital Extremes anti-cheat.",
 							],
 						},
@@ -17806,7 +17806,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Найкращі Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Digital Extremes anti-cheat.",
 							],
 						},
@@ -17841,7 +17841,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Digital Extremes anti-cheat.",
 							],
 						},
@@ -17876,7 +17876,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Digital Extremes anti-cheat.",
 							],
 						},
@@ -17911,7 +17911,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Unlock All — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats об'єднує ESP wallhack, radar hack і Aimbot у undetected пакеті для Warframe на Windows PC. Read enemy units with ESP wallhack.",
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Digital Extremes anti-cheat.",
 							],
 						},
@@ -18104,9 +18104,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					playerEsp: "ESP wallhack overlay hráče Warframe",
 					headerArt: "Header art Warframe pro stránky Warframe Cheats",
 					cheatsPackage: "Balíček Warframe cheats ESP wallhack a Aimbot",
-					rebootFight: "Reboot Van boj Warframe pro cheaty Aimbot",
-					battleRoyale: "Battle royale boj Warframe pro undetected cheaty",
-					battleRoyaleIsland: "Mapa Warframe pro trasy ESP wallhack Warframe",
+					rebootFight: "Warframe Sortie defense fight with aimbot cheats active",
+					battleRoyale: "Steel Path mission fight Warframe pro undetected cheaty",
+					openWorldTileset: "Mapa Warframe pro trasy ESP wallhack Warframe",
 				},
 			},
 			pages: {
@@ -18125,7 +18125,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Proč Warframe Cheats v roce 2026",
 							paragraphs: [
-								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Ideální pro čtení nepřátelských squadů v BR a mission objectives.",
+								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Ideální pro čtení nepřátelských squadů v BR a co-op missions.",
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Digital Extremes anti-cheat.",
 							],
 						},
@@ -18139,11 +18139,11 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					],
 				},
 				"warframe-esp": {
-					title: "Warframe ESP 2026 | Player Boxes & Wallhack",
-					description: "Warframe ESP: player boxes, health pickup markers, and wallhack overlays for Warframe. okamžité digitální doručení. anti-cheat maintenance included.",
-					h1: "Warframe ESP — Player Boxes & Wallhack",
-					intro: "Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Warframe ESP for mission objectives, spawn routes, and mission objectives: player boxes, health pickup markers, and wallhack overlays.",
-					imageAlt: "warframe-cheats warframe-esp player boxes, health pickup markers, and wallhack overlays preview",
+					title: "Warframe ESP 2026 | enemy boxes & Wallhack",
+					description: "Warframe ESP: enemy boxes, health pickup markers, and wallhack overlays for Warframe. okamžité digitální doručení. anti-cheat maintenance included.",
+					h1: "Warframe ESP — enemy boxes & Wallhack",
+					intro: "Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Warframe ESP for mission objectives, spawn routes, and mission objectives: enemy boxes, health pickup markers, and wallhack overlays.",
+					imageAlt: "warframe-cheats warframe-esp enemy boxes, health pickup markers, and wallhack overlays preview",
 					galleryTitle: "Warframe Cheats Warframe ESP gallery",
 					heroImage: "/images/warframe-esp-overlay.webp",
 					ctaPrimary: "Koupit Warframe Cheats",
@@ -18153,7 +18153,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy units with ESP wallhack.",
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Digital Extremes anti-cheat.",
 							],
 						},
@@ -18188,7 +18188,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy units with ESP wallhack.",
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Digital Extremes anti-cheat.",
 							],
 						},
@@ -18223,7 +18223,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Funkce — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy units with ESP wallhack.",
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Digital Extremes anti-cheat.",
 							],
 						},
@@ -18258,7 +18258,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Ceny — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy units with ESP wallhack.",
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Digital Extremes anti-cheat.",
 							],
 						},
@@ -18293,7 +18293,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Instalace — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy units with ESP wallhack.",
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Digital Extremes anti-cheat.",
 							],
 						},
@@ -18328,7 +18328,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Aktualizace — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy units with ESP wallhack.",
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Digital Extremes anti-cheat.",
 							],
 						},
@@ -18350,10 +18350,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				faq: {
 					title: "FAQ 2026 | Warframe Cheats Common Answers",
-					description: "FAQ: ESP, soft aim, delivery, and EAC questions for Warframe. okamžité digitální doručení. anti-cheat maintenance included.",
+					description: "FAQ: ESP, soft aim, delivery, and anti-cheat questions for Warframe. okamžité digitální doručení. anti-cheat maintenance included.",
 					h1: "FAQ — Common Answers",
-					intro: "Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and EAC questions.",
-					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and EAC questions preview",
+					intro: "Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and anti-cheat questions.",
+					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and anti-cheat questions preview",
 					galleryTitle: "Warframe Cheats FAQ gallery",
 					heroImage: "/images/warframe-esp-tanks.webp",
 					ctaPrimary: "Koupit Warframe Cheats",
@@ -18363,7 +18363,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "FAQ — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy units with ESP wallhack.",
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Digital Extremes anti-cheat.",
 							],
 						},
@@ -18398,7 +18398,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Podpora — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy units with ESP wallhack.",
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Digital Extremes anti-cheat.",
 							],
 						},
@@ -18433,7 +18433,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Undetected cheaty — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy units with ESP wallhack.",
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Digital Extremes anti-cheat.",
 							],
 						},
@@ -18468,7 +18468,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Wallhack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy units with ESP wallhack.",
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Digital Extremes anti-cheat.",
 							],
 						},
@@ -18503,7 +18503,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Radar Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy units with ESP wallhack.",
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Digital Extremes anti-cheat.",
 							],
 						},
@@ -18538,7 +18538,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Anti-cheat bypass — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy units with ESP wallhack.",
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Digital Extremes anti-cheat.",
 							],
 						},
@@ -18573,7 +18573,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats 2026 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy units with ESP wallhack.",
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Digital Extremes anti-cheat.",
 							],
 						},
@@ -18608,7 +18608,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy units with ESP wallhack.",
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Digital Extremes anti-cheat.",
 							],
 						},
@@ -18643,7 +18643,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats Download — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy units with ESP wallhack.",
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Digital Extremes anti-cheat.",
 							],
 						},
@@ -18678,7 +18678,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Mod Menu — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy units with ESP wallhack.",
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Digital Extremes anti-cheat.",
 							],
 						},
@@ -18713,7 +18713,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Soft Aim — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy units with ESP wallhack.",
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Digital Extremes anti-cheat.",
 							],
 						},
@@ -18748,7 +18748,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Nejlepší Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy units with ESP wallhack.",
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Digital Extremes anti-cheat.",
 							],
 						},
@@ -18783,7 +18783,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy units with ESP wallhack.",
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Digital Extremes anti-cheat.",
 							],
 						},
@@ -18818,7 +18818,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy units with ESP wallhack.",
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Digital Extremes anti-cheat.",
 							],
 						},
@@ -18853,7 +18853,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Unlock All — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats spojuje ESP wallhack, radar hack a Aimbot jako undetected balíček pro Warframe na Windows PC. Read enemy units with ESP wallhack.",
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Digital Extremes anti-cheat.",
 							],
 						},
@@ -19046,9 +19046,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					playerEsp: "Overlay ESP wallhack player Warframe pentru Warframe",
 					headerArt: "Header art Warframe pentru pagini Warframe Cheats",
 					cheatsPackage: "Pachet Warframe cheats ESP wallhack și Aimbot",
-					rebootFight: "Luptă control point Warframe pentru cheat-uri Aimbot",
+					rebootFight: "Warframe Sortie defense fight with aimbot cheats active",
 					battleRoyale: "Luptă Steel Path missions Warframe pentru cheat-uri undetected",
-					battleRoyaleIsland: "Hartă Warframe pentru rute ESP wallhack Warframe",
+					openWorldTileset: "Hartă Warframe pentru rute ESP wallhack Warframe",
 				},
 			},
 			pages: {
@@ -19067,7 +19067,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "De ce Warframe Cheats în 2026",
 							paragraphs: [
-								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Ideal pentru citirea squad-urilor inamice în BR și mission objectives.",
+								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Ideal pentru citirea squad-urilor inamice în BR și co-op missions.",
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Digital Extremes anti-cheat.",
 							],
 						},
@@ -19081,11 +19081,11 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					],
 				},
 				"warframe-esp": {
-					title: "Warframe ESP 2026 | Player Boxes & Wallhack",
-					description: "Warframe ESP: player boxes, health pickup markers, and wallhack overlays for Warframe. livrare digitală instantă. anti-cheat maintenance included.",
-					h1: "Warframe ESP — Player Boxes & Wallhack",
-					intro: "Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Warframe ESP for mission objectives, spawn routes, and mission objectives: player boxes, health pickup markers, and wallhack overlays.",
-					imageAlt: "warframe-cheats warframe-esp player boxes, health pickup markers, and wallhack overlays preview",
+					title: "Warframe ESP 2026 | enemy boxes & Wallhack",
+					description: "Warframe ESP: enemy boxes, health pickup markers, and wallhack overlays for Warframe. livrare digitală instantă. anti-cheat maintenance included.",
+					h1: "Warframe ESP — enemy boxes & Wallhack",
+					intro: "Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Warframe ESP for mission objectives, spawn routes, and mission objectives: enemy boxes, health pickup markers, and wallhack overlays.",
+					imageAlt: "warframe-cheats warframe-esp enemy boxes, health pickup markers, and wallhack overlays preview",
 					galleryTitle: "Warframe Cheats Warframe ESP gallery",
 					heroImage: "/images/warframe-esp-overlay.webp",
 					ctaPrimary: "Cumpără Warframe Cheats",
@@ -19095,7 +19095,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy units with ESP wallhack.",
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Digital Extremes anti-cheat.",
 							],
 						},
@@ -19130,7 +19130,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy units with ESP wallhack.",
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Digital Extremes anti-cheat.",
 							],
 						},
@@ -19165,7 +19165,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Funcții — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy units with ESP wallhack.",
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Digital Extremes anti-cheat.",
 							],
 						},
@@ -19200,7 +19200,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Prețuri — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy units with ESP wallhack.",
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Digital Extremes anti-cheat.",
 							],
 						},
@@ -19235,7 +19235,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Instalare — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy units with ESP wallhack.",
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Digital Extremes anti-cheat.",
 							],
 						},
@@ -19270,7 +19270,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Actualizări — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy units with ESP wallhack.",
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Digital Extremes anti-cheat.",
 							],
 						},
@@ -19292,10 +19292,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				faq: {
 					title: "FAQ 2026 | Warframe Cheats Common Answers",
-					description: "FAQ: ESP, soft aim, delivery, and EAC questions for Warframe. livrare digitală instantă. anti-cheat maintenance included.",
+					description: "FAQ: ESP, soft aim, delivery, and anti-cheat questions for Warframe. livrare digitală instantă. anti-cheat maintenance included.",
 					h1: "FAQ — Common Answers",
-					intro: "Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and EAC questions.",
-					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and EAC questions preview",
+					intro: "Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and anti-cheat questions.",
+					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and anti-cheat questions preview",
 					galleryTitle: "Warframe Cheats FAQ gallery",
 					heroImage: "/images/warframe-esp-tanks.webp",
 					ctaPrimary: "Cumpără Warframe Cheats",
@@ -19305,7 +19305,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "FAQ — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy units with ESP wallhack.",
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Digital Extremes anti-cheat.",
 							],
 						},
@@ -19340,7 +19340,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Suport — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy units with ESP wallhack.",
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Digital Extremes anti-cheat.",
 							],
 						},
@@ -19375,7 +19375,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Cheats undetected — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy units with ESP wallhack.",
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Digital Extremes anti-cheat.",
 							],
 						},
@@ -19410,7 +19410,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Wallhack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy units with ESP wallhack.",
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Digital Extremes anti-cheat.",
 							],
 						},
@@ -19445,7 +19445,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Radar hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy units with ESP wallhack.",
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Digital Extremes anti-cheat.",
 							],
 						},
@@ -19480,7 +19480,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Bypass Digital Extremes anti-cheat — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy units with ESP wallhack.",
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Digital Extremes anti-cheat.",
 							],
 						},
@@ -19515,7 +19515,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats 2026 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy units with ESP wallhack.",
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Digital Extremes anti-cheat.",
 							],
 						},
@@ -19550,7 +19550,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy units with ESP wallhack.",
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Digital Extremes anti-cheat.",
 							],
 						},
@@ -19585,7 +19585,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Descărcare Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy units with ESP wallhack.",
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Digital Extremes anti-cheat.",
 							],
 						},
@@ -19620,7 +19620,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Mod Menu — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy units with ESP wallhack.",
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Digital Extremes anti-cheat.",
 							],
 						},
@@ -19655,7 +19655,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Soft Aim — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy units with ESP wallhack.",
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Digital Extremes anti-cheat.",
 							],
 						},
@@ -19690,7 +19690,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Cele mai bune Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy units with ESP wallhack.",
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Digital Extremes anti-cheat.",
 							],
 						},
@@ -19725,7 +19725,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy units with ESP wallhack.",
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Digital Extremes anti-cheat.",
 							],
 						},
@@ -19760,7 +19760,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy units with ESP wallhack.",
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Digital Extremes anti-cheat.",
 							],
 						},
@@ -19795,7 +19795,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Unlock All — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats combină ESP wallhack, radar hack și Aimbot undetected pentru Warframe pe PC Windows. Read enemy units with ESP wallhack.",
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Digital Extremes anti-cheat.",
 							],
 						},
@@ -19985,12 +19985,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					espWallhack: "Warframe cheats ESP wallhack overlay på Warframe",
 					aimbotCombat: "Warframe Aimbot strid preview",
 					squadFight: "Warframe cheats squad fight preview för Aimbot",
-					playerEsp: "Warframe player ESP wallhack overlay för Warframe",
+					playerEsp: "Warframe enemy ESP wallhack overlay för Warframe",
 					headerArt: "Warframe header art för Warframe Cheats sidor",
 					cheatsPackage: "Warframe cheats paket med ESP wallhack och Aimbot",
-					rebootFight: "Warframe extraction route fight för Warframe cheats Aimbot",
+					rebootFight: "Warframe Sortie defense fight with aimbot cheats active",
 					battleRoyale: "Warframe Steel Path missions strid för undetected cheats",
-					battleRoyaleIsland: "Warframe karta för Warframe ESP wallhack rutter",
+					openWorldTileset: "Warframe karta för Warframe ESP wallhack rutter",
 				},
 			},
 			pages: {
@@ -20009,7 +20009,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Varför Warframe Cheats 2026",
 							paragraphs: [
-								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Ideal för att läsa fiendesquads i BR och mission objectives.",
+								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Ideal för att läsa fiendesquads i BR och co-op missions.",
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Digital Extremes anti-cheat-underhåll.",
 							],
 						},
@@ -20023,11 +20023,11 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					],
 				},
 				"warframe-esp": {
-					title: "Warframe ESP 2026 | Player Boxes & Wallhack",
-					description: "Warframe ESP: player boxes, health pickup markers, and wallhack overlays for Warframe. omedelbar digital leverans. anti-cheat maintenance included.",
-					h1: "Warframe ESP — Player Boxes & Wallhack",
-					intro: "Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Warframe ESP for mission objectives, spawn routes, and mission objectives: player boxes, health pickup markers, and wallhack overlays.",
-					imageAlt: "warframe-cheats warframe-esp player boxes, health pickup markers, and wallhack overlays preview",
+					title: "Warframe ESP 2026 | enemy boxes & Wallhack",
+					description: "Warframe ESP: enemy boxes, health pickup markers, and wallhack overlays for Warframe. omedelbar digital leverans. anti-cheat maintenance included.",
+					h1: "Warframe ESP — enemy boxes & Wallhack",
+					intro: "Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Warframe ESP for mission objectives, spawn routes, and mission objectives: enemy boxes, health pickup markers, and wallhack overlays.",
+					imageAlt: "warframe-cheats warframe-esp enemy boxes, health pickup markers, and wallhack overlays preview",
 					galleryTitle: "Warframe Cheats Warframe ESP gallery",
 					heroImage: "/images/warframe-esp-overlay.webp",
 					ctaPrimary: "Köp Warframe Cheats",
@@ -20037,7 +20037,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy units with ESP wallhack.",
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Digital Extremes anti-cheat-underhåll.",
 							],
 						},
@@ -20072,7 +20072,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy units with ESP wallhack.",
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Digital Extremes anti-cheat-underhåll.",
 							],
 						},
@@ -20107,7 +20107,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Funktioner — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy units with ESP wallhack.",
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Digital Extremes anti-cheat-underhåll.",
 							],
 						},
@@ -20142,7 +20142,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Priser — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy units with ESP wallhack.",
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Digital Extremes anti-cheat-underhåll.",
 							],
 						},
@@ -20177,7 +20177,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Installation — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy units with ESP wallhack.",
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Digital Extremes anti-cheat-underhåll.",
 							],
 						},
@@ -20212,7 +20212,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Uppdateringar — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy units with ESP wallhack.",
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Digital Extremes anti-cheat-underhåll.",
 							],
 						},
@@ -20234,10 +20234,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				faq: {
 					title: "FAQ 2026 | Warframe Cheats Common Answers",
-					description: "FAQ: ESP, soft aim, delivery, and EAC questions for Warframe. omedelbar digital leverans. anti-cheat maintenance included.",
+					description: "FAQ: ESP, soft aim, delivery, and anti-cheat questions for Warframe. omedelbar digital leverans. anti-cheat maintenance included.",
 					h1: "FAQ — Common Answers",
-					intro: "Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and EAC questions.",
-					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and EAC questions preview",
+					intro: "Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. FAQ for mission objectives, spawn routes, and mission objectives: ESP, soft aim, delivery, and anti-cheat questions.",
+					imageAlt: "warframe-cheats faq ESP, soft aim, delivery, and anti-cheat questions preview",
 					galleryTitle: "Warframe Cheats FAQ gallery",
 					heroImage: "/images/warframe-esp-tanks.webp",
 					ctaPrimary: "Köp Warframe Cheats",
@@ -20247,7 +20247,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "FAQ — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy units with ESP wallhack.",
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Digital Extremes anti-cheat-underhåll.",
 							],
 						},
@@ -20282,7 +20282,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Support — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy units with ESP wallhack.",
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Digital Extremes anti-cheat-underhåll.",
 							],
 						},
@@ -20317,7 +20317,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Undetected cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy units with ESP wallhack.",
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Digital Extremes anti-cheat-underhåll.",
 							],
 						},
@@ -20352,7 +20352,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Wallhack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy units with ESP wallhack.",
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Digital Extremes anti-cheat-underhåll.",
 							],
 						},
@@ -20387,7 +20387,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Radar Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy units with ESP wallhack.",
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Digital Extremes anti-cheat-underhåll.",
 							],
 						},
@@ -20422,7 +20422,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Anti-cheat bypass — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy units with ESP wallhack.",
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Digital Extremes anti-cheat-underhåll.",
 							],
 						},
@@ -20457,7 +20457,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats 2026 — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy units with ESP wallhack.",
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Digital Extremes anti-cheat-underhåll.",
 							],
 						},
@@ -20492,7 +20492,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy units with ESP wallhack.",
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Digital Extremes anti-cheat-underhåll.",
 							],
 						},
@@ -20527,7 +20527,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Cheats Download — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy units with ESP wallhack.",
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Digital Extremes anti-cheat-underhåll.",
 							],
 						},
@@ -20562,7 +20562,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Mod Menu — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy units with ESP wallhack.",
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Digital Extremes anti-cheat-underhåll.",
 							],
 						},
@@ -20597,7 +20597,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Soft Aim — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy units with ESP wallhack.",
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Digital Extremes anti-cheat-underhåll.",
 							],
 						},
@@ -20632,7 +20632,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Bästa Warframe Cheats — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy units with ESP wallhack.",
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Digital Extremes anti-cheat-underhåll.",
 							],
 						},
@@ -20667,7 +20667,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Aimbot Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy units with ESP wallhack.",
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Digital Extremes anti-cheat-underhåll.",
 							],
 						},
@@ -20702,7 +20702,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe ESP Hack — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy units with ESP wallhack.",
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Digital Extremes anti-cheat-underhåll.",
 							],
 						},
@@ -20737,7 +20737,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warframe Unlock All — mission objectives, spawn routes, and mission objectives",
 							paragraphs: [
-								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy squads with ESP wallhack.",
+								"Warframe Cheats kombinerar ESP wallhack, radar hack och Aimbot som undetected paket för Warframe på Windows PC. Read enemy units with ESP wallhack.",
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Digital Extremes anti-cheat-underhåll.",
 							],
 						},

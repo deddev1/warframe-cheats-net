@@ -126,8 +126,8 @@ export function section(h2, ...args) {
 
 /** Authoritative external citation helpers (open in new tab). */
 export const EXT = {
-	epic: '<a href="https://www.warframe.com/" target="_blank" rel="noopener noreferrer">Warframe</a>',
-	rust: '<a href="https://www.warframe.com/" target="_blank" rel="noopener noreferrer">Warframe</a>',
-	status: '<a href="https://www.warframe.com/" target="_blank" rel="noopener noreferrer">Warframe</a>',
-	eac: '<a href="https://www.warframe.com/" target="_blank" rel="noopener noreferrer">Digital Extremes anti-cheat</a>',
+	epic: '<a href="https://www.digitalextremes.com/" target="_blank" rel="noopener noreferrer">Digital Extremes</a>',
+	rust: '<a href="https://www.warframe.com/" target="_blank" rel="noopener noreferrer">official Warframe patch notes</a>',
+	status: '<a href="https://forums.warframe.com/forum/3-pc-update-notes/" target="_blank" rel="noopener noreferrer">Warframe PC update notes</a>',
+	eac: '<a href="https://www.warframe.com/" target="_blank" rel="noopener noreferrer">Warframe anti-cheat</a>',
 };
