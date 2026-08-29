@@ -1,0 +1,268 @@
+---
+import { getUi } from '../data/i18n';
+import { getLocalizedPath } from '../data/i18n/routing';
+import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
+import { paymentMethods, productFeatureCategories, productInfo } from '../data/site';
+
+interface Props {
+	locale?: LocaleCode;
+}
+
+const locale = Astro.props.locale ?? defaultLocale;
+const ui = getUi(locale);
+const featuresHref = getLocalizedPath('features', locale);
+---
+
+<section class="pricing-features" aria-labelledby="pricing-features-title">
+	<header class="pricing-features__head">
+		<h2 id="pricing-features-title" class="pricing-features__title">Features</h2>
+		<p class="pricing-features__subtitle">
+			Everything included with {productInfo.name}, straight from the product sheet.
+		</p>
+		<div class="pricing-features__badges">
+			<span class="pricing-features__badge">
+				<svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+					<path
+						d="m9.5 12 1.8 1.8 3.7-3.8M12 3.5 5 6.5v5.2c0 4.2 2.9 7.8 7 8.8 4.1-1 7-4.6 7-8.8V6.5L12 3.5Z"
+						stroke="currentColor"
+						stroke-width="1.6"
+						stroke-linecap="round"
+						stroke-linejoin="round"></path>
+				</svg>
+				Windows 10/11
+			</span>
+			<span class="pricing-features__badge">
+				<svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+					<path
+						d="m9.5 12 1.8 1.8 3.7-3.8M12 3.5 5 6.5v5.2c0 4.2 2.9 7.8 7 8.8 4.1-1 7-4.6 7-8.8V6.5L12 3.5Z"
+						stroke="currentColor"
+						stroke-width="1.6"
+						stroke-linecap="round"
+						stroke-linejoin="round"></path>
+				</svg>
+				Intel/AMD
+			</span>
+		</div>
+	</header>
+
+	<div class="pricing-features__grid">
+		{
+			productFeatureCategories.map((category) => (
+				<article class="pricing-features__card">
+					<h3 class="pricing-features__card-title">{category.title}</h3>
+					<ul
+						class:list={[
+							'pricing-features__list',
+							category.columns === 2 && 'pricing-features__list--two-col',
+						]}
+					>
+						{category.items.map((item) => (
+							<li>
+								<span class="pricing-features__chevron" aria-hidden="true">&gt;</span>
+								{item}
+							</li>
+						))}
+					</ul>
+				</article>
+			))
+		}
+	</div>
+
+	<div class="pricing-features__payments" aria-label="Accepted payment methods">
+		{
+			paymentMethods.map((method) => (
+				<span class="pricing-features__payment">{method}</span>
+			))
+		}
+	</div>
+
+	<a href={featuresHref} class="pricing-features__full-link">
+		{ui.nav.features} — full breakdown &amp; explanations
+		<svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+			<path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+		</svg>
+	</a>
+</section>
+
+<style>
+	.pricing-features {
+		display: grid;
+		gap: 1.5rem;
+		width: 100%;
+		margin: 0 0 2rem;
+		padding: clamp(1.25rem, 2.5vw, 2rem);
+		border-radius: var(--radius-card);
+		border: 1px solid rgba(168, 85, 247, 0.16);
+		background: rgba(10, 8, 14, 0.92);
+	}
+
+	.pricing-features__head {
+		display: grid;
+		justify-items: center;
+		gap: 0.65rem;
+		text-align: center;
+	}
+
+	.pricing-features__title {
+		position: relative;
+		margin: 0;
+		padding-top: 0.85rem;
+		font-family: var(--font-display);
+		font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+		font-weight: 800;
+		letter-spacing: -0.02em;
+		color: var(--color-ink);
+	}
+
+	.pricing-features__title::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 2.5rem;
+		height: 3px;
+		border-radius: 999px;
+		background: linear-gradient(90deg, #e879f9, #c084fc);
+	}
+
+	.pricing-features__subtitle {
+		margin: 0;
+		max-width: 34rem;
+		color: var(--color-muted);
+		font-size: 0.92rem;
+		line-height: 1.55;
+	}
+
+	.pricing-features__badges {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0.5rem;
+		margin-top: 0.15rem;
+	}
+
+	.pricing-features__badge {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
+		padding: 0.4rem 0.8rem;
+		border-radius: 999px;
+		border: 1px solid rgba(192, 132, 252, 0.35);
+		background: rgba(124, 58, 237, 0.12);
+		color: var(--color-orchid);
+		font-size: 0.68rem;
+		font-weight: 800;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+	}
+
+	.pricing-features__grid {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 0.85rem;
+	}
+
+	.pricing-features__card {
+		padding: 1rem 1.1rem 1.15rem;
+		border-radius: 0.85rem;
+		border: 1px solid rgba(168, 85, 247, 0.18);
+		background: rgba(22, 18, 30, 0.95);
+	}
+
+	.pricing-features__card-title {
+		margin: 0 0 0.75rem;
+		padding-bottom: 0.65rem;
+		border-bottom: 1px solid rgba(168, 85, 247, 0.14);
+		font-size: 0.95rem;
+		font-weight: 800;
+		color: var(--color-ink);
+	}
+
+	.pricing-features__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		gap: 0.35rem;
+	}
+
+	.pricing-features__list--two-col {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.35rem 0.75rem;
+	}
+
+	.pricing-features__list li {
+		display: flex;
+		align-items: flex-start;
+		gap: 0.45rem;
+		color: var(--color-muted);
+		font-size: 0.8rem;
+		line-height: 1.35;
+	}
+
+	.pricing-features__chevron {
+		flex-shrink: 0;
+		color: #e879f9;
+		font-size: 0.72rem;
+		font-weight: 800;
+		line-height: 1.45;
+	}
+
+	.pricing-features__payments {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5rem 0.85rem;
+		padding: 0.85rem 1rem;
+		border-radius: 0.75rem;
+		border: 1px solid rgba(168, 85, 247, 0.12);
+		background: rgba(18, 16, 24, 0.85);
+	}
+
+	.pricing-features__payment {
+		color: rgba(232, 222, 248, 0.55);
+		font-size: 0.72rem;
+		font-weight: 700;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+	}
+
+	.pricing-features__full-link {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.45rem;
+		width: 100%;
+		padding: 0.95rem 1.15rem;
+		border-radius: 0.75rem;
+		border: 1px solid rgba(192, 132, 252, 0.35);
+		background: linear-gradient(180deg, rgba(124, 58, 237, 0.22), rgba(88, 28, 135, 0.18));
+		color: var(--color-ink);
+		font-size: 0.92rem;
+		font-weight: 700;
+		text-decoration: none;
+		transition:
+			border-color 0.2s ease,
+			background 0.2s ease,
+			transform 0.2s ease;
+	}
+
+	.pricing-features__full-link:hover {
+		border-color: rgba(216, 180, 254, 0.55);
+		background: linear-gradient(180deg, rgba(124, 58, 237, 0.32), rgba(88, 28, 135, 0.24));
+		transform: translateY(-1px);
+		color: var(--color-ink);
+	}
+
+	@media (max-width: 900px) {
+		.pricing-features__grid {
+			grid-template-columns: 1fr;
+		}
+
+		.pricing-features__list--two-col {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

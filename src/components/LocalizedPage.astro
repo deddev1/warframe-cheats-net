@@ -9,6 +9,7 @@ import { warframeImages } from '../data/warframe';
 import { buildPageExtraGraph, pageFaqClusters } from '../data/schema';
 import SeoFaqPanel from '../components/SeoFaqPanel.astro';
 import PricingPlans from '../components/PricingPlans.astro';
+import PricingFeatureList from '../components/PricingFeatureList.astro';
 
 interface Props {
 	locale: LocaleCode;
@@ -72,7 +73,9 @@ const ctaSecondaryHref = page.ctaSecondaryHref
 	}
 >
 	{pageId === 'pricing' && <PricingPlans locale={locale} />}
+	{pageId === 'pricing' && <PricingFeatureList locale={locale} />}
 	{
+		!(pageId === 'pricing') &&
 		page.sections.map((section) => (
 			<section class="card-panel">
 				<h2>{section.h2}</h2>

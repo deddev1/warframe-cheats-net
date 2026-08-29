@@ -74,6 +74,71 @@ export const productInfo = {
 	},
 } as const;
 
+/** Quick-scan feature list for pricing page — full explanations live on /features/. */
+export const productFeatureCategories = [
+	{
+		title: 'Aimbot Options',
+		columns: 1 as const,
+		items: [
+			'Visibility check',
+			'Custom FOV',
+			'Draw FOV circle',
+			'Draw target line',
+			'Custom aim key',
+			'Aim mode selection',
+			'Aim speed control',
+			'Target filter',
+			'Weak-spot priority',
+			'Smoothness slider',
+		],
+	},
+	{
+		title: 'Visual Options',
+		columns: 1 as const,
+		items: [
+			'Warframe ESP',
+			'Enemy outline ESP',
+			'Skeleton boxes',
+			'Head circle marker',
+			'View direction line',
+			'Name tags',
+			'Distance readout',
+			'Max distance filter',
+			'Health pickup ESP',
+			'Sentient & boss ESP',
+		],
+	},
+	{
+		title: 'Misc Options',
+		columns: 2 as const,
+		items: [
+			'2D radar overlay',
+			'Spawn route cues',
+			'In-client toggles',
+			'Hotkey profiles',
+			'Controller support',
+			'Anti-cheat update notes',
+			'Mod menu access',
+			'Loot & resource markers',
+			'Ability cooldown ESP',
+			'Custom crosshair',
+			'Team colour coding',
+			'Steel Path presets',
+		],
+	},
+] as const;
+
+export const paymentMethods = [
+	'Visa',
+	'Mastercard',
+	'Amex',
+	'Discover',
+	'PayPal',
+	'Google Pay',
+	'Apple Pay',
+	'Crypto',
+] as const;
+
 export const trustSignals = {
 	status: 'Online',
 	statusNote: 'Warframe Cheats is live for Warframe on Windows PC.',

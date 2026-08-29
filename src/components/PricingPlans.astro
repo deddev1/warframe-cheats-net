@@ -1,7 +1,6 @@
 ---
 import { warframeImages, productPreviewVideo } from '../data/warframe';
 import { getUi } from '../data/i18n';
-import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { productInfo, siteConfig } from '../data/site';
 import {
@@ -35,7 +34,6 @@ const thumbImages = warframeImages.product.slice(0, 2).map((image) => ({
 }));
 
 const monthlyPerDay = (monthlyPlan.price / 30).toFixed(2);
-const featuresHref = getLocalizedPath('features', locale);
 
 const featurePills = [
 	{ icon: 'bolt', label: ui.trust.delivery },
@@ -279,13 +277,6 @@ const featurePills = [
 				team committed to your success.
 			</p>
 		</div>
-
-		<a href={featuresHref} class="pricing-showcase__features-link">
-			View product features
-			<svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-				<path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
-			</svg>
-		</a>
 	</div>
 </section>
 
@@ -727,32 +718,6 @@ const featurePills = [
 
 	.pricing-showcase__summary :global(.plan-summary__panel li) {
 		font-size: 0.8rem;
-	}
-
-	.pricing-showcase__features-link {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 0.45rem;
-		width: 100%;
-		padding: 0.85rem 1rem;
-		border-radius: 0.75rem;
-		border: 1px solid rgba(168, 85, 247, 0.2);
-		background: rgba(18, 16, 26, 0.8);
-		color: var(--color-muted);
-		font-size: 0.88rem;
-		font-weight: 650;
-		text-decoration: none;
-		transition:
-			color 0.2s ease,
-			border-color 0.2s ease,
-			background 0.2s ease;
-	}
-
-	.pricing-showcase__features-link:hover {
-		color: var(--color-ink);
-		border-color: rgba(192, 132, 252, 0.45);
-		background: rgba(34, 28, 48, 0.9);
 	}
 
 	@media (max-width: 900px) {
