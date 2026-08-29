@@ -47,7 +47,7 @@ export const productInfo = {
 	features: {
 		esp: [
 			'Frame ESP across Steel Path, Sorties, and open world missions',
-			'Enemy Warframe, Sentient, and heavy unit outlines through terrain and obstacles',
+			'Enemy unit, Sentient, and heavy unit outlines through terrain and obstacles',
 			'Ability cooldown and health markers for frames and bosses',
 			'Distance readouts and snapline options',
 			'Toggleable ESP categories to cut overlay noise',
@@ -186,7 +186,7 @@ export const productFeatureDetails = [
 		items: [
 			{
 				name: 'Warframe ESP',
-				description: 'Highlights friendly and enemy Warframes with boxes, health bars, and distance readouts.',
+				description: 'Highlights Grineer, Corpus, and Sentient units with boxes, health bars, and distance readouts.',
 			},
 			{
 				name: 'Enemy outline ESP',
@@ -372,7 +372,7 @@ export const homeFaqs = [
 	{
 		question: 'Where do I check updates after a patch?',
 		answer:
-			'On the <a href="/updates/">Updates page</a>. That is the fastest place to confirm whether a new build is live after a Warframe or EAC patch.',
+			'On the <a href="/updates/">Updates page</a>. That is the fastest place to confirm whether a new build is live after a Warframe or anti-cheat patch.',
 	},
 	{
 		question: 'How do I contact support?',
@@ -386,7 +386,7 @@ export const seoFaqs = [
 	{
 		question: 'What is a Warframe wallhack?',
 		answer:
-			'A Warframe wallhack is an ESP overlay that shows enemy Warframes and heavy units through terrain. Warframe Cheats <a href="/warframe-wallhack/">wallhack</a> includes distance readouts, team colours, and toggleable categories for Steel Path and open world missions.',
+			'A Warframe wallhack is an ESP overlay that shows Grineer, Corpus, and Sentient units through terrain. Warframe Cheats <a href="/warframe-wallhack/">wallhack</a> includes distance readouts, team colours, and toggleable categories for Steel Path and open world missions.',
 	},
 	{
 		question: 'Does Warframe Cheats include a radar hack?',
@@ -429,8 +429,8 @@ export const customerReviews = [
 		handle: 'xKrypt0_ARC',
 		title: 'soft aim feels clean',
 		rating: 5,
-		text: 'soft aim feels clean on smgs in Steel Path missions. took me like 20 mins to figure out the menu tho lol. once u get it its smooth',
-		short: 'soft aim feels clean on smgs in Steel Path missions. once u get the menu its smooth',
+		text: 'soft aim feels clean on rifles in Steel Path missions. took me like 20 mins to figure out the menu tho lol. once u get it its smooth',
+		short: 'soft aim feels clean on rifles in Steel Path missions. once u get the menu its smooth',
 		slug: 'warframe-soft-aim-review-xkrypt0',
 		seoTitle: 'Soft Aim Review by @xKrypt0_ARC — 5/5 | Warframe Cheats',
 		seoDescription:
@@ -442,14 +442,14 @@ export const customerReviews = [
 		handle: 'extractR4K',
 		title: 'esp boxes are actually useful',
 		rating: 4,
-		text: "esp boxes in mission objectives are actually useful, can see who's holding rooftops before u push. radar could be bigger on 1080p — wish there was a size slider. still worth it for the price",
-		short: "esp boxes in mission objectives are actually useful, can see who's holding rooftops before u push. still worth it for the price",
+		text: "esp boxes on open world missions are actually useful — can see heavy units on ridges before you push the objective. radar could be bigger on 1080p, wish there was a size slider. still worth it for the price",
+		short: "esp boxes on open world missions are actually useful — can see heavy units on ridges before you push. still worth it for the price",
 		slug: 'warframe-esp-realistic-review-buildsr4k',
-		seoTitle: 'ESP Extraction Review by @extractR4K — 4/5 | Warframe Cheats',
+		seoTitle: 'ESP Open World Review by @extractR4K — 4/5 | Warframe Cheats',
 		seoDescription:
-			'Warframe ESP review from @extractR4K: 4/5 for ESP player boxes in mission objectives with radar feedback.',
+			'Warframe ESP review from @extractR4K: 4/5 for ESP enemy boxes on open world missions with radar feedback.',
 		date: '2026-07-19',
-		tag: 'Extraction',
+		tag: 'Open World',
 	},
 	{
 		handle: 'dma_wizard',
@@ -481,21 +481,21 @@ export const customerReviews = [
 		handle: 'stormChaser_07',
 		title: 'solid esp when it works',
 		rating: 3,
-		text: 'features are good when it works. first launch took forever bc windows defender flagged the loader — not their fault but annoying. support replied in like 2 hours and sent a fix. esp and health pickup markers solid in ranked, just wish setup docs were clearer upfront',
-		short: 'features are good when it works. esp and health pickup markers solid in ranked, just wish setup docs were clearer upfront',
+		text: 'features are good when it works. first launch took forever bc windows defender flagged the loader — not their fault but annoying. support replied in like 2 hours and sent a fix. esp and health pickup markers solid in Steel Path, just wish setup docs were clearer upfront',
+		short: 'features are good when it works. esp and health pickup markers solid in Steel Path, just wish setup docs were clearer upfront',
 		slug: 'warframe-cheat-setup-review-stormchaser07',
 		seoTitle: 'Setup Review by @stormChaser_07 — 3/5 | Warframe Cheats',
 		seoDescription:
-			'Honest 3/5 Warframe Cheats review from @stormChaser_07: ESP and health pickup markers solid in ranked, but setup docs needed support help.',
+			'Honest 3/5 Warframe Cheats review from @stormChaser_07: ESP and health pickup markers solid in Steel Path, but setup docs needed support help.',
 		date: '2026-06-15',
 		tag: 'Setup',
 	},
 	{
 		handle: 'lootGoblinx',
-		title: 'loot esp pays for itself',
+		title: 'resource esp pays for itself',
 		rating: 5,
-		text: 'loot esp alone pays for monthly imo. ability cooldown and health markers + distance readouts = way faster extractions',
-		short: 'loot esp alone pays for monthly imo. ability cooldown and health markers + distance readouts = way faster extractions',
+		text: 'resource esp alone pays for monthly imo. ability cooldown and health markers + distance readouts = way faster mission runs',
+		short: 'resource esp alone pays for monthly imo. ability cooldown and health markers + distance readouts = way faster mission runs',
 		slug: 'warframe-ability-esp-review-lootgoblinx',
 		seoTitle: 'Ability ESP Review by @lootGoblinx — 5/5 | Warframe Cheats',
 		seoDescription:
@@ -503,28 +503,28 @@ export const customerReviews = [
 		date: '2026-08-01',
 	},
 	{
-		handle: 'rankedGrind42',
+		handle: 'Steel PathGrind42',
 		title: 'per-weapon aim profiles',
 		rating: 4,
-		text: 'been using since early access. soft aim profiles per weapon is nice — smg profile vs ar profile actually makes a diff in close fights. only complaint is updates page could show eta when patches hit, had to wait a day once',
-		short: 'soft aim profiles per weapon is nice — smg profile vs ar profile actually makes a diff in close fights',
-		slug: 'warframe-aimbot-realistic-review-rankedgrind42',
-		seoTitle: 'Ranked Soft Aim by @rankedGrind42 — 4/5 | Warframe Cheats',
+		text: 'been using since early access. soft aim profiles per weapon is nice — rifle profile vs shotgun profile actually makes a diff in close tilesets. only complaint is updates page could show eta when patches hit, had to wait a day once',
+		short: 'soft aim profiles per weapon is nice — rifle profile vs shotgun profile actually makes a diff in close tilesets',
+		slug: 'warframe-aimbot-realistic-review-Steel Pathgrind42',
+		seoTitle: 'Steel Path Soft Aim by @Steel PathGrind42 — 4/5 | Warframe Cheats',
 		seoDescription:
-			'Ranked Warframe aimbot review from @rankedGrind42: 4/5 for per-weapon aimbot profiles with patch-day update feedback.',
+			'Steel Path Warframe aimbot review from @Steel PathGrind42: 4/5 for per-weapon aimbot profiles with patch-day update feedback.',
 		date: '2026-07-07',
-		tag: 'Ranked',
+		tag: 'Steel Path',
 	},
 	{
 		handle: 'vanLifeARC',
 		title: 'radar saved me so many times',
 		rating: 5,
-		text: 'radar saved me so many times during map rotations. seeing the third party before they slide in is huge in squads. boxes + radar combo is clean',
-		short: 'radar saved me so many times during map rotations. boxes + radar combo is clean',
+		text: 'radar saved me so many times during defense waves. seeing flank spawns before they push the objective is huge in squads. boxes + radar combo is clean',
+		short: 'radar saved me so many times during defense waves. boxes + radar combo is clean',
 		slug: 'warframe-radar-hack-review-vanlifefn',
 		seoTitle: 'Radar Hack Review by @vanLifeARC — 5/5 | Warframe Cheats',
 		seoDescription:
-			'Warframe radar hack review from @vanLifeARC: 5/5 for 2D radar during map rotations and spotting third parties in squads.',
+			'Warframe radar hack review from @vanLifeARC: 5/5 for 2D radar during defense missions and spotting flank spawns in squads.',
 		date: '2026-07-28',
 		tag: 'Squads',
 	},

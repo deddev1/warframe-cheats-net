@@ -62,6 +62,8 @@ export function getBlogProductLinks(locale: LocaleCode, labels: NavLabels): Inte
 export const reviewTagLinks: Record<string, string> = {
 	'Soft aim': '/warframe-aimbot/',
 	Extraction: '/warframe-esp/',
+	'Open World': '/warframe-esp/',
+	'Steel Path': '/warframe-aimbot/',
 	'Cloud DMA': '/warframe-cheats/',
 	Controller: '/warframe-aimbot/',
 	Setup: '/setup/',

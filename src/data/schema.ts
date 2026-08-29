@@ -23,7 +23,7 @@ export const pageFaqClusters: Partial<
 		{
 			question: 'What is an Warframe wallhack?',
 			answer:
-				'An Warframe wallhack is an ESP overlay that shows enemy Warframes and Sentients, heavy attacks, and loot through cover. Warframe Cheats wallhack includes distance readouts, team colours, and toggleable categories for Steel Path missions and open world missions.',
+				'An Warframe wallhack is an ESP overlay that shows enemy units and Sentients, heavy attacks, and loot through cover. Warframe Cheats wallhack includes distance readouts, team colours, and toggleable categories for Steel Path missions and open world missions.',
 		},
 		{
 			question: 'Does Warframe Cheats include a radar hack?',

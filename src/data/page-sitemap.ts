@@ -33,8 +33,8 @@ const sitemapImagesByPageId: Partial<Record<PageId, SitemapImage[]>> = {
 		img(warframeImages.aimbotCombat, 'Warframe Aimbot', 'Warframe Aimbot combat preview'),
 	],
 	hacks: [
-		img(warframeImages.battleRoyaleCombat, 'Warframe Cheats', 'Warframe cheats ranked mission fight preview'),
-		img(warframeImages.espWallhack, 'Warframe Cheats ESP', 'Warframe wallhack ESP on enemy Warframes and Sentients'),
+		img(warframeImages.battleRoyaleCombat, 'Warframe Cheats', 'Warframe cheats Steel Path mission fight preview'),
+		img(warframeImages.espWallhack, 'Warframe Cheats ESP', 'Warframe wallhack ESP on Grineer, Corpus, and Sentient units'),
 	],
 	'warframe-esp': [
 		img(warframeImages.espWallhack, 'Warframe ESP', 'Warframe ESP wallhack overlay'),

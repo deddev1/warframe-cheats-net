@@ -16,7 +16,7 @@ export const enPages = {
 		ctaSecondaryHref: '/features/',
 		sections: [
 			section(
-				'Built for ranked pressure',
+				'Built for Steel Path pressure',
 				'Warframe punishes incomplete information. Warframe Cheats puts ESP, wallhack, and aimbot in one license so you can read mission objectives, flank pushes, and team pushes before you commit.',
 				`Client and anti-cheat updates come from ${EXT.epic} and ${EXT.eac}. When a patch needs a rebuild, we post status on the <a href="/updates/">Updates page</a> — no permanent “undetected forever” promises.`,
 				'Monthly ($35) and lifetime ($150) licenses ship digitally after payment confirmation, with maintenance rebuilds when anti-cheat or game updates require them.',
@@ -37,7 +37,7 @@ export const enPages = {
 			'Warframe ESP for PC and controllers — player boxes, health pickup markers, and distance readouts. Part of our undetected Warframe Cheats with cloud DMA support.',
 		h1: 'Warframe ESP — Player Boxes & Wallhack',
 		intro:
-			'Visibility tools for Warframe. Read enemy squads, vehicles, loot, chests, and distance before you commit to a fight — with toggleable ESP wallhack overlays for open world missions and Steel Path missions.',
+			'Visibility tools for Warframe. Read enemy units, lockers, resource caches, and pickups, and distance before you commit to a fight — with toggleable ESP wallhack overlays for open world missions and Steel Path missions.',
 		imageAlt: 'Warframe ESP overlay with enemy outline boxes, health bars, and distance readouts',
 		galleryTitle: 'Warframe ESP overlay visuals',
 		ctaPrimary: 'Buy Warframe Cheats',
@@ -46,19 +46,19 @@ export const enPages = {
 		sections: [
 			section(
 				'What Warframe ESP solves in Steel Path missions',
-				'Warframe missions punish incomplete information. Warframe Cheats ESP wallhack helps you spot enemy squads early, notice vehicles before they push your position, and mark chests worth the detour.',
-				'On Steel Path missions, mission objectives, and Steel Path missions lobbies, that visibility gap is often the difference between a clean third-party and a wiped squad. ESP ships bundled with radar overlays and Aimbot in one license.',
-				`Warframe’ live seasons and map updates are published by ${EXT.epic}. When POIs or loot rules shift, ESP categories stay useful because they track players and containers — not a single static landmark.`,
+				'Warframe missions punish incomplete information. Warframe Cheats ESP wallhack helps you spot enemy units early, spot heavy units before they push your position, and mark lockers and caches worth the detour.',
+				'On Steel Path missions, mission objectives, and Steel Path missions lobbies, that visibility gap is often the difference between a clean flanking and a wiped squad. ESP ships bundled with radar overlays and Aimbot in one license.',
+				`Warframe’ live seasons and map updates are published by ${EXT.epic}. When tileset areas or loot rules shift, ESP categories stay useful because they track enemies and containers — not a single static landmark.`,
 			),
 			section(
 				'Player, vehicle, and ability ESP wallhack categories',
-				'Toggle enemy player outlines, vehicle threat cues, supply-drop awareness markers, and loot or chest pins so only ranked-critical ESP wallhack overlays stay active during rotations.',
-				'Distance readouts and snapline options help you control engagement range. Team and enemy colour coding supports mission objectives and ranked lobbies alike.',
+				'Toggle enemy unit outlines, vehicle threat cues, pickup awareness markers, and loot or chest pins so only mission-critical ESP wallhack overlays stay active during rotations.',
+				'Distance readouts and snapline options help you control engagement range. Team and enemy colour coding supports mission objectives and co-op squads alike.',
 				'Compare category detail on the <a href="/warframe-wallhack/">wallhack page</a> and pair visibility with the <a href="/warframe-radar/">radar hack</a> for flanks outside your FOV.',
 				[
-					'Enemy player ESP outlines with distance',
-					'Loot and chest markers for faster rotations',
-					'Vehicle and supply-drop threat cues',
+					'enemy unit ESP outlines with distance',
+					'pickups and lockers markers for faster rotations',
+					'Vehicle and pickup threat cues',
 					'Toggleable categories to reduce overlay noise',
 				],
 			),
@@ -66,7 +66,7 @@ export const enPages = {
 				'Undetected ESP with anti-cheat maintenance',
 				'Warframe Cheats ESP wallhack is maintained for Warframe with rebuilds after Digital Extremes anti-cheat patches. Check the <a href="/updates/">Updates page</a> before you queue — no cheat guarantees permanent undetected status.',
 				`Read ${EXT.eac} for how anti-cheat updates ship, then cross-check our <a href="/warframe-cheats/">anti-cheat bypass maintenance guide</a> after major patches.`,
-				'Checkout includes instant digital delivery for Windows 10 and 11. After purchase, follow the <a href="/setup/">Setup guide</a> and tune overlays before your first ranked block.',
+				'Checkout includes instant digital delivery for Windows 10 and 11. After purchase, follow the <a href="/setup/">Setup guide</a> and tune overlays before your first mission session.',
 			),
 			section(
 				'ESP next steps — Aimbot, pricing, and support',
@@ -91,8 +91,8 @@ export const enPages = {
 		sections: [
 			section(
 				'Aimbot tuned for Warframe combat pace',
-				'Warframe mixes long-range AR fights with close-quarters SMG pushes. Warframe Cheats Aimbot includes smoothness, FOV, and sensitivity controls tuned for that pace — with hotkey toggles mid-match.',
-				'Bone priority and target selection options cover closest player, lowest health, or highest-threat targets during squad fights and overtime rounds.',
+				'Warframe mixes long-range AR fights with close-quarters SMG pushes. Warframe Cheats Aimbot includes smoothness, FOV, and sensitivity controls tuned for that pace — with hotkey toggles mid-mission.',
+				'Bone priority and target selection options cover closest player, lowest health, or highest-threat targets during squad fights and extraction phase rounds.',
 				`Weapon balance and season rules change via ${EXT.rust}. Revisit Aimbot FOV and smoothness after major combat patches so assist still matches the live TTK windows.`,
 			),
 			section(
@@ -103,7 +103,7 @@ export const enPages = {
 				[
 					'Smoothness, FOV, and sensitivity sliders',
 					'Bone priority and threat-based targeting',
-					'Hotkeys to toggle Aimbot mid-match',
+					'Hotkeys to toggle Aimbot mid-mission',
 					'Per-weapon profile slots for AR / SMG / sniper',
 				],
 			),
@@ -136,15 +136,15 @@ export const enPages = {
 		sections: [
 			section(
 				'ESP wallhack and visibility features',
-				'Enemy player ESP wallhack, vehicle and supply-drop threat cues, loot and chest markers, distance readouts, snaplines, and toggleable ESP categories for ranked-critical overlays only.',
-				'Team and enemy colour coding supports mission objectives and ranked. Deep-dive the <a href="/warframe-esp/">ESP page</a> and <a href="/warframe-wallhack/">wallhack guide</a> for category-level detail.',
-				`Map and loot systems evolve with ${EXT.epic} season updates — toggleable ESP categories keep overlays useful when POIs rotate.`,
+				'enemy unit ESP wallhack, vehicle and pickup threat cues, pickups and lockers markers, distance readouts, snaplines, and toggleable ESP categories for mission-critical overlays only.',
+				'Team and enemy colour coding supports mission objectives and Steel Path. Deep-dive the <a href="/warframe-esp/">ESP page</a> and <a href="/warframe-wallhack/">wallhack guide</a> for category-level detail.',
+				`Map and loot systems evolve with ${EXT.epic} season updates — toggleable ESP categories keep overlays useful when tileset areas rotate.`,
 			),
 			section(
 				'Radar hack and Aimbot controls',
 				'2D radar overlay with directional threat cues, configurable range for rotations and final circles, plus Aimbot smoothness, FOV, bone priority, hotkeys, and per-weapon profiles.',
 				'All tools share in-client toggles so you can adjust ESP, radar, and Aimbot during live Warframe sessions. See <a href="/warframe-radar/">radar</a> and <a href="/warframe-aimbot/">Aimbot</a> for settings walkthroughs.',
-				'Prefer a menu-first workflow? The <a href="/features/">mod menu page</a> explains mid-match toggles without alt-tabbing.',
+				'Prefer a menu-first workflow? The <a href="/features/">mod menu page</a> explains mid-mission toggles without alt-tabbing.',
 			),
 			section(
 				'Licensing, delivery, and anti-cheat maintenance',
@@ -161,7 +161,7 @@ export const enPages = {
 		h1: 'Warframe Cheats Pricing — Monthly & Lifetime',
 		intro:
 			'Choose monthly or lifetime access to undetected Warframe Cheats — ESP wallhack, radar hack, and Aimbot for Warframe on Windows PC. Instant digital delivery after payment.',
-		imageAlt: 'Warframe wallhack ESP showing enemy Warframes and Sentients through payload corners',
+		imageAlt: 'Warframe wallhack ESP showing enemy units and Sentients through objective corners',
 		galleryTitle: 'Warframe Cheats package visuals',
 		ctaPrimary: 'Buy Warframe Cheats',
 		ctaSecondary: 'Read setup guide',
@@ -176,7 +176,7 @@ export const enPages = {
 			section(
 				'What every plan includes',
 				'Player ESP wallhack, health pickup markers, 2D radar overlays, Aimbot controls, in-client toggles, and maintenance rebuilds after Digital Extremes anti-cheat or major Warframe patches.',
-				`Season calendars and client updates come from ${EXT.rust}. Active licenses receive rebuild access when we publish maintenance on <a href="/updates/">Updates</a>.`,
+				`update calendars and client updates come from ${EXT.rust}. Active licenses receive rebuild access when we publish maintenance on <a href="/updates/">Updates</a>.`,
 				'Digital delivery starts after payment confirmation. Keep your order reference for <a href="/support/">Support</a> requests and follow <a href="/setup/">Setup</a> for first launch.',
 			),
 			section(
@@ -194,7 +194,7 @@ export const enPages = {
 		h1: 'Warframe Cheats Setup — PC & Controller Guide',
 		intro:
 			'Install and configure Warframe Cheats for Warframe on Windows 10 or 11. Activate your license, load ESP wallhack and Aimbot profiles, and verify anti-cheat maintenance status before queueing.',
-		imageAlt: 'Warframe aimbot hitbox lock on enemy Warframe during ranked mission fight',
+		imageAlt: 'Warframe aimbot hitbox lock on enemy unit during Steel Path mission fight',
 		galleryTitle: 'Warframe Cheats setup visuals',
 		ctaPrimary: 'Buy Warframe Cheats',
 		ctaSecondary: 'Contact support',
@@ -203,18 +203,18 @@ export const enPages = {
 			section(
 				'Before you install Warframe Cheats',
 				'Confirm your order email and license details. Check the <a href="/updates/">Updates page</a> for the latest anti-cheat maintenance build before launching Warframe.',
-				`Also glance at ${EXT.status} if Epic services look unstable on patch day — a platform outage is not a license fault.`,
+				`Also glance at ${EXT.status} if Warframe servers look unstable on patch day — a platform outage is not a license fault.`,
 				'Warframe Cheats requires Windows 10 or 11. Close conflicting overlay software that may interfere with ESP wallhack or Aimbot toggles.',
 			),
 			section(
 				'Activate ESP wallhack and Aimbot profiles',
-				'Follow the delivery instructions in your license email. Load default ESP wallhack categories for players, loot, and vehicles — then tune radar range and Aimbot smoothness to your playstyle.',
-				'Use in-client hotkeys to toggle ESP, radar, and Aimbot mid-match. Details for each module live on <a href="/warframe-esp/">ESP</a>, <a href="/warframe-aimbot/">Aimbot</a>, and <a href="/features/">mod menu</a>.',
+				'Follow the delivery instructions in your license email. Load default ESP wallhack categories for enemies, pickups, and lockers — then tune radar range and Aimbot smoothness to your playstyle.',
+				'Use in-client hotkeys to toggle ESP, radar, and Aimbot mid-mission. Details for each module live on <a href="/warframe-esp/">ESP</a>, <a href="/warframe-aimbot/">Aimbot</a>, and <a href="/features/">mod menu</a>.',
 				'Prefer a soft tracking feel? Start with the <a href="/warframe-aimbot/">soft aim</a> recommendations before raising aggressiveness.',
 			),
 			section(
 				'After Warframe or Digital Extremes anti-cheat patches',
-				'When Embark ships a major Warframe update or Digital Extremes anti-cheat patch, revisit Updates before queueing. Download maintenance rebuilds when posted.',
+				'When Digital Extremes ships a major Warframe update or Digital Extremes anti-cheat patch, revisit Updates before queueing. Download maintenance rebuilds when posted.',
 				`Official anti-cheat background: ${EXT.eac}. Our practical workflow is documented on the <a href="/warframe-cheats/">anti-cheat bypass page</a> and <a href="/warframe-cheats/">undetected guide</a>.`,
 				'Contact <a href="/support/">Support</a> with your order ID if activation fails after a patch — include Windows version and error details for faster replies.',
 			),
@@ -236,7 +236,7 @@ export const enPages = {
 			section(
 				'Why the Updates page matters',
 				'Warframe and Digital Extremes anti-cheat receive frequent patches. Warframe Cheats publishes maintenance notes when ESP wallhack, radar, or Aimbot behavior needs a rebuild.',
-				`Use ${EXT.status} for Epic platform health and this page for Warframe Cheats build status — both matter on big update days.`,
+				`Use ${EXT.status} for Warframe launcher health and this page for Warframe Cheats build status — both matter on big update days.`,
 				'Checking this log before you queue reduces surprises after game days or seasonal launches on Steel Path missions and mission objectives.',
 			),
 			section(
@@ -248,7 +248,7 @@ export const enPages = {
 			section(
 				'Staying undetected after patches',
 				'No cheat guarantees permanent undetected status. Combine maintenance updates with responsible in-game settings and patch awareness.',
-				`Follow season notes from ${EXT.rust}, then confirm our rebuild is live before ranked.`,
+				`Follow patch notes from ${EXT.rust}, then confirm our rebuild is live before Steel Path.`,
 				'For urgent status questions after an anti-cheat update, contact <a href="/support/">Support</a> with your license tier and last played build version.',
 			),
 		],
@@ -260,7 +260,7 @@ export const enPages = {
 		h1: 'Warframe Cheats FAQ — Common Questions',
 		intro:
 			'Answers about undetected Warframe Cheats — ESP wallhack, radar hack, Aimbot, anti-cheat maintenance, checkout, and Warframe compatibility on Windows PC.',
-		imageAlt: 'Warframe radar hack 2D minimap overlay showing spawn routes and enemy Warframes and Sentients',
+		imageAlt: 'Warframe radar hack 2D minimap overlay showing spawn routes and enemy units and Sentients',
 		galleryTitle: 'Warframe Cheats FAQ visuals',
 		ctaPrimary: 'Buy Warframe Cheats',
 		ctaSecondary: 'Contact support',
@@ -270,7 +270,7 @@ export const enPages = {
 				'What is Warframe Cheats?',
 				'Warframe Cheats is an undetected cheat package for Warframe on Windows PC. It includes ESP wallhack, 2D radar-style awareness, and Aimbot controls with anti-cheat maintenance updates.',
 				'Packages cover Steel Path missions and mission objectives. Explore <a href="/features/">Features</a> for the full control list and <a href="/warframe-esp/">ESP</a> / <a href="/warframe-aimbot/">Aimbot</a> for module detail.',
-				`Warframe itself is published by ${EXT.epic}. Cheats are third-party tools and may violate Epic’s rules — use is at your own risk.`,
+				`Warframe itself is published by ${EXT.epic}. Cheats are third-party tools and may violate Digital Extremes' Terms of Service — use is at your own risk.`,
 			),
 			section(
 				'Are Warframe Cheats undetected in 2026?',
@@ -293,7 +293,7 @@ export const enPages = {
 		h1: 'Warframe Cheats Support — Contact Us',
 		intro:
 			'Get help with Warframe Cheats licenses, checkout, ESP wallhack setup, Aimbot profiles, and anti-cheat maintenance for Warframe on Windows PC.',
-		imageAlt: 'Warframe cheats ranked objective fight with ESP boxes and aimbot active',
+		imageAlt: 'Warframe cheats Steel Path objective fight with ESP boxes and aimbot active',
 		galleryTitle: 'Warframe Cheats support resources',
 		ctaPrimary: 'Email support',
 		ctaSecondary: 'Read setup guide',
@@ -307,7 +307,7 @@ export const enPages = {
 			),
 			section(
 				'Response times and scope',
-				'Support requests are reviewed daily. Warframe Cheats support covers delivery, billing, setup, and maintenance — not in-game coaching or account recovery for Embark bans.',
+				'Support requests are reviewed daily. Warframe Cheats support covers delivery, billing, setup, and maintenance — not in-game coaching or account recovery for Digital Extremes bans.',
 				`Account and game policy questions belong with ${EXT.epic}. We can help with license delivery and product configuration only.`,
 				'Check the Updates page and FAQ before opening a ticket — many post-patch questions are answered there.',
 			),
@@ -326,7 +326,7 @@ export const enPages = {
 		h1: 'Undetected Warframe Cheats — Anti-cheat maintenance',
 		intro:
 			'How Warframe Cheats stays maintained for Warframe after Digital Extremes anti-cheat patches — ESP wallhack, radar hack, and Aimbot rebuilds for Windows PC.',
-		imageAlt: 'Warframe wallhack ESP skeleton boxes on enemy Warframes and Sentients through map geometry',
+		imageAlt: 'Warframe wallhack ESP skeleton boxes on enemy units and Sentients through map geometry',
 		galleryTitle: 'Undetected Warframe Cheats visuals',
 		ctaPrimary: 'Buy Warframe Cheats',
 		ctaSecondary: 'anti-cheat bypass guide',
@@ -335,7 +335,7 @@ export const enPages = {
 			section(
 				'What undetected means for Warframe Cheats',
 				'Undetected Warframe Cheats means the package is actively maintained against Digital Extremes anti-cheat and major Warframe patches — not that detection is impossible forever.',
-				'Rebuilds target ESP wallhack overlays, radar behavior, and Aimbot signatures after Embark anti-cheat updates.',
+				'Rebuilds target ESP wallhack overlays, radar behavior, and Aimbot signatures after Digital Extremes anti-cheat updates.',
 				`Anti-cheat technology is documented by ${EXT.eac}; Warframe client updates ship through ${EXT.epic}. Undetected status is an ongoing process tied to those releases.`,
 			),
 			section(
@@ -358,8 +358,8 @@ export const enPages = {
 			'Warframe wallhack ESP with player boxes and health pickup markers for PC and controllers. Undetected Warframe cheats with cloud DMA — learn overlays and buy.',
 		h1: 'Warframe Wallhack — ESP Boxes & Visibility',
 		intro:
-			'Warframe wallhack ESP for Warframe — see players, loot, vehicles, and chests through toggleable wallhack overlays built for open world missions and Steel Path missions.',
-		imageAlt: 'Warframe wallhack ESP skeleton boxes on enemy Warframe hero in ranked',
+			'Warframe wallhack ESP for Warframe — see enemies, pickups, and lockers through toggleable wallhack overlays built for open world missions and Steel Path missions.',
+		imageAlt: 'Warframe wallhack ESP skeleton boxes on enemy unit hero in Steel Path',
 		galleryTitle: 'Warframe wallhack ESP gallery',
 		ctaPrimary: 'Buy Warframe Cheats',
 		ctaSecondary: 'Warframe ESP page',
@@ -368,13 +368,13 @@ export const enPages = {
 			section(
 				'Wallhack ESP vs raw aim tools',
 				'A Warframe wallhack focuses on information — player outlines, loot pins, vehicle threat cues — rather than automatic aiming. Warframe Cheats bundles wallhack ESP with radar and optional Aimbot in one license.',
-				'Toggle categories so only the wallhack overlays you need stay active during rotations and endgame circles.',
+				'Toggle categories so only the wallhack overlays you need stay active during rotations and defense waves.',
 				'For the broader ESP keyword page see <a href="/warframe-esp/">Warframe ESP</a>; for combat assist see <a href="/warframe-aimbot/">Aimbot</a>.',
 			),
 			section(
 				'Map coverage for wallhack ESP',
 				'Wallhack overlays support Steel Path missions, mission objectives, and Steel Path missions lobbies with distance readouts and snaplines for engagement control.',
-				`Season maps and POI changes are announced via ${EXT.rust}. Wallhack remains useful because it tracks entities, not fixed landmarks alone.`,
+				`tileset updates and tileset area changes are announced via ${EXT.rust}. Wallhack remains useful because it tracks entities, not fixed landmarks alone.`,
 				'Pair wallhack awareness with <a href="/warframe-radar/">radar hack</a> cues for flanks during building and rooftop fights.',
 			),
 			section(
@@ -392,7 +392,7 @@ export const enPages = {
 		h1: 'Warframe Radar Hack — 2D Threat Awareness',
 		intro:
 			'2D radar-style overlay for Warframe — directional threat cues for nearby players outside your line of sight, bundled with ESP wallhack and Aimbot.',
-		imageAlt: 'Warframe ESP distance markers and hero health readouts in ranked',
+		imageAlt: 'Warframe ESP distance markers and hero health readouts in Steel Path',
 		galleryTitle: 'Warframe radar hack visuals',
 		ctaPrimary: 'Buy Warframe Cheats',
 		ctaSecondary: 'See ESP wallhack',
@@ -400,14 +400,14 @@ export const enPages = {
 		sections: [
 			section(
 				'Why radar hack matters in Warframe',
-				'Battle royale fights happen in three dimensions — rooftops, windows, and flanks. A 2D radar overlay shows nearby player threats outside direct line of sight so you can reposition before a third party.',
+				'Multi-floor tilesets stack vertical fights — catwalks, doorways, and side spawns. A 2D radar overlay shows nearby enemy threats outside direct line of sight so you can reposition before a flank wave.',
 				'Warframe Cheats radar complements <a href="/warframe-esp/">ESP wallhack</a> markers during squad pushes and final-circle scrims.',
 				`Mode rules and seasonal changes come from ${EXT.epic}. Radar range remains configurable when map scale or mobility meta shifts.`,
 			),
 			section(
 				'Configurable radar range',
-				'Adjust radar range for early rotations versus tight endgame circles. Directional cues highlight flanks during building clears and vehicle pushes across Steel Path missions and mission objectives.',
-				'Toggle radar alongside ESP and Aimbot with in-client hotkeys during live matches — see the <a href="/features/">mod menu</a> page.',
+				'Adjust radar range for early rotations versus tight defense waves. Directional cues highlight flanks during building clears and vehicle pushes across Steel Path missions and mission objectives.',
+				'Toggle radar alongside ESP and Aimbot with in-client hotkeys during live missions — see the <a href="/features/">mod menu</a> page.',
 				'Combat follow-up lives on <a href="/warframe-aimbot/">Aimbot</a> when you convert radar info into a fight.',
 			),
 			section(
@@ -425,7 +425,7 @@ export const enPages = {
 		h1: 'Anti-cheat bypass — Warframe Cheats Maintenance',
 		intro:
 			'Understand Digital Extremes anti-cheat maintenance for Warframe Cheats — how ESP wallhack, radar hack, and Aimbot rebuild after Warframe security updates.',
-		imageAlt: 'Warframe undetected hacks status with ESP overlay on enemy Warframes and Sentients',
+		imageAlt: 'Warframe undetected hacks status with ESP overlay on enemy units and Sentients',
 		galleryTitle: 'anti-cheat maintenance visuals',
 		ctaPrimary: 'Buy Warframe Cheats',
 		ctaSecondary: 'Check updates',
@@ -433,7 +433,7 @@ export const enPages = {
 		sections: [
 			section(
 				'Digital Extremes anti-cheat overview',
-				`Digital Extremes anti-cheat is Embark’ anti-cheat for Warframe on PC (see ${EXT.eac}). Security updates can affect ESP wallhack, radar, and Aimbot behavior — requiring maintenance rebuilds for undetected packages.`,
+				`Digital Extremes anti-cheat is Digital Extremes’ anti-cheat for Warframe on PC (see ${EXT.eac}). Security updates can affect ESP wallhack, radar, and Aimbot behavior — requiring maintenance rebuilds for undetected packages.`,
 				`Warframe Cheats monitors anti-cheat patch notes and Warframe seasonal updates from ${EXT.epic} to schedule module reviews.`,
 				'“anti-cheat bypass” in our wording means timely maintenance — not a permanent free pass around anti-cheat.',
 			),
@@ -467,7 +467,7 @@ export const enPages = {
 			section(
 				'Why Warframe Cheats leads in 2026',
 				'2026 seasons bring new maps, weapons, and Digital Extremes anti-cheat updates. Warframe Cheats bundles ESP wallhack, radar hack, and Aimbot with active maintenance — not a stale prior-year build.',
-				`Track official season messaging on ${EXT.rust}, then use our <a href="/updates/">Updates log</a> for product rebuild timing.`,
+				`Track official official patch messaging on ${EXT.rust}, then use our <a href="/updates/">Updates log</a> for product rebuild timing.`,
 				'Monthly ($35) and lifetime ($150) plans cover Steel Path missions and mission objectives loops — see <a href="/pricing/">Pricing</a>.',
 			),
 			section(
@@ -491,7 +491,7 @@ export const enPages = {
 		h1: 'Warframe Cheats — Undetected ESP, Aimbot & Wallhack',
 		intro:
 			'Warframe Cheats for Steel Path missions and mission objectives combine ESP wallhack visibility, 2D radar-style threat cues, and Aimbot controls in one undetected Windows PC license — maintained after Digital Extremes anti-cheat patches. This is the pillar guide for Warframe Cheats in 2026.',
-		imageAlt: 'Warframe cheats ranked objective fight with ESP boxes and aimbot active',
+		imageAlt: 'Warframe cheats Steel Path objective fight with ESP boxes and aimbot active',
 		galleryTitle: 'Warframe Cheats gallery — ESP, Aimbot, wallhack',
 		ctaPrimary: 'Buy Warframe Cheats',
 		ctaSecondary: 'See undetected guide',
@@ -500,7 +500,7 @@ export const enPages = {
 			section(
 				'What Warframe Cheats include in 2026',
 				'Players searching for Warframe Cheats usually want visibility and combat tools without stacking separate downloads. Warframe Cheats bundles player ESP wallhack, health pickup markers, 2D radar overlays, and configurable Aimbot in one maintained package — the same toolkit often called Warframe cheats.',
-				'Coverage spans Steel Path missions and mission objectives with in-client toggles for live matches. Monthly ($35) and lifetime ($150) licenses unlock the full stack.',
+				'Coverage spans Steel Path missions and mission objectives with in-client toggles for live missions. Monthly ($35) and lifetime ($150) licenses unlock the full stack.',
 				`Official game updates come from ${EXT.epic}; our hacks package tracks those releases via the <a href="/updates/">Updates page</a>. Cross-check platform health on ${EXT.status} before patch-day queues.`,
 			),
 			section(
@@ -511,7 +511,7 @@ export const enPages = {
 			),
 			section(
 				'Warframe Cheats vs single-feature tools',
-				'Standalone hacks often cover only wallhack or only aim assist. Warframe Cheats maps the full extraction loop: read enemy squads, track vehicles and chests, spot flanks on radar, and tune Aimbot per weapon class.',
+				'Standalone hacks often cover only wallhack or only aim assist. Warframe Cheats maps the full mission loop: read enemy units, track lockers and resource caches, spot flanks on radar, and tune Aimbot per weapon class.',
 				'Compare the <a href="/warframe-esp/">ESP</a>, <a href="/warframe-aimbot/">Aimbot</a>, and <a href="/features/">Features</a> pages — or review <a href="/pricing/">Pricing</a> for monthly and lifetime licenses.',
 				'Related landings: <a href="/pricing/">cheat download</a>, <a href="/features/">mod menu</a>, <a href="/warframe-aimbot/">aimbot hack</a>, <a href="/warframe-esp/">ESP hack</a>.',
 			),
@@ -530,7 +530,7 @@ export const enPages = {
 		h1: 'Warframe Hack Download — Instant License Delivery',
 		intro:
 			'How Warframe cheat download works for Warframe — digital license delivery after payment confirmation, with ESP wallhack, radar hack, and Aimbot access on Windows PC.',
-		imageAlt: 'Warframe wallhack ESP showing enemy Warframes and Sentients through payload corners',
+		imageAlt: 'Warframe wallhack ESP showing enemy units and Sentients through objective corners',
 		galleryTitle: 'Warframe cheat download visuals',
 		ctaPrimary: 'Buy Warframe Cheats',
 		ctaSecondary: 'Setup guide',
@@ -540,11 +540,11 @@ export const enPages = {
 				'How Warframe cheat download delivery works',
 				'After checkout confirms payment, Warframe Cheats license details arrive digitally by email. No physical shipment — access begins once activation instructions are delivered.',
 				'Keep your order confirmation and license email ready for the <a href="/setup/">Setup guide</a> and Support requests.',
-				`If Epic services are down, check ${EXT.status} before assuming a download failure.`,
+				`If Warframe servers are down, check ${EXT.status} before assuming a download failure.`,
 			),
 			section(
 				'What your download unlocks',
-				'Every Warframe cheat download includes player ESP wallhack, loot and chest markers, 2D radar overlays, Aimbot profiles, and in-client toggles for open world missions and Steel Path missions.',
+				'Every Warframe cheat download includes player ESP wallhack, pickups and lockers markers, 2D radar overlays, Aimbot profiles, and in-client toggles for open world missions and Steel Path missions.',
 				'Monthly ($35) and lifetime ($150) plans share the same feature stack — compare options on the <a href="/pricing/">Pricing page</a>.',
 				'Feature detail: <a href="/features/">Features</a>. Module pages: <a href="/warframe-esp/">ESP</a>, <a href="/warframe-aimbot/">Aimbot</a>.',
 			),
@@ -562,7 +562,7 @@ export const enPages = {
 			'Warframe mod menu for in-match toggles — ESP boxes, soft aim, radar, and cloud DMA on PC and controllers. Undetected Warframe Cheats package.',
 		h1: 'Warframe Mod Menu — In-Client Control Panel',
 		intro:
-			'Warframe mod menu controls for Warframe — toggle ESP wallhack categories, radar range, and Aimbot profiles mid-match without leaving your Warframe session on Windows PC.',
+			'Warframe mod menu controls for Warframe — toggle ESP wallhack categories, radar range, and Aimbot profiles mid-mission without leaving your Warframe session on Windows PC.',
 		imageAlt: 'Warframe cheats mod menu with soft aim profiles and ESP toggles',
 		galleryTitle: 'Warframe mod menu gallery',
 		ctaPrimary: 'Buy Warframe Cheats',
@@ -571,14 +571,14 @@ export const enPages = {
 		sections: [
 			section(
 				'What a Warframe mod menu controls',
-				'A Warframe mod menu is the in-client panel where you enable ESP wallhack overlays, adjust radar range, and switch Aimbot profiles during live matches. Warframe Cheats keeps those toggles accessible with hotkeys.',
+				'A Warframe mod menu is the in-client panel where you enable ESP wallhack overlays, adjust radar range, and switch Aimbot profiles during live missions. Warframe Cheats keeps those toggles accessible with hotkeys.',
 				'Toggle player outlines, health pickup markers, vehicle cues, and per-weapon Aimbot settings without alt-tabbing out of Warframe.',
 				'Control deep-dives: <a href="/warframe-esp/">ESP</a>, <a href="/warframe-aimbot/">Aimbot</a>, <a href="/warframe-radar/">radar</a>.',
 			),
 			section(
 				'Mod menu categories for open world missions and Steel Path missions',
-				'Separate ESP wallhack categories for players, loot, chests, and vehicles let you reduce overlay noise during rotations and endgame circles.',
-				'Radar hack range and Aimbot smoothness adjust from the same mod menu — useful when ${EXT.rust} seasons change fight distances and mobility.',
+				'Separate ESP wallhack categories for players, pickups, lockers, and caches let you reduce overlay noise during rotations and defense waves.',
+				'Radar hack range and Aimbot smoothness adjust from the same mod menu — useful when Warframe balance patches change fight distances and mobility.',
 				'Soft tracking players should start with <a href="/warframe-aimbot/">soft aim</a> profiles before aggressive FOV.',
 			),
 			section(
@@ -596,7 +596,7 @@ export const enPages = {
 		h1: 'Warframe Soft Aim — Smooth Aimbot Controls',
 		intro:
 			'Warframe aimbot settings for Warframe — configurable Aimbot smoothness, FOV, bone priority, and hotkey toggles bundled with ESP wallhack and radar in one undetected license.',
-		imageAlt: 'Warframe aimbot ESP boxes and FOV circle on enemy Warframes and Sentients in open world missions',
+		imageAlt: 'Warframe aimbot ESP boxes and FOV circle on enemy units and Sentients in open world missions',
 		galleryTitle: 'Warframe aimbot gallery',
 		ctaPrimary: 'Buy Warframe Cheats',
 		ctaSecondary: 'Aimbot controls',
@@ -610,7 +610,7 @@ export const enPages = {
 			),
 			section(
 				'Soft aim profiles per weapon class',
-				'Save separate soft aim profiles for assault rifles, SMGs, and snipers. Switch between long-range AR beams and close-quarters room clears with hotkeys mid-match.',
+				'Save separate soft aim profiles for assault rifles, SMGs, and snipers. Switch between long-range AR beams and close-quarters room clears with hotkeys mid-mission.',
 				`Weapon TTKs shift with ${EXT.rust} balance patches — retune smoothness after major combat updates.`,
 				'Soft aim ships alongside <a href="/warframe-esp/">ESP wallhack</a> and <a href="/warframe-radar/">2D radar</a> overlays.',
 			),
@@ -629,7 +629,7 @@ export const enPages = {
 		h1: 'Best Warframe Cheats — 2026 Buyer Guide',
 		intro:
 			'Compare the best Warframe cheats for Warframe in 2026 — undetected ESP wallhack, radar hack, and Aimbot in one maintained package with Digital Extremes anti-cheat rebuilds and instant delivery.',
-		imageAlt: 'Warframe wallhack ESP showing enemy Warframes and Sentients through payload corners',
+		imageAlt: 'Warframe wallhack ESP showing enemy units and Sentients through objective corners',
 		galleryTitle: 'Best Warframe cheats gallery',
 		ctaPrimary: 'Buy Warframe Cheats',
 		ctaSecondary: 'Compare pricing',
@@ -676,7 +676,7 @@ export const enPages = {
 			),
 			section(
 				'Aimbot hack controls and hotkeys',
-				'Bone priority options cover head, chest, or dynamic targets. Hotkeys enable or disable aimbot hack mid-match without opening menus during rotations or final circles.',
+				'Bone priority options cover head, chest, or dynamic targets. Hotkeys enable or disable aimbot hack mid-mission without opening menus during rotations or final circles.',
 				'Per-weapon profile slots separate long-range AR tuning from close-quarters SMG settings.',
 				`Balance patches from ${EXT.rust} can change ideal FOV — retune after major weapon updates.`,
 			),
@@ -694,7 +694,7 @@ export const enPages = {
 			'Warframe ESP hack with player boxes and health pickup markers for PC and controllers. Undetected Warframe cheats with cloud DMA — see overlays and buy.',
 		h1: 'Warframe ESP Hack — Player Boxes Guide',
 		intro:
-			'Warframe ESP hack overlays for Warframe — player outlines, vehicle threat cues, loot and chest markers with distance readouts across Steel Path missions and mission objectives.',
+			'Warframe ESP hack overlays for Warframe — player outlines, vehicle threat cues, pickups and lockers markers with distance readouts across Steel Path missions and mission objectives.',
 		imageAlt: 'Warframe ESP hack with hero skeleton, bounding box, and ult tracking labels',
 		galleryTitle: 'Warframe ESP hack gallery',
 		ctaPrimary: 'Buy Warframe Cheats',
@@ -703,15 +703,15 @@ export const enPages = {
 		sections: [
 			section(
 				'What a Warframe ESP hack shows',
-				'A Warframe ESP hack renders enemy player outlines, vehicle positions, and loot pins through walls and terrain — closing the information gap before you commit to a fight.',
-				'Distance readouts and snapline options help control engagement range during squad pushes and third-party scenarios.',
+				'A Warframe ESP hack renders enemy unit outlines, vehicle positions, and loot pins through walls and terrain — closing the information gap before you commit to a fight.',
+				'Distance readouts and snapline options help control engagement range during squad pushes and flanking scenarios.',
 				'Canonical visibility guide: <a href="/warframe-esp/">Warframe ESP</a>. Wallhack wording: <a href="/warframe-wallhack/">wallhack</a>.',
 			),
 			section(
 				'ESP hack categories for Steel Path missions',
-				'Toggle player ESP hack, health pickup markers, chest pins, and vehicle cues independently so only ranked-critical overlays stay active during rotations.',
-				'Team and enemy colour coding supports mission objectives and ranked.',
-				`POI and loot changes publish through ${EXT.epic} — keep categories toggled to what the current map rewards.`,
+				'Toggle player ESP hack, health pickup markers, chest pins, and vehicle cues independently so only mission-critical overlays stay active during rotations.',
+				'Team and enemy colour coding supports mission objectives and Steel Path.',
+				`tileset area and loot changes publish through ${EXT.epic} — keep categories toggled to what the current map rewards.`,
 			),
 			section(
 				'Undetected ESP hack with anti-cheat maintenance',
@@ -728,7 +728,7 @@ export const enPages = {
 		h1: 'Warframe Unlock All — What Players Search For',
 		intro:
 			'Warframe unlock all is a common search term for Warframe — this page clarifies what unlock-all tools claim versus the ESP wallhack, radar hack, and Aimbot tools Warframe Cheats actually provides on Windows PC.',
-		imageAlt: 'Warframe ESP boxes and distances on enemy Warframes and Sentients in Steel Path mission',
+		imageAlt: 'Warframe ESP boxes and distances on enemy units and Sentients in Steel Path mission',
 		galleryTitle: 'Warframe unlock all guide visuals',
 		ctaPrimary: 'Buy Warframe Cheats',
 		ctaSecondary: 'See features',
@@ -736,14 +736,14 @@ export const enPages = {
 		sections: [
 			section(
 				'What Warframe unlock all usually means',
-				'Warframe unlock all searches often refer to instant access to weapons, camos, skins, or battle pass tiers. Those claims differ from visibility and combat-assist tools like ESP wallhack and Aimbot.',
+				'Warframe unlock all searches often refer to instant access to weapons, camos, skins, or Prime Access tiers. Those claims differ from visibility and combat-assist tools like ESP wallhack and Aimbot.',
 				'Warframe Cheats focuses on in-match awareness — player ESP, health pickup markers, radar overlays, and configurable Aimbot — not account-wide cosmetic unlocks.',
-				`Cosmetics and Battle Pass items are sold through ${EXT.rust}. Be wary of unlock-all downloads that promise free skins — they are often scams.`,
+				`Cosmetics and Prime Access items are sold through ${EXT.rust}. Be wary of unlock-all downloads that promise free skins — they are often scams.`,
 			),
 			section(
 				'Visibility tools vs unlock-all claims',
-				'ESP wallhack helps you spot enemy squads, vehicles, and loot chests during live matches. Radar hack adds flank awareness; Aimbot covers combat assist with smoothness and hotkey controls.',
-				'For loadout planning during a match, loot and chest markers speed BR rotations — see the <a href="/warframe-esp/">ESP</a> and <a href="/features/">Features</a> pages for the full tool list.',
+				'ESP wallhack helps you spot enemy units, lockers, and resource caches during live missions. Radar hack adds flank awareness; Aimbot covers combat assist with smoothness and hotkey controls.',
+				'For loadout planning during a match, pickups and lockers markers speed BR rotations — see the <a href="/warframe-esp/">ESP</a> and <a href="/features/">Features</a> pages for the full tool list.',
 				'Related: <a href="/warframe-cheats/">Warframe Cheats</a> and <a href="/warframe-cheats/">best Warframe cheats</a>.',
 			),
 			section(
