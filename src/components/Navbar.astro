@@ -46,7 +46,6 @@ const isActive = (href: string, linkPageId?: PageId) => {
 				decoding="async"
 				fetchpriority="low"
 			/>
-			<span class="nav__name">Warframe Cheats</span>
 			<span class="sr-only">Warframe Cheats home</span>
 		</a>
 
@@ -182,14 +181,6 @@ const isActive = (href: string, linkPageId?: PageId) => {
 		height: 1.65rem;
 		object-fit: contain;
 		content-visibility: auto;
-	}
-
-	.nav__name {
-		font-family: var(--font-display);
-		font-size: 0.9rem;
-		font-weight: 800;
-		letter-spacing: -0.02em;
-		white-space: nowrap;
 	}
 
 	.nav__links {
@@ -438,10 +429,6 @@ const isActive = (href: string, linkPageId?: PageId) => {
 	@media (max-width: 420px) {
 		.nav {
 			padding-inline: 0.65rem;
-		}
-
-		.nav__name {
-			display: none;
 		}
 	}
 
