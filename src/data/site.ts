@@ -9,7 +9,7 @@ export const siteConfig = {
 	logoRasterWidth: 192,
 	logoRasterHeight: 192,
 	logoAlt: 'Warframe Cheats logo',
-	checkoutUrl: 'https://zadeyo.com/go/QRH?to=%2Fproducts%2Fwarframe-cheats',
+	checkoutUrl: 'https://zadeyo.com/go/QRH?to=%2Fproducts%2Fwarframe',
 	defaultOgImage: '/images/warframe-esp-overlay.webp',
 } as const;
 

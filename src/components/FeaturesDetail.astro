@@ -92,7 +92,7 @@ const responsiveImage = (src: string) => ({
 	</section>
 
 	<div class="features-detail__cta">
-		<a href={pricingHref} class="features-detail__pricing-link btn-buy">
+		<a href={siteConfig.checkoutUrl} class="features-detail__pricing-link btn-buy" rel="noopener noreferrer">
 			{ui.common.buyNow} — from ${productInfo.plans[0].price}/mo
 		</a>
 		<a href={siteConfig.checkoutUrl} class="features-detail__checkout-link" rel="noopener noreferrer">
