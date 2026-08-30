@@ -13,35 +13,34 @@ export const PAGE_IDS = [
 ];
 
 /**
- * Hero image per page — rotate the five distinct screenshots.
- * Topic pages keep thematic matches; utility/legal pages fill remaining slots.
+ * Banner image per page — thematic Warframe screenshots (see public/images/warframe-*).
  */
 export const HERO_IMAGES = {
 	home: '/images/warframe-cheats-hero.webp',
-	'warframe-esp': '/images/warframe-esp-overlay.webp',
-	'warframe-aimbot': '/images/warframe-aimbot-menu.webp',
-	features: '/images/warframe-esp-tanks.webp',
-	pricing: '/images/warframe-esp-modules.webp',
-	setup: '/images/warframe-aimbot-menu.webp',
-	updates: '/images/warframe-esp-overlay.webp',
-	faq: '/images/warframe-esp-tanks.webp',
-	support: '/images/warframe-aimbot-menu.webp',
-	undetected: '/images/warframe-cheats-hero.webp',
-	wallhack: '/images/warframe-esp-modules.webp',
-	radar: '/images/warframe-radar-hack.webp',
-	'eac-bypass': '/images/warframe-esp-overlay.webp',
+	'warframe-esp': '/images/warframe-esp-wallhack-overlay.webp',
+	'warframe-aimbot': '/images/warframe-sortie-aimbot-combat.webp',
+	features: '/images/warframe-cheats-main-menu.webp',
+	pricing: '/images/warframe-cheats-main-menu.webp',
+	setup: '/images/warframe-cheats-settings-panel.webp',
+	updates: '/images/warframe-steel-path-mission-esp.webp',
+	faq: '/images/warframe-cheats-settings-panel.webp',
+	support: '/images/warframe-cheats-main-menu.webp',
+	undetected: '/images/warframe-cheats-combat-esp.webp',
+	wallhack: '/images/warframe-esp-enemy-boxes.webp',
+	radar: '/images/warframe-radar-hack-minimap.webp',
+	'eac-bypass': '/images/warframe-steel-path-mission-esp.webp',
 	'cheats-2026': '/images/warframe-cheats-hero.webp',
-	hacks: '/images/warframe-esp-tanks.webp',
-	'cheat-download': '/images/warframe-esp-overlay.webp',
-	'mod-menu': '/images/warframe-aimbot-menu.webp',
-	'soft-aim': '/images/warframe-cheats-hero.webp',
-	'best-cheats': '/images/warframe-esp-modules.webp',
-	'aimbot-hack': '/images/warframe-aimbot-menu.webp',
-	'esp-hack': '/images/warframe-esp-overlay.webp',
-	'unlock-all': '/images/warframe-esp-tanks.webp',
-	privacy: '/images/warframe-esp-modules.webp',
-	refund: '/images/warframe-aimbot-menu.webp',
-	terms: '/images/warframe-esp-tanks.webp',
+	hacks: '/images/warframe-cheats-combat-esp.webp',
+	'cheat-download': '/images/warframe-cheats-main-menu.webp',
+	'mod-menu': '/images/warframe-cheats-main-menu.webp',
+	'soft-aim': '/images/warframe-sortie-aimbot-combat.webp',
+	'best-cheats': '/images/warframe-steel-path-mission-esp.webp',
+	'aimbot-hack': '/images/warframe-aimbot-targeting-menu.webp',
+	'esp-hack': '/images/warframe-esp-wallhack-overlay.webp',
+	'unlock-all': '/images/warframe-loot-pickup-esp.webp',
+	privacy: '/images/warframe-mission.webp',
+	refund: '/images/warframe-mission.webp',
+	terms: '/images/warframe-mission.webp',
 };
 
 export const TS_HEADER = `import type { LocaleCode } from './locales';

@@ -76,7 +76,6 @@ const ctaSecondaryHref = page.ctaSecondaryHref
 	locale={locale}
 	pageId={pageId}
 	showGallery={pageId !== 'pricing' && pageId !== 'features'}
-	hideBanner={pageId === 'pricing' || pageId === 'features'}
 	extraGraph={extraGraph}
 	contentWidth={pageId === 'pricing' || pageId === 'features' ? 'full' : 'narrow'}
 	ctaPrimary={{ href: siteConfig.checkoutUrl, label: page.ctaPrimary }}
@@ -86,31 +85,8 @@ const ctaSecondaryHref = page.ctaSecondaryHref
 			: undefined
 	}
 >
-	{pageId === 'pricing' && <PricingPlans locale={locale} />}
+	{pageId === 'pricing' && <PricingPlans locale={locale} showPageTitle={false} />}
 	{pageId === 'pricing' && <PricingFeatureList locale={locale} showRelatedPages={false} />}
-	{pageId === 'features' && (
-		<header class="features-page-head">
-			<nav class="features-page-head__crumbs" aria-label="Breadcrumb">
-				<a href={getLocalizedPath('home', locale)}>{ui.nav.home}</a>
-				<span aria-hidden="true">/</span>
-				<span aria-current="page">{ui.nav.features}</span>
-			</nav>
-			<h1 class="features-page-head__title">{page.h1}</h1>
-			<p class="features-page-head__intro">{page.intro}</p>
-			<div class="features-page-head__actions">
-				<a href={siteConfig.checkoutUrl} class="btn-buy" rel="noopener noreferrer">
-					{page.ctaPrimary}
-				</a>
-				{
-					page.ctaSecondary && (
-						<a href={ctaSecondaryHref} class="btn btn--ghost">
-							{page.ctaSecondary}
-						</a>
-					)
-				}
-			</div>
-		</header>
-	)}
 	{pageId === 'features' && <FeaturesDetail locale={locale} />}
 	{
 		!(pageId === 'pricing' || pageId === 'features') &&
@@ -142,99 +118,3 @@ const ctaSecondaryHref = page.ctaSecondaryHref
 	}
 	<RelatedPages locale={locale} links={relatedLinks} />
 </PageLayout>
-
-<style>
-	.features-page-head {
-		display: grid;
-		gap: 0.85rem;
-		max-width: 42rem;
-		margin: 0 auto 2rem;
-		padding: 0 0 0.25rem;
-		text-align: center;
-	}
-
-	.features-page-head__crumbs {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		flex-wrap: wrap;
-		gap: 0.45rem;
-		font-size: 0.8rem;
-		color: var(--color-faint);
-	}
-
-	.features-page-head__crumbs a {
-		color: var(--color-muted);
-		font-weight: 600;
-	}
-
-	.features-page-head__crumbs a:hover {
-		color: var(--color-orchid);
-	}
-
-	.features-page-head__title {
-		margin: 0;
-		font-family: var(--font-display);
-		font-size: clamp(1.75rem, 3.8vw, 2.35rem);
-		font-weight: 800;
-		letter-spacing: -0.03em;
-		line-height: 1.12;
-		color: var(--color-ink);
-	}
-
-	.features-page-head__intro {
-		margin: 0;
-		color: var(--color-muted);
-		font-size: 1rem;
-		line-height: 1.65;
-	}
-
-	.features-page-head__actions {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: 0.65rem;
-		margin-top: 0.35rem;
-	}
-
-	.features-page-head__actions .btn-buy,
-	.features-page-head__actions .btn-buy:hover,
-	.features-page-head__actions .btn-buy:visited {
-		color: #ffffff;
-		text-shadow: 0 1px 3px rgba(6, 17, 18, 0.55);
-	}
-
-	.features-page-head__actions .btn {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		min-height: 2.7rem;
-		padding: 0.7rem 1.15rem;
-		border-radius: 0.75rem;
-		font-size: 0.92rem;
-		font-weight: 700;
-	}
-
-	.features-page-head__actions .btn--ghost {
-		border: 1px solid var(--color-border);
-		background: rgba(13, 35, 36, 0.7);
-		color: var(--color-ink);
-	}
-
-	.features-page-head__actions .btn--ghost:hover {
-		border-color: rgba(32, 191, 192, 0.45);
-		color: var(--color-ink);
-	}
-
-	@media (max-width: 640px) {
-		.features-page-head__actions {
-			flex-direction: column;
-			align-items: stretch;
-		}
-
-		.features-page-head__actions .btn-buy,
-		.features-page-head__actions .btn {
-			width: 100%;
-		}
-	}
-</style>

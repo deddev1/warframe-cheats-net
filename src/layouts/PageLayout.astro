@@ -154,17 +154,30 @@ const lcpImageSizes = isHeroLcp ? heroSizes : undefined;
 						</picture>
 						)
 					) : (
-						<img
-							src={contentSrc(heroImage)}
-							srcset={contentSrcSet(heroImage)}
-							sizes="100vw"
-							alt={heroAlt}
-							width="1600"
-							height="900"
-							class="banner__img"
-							loading="lazy"
-							decoding="async"
-						/>
+						<picture>
+							<source
+								media="(max-width: 760px)"
+								srcset={contentSrc(heroImage)}
+								type="image/webp"
+							/>
+							<source
+								media="(min-width: 761px)"
+								srcset={contentSrcSet(heroImage) ?? contentSrc(heroImage)}
+								sizes="100vw"
+								type="image/webp"
+							/>
+							<img
+								src={contentSrc(heroImage)}
+								srcset={contentSrcSet(heroImage)}
+								sizes="100vw"
+								alt={heroAlt}
+								width="1600"
+								height="900"
+								class="banner__img"
+								loading="lazy"
+								decoding="async"
+							/>
+						</picture>
 					)
 				}
 				<div class="banner__scrim" aria-hidden="true"></div>
@@ -265,6 +278,8 @@ const lcpImageSizes = isHeroLcp ? heroSizes : undefined;
 	.banner {
 		position: relative;
 		isolation: isolate;
+		min-height: clamp(220px, 38vh, 380px);
+		overflow: hidden;
 		border-bottom: 1px solid rgba(32, 191, 192, 0.12);
 		margin-bottom: 2rem;
 	}

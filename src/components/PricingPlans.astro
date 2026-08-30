@@ -9,10 +9,13 @@ import { contentSrc, contentSrcSet, productMainSizes, productThumbSizes } from '
 interface Props {
 	locale?: LocaleCode;
 	showRelatedPages?: boolean;
+	/** When false, page banner supplies the H1 (dedicated /pricing/ page). */
+	showPageTitle?: boolean;
 }
 
 const locale = Astro.props.locale ?? defaultLocale;
 const showRelatedPages = Astro.props.showRelatedPages ?? true;
+const showPageTitle = Astro.props.showPageTitle ?? true;
 const ui = getUi(locale);
 
 const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? productInfo.plans[0];
@@ -93,7 +96,13 @@ const featurePills = [
 		data-buy-show-price="false"
 	>
 		<div class="pricing-showcase__header">
-			<h1 class="pricing-showcase__title">{productInfo.name}</h1>
+			{
+				showPageTitle ? (
+					<h1 class="pricing-showcase__title">{productInfo.name}</h1>
+				) : (
+					<h2 class="pricing-showcase__title">{productInfo.name}</h2>
+				)
+			}
 			<span class="pricing-showcase__status">
 				<span class="pricing-showcase__status-dot" aria-hidden="true"></span>
 				Undetected
