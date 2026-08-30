@@ -11,6 +11,7 @@ interface Props {
 const locale = Astro.props.locale ?? defaultLocale;
 const ui = getUi(locale);
 const reviewsUi = ui.reviews;
+const trustUi = ui.trust;
 const featuredReviews = customerReviews.slice(0, 4);
 
 const reviewDateFormatter = new Intl.DateTimeFormat(locale, {
@@ -77,6 +78,12 @@ const seeAllLabel = reviewsUi.seeAll ?? 'See all reviews';
 				</a>
 			))
 		}
+	</div>
+
+	<div class="reviews__foot" aria-label="Purchase highlights">
+		<span class="reviews__chip">{trustUi.delivery}</span>
+		<span class="reviews__chip">{trustUi.platform}</span>
+		<span class="reviews__chip">{trustUi.antiCheatShort}</span>
 	</div>
 </section>
 
@@ -240,6 +247,26 @@ const seeAllLabel = reviewsUi.seeAll ?? 'See all reviews';
 		color: #b8c0cc;
 		font-size: 0.88rem;
 		line-height: 1.6;
+	}
+
+	.reviews__foot {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.55rem;
+		margin-top: 1rem;
+	}
+
+	.reviews__chip {
+		display: inline-flex;
+		align-items: center;
+		padding: 0.45rem 0.8rem;
+		border-radius: 999px;
+		border: 1px solid rgba(168, 85, 247, 0.16);
+		background: rgba(20, 24, 30, 0.72);
+		color: var(--color-muted);
+		font-size: 0.78rem;
+		font-weight: 600;
+		line-height: 1.35;
 	}
 
 	@media (max-width: 680px) {
