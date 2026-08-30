@@ -9,7 +9,6 @@ interface Props {
 	accent?: string;
 	subtitle?: string;
 	subtitleShort?: string;
-	heading?: string;
 	locale?: LocaleCode;
 }
 
@@ -20,13 +19,7 @@ const {
 	accent = ui.hero.accent,
 	subtitle = ui.hero.subtitle,
 	subtitleShort = ui.hero.subtitleShort,
-	heading = 'Warframe Cheats — ESP, Aimbot & Wallhack for PC',
 } = Astro.props;
-
-/** Visible H1 detail line — portion after the em dash in `heading`. */
-const headingDetail = heading.includes('—')
-	? heading.split('—').slice(1).join('—').trim()
-	: accent;
 
 const buyUrl = siteConfig.checkoutUrl;
 const featuresUrl = getLocalizedPath('features', locale);
@@ -66,7 +59,6 @@ const espUrl = getLocalizedPath('warframe-esp', locale);
 		<div class="hero__copy">
 			<h1 class="hero__title">
 				<span class="hero__line hero__brand">{siteConfig.name}</span>
-				<span class="hero__line hero__accent text-gradient">{headingDetail}</span>
 			</h1>
 			<p class="hero__badge">{accent}</p>
 			<p class="hero__subtitle hero__subtitle--full">{subtitle}</p>
