@@ -255,7 +255,11 @@ const lcpImageSizes = isHeroLcp ? heroSizes : undefined;
 	}
 
 	.page--compact .page__wrap {
-		padding-top: 1.25rem;
+		padding-top: clamp(1.5rem, 3vw, 2rem);
+	}
+
+	.page--compact .article--full {
+		gap: clamp(1.5rem, 3vw, 2.25rem);
 	}
 
 	.banner {

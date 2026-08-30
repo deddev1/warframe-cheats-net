@@ -14,48 +14,37 @@ const ui = getUi(locale);
 const pricingHref = getLocalizedPath('pricing', locale);
 ---
 
-<section class="features-detail" aria-labelledby="features-detail-title">
-	<header class="features-detail__head">
-		<h2 id="features-detail-title">Full feature breakdown</h2>
-		<p>
-			Every control in {productInfo.name} explained — what it does, when to use it, and how it
-			fits Steel Path, Sorties, and open world farming.
-		</p>
-	</header>
-
+<div class="features-detail">
 	{
-		productFeatureDetails.map((section) => {
+		productFeatureDetails.map((section, index) => {
 			const shot = featureSectionImages[section.id];
 			return (
 				<article class="features-detail__section" id={`feature-${section.id}`}>
-					<div class="features-detail__section-layout">
-						<div class="features-detail__section-copy">
-							<div class="features-detail__section-head">
-								<h3>{section.title}</h3>
-								<p>{section.summary}</p>
-							</div>
-							<div class="features-detail__grid">
-								{section.items.map((item) => (
-									<div class="features-detail__item">
-										<h4>
-											<span class="features-detail__chevron" aria-hidden="true">&gt;</span>
-											{item.name}
-										</h4>
-										<p>{item.description}</p>
-									</div>
-								))}
-							</div>
-						</div>
-						<figure class="features-detail__figure media-frame">
-							<img
-								src={shot.src}
-								alt={shot.alt}
-								width="960"
-								height="600"
-								loading="lazy"
-								decoding="async"
-							/>
-						</figure>
+					<figure class="features-detail__figure media-frame">
+						<img
+							src={shot.src}
+							alt={shot.alt}
+							width="960"
+							height="600"
+							loading={index === 0 ? 'eager' : 'lazy'}
+							decoding="async"
+						/>
+					</figure>
+
+					<div class="features-detail__section-body">
+						<header class="features-detail__section-head">
+							<h2>{section.title}</h2>
+							<p>{section.summary}</p>
+						</header>
+
+						<ul class="features-detail__list">
+							{section.items.map((item) => (
+								<li class="features-detail__item">
+									<h3>{item.name}</h3>
+									<p>{item.description}</p>
+								</li>
+							))}
+						</ul>
 					</div>
 				</article>
 			);
@@ -64,8 +53,8 @@ const pricingHref = getLocalizedPath('pricing', locale);
 
 	<section class="features-detail__gallery" aria-label="Warframe cheats screenshots">
 		<header class="features-detail__gallery-head">
-			<h3>See every module in-game</h3>
-			<p>Real Warframe screenshots from the live cheat menu, ESP overlays, aimbot, and radar.</p>
+			<h2>In-game screenshots</h2>
+			<p>Menu, ESP, aimbot, and radar from live Warframe sessions.</p>
 		</header>
 		<div class="features-detail__gallery-grid">
 			{
@@ -93,76 +82,32 @@ const pricingHref = getLocalizedPath('pricing', locale);
 			{ui.product.addToCart}
 		</a>
 	</div>
-</section>
+</div>
 
 <style>
 	.features-detail {
 		display: grid;
-		gap: 1.5rem;
+		gap: clamp(2rem, 4vw, 3rem);
 		width: 100%;
-		margin: 0 0 2rem;
-	}
-
-	.features-detail__head {
-		text-align: center;
-		display: grid;
-		gap: 0.55rem;
-	}
-
-	.features-detail__head h2 {
 		margin: 0;
-		font-family: var(--font-display);
-		font-size: clamp(1.5rem, 3vw, 2rem);
-		font-weight: 800;
-		letter-spacing: -0.02em;
-	}
-
-	.features-detail__head p {
-		margin: 0 auto;
-		max-width: 40rem;
-		color: var(--color-muted);
-		font-size: 0.95rem;
-		line-height: 1.6;
 	}
 
 	.features-detail__section {
-		padding: 1.25rem 1.35rem;
-		border-radius: var(--radius-card);
-		border: 1px solid rgba(32, 191, 192, 0.16);
-		background: rgba(10, 28, 29, 0.92);
-	}
-
-	.features-detail__section-layout {
 		display: grid;
-		grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-		gap: 1.15rem;
-		align-items: start;
-	}
-
-	.features-detail__section-head {
-		margin-bottom: 1rem;
-		padding-bottom: 0.85rem;
-		border-bottom: 1px solid rgba(32, 191, 192, 0.14);
-	}
-
-	.features-detail__section-head h3 {
-		margin: 0 0 0.4rem;
-		font-size: 1.15rem;
-		font-weight: 800;
-		color: var(--color-ink);
-	}
-
-	.features-detail__section-head p {
-		margin: 0;
-		color: var(--color-muted);
-		font-size: 0.88rem;
-		line-height: 1.55;
+		gap: 1.35rem;
+		padding: clamp(1.1rem, 2vw, 1.5rem);
+		border-radius: var(--radius-card);
+		border: 1px solid var(--color-border);
+		background: rgba(13, 35, 36, 0.55);
 	}
 
 	.features-detail__figure {
 		margin: 0;
-		aspect-ratio: 16 / 10;
-		border: 1px solid rgba(32, 191, 192, 0.18);
+		width: 100%;
+		max-width: 52rem;
+		margin-inline: auto;
+		aspect-ratio: 16 / 9;
+		border: 1px solid rgba(32, 191, 192, 0.16);
 		border-radius: 0.85rem;
 		overflow: hidden;
 	}
@@ -177,97 +122,132 @@ const pricingHref = getLocalizedPath('pricing', locale);
 		height: 100%;
 		object-fit: cover;
 		object-position: center top;
-		transform: none;
 	}
 
-	.features-detail__grid {
+	.features-detail__section-body {
 		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: 0.75rem;
+		gap: 1.25rem;
+		max-width: 52rem;
+		margin-inline: auto;
+		width: 100%;
 	}
 
-	.features-detail__item {
-		padding: 0.85rem 0.95rem;
-		border-radius: 0.7rem;
-		border: 1px solid rgba(32, 191, 192, 0.12);
-		background: rgba(13, 35, 36, 0.75);
-		transition:
-			transform 0.22s ease,
-			border-color 0.22s ease,
-			box-shadow 0.22s ease;
+	.features-detail__section-head {
+		display: grid;
+		gap: 0.5rem;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid rgba(32, 191, 192, 0.12);
 	}
 
-	@media (hover: hover) and (pointer: fine) {
-		.features-detail__item:hover {
-			transform: translateY(-4px);
-			border-color: rgba(32, 191, 192, 0.38);
-			box-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
-		}
-	}
-
-	.features-detail__item h4 {
-		display: flex;
-		align-items: center;
-		gap: 0.45rem;
-		margin: 0 0 0.35rem;
-		font-size: 0.88rem;
-		font-weight: 750;
+	.features-detail__section-head h2 {
+		margin: 0;
+		font-family: var(--font-display);
+		font-size: clamp(1.25rem, 2.4vw, 1.5rem);
+		font-weight: 800;
+		letter-spacing: -0.02em;
 		color: var(--color-ink);
 	}
 
-	.features-detail__chevron {
-		color: #20BFC0;
-		font-size: 0.75rem;
+	.features-detail__section-head p {
+		margin: 0;
+		max-width: 40rem;
+		color: var(--color-muted);
+		font-size: 0.95rem;
+		line-height: 1.6;
+	}
+
+	.features-detail__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		gap: 0;
+	}
+
+	.features-detail__item {
+		display: grid;
+		gap: 0.3rem;
+		padding: 0.95rem 0;
+		border-bottom: 1px solid rgba(32, 191, 192, 0.1);
+	}
+
+	.features-detail__item:last-child {
+		border-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.features-detail__item:first-child {
+		padding-top: 0;
+	}
+
+	.features-detail__item h3 {
+		margin: 0;
+		font-size: 0.92rem;
+		font-weight: 700;
+		color: var(--color-ink);
+		line-height: 1.35;
+	}
+
+	.features-detail__item h3::before {
+		content: '›';
+		margin-right: 0.45rem;
+		color: var(--color-orchid);
 		font-weight: 800;
 	}
 
 	.features-detail__item p {
 		margin: 0;
-		color: var(--color-muted);
-		font-size: 0.82rem;
-		line-height: 1.5;
-	}
-
-	.features-detail__gallery {
-		display: grid;
-		gap: 1rem;
-		padding: 1.15rem 1.25rem;
-		border-radius: var(--radius-card);
-		border: 1px solid rgba(32, 191, 192, 0.14);
-		background: rgba(10, 28, 29, 0.88);
-	}
-
-	.features-detail__gallery-head {
-		text-align: center;
-		display: grid;
-		gap: 0.4rem;
-	}
-
-	.features-detail__gallery-head h3 {
-		margin: 0;
-		font-size: 1.1rem;
-		font-weight: 800;
-		color: var(--color-ink);
-	}
-
-	.features-detail__gallery-head p {
-		margin: 0 auto;
-		max-width: 36rem;
+		padding-left: 1.1rem;
 		color: var(--color-muted);
 		font-size: 0.88rem;
 		line-height: 1.55;
 	}
 
+	.features-detail__gallery {
+		display: grid;
+		gap: 1.25rem;
+		padding: clamp(1.1rem, 2vw, 1.5rem);
+		border-radius: var(--radius-card);
+		border: 1px solid var(--color-border);
+		background: rgba(13, 35, 36, 0.55);
+	}
+
+	.features-detail__gallery-head {
+		display: grid;
+		gap: 0.45rem;
+		max-width: 36rem;
+		margin-inline: auto;
+		text-align: center;
+	}
+
+	.features-detail__gallery-head h2 {
+		margin: 0;
+		font-family: var(--font-display);
+		font-size: clamp(1.2rem, 2.2vw, 1.4rem);
+		font-weight: 800;
+		color: var(--color-ink);
+	}
+
+	.features-detail__gallery-head p {
+		margin: 0;
+		color: var(--color-muted);
+		font-size: 0.9rem;
+		line-height: 1.55;
+	}
+
 	.features-detail__gallery-grid {
 		display: grid;
-		grid-template-columns: repeat(4, minmax(0, 1fr));
-		gap: 0.65rem;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 0.85rem;
+		max-width: 52rem;
+		margin-inline: auto;
+		width: 100%;
 	}
 
 	.features-detail__gallery-item {
 		margin: 0;
 		aspect-ratio: 16 / 10;
-		border: 1px solid rgba(32, 191, 192, 0.14);
+		border: 1px solid rgba(32, 191, 192, 0.12);
 		border-radius: 0.7rem;
 		overflow: hidden;
 	}
@@ -284,7 +264,7 @@ const pricingHref = getLocalizedPath('pricing', locale);
 		flex-wrap: wrap;
 		gap: 0.75rem;
 		justify-content: center;
-		padding-top: 0.5rem;
+		padding-top: 0.25rem;
 	}
 
 	.features-detail__pricing-link {
@@ -303,7 +283,7 @@ const pricingHref = getLocalizedPath('pricing', locale);
 		justify-content: center;
 		padding: 0.95rem 1.35rem;
 		border-radius: 0.75rem;
-		border: 1px solid rgba(32, 191, 192, 0.35);
+		border: 1px solid var(--color-border);
 		background: rgba(13, 35, 36, 0.9);
 		color: var(--color-muted);
 		font-weight: 650;
@@ -313,21 +293,17 @@ const pricingHref = getLocalizedPath('pricing', locale);
 
 	.features-detail__checkout-link:hover {
 		color: var(--color-ink);
-		border-color: rgba(32, 191, 192, 0.55);
+		border-color: rgba(32, 191, 192, 0.45);
 	}
 
-	@media (max-width: 1024px) {
-		.features-detail__section-layout {
-			grid-template-columns: 1fr;
-		}
-
+	@media (max-width: 900px) {
 		.features-detail__gallery-grid {
 			grid-template-columns: repeat(2, minmax(0, 1fr));
 		}
 	}
 
-	@media (max-width: 768px) {
-		.features-detail__grid {
+	@media (max-width: 640px) {
+		.features-detail__gallery-grid {
 			grid-template-columns: 1fr;
 		}
 
