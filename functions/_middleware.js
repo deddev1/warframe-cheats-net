@@ -1,3 +1,5 @@
+import { getHomeLocaleRedirect } from './locale-redirect.js';
+
 const CANONICAL_ORIGIN = 'https://warframecheats.net';
 const APEX_HOST = 'warframecheats.net';
 const WWW_HOST = 'www.warframecheats.net';
@@ -240,6 +242,20 @@ export async function onRequest(context) {
 		});
 		applySecurityHeaders(headers);
 		return new Response(null, { status: 301, headers });
+	}
+
+	const homeLocaleRedirect = getHomeLocaleRedirect(
+		url.pathname,
+		url.search,
+		context.request.headers,
+	);
+	if (homeLocaleRedirect) {
+		const headers = new Headers({
+			Location: new URL(homeLocaleRedirect + url.search, CANONICAL_ORIGIN).toString(),
+			'Cache-Control': 'no-store',
+		});
+		applySecurityHeaders(headers);
+		return new Response(null, { status: 302, headers });
 	}
 
 	const response = await context.next();

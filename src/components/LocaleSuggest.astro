@@ -21,111 +21,96 @@ const localeList = JSON.stringify(
 		name: l.name,
 	})),
 );
-// Only ship the slug map for this page — the full map for all pages/locales
-// added ~20KB of inline JSON to every English page.
 const pageSlugs = JSON.stringify(localizedSlugs[pageId] ?? {});
+const countryLocale = JSON.stringify({
+	GB: 'en',
+	US: 'en',
+	IE: 'en',
+	AU: 'en',
+	NZ: 'en',
+	CA: 'en',
+	ZA: 'en',
+	FR: 'fr',
+	DE: 'de',
+	AT: 'de',
+	CH: 'de',
+	ES: 'es',
+	MX: 'es',
+	AR: 'es',
+	PT: 'pt',
+	BR: 'pt',
+	IT: 'it',
+	NL: 'nl',
+	BE: 'nl',
+	PL: 'pl',
+	RU: 'ru',
+	TR: 'tr',
+	SA: 'ar',
+	AE: 'ar',
+	JP: 'ja',
+	KR: 'ko',
+	CN: 'zh',
+	TW: 'zh',
+	TH: 'th',
+	VN: 'vi',
+	UA: 'uk',
+	CZ: 'cs',
+	RO: 'ro',
+	SE: 'sv',
+	IN: 'hi',
+	ID: 'id',
+});
 ---
 
-<div class="locale-suggest is-hidden" role="region" aria-label="Language suggestion" hidden>
-	<p class="locale-suggest__text"></p>
-	<button type="button" class="locale-suggest__dismiss" aria-label="Dismiss">×</button>
-</div>
-
-<script define:vars={{ localeList, pageSlugs, defaultLocale }}>
+<script define:vars={{ localeList, pageSlugs, countryLocale, defaultLocale }}>
 	(function () {
 		const run = () => {
-			const bar = document.querySelector('.locale-suggest');
-			const textEl = bar?.querySelector('.locale-suggest__text');
-			const dismiss = bar?.querySelector('.locale-suggest__dismiss');
 			const storageKey = 'fc_locale_dismissed';
 			const cookieName = 'fc_locale';
 
-			if (!bar || sessionStorage.getItem(storageKey)) return;
+			if (sessionStorage.getItem(storageKey)) return;
 
 			const locales = JSON.parse(localeList);
 			const slugs = JSON.parse(pageSlugs);
+			const countries = JSON.parse(countryLocale);
 
 			function getLocalizedPath(locale) {
 				const slug = slugs[locale];
 				return slug ? `/${locale}/${slug}/` : `/${locale}/`;
 			}
 
-			function localeFromNavigator() {
+			function localeFromCookie() {
 				const cookie = document.cookie.match(/(?:^|;\s*)fc_locale=([^;]+)/)?.[1];
-				if (cookie && locales.some((l) => l.code === cookie)) return cookie;
+				return cookie && locales.some((l) => l.code === cookie) ? cookie : null;
+			}
 
+			function localeFromNavigator() {
 				const langs = navigator.languages?.length ? navigator.languages : [navigator.language];
 				for (const tag of langs) {
-					const primary = tag.toLowerCase().split('-')[0];
+					const lower = tag.toLowerCase();
+					if (lower.endsWith('-gb') || lower.endsWith('-uk')) return defaultLocale;
+					const primary = lower.split('-')[0];
 					if (locales.some((l) => l.code === primary)) return primary;
 				}
 				return defaultLocale;
 			}
 
-			const preferred = localeFromNavigator();
+			function localeFromCountry() {
+				// Cloudflare may inject cf-country on some hosts; harmless if absent.
+				const country = document.documentElement.dataset.cfCountry;
+				return country ? countries[country] : null;
+			}
+
+			const preferred =
+				localeFromCookie() || localeFromNavigator() || localeFromCountry() || defaultLocale;
+
 			if (preferred === defaultLocale) return;
 
-			const target = locales.find((l) => l.code === preferred);
-			if (!target || !textEl) return;
-
 			const href = getLocalizedPath(preferred);
-			textEl.innerHTML = `${target.nativeName} (${target.region}) — <a href="${href}">${target.name} version</a>`;
-			bar.hidden = false;
-			bar.classList.remove('is-hidden');
-
-			dismiss?.addEventListener('click', () => {
-				sessionStorage.setItem(storageKey, '1');
-				bar.hidden = true;
-			});
-
-			bar.querySelector('a')?.addEventListener('click', () => {
-				document.cookie = `${cookieName}=${preferred};path=/;max-age=31536000;SameSite=Lax`;
-			});
+			document.cookie = `${cookieName}=${preferred};path=/;max-age=31536000;SameSite=Lax`;
+			window.location.replace(href);
 		};
 
-		if ('requestIdleCallback' in window) {
-			requestIdleCallback(run, { timeout: 3000 });
-		} else {
-			setTimeout(run, 1);
-		}
+		run();
 	})();
 </script>
-
-<style>
-	.locale-suggest {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 0.75rem;
-		padding: 0.55rem 1rem;
-		background: rgba(109, 40, 217, 0.18);
-		border-bottom: 1px solid rgba(168, 85, 247, 0.22);
-		font-size: 0.82rem;
-		color: #e2d9ef;
-		text-align: center;
-	}
-
-	.locale-suggest.is-hidden {
-		display: none;
-	}
-
-	.locale-suggest__text {
-		margin: 0;
-	}
-
-	.locale-suggest :global(a) {
-		color: #e9d5ff;
-		font-weight: 700;
-		text-decoration: underline;
-	}
-
-	.locale-suggest__dismiss {
-		border: none;
-		background: transparent;
-		color: #c4b5fd;
-		font-size: 1.2rem;
-		line-height: 1;
-		cursor: pointer;
-		padding: 0.15rem 0.35rem;
-	}
-</style>

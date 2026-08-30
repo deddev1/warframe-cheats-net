@@ -1,5 +1,5 @@
 import { getPageContent } from './i18n';
-import { getLocalizedPath, pageIds, type PageId } from './i18n/routing';
+import { getLocalizedPath, hreflangLinksXml, pageIds, type PageId } from './i18n/routing';
 import {
 	defaultLocale,
 	includeLocaleUrlsInSitemap,
@@ -67,7 +67,7 @@ export function buildLocaleSitemapEntries(locale: LocaleCode): LocaleSitemapEntr
 
 export function renderLocaleSitemapUrlBlock(entry: LocaleSitemapEntry): string {
 	const loc = new URL(entry.path, siteConfig.url).href;
-	// No multi-locale hreflang cluster — English sitemap owns en + x-default.
+	const hreflangBlock = `\n${hreflangLinksXml(entry.pageId, escapeXml)}`;
 	const imageBlock = entry.image
 		? `\n    <image:image>
       <image:loc>${escapeXml(entry.image.url)}</image:loc>
@@ -80,7 +80,7 @@ export function renderLocaleSitemapUrlBlock(entry: LocaleSitemapEntry): string {
     <loc>${escapeXml(loc)}</loc>
     <lastmod>${escapeXml(entry.lastmod)}</lastmod>
     <changefreq>${entry.changefreq}</changefreq>
-    <priority>${entry.priority.toFixed(2)}</priority>${imageBlock}
+    <priority>${entry.priority.toFixed(2)}</priority>${hreflangBlock}${imageBlock}
   </url>`;
 }
 

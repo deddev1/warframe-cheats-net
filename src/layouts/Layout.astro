@@ -4,7 +4,7 @@ import { productInfo, siteConfig } from '../data/site';
 import { metaKeywordsContent } from '../data/seo';
 import I18nHead from '../components/I18nHead.astro';
 import LocaleSuggest from '../components/LocaleSuggest.astro';
-import { defaultLocale, localeMap, type LocaleCode } from '../data/i18n/locales';
+import { defaultLocale, localeMap, locales, type LocaleCode } from '../data/i18n/locales';
 import type { PageId } from '../data/i18n/content.generated';
 
 interface Crumb {
@@ -57,19 +57,15 @@ const ogImageType = ogImage.endsWith('.webp') ? 'image/webp' : 'image/png';
 const ogImageWidth = ogImageIsLogo ? '512' : '1920';
 const ogImageHeight = ogImageIsLogo ? '512' : '1080';
 const twitterCard = ogImageIsLogo ? 'summary' : 'summary_large_image';
-/** Thin locale UI routes consolidate to English canonical — keep crawlable but out of the index. */
-const localeNoindex = locale !== defaultLocale;
-const robots = noindex
+/** Thin locale UI routes are fully indexable with locale-specific canonicals. */
+const localeNoindex = noindex;
+const robots = localeNoindex
 	? 'noindex, nofollow'
-	: localeNoindex
-		? 'noindex, follow'
-		: 'index, follow, max-image-preview:large';
+	: 'index, follow, max-image-preview:large';
 const siteDescription = `${productInfo.tagline}. ${productInfo.summary}`;
 const localeMeta = localeMap[locale];
-const officialLocaleMeta = localeMap[defaultLocale];
-/** Schema / OG language follow the official English canonical target. */
-const schemaLanguage = officialLocaleMeta.ogLocale.replace('_', '-');
-const ogLocale = officialLocaleMeta.ogLocale;
+const schemaLanguage = localeMeta.ogLocale.replace('_', '-');
+const ogLocale = localeMeta.ogLocale;
 
 const graph: Record<string, unknown>[] = [
 	{
@@ -111,7 +107,7 @@ const graph: Record<string, unknown>[] = [
 			'@type': 'ContactPoint',
 			contactType: 'customer support',
 			email: siteConfig.supportEmail,
-			availableLanguage: ['English'],
+			availableLanguage: locales.map((l) => l.name),
 		},
 	},
 ];

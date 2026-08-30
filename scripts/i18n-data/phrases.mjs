@@ -17,7 +17,7 @@ const KW = {
  */
 export const phrases = {
 	es: {
-		buy: 'Comprar Warframe Cheats', undetected: 'indetectables', maps: 'mission objectives, spawn routes, and mission objectives',
+		buy: 'Obtener acceso', undetected: 'indetectables', maps: 'Steel Path, Sorties y mundo abierto',
 		win: 'Windows PC', delivery: 'entrega digital instantánea', monthly: '$35/mes', lifetime: '$150 de por vida',
 		s1: (topic) => `${KW.product} ofrece ${KW.esp}, ${KW.radar} y ${KW.aimbot} ${phrases.es.undetected} para ${KW.game} en ${phrases.es.win}. ${topic}`,
 		s2: () => `Licencias con ${phrases.es.delivery} vía checkout ${KW.checkout}. Planes ${phrases.es.monthly} y ${phrases.es.lifetime} incluyen ${KW.eac} maintenance.`,
@@ -25,7 +25,7 @@ export const phrases = {
 		legal: () => 'Contacta support@warframecheats.net para solicitudes legales o de soporte.',
 	},
 	fr: {
-		buy: 'Acheter Warframe Cheats', undetected: 'indétectables', maps: 'mission objectives, spawn routes, and mission objectives',
+		buy: 'Obtenir l\'accès', undetected: 'indétectables', maps: 'Steel Path, Sorties et monde ouvert',
 		win: 'PC Windows', delivery: 'livraison numérique instantanée', monthly: '35 $/mois', lifetime: '150 $ à vie',
 		s1: (topic) => `${KW.product} combine ${KW.esp}, ${KW.radar} et ${KW.aimbot} ${phrases.fr.undetected} pour ${KW.game} sur ${phrases.fr.win}. ${topic}`,
 		s2: () => `Licences avec ${phrases.fr.delivery} via checkout ${KW.checkout}. Forfaits ${phrases.fr.monthly} et ${phrases.fr.lifetime} incluent la maintenance ${KW.eac}.`,
@@ -33,7 +33,7 @@ export const phrases = {
 		legal: () => 'Contactez support@warframecheats.net pour le support ou les demandes légales.',
 	},
 	de: {
-		buy: 'Warframe Cheats kaufen', undetected: 'undetected', maps: 'mission objectives, spawn routes, and mission objectives',
+		buy: 'Zugang erhalten', undetected: 'unentdeckt', maps: 'Steel Path, Sorties und Open World',
 		win: 'Windows PC', delivery: 'sofortige digitale Lieferung', monthly: '$35/Monat', lifetime: '$150 Lifetime',
 		s1: (topic) => `${KW.product} bündelt ${KW.esp}, ${KW.radar} und ${KW.aimbot} als ${phrases.de.undetected} Paket für ${KW.game} auf ${phrases.de.win}. ${topic}`,
 		s2: () => `Lizenzen mit ${phrases.de.delivery} über ${KW.checkout} Checkout. ${phrases.de.monthly} und ${phrases.de.lifetime} inkl. ${KW.eac}-Wartung.`,

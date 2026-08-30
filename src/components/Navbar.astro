@@ -13,6 +13,7 @@ interface Props {
 const { locale = defaultLocale, pageId = 'home' } = Astro.props;
 const ui = getUi(locale);
 const navLinks = getNavForLocale(locale, ui.nav);
+const ctaLabel = ui.nav.buyNow;
 const current = Astro.url.pathname;
 
 const isActive = (href: string, linkPageId?: PageId) => {
@@ -61,9 +62,19 @@ const isActive = (href: string, linkPageId?: PageId) => {
 					</a>
 				))
 			}
+			<a href={siteConfig.checkoutUrl} class="nav__cta nav__cta--mobile btn-buy" rel="noopener noreferrer">
+				{ctaLabel}
+			</a>
 		</nav>
 
 		<div class="nav__actions">
+			<a
+				href={siteConfig.checkoutUrl}
+				class="nav__cta btn-buy"
+				rel="noopener noreferrer"
+			>
+				{ctaLabel}
+			</a>
 			<LanguageSwitcher pageId={pageId} currentLocale={locale} />
 			<button
 				type="button"
@@ -272,6 +283,27 @@ const isActive = (href: string, linkPageId?: PageId) => {
 		flex-shrink: 0;
 	}
 
+	.nav__cta {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		min-height: 2.15rem;
+		padding: 0.45rem 0.9rem;
+		border-radius: 0.55rem;
+		font-size: 0.78rem;
+		font-weight: 800;
+		white-space: nowrap;
+		text-decoration: none;
+		box-shadow:
+			0 0 0 1px rgba(168, 85, 247, 0.25),
+			0 6px 18px rgba(124, 58, 237, 0.35);
+	}
+
+	.nav__cta:hover {
+		color: #fff;
+	}
+
 	.nav__toggle {
 		display: none;
 		place-items: center;
@@ -423,6 +455,27 @@ const isActive = (href: string, linkPageId?: PageId) => {
 			display: grid;
 			min-width: var(--touch-min);
 			min-height: var(--touch-min);
+		}
+
+		.nav__cta {
+			display: none;
+		}
+
+		.nav__cta--mobile {
+			display: inline-flex;
+			justify-content: center;
+			width: 100%;
+			margin-top: 0.35rem;
+			min-height: var(--touch-min);
+			padding: 0.85rem 1rem;
+			font-size: 0.95rem;
+			border-radius: 0.6rem;
+		}
+	}
+
+	@media (min-width: 901px) {
+		.nav__cta--mobile {
+			display: none;
 		}
 	}
 

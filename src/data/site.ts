@@ -520,7 +520,7 @@ export const customerReviews = [
 		rating: 4,
 		text: 'Been on this since early access. Separate profiles for rifle and shotgun actually matter in tight tilesets. Only gripe is waiting about a day for an update after one patch. Updates page helped at least.',
 		short: 'Separate rifle and shotgun profiles matter in tight tilesets. Waited about a day for one patch update.',
-		slug: 'warframe-aimbot-realistic-review-Steel Pathgrind42',
+		slug: 'warframe-aimbot-realistic-review-steelpathgrind42',
 		seoTitle: 'Aim profiles review by @steelpath42 | Warframe Cheats',
 		seoDescription:
 			'Buyer review from @steelpath42 on per-weapon aim profiles and post-patch update timing.',

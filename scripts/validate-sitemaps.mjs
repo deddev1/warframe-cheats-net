@@ -3,8 +3,7 @@
  * Validates built sitemaps match English-primary SEO policy.
  * Run after `npm run build`: node scripts/validate-sitemaps.mjs
  *
- * Policy: English is official (canonical + x-default). Thin locale UI routes
- * stay built for UX but are omitted from sitemaps / multi-locale hreflang.
+ * Policy: multilingual SEO — each locale has its own sitemap, canonical, and hreflang cluster.
  */
 import { access, readFile, readdir, stat } from 'node:fs/promises';
 import path from 'node:path';
@@ -35,17 +34,18 @@ const SITE = 'https://warframecheats.net';
 
 const MARKETING_SITEMAP_PAGES = 15;
 const BUILT_MARKETING_PAGES = 25; // thin landings still built; 301 to canonical URLs
-const BLOG_PAGES = 18; // /blog/ index + 17 posts
-const REVIEW_PAGES = 11; // /reviews/ index + 10 review detail pages
+const BLOG_PAGES = 16; // /blog/ index + 15 posts
+const REVIEW_PAGES = 14; // /reviews/ index + 13 review detail pages
 const SITEMAP_ENGLISH_PAGES = MARKETING_SITEMAP_PAGES + BLOG_PAGES + REVIEW_PAGES;
 const BUILT_ENGLISH_PAGES = BUILT_MARKETING_PAGES + BLOG_PAGES + REVIEW_PAGES;
 const ENGLISH_PAGES = SITEMAP_ENGLISH_PAGES;
 const I18N_LOCALES = 21;
 const PAGES_PER_LOCALE = 25;
 const LOCALE_UI_PAGES = I18N_LOCALES * PAGES_PER_LOCALE;
-const TOTAL_HTML_PAGES = BUILT_ENGLISH_PAGES + LOCALE_UI_PAGES;
-const HREFLANG_PER_URL = 2; // en + x-default
-const SITEMAP_INDEX_ENTRIES = 2; // EN + images
+const TOTAL_HTML_PAGES = SITEMAP_ENGLISH_PAGES + LOCALE_UI_PAGES;
+const HREFLANG_PER_URL = 23; // 22 locales + x-default
+const SITEMAP_INDEX_ENTRIES = 23; // EN + 21 locale sitemaps + images
+const I18N_AGGREGATE_URLS = I18N_LOCALES * PAGES_PER_LOCALE;
 const IMAGE_SITEMAP_ENTRIES = 7; // unique keyword assets in warframeImages.sitemap
 
 const ENGLISH_PATHS = [
@@ -160,7 +160,7 @@ async function validateSitemapImages(xml, label, bump) {
 }
 
 async function main() {
-	console.log('Validating sitemaps (English-official SEO policy)…\n');
+	console.log('Validating sitemaps (multilingual SEO policy)…\n');
 	let errors = 0;
 	const bump = () => {
 		errors += 1;
@@ -182,7 +182,7 @@ async function main() {
 	const imageLocs = extractLocs(sitemapImages);
 	const indexLocs = extractLocs(sitemapIndex);
 
-	// Per-locale sitemap files exist but must be empty (UX routes kept; SEO omitted)
+	// Per-locale sitemap files list localized marketing pages.
 	let localeUrlTotal = 0;
 	for (const locale of I18N_LOCALE_CODES) {
 		const file = path.join(DIST, `sitemap-${locale}.xml`);
@@ -190,13 +190,13 @@ async function main() {
 		const locs = extractLocs(xml);
 		localeUrlTotal += locs.length;
 
-		if (locs.length !== 0) {
-			fail(`sitemap-${locale}.xml: expected 0 URLs (English-only SEO), got ${locs.length}`);
+		if (locs.length !== PAGES_PER_LOCALE) {
+			fail(`sitemap-${locale}.xml: expected ${PAGES_PER_LOCALE} URLs, got ${locs.length}`);
 			bump();
 		}
 	}
 	if (errors === 0) {
-		ok(`All 21 locale sitemaps are empty (UX routes not listed for SEO)`);
+		ok(`All 21 locale sitemaps list ${PAGES_PER_LOCALE} localized URLs each`);
 	}
 
 	if (enLocs.length !== ENGLISH_PAGES) {
@@ -204,13 +204,13 @@ async function main() {
 		bump();
 	} else ok(`sitemap.xml has ${ENGLISH_PAGES} English URLs`);
 
-	if (i18nLocs.length !== 0) {
-		fail(`sitemap-i18n.xml: expected 0 URLs, got ${i18nLocs.length}`);
+	if (i18nLocs.length !== I18N_AGGREGATE_URLS) {
+		fail(`sitemap-i18n.xml: expected ${I18N_AGGREGATE_URLS} URLs, got ${i18nLocs.length}`);
 		bump();
-	} else ok('sitemap-i18n.xml is empty (legacy stub)');
+	} else ok(`sitemap-i18n.xml lists ${I18N_AGGREGATE_URLS} localized URLs`);
 
-	if (localeUrlTotal !== 0) {
-		fail(`Per-locale sitemaps total: expected 0, got ${localeUrlTotal}`);
+	if (localeUrlTotal !== I18N_LOCALES * PAGES_PER_LOCALE) {
+		fail(`Per-locale sitemaps total: expected ${I18N_LOCALES * PAGES_PER_LOCALE}, got ${localeUrlTotal}`);
 		bump();
 	}
 
@@ -246,17 +246,17 @@ async function main() {
 	const homeHreflang = extractHreflangCount(sitemapEn, `${SITE}/`);
 	const homeLangs = extractHreflangs(sitemapEn, `${SITE}/`);
 	if (homeHreflang !== HREFLANG_PER_URL) {
-		fail(`Homepage hreflang links: expected ${HREFLANG_PER_URL} (en + x-default), got ${homeHreflang}`);
+		fail(`Homepage hreflang links: expected ${HREFLANG_PER_URL}, got ${homeHreflang}`);
 		bump();
-	} else if (!homeLangs.includes('en') || !homeLangs.includes('x-default')) {
-		fail(`Homepage hreflang must include en and x-default, got: ${homeLangs.join(', ')}`);
+	} else if (!homeLangs.includes('en') || !homeLangs.includes('x-default') || !homeLangs.includes('fr')) {
+		fail(`Homepage hreflang must include en, fr, and x-default, got: ${homeLangs.join(', ')}`);
 		bump();
-	} else ok('Homepage has en + x-default hreflang only (English official)');
+	} else ok('Homepage has full multilingual hreflang cluster');
 
 	if (indexLocs.length !== SITEMAP_INDEX_ENTRIES) {
 		fail(`sitemap-index.xml: expected ${SITEMAP_INDEX_ENTRIES} sub-sitemaps, got ${indexLocs.length}`);
 		bump();
-	} else ok(`sitemap-index.xml lists ${SITEMAP_INDEX_ENTRIES} sub-sitemaps (English + images)`);
+	} else ok(`sitemap-index.xml lists ${SITEMAP_INDEX_ENTRIES} sub-sitemaps (EN + locales + images)`);
 
 	if (!indexLocs.includes(`${SITE}/sitemap.xml`)) {
 		fail('sitemap-index.xml missing sitemap.xml');
@@ -268,12 +268,12 @@ async function main() {
 	}
 	for (const locale of I18N_LOCALE_CODES) {
 		const loc = `${SITE}/sitemap-${locale}.xml`;
-		if (indexLocs.includes(loc)) {
-			fail(`sitemap-index.xml must not list thin-locale sitemap: sitemap-${locale}.xml`);
+		if (!indexLocs.includes(loc)) {
+			fail(`sitemap-index.xml missing locale sitemap: sitemap-${locale}.xml`);
 			bump();
 		}
 	}
-	if (errors === 0) ok('sitemap-index.xml lists English + images only (no locale sitemaps)');
+	if (errors === 0) ok('sitemap-index.xml lists English, all locale sitemaps, and images');
 
 	for (const sub of ['sitemap-index.xml', 'sitemap.xml']) {
 		if (!robots.includes(`${SITE}/${sub}`)) {
@@ -305,11 +305,10 @@ async function main() {
 	} else ok('Every English sitemap URL has a matching HTML page');
 
 	const localeHtml = [...htmlSet].filter((p) => /^\/[a-z]{2}\//.test(p));
-	const localeInSitemap = localeHtml.filter((p) => sitemapPaths.has(p));
-	if (localeInSitemap.length > 0) {
-		fail(`Locale UI paths must not appear in English sitemap: ${localeInSitemap.slice(0, 3).join(', ')}`);
+	if (localeHtml.length !== LOCALE_UI_PAGES) {
+		fail(`Locale UI HTML pages: expected ${LOCALE_UI_PAGES}, got ${localeHtml.length}`);
 		bump();
-	} else ok(`Locale UI routes (${localeHtml.length}) kept out of sitemaps`);
+	} else ok(`${localeHtml.length} localized HTML pages built`);
 
 	console.log('');
 	if (errors > 0) {

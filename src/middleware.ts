@@ -1,11 +1,30 @@
 import { defineMiddleware } from 'astro:middleware';
 import { applySecurityHeaders } from './lib/security-headers.js';
+import { getLocaleRedirectTarget } from './lib/locale-redirect.js';
 
 /**
- * Applies Trust & Safety headers during `astro dev` / `astro preview`
- * so Lighthouse audits see the same protections as production.
+ * Applies security headers and locale auto-detection redirects during dev/preview.
  */
-export const onRequest = defineMiddleware(async (_context, next) => {
+export const onRequest = defineMiddleware(async (context, next) => {
+	const { request, url } = context;
+
+	if (request.method === 'GET' || request.method === 'HEAD') {
+		const redirectTarget = getLocaleRedirectTarget(url.pathname, url.search, {
+			acceptLanguage: request.headers.get('accept-language'),
+			cookie: request.headers.get('cookie'),
+			country: request.headers.get('cf-ipcountry'),
+		});
+
+		if (redirectTarget) {
+			const headers = new Headers({
+				Location: redirectTarget,
+				'Cache-Control': 'no-store',
+			});
+			applySecurityHeaders(headers);
+			return new Response(null, { status: 302, headers });
+		}
+	}
+
 	const response = await next();
 	const headers = new Headers(response.headers);
 	const contentType = headers.get('Content-Type') || '';
