@@ -66,10 +66,12 @@ const isActive = (href: string, linkPageId?: PageId) => {
 			<button
 				type="button"
 				class="nav__toggle"
-				aria-label="Open menu"
+				aria-label={ui.sections.navbar.openMenu}
 				aria-expanded="false"
 				aria-controls="nav-panel"
 				data-nav-toggle
+				data-label-open={ui.sections.navbar.openMenu}
+				data-label-close={ui.sections.navbar.closeMenu}
 			>
 				<span class="nav__toggle-icon" aria-hidden="true"></span>
 			</button>
@@ -85,7 +87,9 @@ const isActive = (href: string, linkPageId?: PageId) => {
 
 		const setOpen = (open: boolean) => {
 			toggle?.setAttribute('aria-expanded', String(open));
-			toggle?.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+			const openLabel = toggle?.getAttribute('data-label-open') ?? 'Open menu';
+			const closeLabel = toggle?.getAttribute('data-label-close') ?? 'Close menu';
+			toggle?.setAttribute('aria-label', open ? closeLabel : openLabel);
 			nav.classList.toggle('is-open', open);
 			document.body.classList.toggle('nav-open', open);
 			const backdrop = nav.querySelector('[data-nav-backdrop]') as HTMLElement | null;

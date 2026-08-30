@@ -1,5 +1,6 @@
 ---
 import { getPostsByCategory } from '../data/blog/helpers';
+import { getUi } from '../data/i18n';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import WarframeAuthorityLinks from './WarframeAuthorityLinks.astro';
 
@@ -8,6 +9,8 @@ interface Props {
 }
 
 const locale = Astro.props.locale ?? defaultLocale;
+const ui = getUi(locale);
+const copy = ui.sections.homeGuides;
 const guides = getPostsByCategory(locale, 'Warframe Game Guides').slice(0, 3);
 ---
 
@@ -17,11 +20,10 @@ const guides = getPostsByCategory(locale, 'Warframe Game Guides').slice(0, 3);
 			<div class="home-guides__head">
 				<h2 id="home-guides-title" class="home-guides__title">
 					<span class="home-guides__accent" aria-hidden="true" />
-					Warframe guides
+					{copy.title}
 				</h2>
 				<p class="home-guides__intro">
-					Game guides on Steel Path, open world, factions, and patch notes — linked to official Warframe
-					resources.
+					{copy.intro}
 				</p>
 			</div>
 
@@ -46,7 +48,7 @@ const guides = getPostsByCategory(locale, 'Warframe Game Guides').slice(0, 3);
 			</div>
 
 			<p class="home-guides__more">
-				<a href="/guides/">Browse all guides</a>
+				<a href="/guides/">{copy.browseAll}</a>
 			</p>
 
 			<WarframeAuthorityLinks headingLevel="h3" />

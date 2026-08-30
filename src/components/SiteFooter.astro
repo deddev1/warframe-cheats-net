@@ -18,15 +18,15 @@ const mainLinks = [
 	{ label: ui.nav.updates, href: getLocalizedPath('updates', locale) },
 	{ label: ui.nav.pricing, href: getLocalizedPath('pricing', locale) },
 	{ label: ui.nav.faq, href: getLocalizedPath('faq', locale) },
-	{ label: 'Guides', href: '/guides/' },
+	{ label: ui.sections.footer.guides, href: '/guides/' },
 	{ label: ui.nav.reviews ?? 'Reviews', href: '/reviews/' },
 ];
 
 const legalLinks = [
-	{ label: 'Support', href: getLocalizedPath('support', locale) },
-	{ label: 'Privacy', href: getLocalizedPath('privacy', locale) },
-	{ label: 'Terms', href: getLocalizedPath('terms', locale) },
-	{ label: 'Refund', href: getLocalizedPath('refund', locale) },
+	{ label: ui.sections.footer.support, href: getLocalizedPath('support', locale) },
+	{ label: ui.sections.footer.privacy, href: getLocalizedPath('privacy', locale) },
+	{ label: ui.sections.footer.terms, href: getLocalizedPath('terms', locale) },
+	{ label: ui.sections.footer.refund, href: getLocalizedPath('refund', locale) },
 ];
 
 const year = new Date().getUTCFullYear();
