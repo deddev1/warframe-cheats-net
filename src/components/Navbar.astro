@@ -37,19 +37,6 @@ const isActive = (href: string, linkPageId?: PageId) => {
 <header class="nav" data-nav>
 	<div class="nav__backdrop" data-nav-backdrop hidden aria-hidden="true"></div>
 	<div class="nav__bar">
-		<a href={getLocalizedPath('home', locale)} class="nav__brand" aria-label="Warframe Cheats home page">
-			<img
-				src={siteConfig.logo}
-				alt={siteConfig.logoAlt}
-				width="40"
-				height="40"
-				class="nav__logo"
-				decoding="async"
-				fetchpriority="low"
-			/>
-			<span class="sr-only">Warframe Cheats home</span>
-		</a>
-
 		<nav class="nav__links" id="nav-panel" data-nav-panel aria-label="Primary">
 			{
 				navLinks.map((link) => (
@@ -173,31 +160,10 @@ const isActive = (href: string, linkPageId?: PageId) => {
 		box-shadow: 0 6px 24px rgba(0, 0, 0, 0.22);
 	}
 
-	.nav__brand {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.55rem;
-		flex-shrink: 0;
-		color: var(--color-ink);
-		transition: opacity 0.2s ease;
-	}
-
-	.nav__brand:hover {
-		opacity: 0.88;
-	}
-
-	.nav__logo {
-		display: block;
-		width: 1.65rem;
-		height: 1.65rem;
-		object-fit: contain;
-		content-visibility: auto;
-	}
-
 	.nav__links {
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: flex-start;
 		gap: 0.2rem;
 		flex: 1;
 		min-width: 0;
