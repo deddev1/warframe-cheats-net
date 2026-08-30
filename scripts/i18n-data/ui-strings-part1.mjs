@@ -3,7 +3,16 @@
 export const uiStrings = {
 	en: {
 		nav: { home: 'Home', aimbot: 'Aimbot', esp: 'ESP', features: 'Features', cheats: 'Cheats', pricing: 'Pricing', setup: 'Setup', updates: 'Updates', faq: 'FAQ', reviews: 'Reviews', buyNow: 'Get Access' },
-		hero: { accent: 'Undetected ESP & Aimbot', accentShort: 'ESP & Aimbot', subtitle: 'Warframe Cheats for Windows PC — ESP, aimbot, and wallhack with anti-cheat maintenance.', subtitleShort: 'ESP & aimbot for Warframe on PC', buyNow: 'Get Access', seeFeatures: 'See Features' },
+		hero: {
+			accent: 'Undetected ESP & Aimbot for Windows PC',
+			accentShort: 'ESP & Aimbot',
+			subtitle:
+				'ESP, aimbot, and radar in one Warframe package — built for Steel Path, Sorties, and open world. Instant digital delivery with monthly or lifetime access, plus rebuilds after Digital Extremes anti-cheat patches.',
+			subtitleShort:
+				'ESP, aimbot & radar for Warframe on Windows PC. Instant access — updated after game patches.',
+			buyNow: 'Get Access',
+			seeFeatures: 'See Features',
+		},
 		trust: { status: 'Online', statusNote: 'Warframe Cheats is live for Warframe on Windows PC.', statusShort: 'Live', delivery: 'Instant digital delivery', platform: 'Windows 10 & 11', antiCheat: 'anti-cheat maintenance supported', antiCheatShort: 'Digital Extremes anti-cheat supported' },
 		product: { title: 'Warframe Cheats', addToCart: 'Get Access', monthly: 'Monthly', lifetime: 'Lifetime', available: 'Available now', gameBadge: 'Warframe', platformBadge: 'Windows PC', statusBadge: 'Maintained package' },
 		reviews: { title: 'Customer reviews', subtitle: '1,000+ reviews from real customers', outOf: 'out of 5', countLabel: 'reviews', verifiedLabel: 'Verified customer', seeAll: 'See all reviews' },
@@ -13,7 +22,16 @@ export const uiStrings = {
 	},
 	es: {
 		nav: { home: 'Inicio', aimbot: 'Aimbot', esp: 'ESP', features: 'Funciones', cheats: 'Trucos', pricing: 'Precios', setup: 'Instalación', updates: 'Actualizaciones', faq: 'FAQ', reviews: 'Reseñas', buyNow: 'Obtener acceso' },
-		hero: { accent: 'Trucos indetectables para Warframe', accentShort: 'ESP y Aimbot', subtitle: 'Warframe Cheats para PC con Windows: ESP, aimbot y wallhack con actualizaciones tras cada parche del juego.', subtitleShort: 'ESP y aimbot para Warframe en PC', buyNow: 'Obtener acceso', seeFeatures: 'Ver funciones' },
+		hero: {
+			accent: 'ESP y Aimbot indetectables para PC',
+			accentShort: 'ESP y Aimbot',
+			subtitle:
+				'ESP, aimbot y radar en un solo paquete para Warframe — Steel Path, Sorties y mundo abierto. Entrega digital al instante, planes mensuales o de por vida, y actualizaciones tras cada parche de Digital Extremes.',
+			subtitleShort:
+				'ESP, aimbot y radar para Warframe en Windows. Acceso inmediato con actualizaciones incluidas.',
+			buyNow: 'Obtener acceso',
+			seeFeatures: 'Ver funciones',
+		},
 		trust: { status: 'En línea', statusNote: 'Warframe Cheats está activo para Warframe en PC con Windows.', statusShort: 'Activo', delivery: 'Entrega digital instantánea', platform: 'Windows 10 y 11', antiCheat: 'Mantenimiento anti-cheat incluido', antiCheatShort: 'Compatible con anti-cheat de Digital Extremes' },
 		product: { title: 'Warframe Cheats', addToCart: 'Obtener acceso', monthly: 'Mensual', lifetime: 'De por vida', available: 'Disponible ahora', gameBadge: 'Warframe', platformBadge: 'PC Windows', statusBadge: 'Paquete mantenido' },
 		reviews: { title: 'Opiniones de clientes', subtitle: 'Más de 1.000 reseñas de compradores reales', outOf: 'de 5', countLabel: 'reseñas', seeAll: 'Ver todas las reseñas' },
@@ -23,7 +41,16 @@ export const uiStrings = {
 	},
 	fr: {
 		nav: { home: 'Accueil', aimbot: 'Aimbot', esp: 'ESP', features: 'Fonctions', cheats: 'Astuces', pricing: 'Tarifs', setup: 'Installation', updates: 'Mises à jour', faq: 'FAQ', reviews: 'Avis', buyNow: 'Obtenir l\'accès' },
-		hero: { accent: 'Astuces indétectables pour Warframe', accentShort: 'ESP et Aimbot', subtitle: 'Warframe Cheats pour PC Windows : ESP, aimbot et wallhack avec mises à jour après chaque patch du jeu.', subtitleShort: 'ESP et aimbot pour Warframe sur PC', buyNow: 'Obtenir l\'accès', seeFeatures: 'Voir les fonctions' },
+		hero: {
+			accent: 'ESP et Aimbot indétectables pour PC',
+			accentShort: 'ESP et Aimbot',
+			subtitle:
+				'ESP, aimbot et radar dans un seul pack Warframe — Steel Path, Sorties et monde ouvert. Livraison numérique instantanée, formules mensuelles ou à vie, et mises à jour après chaque patch Digital Extremes.',
+			subtitleShort:
+				'ESP, aimbot et radar pour Warframe sur Windows. Accès immédiat avec mises à jour incluses.',
+			buyNow: 'Obtenir l\'accès',
+			seeFeatures: 'Voir les fonctions',
+		},
 		trust: { status: 'En ligne', statusNote: 'Warframe Cheats est actif pour Warframe sur PC Windows.', statusShort: 'Actif', delivery: 'Livraison numérique instantanée', platform: 'Windows 10 et 11', antiCheat: 'Maintenance anti-cheat incluse', antiCheatShort: 'Compatible anti-cheat Digital Extremes' },
 		product: { title: 'Warframe Cheats', addToCart: 'Obtenir l\'accès', monthly: 'Mensuel', lifetime: 'À vie', available: 'Disponible', gameBadge: 'Warframe', platformBadge: 'PC Windows', statusBadge: 'Pack maintenu' },
 		reviews: { title: 'Avis clients', subtitle: 'Plus de 1 000 avis de vrais clients', outOf: 'sur 5', countLabel: 'avis', seeAll: 'Voir tous les avis' },
@@ -33,7 +60,16 @@ export const uiStrings = {
 	},
 	de: {
 		nav: { home: 'Start', aimbot: 'Aimbot', esp: 'ESP', features: 'Features', cheats: 'Cheats', pricing: 'Preise', setup: 'Setup', updates: 'Updates', faq: 'FAQ', reviews: 'Bewertungen', buyNow: 'Zugang erhalten' },
-		hero: { accent: 'Unentdeckte Warframe-Cheats', accentShort: 'ESP & Aimbot', subtitle: 'Warframe Cheats für Windows-PC: ESP, Aimbot und Wallhack mit Updates nach jedem Spiel-Patch.', subtitleShort: 'ESP und Aimbot für Warframe auf dem PC', buyNow: 'Zugang erhalten', seeFeatures: 'Features ansehen' },
+		hero: {
+			accent: 'Unentdecktes ESP & Aimbot für PC',
+			accentShort: 'ESP & Aimbot',
+			subtitle:
+				'ESP, Aimbot und Radar in einem Warframe-Paket — für Steel Path, Sorties und Open World. Sofortige digitale Lieferung, Monats- oder Lifetime-Lizenz, plus Updates nach Digital-Extremes-Patches.',
+			subtitleShort:
+				'ESP, Aimbot & Radar für Warframe auf Windows. Sofortiger Zugang mit Patch-Updates.',
+			buyNow: 'Zugang erhalten',
+			seeFeatures: 'Features ansehen',
+		},
 		trust: { status: 'Online', statusNote: 'Warframe Cheats ist für Warframe auf Windows-PC aktiv.', statusShort: 'Live', delivery: 'Sofortige digitale Lieferung', platform: 'Windows 10 & 11', antiCheat: 'Anti-Cheat-Wartung inklusive', antiCheatShort: 'Digital-Extremes-Anti-Cheat unterstützt' },
 		product: { title: 'Warframe Cheats', addToCart: 'Zugang erhalten', monthly: 'Monatlich', lifetime: 'Lifetime', available: 'Jetzt verfügbar', gameBadge: 'Warframe', platformBadge: 'Windows-PC', statusBadge: 'Gepflegtes Paket' },
 		reviews: { title: 'Kundenbewertungen', subtitle: 'Über 1.000 Bewertungen von echten Käufern', outOf: 'von 5', countLabel: 'Bewertungen', seeAll: 'Alle Bewertungen' },
