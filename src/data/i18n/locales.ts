@@ -108,12 +108,12 @@ export const blogUi: Record<
 	}
 > = {
 	en: {
-		blogTitle: 'Warframe Cheats Blog 2026 | Meta Guides & Tips',
+		blogTitle: 'Warframe Guides & Blog | Game Tips & Product Intel',
 		blogDescription:
-			'Warframe Cheats blog: ranked meta, loot routes, and pro tips for PC and controllers. Pair guides with our ESP, soft aim, and cloud DMA product pages.',
-		blogH1: 'Warframe Cheats Intel',
+			'Warframe game guides on Steel Path, open world, factions, missions, and patch notes — plus ESP, aimbot, and anti-cheat product guides with official Wiki links.',
+		blogH1: 'Warframe Guides & Intel',
 		blogIntro:
-			'Actionable Warframe guides for Steel Path missions and mission objectives — meta breakdowns, loot routes, weapon tiers, and pro warmup routines. Pair these tips with our Warframe Cheats pages for ESP boxes, soft aim, and cloud DMA when you need in-match tools.',
+			'Game guides for Steel Path, open world farming, factions, mission types, and patch notes — linked to the Warframe Wiki and Digital Extremes. Plus product guides for ESP, soft aim, radar, and anti-cheat maintenance.',
 		readMore: 'Read guide',
 		published: 'Published',
 		updated: 'Updated',

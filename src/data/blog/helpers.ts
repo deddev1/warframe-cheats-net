@@ -79,6 +79,21 @@ export function getFeaturedPosts(locale: LocaleCode, limit = 3): ResolvedBlogPos
 	return (featured.length >= limit ? featured : all).slice(0, limit);
 }
 
+export function getPostsByCategory(locale: LocaleCode, category: string): ResolvedBlogPost[] {
+	return getAllPostsForLocale(locale).filter((post) => post.category === category);
+}
+
+export function getRelatedPosts(
+	locale: LocaleCode,
+	post: ResolvedBlogPost,
+	limit = 3,
+): ResolvedBlogPost[] {
+	const all = getAllPostsForLocale(locale).filter((p) => p.id !== post.id);
+	const sameCategory = all.filter((p) => p.category === post.category);
+	const pool = sameCategory.length >= limit ? sameCategory : all;
+	return pool.slice(0, limit);
+}
+
 export function getPostBySlug(locale: LocaleCode, slug: string): ResolvedBlogPost | undefined {
 	const post = blogPosts.find((p) => p.translations[locale]?.slug === slug);
 	return post ? resolvePost(post, locale) : undefined;

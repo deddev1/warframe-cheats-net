@@ -1,59 +1,54 @@
 ---
-interface FaqItem {
-	question: string;
-	answer: string;
-}
+import FaqList, { type FaqItem } from './FaqList.astro';
 
 interface Props {
 	items: ReadonlyArray<FaqItem>;
 	title?: string;
+	intro?: string;
 }
 
-const { items, title = 'Common questions' } = Astro.props;
+const {
+	items,
+	title = 'Common questions',
+	intro = 'Answers about Warframe Cheats features, gameplay fit, patch-day status, and where to get help.',
+} = Astro.props;
 ---
 
 {
 	items.length > 0 && (
-		<section class="card-panel seo-faq" aria-labelledby="seo-faq-heading">
-			<h2 id="seo-faq-heading">{title}</h2>
-			<div class="seo-faq__list">
-				{items.map((item) => (
-					<details class="seo-faq__item">
-						<summary>{item.question}</summary>
-						<p set:html={item.answer} />
-					</details>
-				))}
+		<section class="seo-faq card-panel" aria-labelledby="seo-faq-heading">
+			<div class="seo-faq__head">
+				<h2 id="seo-faq-heading">{title}</h2>
+				<p class="seo-faq__intro">{intro}</p>
 			</div>
+			<FaqList items={items} groupByCategory />
 		</section>
 	)
 }
 
 <style>
-	.seo-faq__list {
+	.seo-faq {
 		display: grid;
-		gap: 0;
+		gap: 1rem;
 	}
 
-	.seo-faq__item {
-		border-top: 1px solid rgba(168, 85, 247, 0.14);
-		padding: 0.75rem 0;
+	.seo-faq__head {
+		display: grid;
+		gap: 0.45rem;
 	}
 
-	.seo-faq__item summary {
-		cursor: pointer;
-		font-weight: 650;
-		color: var(--color-ink);
+	.seo-faq__head h2 {
+		margin: 0;
+		font-family: var(--font-display);
+		font-size: clamp(1.25rem, 2.5vw, 1.55rem);
+		font-weight: 800;
 	}
 
-	.seo-faq__item p {
-		margin: 0.55rem 0 0;
+	.seo-faq__intro {
+		margin: 0;
 		color: var(--color-muted);
-		line-height: 1.65;
-	}
-
-	.seo-faq__item :global(a) {
-		color: var(--color-orchid);
-		text-decoration: underline;
-		text-underline-offset: 0.15em;
+		line-height: 1.6;
+		font-size: 0.92rem;
+		max-width: 44rem;
 	}
 </style>

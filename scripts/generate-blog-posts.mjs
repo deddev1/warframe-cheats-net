@@ -14,6 +14,13 @@ const LOCALES = ['en'];
 
 const EXT = {
 	epic: '<a href="https://www.digitalextremes.com/" target="_blank" rel="noopener noreferrer">Digital Extremes</a>',
+	warframe: '<a href="https://www.warframe.com/" target="_blank" rel="noopener noreferrer">Warframe</a>',
+	patchNotes: '<a href="https://forums.warframe.com/forum/3-pc-update-notes/" target="_blank" rel="noopener noreferrer">official PC update notes</a>',
+	gameGuide: '<a href="https://www.warframe.com/game-guide" target="_blank" rel="noopener noreferrer">official Warframe game guide</a>',
+	wiki: '<a href="https://warframe.fandom.com/wiki/WARFRAME_Wiki" target="_blank" rel="noopener noreferrer">Warframe Wiki</a>',
+	forums: '<a href="https://forums.warframe.com/" target="_blank" rel="noopener noreferrer">Warframe forums</a>',
+	steelPath: '<a href="https://warframe.fandom.com/wiki/Steel_Path" target="_blank" rel="noopener noreferrer">Steel Path</a>',
+	openWorld: '<a href="https://warframe.fandom.com/wiki/Open_World" target="_blank" rel="noopener noreferrer">open world</a>',
 	rust: '<a href="https://www.warframe.com/" target="_blank" rel="noopener noreferrer">official Warframe patch notes</a>',
 	status: '<a href="https://forums.warframe.com/forum/3-pc-update-notes/" target="_blank" rel="noopener noreferrer">Warframe PC update notes</a>',
 	realisticBattles: '<a href="https://www.warframe.com/game-guide" target="_blank" rel="noopener noreferrer">Warframe Steel Path missions</a>',
@@ -823,6 +830,289 @@ const sources = [
 			},
 		],
 	},
+	{
+		id: 'warframe-steel-path-guide',
+		imageKey: 'battleRoyaleCombat',
+		published: '2026-06-18',
+		updated: '2026-08-01',
+		category: 'Warframe Game Guides',
+		featured: true,
+		slug: 'warframe-steel-path-beginners-guide',
+		title: 'Warframe Steel Path Guide for Beginners',
+		metaDescription:
+			'Warframe Steel Path explained — what changes, how enemies scale, and mission tips for solo and squad play. Official sources and practical checklist.',
+		h1: 'Warframe Steel Path: A Practical Beginner Guide',
+		intro:
+			'Steel Path is Warframe\'s endgame difficulty layer. This guide explains what actually changes, how to prepare, and where to verify details with official sources.',
+		keywords: ['Warframe Steel Path', 'Steel Path guide', 'Warframe endgame', 'Warframe missions'],
+		imageAlt: 'Warframe Steel Path beginner guide for harder missions and enemy scaling',
+		sections: [
+			{
+				h2: 'What Steel Path changes in Warframe',
+				paragraphs: [
+					`${EXT.steelPath} is a harder mission tier unlocked after you complete the Star Chart. Enemies gain more health and damage, which changes how long fights last and how punishing positioning mistakes become.`,
+					`${EXT.epic} maintains balance through regular patches. Cross-check mechanics on the ${EXT.wiki} and ${EXT.gameGuide} before you assume a farm route still works the same way.`,
+					'Pro Tip — Read the modifier: Steel Path is not just “harder numbers.” Some tilesets feel different because spawn density and pathing punish slow rotations.',
+				],
+			},
+			{
+				h2: 'Good early Steel Path mission types',
+				paragraphs: [
+					'Defense and survival are popular because spawn flow is predictable once you learn the map. Exterminate and sabotage can be faster for resource runs if your build clears rooms quickly.',
+					'If you are learning spawn timing, open world is a lower-pressure place to practice radar reads — see our <a href="/blog/warframe-open-world-farming-guide/">open world farming guide</a>.',
+				],
+			},
+			{
+				h2: 'Build and loadout basics',
+				paragraphs: [
+					'Steel Path rewards sustained damage, armor strip or crowd control, and reliable survivability. Modding depth is huge — the Wiki pages for <a href="https://warframe.fandom.com/wiki/Mod" target="_blank" rel="noopener noreferrer">mods</a> and <a href="https://warframe.fandom.com/wiki/Arcane_Enhancement" target="_blank" rel="noopener noreferrer">arcanes</a> are worth bookmarking.',
+					'For visibility-heavy playstyles, our <a href="/warframe-esp/">ESP guide</a> and <a href="/warframe-radar/">radar page</a> explain how extra map information helps in longer Steel Path waves.',
+				],
+			},
+			{
+				h2: 'Checklist before you queue',
+				paragraphs: [
+					`Confirm the latest ${EXT.patchNotes} if a hotfix dropped. Test one familiar mission first. Note which enemy factions appear — Grineer, Corpus, and Infested fights play differently.`,
+					'Try This Today: Pick one Steel Path node you already know in normal mode. Run it once on Steel Path and write down where you lost time — damage, survivability, or navigation.',
+				],
+			},
+		],
+	},
+	{
+		id: 'warframe-open-world-farming',
+		imageKey: 'playerEsp',
+		published: '2026-06-12',
+		updated: '2026-08-01',
+		category: 'Warframe Game Guides',
+		featured: true,
+		slug: 'warframe-open-world-farming-guide',
+		title: 'Warframe Open World Farming Guide',
+		metaDescription:
+			'Warframe open world farming on Plains of Eidolon, Orb Vallis, and Deimos — resources, bounties, and route planning with official wiki links.',
+		h1: 'Warframe Open World Farming: Plains, Vallis, and Deimos',
+		intro:
+			'Open world zones are where many players farm resources, standing, and mod parts. Here is how the three main landscapes differ and how to plan routes efficiently.',
+		keywords: ['Warframe open world', 'Plains of Eidolon', 'Orb Vallis', 'Deimos farming'],
+		imageAlt: 'Warframe open world farming guide for Plains Orb Vallis and Deimos',
+		sections: [
+			{
+				h2: 'The three open world landscapes',
+				paragraphs: [
+					`Warframe's ${EXT.openWorld} areas — Plains of Eidolon, Orb Vallis, and Cambion Drift on Deimos — each have different factions, resources, and bounty systems. The ${EXT.wiki} pages for each landscape list fish, mining, and resource tables.`,
+					`${EXT.gameGuide} is the best starting point if you are new. Official patch notes can shift drop tables or bounty rewards, so verify big changes on ${EXT.patchNotes}.`,
+				],
+			},
+			{
+				h2: 'Bounties vs free roam farming',
+				paragraphs: [
+					'Bounties give structured rewards and faction standing. Free roam farming — mining, fishing, and resource pickups — is better when you need specific crafting materials.',
+					'Route planning matters: mark resource nodes, check day/night cycles on the Plains, and learn where heavy units patrol on ridges before you commit to a camp spot.',
+				],
+			},
+			{
+				h2: 'Why visibility helps in open world',
+				paragraphs: [
+					'Open world maps are large. Knowing where enemies and objectives sit saves time whether you are solo or in a public squad. Our <a href="/warframe-esp/">ESP overview</a> explains how wallhack-style overlays help on wide terrain.',
+					'Pair that with the <a href="/warframe-radar/">radar guide</a> for flank awareness during vault runs and bounty defense phases.',
+				],
+			},
+			{
+				h2: 'Practical farming session',
+				paragraphs: [
+					`Pick one resource goal per session. Run two bounties, then one free roam lap, then reassess inventory. Check ${EXT.forums} if a community thread reports a broken farm route after a patch.`,
+					'Try This Today: Open the Wiki page for one resource you need. Plan a 20-minute route on paper before you load in.',
+				],
+			},
+		],
+	},
+	{
+		id: 'warframe-factions-explained',
+		imageKey: 'squadFight',
+		published: '2026-05-28',
+		updated: '2026-08-01',
+		category: 'Warframe Game Guides',
+		featured: false,
+		slug: 'warframe-factions-grineer-corpus-sentient-guide',
+		title: 'Warframe Factions Explained: Grineer, Corpus, Infested',
+		metaDescription:
+			'Warframe enemy factions explained — Grineer, Corpus, Infested, and Sentient behavior, weaknesses, and where to learn more from the official Wiki.',
+		h1: 'Warframe Factions: Grineer, Corpus, Infested, and Sentient',
+		intro:
+			'Every Warframe mission features one or more enemy factions. Understanding how they fight helps you pick mods, elements, and positioning — whether you are new or returning after a break.',
+		keywords: ['Warframe factions', 'Grineer', 'Corpus', 'Infested', 'Sentient'],
+		imageAlt: 'Warframe factions guide for Grineer Corpus Infested and Sentient enemies',
+		sections: [
+			{
+				h2: 'Grineer — armor, density, and heavy units',
+				paragraphs: [
+					'Grineer missions feature armored units and heavy enemies that punish slow clears. Corrosive and armor-strip setups are common. Read faction detail on the <a href="https://warframe.fandom.com/wiki/Grineer" target="_blank" rel="noopener noreferrer">Grineer Wiki page</a>.',
+					'Steel Path Grineer defenses are a classic choke-point test — see our <a href="/blog/warframe-steel-path-beginners-guide/">Steel Path guide</a>.',
+				],
+			},
+			{
+				h2: 'Corpus — shields, proxies, and robotics',
+				paragraphs: [
+					'Corpus enemies rely on shields and robotic proxies. Magnetic, toxin, and shield-break tools matter more here. The <a href="https://warframe.fandom.com/wiki/Corpus" target="_blank" rel="noopener noreferrer">Corpus Wiki page</a> lists unit types you will see in void and ice tilesets.',
+					`${EXT.epic} occasionally rebalances proxy spawns — watch ${EXT.patchNotes} when a Corpus-heavy update ships.`,
+				],
+			},
+			{
+				h2: 'Infested and Sentient — special mechanics',
+				paragraphs: [
+					'Infested missions emphasize swarm pressure and constant spawns. Sentients appear in later content and adapt to damage types — the <a href="https://warframe.fandom.com/wiki/Sentient" target="_blank" rel="noopener noreferrer">Sentient Wiki page</a> is essential before Eidolon or Circuit-style content.',
+					'Knowing faction spawns also helps you filter ESP categories — covered on our <a href="/warframe-wallhack/">wallhack page</a>.',
+				],
+			},
+			{
+				h2: 'Use official references first',
+				paragraphs: [
+					`For lore and faction history, ${EXT.warframe} and ${EXT.wiki} beat random summaries. For balance changes, trust ${EXT.patchNotes} and developer streams from ${EXT.epic}.`,
+					'Try This Today: Pick your most-played faction and read their Wiki resistances page. Adjust one mod slot before your next session.',
+				],
+			},
+		],
+	},
+	{
+		id: 'warframe-mission-types-guide',
+		imageKey: 'rebootFight',
+		published: '2026-05-14',
+		updated: '2026-08-01',
+		category: 'Warframe Game Guides',
+		featured: false,
+		slug: 'warframe-mission-types-explained',
+		title: 'Warframe Mission Types Explained',
+		metaDescription:
+			'Warframe mission types explained — Sorties, Arbitration, Sanctuary, defense, survival, and more. Links to official Wiki and game guide resources.',
+		h1: 'Warframe Mission Types: Sorties, Arbitration, and More',
+		intro:
+			'Warframe has dozens of mission modes. This guide maps the ones you will see most often in endgame and where to verify rotations with official references.',
+		keywords: ['Warframe missions', 'Sortie', 'Arbitration', 'Sanctuary Onslaught', 'Warframe modes'],
+		imageAlt: 'Warframe mission types guide for Sorties Arbitration and endgame modes',
+		sections: [
+			{
+				h2: 'Core mission modes on the Star Chart',
+				paragraphs: [
+					'Exterminate, survival, defense, interception, sabotage, and mobile defense form the backbone of the Star Chart. The <a href="https://warframe.fandom.com/wiki/Mission" target="_blank" rel="noopener noreferrer">Mission Wiki hub</a> defines win conditions and common modifiers.',
+					`${EXT.gameGuide} walks new players through early progression before these modes split into faction-specific tilesets.`,
+				],
+			},
+			{
+				h2: 'Sorties and daily challenge content',
+				paragraphs: [
+					'Sorties are daily three-mission chains with special modifiers. They are a staple for players with mature builds. Check the <a href="https://warframe.fandom.com/wiki/Sortie" target="_blank" rel="noopener noreferrer">Sortie Wiki page</a> for reward tables and modifier lists.',
+					'Radar and ESP are especially useful when modifiers restrict ability use or increase enemy accuracy — see <a href="/warframe-radar/">radar</a> and <a href="/warframe-esp/">ESP</a>.',
+				],
+			},
+			{
+				h2: 'Arbitration, Sanctuary, and long-run modes',
+				paragraphs: [
+					'Arbitration and Sanctuary Onslaught reward players who can sustain long fights. Read <a href="https://warframe.fandom.com/wiki/Arbitration" target="_blank" rel="noopener noreferrer">Arbitration</a> and <a href="https://warframe.fandom.com/wiki/Sanctuary_Onslaught" target="_blank" rel="noopener noreferrer">Sanctuary Onslaught</a> on the Wiki before you invest grind time.',
+					'For squad callouts and spawn timing, our <a href="/blog/warframe-steel-path-beginners-guide/">Steel Path guide</a> overlaps with several long-run strategies.',
+				],
+			},
+			{
+				h2: 'Pick missions that match your goal',
+				paragraphs: [
+					'Need mods? Run the right disruption or defense node. Need standing? Open world bounties. Need endgame shards? Target the mode that actually drops them — verify on Wiki first.',
+					'Try This Today: Write your top farming goal, then open the Wiki loot table for one mission type that matches it.',
+				],
+			},
+		],
+	},
+	{
+		id: 'warframe-patch-notes-guide',
+		imageKey: 'headerArt',
+		published: '2026-04-30',
+		updated: '2026-08-01',
+		category: 'Warframe Game Guides',
+		featured: false,
+		slug: 'warframe-patch-notes-guide',
+		title: 'How to Read Warframe Patch Notes',
+		metaDescription:
+			'How to read Warframe patch notes from Digital Extremes — official sources, what to scan first, and how updates affect your loadout and tools.',
+		h1: 'How to Read Warframe Patch Notes Like a Player',
+		intro:
+			'Patch day changes more than balance tweets suggest. Here is how to read official Warframe update notes quickly and decide what actually matters for your account.',
+		keywords: ['Warframe patch notes', 'Warframe updates', 'Digital Extremes', 'PC update notes'],
+		imageAlt: 'How to read Warframe patch notes from official PC update notes',
+		sections: [
+			{
+				h2: 'Official sources to bookmark',
+				paragraphs: [
+					`Start with ${EXT.patchNotes} on the ${EXT.forums}. Developer news also flows through ${EXT.epic} and the main ${EXT.warframe} site.`,
+					'Community summaries are fine for speed, but always verify numbers and reworks against the primary post before you sell mods or change builds.',
+				],
+			},
+			{
+				h2: 'What to scan first on patch day',
+				paragraphs: [
+					'Read hotfix lines for crash fixes and known issues first. Then scan weapon and Warframe changes, mission rewards, and drop table tweaks. Finally check UI and QoL notes.',
+					'If you use third-party tools, check our <a href="/updates/">Updates page</a> after reading official notes — maintenance windows do not always match patch publish time.',
+				],
+			},
+			{
+				h2: 'Translate notes into loadout decisions',
+				paragraphs: [
+					'Ask: Did my main weapon class change? Did a mod or arcane get touched? Did a farm route’s drop pool move? If all three are no, you can queue sooner.',
+					'Our <a href="/blog/undetected-warframe-cheats-eac/">anti-cheat maintenance notes</a> explain how patches can affect external tools separately from in-game balance.',
+				],
+			},
+			{
+				h2: 'Patch-day routine',
+				paragraphs: [
+					`Open ${EXT.patchNotes}, skim hotfixes, test one familiar mission, then revisit Wiki pages for anything flagged as reworked.`,
+					'Try This Today: Save the official update notes URL in your browser. After the next patch, highlight only the lines that mention gear you actually use.',
+				],
+			},
+		],
+	},
+	{
+		id: 'warframe-new-player-guide',
+		imageKey: 'cheatsPackage',
+		published: '2026-04-16',
+		updated: '2026-08-01',
+		category: 'Warframe Game Guides',
+		featured: true,
+		slug: 'warframe-new-player-progression-guide',
+		title: 'Warframe New Player Progression Guide',
+		metaDescription:
+			'Warframe new player guide for Star Chart progression, quests, mods, and early goals — with links to the official game guide and Warframe Wiki.',
+		h1: 'Warframe New Player Progression: Where to Go First',
+		intro:
+			'Warframe has a steep learning curve. This progression guide points new Tenno toward official resources and sensible early goals without drowning in systems.',
+		keywords: ['Warframe new player', 'Warframe beginner guide', 'Star Chart', 'Warframe progression'],
+		imageAlt: 'Warframe new player progression guide for Star Chart and early quests',
+		sections: [
+			{
+				h2: 'Start with the official tutorial path',
+				paragraphs: [
+					`${EXT.gameGuide} and the in-game Voruna quest chain teach movement, modding, and mission flow. The ${EXT.wiki} <a href="https://warframe.fandom.com/wiki/Voruna%27s_Guide" target="_blank" rel="noopener noreferrer">new player hub</a> is the best community-maintained supplement.`,
+					`${EXT.warframe} is free to play and updated often — expect systems to unlock gradually rather than all at once.`,
+				],
+			},
+			{
+				h2: 'Star Chart and junction milestones',
+				paragraphs: [
+					'Clear the Star Chart methodically. Junctions gate planets and key quest lines. The <a href="https://warframe.fandom.com/wiki/Star_Chart" target="_blank" rel="noopener noreferrer">Star Chart Wiki page</a> shows what each node rewards.',
+					'Do not rush Steel Path on day one — finish the chart, build survival tools, and learn faction weaknesses first. Our <a href="/blog/warframe-steel-path-beginners-guide/">Steel Path guide</a> is for when you are ready.',
+				],
+			},
+			{
+				h2: 'Mods, mods, mods',
+				paragraphs: [
+					'Power in Warframe comes from mods and mod capacity. Early goals: damage, health, shields, and ability strength or duration depending on your Warframe.',
+					'The <a href="https://warframe.fandom.com/wiki/Mod" target="_blank" rel="noopener noreferrer">Mod Wiki page</a> explains polarity and fusion. Farm low-level missions for credits and mod drops before chasing rare relics.',
+				],
+			},
+			{
+				h2: 'When you are ready for more',
+				paragraphs: [
+					'Explore open world after Mars/Jupiter comfort. Read our <a href="/blog/warframe-open-world-farming-guide/">open world guide</a> and <a href="/blog/warframe-mission-types-explained/">mission types explainer</a> when those nodes unlock.',
+					'Try This Today: Complete one quest, one new Star Chart node, and one mod upgrade session — three small wins beat grinding random missions.',
+				],
+			},
+		],
+	},
 ];
 
 /** Drop legacy Fortnite/Rust intel posts — keep Warframe product content only. */
@@ -836,6 +1126,12 @@ const WARFRAME_BLOG_IDS = new Set([
 	'warframe-cheats-vs-cheatvault',
 	'voidcheats-two-week-test',
 	'warframe-cheats-vs-ghostware',
+	'warframe-steel-path-guide',
+	'warframe-open-world-farming',
+	'warframe-factions-explained',
+	'warframe-mission-types-guide',
+	'warframe-patch-notes-guide',
+	'warframe-new-player-guide',
 ]);
 
 const blogSources = sources.filter((src) => WARFRAME_BLOG_IDS.has(src.id));

@@ -8,6 +8,7 @@ import {
 	getAllPostsForLocale,
 	getBlogBasePath,
 	getFeaturedPosts,
+	getPostsByCategory,
 } from '../data/blog/helpers';
 import { siteConfig } from '../data/site';
 import { getLocalizedPath } from '../data/i18n/routing';
@@ -20,6 +21,8 @@ const { locale } = Astro.props;
 const ui = blogUi[locale];
 const posts = getAllPostsForLocale(locale);
 const featured = getFeaturedPosts(locale, 3);
+const gameGuides = getPostsByCategory(locale, 'Warframe Game Guides');
+const productPosts = posts.filter((post) => post.category !== 'Warframe Game Guides');
 const canonicalPath = getBlogBasePath(locale);
 const canonicalURL = absoluteBlogUrl(locale);
 const homeHref = getLocalizedPath('home', locale);
@@ -55,7 +58,7 @@ const articleListSchema = {
 	<Navbar locale={locale} />
 	<main class="blog">
 		<header class="blog__hero">
-			<p class="blog__eyebrow">Warframe Intel</p>
+			<p class="blog__eyebrow">Warframe guides &amp; product intel</p>
 			<h1>{ui.blogH1}</h1>
 			<p class="blog__intro">{ui.blogIntro}</p>
 		</header>
@@ -88,9 +91,49 @@ const articleListSchema = {
 			)
 		}
 
-		<section class="blog__list" aria-label={ui.allPosts}>
-			{
-				posts.map((post) => (
+		{
+			gameGuides.length > 0 && (
+				<section class="blog__section" aria-labelledby="blog-game-guides">
+					<h2 id="blog-game-guides" class="blog__section-title">
+						Warframe game guides
+					</h2>
+					<p class="blog__section-intro">
+						Steel Path, open world, factions, missions, and patch notes — with links to official Warframe
+						Wiki and Digital Extremes resources.
+					</p>
+					<div class="blog__list">
+						{gameGuides.map((post) => (
+							<article class="blog__card">
+								<a href={post.canonicalPath}>
+									<img
+										src={post.imageSrc}
+										alt={post.translation.imageAlt}
+										width="480"
+										height="270"
+										loading="lazy"
+										decoding="async"
+									/>
+									<span class="blog__cat">{post.category}</span>
+									<h2>{post.translation.title}</h2>
+									<p>{post.translation.intro}</p>
+									<span class="blog__meta">
+										{ui.updated} {post.updated}
+									</span>
+								</a>
+							</article>
+						))}
+					</div>
+				</section>
+			)
+		}
+
+		<section class="blog__section" aria-labelledby="blog-product-posts">
+			<h2 id="blog-product-posts" class="blog__section-title">
+				Product guides &amp; comparisons
+			</h2>
+			<div class="blog__list" aria-label={ui.allPosts}>
+				{
+					productPosts.map((post) => (
 					<article class="blog__card">
 						<a href={post.canonicalPath}>
 							<img
@@ -111,6 +154,7 @@ const articleListSchema = {
 					</article>
 				))
 			}
+			</div>
 		</section>
 	</main>
 	<SiteFooter locale={locale} />
@@ -147,6 +191,22 @@ const articleListSchema = {
 		display: grid;
 		gap: 1.25rem;
 		margin-bottom: 2.5rem;
+	}
+	.blog__section {
+		margin-bottom: 2.5rem;
+	}
+	.blog__section-title {
+		margin: 0 0 0.45rem;
+		font-family: var(--font-display);
+		font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+		font-weight: 800;
+	}
+	.blog__section-intro {
+		margin: 0 0 1.1rem;
+		max-width: 42rem;
+		color: rgba(255, 255, 255, 0.68);
+		font-size: 0.95rem;
+		line-height: 1.6;
 	}
 	.blog__feature-card {
 		display: grid;

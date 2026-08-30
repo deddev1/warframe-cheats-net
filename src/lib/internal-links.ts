@@ -122,6 +122,7 @@ export function getPageRelatedLinks(
 			{ label: 'Support', href: getLocalizedPath('support', locale) },
 		],
 		faq: [
+			{ label: 'Warframe guides', href: '/blog/' },
 			{ label: 'Support', href: getLocalizedPath('support', locale) },
 			{ label: 'Reviews', href: '/reviews/' },
 		],

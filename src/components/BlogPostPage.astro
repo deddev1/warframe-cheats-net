@@ -7,6 +7,7 @@ import {
 	absoluteBlogUrl,
 	getAllPostsForLocale,
 	getBlogBasePath,
+	getRelatedPosts,
 } from '../data/blog/helpers';
 import type { ResolvedBlogPost } from '../data/blog/types';
 import { siteConfig } from '../data/site';
@@ -35,9 +36,7 @@ const productLinks = getBlogProductLinks(locale, {
 const t = post.translation;
 const homeHref = getLocalizedPath('home', locale);
 const blogHref = getBlogBasePath(locale);
-const related = getAllPostsForLocale(locale)
-	.filter((p) => p.id !== post.id)
-	.slice(0, 3);
+const related = getRelatedPosts(locale, post, 3);
 
 const articleUrl = absoluteBlogUrl(locale, t.slug);
 const articleSchema = {

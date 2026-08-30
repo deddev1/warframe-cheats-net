@@ -334,63 +334,86 @@ export const footerExplore = [
 
 export const homeFaqs = [
 	{
+		category: 'Getting started',
 		question: 'What is Warframe Cheats?',
 		answer:
-			'Warframe Cheats is a Windows PC package for Warframe with <a href="/warframe-esp/">ESP</a>, <a href="/warframe-wallhack/">wallhack</a>, and <a href="/warframe-aimbot/">aimbot</a> controls. Licenses include anti-cheat maintenance updates and <a href="/setup/">setup</a> support.',
+			'Warframe Cheats is a maintained Windows PC package for <a href="https://www.warframe.com/" target="_blank" rel="noopener noreferrer">Warframe</a> with <a href="/warframe-esp/">ESP</a>, <a href="/warframe-wallhack/">wallhack</a>, <a href="/warframe-radar/">radar</a>, and <a href="/warframe-aimbot/">aimbot</a> controls. One license covers the full feature set plus <a href="/setup/">setup</a> help.',
 	},
 	{
+		category: 'Getting started',
+		question: 'What is included in one license?',
+		answer:
+			'Enemy ESP boxes, health and pickup markers, 2D radar overlays, and configurable aim assist — including per-weapon profiles and optional cloud DMA. See the full breakdown on <a href="/features/">Features</a> and compare plans on <a href="/pricing/">Pricing</a>.',
+	},
+	{
+		category: 'Getting started',
+		question: 'How are licenses delivered after checkout?',
+		answer:
+			'Licenses are delivered digitally after payment clears. Delivery timing can vary slightly by payment method. Keep your order confirmation handy if you contact <a href="/support/">Support</a>.',
+	},
+	{
+		category: 'Features & gameplay',
+		question: 'Does this work for Steel Path, Sorties, and open world?',
+		answer:
+			'Yes. ESP and radar help you read enemy positions in Steel Path, Sorties, and <a href="/blog/warframe-open-world-farming-guide/">open world</a> tilesets like Plains of Eidolon, Orb Vallis, and Deimos. Aim assist covers rifle, shotgun, and sniper profiles for solo or squad play.',
+	},
+	{
+		category: 'Features & gameplay',
+		question: 'Can I use a controller?',
+		answer:
+			'Controller support is available on Windows PC with adjustable FOV and aim settings. Menu navigation with a pad takes a little practice — see <a href="/setup/">Setup</a> for baseline values and <a href="/reviews/">buyer reviews</a> from controller players.',
+	},
+	{
+		category: 'Features & gameplay',
+		question: 'What is cloud DMA and do I need it?',
+		answer:
+			'Cloud DMA is an optional setup path for buyers who want hardware-assisted isolation instead of a standard loader. Most players start with the regular package. Read the <a href="/warframe-cheats/">main guide</a> and ask <a href="/support/">Support</a> before choosing DMA.',
+	},
+	{
+		category: 'Updates & support',
 		question: 'Is Warframe Cheats permanently undetected?',
 		answer:
-			'No package can promise that. We rebuild after anti-cheat and game patches and post status on <a href="/updates/">Updates</a>. Check there before you load in — read the <a href="/warframe-cheats/">undetected guide</a> for how maintenance works.',
+			'No tool can promise permanent undetected status. Warframe is maintained by <a href="https://www.digitalextremes.com/" target="_blank" rel="noopener noreferrer">Digital Extremes</a> and receives regular patches. We rebuild after anti-cheat updates and post status on <a href="/updates/">Updates</a> — check there before you load in.',
 	},
 	{
-		question: 'Does this fit Steel Path missions and open world missions?',
+		category: 'Updates & support',
+		question: 'Where do I check status after a Warframe patch?',
 		answer:
-			'Yes. <a href="/warframe-esp/">ESP</a> and <a href="/warframe-radar/">radar</a> help you read nearby Warframes, Sentients, and co-op missions; <a href="/warframe-aimbot/">aimbot</a> covers targeting and weak-spot priority. Tuned for solo and squad play.',
+			'Start with our <a href="/updates/">Updates page</a>, then cross-check <a href="https://forums.warframe.com/forum/3-pc-update-notes/" target="_blank" rel="noopener noreferrer">official PC update notes</a>. For how patches affect gameplay, read our <a href="/blog/warframe-patch-notes-guide/">patch notes guide</a>.',
 	},
 	{
-		question: 'What is included?',
-		answer:
-			'Enemy ESP, health pickup markers, radar cues, and configurable aimbot in one license. See <a href="/features/">Features</a>, <a href="/warframe-esp/">ESP</a>, and <a href="/warframe-aimbot/">Aimbot</a> for control detail.',
-	},
-	{
-		question: 'How are licenses delivered?',
-		answer:
-			'Digitally after payment confirmation on <a href="/pricing/">Pricing</a>. Timing can vary by payment method — keep your order confirmation if you contact <a href="/support/">Support</a>.',
-	},
-	{
-		question: 'Where do I check updates after a patch?',
-		answer:
-			'On the <a href="/updates/">Updates page</a>. That is the fastest place to confirm whether a new build is live after a Warframe or anti-cheat patch.',
-	},
-	{
+		category: 'Updates & support',
 		question: 'How do I contact support?',
 		answer:
-			'Use the <a href="/support/">Support page</a> or email support@warframecheats.net with your order details and a clear description of the issue.',
+			'Use the <a href="/support/">Support page</a> or email support@warframecheats.net with your order ID, Windows version, and a short description of the issue. Refund questions are covered on the <a href="/refund-policy/">refund policy</a> page.',
 	},
 ] as const;
 
 export const seoFaqs = [
 	...homeFaqs,
 	{
+		category: 'Product details',
 		question: 'What is a Warframe wallhack?',
 		answer:
-			'A Warframe wallhack is an ESP overlay that shows Grineer, Corpus, and Sentient units through terrain. Warframe Cheats <a href="/warframe-wallhack/">wallhack</a> includes distance readouts, team colours, and toggleable categories for Steel Path and open world missions.',
+			'A Warframe wallhack is an ESP overlay that highlights Grineer, Corpus, Infested, and Sentient units through terrain. Warframe Cheats <a href="/warframe-wallhack/">wallhack</a> includes distance readouts, category toggles, and team colours for Steel Path and open world missions.',
 	},
 	{
+		category: 'Product details',
 		question: 'Does Warframe Cheats include a radar hack?',
 		answer:
-			'Yes. Warframe Cheats includes <a href="/warframe-radar/">2D radar-style overlays</a> that highlight nearby threats outside your direct view — useful for reading flanks during team pushes.',
+			'Yes. <a href="/warframe-radar/">2D radar overlays</a> show nearby threats outside your direct view — useful for reading flanks during defense, survival, and squad pushes.',
 	},
 	{
+		category: 'Product details',
 		question: 'How does anti-cheat affect Warframe Cheats?',
 		answer:
-			'Anti-cheat monitors Warframe on Windows PC. Warframe Cheats publishes maintenance notes on <a href="/updates/">Updates</a> after patches that may require a rebuild. Read the <a href="/warframe-cheats/">maintenance guide</a> for how updates are handled.',
+			'Anti-cheat monitors Warframe on Windows PC. After major patches we publish maintenance notes on <a href="/updates/">Updates</a>. Read the <a href="/warframe-cheats/">maintenance guide</a> and our <a href="/blog/undetected-warframe-cheats-eac/">anti-cheat explainer</a> for what to expect on patch day.',
 	},
 	{
-		question: 'Can I buy undetected Warframe cheats for Windows PC?',
+		category: 'Product details',
+		question: 'Where can I read Warframe game guides?',
 		answer:
-			'Yes — Warframe Cheats sells monthly and lifetime licenses for Warframe on Windows PC with ESP, radar, and aimbot. Compare plans on <a href="/pricing/">Pricing</a> and review the <a href="/warframe-cheats/">undetected guide</a> before checkout.',
+			'Our <a href="/blog/">blog</a> covers Warframe mission types, Steel Path, factions, open world farming, and how to read official patch notes — with links to the <a href="https://warframe.fandom.com/wiki/WARFRAME_Wiki" target="_blank" rel="noopener noreferrer">Warframe Wiki</a> and <a href="https://www.warframe.com/game-guide" target="_blank" rel="noopener noreferrer">official game guide</a>.',
 	},
 ] as const;
 
