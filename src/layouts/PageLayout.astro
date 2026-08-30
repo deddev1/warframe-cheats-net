@@ -5,7 +5,7 @@ import SiteFooter from '../components/SiteFooter.astro';
 import { getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { warframeImages } from '../data/warframe';
-import { heroPreloadSrc, heroSizes, heroSrcSet, contentSrc, contentSrcSet, galleryTileSizes } from '../lib/responsive-images';
+import { heroPreloadSrc, heroSizes, heroSrcSet, heroIsExternal, contentSrc, contentSrcSet, galleryTileSizes } from '../lib/responsive-images';
 import { englishPaths, pageIds, type PageId } from '../data/i18n/routing';
 import { defaultLocale } from '../data/i18n/locales';
 
@@ -123,6 +123,17 @@ const lcpImageSizes = isHeroLcp ? heroSizes : undefined;
 			<div class="banner__media">
 				{
 					isHeroLcp ? (
+						heroIsExternal ? (
+							<img
+								src={heroPreloadSrc}
+								alt={heroAlt}
+								width="1600"
+								height="900"
+								class="banner__img"
+								fetchpriority="high"
+								decoding="async"
+							/>
+						) : (
 						<picture>
 							<source media="(max-width: 760px)" srcset={heroPreloadSrc} type="image/webp" />
 							<source
@@ -141,6 +152,7 @@ const lcpImageSizes = isHeroLcp ? heroSizes : undefined;
 								decoding="async"
 							/>
 						</picture>
+						)
 					) : (
 						<img
 							src={contentSrc(heroImage)}

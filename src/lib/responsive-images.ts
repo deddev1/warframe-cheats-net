@@ -1,3 +1,5 @@
+import { warframeImages } from '../data/warframe';
+
 export interface ResponsiveWidth {
 	src: string;
 	width: number;
@@ -60,12 +62,14 @@ export const heroResponsive: ResponsiveWidth[] = [
 export const heroDesktopResponsive: ResponsiveWidth[] = heroResponsive.filter((v) => v.width >= 640);
 
 /** Mobile-first fallback `src` — forced via `<picture>` so DPR cannot pull 960/1400. */
-export const heroSrc = heroResponsive[0].src;
-export const heroSrcSet = buildSrcSet(heroDesktopResponsive);
+export const heroImageSrc = warframeImages.hero;
+export const heroIsExternal = heroImageSrc.startsWith('http');
+export const heroSrc = heroIsExternal ? heroImageSrc : heroResponsive[0].src;
+export const heroSrcSet = heroIsExternal ? undefined : buildSrcSet(heroDesktopResponsive);
 export const heroSizes = '100vw';
 
 /** Mobile LCP preload — only the 480w file (no imagesrcset upscaling). */
-export const heroPreloadSrc = heroResponsive[0].src;
+export const heroPreloadSrc = heroIsExternal ? heroImageSrc : heroResponsive[0].src;
 
 /** Responsive widths for below-fold content images. */
 export const contentWidths = [480, 960] as const;

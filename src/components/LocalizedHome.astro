@@ -23,7 +23,7 @@ import {
 	buildFaqSchemaNode,
 	buildSoftwareApplicationSchema,
 } from '../data/schema';
-import { heroPreloadSrc, heroSizes, heroSrcSet } from '../lib/responsive-images';
+import { heroPreloadSrc, heroSizes, heroSrcSet, heroIsExternal } from '../lib/responsive-images';
 
 interface Props {
 	locale: LocaleCode;
@@ -89,7 +89,7 @@ const extraGraph: Record<string, unknown>[] =
 	breadcrumbs={[{ label: ui.nav.home }]}
 	extraGraph={extraGraph}
 	lcpImage={heroPreloadSrc}
-	lcpImageSrcSet={heroSrcSet}
+	lcpImageSrcSet={heroIsExternal ? undefined : heroSrcSet}
 	lcpImageSizes={heroSizes}
 >
 	<Navbar locale={locale} pageId="home" />

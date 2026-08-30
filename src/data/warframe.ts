@@ -1,10 +1,14 @@
 import { siteConfig } from './site';
 
+/** Homepage hero — hosted on Supabase CDN. */
+export const warframeHeroImage =
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/warframe/615e3254-d088-46f6-9a61-d3f933199cf9.png';
+
 /** Seven unique Warframe cheat screenshots — each used once per gallery, product grid, and sitemap. */
 
 export const warframeHeroVideo = {
-	src: '/images/warframe-cheats-hero.webp',
-	poster: '/images/warframe-cheats-hero.webp',
+	src: warframeHeroImage,
+	poster: warframeHeroImage,
 	title: 'Warframe cheats hero preview',
 	ariaLabel: 'Warframe cheats gameplay preview — undetected ESP and aimbot on PC',
 } as const;
@@ -29,7 +33,7 @@ const wt6 = '/images/warframe-radar-hack.webp';
 const wt7 = '/images/warframe-mission.webp';
 
 export const warframeImages = {
-	hero: wt1,
+	hero: warframeHeroImage,
 	cover: wt2,
 	logo: siteConfig.logo,
 	loadoutBuilder: wt5,
