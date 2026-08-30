@@ -44,6 +44,11 @@
 		el.addEventListener('pointerdown', function (event) {
 			setGlowPosition(el, event.clientX, event.clientY);
 		});
+
+		el.addEventListener('pointerleave', function () {
+			el.style.removeProperty('--glow-x');
+			el.style.removeProperty('--glow-y');
+		});
 	}
 
 	function init() {
