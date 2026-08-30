@@ -2,7 +2,7 @@
 import { getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
-import { paymentMethods, productFeatureCategories, productInfo } from '../data/site';
+import { productFeatureCategories, productInfo } from '../data/site';
 import RelatedPages from './RelatedPages.astro';
 
 interface Props {
@@ -73,14 +73,6 @@ const pricingHref = getLocalizedPath('pricing', locale);
 						))}
 					</ul>
 				</article>
-			))
-		}
-	</div>
-
-	<div class="pricing-features__payments" aria-label="Accepted payment methods">
-		{
-			paymentMethods.map((method) => (
-				<span class="pricing-features__payment">{method}</span>
 			))
 		}
 	</div>
@@ -249,26 +241,6 @@ const pricingHref = getLocalizedPath('pricing', locale);
 		font-size: 0.72rem;
 		font-weight: 800;
 		line-height: 1.45;
-	}
-
-	.pricing-features__payments {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
-		gap: 0.5rem 0.85rem;
-		padding: 0.85rem 1rem;
-		border-radius: 0.75rem;
-		border: 1px solid rgba(168, 85, 247, 0.12);
-		background: rgba(18, 16, 24, 0.85);
-	}
-
-	.pricing-features__payment {
-		color: rgba(232, 222, 248, 0.55);
-		font-size: 0.72rem;
-		font-weight: 700;
-		letter-spacing: 0.06em;
-		text-transform: uppercase;
 	}
 
 	.pricing-features__full-link {

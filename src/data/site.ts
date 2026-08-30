@@ -284,17 +284,6 @@ export const productFeatureDetails = [
 	},
 ] as const;
 
-export const paymentMethods = [
-	'Visa',
-	'Mastercard',
-	'Amex',
-	'Discover',
-	'PayPal',
-	'Google Pay',
-	'Apple Pay',
-	'Crypto',
-] as const;
-
 export const trustSignals = {
 	status: 'Online',
 	statusNote: 'Warframe Cheats is live for Warframe on Windows PC.',
