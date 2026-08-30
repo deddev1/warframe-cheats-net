@@ -798,16 +798,12 @@ export function localeFromAcceptLanguage(header: string | null): LocaleCode {
 export function getNavForLocale(locale: LocaleCode, labels: Record<string, string>) {
 	const items: { label: string; href: string; pageId?: PageId }[] = [
 		{ label: labels.home, href: getLocalizedPath('home', locale), pageId: 'home' },
-		{ label: 'Hacks', href: getLocalizedPath('hacks', locale), pageId: 'hacks' },
-		{ label: labels.aimbot, href: getLocalizedPath('warframe-aimbot', locale), pageId: 'warframe-aimbot' },
-		{ label: labels.esp, href: getLocalizedPath('warframe-esp', locale), pageId: 'warframe-esp' },
-		{ label: 'Blog', href: '/blog/' },
 		{ label: labels.features, href: getLocalizedPath('features', locale), pageId: 'features' },
-		{ label: labels.pricing, href: getLocalizedPath('pricing', locale), pageId: 'pricing' },
-		{ label: labels.setup, href: getLocalizedPath('setup', locale), pageId: 'setup' },
+		{ label: labels.cheats ?? 'Cheats', href: getLocalizedPath('hacks', locale), pageId: 'hacks' },
 		{ label: labels.updates, href: getLocalizedPath('updates', locale), pageId: 'updates' },
+		{ label: labels.pricing, href: getLocalizedPath('pricing', locale), pageId: 'pricing' },
 		{ label: labels.faq, href: getLocalizedPath('faq', locale), pageId: 'faq' },
-		{ label: 'Reviews', href: '/reviews/' },
+		{ label: labels.reviews ?? 'Reviews', href: '/reviews/' },
 	];
 	return items;
 }

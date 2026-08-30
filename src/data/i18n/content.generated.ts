@@ -37,10 +37,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					aimbot: "Aimbot",
 					esp: "ESP",
 					features: "Features",
+					cheats: "Cheats",
 					pricing: "Pricing",
 					setup: "Setup",
 					updates: "Updates",
 					faq: "FAQ",
+					reviews: "Reviews",
 					buyNow: "Buy Now",
 				},
 				hero: {

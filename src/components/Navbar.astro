@@ -15,9 +15,19 @@ const ui = getUi(locale);
 const navLinks = getNavForLocale(locale, ui.nav);
 const current = Astro.url.pathname;
 
-const isActive = (href: string) => {
-	if (href === getLocalizedPath('home', locale)) {
+const isActive = (href: string, linkPageId?: PageId) => {
+	if (linkPageId === 'home') {
 		return current === href || current === `/${locale}/` || current === '/';
+	}
+	if (href === '/reviews/') {
+		return current === '/reviews/' || current.startsWith('/reviews/');
+	}
+	if (linkPageId === 'hacks') {
+		return (
+			current === href ||
+			current.startsWith(href) ||
+			current.startsWith('/warframe-cheats')
+		);
 	}
 	return current === href || current.startsWith(href);
 };
@@ -43,28 +53,29 @@ const isActive = (href: string) => {
 		<nav class="nav__links" id="nav-panel" data-nav-panel aria-label="Primary">
 			{
 				navLinks.map((link) => (
-					<a href={link.href} class:list={['nav__link', { 'is-active': isActive(link.href) }]}>
-						{link.label}
+					<a
+						href={link.href}
+						class:list={['nav__link', { 'is-active': isActive(link.href, link.pageId) }]}
+					>
+						<span class="nav__link-glow" aria-hidden="true"></span>
+						<span class="nav__link-text">{link.label}</span>
 					</a>
 				))
 			}
-			<a href={siteConfig.checkoutUrl} class="nav__cta" rel="noopener noreferrer">
-				{ui.nav.buyNow}
-			</a>
 		</nav>
 
 		<div class="nav__actions">
 			<LanguageSwitcher pageId={pageId} currentLocale={locale} />
 			<button
-			type="button"
-			class="nav__toggle"
-			aria-label="Open menu"
-			aria-expanded="false"
-			aria-controls="nav-panel"
-			data-nav-toggle
-		>
-			<span class="nav__toggle-icon" aria-hidden="true"></span>
-		</button>
+				type="button"
+				class="nav__toggle"
+				aria-label="Open menu"
+				aria-expanded="false"
+				aria-controls="nav-panel"
+				data-nav-toggle
+			>
+				<span class="nav__toggle-icon" aria-hidden="true"></span>
+			</button>
 		</div>
 	</div>
 </header>
@@ -130,14 +141,15 @@ const isActive = (href: string) => {
 	.nav__bar {
 		display: flex;
 		align-items: center;
-		gap: 1.5rem;
+		gap: 1rem;
 		width: min(100%, var(--page-max));
 		margin: 0 auto;
-		padding: 0.55rem 0.85rem;
-		border-radius: 999px;
-		border: 1px solid rgba(168, 85, 247, 0.12);
-		background: rgba(10, 6, 18, 0.92);
-		box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+		padding: 0.45rem 0.65rem;
+		border-radius: 0.85rem;
+		border: 1px solid rgba(255, 255, 255, 0.06);
+		background: rgba(16, 14, 24, 0.42);
+		backdrop-filter: blur(18px) saturate(1.1);
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 		pointer-events: auto;
 		transition:
 			background 0.25s ease,
@@ -145,43 +157,36 @@ const isActive = (href: string) => {
 			box-shadow 0.25s ease;
 	}
 
-	@media (min-width: 761px) {
-		.nav__bar {
-			background: rgba(10, 6, 18, 0.72);
-			backdrop-filter: blur(16px) saturate(1.15);
-		}
-	}
-
 	.nav.is-scrolled .nav__bar {
-		background: rgba(10, 6, 18, 0.94);
-		border-color: rgba(168, 85, 247, 0.2);
-		box-shadow: 0 8px 28px rgba(0, 0, 0, 0.32);
+		background: rgba(14, 12, 22, 0.72);
+		border-color: rgba(255, 255, 255, 0.08);
+		box-shadow: 0 6px 24px rgba(0, 0, 0, 0.22);
 	}
 
 	.nav__brand {
 		display: inline-flex;
 		align-items: center;
-		gap: 0.6rem;
+		gap: 0.55rem;
 		flex-shrink: 0;
 		color: var(--color-ink);
 		transition: opacity 0.2s ease;
 	}
 
 	.nav__brand:hover {
-		opacity: 0.9;
+		opacity: 0.88;
 	}
 
 	.nav__logo {
 		display: block;
-		width: 1.75rem;
-		height: 1.75rem;
+		width: 1.65rem;
+		height: 1.65rem;
 		object-fit: contain;
 		content-visibility: auto;
 	}
 
 	.nav__name {
 		font-family: var(--font-display);
-		font-size: 0.95rem;
+		font-size: 0.9rem;
 		font-weight: 800;
 		letter-spacing: -0.02em;
 		white-space: nowrap;
@@ -190,79 +195,90 @@ const isActive = (href: string) => {
 	.nav__links {
 		display: flex;
 		align-items: center;
-		gap: 0.15rem;
+		justify-content: center;
+		gap: 0.2rem;
 		flex: 1;
 		min-width: 0;
 	}
 
 	.nav__link {
 		position: relative;
-		padding: 0.45rem 0.7rem;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.42rem 0.72rem;
 		border-radius: 0.5rem;
-		color: var(--color-muted);
-		font-size: 0.84rem;
+		border: 1px solid transparent;
+		color: rgba(255, 255, 255, 0.58);
+		font-size: 0.8rem;
 		font-weight: 500;
-		letter-spacing: 0.01em;
+		letter-spacing: 0.02em;
 		white-space: nowrap;
-		transition: color 0.2s ease;
+		overflow: hidden;
+		isolation: isolate;
+		transition:
+			color 0.2s ease,
+			border-color 0.2s ease,
+			background 0.2s ease;
 	}
 
-	.nav__link::after {
-		content: '';
+	.nav__link-text {
+		position: relative;
+		z-index: 1;
+	}
+
+	.nav__link-glow {
 		position: absolute;
-		left: 0.7rem;
-		right: 0.7rem;
-		bottom: 0.3rem;
-		height: 1px;
-		border-radius: 1px;
-		background: var(--color-orchid);
-		transform: scaleX(0);
-		transform-origin: center;
-		transition: transform 0.2s ease;
+		inset: 0;
+		border-radius: inherit;
+		opacity: 0;
+		background: linear-gradient(
+			105deg,
+			transparent 0%,
+			rgba(168, 85, 247, 0.08) 35%,
+			rgba(192, 132, 252, 0.2) 50%,
+			rgba(168, 85, 247, 0.08) 65%,
+			transparent 100%
+		);
+		background-size: 220% 100%;
+		background-position: 100% 0;
+		transition: opacity 0.2s ease;
+		pointer-events: none;
 	}
 
 	.nav__link:hover {
-		color: var(--color-ink);
+		color: rgba(255, 255, 255, 0.88);
+		background: rgba(255, 255, 255, 0.04);
+		border-color: rgba(255, 255, 255, 0.06);
 	}
 
 	.nav__link.is-active {
 		color: var(--color-ink);
 		font-weight: 600;
+		background: rgba(168, 85, 247, 0.08);
+		border-color: rgba(168, 85, 247, 0.16);
 	}
 
-	.nav__link.is-active::after {
-		transform: scaleX(1);
+	.nav__link.is-active .nav__link-glow {
+		opacity: 1;
+		animation: nav-glow-shift 3.5s ease-in-out infinite;
 	}
 
-	.nav__cta {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		height: 2.15rem;
-		margin-left: auto;
-		padding: 0 1rem;
-		border-radius: 999px;
-		background: var(--color-ink);
-		color: var(--color-midnight);
-		font-size: 0.82rem;
-		font-weight: 700;
-		letter-spacing: 0.01em;
-		transition:
-			transform 0.2s ease,
-			opacity 0.2s ease;
-	}
-
-	.nav__cta:hover {
-		transform: translateY(-1px);
-		opacity: 0.92;
-		color: var(--color-midnight);
+	@keyframes nav-glow-shift {
+		0%,
+		100% {
+			background-position: 120% 0;
+		}
+		50% {
+			background-position: -20% 0;
+		}
 	}
 
 	.nav__actions {
 		display: flex;
 		align-items: center;
-		gap: 0.45rem;
-		margin-left: auto;
+		gap: 0.4rem;
+		flex-shrink: 0;
 	}
 
 	.nav__toggle {
@@ -271,16 +287,19 @@ const isActive = (href: string) => {
 		width: 2.15rem;
 		height: 2.15rem;
 		flex-shrink: 0;
-		border: 0;
-		border-radius: 999px;
-		background: rgba(168, 85, 247, 0.12);
+		border: 1px solid rgba(255, 255, 255, 0.08);
+		border-radius: 0.5rem;
+		background: rgba(255, 255, 255, 0.04);
 		color: var(--color-ink);
 		cursor: pointer;
-		transition: background 0.2s ease;
+		transition:
+			background 0.2s ease,
+			border-color 0.2s ease;
 	}
 
 	.nav__toggle:hover {
-		background: rgba(168, 85, 247, 0.22);
+		background: rgba(168, 85, 247, 0.1);
+		border-color: rgba(168, 85, 247, 0.2);
 	}
 
 	.nav__toggle-icon,
@@ -333,7 +352,14 @@ const isActive = (href: string) => {
 		display: none;
 	}
 
-	@media (max-width: 960px) {
+	@media (max-width: 1024px) {
+		.nav__link {
+			padding: 0.38rem 0.55rem;
+			font-size: 0.76rem;
+		}
+	}
+
+	@media (max-width: 900px) {
 		.nav__backdrop {
 			display: block;
 			position: fixed;
@@ -342,7 +368,7 @@ const isActive = (href: string) => {
 			border: 0;
 			padding: 0;
 			margin: 0;
-			background: rgba(10, 6, 18, 0.62);
+			background: rgba(10, 6, 18, 0.55);
 			backdrop-filter: blur(6px);
 			cursor: pointer;
 		}
@@ -354,8 +380,8 @@ const isActive = (href: string) => {
 		.nav__bar {
 			position: relative;
 			z-index: 2;
-			gap: 0.75rem;
-			padding: 0.5rem 0.7rem;
+			gap: 0.65rem;
+			padding: 0.45rem 0.55rem;
 		}
 
 		.nav__links {
@@ -364,16 +390,17 @@ const isActive = (href: string) => {
 			z-index: 1;
 			display: grid;
 			align-content: start;
-			gap: 0.25rem;
-			width: min(calc(100% - (var(--page-gutter) * 2)), 22rem);
+			gap: 0.35rem;
+			width: min(calc(100% - (var(--page-gutter) * 2)), 20rem);
 			max-height: calc(100dvh - 5.5rem - env(safe-area-inset-top, 0px));
 			height: fit-content;
 			margin: calc(4.25rem + env(safe-area-inset-top, 0px)) auto 1.5rem;
-			padding: 0.75rem;
-			border-radius: 1rem;
-			border: 1px solid rgba(168, 85, 247, 0.16);
-			background: rgba(16, 12, 26, 0.98);
-			box-shadow: 0 20px 48px rgba(0, 0, 0, 0.4);
+			padding: 0.65rem;
+			border-radius: 0.85rem;
+			border: 1px solid rgba(255, 255, 255, 0.08);
+			background: rgba(14, 12, 22, 0.94);
+			backdrop-filter: blur(20px);
+			box-shadow: 0 20px 48px rgba(0, 0, 0, 0.35);
 			overflow-y: auto;
 			overscroll-behavior: contain;
 			opacity: 0;
@@ -394,36 +421,15 @@ const isActive = (href: string) => {
 		}
 
 		.nav__link {
-			padding: 0.9rem 1rem;
-			border-radius: 0.65rem;
-			font-size: 1rem;
-			min-height: var(--touch-min);
-			display: flex;
-			align-items: center;
-		}
-
-		.nav__link::after {
-			display: none;
-		}
-
-		.nav__link.is-active,
-		.nav__link:hover {
-			background: rgba(168, 85, 247, 0.1);
-		}
-
-		.nav__cta {
-			width: 100%;
-			height: auto;
-			margin: 0.35rem 0 0;
-			padding: 0.95rem 1rem;
-			border-radius: 0.65rem;
-			font-size: 1rem;
+			justify-content: flex-start;
+			padding: 0.85rem 1rem;
+			border-radius: 0.6rem;
+			font-size: 0.95rem;
 			min-height: var(--touch-min);
 		}
 
 		.nav__toggle {
 			display: grid;
-			margin-left: auto;
 			min-width: var(--touch-min);
 			min-height: var(--touch-min);
 		}
@@ -436,6 +442,13 @@ const isActive = (href: string) => {
 
 		.nav__name {
 			display: none;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.nav__link.is-active .nav__link-glow {
+			animation: none;
+			background-position: 50% 0;
 		}
 	}
 </style>

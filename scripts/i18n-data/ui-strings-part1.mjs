@@ -2,7 +2,7 @@
 
 export const uiStrings = {
 	en: {
-		nav: { home: 'Home', aimbot: 'Aimbot', esp: 'ESP', features: 'Features', pricing: 'Pricing', setup: 'Setup', updates: 'Updates', faq: 'FAQ', buyNow: 'Buy Now' },
+		nav: { home: 'Home', aimbot: 'Aimbot', esp: 'ESP', features: 'Features', cheats: 'Cheats', pricing: 'Pricing', setup: 'Setup', updates: 'Updates', faq: 'FAQ', reviews: 'Reviews', buyNow: 'Buy Now' },
 		hero: { accent: 'Undetected ESP & Aimbot', accentShort: 'ESP & Aimbot', subtitle: 'Warframe Cheats for Windows PC — ESP, aimbot, and wallhack with anti-cheat maintenance.', subtitleShort: 'ESP & aimbot for Warframe on PC', buyNow: 'Buy Now', seeFeatures: 'See Features' },
 		trust: { status: 'Online', statusNote: 'Warframe Cheats is live for Warframe on Windows PC.', statusShort: 'Live', delivery: 'Instant digital delivery', platform: 'Windows 10 & 11', antiCheat: 'anti-cheat maintenance supported', antiCheatShort: 'Digital Extremes anti-cheat supported' },
 		product: { title: 'Warframe Cheats', addToCart: 'Add to Cart', monthly: 'Monthly', lifetime: 'Lifetime', available: 'Available now', gameBadge: 'Warframe', platformBadge: 'Windows PC', statusBadge: 'Maintained package' },

@@ -20,6 +20,7 @@
 		"preview": "astro preview --host 0.0.0.0 --port 4321",
 		"validate:sitemaps": "node scripts/validate-sitemaps.mjs",
 		"generate:i18n": "node scripts/generate-i18n-content.mjs",
+		"generate:blog": "node scripts/generate-blog-posts.mjs",
 		"deploy": "npm run build && wrangler deploy",
 		"cf:deploy": "npm run build:cf && wrangler deploy",
 		"pages:deploy": "wrangler pages deploy dist --project-name=warframecheats",
