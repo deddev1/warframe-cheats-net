@@ -22,8 +22,6 @@ const {
 } = Astro.props;
 
 const buyUrl = siteConfig.checkoutUrl;
-const featuresUrl = getLocalizedPath('features', locale);
-const pricingUrl = getLocalizedPath('pricing', locale);
 const espUrl = getLocalizedPath('warframe-esp', locale);
 ---
 
@@ -66,12 +64,6 @@ const espUrl = getLocalizedPath('warframe-esp', locale);
 			<div class="hero__cta">
 				<a href={buyUrl} class="btn-buy" rel="noopener noreferrer" aria-label={ui.hero.buyNow}>
 					{ui.hero.buyNow}
-				</a>
-				<a href={featuresUrl} class="hero__btn hero__btn--ghost">
-					{ui.hero.seeFeatures}
-				</a>
-				<a href={pricingUrl} class="hero__btn hero__btn--ghost">
-					{ui.nav.pricing}
 				</a>
 			</div>
 			<p class="hero__links">
