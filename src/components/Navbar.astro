@@ -196,22 +196,7 @@ const isActive = (href: string, linkPageId?: PageId) => {
 	}
 
 	.nav__link-glow {
-		position: absolute;
-		inset: 0;
-		border-radius: inherit;
-		opacity: 0;
-		background: linear-gradient(
-			105deg,
-			transparent 0%,
-			rgba(24, 217, 210, 0.08) 35%,
-			rgba(24, 217, 210, 0.2) 50%,
-			rgba(24, 217, 210, 0.08) 65%,
-			transparent 100%
-		);
-		background-size: 220% 100%;
-		background-position: 100% 0;
-		transition: opacity 0.2s ease;
-		pointer-events: none;
+		display: none;
 	}
 
 	.nav__link:hover {
@@ -223,23 +208,12 @@ const isActive = (href: string, linkPageId?: PageId) => {
 	.nav__link.is-active {
 		color: var(--color-ink);
 		font-weight: 600;
-		background: rgba(24, 217, 210, 0.08);
-		border-color: rgba(24, 217, 210, 0.16);
+		background: rgba(24, 217, 210, 0.06);
+		border-color: rgba(24, 217, 210, 0.12);
 	}
 
 	.nav__link.is-active .nav__link-glow {
-		opacity: 1;
-		animation: nav-glow-shift 3.5s ease-in-out infinite;
-	}
-
-	@keyframes nav-glow-shift {
-		0%,
-		100% {
-			background-position: 120% 0;
-		}
-		50% {
-			background-position: -20% 0;
-		}
+		display: none;
 	}
 
 	.nav__actions {
@@ -261,9 +235,6 @@ const isActive = (href: string, linkPageId?: PageId) => {
 		font-weight: 800;
 		white-space: nowrap;
 		text-decoration: none;
-		box-shadow:
-			0 0 0 1px rgba(24, 217, 210, 0.25),
-			0 6px 18px rgba(43, 119, 120, 0.35);
 	}
 
 	.nav__cta:hover {
@@ -448,13 +419,6 @@ const isActive = (href: string, linkPageId?: PageId) => {
 	@media (max-width: 420px) {
 		.nav {
 			padding-inline: 0.65rem;
-		}
-	}
-
-	@media (prefers-reduced-motion: reduce) {
-		.nav__link.is-active .nav__link-glow {
-			animation: none;
-			background-position: 50% 0;
 		}
 	}
 </style>

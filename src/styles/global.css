@@ -115,10 +115,7 @@
 
 	@media (min-width: 761px) {
 		body {
-			background:
-				radial-gradient(ellipse 80% 50% at 80% -10%, rgba(24, 217, 210, 0.1), transparent 55%),
-				radial-gradient(ellipse 50% 40% at 10% 20%, rgba(43, 119, 120, 0.08), transparent 50%),
-				var(--color-midnight);
+			background: var(--color-midnight);
 		}
 	}
 
@@ -204,7 +201,6 @@
 
 	.text-gradient {
 		color: var(--color-cyan);
-		text-shadow: 0 0 28px rgba(24, 217, 210, 0.35);
 	}
 
 	.bg-brand {
@@ -212,99 +208,23 @@
 	}
 
 	.btn-buy {
-		position: relative;
-		overflow: hidden;
-		isolation: isolate;
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
 		min-height: var(--touch-min);
 		padding: 0.85rem 1.85rem;
 		border-radius: 0.95rem;
-		border: 1px solid rgba(24, 217, 210, 0.55);
+		border: 1px solid rgba(24, 217, 210, 0.4);
 		background: linear-gradient(180deg, #1ee8e0 0%, #18d9d2 48%, #14c4bd 100%);
 		color: #041011;
 		font-size: 1rem;
 		font-weight: 800;
 		letter-spacing: 0.01em;
-		box-shadow:
-			0 0 0 1px rgba(24, 217, 210, 0.16),
-			0 6px 18px rgba(24, 217, 210, 0.14),
-			inset 0 1px 0 rgba(255, 255, 255, 0.28);
+		box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
 		transition:
 			transform 0.2s ease,
 			filter 0.2s ease,
-			box-shadow 0.2s ease;
-	}
-
-	.btn-buy::before,
-	.btn-glow::before {
-		content: '';
-		position: absolute;
-		inset: -1px;
-		border-radius: inherit;
-		background: radial-gradient(
-			circle 64px at var(--glow-x, 50%) var(--glow-y, 50%),
-			rgba(255, 255, 255, 0.32) 0%,
-			rgba(255, 255, 255, 0.08) 42%,
-			transparent 72%
-		);
-		opacity: 0;
-		transition: opacity 0.2s ease;
-		pointer-events: none;
-		z-index: 0;
-	}
-
-	.btn-buy:hover::before,
-	.btn-buy:focus-visible::before,
-	.btn-buy:active::before,
-	.btn-glow:hover::before,
-	.btn-glow:focus-visible::before,
-	.btn-glow:active::before {
-		opacity: 0.42;
-	}
-
-	.btn-buy:active::before,
-	.btn-glow:active::before {
-		opacity: 0.5;
-	}
-
-	.btn-buy:active,
-	.btn-glow:active {
-		transform: translateY(0) scale(0.985);
-	}
-
-	.btn-glow {
-		position: relative;
-		overflow: hidden;
-		isolation: isolate;
-	}
-
-	.btn-glow::after {
-		content: '';
-		position: absolute;
-		inset: -1px;
-		border-radius: inherit;
-		background: radial-gradient(
-			circle 58px at var(--glow-x, 50%) var(--glow-y, 50%),
-			rgba(24, 217, 210, 0.22) 0%,
-			rgba(24, 217, 210, 0.06) 42%,
-			transparent 74%
-		);
-		opacity: 0;
-		transition: opacity 0.2s ease;
-		pointer-events: none;
-		z-index: 0;
-	}
-
-	.btn-glow:hover::after,
-	.btn-glow:focus-visible::after,
-	.btn-glow:active::after {
-		opacity: 0.38;
-	}
-
-	.btn-glow:active::after {
-		opacity: 0.46;
+			background 0.2s ease;
 	}
 
 	@media (max-width: 768px) {
@@ -317,11 +237,11 @@
 	.btn-buy:hover {
 		color: #041011;
 		transform: translateY(-1px);
-		filter: brightness(1.03);
-		box-shadow:
-			0 0 0 1px rgba(24, 217, 210, 0.24),
-			0 8px 22px rgba(24, 217, 210, 0.2),
-			inset 0 1px 0 rgba(255, 255, 255, 0.32);
+		filter: brightness(1.02);
+	}
+
+	.btn-buy:active {
+		transform: translateY(0);
 	}
 
 	.surface-card {

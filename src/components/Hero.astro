@@ -162,20 +162,7 @@ const buyUrl = siteConfig.checkoutUrl;
 	}
 
 	.hero__splash {
-		position: absolute;
-		inset: 0;
-		z-index: 2;
-		background:
-			radial-gradient(ellipse 50% 70% at 78% 45%, rgba(24, 217, 210, 0.1), transparent 70%),
-			radial-gradient(ellipse 38% 55% at 92% 72%, rgba(24, 217, 210, 0.06), transparent 65%);
-		pointer-events: none;
-		opacity: 0.45;
-	}
-
-	@media (prefers-reduced-motion: no-preference) {
-		.hero__splash {
-			animation: pulse-glow 7s ease-in-out infinite;
-		}
+		display: none;
 	}
 
 	.hero__veil {
