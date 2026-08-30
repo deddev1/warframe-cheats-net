@@ -1,5 +1,5 @@
 ---
-import { getUi, getPageContent } from '../data/i18n';
+import { getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { siteConfig } from '../data/site';
@@ -11,179 +11,141 @@ interface Props {
 const locale = Astro.props.locale ?? defaultLocale;
 const ui = getUi(locale);
 
-const exploreLinks = [
+const mainLinks = [
 	{ label: ui.nav.home, href: getLocalizedPath('home', locale) },
-	{ label: getPageContent(locale, 'undetected').h1.split('—')[0].trim(), href: getLocalizedPath('undetected', locale) },
-	{ label: getPageContent(locale, 'hacks').h1.split('—')[0].trim(), href: getLocalizedPath('hacks', locale) },
-	{ label: getPageContent(locale, 'best-cheats').h1.split('—')[0].trim(), href: getLocalizedPath('best-cheats', locale) },
-	{ label: getPageContent(locale, 'cheat-download').h1.split('—')[0].trim(), href: getLocalizedPath('cheat-download', locale) },
-	{ label: getPageContent(locale, 'wallhack').h1.split('—')[0].trim(), href: getLocalizedPath('wallhack', locale) },
-	{ label: getPageContent(locale, 'esp-hack').h1.split('—')[0].trim(), href: getLocalizedPath('esp-hack', locale) },
-	{ label: getPageContent(locale, 'radar').h1.split('—')[0].trim(), href: getLocalizedPath('radar', locale) },
-	{ label: getPageContent(locale, 'eac-bypass').h1.split('—')[0].trim(), href: getLocalizedPath('eac-bypass', locale) },
-	{ label: getPageContent(locale, 'cheats-2026').h1.split('—')[0].trim(), href: getLocalizedPath('cheats-2026', locale) },
-	{ label: ui.nav.aimbot, href: getLocalizedPath('warframe-aimbot', locale) },
-	{ label: getPageContent(locale, 'aimbot-hack').h1.split('—')[0].trim(), href: getLocalizedPath('aimbot-hack', locale) },
-	{ label: getPageContent(locale, 'soft-aim').h1.split('—')[0].trim(), href: getLocalizedPath('soft-aim', locale) },
-	{ label: ui.nav.esp, href: getLocalizedPath('warframe-esp', locale) },
-	{ label: getPageContent(locale, 'mod-menu').h1.split('—')[0].trim(), href: getLocalizedPath('mod-menu', locale) },
-	{ label: getPageContent(locale, 'unlock-all').h1.split('—')[0].trim(), href: getLocalizedPath('unlock-all', locale) },
 	{ label: ui.nav.features, href: getLocalizedPath('features', locale) },
+	{ label: ui.nav.cheats ?? 'Cheats', href: getLocalizedPath('hacks', locale) },
+	{ label: ui.nav.updates, href: getLocalizedPath('updates', locale) },
 	{ label: ui.nav.pricing, href: getLocalizedPath('pricing', locale) },
-	{ label: ui.nav.setup, href: getLocalizedPath('setup', locale) },
 	{ label: ui.nav.faq, href: getLocalizedPath('faq', locale) },
-	{ label: 'Blog', href: '/blog/' },
-	{ label: 'Reviews', href: '/reviews/' },
+	{ label: ui.nav.reviews ?? 'Reviews', href: '/reviews/' },
 ];
 
-const helpLinks = [
-	{ label: ui.nav.updates, href: getLocalizedPath('updates', locale) },
-	{ label: getPageContent(locale, 'support').h1.split('—')[0].trim(), href: getLocalizedPath('support', locale) },
-	{ label: getPageContent(locale, 'refund').h1.split('—')[0].trim(), href: getLocalizedPath('refund', locale) },
-	{ label: getPageContent(locale, 'privacy').h1.split('—')[0].trim(), href: getLocalizedPath('privacy', locale) },
-	{ label: getPageContent(locale, 'terms').h1.split('—')[0].trim(), href: getLocalizedPath('terms', locale) },
+const legalLinks = [
+	{ label: 'Support', href: getLocalizedPath('support', locale) },
+	{ label: 'Privacy', href: getLocalizedPath('privacy', locale) },
+	{ label: 'Terms', href: getLocalizedPath('terms', locale) },
+	{ label: 'Refund', href: getLocalizedPath('refund', locale) },
 ];
+
+const year = new Date().getUTCFullYear();
 ---
 
 <footer class="footer" id="support-footer">
 	<div class="shell footer__inner">
-		<div class="footer__brand">
+		<div class="footer__top">
 			<p class="footer__name">{ui.product.title}</p>
-			<p class="footer__text">{ui.footer.tagline}</p>
-			<p class="footer__official">{ui.common.officialLanguageNote}</p>
+			<p class="footer__tagline">{ui.footer.tagline}</p>
 		</div>
-		<nav class="footer__cols" aria-label="Footer">
-			<div>
-				<p class="footer__label">{ui.footer.explore}</p>
-				<ul>
-					{exploreLinks.map((link) => <li><a href={link.href}>{link.label}</a></li>)}
-				</ul>
-			</div>
-			<div>
-				<p class="footer__label">{ui.footer.help}</p>
-				<ul>
-					{helpLinks.map((link) => <li><a href={link.href}>{link.label}</a></li>)}
-					<li><a href={`mailto:${siteConfig.supportEmail}`}>Email support</a></li>
-				</ul>
-			</div>
+
+		<nav class="footer__links" aria-label="Footer">
+			{
+				mainLinks.map((link) => (
+					<a href={link.href}>{link.label}</a>
+				))
+			}
 		</nav>
+
+		<div class="footer__bottom">
+			<nav class="footer__legal" aria-label="Legal">
+				{
+					legalLinks.map((link) => (
+						<a href={link.href}>{link.label}</a>
+					))
+				}
+			</nav>
+			<p class="footer__copy">© {year} {siteConfig.name}</p>
+		</div>
 	</div>
 </footer>
 
 <style>
 	.footer {
-		border-top: 1px solid rgba(168, 85, 247, 0.12);
-		padding-block: 2rem;
-		padding-bottom: calc(2rem + env(safe-area-inset-bottom, 0px));
+		border-top: 1px solid rgba(255, 255, 255, 0.06);
+		padding-block: 1.75rem;
+		padding-bottom: calc(1.75rem + env(safe-area-inset-bottom, 0px));
 	}
 
 	.footer__inner {
 		display: grid;
-		grid-template-columns: 1.2fr 1fr;
-		gap: 2rem;
+		gap: 1.1rem;
+	}
+
+	.footer__top {
+		display: grid;
+		gap: 0.35rem;
 	}
 
 	.footer__name {
 		margin: 0;
 		font-family: var(--font-display);
+		font-size: 0.95rem;
 		font-weight: 800;
-		letter-spacing: 0.04em;
+		letter-spacing: -0.02em;
 	}
 
-	.footer__text {
-		margin: 0.55rem 0 0;
-		color: var(--color-faint);
-		font-size: 0.9rem;
-		line-height: 1.55;
-		max-width: 28rem;
-	}
-
-	.footer__official {
-		margin: 0.65rem 0 0;
-		color: var(--color-orchid);
-		font-size: 0.78rem;
-		line-height: 1.45;
-		max-width: 28rem;
-	}
-
-	.footer__cols {
-		display: grid;
-		grid-template-columns: minmax(0, 1.6fr) minmax(0, 0.9fr);
-		gap: 1.25rem 1.75rem;
-		align-items: start;
-	}
-
-	.footer__label {
-		margin: 0 0 0.65rem;
-		font-size: 0.72rem;
-		font-weight: 700;
-		letter-spacing: 0.1em;
-		text-transform: uppercase;
-		color: var(--color-orchid);
-	}
-
-	.footer ul {
+	.footer__tagline {
 		margin: 0;
-		padding: 0;
-		list-style: none;
-		display: grid;
-		gap: 0.4rem;
+		color: var(--color-faint);
+		font-size: 0.84rem;
+		line-height: 1.5;
+		max-width: 32rem;
 	}
 
-	.footer__cols > div:first-child ul {
-		grid-template-columns: 1fr 1fr;
-		column-gap: 1rem;
-		row-gap: 0.4rem;
+	.footer__links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.45rem 0.85rem;
 	}
 
-	.footer a {
+	.footer__links a {
 		color: var(--color-muted);
-		font-size: 0.88rem;
+		font-size: 0.84rem;
 		font-weight: 600;
-		line-height: 1.35;
-		display: -webkit-box;
-		-webkit-box-orient: vertical;
-		-webkit-line-clamp: 2;
-		line-clamp: 2;
-		overflow: hidden;
-		max-width: 100%;
-		overflow-wrap: anywhere;
+		transition: color 0.2s ease;
 	}
 
-	.footer a:hover {
+	.footer__links a:hover {
 		color: var(--color-ink);
 	}
 
-	@media (max-width: 760px) {
-		.footer {
-			padding-block: 1.5rem;
-		}
-
-		.footer__inner {
-			grid-template-columns: 1fr;
-			gap: 1.35rem;
-		}
-
-		.footer__cols {
-			grid-template-columns: 1fr;
-			gap: 1.25rem;
-		}
-
-		.footer__cols > div:first-child ul {
-			grid-template-columns: 1fr 1fr;
-			column-gap: 0.85rem;
-		}
+	.footer__bottom {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.65rem 1rem;
+		padding-top: 0.85rem;
+		border-top: 1px solid rgba(255, 255, 255, 0.05);
 	}
 
-	@media (max-width: 480px) {
-		.footer__cols > div:first-child ul {
-			grid-template-columns: 1fr 1fr;
-			column-gap: 0.65rem;
-			row-gap: 0.35rem;
-		}
+	.footer__legal {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.55rem 0.9rem;
+	}
 
-		.footer a {
-			font-size: 0.82rem;
+	.footer__legal a {
+		color: var(--color-faint);
+		font-size: 0.78rem;
+		font-weight: 500;
+		transition: color 0.2s ease;
+	}
+
+	.footer__legal a:hover {
+		color: var(--color-muted);
+	}
+
+	.footer__copy {
+		margin: 0;
+		color: var(--color-faint);
+		font-size: 0.78rem;
+	}
+
+	@media (max-width: 560px) {
+		.footer__bottom {
+			flex-direction: column;
+			align-items: flex-start;
 		}
 	}
 </style>
