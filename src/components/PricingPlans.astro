@@ -41,7 +41,6 @@ const featurePills = [
 			<img
 				src={mainImage.src}
 				alt={mainImage.alt}
-				title={mainImage.title}
 				width="1280"
 				height="720"
 				class="pricing-showcase__image"
@@ -57,17 +56,15 @@ const featurePills = [
 					<button
 						type="button"
 						class:list={['pricing-showcase__thumb', { 'is-active': index === 0 }]}
-						aria-label={image.title}
+						aria-label={image.alt}
 						aria-pressed={index === 0 ? 'true' : 'false'}
 						data-thumb
 						data-src={image.src}
 						data-alt={image.alt}
-						data-title={image.title}
 					>
 						<img
 							src={image.src}
 							alt={image.alt}
-							title={image.title}
 							sizes={productThumbSizes}
 							width="320"
 							height="200"
@@ -224,10 +221,8 @@ const featurePills = [
 				if (!(mainImage instanceof HTMLImageElement)) return;
 				const src = thumb.getAttribute('data-src');
 				const alt = thumb.getAttribute('data-alt');
-				const title = thumb.getAttribute('data-title');
 				if (src) mainImage.src = src;
 				if (alt) mainImage.alt = alt;
-				if (title) mainImage.title = title;
 				mainImage.removeAttribute('srcset');
 				imageThumbs.forEach((item) => {
 					const active = item === thumb;

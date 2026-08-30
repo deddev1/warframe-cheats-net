@@ -34,7 +34,7 @@ const marqueeSlides = [...slides, ...slides];
 			<div class="gallery__marquee-track">
 				{
 					marqueeSlides.map((slide, index) => (
-						<a href={slide.href} class="gallery__marquee-slide">
+						<a href={slide.href} class="gallery__marquee-slide" aria-label={slide.alt}>
 							<img
 								src={slide.src}
 								srcset={slide.srcset}
@@ -46,7 +46,6 @@ const marqueeSlides = [...slides, ...slides];
 								decoding="async"
 								draggable="false"
 							/>
-							<span class="gallery__marquee-url">{slide.href}</span>
 						</a>
 					))
 				}
@@ -116,8 +115,7 @@ const marqueeSlides = [...slides, ...slides];
 	}
 
 	.gallery__marquee-slide {
-		display: grid;
-		gap: 0.3rem;
+		display: block;
 		flex: 0 0 auto;
 		width: clamp(220px, 28vw, 320px);
 		text-decoration: none;
@@ -134,21 +132,8 @@ const marqueeSlides = [...slides, ...slides];
 		background: #061112;
 	}
 
-	.gallery__marquee-url {
-		font-size: 0.68rem;
-		font-weight: 600;
-		color: var(--color-orchid);
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
-	}
-
 	.gallery__marquee-slide:hover img {
 		border-color: rgba(32, 191, 192, 0.45);
-	}
-
-	.gallery__marquee-slide:hover .gallery__marquee-url {
-		color: #42E6E2;
 	}
 
 	@keyframes gallery-marquee {
