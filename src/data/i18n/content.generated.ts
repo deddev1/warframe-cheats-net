@@ -74,7 +74,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				reviews: {
 					title: "Customer reviews",
-					subtitle: "More than 100 reviews from real customers",
+					subtitle: "1,000+ reviews from real customers",
 					outOf: "out of 5",
 					countLabel: "reviews",
 					verifiedLabel: "Verified customer",
