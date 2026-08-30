@@ -15,57 +15,57 @@ export type WarframeScreenshot = {
 /** Warframe cheat screenshots — SEO filenames under /images/. */
 export const warframeScreenshots = {
 	mainMenu: {
-		src: img('warframe-cheats-main-menu.png'),
+		src: img('warframe-cheats-main-menu.webp'),
 		alt: 'Warframe cheats main menu with ESP, aimbot, and radar toggles on Windows PC',
 		title: 'Warframe Cheats main menu',
 	},
 	espOverlay: {
-		src: img('warframe-esp-wallhack-overlay.png'),
+		src: img('warframe-esp-wallhack-overlay.webp'),
 		alt: 'Warframe ESP wallhack overlay highlighting Grineer and Corpus enemies through terrain',
 		title: 'Warframe ESP wallhack overlay',
 	},
 	espBoxes: {
-		src: img('warframe-esp-enemy-boxes.png'),
+		src: img('warframe-esp-enemy-boxes.webp'),
 		alt: 'Warframe ESP enemy bounding boxes with health bars in a Steel Path mission',
 		title: 'Warframe ESP enemy boxes',
 	},
 	aimbotMenu: {
-		src: img('warframe-aimbot-targeting-menu.png'),
+		src: img('warframe-aimbot-targeting-menu.webp'),
 		alt: 'Warframe aimbot settings menu with FOV, smoothing, and bone priority controls',
 		title: 'Warframe aimbot targeting menu',
 	},
 	radarMinimap: {
-		src: img('warframe-radar-hack-minimap.png'),
+		src: img('warframe-radar-hack-minimap.webp'),
 		alt: 'Warframe radar hack 2D minimap showing enemy positions outside the camera view',
 		title: 'Warframe radar hack minimap',
 	},
 	combatEsp: {
-		src: img('warframe-cheats-combat-esp.png'),
+		src: img('warframe-cheats-combat-esp.webp'),
 		alt: 'Warframe cheats combat ESP active during a Grineer heavy unit fight',
 		title: 'Warframe combat ESP',
 	},
 	steelPathEsp: {
-		src: img('warframe-steel-path-mission-esp.png'),
+		src: img('warframe-steel-path-mission-esp.webp'),
 		alt: 'Warframe Steel Path mission with ESP overlays on elite enemy units',
 		title: 'Warframe Steel Path ESP',
 	},
 	sortieAimbot: {
-		src: img('warframe-sortie-aimbot-combat.png'),
+		src: img('warframe-sortie-aimbot-combat.webp'),
 		alt: 'Warframe Sortie combat with aimbot lock on a Corpus heavy unit',
 		title: 'Warframe Sortie aimbot combat',
 	},
 	openWorldRadar: {
-		src: img('warframe-open-world-radar.png'),
+		src: img('warframe-open-world-radar.webp'),
 		alt: 'Warframe open world radar and ESP on Plains of Eidolon bounty route',
 		title: 'Warframe open world radar',
 	},
 	lootEsp: {
-		src: img('warframe-loot-pickup-esp.png'),
+		src: img('warframe-loot-pickup-esp.webp'),
 		alt: 'Warframe loot and pickup ESP markers for mods, resources, and health orbs',
 		title: 'Warframe loot pickup ESP',
 	},
 	settingsPanel: {
-		src: img('warframe-cheats-settings-panel.png'),
+		src: img('warframe-cheats-settings-panel.webp'),
 		alt: 'Warframe cheats settings panel with hotkeys, colours, and module toggles',
 		title: 'Warframe cheats settings panel',
 	},

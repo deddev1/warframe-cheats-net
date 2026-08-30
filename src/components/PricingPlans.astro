@@ -4,7 +4,7 @@ import { getUi } from '../data/i18n';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { productInfo, siteConfig } from '../data/site';
 import RelatedPages from './RelatedPages.astro';
-import { productThumbSizes } from '../lib/responsive-images';
+import { contentSrc, contentSrcSet, productMainSizes, productThumbSizes } from '../lib/responsive-images';
 
 interface Props {
 	locale?: LocaleCode;
@@ -19,7 +19,11 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 const lifetimePlan = productInfo.plans.find((plan) => plan.id === 'lifetime');
 const defaultPlan = monthlyPlan;
 
-const galleryImages = pricingGallery;
+const galleryImages = pricingGallery.map((image) => ({
+	...image,
+	displaySrc: contentSrc(image.src),
+	displaySrcSet: contentSrcSet(image.src),
+}));
 const mainImage = galleryImages[0];
 
 const featurePills = [
@@ -39,7 +43,9 @@ const featurePills = [
 	<div class="pricing-showcase__media">
 		<figure class="pricing-showcase__figure media-frame">
 			<img
-				src={mainImage.src}
+				src={mainImage.displaySrc}
+				srcset={mainImage.displaySrcSet}
+				sizes={productMainSizes}
 				alt={mainImage.alt}
 				width="1280"
 				height="720"
@@ -59,11 +65,13 @@ const featurePills = [
 						aria-label={image.alt}
 						aria-pressed={index === 0 ? 'true' : 'false'}
 						data-thumb
-						data-src={image.src}
+						data-src={image.displaySrc}
+						data-srcset={image.displaySrcSet ?? ''}
 						data-alt={image.alt}
 					>
 						<img
-							src={image.src}
+							src={image.displaySrc}
+							srcset={image.displaySrcSet}
 							alt={image.alt}
 							sizes={productThumbSizes}
 							width="320"
@@ -220,10 +228,12 @@ const featurePills = [
 			thumb.addEventListener('click', () => {
 				if (!(mainImage instanceof HTMLImageElement)) return;
 				const src = thumb.getAttribute('data-src');
+				const srcset = thumb.getAttribute('data-srcset');
 				const alt = thumb.getAttribute('data-alt');
 				if (src) mainImage.src = src;
+				if (srcset) mainImage.srcset = srcset;
+				else mainImage.removeAttribute('srcset');
 				if (alt) mainImage.alt = alt;
-				mainImage.removeAttribute('srcset');
 				imageThumbs.forEach((item) => {
 					const active = item === thumb;
 					item.classList.toggle('is-active', active);

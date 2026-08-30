@@ -72,7 +72,7 @@ export const heroSizes = '100vw';
 export const heroPreloadSrc = heroIsExternal ? heroImageSrc : heroResponsive[0].src;
 
 /** Responsive widths for below-fold content images. */
-export const contentWidths = [480, 960] as const;
+export const contentWidths = [480, 640, 960] as const;
 
 export const galleryFeaturedSizes = '(max-width: 560px) 100vw, (max-width: 900px) 90vw, 640px';
 export const galleryTileSizes = '(max-width: 560px) 100vw, (max-width: 900px) 45vw, 320px';

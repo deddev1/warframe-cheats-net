@@ -4,6 +4,7 @@ import { getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { productFeatureDetails, productInfo, siteConfig } from '../data/site';
+import { contentSrc, contentSrcSet, galleryTileSizes, productMainSizes } from '../lib/responsive-images';
 
 interface Props {
 	locale?: LocaleCode;
@@ -12,17 +13,25 @@ interface Props {
 const locale = Astro.props.locale ?? defaultLocale;
 const ui = getUi(locale);
 const pricingHref = getLocalizedPath('pricing', locale);
+
+const responsiveImage = (src: string) => ({
+	src: contentSrc(src),
+	srcset: contentSrcSet(src),
+});
 ---
 
 <div class="features-detail">
 	{
 		productFeatureDetails.map((section, index) => {
 			const shot = featureSectionImages[section.id];
+			const image = responsiveImage(shot.src);
 			return (
 				<article class="features-detail__section" id={`feature-${section.id}`}>
 					<figure class="features-detail__figure media-frame">
 						<img
-							src={shot.src}
+							src={image.src}
+							srcset={image.srcset}
+							sizes={productMainSizes}
 							alt={shot.alt}
 							width="960"
 							height="600"
@@ -59,19 +68,24 @@ const pricingHref = getLocalizedPath('pricing', locale);
 		<div class="features-detail__gallery-scroller" tabindex="0" aria-label="Scroll through Warframe screenshots">
 			<div class="features-detail__gallery-track">
 				{
-					featureGallery.map((image) => (
-						<figure class="features-detail__gallery-item media-frame">
-							<img
-								src={image.src}
-								alt={image.alt}
-								width="640"
-								height="400"
-								loading="lazy"
-								decoding="async"
-								draggable="false"
-							/>
-						</figure>
-					))
+				featureGallery.map((image) => {
+					const responsive = responsiveImage(image.src);
+					return (
+					<figure class="features-detail__gallery-item media-frame">
+						<img
+							src={responsive.src}
+							srcset={responsive.srcset}
+							sizes={galleryTileSizes}
+							alt={image.alt}
+							width="640"
+							height="400"
+							loading="lazy"
+							decoding="async"
+							draggable="false"
+						/>
+					</figure>
+					);
+				})
 				}
 			</div>
 		</div>

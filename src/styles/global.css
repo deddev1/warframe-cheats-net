@@ -309,9 +309,13 @@
 		z-index: 1;
 	}
 
+	.btn-buy::after,
+	.pricing-showcase__cart::after,
+	.features-detail__pricing-link::after {
+		display: none;
+	}
+
 	@media (hover: hover) and (pointer: fine) {
-		.btn-buy:hover::after,
-		.btn-buy:focus-visible::after,
 		.btn:hover::after,
 		.btn:focus-visible::after,
 		.cart-btn:hover::after,
@@ -322,10 +326,6 @@
 		.reviews-index__link-btn:focus-visible::after,
 		.review-detail__link-btn:hover::after,
 		.review-detail__link-btn:focus-visible::after,
-		.pricing-showcase__cart:hover::after,
-		.pricing-showcase__cart:focus-visible::after,
-		.features-detail__pricing-link:hover::after,
-		.features-detail__pricing-link:focus-visible::after,
 		.pricing-showcase__plan:hover::after,
 		.pricing-showcase__plan:focus-visible::after,
 		.alt-link:hover::after,

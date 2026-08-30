@@ -163,6 +163,8 @@ if (softwareNode) {
 		<meta name="author" content={siteConfig.name} />
 		<link rel="canonical" href={canonicalURL} />
 		{pageId && <I18nHead pageId={pageId} locale={locale} />}
+		<link rel="preconnect" href="https://boqgsoiwnpbisvrxulbe.supabase.co" crossorigin />
+		<link rel="dns-prefetch" href="https://boqgsoiwnpbisvrxulbe.supabase.co" />
 		<link rel="icon" href="/favicon.ico" sizes="any" />
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -179,7 +181,7 @@ if (softwareNode) {
 					rel="preload"
 					as="image"
 					href={lcpImage}
-					type="image/webp"
+					type={lcpImage.includes('.png') ? 'image/png' : 'image/webp'}
 					fetchpriority="high"
 				/>
 			)
@@ -236,8 +238,6 @@ if (softwareNode) {
 		<script is:inline src="/trusted-types-policy.js"></script>
 	</head>
 	<body>
-		<script is:inline defer src="/scripts/product-preview.js"></script>
-		<script is:inline defer src="/scripts/warframe-cheats-bg-video.js"></script>
 		{pageId && <LocaleSuggest currentLocale={locale} pageId={pageId} />}
 		<slot />
 	</body>
