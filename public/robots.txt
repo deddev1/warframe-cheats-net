@@ -2,7 +2,9 @@ User-agent: *
 Allow: /
 Allow: /images/
 
-# English is the official language. Primary sitemaps: index + English pages.
-# Non-English UI locales are convenience translations and are not listed in sitemaps.
+# Primary sitemap (lists all 23 sub-sitemaps: English + 21 locales + images):
+#   https://warframecheats.net/sitemap-index.xml
+# English-only shortcut:
+#   https://warframecheats.net/sitemap.xml
 Sitemap: https://warframecheats.net/sitemap-index.xml
 Sitemap: https://warframecheats.net/sitemap.xml

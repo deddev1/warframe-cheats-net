@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 /**
- * Validates built sitemaps match English-primary SEO policy.
+ * Validates built sitemaps match full multilingual SEO policy.
  * Run after `npm run build`: node scripts/validate-sitemaps.mjs
  *
- * Policy: English-only SEO — locale UI routes are noindex and excluded from sitemaps.
+ * Policy: English + 21 locale sitemaps + image sitemap, all populated.
  */
 import { access, readFile, readdir, stat } from 'node:fs/promises';
 import path from 'node:path';
@@ -44,8 +44,9 @@ const I18N_LOCALES = 21;
 const PAGES_PER_LOCALE = 25;
 const LOCALE_UI_PAGES = I18N_LOCALES * PAGES_PER_LOCALE;
 const TOTAL_HTML_PAGES = BUILT_ENGLISH_PAGES + LOCALE_UI_PAGES + EXTERNAL_GUIDE_HTML_PAGES;
-const HREFLANG_PER_URL = 2; // en + x-default
-const SITEMAP_INDEX_ENTRIES = 2; // English pages + image sitemap
+const HREFLANG_PER_URL = 23; // 22 locales + x-default
+const SITEMAP_INDEX_ENTRIES = 23; // English + 21 locales + images
+const I18N_SITEMAP_URLS = I18N_LOCALES * PAGES_PER_LOCALE;
 const IMAGE_SITEMAP_ENTRIES = 11; // all warframeImages.sitemap screenshots
 
 const ENGLISH_PATHS = [
@@ -158,7 +159,7 @@ async function validateSitemapImages(xml, label, bump) {
 }
 
 async function main() {
-	console.log('Validating sitemaps (English-only SEO policy)…\n');
+	console.log('Validating sitemaps (full multilingual policy)…\n');
 	let errors = 0;
 	const bump = () => {
 		errors += 1;
@@ -180,18 +181,18 @@ async function main() {
 	const imageLocs = extractLocs(sitemapImages);
 	const indexLocs = extractLocs(sitemapIndex);
 
-	// Per-locale sitemap files exist but must be empty under English-only policy.
+	// Per-locale sitemap files must each list all localized marketing pages.
 	for (const locale of I18N_LOCALE_CODES) {
 		const file = path.join(DIST, `sitemap-${locale}.xml`);
 		const xml = await readFile(file, 'utf8');
 		const locs = extractLocs(xml);
-		if (locs.length !== 0) {
-			fail(`sitemap-${locale}.xml: expected 0 URLs (English-only), got ${locs.length}`);
+		if (locs.length !== PAGES_PER_LOCALE) {
+			fail(`sitemap-${locale}.xml: expected ${PAGES_PER_LOCALE} URLs, got ${locs.length}`);
 			bump();
 		}
 	}
 	if (errors === 0) {
-		ok('All 21 locale sitemaps are empty (English-only SEO policy)');
+		ok(`All 21 locale sitemaps have ${PAGES_PER_LOCALE} URLs each`);
 	}
 
 	if (enLocs.length !== SITEMAP_ENGLISH_PAGES) {
@@ -199,10 +200,10 @@ async function main() {
 		bump();
 	} else ok(`sitemap.xml has ${SITEMAP_ENGLISH_PAGES} English URLs`);
 
-	if (i18nLocs.length !== 0) {
-		fail(`sitemap-i18n.xml: expected 0 URLs (English-only), got ${i18nLocs.length}`);
+	if (i18nLocs.length !== I18N_SITEMAP_URLS) {
+		fail(`sitemap-i18n.xml: expected ${I18N_SITEMAP_URLS} URLs, got ${i18nLocs.length}`);
 		bump();
-	} else ok('sitemap-i18n.xml is empty (English-only SEO policy)');
+	} else ok(`sitemap-i18n.xml has ${I18N_SITEMAP_URLS} localized URLs`);
 
 	if (imageLocs.length !== IMAGE_SITEMAP_ENTRIES) {
 		fail(`sitemap-images.xml: expected ${IMAGE_SITEMAP_ENTRIES} image host URLs, got ${imageLocs.length}`);
@@ -241,15 +242,15 @@ async function main() {
 	} else if (!homeLangs.includes('en') || !homeLangs.includes('x-default')) {
 		fail(`Homepage hreflang must include en and x-default, got: ${homeLangs.join(', ')}`);
 		bump();
-	} else if (homeLangs.includes('fr')) {
-		fail(`Homepage hreflang must not include locale peers under English-only policy, got: ${homeLangs.join(', ')}`);
+	} else if (!homeLangs.includes('fr') || !homeLangs.includes('uk')) {
+		fail(`Homepage hreflang must include locale peers (fr, uk, …), got: ${homeLangs.join(', ')}`);
 		bump();
-	} else ok('Homepage has English-only hreflang (en + x-default)');
+	} else ok(`Homepage has full hreflang cluster (${HREFLANG_PER_URL} links)`);
 
 	if (indexLocs.length !== SITEMAP_INDEX_ENTRIES) {
 		fail(`sitemap-index.xml: expected ${SITEMAP_INDEX_ENTRIES} sub-sitemaps, got ${indexLocs.length}`);
 		bump();
-	} else ok(`sitemap-index.xml lists ${SITEMAP_INDEX_ENTRIES} sub-sitemaps (EN + images)`);
+	} else ok(`sitemap-index.xml lists ${SITEMAP_INDEX_ENTRIES} sub-sitemaps (EN + locales + images)`);
 
 	if (!indexLocs.includes(`${SITE}/sitemap.xml`)) {
 		fail('sitemap-index.xml missing sitemap.xml');
@@ -261,12 +262,12 @@ async function main() {
 	}
 	for (const locale of I18N_LOCALE_CODES) {
 		const loc = `${SITE}/sitemap-${locale}.xml`;
-		if (indexLocs.includes(loc)) {
-			fail(`sitemap-index.xml must not list locale sitemap under English-only policy: sitemap-${locale}.xml`);
+		if (!indexLocs.includes(loc)) {
+			fail(`sitemap-index.xml missing locale sitemap: sitemap-${locale}.xml`);
 			bump();
 		}
 	}
-	if (errors === 0) ok('sitemap-index.xml lists English and image sitemaps only');
+	if (errors === 0) ok('sitemap-index.xml lists English, all locale, and image sitemaps');
 
 	for (const sub of ['sitemap-index.xml', 'sitemap.xml']) {
 		if (!robots.includes(`${SITE}/${sub}`)) {
