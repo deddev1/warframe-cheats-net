@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 import { absolutePageUrl, pageSitemapEntries } from '../data/page-sitemap';
 import { getBlogSitemapEntries } from '../data/blog/helpers';
+import { getGuidesSitemapEntries } from '../data/guides/helpers';
 import { getReviewSitemapEntries } from '../data/reviews';
 import { hreflangLinksXml, resolvePageIdFromPath } from '../data/i18n/routing';
 import { escapeXml, renderUrlsetXml, sitemapResponseHeaders } from '../data/sitemap-xml';
@@ -20,8 +21,9 @@ export const GET: APIRoute = () => {
 		}));
 
 	const reviewEntries = getReviewSitemapEntries();
+	const guidesEntries = getGuidesSitemapEntries();
 
-	const urls = [...pageSitemapEntries, ...blogEntries, ...reviewEntries].map((entry) => {
+	const urls = [...pageSitemapEntries, ...blogEntries, ...reviewEntries, ...guidesEntries].map((entry) => {
 		const images = entry.images
 			.map(
 				(image) => `    <image:image>
