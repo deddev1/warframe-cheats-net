@@ -77,53 +77,53 @@ export const productInfo = {
 /** Quick-scan feature list for pricing page — full explanations live on /features/. */
 export const productFeatureCategories = [
 	{
-		title: 'Aimbot Options',
+		title: 'Combat assist',
 		columns: 1 as const,
 		items: [
-			'Visibility check',
-			'Custom FOV',
-			'Draw FOV circle',
-			'Draw target line',
-			'Custom aim key',
-			'Aim mode selection',
-			'Aim speed control',
-			'Target filter',
-			'Weak-spot priority',
-			'Smoothness slider',
+			'Line-of-sight visibility check',
+			'Custom FOV arc',
+			'FOV circle overlay',
+			'Target snapline',
+			'Custom aim hotkey',
+			'Hold & toggle aim modes',
+			'Aim smoothing slider',
+			'Enemy type filter',
+			'Weak-point targeting',
+			'Per-weapon profiles',
 		],
 	},
 	{
-		title: 'Visual Options',
+		title: 'ESP & overlays',
 		columns: 1 as const,
 		items: [
-			'Warframe ESP',
-			'Enemy outline ESP',
-			'Skeleton boxes',
-			'Head circle marker',
-			'View direction line',
-			'Name tags',
+			'Grineer, Corpus & Infested ESP',
+			'Outlines through terrain',
+			'Enemy bounding boxes',
+			'Weak-point markers',
+			'Enemy facing indicator',
+			'Unit name labels',
 			'Distance readout',
-			'Max distance filter',
-			'Health pickup ESP',
-			'Sentient & boss ESP',
+			'ESP distance filter',
+			'Health orb & pickup ESP',
+			'Boss, lich & Sentient ESP',
 		],
 	},
 	{
-		title: 'Misc Options',
+		title: 'Radar & mission tools',
 		columns: 2 as const,
 		items: [
-			'2D radar overlay',
-			'Spawn route cues',
-			'In-client toggles',
+			'2D off-screen radar',
+			'Defense wave direction cues',
+			'In-mission hotkey toggles',
 			'Hotkey profiles',
 			'Controller support',
-			'Anti-cheat update notes',
-			'Mod menu access',
-			'Loot & resource markers',
-			'Ability cooldown ESP',
+			'Patch maintenance status',
+			'In-game mod menu',
+			'Resource & locker markers',
+			'Ability cooldown tracking',
 			'Custom crosshair',
-			'Team colour coding',
-			'Steel Path presets',
+			'Squad colour coding',
+			'Steel Path & Sortie presets',
 		],
 	},
 ] as const;
@@ -132,116 +132,126 @@ export const productFeatureCategories = [
 export const productFeatureDetails = [
 	{
 		id: 'aimbot',
-		title: 'Aimbot Options',
+		title: 'Combat assist',
 		summary:
 			'Configurable aim assistance for primaries, secondaries, and melee — tuned for Steel Path, Sorties, and open world missions.',
 		items: [
 			{
-				name: 'Visibility check',
-				description: 'Only locks onto targets your Warframe can actually hit — reduces obvious snaps through walls.',
+				name: 'Line-of-sight visibility check',
+				description:
+					'Only locks onto enemies your Warframe can actually hit — reduces obvious snaps through walls and ability barriers.',
 			},
 			{
-				name: 'Custom FOV',
-				description: 'Set how wide the aimbot scans for targets so close fights and sniper lanes both feel natural.',
+				name: 'Custom FOV arc',
+				description:
+					'Set how wide the aimbot scans for Grineer, Corpus, and Infested units so close fights and sniper lanes both feel natural.',
 			},
 			{
-				name: 'Draw FOV circle',
-				description: 'Optional on-screen ring showing the active aimbot radius for quick tuning.',
+				name: 'FOV circle overlay',
+				description: 'Optional on-screen ring showing the active aimbot radius for quick tuning in Sorties and Steel Path.',
 			},
 			{
-				name: 'Draw target line',
-				description: 'Snapline from crosshair to the current lock target — useful for verifying weak-spot priority.',
+				name: 'Target snapline',
+				description:
+					'Snapline from crosshair to the current lock — useful for verifying weak-point priority on heavy units and Sentients.',
 			},
 			{
-				name: 'Custom aim key',
-				description: 'Hold or toggle aimbot with a key you choose — works alongside controller bindings.',
+				name: 'Custom aim hotkey',
+				description: 'Hold or toggle aimbot with a key you choose — works alongside controller bindings on Windows PC.',
 			},
 			{
-				name: 'Aim mode selection',
+				name: 'Hold & toggle aim modes',
 				description: 'Switch between hold-to-aim, toggle, and always-on profiles per weapon class.',
 			},
 			{
-				name: 'Aim speed control',
-				description: 'Control how fast the reticle moves to the target — higher smoothness looks more human.',
+				name: 'Aim smoothing slider',
+				description: 'Control how fast the reticle moves to the target — higher smoothness looks more natural in public missions.',
 			},
 			{
-				name: 'Target filter',
-				description: 'Prioritise closest enemy, lowest health, or heavy units like Sentients and bosses.',
+				name: 'Enemy type filter',
+				description:
+					'Prioritise closest enemy, lowest health, heavy units, or bosses like liches, sisters, and archons.',
 			},
 			{
-				name: 'Weak-spot priority',
-				description: 'Bias locks toward head and weak-point hitboxes on Grineer, Corpus, and Infested units.',
+				name: 'Weak-point targeting',
+				description:
+					'Bias locks toward weak-point hitboxes on Grineer, Corpus, Infested, and Sentient units.',
 			},
 			{
-				name: 'Smoothness slider',
-				description: 'Fine-tune aim glide so flicks and tracking match your sensitivity and playstyle.',
+				name: 'Per-weapon profiles',
+				description:
+					'Save separate aim settings for rifles, shotguns, snipers, and melee — swap mid-mission without retuning.',
 			},
 		],
 	},
 	{
 		id: 'visual',
-		title: 'Visual Options',
+		title: 'ESP & overlays',
 		summary:
 			'ESP and wallhack overlays that surface enemies, loot, and mission threats through terrain and ability effects.',
 		items: [
 			{
-				name: 'Warframe ESP',
-				description: 'Highlights Grineer, Corpus, and Sentient units with boxes, health bars, and distance readouts.',
+				name: 'Grineer, Corpus & Infested ESP',
+				description:
+					'Highlights enemy factions with boxes, health bars, and distance readouts across the Star Chart.',
 			},
 			{
-				name: 'Enemy outline ESP',
-				description: 'Clean outlines on Grineer, Corpus, Infested, and Sentient units — even through smoke and cover.',
+				name: 'Outlines through terrain',
+				description:
+					'Clean outlines on Grineer, Corpus, Infested, and Sentient units — even through smoke, cover, and ability effects.',
 			},
 			{
-				name: 'Skeleton boxes',
-				description: 'Bone-structure boxes for precise weak-spot reads during fast movement and parkour.',
+				name: 'Enemy bounding boxes',
+				description: 'Box ESP sized to each unit type for precise reads during parkour combat and open world bounties.',
 			},
 			{
-				name: 'Head circle marker',
-				description: 'Circle the head hitbox for melee finishers and precision rifle shots.',
+				name: 'Weak-point markers',
+				description: 'Mark weak-point hitboxes for precision shots on heavy units, demolysts, and boss phases.',
 			},
 			{
-				name: 'View direction line',
-				description: 'See which way an enemy is facing before you push a corridor or capture point.',
+				name: 'Enemy facing indicator',
+				description: 'See which way an enemy is facing before you push a corridor or capture a defense point.',
 			},
 			{
-				name: 'Name tags',
-				description: 'Display player and NPC names above ESP boxes during squad and public missions.',
+				name: 'Unit name labels',
+				description: 'Display unit names above ESP boxes — Grineer lancers, Corpus MOAs, Infested runners, and more.',
 			},
 			{
 				name: 'Distance readout',
 				description: 'Meters-to-target on every box so you know when to swap weapons or abilities.',
 			},
 			{
-				name: 'Max distance filter',
-				description: 'Hide far-away clutter — keep overlays readable in open worlds and defense waves.',
+				name: 'ESP distance filter',
+				description:
+					'Hide far-away clutter — keep overlays readable in Plains of Eidolon, Orb Vallis, and defense waves.',
 			},
 			{
-				name: 'Health pickup ESP',
-				description: 'Mark health orbs and pickups so you can sustain during long Steel Path runs.',
+				name: 'Health orb & pickup ESP',
+				description: 'Mark health orbs, energy pickups, and ammo during long Steel Path and survival runs.',
 			},
 			{
-				name: 'Sentient & boss ESP',
-				description: 'Dedicated styling for liches, sisters, archons, and Sentient fragments in endgame content.',
+				name: 'Boss, lich & Sentient ESP',
+				description:
+					'Dedicated styling for liches, sisters of parvos, archons, and Sentient fragments in endgame content.',
 			},
 		],
 	},
 	{
 		id: 'misc',
-		title: 'Misc Options',
+		title: 'Radar & mission tools',
 		summary:
 			'Radar, menu toggles, controller support, and quality-of-life tools bundled with every license.',
 		items: [
 			{
-				name: '2D radar overlay',
-				description: 'Minimap-style blips for enemies outside your camera — great for defense and survival.',
+				name: '2D off-screen radar',
+				description: 'Minimap-style blips for enemies outside your camera — great for defense, survival, and interception.',
 			},
 			{
-				name: 'Spawn route cues',
-				description: 'Directional hints when new waves or enemies rotate toward your position.',
+				name: 'Defense wave direction cues',
+				description: 'Directional hints when new enemy waves push toward your defense or survival objective.',
 			},
 			{
-				name: 'In-client toggles',
+				name: 'In-mission hotkey toggles',
 				description: 'Flip ESP, radar, and aimbot on or off mid-mission without alt-tabbing.',
 			},
 			{
@@ -253,32 +263,33 @@ export const productFeatureDetails = [
 				description: 'Aimbot and menu navigation tested with Xbox and PlayStation pads on Windows.',
 			},
 			{
-				name: 'Anti-cheat update notes',
-				description: 'Maintenance status published on Updates after Digital Extremes patches.',
+				name: 'Patch maintenance status',
+				description: 'Maintenance status published on Updates after Digital Extremes and Warframe patches.',
 			},
 			{
-				name: 'Mod menu access',
+				name: 'In-game mod menu',
 				description: 'Full in-game menu for colours, categories, and per-module enable/disable.',
 			},
 			{
-				name: 'Loot & resource markers',
-				description: 'Highlight resources, mods, and containers during farm and relic runs.',
+				name: 'Resource & locker markers',
+				description: 'Highlight resources, mods, and lockers during farm runs, relic missions, and open world bounties.',
 			},
 			{
-				name: 'Ability cooldown ESP',
-				description: 'Track enemy ability timers and your own cooldowns during complex boss fights.',
+				name: 'Ability cooldown tracking',
+				description: 'Track enemy ability timers and your own cooldowns during complex boss and lich fights.',
 			},
 			{
 				name: 'Custom crosshair',
 				description: 'Replace the default reticle with sizes and colours that match your ESP theme.',
 			},
 			{
-				name: 'Team colour coding',
-				description: 'Separate colours for squad, allies, and enemies to avoid friendly fire confusion.',
+				name: 'Squad colour coding',
+				description: 'Separate colours for your squad Warframes, allies, and enemies in public missions.',
 			},
 			{
-				name: 'Steel Path presets',
-				description: 'One-click ESP/radar profiles tuned for Steel Path enemy density and level scaling.',
+				name: 'Steel Path & Sortie presets',
+				description:
+					'One-click ESP and radar profiles tuned for Steel Path enemy density and Sortie modifier stacks.',
 			},
 		],
 	},
