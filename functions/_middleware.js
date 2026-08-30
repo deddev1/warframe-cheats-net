@@ -24,10 +24,24 @@ const LEGACY_HOSTS = new Set([
 	'www.fortnitecheats.com',
 ]);
 
+// Locale sitemap files are empty stubs; redirect to the English sitemap.
+const LOCALE_SITEMAP_CODES = [
+	'es', 'fr', 'de', 'pt', 'it', 'nl', 'pl', 'ru', 'tr',
+	'ar', 'ja', 'ko', 'zh', 'hi', 'id', 'th', 'vi', 'uk', 'cs', 'ro', 'sv',
+];
+
+/** @type {Record<string, string>} */
+const SITEMAP_REDIRECTS = Object.fromEntries([
+	['/sitemap-0.xml', '/sitemap.xml'],
+	['/sitemap-en.xml', '/sitemap.xml'],
+	['/sitemap-i18n.xml', '/sitemap.xml'],
+	...LOCALE_SITEMAP_CODES.map((locale) => [`/sitemap-${locale}.xml`, '/sitemap.xml']),
+]);
+
 // Keep in sync with public/_redirects (which preserves query strings by default).
 // All targets are final canonical URLs — no chains/loops.
 const PATH_REDIRECTS = {
-	'/sitemap-0.xml': '/sitemap.xml',
+	...SITEMAP_REDIRECTS,
 	'/fortnite-cheats': '/',
 	'/fortnite-cheats/': '/',
 	'/fortnite-hacks': '/warframe-cheats/',

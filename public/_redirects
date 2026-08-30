@@ -2,6 +2,29 @@
 # Domain redirects (www, legacy hosts, http→https) are handled in middleware.
 
 /sitemap-0.xml /sitemap.xml 301
+/sitemap-en.xml /sitemap.xml 301
+/sitemap-i18n.xml /sitemap.xml 301
+/sitemap-es.xml /sitemap.xml 301
+/sitemap-fr.xml /sitemap.xml 301
+/sitemap-de.xml /sitemap.xml 301
+/sitemap-pt.xml /sitemap.xml 301
+/sitemap-it.xml /sitemap.xml 301
+/sitemap-nl.xml /sitemap.xml 301
+/sitemap-pl.xml /sitemap.xml 301
+/sitemap-ru.xml /sitemap.xml 301
+/sitemap-tr.xml /sitemap.xml 301
+/sitemap-ar.xml /sitemap.xml 301
+/sitemap-ja.xml /sitemap.xml 301
+/sitemap-ko.xml /sitemap.xml 301
+/sitemap-zh.xml /sitemap.xml 301
+/sitemap-hi.xml /sitemap.xml 301
+/sitemap-id.xml /sitemap.xml 301
+/sitemap-th.xml /sitemap.xml 301
+/sitemap-vi.xml /sitemap.xml 301
+/sitemap-uk.xml /sitemap.xml 301
+/sitemap-cs.xml /sitemap.xml 301
+/sitemap-ro.xml /sitemap.xml 301
+/sitemap-sv.xml /sitemap.xml 301
 
 /fortnite-cheats / 301
 /fortnite-cheats/ / 301
