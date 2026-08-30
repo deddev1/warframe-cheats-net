@@ -200,12 +200,18 @@ const marqueeSlides = [...slides, ...slides];
 		border: 1px solid rgba(168, 85, 247, 0.16);
 		background: rgba(22, 18, 32, 0.75);
 		text-decoration: none;
-		transition: border-color 0.2s ease, background 0.2s ease;
+		transition:
+			border-color 0.2s ease,
+			background 0.2s ease,
+			transform 0.2s ease,
+			box-shadow 0.2s ease;
 	}
 
 	.gallery__box:hover {
 		border-color: rgba(192, 132, 252, 0.38);
 		background: rgba(30, 24, 44, 0.85);
+		transform: translateY(-3px);
+		box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
 	}
 
 	.gallery__box strong {

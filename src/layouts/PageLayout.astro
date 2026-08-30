@@ -29,6 +29,7 @@ interface Props {
 	locale?: import('../data/i18n/locales').LocaleCode;
 	pageId?: import('../data/i18n/content.generated').PageId;
 	extraGraph?: Record<string, unknown>[];
+	contentWidth?: 'narrow' | 'full';
 }
 
 const {
@@ -49,6 +50,7 @@ const {
 	locale = defaultLocale,
 	pageId: pageIdProp,
 	extraGraph = [],
+	contentWidth = 'narrow',
 } = Astro.props;
 
 function resolvePageId(path: string): PageId | undefined {
@@ -198,7 +200,7 @@ const lcpImageSizes = isHeroLcp ? heroSizes : undefined;
 		}
 
 		<div class="shell page__wrap">
-			<article class="article">
+			<article class:list={['article', contentWidth === 'full' && 'article--full']}>
 				<slot />
 			</article>
 
@@ -377,16 +379,21 @@ const lcpImageSizes = isHeroLcp ? heroSizes : undefined;
 	.page__wrap {
 		display: grid;
 		gap: 2rem;
-		justify-items: center;
 	}
 
 	.article {
-		width: min(100%, 760px);
+		width: 100%;
+		max-width: 760px;
+		margin-inline: auto;
 		display: grid;
 		gap: 1rem;
 		text-align: left;
 		color: #d8cee9;
 		line-height: 1.7;
+	}
+
+	.article--full {
+		max-width: var(--page-max);
 	}
 
 	.article :global(.card-panel) {
@@ -564,7 +571,9 @@ const lcpImageSizes = isHeroLcp ? heroSizes : undefined;
 	}
 
 	.gallery-block {
-		width: min(100%, 960px);
+		width: 100%;
+		max-width: var(--page-max);
+		margin-inline: auto;
 		display: grid;
 		gap: 1rem;
 		padding-top: 0.5rem;

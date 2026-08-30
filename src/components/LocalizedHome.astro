@@ -138,49 +138,26 @@ const extraGraph: Record<string, unknown>[] =
 		overflow-x: clip;
 	}
 
-	.site__section--reviews {
-		padding-top: 0.25rem;
-		padding-bottom: 0.5rem;
-		content-visibility: auto;
-		contain-intrinsic-size: 1px 720px;
-	}
-
-	.site__section--faq {
-		padding-top: 0.15rem;
-		padding-bottom: 0.5rem;
-		content-visibility: auto;
-		contain-intrinsic-size: 1px 520px;
-	}
-
-	.site__section--explore {
-		padding-top: 0.15rem;
-		padding-bottom: 0.5rem;
-		content-visibility: auto;
-		contain-intrinsic-size: 1px 420px;
-	}
-
-	.site__section--trust {
-		padding-block: 0.35rem 0.15rem;
-		content-visibility: auto;
-		contain-intrinsic-size: 1px 120px;
-	}
-
-	.site__section--store,
 	.site__section--reviews,
 	.site__section--faq,
+	.site__section--explore,
+	.site__section--store,
 	.site__section--gallery {
 		content-visibility: auto;
 		contain-intrinsic-size: 1px 720px;
 	}
 
-	@media (max-width: 760px) {
-		.site__section--store {
-			contain-intrinsic-size: 1px 900px;
-		}
-	}
-
 	.site__section {
 		padding-block: var(--section-space);
+	}
+
+	.site__section--trust {
+		padding-block: 0.5rem 0.35rem;
+	}
+
+	.site__section--gallery {
+		padding-top: 0.5rem;
+		padding-bottom: 1.25rem;
 	}
 
 	.store-stack {
@@ -188,9 +165,10 @@ const extraGraph: Record<string, unknown>[] =
 		gap: 1.25rem;
 	}
 
-	.site__section--gallery {
-		padding-top: 0.35rem;
-		padding-bottom: 1.25rem;
+	@media (max-width: 760px) {
+		.site__section--store {
+			contain-intrinsic-size: 1px 900px;
+		}
 	}
 
 	@media (max-width: 768px) {

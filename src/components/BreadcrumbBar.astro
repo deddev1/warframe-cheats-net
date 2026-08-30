@@ -29,7 +29,7 @@ const updatesHref = getLocalizedPath('updates', locale);
 ---
 
 <nav class="crumb-bar" aria-label="Breadcrumb">
-	<div class="crumb-bar__inner">
+	<div class="shell crumb-bar__inner">
 		<ol class="crumb-bar__list">
 			{
 				items.map((item, index) => (
@@ -87,8 +87,6 @@ const updatesHref = getLocalizedPath('updates', locale);
 		align-items: center;
 		justify-content: space-between;
 		gap: 1rem;
-		width: min(100% - (var(--page-gutter) * 2), var(--page-max));
-		margin: 0 auto;
 		padding: 0.85rem 0;
 	}
 

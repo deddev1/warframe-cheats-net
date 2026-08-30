@@ -8,10 +8,12 @@ import RelatedPages from './RelatedPages.astro';
 interface Props {
 	locale?: LocaleCode;
 	showFullLink?: boolean;
+	showRelatedPages?: boolean;
 }
 
 const locale = Astro.props.locale ?? defaultLocale;
 const showFullLink = Astro.props.showFullLink ?? true;
+const showRelatedPages = Astro.props.showRelatedPages ?? true;
 const ui = getUi(locale);
 const featuresHref = getLocalizedPath('features', locale);
 const espHref = getLocalizedPath('warframe-esp', locale);
@@ -94,7 +96,9 @@ const pricingHref = getLocalizedPath('pricing', locale);
 		)
 	}
 
-	<RelatedPages locale={locale} />
+	{
+		showRelatedPages && <RelatedPages locale={locale} />
+	}
 </section>
 
 <style>
@@ -180,6 +184,13 @@ const pricingHref = getLocalizedPath('pricing', locale);
 		display: grid;
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 		gap: 0.85rem;
+		align-items: stretch;
+	}
+
+	@media (max-width: 1100px) {
+		.pricing-features__grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
 	}
 
 	.pricing-features__card {
@@ -187,6 +198,18 @@ const pricingHref = getLocalizedPath('pricing', locale);
 		border-radius: 0.85rem;
 		border: 1px solid rgba(168, 85, 247, 0.18);
 		background: rgba(22, 18, 30, 0.95);
+		transition:
+			transform 0.22s ease,
+			border-color 0.22s ease,
+			box-shadow 0.22s ease;
+	}
+
+	@media (hover: hover) and (pointer: fine) {
+		.pricing-features__card:hover {
+			transform: translateY(-4px);
+			border-color: rgba(192, 132, 252, 0.42);
+			box-shadow: 0 14px 32px rgba(0, 0, 0, 0.28);
+		}
 	}
 
 	.pricing-features__card-title {

@@ -78,6 +78,7 @@ const ctaSecondaryHref = page.ctaSecondaryHref
 	showGallery={pageId !== 'pricing' && pageId !== 'features'}
 	hideBanner={pageId === 'pricing' || pageId === 'features'}
 	extraGraph={extraGraph}
+	contentWidth={pageId === 'pricing' || pageId === 'features' ? 'full' : 'narrow'}
 	ctaPrimary={{ href: siteConfig.checkoutUrl, label: page.ctaPrimary }}
 	ctaSecondary={
 		page.ctaSecondary
@@ -86,8 +87,10 @@ const ctaSecondaryHref = page.ctaSecondaryHref
 	}
 >
 	{pageId === 'pricing' && <PricingPlans locale={locale} />}
-	{pageId === 'pricing' && <PricingFeatureList locale={locale} />}
-	{pageId === 'features' && <PricingFeatureList locale={locale} showFullLink={false} />}
+	{pageId === 'pricing' && <PricingFeatureList locale={locale} showRelatedPages={false} />}
+	{pageId === 'features' && (
+		<PricingFeatureList locale={locale} showFullLink={false} showRelatedPages={false} />
+	)}
 	{pageId === 'features' && <FeaturesDetail locale={locale} />}
 	{
 		!(pageId === 'pricing' || pageId === 'features') &&
