@@ -2,9 +2,8 @@ import { siteConfig } from './site';
 
 const img = (name: string) => `/images/${name}`;
 
-/** Homepage hero — hosted on Supabase CDN. */
-export const warframeHeroImage =
-	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/warframe/615e3254-d088-46f6-9a61-d3f933199cf9.png';
+/** Homepage hero — self-hosted for sitemap and LCP. */
+export const warframeHeroImage = '/images/warframe-cheats-hero.webp';
 
 export type WarframeScreenshot = {
 	src: string;
@@ -148,5 +147,9 @@ export const warframeImages = {
 		{ src: s.aimbotMenu.src, title: 'Warframe aimbot menu', caption: s.aimbotMenu.alt },
 		{ src: s.radarMinimap.src, title: 'Warframe radar hack', caption: s.radarMinimap.alt },
 		{ src: s.combatEsp.src, title: 'Warframe Steel Path mission cheats', caption: s.combatEsp.alt },
+		{ src: s.steelPathEsp.src, title: 'Warframe Steel Path ESP', caption: s.steelPathEsp.alt },
+		{ src: s.openWorldRadar.src, title: 'Warframe open world radar', caption: s.openWorldRadar.alt },
+		{ src: s.lootEsp.src, title: 'Warframe loot pickup ESP', caption: s.lootEsp.alt },
+		{ src: s.settingsPanel.src, title: 'Warframe cheats settings panel', caption: s.settingsPanel.alt },
 	],
 } as const;

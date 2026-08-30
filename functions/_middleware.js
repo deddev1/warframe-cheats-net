@@ -44,8 +44,6 @@ const PATH_REDIRECTS = {
 	'/war-thunder-hacks/': '/warframe-cheats/',
 	'/war-thunder-hacks': '/warframe-cheats/',
 	'/sitemap-0.xml': '/sitemap.xml',
-	'/warframe-cheats': '/',
-	'/warframe-cheats/': '/',
 	'/fortnite-cheats': '/',
 	'/fortnite-cheats/': '/',
 	'/fortnite-hacks': '/warframe-cheats/',

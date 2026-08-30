@@ -57,8 +57,8 @@ const ogImageType = ogImage.endsWith('.webp') ? 'image/webp' : 'image/png';
 const ogImageWidth = ogImageIsLogo ? '512' : '1920';
 const ogImageHeight = ogImageIsLogo ? '512' : '1080';
 const twitterCard = ogImageIsLogo ? 'summary' : 'summary_large_image';
-/** Thin locale UI routes are fully indexable with locale-specific canonicals. */
-const localeNoindex = noindex;
+/** Non-English locale UI routes are noindex; canonical always points to English. */
+const localeNoindex = noindex || locale !== defaultLocale;
 const robots = localeNoindex
 	? 'noindex, nofollow'
 	: 'index, follow, max-image-preview:large';
@@ -163,8 +163,6 @@ if (softwareNode) {
 		<meta name="author" content={siteConfig.name} />
 		<link rel="canonical" href={canonicalURL} />
 		{pageId && <I18nHead pageId={pageId} locale={locale} />}
-		<link rel="preconnect" href="https://boqgsoiwnpbisvrxulbe.supabase.co" crossorigin />
-		<link rel="dns-prefetch" href="https://boqgsoiwnpbisvrxulbe.supabase.co" />
 		<link rel="icon" href="/favicon.ico" sizes="any" />
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />

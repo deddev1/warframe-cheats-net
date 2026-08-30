@@ -6,7 +6,7 @@ import { getLocaleRedirectTarget } from './lib/locale-redirect.js';
  * Applies security headers and locale auto-detection redirects during dev/preview.
  */
 export const onRequest = defineMiddleware(async (context, next) => {
-	const { request, url } = context;
+	const { request, url, isPrerendered } = context;
 
 	if (request.method === 'GET' || request.method === 'HEAD') {
 		const isLocalHost =
@@ -14,7 +14,8 @@ export const onRequest = defineMiddleware(async (context, next) => {
 			url.hostname === '127.0.0.1' ||
 			url.hostname === '0.0.0.0';
 
-		if (!import.meta.env.DEV || !isLocalHost) {
+		/** Skip during static prerender — no Accept-Language, so every locale would redirect to en. */
+		if (!isPrerendered && (!import.meta.env.DEV || !isLocalHost)) {
 			const redirectTarget = getLocaleRedirectTarget(url.pathname, url.search, {
 				acceptLanguage: request.headers.get('accept-language'),
 				cookie: request.headers.get('cookie'),

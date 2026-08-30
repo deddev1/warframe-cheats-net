@@ -21,9 +21,9 @@ export const pageFaqClusters: Partial<
 	],
 	'warframe-esp': [
 		{
-			question: 'What is an Warframe wallhack?',
+			question: 'What is a Warframe wallhack?',
 			answer:
-				'An Warframe wallhack is an ESP overlay that shows enemy units and Sentients, heavy attacks, and loot through cover. Warframe Cheats wallhack includes distance readouts, team colours, and toggleable categories for Steel Path missions and open world missions.',
+				'A Warframe wallhack is an ESP overlay that shows enemy units and Sentients, heavy attacks, and loot through cover. Warframe Cheats wallhack includes distance readouts, team colours, and toggleable categories for Steel Path missions and open world missions.',
 		},
 		{
 			question: 'Does Warframe Cheats include a radar hack?',
@@ -94,6 +94,15 @@ import type { PageId } from './i18n/routing';
 
 const priceValidUntil = '2027-12-31';
 
+/** Plain text for FAQ rich results — schema.org Answer.text must not contain HTML. */
+function stripHtml(html: string): string {
+	return html
+		.replace(/<[^>]+>/g, '')
+		.replace(/&nbsp;/g, ' ')
+		.replace(/\s+/g, ' ')
+		.trim();
+}
+
 export function buildAggregateOffer(canonicalURL: string) {
 	return {
 		'@type': 'AggregateOffer',
@@ -140,7 +149,7 @@ export function buildFaqSchemaNode(
 		mainEntity: faqs.map((item) => ({
 			'@type': 'Question',
 			name: item.question,
-			acceptedAnswer: { '@type': 'Answer', text: item.answer },
+			acceptedAnswer: { '@type': 'Answer', text: stripHtml(item.answer) },
 		})),
 	};
 }

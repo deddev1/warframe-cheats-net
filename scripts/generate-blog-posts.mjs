@@ -88,7 +88,7 @@ const sources = [
 		category: 'Skin Leaks & Cosmetics',
 		featured: false,
 		slug: 'chapter-7-season-3-skin-leaks-Platinum',
-		title: 'major update Season 3 Skin Leaks: Platinum Worth Buying',
+		title: 'Major Update Season 3 Skin Leaks: Platinum Worth Buying',
 		metaDescription:
 			'major update Season 3 Warframe skin leaks and shop advice — which cosmetics are worth Platinum before Season 4. Save smart and skip FOMO bundles today.',
 		h1: 'major update Season 3 Skin Leaks Worth Your Platinum',
@@ -175,7 +175,7 @@ const sources = [
 		category: 'co-op missions',
 		featured: true,
 		slug: 'warframe-cheats-complete-guide-2026',
-		title: 'co-op missions Meta Broken: 5 Aggressive Pro Strategies',
+		title: 'Co-op Missions Meta Broken: 5 Aggressive Pro Strategies',
 		metaDescription:
 			'Break the passive co-op missions meta with 5 aggressive Warframe strategies — timings, damage windows, and fight paths that win Steel Path in major update Season 3.',
 		h1: 'The co-op missions Meta Is Broken: 5 Aggressive Strategies',
@@ -259,7 +259,7 @@ const sources = [
 		category: 'Steel Path missions Meta',
 		featured: true,
 		slug: 'secret-loot-routes-full-gold',
-		title: 'Secret farm routes: Leave Spawn Full Gold Every Game',
+		title: 'Secret Farm Routes: Leave Spawn Full Gold Every Game',
 		metaDescription:
 			'High-percentage Warframe farm routes that leave spawn with gold guns, full shields, and mobility — major update Season 3 farm routes that win mid-game.',
 		h1: 'Secret farm routes: How to Leave Spawn with Full Gold',
@@ -302,7 +302,7 @@ const sources = [
 		category: 'Pro Player Setups',
 		featured: false,
 		slug: 'pro Tenno-settings-pro-setup',
-		title: "pro Tenno's Settings: Copy a Champion Setup That Works",
+		title: "Pro Tenno's Settings: Copy a Champion Setup That Works",
 		metaDescription:
 			'pro Tenno-inspired Warframe settings guide — sensitivity ranges, binds philosophy, and practice routines that still work in major update Season 3 Steel Path.',
 		h1: "pro Tenno's Sensitivity & Settings: Champion-Inspired Setup",
@@ -344,7 +344,7 @@ const sources = [
 		category: 'Simulacrum',
 		featured: false,
 		slug: 'creative-warmup-maps-pros-use',
-		title: '10 Simulacrum warmup Maps Pros Use before Steel Path',
+		title: '10 Simulacrum Warmup Maps Pros Use Before Steel Path',
 		metaDescription:
 			'Ten Warframe Simulacrum warmup map categories and a 25-minute routine pros use before Steel Path — aim, peeks, edits, and co-op missions fight reps now.',
 		h1: '10 Simulacrum Maps Pros Use to Warm Up before Steel Path',

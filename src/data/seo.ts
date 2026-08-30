@@ -11,18 +11,25 @@ export const siteOrigin = `https://${siteDomain}`;
 export const metaKeywords = [
 	'Warframe Cheats',
 	'warframe cheats',
+	'warframe hacks',
+	'warframe hack',
 	'warframe esp',
 	'warframe aimbot',
 	'warframe wallhack',
+	'warframe radar hack',
 	'undetected warframe cheats',
 	'warframe cheats 2026',
+	'warframe cheats pc',
+	'warframe soft aim',
+	'warframe mod menu',
+	'buy warframe cheats',
 ] as const;
 
 export const metaKeywordsContent = metaKeywords.join(', ');
 
-export const defaultTitle = 'Warframe Cheats 2026 | Undetected ESP & Aimbot';
+export const defaultTitle = 'Warframe Cheats 2026 | ESP, Aimbot & Hacks for PC';
 export const defaultDescription =
-	'Warframe cheats for PC — undetected ESP, aimbot, and wallhack at warframecheats.net. Monthly and lifetime plans, setup guides, and anti-cheat update status.';
+	'Warframe cheats for Windows PC — ESP, aimbot, wallhack & radar. $35/mo or $150 lifetime. Setup guides, patch updates & buyer reviews.';
 
 /** Append brand + domain to page titles when under the SEO limit. */
 export function buildPageTitle(topic: string): string {

@@ -107,10 +107,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			},
 			pages: {
 				home: {
-					title: "Warframe Cheats 2026 | Undetected ESP & Aimbot",
-					description: "Warframe cheats for PC — undetected ESP, aimbot, and wallhack at warframecheats.net. Compare monthly and lifetime plans, setup, and anti-cheat updates.",
+					title: "Warframe Cheats 2026 | ESP, Aimbot & Hacks for PC",
+					description: "Warframe cheats for Windows PC — ESP, aimbot, wallhack & radar. $35/mo or $150 lifetime. Setup guides, patch updates & buyer reviews.",
 					h1: "Warframe Cheats",
-					intro: "A focused Windows PC package for Warframe: Enemy ESP, aimbot controls, and wallhack overlays with anti-cheat maintenance after major patches.",
+					intro: "A focused Windows PC package for Warframe: Enemy ESP, aimbot controls, and wallhack overlays with Digital Extremes anti-cheat maintenance after major patches.",
 					imageAlt: "Warframe cheats main menu with ESP wallhack and soft aim toggles on PC",
 					galleryTitle: "Warframe Cheats visuals",
 					ctaPrimary: "Buy Warframe Cheats",
@@ -139,9 +139,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/warframe-cheats-hero.webp",
 				},
 				"warframe-esp": {
-					title: "Warframe ESP 2026 | enemy boxes & Wallhack",
-					description: "Warframe ESP for PC and controllers — enemy boxes, health pickup markers, and distance readouts. Part of our undetected Warframe Cheats with cloud DMA support.",
-					h1: "Warframe ESP — enemy boxes & Wallhack",
+					title: "Warframe ESP 2026 | Wallhack & Enemy Boxes for PC",
+					description: "Warframe ESP wallhack — enemy boxes, health bars, loot markers & distance readouts. Bundled with aimbot & radar in one license.",
+					h1: "Warframe ESP — Wallhack & Enemy Boxes",
 					intro: "Visibility tools for Warframe. Read enemy units, lockers, resource caches, and pickups, and distance before you commit to a fight — with toggleable ESP wallhack overlays for open world missions and Steel Path missions.",
 					imageAlt: "Warframe ESP overlay with enemy outline boxes, health bars, and distance readouts",
 					galleryTitle: "Warframe ESP overlay visuals",
@@ -175,7 +175,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Undetected ESP with anti-cheat maintenance",
 							paragraphs: [
 								"Warframe Cheats ESP wallhack is maintained for Warframe with rebuilds after Digital Extremes anti-cheat patches. Check the <a href=\"/updates/\">Updates page</a> before you queue — no cheat guarantees permanent undetected status.",
-								"Read <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe anti-cheat</a> for how anti-cheat updates ship, then cross-check our <a href=\"/warframe-cheats/\">anti-cheat bypass maintenance guide</a> after major patches.",
+								"Read <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe anti-cheat</a> for how anti-cheat updates ship, then cross-check our <a href=\"/warframe-cheats/\">anti-cheat maintenance maintenance guide</a> after major patches.",
 								"Checkout includes instant digital delivery for Windows 10 and 11. After purchase, follow the <a href=\"/setup/\">Setup guide</a> and tune overlays before your first mission session.",
 							],
 						},
@@ -191,9 +191,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/warframe-esp-wallhack-overlay.webp",
 				},
 				"warframe-aimbot": {
-					title: "Warframe Aimbot 2026 | Soft Aim for PC & Controllers",
-					description: "Warframe aimbot with soft aim tuning for PC and controllers. FOV, bone priority, and hotkeys bundled with ESP boxes in our Warframe Cheats package.",
-					h1: "Warframe Aimbot — Soft Aim for PC & Controllers",
+					title: "Warframe Aimbot 2026 | Soft Aim for PC & Controller",
+					description: "Warframe aimbot with FOV, smoothing & weak-point targeting. Per-weapon profiles for rifles, shotguns & snipers. Windows PC.",
+					h1: "Warframe Aimbot — Soft Aim for PC & Controller",
 					intro: "Configurable Aimbot tools for Warframe firefights. Smoothness, FOV, bone priority, and per-weapon profiles — bundled with ESP wallhack and radar in one undetected license.",
 					imageAlt: "Warframe cheats cheat menu with soft aim, FOV slider, and bone priority settings",
 					galleryTitle: "Warframe Aimbot combat previews",
@@ -243,8 +243,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/warframe-sortie-aimbot-combat.webp",
 				},
 				features: {
-					title: "Warframe Cheats Features | ESP, Soft Aim, Cloud DMA",
-					description: "Full Warframe Cheats feature list: ESP boxes, soft aim, radar, cloud DMA, and toggles for PC and controllers. Review controls before checkout.",
+					title: "Warframe Cheats Features | ESP, Aimbot & Radar",
+					description: "Full Warframe cheats feature list — ESP, soft aim, radar, hotkeys & controller support. Review every toggle before checkout.",
 					h1: "Warframe Cheats Features — Full Control List",
 					intro: "Every ESP wallhack, radar hack, and Aimbot control included in the Warframe Cheats package for Warframe on Windows PC — with anti-cheat maintenance after major patches.",
 					imageAlt: "Warframe ESP overlay with hero boxes and health bars",
@@ -281,8 +281,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/warframe-cheats-main-menu.webp",
 				},
 				pricing: {
-					title: "Warframe Cheats Pricing | $35/mo or $150 Life",
-					description: "Warframe Cheats pricing: $35/month or $150 lifetime for ESP, soft aim, boxes, and cloud DMA on PC and controllers. Instant delivery — pick a plan.",
+					title: "Buy Warframe Cheats | $35/mo or $150 Lifetime",
+					description: "Buy Warframe cheats — $35/month or $150 lifetime. ESP, aimbot & wallhack included. Instant digital delivery on Windows PC.",
 					h1: "Warframe Cheats Pricing — Monthly & Lifetime",
 					intro: "Choose monthly or lifetime access to undetected Warframe Cheats — ESP wallhack, radar hack, and Aimbot for Warframe on Windows PC. Instant digital delivery after payment.",
 					imageAlt: "Warframe wallhack ESP showing enemy units and Sentients through objective corners",
@@ -319,8 +319,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/warframe-cheats-main-menu.webp",
 				},
 				setup: {
-					title: "Warframe Cheats Setup | PC & Controller Guide",
-					description: "Set up Warframe Cheats on PC and controllers — activate ESP boxes, soft aim profiles, and cloud DMA. Check anti-cheat updates before your first queue.",
+					title: "Warframe Cheats Setup | Install Guide for Windows PC",
+					description: "Install Warframe cheats on Windows 10/11. Activate your license, tune ESP & aimbot profiles, check patch status before queueing.",
 					h1: "Warframe Cheats Setup — PC & Controller Guide",
 					intro: "Install and configure Warframe Cheats for Warframe on Windows 10 or 11. Activate your license, load ESP wallhack and Aimbot profiles, and verify anti-cheat maintenance status before queueing.",
 					imageAlt: "Warframe aimbot hitbox lock on enemy unit during Steel Path mission fight",
@@ -349,7 +349,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "After Warframe or Digital Extremes anti-cheat patches",
 							paragraphs: [
 								"When Digital Extremes ships a major Warframe update or Digital Extremes anti-cheat patch, revisit Updates before queueing. Download maintenance rebuilds when posted.",
-								"Official anti-cheat background: <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe anti-cheat</a>. Our practical workflow is documented on the <a href=\"/warframe-cheats/\">anti-cheat bypass page</a> and <a href=\"/warframe-cheats/\">undetected guide</a>.",
+								"Official anti-cheat background: <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe anti-cheat</a>. Our practical workflow is documented on the <a href=\"/warframe-cheats/\">anti-cheat maintenance page</a> and <a href=\"/warframe-cheats/\">undetected guide</a>.",
 								"Contact <a href=\"/support/\">Support</a> with your order ID if activation fails after a patch — include Windows version and error details for faster replies.",
 							],
 						},
@@ -357,8 +357,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/warframe-cheats-settings-panel.webp",
 				},
 				updates: {
-					title: "Warframe Cheats Updates | Anti-cheat maintenance Log",
-					description: "Warframe Cheats update log: anti-cheat rebuilds for ESP boxes, soft aim, and cloud DMA on PC and controllers. Check status before queueing after patches.",
+					title: "Warframe Cheats Updates | Patch & Status Log",
+					description: "Warframe cheats update log — check build status after game patches. Maintenance notes for ESP, aimbot & radar rebuilds.",
 					h1: "Warframe Cheats Updates — Maintenance Log",
 					intro: "Track anti-cheat maintenance and Warframe patch rebuilds for the undetected ESP wallhack, radar hack, and Aimbot package. Check here before queueing after major updates.",
 					imageAlt: "Warframe wallhack ESP skeleton on enemy heavy unit hero in Steel Path missions",
@@ -380,7 +380,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Entries note Digital Extremes anti-cheat compatibility status, rebuilt ESP wallhack overlays, radar range fixes, Aimbot tuning after weapon balance changes, and digital delivery of new builds to active licenses.",
 								"Lifetime and monthly subscribers receive rebuild access during active license terms. See <a href=\"/pricing/\">Pricing</a> if you need to renew.",
-								"For context on why rebuilds happen, read the <a href=\"/warframe-cheats/\">anti-cheat bypass guide</a> and <a href=\"/warframe-cheats/\">undetected Warframe cheats</a> explainer.",
+								"For context on why rebuilds happen, read the <a href=\"/warframe-cheats/\">anti-cheat maintenance guide</a> and <a href=\"/warframe-cheats/\">undetected Warframe cheats</a> explainer.",
 							],
 						},
 						{
@@ -395,8 +395,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/warframe-steel-path-mission-esp.webp",
 				},
 				faq: {
-					title: "Warframe Cheats FAQ | ESP, Soft Aim & anti-cheat Answers",
-					description: "Warframe Cheats FAQ: ESP boxes, soft aim, cloud DMA, controller support, anti-cheat maintenance, and pricing for PC. Clear answers before you buy.",
+					title: "Warframe Cheats FAQ | ESP, Aimbot & Safety",
+					description: "Warframe cheats FAQ — licensing, ESP, aimbot, controller support, patch-day status & pricing. Clear answers before you buy.",
 					h1: "Warframe Cheats FAQ — Common Questions",
 					intro: "Answers about undetected Warframe Cheats — ESP wallhack, radar hack, Aimbot, anti-cheat maintenance, checkout, and Warframe compatibility on Windows PC.",
 					imageAlt: "Warframe radar hack 2D minimap overlay showing spawn routes and enemy units and Sentients",
@@ -433,8 +433,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/warframe-cheats-settings-panel.webp",
 				},
 				support: {
-					title: "Warframe Cheats Support | Help & Contact",
-					description: "Contact Warframe Cheats support for licenses, ESP setup, soft aim profiles, and cloud DMA on PC and controllers. Include your order ID for faster help.",
+					title: "Warframe Cheats Support | Contact & Help",
+					description: "Contact Warframe Cheats support for licenses, setup & billing. Email support@warframecheats.net with your order ID.",
 					h1: "Warframe Cheats Support — Contact Us",
 					intro: "Get help with Warframe Cheats licenses, checkout, ESP wallhack setup, Aimbot profiles, and anti-cheat maintenance for Warframe on Windows PC.",
 					imageAlt: "Warframe cheats Steel Path objective fight with ESP boxes and aimbot active",
@@ -462,7 +462,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Self-service resources",
 							paragraphs: [
-								"Setup guide, Features list, Updates log, Refund Policy, and Terms of Use are linked from the footer. anti-cheat bypass notes live on the dedicated <a href=\"/warframe-cheats/\">Digital Extremes anti-cheat page</a>.",
+								"Setup guide, Features list, Updates log, Refund Policy, and Terms of Use are linked from the footer. anti-cheat maintenance notes live on the dedicated <a href=\"/warframe-cheats/\">Digital Extremes anti-cheat page</a>.",
 								"Email: support@warframecheats.net",
 								"Ready to purchase or renew? Open <a href=\"/pricing/\">Pricing</a>. Need feature detail first? See <a href=\"/features/\">Features</a>.",
 							],
@@ -478,7 +478,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					imageAlt: "Warframe wallhack ESP skeleton boxes on enemy units and Sentients through map geometry",
 					galleryTitle: "Undetected Warframe Cheats visuals",
 					ctaPrimary: "Buy Warframe Cheats",
-					ctaSecondary: "anti-cheat bypass guide",
+					ctaSecondary: "anti-cheat maintenance guide",
 					ctaSecondaryHref: "/warframe-cheats/",
 					sections: [
 						{
@@ -494,7 +494,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"When Digital Extremes anti-cheat or Warframe updates ship, the team assesses ESP, radar, and Aimbot modules, publishes status on the <a href=\"/updates/\">Updates page</a>, and delivers rebuilt builds to active licenses.",
 								"On patch mornings, also check <a href=\"https://forums.warframe.com/forum/3-pc-update-notes/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe PC update notes</a> for Warframe outages that can look like product failures.",
-								"Deep technical workflow: <a href=\"/warframe-cheats/\">anti-cheat bypass Warframe guide</a>. Feature stack: <a href=\"/features/\">Features</a>.",
+								"Deep technical workflow: <a href=\"/warframe-cheats/\">anti-cheat maintenance Warframe guide</a>. Feature stack: <a href=\"/features/\">Features</a>.",
 							],
 						},
 						{
@@ -509,8 +509,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/warframe-cheats-combat-esp.webp",
 				},
 				wallhack: {
-					title: "Warframe Wallhack 2026 | ESP Boxes & Visibility",
-					description: "Warframe wallhack ESP with enemy boxes and health pickup markers for PC and controllers. Undetected Warframe cheats with cloud DMA — learn overlays and buy.",
+					title: "Warframe Wallhack 2026 | ESP Boxes Through Terrain",
+					description: "Warframe wallhack ESP highlights Grineer, Corpus & Infested through cover. Toggle categories for Steel Path & open world.",
 					h1: "Warframe Wallhack — ESP Boxes & Visibility",
 					intro: "Warframe wallhack ESP for Warframe — see enemies, pickups, and lockers through toggleable wallhack overlays built for open world missions and Steel Path missions.",
 					imageAlt: "Warframe wallhack ESP skeleton boxes on enemy unit hero in Steel Path",
@@ -539,7 +539,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Undetected wallhack maintenance",
 							paragraphs: [
 								"ESP wallhack modules rebuild after Digital Extremes anti-cheat patches. Follow the <a href=\"/updates/\">Updates page</a> and complete checkout for instant license delivery on Windows PC.",
-								"Learn the full maintenance story on <a href=\"/warframe-cheats/\">undetected Warframe cheats</a> and <a href=\"/warframe-cheats/\">anti-cheat bypass</a>.",
+								"Learn the full maintenance story on <a href=\"/warframe-cheats/\">undetected Warframe cheats</a> and <a href=\"/warframe-cheats/\">anti-cheat maintenance</a>.",
 								"Ready to buy? Compare <a href=\"/pricing/\">Pricing</a> or continue to the <a href=\"/warframe-esp/\">ESP hack</a> landing for alternate search wording.",
 							],
 						},
@@ -547,8 +547,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/warframe-esp-enemy-boxes.webp",
 				},
 				radar: {
-					title: "Warframe Radar Hack 2026 | 2D Threat Overlay",
-					description: "Warframe radar hack for flank awareness on PC and controllers. Bundled with ESP boxes, soft aim, and cloud DMA in our Warframe Cheats package.",
+					title: "Warframe Radar Hack 2026 | 2D Minimap for Warframe",
+					description: "Warframe radar hack shows off-screen enemies on a 2D minimap. Directional cues for defense, survival & squad play.",
 					h1: "Warframe Radar Hack — 2D Threat Awareness",
 					intro: "2D radar-style overlay for Warframe — directional threat cues for nearby players outside your line of sight, bundled with ESP wallhack and Aimbot.",
 					imageAlt: "Warframe ESP distance markers and hero health readouts in Steel Path",
@@ -585,9 +585,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/warframe-radar-hack-minimap.webp",
 				},
 				"eac-bypass": {
-					title: "Anti-cheat bypass Warframe | Hack Maintenance Guide",
-					description: "How Warframe Cheats rebuild after anti-cheat patches — ESP boxes, soft aim, and cloud DMA maintenance for PC and controllers. Read before queueing.",
-					h1: "Anti-cheat bypass — Warframe Cheats Maintenance",
+					title: "Warframe Anti-Cheat Maintenance | Patch Guide",
+					description: "How Warframe Cheats rebuild after Digital Extremes anti-cheat patches — ESP, aimbot & radar maintenance for PC. Read before queueing.",
+					h1: "Digital Extremes Anti-Cheat — Maintenance Guide",
 					intro: "Understand Digital Extremes anti-cheat maintenance for Warframe Cheats — how ESP wallhack, radar hack, and Aimbot rebuild after Warframe security updates.",
 					imageAlt: "Warframe undetected hacks status with ESP overlay on enemy units and Sentients",
 					galleryTitle: "anti-cheat maintenance visuals",
@@ -600,7 +600,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Digital Extremes anti-cheat is Digital Extremes’ anti-cheat for Warframe on PC (see <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe anti-cheat</a>). Security updates can affect ESP wallhack, radar, and Aimbot behavior — requiring maintenance rebuilds for undetected packages.",
 								"Warframe Cheats monitors anti-cheat patch notes and Warframe seasonal updates from <a href=\"https://www.digitalextremes.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Digital Extremes</a> to schedule module reviews.",
-								"“anti-cheat bypass” in our wording means timely maintenance — not a permanent free pass around anti-cheat.",
+								"“anti-cheat maintenance” in our wording means timely maintenance — not a permanent free pass around anti-cheat.",
 							],
 						},
 						{
@@ -614,7 +614,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "No permanent bypass guarantee",
 							paragraphs: [
-								"anti-cheat bypass in practice means timely maintenance. Read the undetected guide, <a href=\"/faq/\">FAQ</a>, and Updates log before every session.",
+								"anti-cheat maintenance in practice means timely maintenance. Read the undetected guide, <a href=\"/faq/\">FAQ</a>, and Updates log before every session.",
 								"Contact <a href=\"/support/\">Support</a> if activation fails immediately after a posted rebuild.",
 								"Buying for the first time? Compare <a href=\"/pricing/\">Pricing</a> and finish <a href=\"/setup/\">Setup</a> only after Updates shows a live build.",
 							],
@@ -661,10 +661,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/warframe-cheats-hero.webp",
 				},
 				hacks: {
-					title: "Warframe Cheats 2026 | Undetected ESP Aimbot Guide",
-					description: "Warframe Cheats for Windows PC: undetected ESP wallhack, radar hack, and Aimbot with anti-cheat maintenance. Compare Warframe cheats options and buy the full",
-					h1: "Warframe Cheats — Undetected ESP, Aimbot & Wallhack",
-					intro: "Warframe Cheats for Steel Path missions and co-op missions combine ESP wallhack visibility, 2D radar-style threat cues, and Aimbot controls in one undetected Windows PC license — maintained after Digital Extremes anti-cheat patches. This is the pillar guide for Warframe Cheats in 2026.",
+					title: "Undetected Warframe Cheats 2026 | PC Hacks Guide",
+					description: "Undetected Warframe cheats with ESP, aimbot & wallhack for PC. Maintenance after patches, pricing & setup — no permanent undetected promises.",
+					h1: "Warframe Cheats & Hacks — ESP, Aimbot & Wallhack",
+					intro: "Warframe cheats and hacks for Steel Path, Sorties, and open world combine ESP wallhack visibility, 2D radar threat cues, and aimbot controls in one Windows PC license — maintained after Digital Extremes anti-cheat patches. This is the pillar guide for Warframe Cheats in 2026.",
 					imageAlt: "Warframe cheats Steel Path objective fight with ESP boxes and aimbot active",
 					galleryTitle: "Warframe Cheats gallery — ESP, Aimbot, wallhack",
 					ctaPrimary: "Buy Warframe Cheats",
@@ -699,7 +699,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Undetected Warframe Cheats with anti-cheat maintenance",
 							paragraphs: [
 								"Undetected Warframe Cheats require rebuilds after Digital Extremes anti-cheat and major Warframe patches. Check Updates before queueing — maintenance notes confirm when a new build is live. No package can promise permanent undetected status.",
-								"See <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe anti-cheat</a> for anti-cheat background and our <a href=\"/warframe-cheats/\">anti-cheat bypass guide</a> for the practical workflow. Pair with <a href=\"/warframe-cheats/\">undetected Warframe cheats</a> for status language buyers expect.",
+								"See <a href=\"https://www.warframe.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Warframe anti-cheat</a> for anti-cheat background and our <a href=\"/warframe-cheats/\">anti-cheat maintenance guide</a> for the practical workflow. Pair with <a href=\"/warframe-cheats/\">undetected Warframe cheats</a> for status language buyers expect.",
 								"Digital delivery runs after checkout for Windows 10 and 11 PCs worldwide. After purchase, follow <a href=\"/setup/\">Setup</a> and keep <a href=\"/support/\">Support</a> ready with your order ID.",
 							],
 						},
@@ -774,7 +774,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Maintained mod menu after anti-cheat patches",
 							paragraphs: [
-								"Warframe mod menu behavior is rebuilt when Digital Extremes anti-cheat or major Warframe updates land. Follow the <a href=\"/updates/\">Updates page</a> and <a href=\"/warframe-cheats/\">anti-cheat bypass guide</a> before queueing on patch days.",
+								"Warframe mod menu behavior is rebuilt when Digital Extremes anti-cheat or major Warframe updates land. Follow the <a href=\"/updates/\">Updates page</a> and <a href=\"/warframe-cheats/\">anti-cheat maintenance guide</a> before queueing on patch days.",
 								"Checkout with instant digital delivery for monthly and lifetime licenses — see <a href=\"/pricing/\">Pricing</a>.",
 								"Need install steps? Open <a href=\"/setup/\">Setup</a> after your license email arrives.",
 							],
@@ -888,7 +888,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Undetected aimbot hack maintenance",
 							paragraphs: [
-								"Aimbot hack signatures rebuild after Digital Extremes anti-cheat updates. Follow the <a href=\"/updates/\">Updates page</a> and <a href=\"/warframe-cheats/\">anti-cheat bypass guide</a> before queueing after patch days.",
+								"Aimbot hack signatures rebuild after Digital Extremes anti-cheat updates. Follow the <a href=\"/updates/\">Updates page</a> and <a href=\"/warframe-cheats/\">anti-cheat maintenance guide</a> before queueing after patch days.",
 								"Checkout with instant digital delivery for Windows 10 and 11 — <a href=\"/pricing/\">Pricing</a>.",
 								"Pair with <a href=\"/warframe-esp/\">ESP</a> for the full information + assist loop.",
 							],

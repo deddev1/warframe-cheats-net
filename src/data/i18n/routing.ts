@@ -723,24 +723,23 @@ export function absoluteLocalizedUrl(pageId: PageId, locale: LocaleCode): string
 }
 
 /**
- * Canonical path for SEO — each locale keeps its own URL as canonical.
+ * Canonical path for SEO — always the English URL (locale pages are noindex UX translations).
  */
-export function getCanonicalPath(pageId: PageId, locale: LocaleCode = defaultLocale): string {
-	return getLocalizedPath(pageId, locale);
+export function getCanonicalPath(pageId: PageId, _locale: LocaleCode = defaultLocale): string {
+	return englishPaths[pageId];
 }
 
-export function absoluteCanonicalUrl(pageId: PageId, locale: LocaleCode = defaultLocale): string {
-	return absoluteLocalizedUrl(pageId, locale);
+export function absoluteCanonicalUrl(pageId: PageId, _locale: LocaleCode = defaultLocale): string {
+	return absoluteLocalizedUrl(pageId, defaultLocale);
 }
 
-/** Full hreflang cluster for every supported locale + x-default (English root). */
+/** English-only hreflang — en + x-default pointing at the canonical English URL. */
 export function getHreflangAlternates(pageId: PageId) {
-	const alternates = locales.map((meta) => ({
-		hreflang: meta.hreflang,
-		href: absoluteLocalizedUrl(pageId, meta.code),
-	}));
 	const enHref = absoluteLocalizedUrl(pageId, defaultLocale);
-	return [...alternates, { hreflang: 'x-default' as const, href: enHref }];
+	return [
+		{ hreflang: 'en' as const, href: enHref },
+		{ hreflang: 'x-default' as const, href: enHref },
+	];
 }
 
 export function resolvePageIdFromPath(path: string): PageId | undefined {

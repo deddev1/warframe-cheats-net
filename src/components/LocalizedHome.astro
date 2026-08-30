@@ -1,4 +1,5 @@
 ---
+import HomeSeo from '../components/HomeSeo.astro';
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Hero from '../components/Hero.astro';
@@ -112,7 +113,7 @@ const extraGraph: Record<string, unknown>[] =
 		/>
 		<section class="site__section site__section--store" id="store" aria-label={ui.product.title}>
 			<div class="shell store-stack">
-				<PricingPlans locale={locale} showRelatedPages={false} />
+				<PricingPlans locale={locale} showRelatedPages={false} showPageTitle={false} />
 				<PricingFeatureList locale={locale} showRelatedPages={false} />
 			</div>
 		</section>
@@ -133,6 +134,11 @@ const extraGraph: Record<string, unknown>[] =
 		<section class="site__section site__section--explore">
 			<HomeExplore locale={locale} />
 		</section>
+		{locale === defaultLocale && (
+			<section class="site__section site__section--seo">
+				<HomeSeo />
+			</section>
+		)}
 		<SiteFooter locale={locale} />
 	</main>
 </Layout>
@@ -146,6 +152,7 @@ const extraGraph: Record<string, unknown>[] =
 	.site__section--faq,
 	.site__section--guides,
 	.site__section--explore,
+	.site__section--seo,
 	.site__section--store,
 	.site__section--gallery {
 		content-visibility: auto;

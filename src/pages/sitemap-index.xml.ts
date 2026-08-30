@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
 import { getBlogSitemapEntries } from '../data/blog/helpers';
+import { includeLocaleUrlsInSitemap } from '../data/i18n/locales';
 import { i18nLocaleCodes, localeSitemapUrl } from '../data/sitemap-locale';
 import { siteConfig } from '../data/site';
 import { latestPageLastmod } from '../data/sitemap-meta';
@@ -7,7 +8,7 @@ import { escapeXml } from '../data/sitemap-xml';
 
 export const prerender = true;
 
-/** Sitemap index: English pages, per-locale sitemaps, and image sitemap. */
+/** Sitemap index: English pages (+ per-locale sitemaps when enabled) and image sitemap. */
 export const GET: APIRoute = () => {
 	const pageLastmod = latestPageLastmod();
 	const englishLastmod = getBlogSitemapEntries().reduce(
@@ -17,10 +18,12 @@ export const GET: APIRoute = () => {
 
 	const subSitemaps: { loc: string; lastmod: string }[] = [
 		{ loc: new URL('/sitemap.xml', siteConfig.url).href, lastmod: englishLastmod },
-		...i18nLocaleCodes.map((locale) => ({
-			loc: localeSitemapUrl(locale),
-			lastmod: pageLastmod,
-		})),
+		...(includeLocaleUrlsInSitemap
+			? i18nLocaleCodes.map((locale) => ({
+					loc: localeSitemapUrl(locale),
+					lastmod: pageLastmod,
+				}))
+			: []),
 		{ loc: new URL('/sitemap-images.xml', siteConfig.url).href, lastmod: pageLastmod },
 	];
 
