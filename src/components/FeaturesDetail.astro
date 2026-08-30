@@ -1,7 +1,6 @@
 ---
 import { featureGallery, featureSectionImages } from '../data/warframe';
 import { getUi } from '../data/i18n';
-import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { productFeatureDetails, productInfo, siteConfig } from '../data/site';
 import { contentSrc, contentSrcSet, galleryTileSizes, productMainSizes } from '../lib/responsive-images';
@@ -12,7 +11,6 @@ interface Props {
 
 const locale = Astro.props.locale ?? defaultLocale;
 const ui = getUi(locale);
-const pricingHref = getLocalizedPath('pricing', locale);
 
 const responsiveImage = (src: string) => ({
 	src: contentSrc(src),
