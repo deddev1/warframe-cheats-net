@@ -1,17 +1,12 @@
 ---
-import { warframeImages, productPreviewVideo } from '../data/warframe';
+import { pricingGallery, warframeImages } from '../data/warframe';
 import { getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { productInfo, siteConfig } from '../data/site';
 import PlanSummaryPanels from './PlanSummaryPanels.astro';
 import ProductMediaTrust from './ProductMediaTrust.astro';
-import {
-	contentSrc,
-	contentSrcSet,
-	productMainSizes,
-	productThumbSizes,
-} from '../lib/responsive-images';
+import { productThumbSizes } from '../lib/responsive-images';
 
 interface Props {
 	name?: string;
@@ -37,18 +32,16 @@ const productAlts = [
 
 /** Hero still + five unique product thumbs — six Warframe images, no repeats. */
 const heroPreview = {
-	src: contentSrc(warframeImages.hero),
-	fullSrc: warframeImages.hero,
-	srcset: contentSrcSet(warframeImages.hero),
-	alt: 'Warframe cheats gameplay — mission fight combat overview',
+	src: pricingGallery[0].src,
+	fullSrc: pricingGallery[0].src,
+	alt: pricingGallery[0].alt,
 };
 
 /** Screenshot thumbs only — each unique Warframe still. */
 const images = warframeImages.product.map((image, index) => ({
-	src: contentSrc(image.src),
+	src: image.src,
 	fullSrc: image.src,
 	alt: productAlts[index] ?? image.alt,
-	srcset: contentSrcSet(image.src),
 }));
 const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? productInfo.plans[0];
 const lifetimePlan = productInfo.plans.find((plan) => plan.id === 'lifetime');
@@ -59,50 +52,16 @@ const lifetimePlan = productInfo.plans.find((plan) => plan.id === 'lifetime');
 		<figure class="product__figure media-frame">
 			<img
 				src={heroPreview.src}
-				srcset={heroPreview.srcset}
-				sizes={productMainSizes}
 				alt={heroPreview.alt}
+				title={pricingGallery[0].title}
 				width="1280"
 				height="720"
-				class="product__image is-hidden"
+				class="product__image"
 				data-main-image
 				loading={priority ? 'eager' : 'lazy'}
 				fetchpriority={priority ? 'high' : 'auto'}
 				decoding="async"
 			/>
-			<div class="product__player" data-video-player>
-				<video
-					class="product__video"
-					data-main-video
-					src={productPreviewVideo.src}
-					poster={productPreviewVideo.poster}
-					preload="metadata"
-					playsinline
-					controls
-					controlslist="nodownload noplaybackrate"
-					disablepictureinpicture
-					title={productPreviewVideo.title}
-					aria-label={productPreviewVideo.ariaLabel}
-				></video>
-				<button
-					type="button"
-					class="product__play"
-					data-video-play
-					aria-label="Play Warframe cheats gameplay preview"
-				>
-					<span class="product__play-icon" aria-hidden="true">
-						<svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-							<path
-								d="M8 5.5v13l11-6.5-11-6.5z"
-								fill="currentColor"
-								stroke="currentColor"
-								stroke-width="0.5"
-								stroke-linejoin="round"></path>
-						</svg>
-					</span>
-					<span class="product__play-label">Play preview</span>
-				</button>
-			</div>
 			<span class="product__credit" aria-hidden="true">Warframe</span>
 		</figure>
 		<div class="product__thumbs" role="group" aria-label="Product preview images">
@@ -116,12 +75,10 @@ const lifetimePlan = productInfo.plans.find((plan) => plan.id === 'lifetime');
 						data-thumb
 						data-index={String(index)}
 						data-src={image.src}
-						data-srcset={image.srcset}
 						data-alt={image.alt}
 					>
 						<img
 							src={image.src}
-							srcset={image.srcset}
 							sizes={productThumbSizes}
 							alt={image.alt}
 							width="320"
@@ -272,105 +229,25 @@ const lifetimePlan = productInfo.plans.find((plan) => plan.id === 'lifetime');
 		box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
 	}
 
-	.product__player {
-		position: absolute;
-		inset: 0;
-		z-index: 1;
-		display: grid;
-		place-items: center;
-		background: #050B0C;
-	}
-
-	.product__player.is-hidden {
-		opacity: 0;
-		visibility: hidden;
-		pointer-events: none;
-	}
-
-	.product__video,
 	.product__image {
 		position: absolute;
 		inset: 0;
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		object-position: center;
+		object-position: center top;
+		transform: none;
 		transition: opacity 0.14s ease;
 	}
 
-	.product__figure.media-frame .product__video {
+	.product__figure.media-frame .product__image {
 		transform: none;
 	}
 
 	@media (hover: hover) and (pointer: fine) {
-		.product__figure.media-frame:hover .product__video {
+		.product__figure.media-frame:hover .product__image {
 			transform: none;
 		}
-	}
-
-	.product__video {
-		z-index: 1;
-		background: #050B0C;
-	}
-
-	.product__play {
-		position: absolute;
-		inset: 0;
-		z-index: 2;
-		display: inline-flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 0.55rem;
-		margin: 0;
-		padding: 0;
-		border: 0;
-		background: linear-gradient(180deg, rgba(5, 11, 12, 0.08), rgba(5, 11, 12, 0.42));
-		color: #f8f4ff;
-		cursor: pointer;
-		transition: opacity 0.2s ease, visibility 0.2s ease;
-	}
-
-	.product__play.is-hidden {
-		opacity: 0;
-		visibility: hidden;
-		pointer-events: none;
-	}
-
-	.product__play-icon {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		width: 4.25rem;
-		height: 4.25rem;
-		border-radius: 999px;
-		background: rgba(43, 119, 120, 0.92);
-		box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
-	}
-
-	.product__play-label {
-		font-size: 0.78rem;
-		font-weight: 700;
-		letter-spacing: 0.12em;
-		text-transform: uppercase;
-		text-shadow: 0 1px 8px rgba(0, 0, 0, 0.65);
-	}
-
-	.product__image {
-		z-index: 1;
-		transition:
-			transform 0.45s ease,
-			opacity 0.14s ease;
-	}
-
-	.product__image.is-hidden {
-		opacity: 0;
-		visibility: hidden;
-		pointer-events: none;
-	}
-
-	.product__figure:hover .product__image:not(.is-hidden) {
-		transform: scale(1.025);
 	}
 
 	.product__credit {

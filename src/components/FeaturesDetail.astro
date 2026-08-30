@@ -1,4 +1,5 @@
 ---
+import { featureGallery, featureSectionImages } from '../data/warframe';
 import { getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
@@ -23,26 +24,70 @@ const pricingHref = getLocalizedPath('pricing', locale);
 	</header>
 
 	{
-		productFeatureDetails.map((section) => (
-			<article class="features-detail__section" id={`feature-${section.id}`}>
-				<div class="features-detail__section-head">
-					<h3>{section.title}</h3>
-					<p>{section.summary}</p>
-				</div>
-				<div class="features-detail__grid">
-					{section.items.map((item) => (
-						<div class="features-detail__item">
-							<h4>
-								<span class="features-detail__chevron" aria-hidden="true">&gt;</span>
-								{item.name}
-							</h4>
-							<p>{item.description}</p>
+		productFeatureDetails.map((section) => {
+			const shot = featureSectionImages[section.id];
+			return (
+				<article class="features-detail__section" id={`feature-${section.id}`}>
+					<div class="features-detail__section-layout">
+						<div class="features-detail__section-copy">
+							<div class="features-detail__section-head">
+								<h3>{section.title}</h3>
+								<p>{section.summary}</p>
+							</div>
+							<div class="features-detail__grid">
+								{section.items.map((item) => (
+									<div class="features-detail__item">
+										<h4>
+											<span class="features-detail__chevron" aria-hidden="true">&gt;</span>
+											{item.name}
+										</h4>
+										<p>{item.description}</p>
+									</div>
+								))}
+							</div>
 						</div>
-					))}
-				</div>
-			</article>
-		))
+						<figure class="features-detail__figure media-frame">
+							<img
+								src={shot.src}
+								alt={shot.alt}
+								title={shot.title}
+								width="960"
+								height="600"
+								loading="lazy"
+								decoding="async"
+							/>
+							<figcaption>{shot.title}</figcaption>
+						</figure>
+					</div>
+				</article>
+			);
+		})
 	}
+
+	<section class="features-detail__gallery" aria-label="Warframe cheats screenshots">
+		<header class="features-detail__gallery-head">
+			<h3>See every module in-game</h3>
+			<p>Real Warframe screenshots from the live cheat menu, ESP overlays, aimbot, and radar.</p>
+		</header>
+		<div class="features-detail__gallery-grid">
+			{
+				featureGallery.map((image) => (
+					<figure class="features-detail__gallery-item media-frame">
+						<img
+							src={image.src}
+							alt={image.alt}
+							title={image.title}
+							width="640"
+							height="400"
+							loading="lazy"
+							decoding="async"
+						/>
+						<figcaption>{image.title}</figcaption>
+					</figure>
+				))
+			}
+		</div>
+	</section>
 
 	<div class="features-detail__cta">
 		<a href={pricingHref} class="features-detail__pricing-link btn-buy">
@@ -88,7 +133,14 @@ const pricingHref = getLocalizedPath('pricing', locale);
 		padding: 1.25rem 1.35rem;
 		border-radius: var(--radius-card);
 		border: 1px solid rgba(24, 217, 210, 0.16);
-		background: rgba(14, 12, 20, 0.92);
+		background: rgba(8, 23, 25, 0.92);
+	}
+
+	.features-detail__section-layout {
+		display: grid;
+		grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+		gap: 1.15rem;
+		align-items: start;
 	}
 
 	.features-detail__section-head {
@@ -111,6 +163,38 @@ const pricingHref = getLocalizedPath('pricing', locale);
 		line-height: 1.55;
 	}
 
+	.features-detail__figure {
+		margin: 0;
+		aspect-ratio: 16 / 10;
+		border: 1px solid rgba(24, 217, 210, 0.18);
+		border-radius: 0.85rem;
+		overflow: hidden;
+	}
+
+	.features-detail__figure.media-frame img,
+	.features-detail__gallery-item.media-frame img {
+		transform: none;
+	}
+
+	.features-detail__figure img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center top;
+		transform: none;
+	}
+
+	.features-detail__figure figcaption {
+		position: absolute;
+		inset: auto 0 0;
+		padding: 0.55rem 0.7rem;
+		background: linear-gradient(180deg, transparent, rgba(5, 11, 12, 0.88));
+		color: var(--color-body);
+		font-size: 0.72rem;
+		font-weight: 600;
+		line-height: 1.35;
+	}
+
 	.features-detail__grid {
 		display: grid;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -121,7 +205,7 @@ const pricingHref = getLocalizedPath('pricing', locale);
 		padding: 0.85rem 0.95rem;
 		border-radius: 0.7rem;
 		border: 1px solid rgba(24, 217, 210, 0.12);
-		background: rgba(22, 18, 30, 0.75);
+		background: rgba(13, 34, 36, 0.75);
 		transition:
 			transform 0.22s ease,
 			border-color 0.22s ease,
@@ -159,6 +243,68 @@ const pricingHref = getLocalizedPath('pricing', locale);
 		line-height: 1.5;
 	}
 
+	.features-detail__gallery {
+		display: grid;
+		gap: 1rem;
+		padding: 1.15rem 1.25rem;
+		border-radius: var(--radius-card);
+		border: 1px solid rgba(24, 217, 210, 0.14);
+		background: rgba(8, 23, 25, 0.88);
+	}
+
+	.features-detail__gallery-head {
+		text-align: center;
+		display: grid;
+		gap: 0.4rem;
+	}
+
+	.features-detail__gallery-head h3 {
+		margin: 0;
+		font-size: 1.1rem;
+		font-weight: 800;
+		color: var(--color-ink);
+	}
+
+	.features-detail__gallery-head p {
+		margin: 0 auto;
+		max-width: 36rem;
+		color: var(--color-muted);
+		font-size: 0.88rem;
+		line-height: 1.55;
+	}
+
+	.features-detail__gallery-grid {
+		display: grid;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		gap: 0.65rem;
+	}
+
+	.features-detail__gallery-item {
+		margin: 0;
+		aspect-ratio: 16 / 10;
+		border: 1px solid rgba(24, 217, 210, 0.14);
+		border-radius: 0.7rem;
+		overflow: hidden;
+	}
+
+	.features-detail__gallery-item img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center top;
+	}
+
+	.features-detail__gallery-item figcaption {
+		position: absolute;
+		inset: auto 0 0;
+		padding: 0.45rem 0.55rem;
+		background: linear-gradient(180deg, transparent, rgba(5, 11, 12, 0.9));
+		color: var(--color-body);
+		font-size: 0.66rem;
+		font-weight: 600;
+		line-height: 1.3;
+	}
+
 	.features-detail__cta {
 		display: flex;
 		flex-wrap: wrap;
@@ -184,7 +330,7 @@ const pricingHref = getLocalizedPath('pricing', locale);
 		padding: 0.95rem 1.35rem;
 		border-radius: 0.75rem;
 		border: 1px solid rgba(24, 217, 210, 0.35);
-		background: rgba(22, 18, 30, 0.9);
+		background: rgba(13, 34, 36, 0.9);
 		color: var(--color-muted);
 		font-weight: 650;
 		text-decoration: none;
@@ -194,6 +340,16 @@ const pricingHref = getLocalizedPath('pricing', locale);
 	.features-detail__checkout-link:hover {
 		color: var(--color-ink);
 		border-color: rgba(24, 217, 210, 0.55);
+	}
+
+	@media (max-width: 1024px) {
+		.features-detail__section-layout {
+			grid-template-columns: 1fr;
+		}
+
+		.features-detail__gallery-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
 	}
 
 	@media (max-width: 768px) {

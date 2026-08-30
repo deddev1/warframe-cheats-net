@@ -1,15 +1,10 @@
 ---
-import { warframeImages, productPreviewVideo } from '../data/warframe';
+import { pricingGallery } from '../data/warframe';
 import { getUi } from '../data/i18n';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { productInfo, siteConfig } from '../data/site';
 import RelatedPages from './RelatedPages.astro';
-import {
-	contentSrc,
-	contentSrcSet,
-	productMainSizes,
-	productThumbSizes,
-} from '../lib/responsive-images';
+import { productThumbSizes } from '../lib/responsive-images';
 
 interface Props {
 	locale?: LocaleCode;
@@ -24,17 +19,8 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 const lifetimePlan = productInfo.plans.find((plan) => plan.id === 'lifetime');
 const defaultPlan = monthlyPlan;
 
-const heroPreview = {
-	src: contentSrc(warframeImages.hero),
-	srcset: contentSrcSet(warframeImages.hero),
-	alt: 'Warframe cheats gameplay preview — ESP and aimbot on PC',
-};
-
-const thumbImages = warframeImages.product.slice(0, 2).map((image) => ({
-	src: contentSrc(image.src),
-	srcset: contentSrcSet(image.src),
-	alt: image.alt,
-}));
+const galleryImages = pricingGallery;
+const mainImage = galleryImages[0];
 
 const featurePills = [
 	{ icon: 'bolt', label: ui.trust.delivery },
@@ -53,96 +39,39 @@ const featurePills = [
 	<div class="pricing-showcase__media">
 		<figure class="pricing-showcase__figure media-frame">
 			<img
-				src={heroPreview.src}
-				srcset={heroPreview.srcset}
-				sizes={productMainSizes}
-				alt={heroPreview.alt}
+				src={mainImage.src}
+				alt={mainImage.alt}
+				title={mainImage.title}
 				width="1280"
 				height="720"
-				class="pricing-showcase__image is-hidden"
+				class="pricing-showcase__image"
 				data-main-image
 				loading="eager"
 				fetchpriority="high"
 				decoding="async"
 			/>
-			<div class="pricing-showcase__player" data-video-player>
-				<video
-					class="pricing-showcase__video"
-					data-main-video
-					src={productPreviewVideo.src}
-					poster={productPreviewVideo.poster}
-					preload="metadata"
-					playsinline
-					controls
-					controlslist="nodownload noplaybackrate"
-					disablepictureinpicture
-					title={productPreviewVideo.title}
-					aria-label={productPreviewVideo.ariaLabel}
-				></video>
-				<button
-					type="button"
-					class="pricing-showcase__play"
-					data-video-play
-					aria-label="Play Warframe cheats preview"
-				>
-					<span class="pricing-showcase__play-icon" aria-hidden="true">
-						<svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-							<path
-								d="M8 5.5v13l11-6.5-11-6.5z"
-								fill="currentColor"
-								stroke="currentColor"
-								stroke-width="0.5"
-								stroke-linejoin="round"></path>
-						</svg>
-					</span>
-				</button>
-			</div>
 		</figure>
-		<div class="pricing-showcase__thumbs" role="group" aria-label="Product preview images">
-			<button
-				type="button"
-				class="pricing-showcase__thumb pricing-showcase__thumb--video is-active"
-				aria-label="Show video preview"
-				aria-pressed="true"
-				data-thumb-video
-			>
-				<img
-					src={contentSrc(warframeImages.hero)}
-					srcset={contentSrcSet(warframeImages.hero)}
-					sizes={productThumbSizes}
-					alt="Video preview thumbnail"
-					width="320"
-					height="200"
-					loading="lazy"
-					decoding="async"
-				/>
-				<span class="pricing-showcase__thumb-play" aria-hidden="true">
-					<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-						<path d="M8 5.5v13l11-6.5-11-6.5z"></path>
-					</svg>
-				</span>
-			</button>
+		<div class="pricing-showcase__thumbs" role="group" aria-label="Warframe cheats screenshots">
 			{
-				thumbImages.map((image, index) => (
+				galleryImages.map((image, index) => (
 					<button
 						type="button"
-						class="pricing-showcase__thumb"
-						aria-label={`Show ${image.alt}`}
-						aria-pressed="false"
+						class:list={['pricing-showcase__thumb', { 'is-active': index === 0 }]}
+						aria-label={image.title}
+						aria-pressed={index === 0 ? 'true' : 'false'}
 						data-thumb
-						data-index={String(index)}
 						data-src={image.src}
-						data-srcset={image.srcset}
 						data-alt={image.alt}
+						data-title={image.title}
 					>
 						<img
 							src={image.src}
-							srcset={image.srcset}
-							sizes={productThumbSizes}
 							alt={image.alt}
+							title={image.title}
+							sizes={productThumbSizes}
 							width="320"
 							height="200"
-							loading="lazy"
+							loading={index < 4 ? 'eager' : 'lazy'}
 							decoding="async"
 						/>
 					</button>
@@ -287,37 +216,19 @@ const featurePills = [
 	initPlanSelectors();
 
 	document.querySelectorAll('[data-product]').forEach((root) => {
-		const videoThumb = root.querySelector('[data-thumb-video]');
 		const imageThumbs = root.querySelectorAll('[data-thumb]');
-		const videoPlayer = root.querySelector('[data-video-player]');
 		const mainImage = root.querySelector('[data-main-image]');
-
-		function showVideo() {
-			videoPlayer?.classList.remove('is-hidden');
-			mainImage?.classList.add('is-hidden');
-			videoThumb?.classList.add('is-active');
-			videoThumb?.setAttribute('aria-pressed', 'true');
-			imageThumbs.forEach((thumb) => {
-				thumb.classList.remove('is-active');
-				thumb.setAttribute('aria-pressed', 'false');
-			});
-		}
-
-		videoThumb?.addEventListener('click', showVideo);
 
 		imageThumbs.forEach((thumb) => {
 			thumb.addEventListener('click', () => {
 				if (!(mainImage instanceof HTMLImageElement)) return;
 				const src = thumb.getAttribute('data-src');
-				const srcset = thumb.getAttribute('data-srcset');
 				const alt = thumb.getAttribute('data-alt');
+				const title = thumb.getAttribute('data-title');
 				if (src) mainImage.src = src;
-				if (srcset) mainImage.srcset = srcset;
 				if (alt) mainImage.alt = alt;
-				videoPlayer?.classList.add('is-hidden');
-				mainImage.classList.remove('is-hidden');
-				videoThumb?.classList.remove('is-active');
-				videoThumb?.setAttribute('aria-pressed', 'false');
+				if (title) mainImage.title = title;
+				mainImage.removeAttribute('srcset');
 				imageThumbs.forEach((item) => {
 					const active = item === thumb;
 					item.classList.toggle('is-active', active);
@@ -360,73 +271,33 @@ const featurePills = [
 		overflow: hidden;
 	}
 
-	.pricing-showcase__player {
-		position: absolute;
-		inset: 0;
-		z-index: 1;
-		background: #050B0C;
+	.pricing-showcase__figure.media-frame img,
+	.pricing-showcase__thumb img {
+		transform: none;
 	}
 
-	.pricing-showcase__player.is-hidden {
-		opacity: 0;
-		visibility: hidden;
-		pointer-events: none;
-	}
-
-	.pricing-showcase__video,
 	.pricing-showcase__image {
 		position: absolute;
 		inset: 0;
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-	}
-
-	.pricing-showcase__image.is-hidden {
-		opacity: 0;
-		visibility: hidden;
-		pointer-events: none;
-	}
-
-	.pricing-showcase__play {
-		position: absolute;
-		inset: 0;
-		z-index: 2;
-		display: grid;
-		place-items: center;
-		margin: 0;
-		padding: 0;
-		border: 0;
-		background: linear-gradient(180deg, rgba(5, 11, 12, 0.1), rgba(5, 11, 12, 0.45));
-		color: #f8f4ff;
-		cursor: pointer;
-		transition: opacity 0.2s ease;
-	}
-
-	.pricing-showcase__play.is-hidden {
-		opacity: 0;
-		visibility: hidden;
-		pointer-events: none;
-	}
-
-	.pricing-showcase__play-icon {
-		display: grid;
-		place-items: center;
-		width: 3.75rem;
-		height: 3.75rem;
-		border-radius: 999px;
-		background: rgba(43, 119, 120, 0.92);
-		box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+		object-position: center top;
+		transform: none;
 	}
 
 	.pricing-showcase__thumbs {
-		display: grid;
-		grid-template-columns: repeat(3, minmax(0, 1fr));
-		gap: 0.65rem;
+		display: flex;
+		gap: 0.55rem;
+		overflow-x: auto;
+		padding-bottom: 0.15rem;
+		scroll-snap-type: x proximity;
+		scrollbar-width: thin;
 	}
 
 	.pricing-showcase__thumb {
 		position: relative;
+		flex: 0 0 5.75rem;
 		padding: 0;
 		aspect-ratio: 16 / 10;
 		border: 2px solid rgba(24, 217, 210, 0.2);
@@ -434,6 +305,7 @@ const featurePills = [
 		background: rgba(13, 34, 36, 0.8);
 		cursor: pointer;
 		overflow: hidden;
+		scroll-snap-align: start;
 		transition:
 			border-color 0.2s ease,
 			box-shadow 0.2s ease;
@@ -443,20 +315,7 @@ const featurePills = [
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-	}
-
-	.pricing-showcase__thumb.is-active,
-	.pricing-showcase__thumb:hover {
-		border-color: rgba(24, 217, 210, 0.45);
-	}
-
-	.pricing-showcase__thumb-play {
-		position: absolute;
-		inset: 0;
-		display: grid;
-		place-items: center;
-		background: rgba(5, 11, 12, 0.35);
-		color: white;
+		object-position: center top;
 	}
 
 	.pricing-showcase__checkout {
@@ -740,14 +599,19 @@ const featurePills = [
 		}
 	}
 
+	.pricing-showcase__thumb.is-active,
+	.pricing-showcase__thumb:hover {
+		border-color: rgba(24, 217, 210, 0.45);
+	}
+
 	@media (max-width: 480px) {
 		.pricing-showcase__header {
 			flex-direction: column;
 			align-items: flex-start;
 		}
 
-		.pricing-showcase__thumbs {
-			grid-template-columns: repeat(3, minmax(5.5rem, 1fr));
+		.pricing-showcase__thumb {
+			flex-basis: 5.25rem;
 		}
 	}
 </style>

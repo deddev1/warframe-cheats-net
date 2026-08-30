@@ -1,79 +1,152 @@
 import { siteConfig } from './site';
 
+const img = (name: string) => `/images/${name}`;
+
 /** Homepage hero — hosted on Supabase CDN. */
 export const warframeHeroImage =
 	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/warframe/615e3254-d088-46f6-9a61-d3f933199cf9.png';
 
-/** Seven unique Warframe cheat screenshots — each used once per gallery, product grid, and sitemap. */
+export type WarframeScreenshot = {
+	src: string;
+	alt: string;
+	title: string;
+};
 
-export const warframeHeroVideo = {
-	src: warframeHeroImage,
-	poster: warframeHeroImage,
-	title: 'Warframe cheats hero preview',
-	ariaLabel: 'Warframe cheats gameplay preview — undetected ESP and aimbot on PC',
-} as const;
+/** Warframe cheat screenshots — SEO filenames under /images/. */
+export const warframeScreenshots = {
+	mainMenu: {
+		src: img('warframe-cheats-main-menu.png'),
+		alt: 'Warframe cheats main menu with ESP, aimbot, and radar toggles on Windows PC',
+		title: 'Warframe Cheats main menu',
+	},
+	espOverlay: {
+		src: img('warframe-esp-wallhack-overlay.png'),
+		alt: 'Warframe ESP wallhack overlay highlighting Grineer and Corpus enemies through terrain',
+		title: 'Warframe ESP wallhack overlay',
+	},
+	espBoxes: {
+		src: img('warframe-esp-enemy-boxes.png'),
+		alt: 'Warframe ESP enemy bounding boxes with health bars in a Steel Path mission',
+		title: 'Warframe ESP enemy boxes',
+	},
+	aimbotMenu: {
+		src: img('warframe-aimbot-targeting-menu.png'),
+		alt: 'Warframe aimbot settings menu with FOV, smoothing, and bone priority controls',
+		title: 'Warframe aimbot targeting menu',
+	},
+	radarMinimap: {
+		src: img('warframe-radar-hack-minimap.png'),
+		alt: 'Warframe radar hack 2D minimap showing enemy positions outside the camera view',
+		title: 'Warframe radar hack minimap',
+	},
+	combatEsp: {
+		src: img('warframe-cheats-combat-esp.png'),
+		alt: 'Warframe cheats combat ESP active during a Grineer heavy unit fight',
+		title: 'Warframe combat ESP',
+	},
+	steelPathEsp: {
+		src: img('warframe-steel-path-mission-esp.png'),
+		alt: 'Warframe Steel Path mission with ESP overlays on elite enemy units',
+		title: 'Warframe Steel Path ESP',
+	},
+	sortieAimbot: {
+		src: img('warframe-sortie-aimbot-combat.png'),
+		alt: 'Warframe Sortie combat with aimbot lock on a Corpus heavy unit',
+		title: 'Warframe Sortie aimbot combat',
+	},
+	openWorldRadar: {
+		src: img('warframe-open-world-radar.png'),
+		alt: 'Warframe open world radar and ESP on Plains of Eidolon bounty route',
+		title: 'Warframe open world radar',
+	},
+	lootEsp: {
+		src: img('warframe-loot-pickup-esp.png'),
+		alt: 'Warframe loot and pickup ESP markers for mods, resources, and health orbs',
+		title: 'Warframe loot pickup ESP',
+	},
+	settingsPanel: {
+		src: img('warframe-cheats-settings-panel.png'),
+		alt: 'Warframe cheats settings panel with hotkeys, colours, and module toggles',
+		title: 'Warframe cheats settings panel',
+	},
+} as const satisfies Record<string, WarframeScreenshot>;
 
-export const warframeVideo = {
-	src: '/videos/warframe-cheats-preview.mp4',
-	poster: '/images/warframe-cheats-video-poster.webp',
-	title: 'Warframe cheats Steel Path mission preview',
-	ariaLabel: 'Warframe cheats preview — mission fight with ESP and aimbot',
-	caption: 'Warframe cheats gameplay with ESP wallhack and aimbot overlays',
-} as const;
+/** Pricing gallery — main viewer + thumbnail strip (no video). */
+export const pricingGallery: WarframeScreenshot[] = [
+	warframeScreenshots.mainMenu,
+	warframeScreenshots.espOverlay,
+	warframeScreenshots.espBoxes,
+	warframeScreenshots.aimbotMenu,
+	warframeScreenshots.radarMinimap,
+	warframeScreenshots.combatEsp,
+	warframeScreenshots.steelPathEsp,
+	warframeScreenshots.sortieAimbot,
+	warframeScreenshots.openWorldRadar,
+	warframeScreenshots.lootEsp,
+	warframeScreenshots.settingsPanel,
+];
 
-/** Homepage product card — click-to-play preview (poster = 5th video frame). */
-export const productPreviewVideo = warframeVideo;
+/** Feature page section screenshots keyed to productFeatureDetails ids. */
+export const featureSectionImages: Record<'aimbot' | 'visual' | 'misc', WarframeScreenshot> = {
+	aimbot: warframeScreenshots.sortieAimbot,
+	visual: warframeScreenshots.espOverlay,
+	misc: warframeScreenshots.radarMinimap,
+};
 
-const wt1 = '/images/warframe-cheats-hero.webp';
-const wt2 = '/images/warframe-esp-overlay.webp';
-const wt3 = '/images/warframe-esp-enemies.webp';
-const wt4 = '/images/warframe-esp-modules.webp';
-const wt5 = '/images/warframe-aimbot-menu.webp';
-const wt6 = '/images/warframe-radar-hack.webp';
-const wt7 = '/images/warframe-mission.webp';
+/** Extra visuals shown below the feature breakdown grid. */
+export const featureGallery: WarframeScreenshot[] = [
+	warframeScreenshots.mainMenu,
+	warframeScreenshots.espBoxes,
+	warframeScreenshots.aimbotMenu,
+	warframeScreenshots.combatEsp,
+	warframeScreenshots.steelPathEsp,
+	warframeScreenshots.openWorldRadar,
+	warframeScreenshots.lootEsp,
+	warframeScreenshots.settingsPanel,
+];
+
+const s = warframeScreenshots;
 
 export const warframeImages = {
 	hero: warframeHeroImage,
-	cover: wt2,
+	cover: s.espOverlay.src,
 	logo: siteConfig.logo,
-	loadoutBuilder: wt5,
-	aimbotCombat: wt4,
-	squadFight: wt7,
-	espWallhack: wt3,
-	cheatsPackage: wt2,
-	headerArt: wt4,
-	battleRoyaleCombat: wt7,
-	rebootFight: wt6,
-	playerEsp: wt3,
-	radarHack: wt6,
-	zeroBuildCombat: wt1,
-	zeroBuildMode: wt3,
-	openWorldTileset: wt5,
-	/** Product thumbs — five unique stills; main media is the hero still. */
+	loadoutBuilder: s.aimbotMenu.src,
+	aimbotCombat: s.sortieAimbot.src,
+	squadFight: s.combatEsp.src,
+	espWallhack: s.espBoxes.src,
+	cheatsPackage: s.mainMenu.src,
+	headerArt: s.settingsPanel.src,
+	battleRoyaleCombat: s.steelPathEsp.src,
+	rebootFight: s.radarMinimap.src,
+	playerEsp: s.espOverlay.src,
+	radarHack: s.radarMinimap.src,
+	zeroBuildCombat: s.combatEsp.src,
+	zeroBuildMode: s.espBoxes.src,
+	openWorldTileset: s.openWorldRadar.src,
 	product: [
-		{ src: wt2, alt: 'Warframe ESP overlay with enemy unit boxes and health bars' },
-		{ src: wt3, alt: 'Warframe wallhack ESP outline boxes on Grineer and Corpus units in Steel Path missions' },
-		{ src: wt4, alt: 'Warframe aimbot lock on enemy weak spots during a mission fight' },
-		{ src: wt5, alt: 'Warframe cheats menu with aimbot, targeting, and FOV controls' },
-		{ src: wt6, alt: 'Warframe radar hack 2D overlay showing spawn routes and nearby enemies' },
+		{ src: s.espOverlay.src, alt: s.espOverlay.alt },
+		{ src: s.espBoxes.src, alt: s.espBoxes.alt },
+		{ src: s.sortieAimbot.src, alt: s.sortieAimbot.alt },
+		{ src: s.aimbotMenu.src, alt: s.aimbotMenu.alt },
+		{ src: s.radarMinimap.src, alt: s.radarMinimap.alt },
 	],
-	/** Gallery marquee — seven unique Warframe cheat stills with simple page URLs. */
 	gallery: [
-		{ src: wt1, alt: 'Warframe cheats main menu with ESP, wallhack, and aimbot toggles', href: '/warframe-cheats/' },
-		{ src: wt2, alt: 'Warframe ESP overlay showing Grineer, Corpus, and Sentient units through terrain', href: '/warframe-esp/' },
-		{ src: wt3, alt: 'Warframe wallhack ESP with enemy outline boxes in Steel Path missions', href: '/warframe-wallhack/' },
-		{ src: wt4, alt: 'Warframe aimbot targeting enemy weak spots', href: '/warframe-aimbot/' },
-		{ src: wt5, alt: 'Warframe cheats settings menu with aimbot profiles and hotkeys', href: '/features/' },
-		{ src: wt6, alt: 'Warframe radar hack 2D overlay for reading flanks outside FOV', href: '/warframe-radar/' },
-		{ src: wt7, alt: 'Warframe cheats objective fight with ESP and aimbot active', href: '/warframe-cheats/' },
+		{ src: s.mainMenu.src, alt: s.mainMenu.alt, href: '/warframe-cheats/' },
+		{ src: s.espOverlay.src, alt: s.espOverlay.alt, href: '/warframe-esp/' },
+		{ src: s.espBoxes.src, alt: s.espBoxes.alt, href: '/warframe-wallhack/' },
+		{ src: s.sortieAimbot.src, alt: s.sortieAimbot.alt, href: '/warframe-aimbot/' },
+		{ src: s.settingsPanel.src, alt: s.settingsPanel.alt, href: '/features/' },
+		{ src: s.radarMinimap.src, alt: s.radarMinimap.alt, href: '/warframe-radar/' },
+		{ src: s.combatEsp.src, alt: s.combatEsp.alt, href: '/warframe-cheats/' },
 	],
 	sitemap: [
-		{ src: wt1, title: 'Warframe Cheats | Undetected ESP & Aimbot', caption: 'Warframe cheats main menu with ESP and aimbot toggles' },
-		{ src: wt2, title: 'Warframe ESP overlay', caption: 'Warframe ESP wallhack showing enemy unit positions and health' },
-		{ src: wt3, title: 'Warframe wallhack ESP', caption: 'Warframe wallhack outline boxes on Grineer and Corpus units in Steel Path missions' },
-		{ src: wt4, title: 'Warframe aimbot targeting', caption: 'Warframe aimbot lock on enemy weak spots during a mission fight' },
-		{ src: wt5, title: 'Warframe cheats menu', caption: 'Warframe cheats menu with aimbot and targeting settings' },
-		{ src: wt6, title: 'Warframe radar hack', caption: 'Warframe radar hack overlay for flank and enemy detection' },
-		{ src: wt7, title: 'Warframe Steel Path mission cheats', caption: 'Warframe cheats objective fight with ESP and aimbot' },
+		{ src: s.mainMenu.src, title: 'Warframe Cheats | Undetected ESP & Aimbot', caption: s.mainMenu.alt },
+		{ src: s.espOverlay.src, title: 'Warframe ESP overlay', caption: s.espOverlay.alt },
+		{ src: s.espBoxes.src, title: 'Warframe wallhack ESP', caption: s.espBoxes.alt },
+		{ src: s.sortieAimbot.src, title: 'Warframe aimbot targeting', caption: s.sortieAimbot.alt },
+		{ src: s.aimbotMenu.src, title: 'Warframe aimbot menu', caption: s.aimbotMenu.alt },
+		{ src: s.radarMinimap.src, title: 'Warframe radar hack', caption: s.radarMinimap.alt },
+		{ src: s.combatEsp.src, title: 'Warframe Steel Path mission cheats', caption: s.combatEsp.alt },
 	],
 } as const;
