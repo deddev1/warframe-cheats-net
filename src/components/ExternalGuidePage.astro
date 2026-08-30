@@ -4,7 +4,6 @@ import Navbar from './Navbar.astro';
 import SiteFooter from './SiteFooter.astro';
 import { absoluteGuideUrl, guidesBasePath } from '../data/guides/helpers';
 import type { ResolvedExternalGuide } from '../data/guides/types';
-import { siteConfig } from '../data/site';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale } from '../data/i18n/locales';
 
@@ -16,33 +15,6 @@ const { guide } = Astro.props;
 const locale = defaultLocale;
 const homeHref = getLocalizedPath('home', locale);
 const guidesHref = guidesBasePath;
-
-const articleUrl = absoluteGuideUrl(guide.slug);
-
-const articleSchema = {
-	'@type': 'Article',
-	'@id': `${articleUrl}#article`,
-	headline: guide.title,
-	description: guide.metaDescription,
-	datePublished: guide.published,
-	dateModified: guide.updated,
-	image: new URL(guide.imageSrc, siteConfig.url).href,
-	inLanguage: 'en',
-	author: { '@type': 'Organization', name: siteConfig.name, url: siteConfig.url },
-	publisher: {
-		'@type': 'Organization',
-		name: siteConfig.name,
-		url: siteConfig.url,
-		logo: { '@type': 'ImageObject', url: new URL(siteConfig.logoRaster, siteConfig.url).href },
-	},
-	mainEntityOfPage: {
-		'@type': 'WebPage',
-		'@id': `${articleUrl}#webpage`,
-	},
-	isPartOf: { '@id': `${siteConfig.url}/#website` },
-	keywords: guide.keywords.join(', '),
-	articleSection: guide.gameName,
-};
 
 function pageTitle(headline: string): string {
 	const suffix = ' | Guides';
@@ -62,12 +34,13 @@ function pageTitle(headline: string): string {
 	ogImageAlt={guide.imageAlt}
 	type="article"
 	locale={locale}
+	noindex={true}
 	breadcrumbs={[
 		{ label: 'Home', href: homeHref },
 		{ label: 'Guides', href: guidesHref },
 		{ label: guide.h1 },
 	]}
-	extraGraph={[articleSchema]}
+	extraGraph={[]}
 >
 	<Navbar locale={locale} />
 	<main class="guide-post">

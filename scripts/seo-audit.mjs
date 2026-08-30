@@ -12,8 +12,8 @@ import { englishPagesFinal } from './i18n-data/pages-en.mjs';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DOMAIN = 'warframecheats.net';
 const ORIGIN = `https://${DOMAIN}`;
-const PRIMARY_KW = 'war thunder hacks';
-const BRAND_KW = 'war thunder';
+const PRIMARY_KW = 'warframe cheats';
+const BRAND_KW = 'warframe';
 
 const BANNED = [
 	/islecheat/i,
@@ -25,6 +25,7 @@ const BANNED = [
 	/arcraidershacks\.com/i,
 	/overwatchhacks\.com/i,
 	/\boverwatch hacks\b/i,
+	/\bwar thunder\b/i,
 ];
 
 const warnings = [];
@@ -62,19 +63,19 @@ for (const id of pageIds) {
 	if (p.description.length < 100) warn(`${label}: description short (${p.description.length})`);
 
 	if (!hasKeyword(p.title, BRAND_KW)) {
-		fail(`${label}: title missing "war thunder" → ${p.title}`);
+		fail(`${label}: title missing "warframe" → ${p.title}`);
 	}
 	if (!hasKeyword(p.description, BRAND_KW)) {
-		fail(`${label}: description missing "war thunder" → ${p.description.slice(0, 80)}`);
+		fail(`${label}: description missing "warframe" → ${p.description.slice(0, 80)}`);
 	}
 	if (!hasKeyword(p.h1, BRAND_KW) && !['privacy', 'refund', 'terms'].includes(id)) {
-		fail(`${label}: h1 missing "war thunder" → ${p.h1}`);
+		fail(`${label}: h1 missing "warframe" → ${p.h1}`);
 	}
 
 	// Primary keyword in money pages
 	if (['home', 'hacks', 'warframe-esp', 'warframe-aimbot', 'pricing'].includes(id)) {
-		if (!hasKeyword(p.description, PRIMARY_KW) && !hasKeyword(p.description, 'war thunder hacks')) {
-			warn(`${label}: description should include primary keyword "war thunder hacks"`);
+		if (!hasKeyword(p.description, PRIMARY_KW) && !hasKeyword(p.description, 'warframe cheats')) {
+			warn(`${label}: description should include primary keyword "warframe cheats"`);
 		}
 	}
 }
@@ -96,6 +97,23 @@ const middleware = readFileSync(join(root, 'functions/_middleware.js'), 'utf8');
 if (!middleware.includes(ORIGIN)) fail(`_middleware.js missing ${ORIGIN}`);
 checkBanned('_middleware.js (content)', middleware.replace(/LEGACY_HOSTS[\s\S]*?;/, ''));
 
+// --- guides indexing policy ---
+const externalGuidePage = readFileSync(join(root, 'src/components/ExternalGuidePage.astro'), 'utf8');
+if (!/noindex=\{true\}/.test(externalGuidePage)) {
+	fail('ExternalGuidePage.astro: external guides must be noindex');
+}
+
+const guidesHelpers = readFileSync(join(root, 'src/data/guides/helpers.ts'), 'utf8');
+if (/guide\.canonicalPath/.test(guidesHelpers) && /getGuidesSitemapEntries/.test(guidesHelpers)) {
+	const sitemapFn = guidesHelpers.slice(
+		guidesHelpers.indexOf('export function getGuidesSitemapEntries'),
+		guidesHelpers.indexOf('export function getGuidesSitemapEntries') + 1200,
+	);
+	if (sitemapFn.includes('for (const guide of guides)')) {
+		fail('guides/helpers.ts: external guide URLs must not be in sitemap (hub only)');
+	}
+}
+
 // --- built output (optional) ---
 const distIndex = join(root, 'dist/index.html');
 if (existsSync(distIndex)) {
@@ -105,19 +123,47 @@ if (existsSync(distIndex)) {
 		fail('dist/index.html missing Warframe in title/meta');
 	}
 	checkBanned('dist/index.html', html);
+
+	const distGuidesHub = join(root, 'dist/guides/index.html');
+	if (existsSync(distGuidesHub)) {
+		const hubHtml = readFileSync(distGuidesHub, 'utf8');
+		if (hubHtml.includes('noindex')) fail('dist/guides/index.html hub must remain indexable');
+	}
+
+	const distExternalGuide = join(root, 'dist/guides/guide-fortniteaimbot-com-https/index.html');
+	if (existsSync(distExternalGuide)) {
+		const guideHtml = readFileSync(distExternalGuide, 'utf8');
+		if (!guideHtml.includes('noindex')) {
+			fail('dist external guide page must include noindex robots meta');
+		}
+	}
+
+	const distSitemap = join(root, 'dist/sitemap.xml');
+	if (existsSync(distSitemap)) {
+		const sitemapXml = readFileSync(distSitemap, 'utf8');
+		const guideUrls = (sitemapXml.match(/\/guides\/guide-[^<]+/g) ?? []).length;
+		if (guideUrls > 0) {
+			fail(`dist/sitemap.xml lists ${guideUrls} external guide URLs — hub only expected`);
+		}
+		if (!sitemapXml.includes('/guides/')) {
+			warn('dist/sitemap.xml: /guides/ hub not found in sitemap');
+		}
+	}
 }
 
 // --- reviews pages ---
 for (const file of ['src/pages/reviews/index.astro', 'src/pages/reviews/[slug]/index.astro']) {
 	const src = readFileSync(join(root, file), 'utf8');
 	checkBanned(file, src);
-	if (!/war thunder hacks/i.test(src)) warn(`${file}: consider adding "Warframe Cheats" keyword`);
+	if (!/warframe cheats/i.test(src)) warn(`${file}: consider adding "Warframe Cheats" keyword`);
 }
 
 // --- image alts ---
-const rustTs = readFileSync(join(root, 'src/data/rust.ts'), 'utf8');
-if (!/Warframe/i.test(rustTs)) fail('rust.ts image alts missing Warframe keyword');
-checkBanned('rust.ts', rustTs);
+const warframeTs = join(root, 'src/data/warframe.ts');
+if (!existsSync(warframeTs)) fail('src/data/warframe.ts missing');
+const warframeSrc = readFileSync(warframeTs, 'utf8');
+if (!/Warframe/i.test(warframeSrc)) fail('warframe.ts image alts missing Warframe keyword');
+checkBanned('warframe.ts', warframeSrc);
 
 // --- report ---
 console.log('\n=== SEO Audit: warframecheats.net ===\n');

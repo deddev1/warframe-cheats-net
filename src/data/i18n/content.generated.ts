@@ -587,7 +587,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				"eac-bypass": {
 					title: "Warframe Anti-Cheat Maintenance | Patch Guide",
 					description: "How Warframe Cheats rebuild after Digital Extremes anti-cheat patches — ESP, aimbot & radar maintenance for PC. Read before queueing.",
-					h1: "Digital Extremes Anti-Cheat — Maintenance Guide",
+					h1: "Warframe Anti-Cheat — Maintenance Guide",
 					intro: "Understand Digital Extremes anti-cheat maintenance for Warframe Cheats — how ESP wallhack, radar hack, and Aimbot rebuild after Warframe security updates.",
 					imageAlt: "Warframe undetected hacks status with ESP overlay on enemy units and Sentients",
 					galleryTitle: "anti-cheat maintenance visuals",

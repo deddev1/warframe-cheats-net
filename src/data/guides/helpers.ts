@@ -126,7 +126,7 @@ export function getExternalGuidesByGame(): { gameName: string; guides: ResolvedE
 		.map(([gameName, guides]) => ({ gameName, guides }));
 }
 
-/** Guides sitemap entries — separate from blog sitemap. */
+/** Guides sitemap entries — hub only; external guide articles are noindex. */
 export function getGuidesSitemapEntries() {
 	const guides = getAllExternalGuides();
 	const indexLastmod = guides.reduce(
@@ -134,18 +134,12 @@ export function getGuidesSitemapEntries() {
 		guides[0]?.updated ?? new Date().toISOString().slice(0, 10),
 	);
 
-	const entries: {
-		path: string;
-		lastmod: string;
-		priority: number;
-		changefreq: 'daily' | 'weekly' | 'monthly';
-		images: { url: string; title: string; caption: string }[];
-	}[] = [
+	return [
 		{
 			path: guidesBasePath,
 			lastmod: indexLastmod,
 			priority: 0.88,
-			changefreq: 'weekly',
+			changefreq: 'weekly' as const,
 			images: [
 				{
 					url: new URL(siteConfig.defaultOgImage, siteConfig.url).href,
@@ -155,22 +149,4 @@ export function getGuidesSitemapEntries() {
 			],
 		},
 	];
-
-	for (const guide of guides) {
-		entries.push({
-			path: guide.canonicalPath,
-			lastmod: guide.updated,
-			priority: 0.72,
-			changefreq: 'monthly',
-			images: [
-				{
-					url: new URL(guide.imageSrc, siteConfig.url).href,
-					title: guide.title,
-					caption: guide.imageAlt,
-				},
-			],
-		});
-	}
-
-	return entries;
 }
