@@ -7,7 +7,7 @@ export const uiStrings = {
 			accent: 'Undetected ESP & Aimbot for Windows PC',
 			accentShort: 'ESP & Aimbot',
 			subtitle:
-				'ESP, aimbot, and radar in one Warframe package — built for Steel Path, Sorties, and open world. Instant digital delivery with monthly or lifetime access, plus rebuilds after Digital Extremes anti-cheat patches.',
+				'ESP, aimbot, and radar in one Warframe cheats — built for Steel Path, Sorties, and open world. Instant digital delivery with monthly or lifetime access, plus rebuilds after Digital Extremes anti-cheat patches.',
 			subtitleShort:
 				'ESP, aimbot & radar for Warframe on Windows PC. Instant access — updated after game patches.',
 			buyNow: 'Get Access',
