@@ -8,6 +8,30 @@ import type { ExternalGuidePost, ResolvedExternalGuide } from './types';
 export const guidesBasePath = '/guides/';
 export const NATIVE_GAME_GUIDES_CATEGORY = 'Warframe Game Guides';
 
+/** Trusted third-party Warframe resources shown below native guides on /guides/. */
+export const warframeAuthorityLinks = [
+	{
+		title: 'Warframe on Steam',
+		description: 'Official store page, system requirements, and player reviews.',
+		href: 'https://store.steampowered.com/app/230410/Warframe/',
+	},
+	{
+		title: 'Warframe patch notes & news',
+		description: 'Read official PC update posts before you change your loadout.',
+		href: 'https://forums.warframe.com/forum/3-pc-update-notes/',
+	},
+	{
+		title: 'Official Warframe website',
+		description: 'Game overview, news, and resources from Digital Extremes.',
+		href: 'https://www.warframe.com/',
+	},
+	{
+		title: 'Warframe Steam community hub',
+		description: 'Announcements, guides, and community discussions.',
+		href: 'https://steamcommunity.com/app/230410',
+	},
+] as const;
+
 /** Pedagogical order for native Warframe guides on the hub. */
 const NATIVE_GUIDE_ORDER = [
 	'warframe-new-player-guide',
