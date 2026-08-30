@@ -14,9 +14,8 @@ export const getStaticPaths = (() =>
 	i18nLocaleCodes.map((locale) => ({ params: { locale } }))) satisfies GetStaticPaths;
 
 /**
- * Per-locale sitemap — empty while `includeLocaleUrlsInSitemap` is false.
- * Files remain so historical sitemap URLs do not 404; they are not listed in
- * sitemap-index.xml.
+ * Per-locale sitemap — one file per non-English locale (25 URLs each).
+ * Listed in sitemap-index.xml when `includeLocaleUrlsInSitemap` is true.
  */
 export const GET: APIRoute = ({ params }) => {
 	const locale = params.locale as LocaleCode;

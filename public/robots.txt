@@ -2,10 +2,9 @@ User-agent: *
 Allow: /
 Allow: /images/
 
-# English is the official language. Submit these two URLs in Google Search Console:
-#   1. https://warframecheats.net/sitemap-index.xml  (master index: English pages + images)
-#   2. https://warframecheats.net/sitemap.xml        (English pages only — 46 URLs)
-# sitemap-images.xml is included automatically via sitemap-index.xml (11 image entries).
-# Per-locale sitemaps (e.g. sitemap-uk.xml) redirect to sitemap.xml — English-only SEO.
+# Primary sitemap (lists all 23 sub-sitemaps: English + 21 locales + images):
+#   https://warframecheats.net/sitemap-index.xml
+# English-only shortcut:
+#   https://warframecheats.net/sitemap.xml
 Sitemap: https://warframecheats.net/sitemap-index.xml
 Sitemap: https://warframecheats.net/sitemap.xml
