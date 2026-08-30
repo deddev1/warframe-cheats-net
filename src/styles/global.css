@@ -212,6 +212,9 @@
 	}
 
 	.btn-buy {
+		position: relative;
+		overflow: hidden;
+		isolation: isolate;
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
@@ -233,6 +236,67 @@
 			transform 0.2s ease,
 			filter 0.2s ease,
 			box-shadow 0.2s ease;
+	}
+
+	.btn-buy::before,
+	.btn-glow::before {
+		content: '';
+		position: absolute;
+		inset: -1px;
+		border-radius: inherit;
+		background: radial-gradient(
+			circle 92px at var(--glow-x, 50%) var(--glow-y, 50%),
+			rgba(255, 255, 255, 0.72) 0%,
+			rgba(255, 255, 255, 0.22) 34%,
+			transparent 68%
+		);
+		opacity: 0;
+		transition: opacity 0.18s ease;
+		pointer-events: none;
+		z-index: 0;
+	}
+
+	.btn-buy:hover::before,
+	.btn-buy:focus-visible::before,
+	.btn-buy:active::before,
+	.btn-glow:hover::before,
+	.btn-glow:focus-visible::before,
+	.btn-glow:active::before {
+		opacity: 1;
+	}
+
+	.btn-buy:active,
+	.btn-glow:active {
+		transform: translateY(0) scale(0.985);
+	}
+
+	.btn-glow {
+		position: relative;
+		overflow: hidden;
+		isolation: isolate;
+	}
+
+	.btn-glow::after {
+		content: '';
+		position: absolute;
+		inset: -1px;
+		border-radius: inherit;
+		background: radial-gradient(
+			circle 88px at var(--glow-x, 50%) var(--glow-y, 50%),
+			rgba(24, 217, 210, 0.55) 0%,
+			rgba(24, 217, 210, 0.18) 36%,
+			transparent 70%
+		);
+		opacity: 0;
+		transition: opacity 0.18s ease;
+		pointer-events: none;
+		z-index: 0;
+	}
+
+	.btn-glow:hover::after,
+	.btn-glow:focus-visible::after,
+	.btn-glow:active::after {
+		opacity: 1;
 	}
 
 	@media (max-width: 768px) {

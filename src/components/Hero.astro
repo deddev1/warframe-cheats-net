@@ -135,6 +135,7 @@ const buyUrl = siteConfig.checkoutUrl;
 		background: #050B0C;
 		transform: scale(1.05);
 		transform-origin: center center;
+		filter: brightness(1.12) contrast(1.04) saturate(1.08);
 	}
 
 	.hero__video {
@@ -182,8 +183,8 @@ const buyUrl = siteConfig.checkoutUrl;
 		inset: 0;
 		z-index: 3;
 		background:
-			linear-gradient(90deg, #050B0C 0%, rgba(5, 11, 12, 0.96) 32%, rgba(5, 11, 12, 0.72) 52%, rgba(5, 11, 12, 0.42) 100%),
-			linear-gradient(180deg, rgba(5, 11, 12, 0.55) 0%, transparent 34%, rgba(5, 11, 12, 0.82) 100%);
+			linear-gradient(90deg, rgba(5, 11, 12, 0.82) 0%, rgba(5, 11, 12, 0.52) 28%, rgba(5, 11, 12, 0.22) 52%, transparent 100%),
+			linear-gradient(180deg, rgba(5, 11, 12, 0.28) 0%, transparent 42%, rgba(5, 11, 12, 0.45) 100%);
 		pointer-events: none;
 	}
 
@@ -201,10 +202,6 @@ const buyUrl = siteConfig.checkoutUrl;
 	.hero__copy {
 		max-width: min(48rem, 100%);
 		min-width: 0;
-		padding: 1.15rem 1.35rem;
-		border-radius: 1rem;
-		background: linear-gradient(135deg, rgba(5, 11, 12, 0.82), rgba(5, 11, 12, 0.58));
-		box-shadow: 0 12px 40px rgba(5, 11, 12, 0.45);
 		animation: rise-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
 	}
 
@@ -406,8 +403,8 @@ const buyUrl = siteConfig.checkoutUrl;
 
 		.hero__veil {
 			background:
-				linear-gradient(180deg, rgba(5, 11, 12, 0.72) 0%, rgba(5, 11, 12, 0.52) 38%, rgba(5, 11, 12, 0.98) 100%),
-				linear-gradient(90deg, rgba(5, 11, 12, 0.88), rgba(5, 11, 12, 0.55) 80%);
+				linear-gradient(180deg, rgba(5, 11, 12, 0.42) 0%, rgba(5, 11, 12, 0.2) 40%, rgba(5, 11, 12, 0.72) 100%),
+				linear-gradient(90deg, rgba(5, 11, 12, 0.62), rgba(5, 11, 12, 0.22) 80%);
 		}
 
 		.hero__inner {
@@ -420,8 +417,6 @@ const buyUrl = siteConfig.checkoutUrl;
 		.hero__copy {
 			max-width: none;
 			width: 100%;
-			padding: 1rem 1.05rem;
-			background: linear-gradient(180deg, rgba(5, 11, 12, 0.88), rgba(5, 11, 12, 0.72));
 		}
 
 		.hero__title {
