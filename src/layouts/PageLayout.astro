@@ -472,13 +472,21 @@ const lcpImageSizes = isHeroLcp ? heroSizes : undefined;
 		transform: translateY(-50%);
 	}
 
-	.article :global(a) {
+	.article :global(a:not(.btn-buy):not(.btn):not(.pricing-showcase__cart):not(.features-detail__pricing-link):not(.features-detail__checkout-link)) {
 		color: var(--color-orchid);
 		font-weight: 600;
 	}
 
-	.article :global(a:hover) {
+	.article :global(a:not(.btn-buy):not(.btn):not(.pricing-showcase__cart):not(.features-detail__pricing-link):not(.features-detail__checkout-link):hover) {
 		color: #42E6E2;
+	}
+
+	.article :global(.btn-buy),
+	.article :global(.btn-buy:hover),
+	.article :global(.btn-buy:visited),
+	.article :global(.btn-buy:focus-visible) {
+		color: #ffffff;
+		text-shadow: 0 1px 3px rgba(6, 17, 18, 0.55);
 	}
 
 	.article :global(.price-grid) {

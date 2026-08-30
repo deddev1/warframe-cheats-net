@@ -222,12 +222,12 @@
 		padding: 0.85rem 1.85rem;
 		border-radius: 0.95rem;
 		border: 1px solid rgba(255, 255, 255, 0.22);
-		background: linear-gradient(180deg, #22c9ca 0%, #178f90 100%);
+		background: linear-gradient(180deg, #1a9fa0 0%, #127274 100%);
 		color: #ffffff;
 		font-size: 1rem;
 		font-weight: 800;
 		letter-spacing: 0.04em;
-		text-shadow: 0 1px 2px rgba(6, 17, 18, 0.42);
+		text-shadow: 0 1px 3px rgba(6, 17, 18, 0.55);
 		box-shadow:
 			0 1px 0 rgba(255, 255, 255, 0.28) inset,
 			0 8px 20px rgba(6, 17, 18, 0.28);
@@ -378,10 +378,10 @@
 
 	.btn-buy:hover {
 		color: #ffffff;
-		background: linear-gradient(180deg, #42e6e2 0%, #20bfc0 100%);
+		background: linear-gradient(180deg, #42e6e2 0%, #1eaeb0 100%);
 		transform: translateY(-1px);
 		filter: brightness(1.03);
-		text-shadow: 0 1px 2px rgba(6, 17, 18, 0.35);
+		text-shadow: 0 1px 3px rgba(6, 17, 18, 0.45);
 	}
 
 	.btn-buy:active {
