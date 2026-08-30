@@ -13,12 +13,12 @@ export default defineConfig({
 	server: {
 		host: true,
 		port: 4321,
-		strictPort: false,
+		strictPort: true,
 	},
 	preview: {
 		host: true,
 		port: 4321,
-		strictPort: false,
+		strictPort: true,
 	},
 	build: {
 		// 'auto' keeps small styles inline but emits the large Tailwind bundle as a

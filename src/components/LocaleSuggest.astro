@@ -67,6 +67,11 @@ const countryLocale = JSON.stringify({
 		const run = () => {
 			const storageKey = 'fc_locale_dismissed';
 			const cookieName = 'fc_locale';
+			const isLocalDev =
+				location.hostname === 'localhost' ||
+				location.hostname === '127.0.0.1';
+
+			if (isLocalDev) return;
 
 			if (sessionStorage.getItem(storageKey)) return;
 

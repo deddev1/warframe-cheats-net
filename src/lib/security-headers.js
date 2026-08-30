@@ -22,9 +22,17 @@ export const CONTENT_SECURITY_POLICY = [
 	"require-trusted-types-for 'script'",
 ].join('; ');
 
-/** Looser CSP so Vite HMR works under `astro dev`. */
+/** Looser CSP so Vite HMR works under `astro dev` (no HTTPS upgrade on localhost). */
 export const CONTENT_SECURITY_POLICY_DEV = [
-	...CSP_BASE,
+	"default-src 'self'",
+	"base-uri 'self'",
+	"object-src 'none'",
+	"frame-ancestors 'none'",
+	"form-action 'self' https://zadeyo.com",
+	"img-src 'self' data: blob: https:",
+	"media-src 'self'",
+	"font-src 'self' data:",
+	"style-src 'self' 'unsafe-inline'",
 	"script-src 'self' 'unsafe-inline' 'unsafe-eval' blob:",
 	"connect-src 'self' ws: wss:",
 	"worker-src 'self' blob:",
@@ -46,6 +54,7 @@ export const SECURITY_HEADERS = {
 
 export function applySecurityHeaders(headers, { html = false, dev = false } = {}) {
 	for (const [key, value] of Object.entries(SECURITY_HEADERS)) {
+		if (dev && key === 'Strict-Transport-Security') continue;
 		headers.set(key, value);
 	}
 

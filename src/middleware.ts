@@ -9,19 +9,26 @@ export const onRequest = defineMiddleware(async (context, next) => {
 	const { request, url } = context;
 
 	if (request.method === 'GET' || request.method === 'HEAD') {
-		const redirectTarget = getLocaleRedirectTarget(url.pathname, url.search, {
-			acceptLanguage: request.headers.get('accept-language'),
-			cookie: request.headers.get('cookie'),
-			country: request.headers.get('cf-ipcountry'),
-		});
+		const isLocalHost =
+			url.hostname === 'localhost' ||
+			url.hostname === '127.0.0.1' ||
+			url.hostname === '0.0.0.0';
 
-		if (redirectTarget) {
-			const headers = new Headers({
-				Location: redirectTarget,
-				'Cache-Control': 'no-store',
+		if (!import.meta.env.DEV || !isLocalHost) {
+			const redirectTarget = getLocaleRedirectTarget(url.pathname, url.search, {
+				acceptLanguage: request.headers.get('accept-language'),
+				cookie: request.headers.get('cookie'),
+				country: request.headers.get('cf-ipcountry'),
 			});
-			applySecurityHeaders(headers);
-			return new Response(null, { status: 302, headers });
+
+			if (redirectTarget) {
+				const headers = new Headers({
+					Location: redirectTarget,
+					'Cache-Control': 'no-store',
+				});
+				applySecurityHeaders(headers);
+				return new Response(null, { status: 302, headers });
+			}
 		}
 	}
 
