@@ -221,17 +221,29 @@
 		min-height: var(--touch-min);
 		padding: 0.85rem 1.85rem;
 		border-radius: 0.95rem;
-		border: 1px solid var(--color-border-strong);
-		background: var(--color-button);
-		color: #061112;
+		border: 1px solid rgba(255, 255, 255, 0.22);
+		background: linear-gradient(180deg, #22c9ca 0%, #178f90 100%);
+		color: #ffffff;
 		font-size: 1rem;
 		font-weight: 800;
-		letter-spacing: 0.01em;
-		box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+		letter-spacing: 0.04em;
+		text-shadow: 0 1px 2px rgba(6, 17, 18, 0.42);
+		box-shadow:
+			0 1px 0 rgba(255, 255, 255, 0.28) inset,
+			0 8px 20px rgba(6, 17, 18, 0.28);
 		transition:
 			transform 0.2s ease,
 			filter 0.2s ease,
-			background 0.2s ease;
+			background 0.2s ease,
+			box-shadow 0.2s ease,
+			color 0.2s ease;
+	}
+
+	.btn-buy,
+	.btn-buy:hover,
+	.btn-buy:focus-visible,
+	.btn-buy:visited {
+		color: #ffffff;
 	}
 
 	.btn-buy,
@@ -284,11 +296,17 @@
 		background: linear-gradient(
 			105deg,
 			transparent 0%,
-			rgba(255, 255, 255, 0.18) 42%,
-			rgba(255, 255, 255, 0.34) 50%,
-			rgba(255, 255, 255, 0.18) 58%,
+			rgba(255, 255, 255, 0.12) 42%,
+			rgba(255, 255, 255, 0.22) 50%,
+			rgba(255, 255, 255, 0.12) 58%,
 			transparent 100%
 		);
+		z-index: 0;
+	}
+
+	.btn-buy > * {
+		position: relative;
+		z-index: 1;
 	}
 
 	@media (hover: hover) and (pointer: fine) {
@@ -321,9 +339,9 @@
 		.pricing-showcase__cart:hover,
 		.pricing-showcase__cart:focus-visible {
 			box-shadow:
-				0 1px 0 rgba(255, 255, 255, 0.22) inset,
-				0 0 0 1px rgba(32, 191, 192, 0.22),
-				0 6px 18px rgba(32, 191, 192, 0.12);
+				0 1px 0 rgba(255, 255, 255, 0.3) inset,
+				0 0 0 1px rgba(255, 255, 255, 0.12),
+				0 10px 22px rgba(6, 17, 18, 0.32);
 		}
 	}
 
@@ -359,10 +377,11 @@
 	}
 
 	.btn-buy:hover {
-		color: #061112;
-		background: var(--color-button-hover);
+		color: #ffffff;
+		background: linear-gradient(180deg, #42e6e2 0%, #20bfc0 100%);
 		transform: translateY(-1px);
-		filter: brightness(1.02);
+		filter: brightness(1.03);
+		text-shadow: 0 1px 2px rgba(6, 17, 18, 0.35);
 	}
 
 	.btn-buy:active {
