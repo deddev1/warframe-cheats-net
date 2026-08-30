@@ -4,7 +4,7 @@
  * Finds the project root, installs dependencies, builds Astro to dist/, and validates output.
  */
 import { execSync } from 'node:child_process';
-import { existsSync, readdirSync, writeFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -74,6 +74,26 @@ if (!existsSync('dist/index.html')) {
 }
 
 console.log('[cloudflare-build] Build complete.');
+
+const redirectsPath = 'dist/_redirects';
+if (existsSync(redirectsPath)) {
+	const seen = new Map();
+	const redirectErrors = [];
+	for (const [index, line] of readFileSync(redirectsPath, 'utf8').split('\n').entries()) {
+		const trimmed = line.trim();
+		if (!trimmed || trimmed.startsWith('#')) continue;
+		const [from, to] = trimmed.split(/\s+/);
+		if (from === to) redirectErrors.push(`line ${index + 1}: self-redirect ${from}`);
+		if (seen.has(from)) redirectErrors.push(`line ${index + 1}: duplicate ${from}`);
+		else seen.set(from, index + 1);
+	}
+	if (redirectErrors.length) {
+		console.error('[cloudflare-build] Invalid _redirects:');
+		for (const error of redirectErrors) console.error(`  - ${error}`);
+		process.exit(1);
+	}
+	console.log(`[cloudflare-build] Validated ${seen.size} redirect rules.`);
+}
 
 let buildId = 'unknown';
 try {
