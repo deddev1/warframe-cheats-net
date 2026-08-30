@@ -1,7 +1,7 @@
 ---
 import { getUi } from '../data/i18n';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
-import { customerReviewStats, customerReviews, customerStats } from '../data/site';
+import { customerReviews, customerStats } from '../data/site';
 import { getReviewPath, reviewsBasePath } from '../data/reviews';
 
 interface Props {
@@ -24,10 +24,7 @@ function formatReviewDate(isoDate: string): string {
 	return reviewDateFormatter.format(new Date(`${isoDate}T00:00:00Z`));
 }
 
-const seeAllLabel = (reviewsUi.seeAll ?? 'See all {count} reviews').replace(
-	'{count}',
-	customerReviewStats.displayCount,
-);
+const seeAllLabel = reviewsUi.seeAll ?? 'See all reviews';
 const verifiedLabel = reviewsUi.verifiedLabel ?? 'Verified customer';
 ---
 

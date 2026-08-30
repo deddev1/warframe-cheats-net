@@ -9,7 +9,7 @@ import { getReviewTagHref } from '../../lib/internal-links';
 
 const title = 'Warframe Cheats Reviews | ESP Soft Aim Feedback';
 const description =
-	'Real Warframe Cheats reviews from buyers: ESP boxes, soft aim, radar, controllers, and cloud DMA — rated 4.4/5 across 10 reviews.';
+	'Real Warframe Cheats reviews from buyers: ESP boxes, soft aim, radar, controllers, and cloud DMA.';
 
 function stars(rating: number): string {
 	return '★'.repeat(rating) + '☆'.repeat(5 - rating);
@@ -96,18 +96,11 @@ const extraGraph: Record<string, unknown>[] = [
 			</nav>
 
 			<header class="reviews-index__head">
-				<div>
-					<h1>Warframe Cheats reviews</h1>
-					<p class="reviews-index__intro">
-						Real feedback from Warframe Cheats buyers — ESP wallhack, soft aim, radar, controller support,
-						and cloud DMA experiences, unedited. Every review links to its full write-up.
-					</p>
-				</div>
-				<div class="reviews-index__summary" aria-label={`${customerReviewStats.averageRating} out of 5 average rating`}>
-					<p class="reviews-index__avg">{customerReviewStats.averageRating.toFixed(1)}</p>
-					<p class="reviews-index__avg-stars" aria-hidden="true">{stars(Math.round(customerReviewStats.averageRating))}</p>
-					<p class="reviews-index__count">{customerReviewStats.totalCount} reviews · out of 5</p>
-				</div>
+				<h1>Warframe Cheats reviews</h1>
+				<p class="reviews-index__intro">
+					Real feedback from Warframe Cheats buyers — ESP wallhack, soft aim, radar, controller support,
+					and cloud DMA experiences, unedited. Every review links to its full write-up.
+				</p>
 			</header>
 
 			<div class="reviews-index__grid">
@@ -202,11 +195,8 @@ const extraGraph: Record<string, unknown>[] = [
 	}
 
 	.reviews-index__head {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: flex-end;
-		justify-content: space-between;
-		gap: 1rem 1.5rem;
+		display: grid;
+		gap: 0.55rem;
 	}
 
 	.reviews-index__head h1 {
@@ -218,44 +208,11 @@ const extraGraph: Record<string, unknown>[] = [
 	}
 
 	.reviews-index__intro {
-		margin: 0.55rem 0 0;
+		margin: 0;
 		color: var(--color-muted);
 		font-size: 0.96rem;
 		line-height: 1.6;
 		max-width: 40rem;
-	}
-
-	.reviews-index__summary {
-		display: grid;
-		gap: 0.15rem;
-		justify-items: end;
-		text-align: right;
-		padding: 0.85rem 1.1rem;
-		border-radius: 0.9rem;
-		border: 1px solid rgba(168, 85, 247, 0.2);
-		background: rgba(26, 22, 38, 0.72);
-	}
-
-	.reviews-index__avg {
-		margin: 0;
-		font-family: var(--font-display);
-		font-size: 1.85rem;
-		font-weight: 800;
-		line-height: 1;
-		color: var(--color-orchid);
-	}
-
-	.reviews-index__avg-stars {
-		margin: 0;
-		font-size: 0.85rem;
-		letter-spacing: 0.08em;
-		color: #fbbf24;
-	}
-
-	.reviews-index__count {
-		margin: 0;
-		font-size: 0.78rem;
-		color: var(--color-faint);
 	}
 
 	.reviews-index__grid {
@@ -455,12 +412,6 @@ const extraGraph: Record<string, unknown>[] = [
 	@media (max-width: 680px) {
 		.reviews-index__grid {
 			grid-template-columns: 1fr;
-		}
-
-		.reviews-index__summary {
-			justify-items: start;
-			text-align: left;
-			width: 100%;
 		}
 
 		.reviews-index__cta-row {

@@ -547,5 +547,4 @@ export const customerReviews = [
 export const customerReviewStats = {
 	averageRating: 4.4,
 	totalCount: customerReviews.length,
-	displayCount: '3,000+',
 } as const;

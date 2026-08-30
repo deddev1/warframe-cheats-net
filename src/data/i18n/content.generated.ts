@@ -72,11 +72,11 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				reviews: {
 					title: "Customer reviews",
-					subtitle: "3,000+ reviews from real customers",
+					subtitle: "More than 100 reviews from real customers",
 					outOf: "out of 5",
 					countLabel: "reviews",
 					verifiedLabel: "Verified customer",
-					seeAll: "See all {count} reviews",
+					seeAll: "See all reviews",
 				},
 				common: {
 					buyNow: "Buy Now",
