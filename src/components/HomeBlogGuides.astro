@@ -1,6 +1,7 @@
 ---
 import { getPostsByCategory } from '../data/blog/helpers';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
+import WarframeAuthorityLinks from './WarframeAuthorityLinks.astro';
 
 interface Props {
 	locale?: LocaleCode;
@@ -47,6 +48,8 @@ const guides = getPostsByCategory(locale, 'Warframe Game Guides').slice(0, 3);
 			<p class="home-guides__more">
 				<a href="/guides/">Browse all guides</a>
 			</p>
+
+			<WarframeAuthorityLinks headingLevel="h3" />
 		</section>
 	) : null
 }
