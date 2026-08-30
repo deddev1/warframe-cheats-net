@@ -5,7 +5,6 @@ import SiteFooter from '../../components/SiteFooter.astro';
 import { customerReviewStats, customerReviews, productInfo, siteConfig } from '../../data/site';
 import { getReviewPath, reviewsBasePath } from '../../data/reviews';
 import RelatedPages from '../../components/RelatedPages.astro';
-import { getReviewTagHref } from '../../lib/internal-links';
 
 const title = 'Warframe Cheats Reviews | ESP Soft Aim Feedback';
 const description =
@@ -98,8 +97,8 @@ const extraGraph: Record<string, unknown>[] = [
 			<header class="reviews-index__head">
 				<h1>Warframe Cheats reviews</h1>
 				<p class="reviews-index__intro">
-					Real feedback from Warframe Cheats buyers — ESP wallhack, soft aim, radar, controller support,
-					and cloud DMA experiences, unedited. Every review links to its full write-up.
+					Unedited feedback from people who bought Warframe Cheats — setup, features, support, and
+					day-to-day use.
 				</p>
 			</header>
 
@@ -119,20 +118,9 @@ const extraGraph: Record<string, unknown>[] = [
 									{stars(review.rating)}
 								</p>
 							</div>
-							{
-								review.tag ? (
-									getReviewTagHref(review.tag) ? (
-										<a class="reviews-index__tag" href={getReviewTagHref(review.tag)}>
-											{review.tag}
-										</a>
-									) : (
-										<p class="reviews-index__tag">{review.tag}</p>
-									)
-								) : null
-							}
-							<p class="reviews-index__text">{review.text}</p>
+							<p class="reviews-index__text">{review.short}</p>
 							<a class="reviews-index__more" href={getReviewPath(review.slug)}>
-								Read full review
+								{review.text !== review.short ? 'Read more' : 'View review'}
 								<svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
 									<path d="M5 12h14m-6-6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 								</svg>
