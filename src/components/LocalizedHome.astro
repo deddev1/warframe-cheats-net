@@ -112,7 +112,7 @@ const extraGraph: Record<string, unknown>[] =
 		/>
 		<section class="site__section site__section--store" id="store" aria-label={ui.product.title}>
 			<div class="shell store-stack">
-				<PricingPlans locale={locale} />
+				<PricingPlans locale={locale} showRelatedPages={false} />
 				<PricingFeatureList locale={locale} showRelatedPages={false} />
 			</div>
 		</section>
@@ -167,7 +167,8 @@ const extraGraph: Record<string, unknown>[] =
 
 	.store-stack {
 		display: grid;
-		gap: 1.25rem;
+		gap: 1rem;
+		align-items: start;
 	}
 
 	@media (max-width: 760px) {

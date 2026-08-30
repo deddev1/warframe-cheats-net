@@ -228,10 +228,9 @@
 		font-weight: 800;
 		letter-spacing: 0.01em;
 		box-shadow:
-			0 0 0 1px rgba(24, 217, 210, 0.2),
-			0 10px 28px rgba(24, 217, 210, 0.28),
-			0 0 36px rgba(24, 217, 210, 0.18),
-			inset 0 1px 0 rgba(255, 255, 255, 0.35);
+			0 0 0 1px rgba(24, 217, 210, 0.16),
+			0 6px 18px rgba(24, 217, 210, 0.14),
+			inset 0 1px 0 rgba(255, 255, 255, 0.28);
 		transition:
 			transform 0.2s ease,
 			filter 0.2s ease,
@@ -245,13 +244,13 @@
 		inset: -1px;
 		border-radius: inherit;
 		background: radial-gradient(
-			circle 92px at var(--glow-x, 50%) var(--glow-y, 50%),
-			rgba(255, 255, 255, 0.72) 0%,
-			rgba(255, 255, 255, 0.22) 34%,
-			transparent 68%
+			circle 64px at var(--glow-x, 50%) var(--glow-y, 50%),
+			rgba(255, 255, 255, 0.32) 0%,
+			rgba(255, 255, 255, 0.08) 42%,
+			transparent 72%
 		);
 		opacity: 0;
-		transition: opacity 0.18s ease;
+		transition: opacity 0.2s ease;
 		pointer-events: none;
 		z-index: 0;
 	}
@@ -262,7 +261,12 @@
 	.btn-glow:hover::before,
 	.btn-glow:focus-visible::before,
 	.btn-glow:active::before {
-		opacity: 1;
+		opacity: 0.42;
+	}
+
+	.btn-buy:active::before,
+	.btn-glow:active::before {
+		opacity: 0.5;
 	}
 
 	.btn-buy:active,
@@ -282,13 +286,13 @@
 		inset: -1px;
 		border-radius: inherit;
 		background: radial-gradient(
-			circle 88px at var(--glow-x, 50%) var(--glow-y, 50%),
-			rgba(24, 217, 210, 0.55) 0%,
-			rgba(24, 217, 210, 0.18) 36%,
-			transparent 70%
+			circle 58px at var(--glow-x, 50%) var(--glow-y, 50%),
+			rgba(24, 217, 210, 0.22) 0%,
+			rgba(24, 217, 210, 0.06) 42%,
+			transparent 74%
 		);
 		opacity: 0;
-		transition: opacity 0.18s ease;
+		transition: opacity 0.2s ease;
 		pointer-events: none;
 		z-index: 0;
 	}
@@ -296,7 +300,11 @@
 	.btn-glow:hover::after,
 	.btn-glow:focus-visible::after,
 	.btn-glow:active::after {
-		opacity: 1;
+		opacity: 0.38;
+	}
+
+	.btn-glow:active::after {
+		opacity: 0.46;
 	}
 
 	@media (max-width: 768px) {
@@ -309,12 +317,11 @@
 	.btn-buy:hover {
 		color: #041011;
 		transform: translateY(-1px);
-		filter: brightness(1.06);
+		filter: brightness(1.03);
 		box-shadow:
-			0 0 0 1px rgba(24, 217, 210, 0.35),
-			0 14px 34px rgba(24, 217, 210, 0.38),
-			0 0 44px rgba(24, 217, 210, 0.28),
-			inset 0 1px 0 rgba(255, 255, 255, 0.4);
+			0 0 0 1px rgba(24, 217, 210, 0.24),
+			0 8px 22px rgba(24, 217, 210, 0.2),
+			inset 0 1px 0 rgba(255, 255, 255, 0.32);
 	}
 
 	.surface-card {
