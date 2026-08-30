@@ -13,29 +13,6 @@ interface Props {
 const locale = Astro.props.locale ?? defaultLocale;
 const gallery = getGalleryUi(locale);
 
-const galleryBoxes = [
-	{
-		title: 'ESP & wallhack',
-		copy: 'See Grineer, Corpus, and Sentient units through cover.',
-		href: '/warframe-esp/',
-	},
-	{
-		title: 'Aimbot',
-		copy: 'Lead calculator with smoothness and FOV controls.',
-		href: '/warframe-aimbot/',
-	},
-	{
-		title: 'Radar',
-		copy: 'Track flanks and threats outside your view.',
-		href: '/warframe-radar/',
-	},
-	{
-		title: 'One license',
-		copy: 'ESP, aimbot, and radar in one package.',
-		href: '/features/',
-	},
-];
-
 const slides = warframeImages.gallery.map((image) => ({
 	src: contentSrc(image.src),
 	srcset: contentSrcSet(image.src),
@@ -75,17 +52,6 @@ const marqueeSlides = [...slides, ...slides];
 				}
 			</div>
 		</div>
-
-		<div class="gallery__boxes">
-			{
-				galleryBoxes.map((box) => (
-					<a href={localizeInternalHref(box.href, locale)} class="gallery__box">
-						<strong>{box.title}</strong>
-						<span>{box.copy}</span>
-					</a>
-				))
-			}
-		</div>
 	</div>
 </section>
 
@@ -93,7 +59,7 @@ const marqueeSlides = [...slides, ...slides];
 	.gallery {
 		width: 100%;
 		content-visibility: auto;
-		contain-intrinsic-size: 1px 420px;
+		contain-intrinsic-size: 1px 300px;
 	}
 
 	.gallery__head {
@@ -137,7 +103,7 @@ const marqueeSlides = [...slides, ...slides];
 	.gallery__marquee {
 		overflow: hidden;
 		width: 100%;
-		padding: 0.75rem 0 0.35rem;
+		padding: 0.75rem 0 0.85rem;
 		mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
 	}
 
@@ -185,47 +151,6 @@ const marqueeSlides = [...slides, ...slides];
 		color: #e9d5ff;
 	}
 
-	.gallery__boxes {
-		display: grid;
-		grid-template-columns: repeat(4, minmax(0, 1fr));
-		gap: 0.55rem;
-		padding: 0 0.85rem 0.85rem;
-	}
-
-	.gallery__box {
-		display: grid;
-		gap: 0.25rem;
-		padding: 0.7rem 0.75rem;
-		border-radius: 0.7rem;
-		border: 1px solid rgba(168, 85, 247, 0.16);
-		background: rgba(22, 18, 32, 0.75);
-		text-decoration: none;
-		transition:
-			border-color 0.2s ease,
-			background 0.2s ease,
-			transform 0.2s ease,
-			box-shadow 0.2s ease;
-	}
-
-	.gallery__box:hover {
-		border-color: rgba(192, 132, 252, 0.38);
-		background: rgba(30, 24, 44, 0.85);
-		transform: translateY(-3px);
-		box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
-	}
-
-	.gallery__box strong {
-		font-size: 0.82rem;
-		font-weight: 700;
-		color: var(--color-ink);
-	}
-
-	.gallery__box span {
-		font-size: 0.76rem;
-		line-height: 1.4;
-		color: var(--color-muted);
-	}
-
 	@keyframes gallery-marquee {
 		from {
 			transform: translateX(0);
@@ -247,20 +172,9 @@ const marqueeSlides = [...slides, ...slides];
 		}
 	}
 
-	@media (max-width: 760px) {
-		.gallery__boxes {
-			grid-template-columns: repeat(2, minmax(0, 1fr));
-		}
-	}
-
 	@media (max-width: 560px) {
 		.gallery__marquee-slide {
 			width: clamp(200px, 72vw, 280px);
-		}
-
-		.gallery__boxes {
-			grid-template-columns: 1fr;
-			padding-inline: 0.75rem;
 		}
 	}
 </style>
