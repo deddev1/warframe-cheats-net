@@ -107,7 +107,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				home: {
 					title: "Warframe Cheats 2026 | Undetected ESP & Aimbot",
 					description: "Warframe cheats for PC — undetected ESP, aimbot, and wallhack at warframecheats.net. Compare monthly and lifetime plans, setup, and anti-cheat updates.",
-					h1: "Warframe Cheats — ESP, Aimbot & Wallhack for PC",
+					h1: "Warframe Cheats",
 					intro: "A focused Windows PC package for Warframe: Enemy ESP, aimbot controls, and wallhack overlays with anti-cheat maintenance after major patches.",
 					imageAlt: "Warframe cheats main menu with ESP wallhack and soft aim toggles on PC",
 					galleryTitle: "Warframe Cheats visuals",
