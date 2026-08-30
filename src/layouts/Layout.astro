@@ -57,9 +57,7 @@ const ogImageType = ogImage.endsWith('.webp') ? 'image/webp' : 'image/png';
 const ogImageWidth = ogImageIsLogo ? '512' : '1920';
 const ogImageHeight = ogImageIsLogo ? '512' : '1080';
 const twitterCard = ogImageIsLogo ? 'summary' : 'summary_large_image';
-/** Non-English locale UI routes are noindex; canonical always points to English. */
-const localeNoindex = noindex || locale !== defaultLocale;
-const robots = localeNoindex
+const robots = noindex
 	? 'noindex, nofollow'
 	: 'index, follow, max-image-preview:large';
 const siteDescription = `${productInfo.tagline}. ${productInfo.summary}`;

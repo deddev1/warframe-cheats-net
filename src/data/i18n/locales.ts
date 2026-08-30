@@ -34,7 +34,7 @@ export type LocaleMeta = {
 
 /**
  * UI locales (language switcher / `/{lang}/…` routes).
- * English is the only SEO index target; other locales are UX translations (noindex).
+ * All locales are included in sitemaps and indexable.
  * @see `seoIndexableLocales`, `includeLocaleUrlsInSitemap`
  */
 export const locales: LocaleMeta[] = [
@@ -67,11 +67,11 @@ export const defaultLocale: LocaleCode = 'en';
 
 export const localeCodes = locales.map((l) => l.code);
 
-/** Only English pages are indexable — locale UI routes are noindex convenience translations. */
-export const seoIndexableLocales: readonly LocaleCode[] = ['en'];
+/** All locales are indexable and listed in per-locale sitemaps. */
+export const seoIndexableLocales: readonly LocaleCode[] = localeCodes;
 
-/** Include localized URLs in per-locale sitemaps (false = English-only SEO policy). */
-export const includeLocaleUrlsInSitemap = false;
+/** Include localized URLs in per-locale sitemaps and sitemap-i18n.xml. */
+export const includeLocaleUrlsInSitemap = true;
 
 export const localeMap = Object.fromEntries(locales.map((l) => [l.code, l])) as Record<
 	LocaleCode,

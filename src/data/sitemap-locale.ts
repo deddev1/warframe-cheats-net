@@ -31,8 +31,7 @@ export function localeSitemapUrl(locale: LocaleCode): string {
 }
 
 /**
- * Build sitemap entries for one non-English locale.
- * Returns [] when `includeLocaleUrlsInSitemap` is false (English-only SEO policy).
+ * Build sitemap entries for one non-English locale (25 marketing pages).
  */
 export function buildLocaleSitemapEntries(locale: LocaleCode): LocaleSitemapEntry[] {
 	if (locale === defaultLocale) {
@@ -84,7 +83,7 @@ export function renderLocaleSitemapUrlBlock(entry: LocaleSitemapEntry): string {
   </url>`;
 }
 
-/** Combined i18n entries — empty under English-only SEO policy. */
+/** Combined i18n entries — all non-English locales flattened. */
 export function buildAllI18nSitemapEntries(): LocaleSitemapEntry[] {
 	if (!includeLocaleUrlsInSitemap) return [];
 	return i18nLocaleCodes.flatMap((locale) => buildLocaleSitemapEntries(locale));
