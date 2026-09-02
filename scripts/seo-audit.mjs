@@ -97,6 +97,25 @@ const middleware = readFileSync(join(root, 'functions/_middleware.js'), 'utf8');
 if (!middleware.includes(ORIGIN)) fail(`_middleware.js missing ${ORIGIN}`);
 checkBanned('_middleware.js (content)', middleware.replace(/LEGACY_HOSTS[\s\S]*?;/, ''));
 
+const workerEntry = readFileSync(join(root, 'worker.js'), 'utf8');
+if (!workerEntry.includes("from './functions/_middleware.js'")) {
+	fail('worker.js must import functions/_middleware.js for edge redirects');
+}
+if (!workerEntry.includes('env.ASSETS.fetch')) {
+	fail('worker.js must delegate to env.ASSETS.fetch for static assets');
+}
+
+const wranglerToml = readFileSync(join(root, 'wrangler.toml'), 'utf8');
+if (!/main\s*=\s*["']worker\.js["']/.test(wranglerToml)) {
+	fail('wrangler.toml must set main = "worker.js"');
+}
+if (!wranglerToml.includes('run_worker_first = true')) {
+	fail('wrangler.toml must set run_worker_first = true so redirects run before assets');
+}
+if (!wranglerToml.includes('binding = "ASSETS"')) {
+	fail('wrangler.toml must bind static assets as ASSETS');
+}
+
 // --- guides indexing policy ---
 const externalGuidePage = readFileSync(join(root, 'src/components/ExternalGuidePage.astro'), 'utf8');
 if (!/noindex=\{true\}/.test(externalGuidePage)) {
