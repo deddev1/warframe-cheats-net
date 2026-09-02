@@ -13,10 +13,25 @@ import WarframeAuthorityLinks from './WarframeAuthorityLinks.astro';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale } from '../data/i18n/locales';
 
+import type { ResolvedExternalGuide } from '../data/guides/types';
+
 const locale = defaultLocale;
 const nativeGuides = getNativeWarframeGuides();
 const otherGameGuides = getMixedExternalGuides();
 const homeHref = getLocalizedPath('home', locale);
+
+function externalGuideLabel(guide: ResolvedExternalGuide): string {
+	const topic = guide.title.match(/Guide:\s*(.+)$/i)?.[1]?.split('&')[0].trim() ?? 'Guide';
+	const shortTopic = topic.length > 18 ? `${topic.slice(0, 15).trimEnd()}…` : topic;
+	const date = new Date(`${guide.published}T00:00:00Z`);
+	const stamp = `${date.getUTCMonth() + 1}/${date.getUTCDate()}`;
+	return `${guide.gameName}: ${shortTopic} · ${stamp}`;
+}
+
+function nativeGuideLabel(title: string): string {
+	const trimmed = title.replace(/^Warframe\s+/i, '').trim();
+	return trimmed.length <= 38 ? trimmed : `${trimmed.slice(0, 35).trimEnd()}…`;
+}
 
 const title = 'Game Guides Hub | Warframe & Multi-Game Gameplay Guides';
 const description =
@@ -62,25 +77,27 @@ const extraGraph = [
 				Our primary guides covering Steel Path, open world farming, factions, mission types, and patch notes.
 			</p>
 			<div class="guides__grid">
-				{
-					nativeGuides.map((post, index) => (
-						<a class="guides__card guides__card--native" href={post.canonicalPath}>
-							<img
-								src={post.imageSrc}
-								alt={post.translation.imageAlt}
-								width="640"
-								height="360"
-								loading={index < 3 ? 'eager' : 'lazy'}
-								decoding="async"
-							/>
-							<div class="guides__card-body">
-								<span class="guides__cat">Warframe</span>
-								<h3>{post.translation.title}</h3>
-								<p>{post.translation.intro}</p>
-							</div>
-						</a>
-					))
-				}
+		{
+			nativeGuides.map((post, index) => (
+				<article class="guides__card guides__card--native">
+					<img
+						src={post.imageSrc}
+						alt={post.translation.imageAlt}
+						width="640"
+						height="360"
+						loading={index < 3 ? 'eager' : 'lazy'}
+						decoding="async"
+					/>
+					<div class="guides__card-body">
+						<span class="guides__cat">Warframe</span>
+						<h3 class="guides__card-title">
+							<a href={post.canonicalPath}>{nativeGuideLabel(post.translation.title)}</a>
+						</h3>
+						<p>{post.translation.intro}</p>
+					</div>
+				</article>
+			))
+		}
 			</div>
 
 			<WarframeAuthorityLinks headingLevel="h3" />
@@ -96,7 +113,7 @@ const extraGraph = [
 			<div class="guides__grid">
 				{
 					otherGameGuides.map((guide, index) => (
-						<a class="guides__card" href={guide.canonicalPath}>
+						<article class="guides__card">
 							<img
 								src={guide.imageSrc}
 								alt={guide.imageAlt}
@@ -107,9 +124,11 @@ const extraGraph = [
 							/>
 							<div class="guides__card-body">
 								<span class="guides__cat">{guide.gameName}</span>
-								<p class="guides__card-title">{guide.title}</p>
+								<h3 class="guides__card-title">
+									<a href={guide.canonicalPath}>{externalGuideLabel(guide)}</a>
+								</h3>
 							</div>
-						</a>
+						</article>
 					))
 				}
 			</div>
@@ -188,7 +207,6 @@ const extraGraph = [
 		background: rgba(20, 24, 30, 0.88);
 		overflow: hidden;
 		color: inherit;
-		text-decoration: none;
 		transition:
 			border-color 0.2s ease,
 			transform 0.2s ease;
@@ -197,7 +215,6 @@ const extraGraph = [
 	.guides__card:hover {
 		border-color: rgba(32, 191, 192, 0.38);
 		transform: translateY(-2px);
-		color: inherit;
 	}
 
 	.guides__card img {
@@ -226,6 +243,15 @@ const extraGraph = [
 		font-size: 0.98rem;
 		line-height: 1.35;
 		font-weight: 800;
+	}
+
+	.guides__card-title a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.guides__card-title a:hover {
+		color: #20bfc0;
 	}
 
 	.guides__card-body p:not(.guides__card-title) {

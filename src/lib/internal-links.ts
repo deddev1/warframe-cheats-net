@@ -28,7 +28,7 @@ export function getProductRelatedLinks(locale: LocaleCode, labels: NavLabels): I
 	];
 }
 
-/** Homepage explore hub — deep links into guides, product pages, and support. */
+/** Homepage explore hub — deep links not duplicated in the primary navbar. */
 export function getHomeExploreLinks(locale: LocaleCode): InternalLink[] {
 	return [
 		{ label: 'Warframe Cheats guide', href: getLocalizedPath('hacks', locale) },
@@ -36,13 +36,9 @@ export function getHomeExploreLinks(locale: LocaleCode): InternalLink[] {
 		{ label: 'Warframe Aimbot', href: getLocalizedPath('warframe-aimbot', locale) },
 		{ label: 'Warframe wallhack', href: getLocalizedPath('wallhack', locale) },
 		{ label: 'Warframe radar', href: getLocalizedPath('radar', locale) },
-		{ label: 'Features', href: getLocalizedPath('features', locale) },
-		{ label: 'Pricing', href: getLocalizedPath('pricing', locale) },
-		{ label: 'Setup', href: getLocalizedPath('setup', locale) },
-		{ label: 'Updates', href: getLocalizedPath('updates', locale) },
-		{ label: 'FAQ', href: getLocalizedPath('faq', locale) },
-		{ label: 'Reviews', href: '/reviews/' },
-		{ label: 'Blog', href: '/blog/' },
+		{ label: 'Setup guide', href: getLocalizedPath('setup', locale) },
+		{ label: 'Guides hub', href: '/guides/' },
+		{ label: 'Warframe blog', href: '/blog/' },
 	];
 }
 
