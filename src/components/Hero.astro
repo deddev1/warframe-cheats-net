@@ -9,6 +9,8 @@ interface Props {
 	subtitle?: string;
 	subtitleShort?: string;
 	locale?: LocaleCode;
+	/** Localized descriptive alt for the hero poster (SEO + screen readers). */
+	imageAlt?: string;
 }
 
 const locale = Astro.props.locale ?? defaultLocale;
@@ -18,6 +20,7 @@ const {
 	accent = ui.hero.accent,
 	subtitle = ui.hero.subtitle,
 	subtitleShort = ui.hero.subtitleShort,
+	imageAlt = ui.images.hero,
 } = Astro.props;
 
 const buyUrl = siteConfig.checkoutUrl;
@@ -33,13 +36,12 @@ const buyUrl = siteConfig.checkoutUrl;
 				heroIsExternal ? (
 					<img
 						src={heroPreloadSrc}
-						alt=""
+						alt={imageAlt}
 						width="1600"
 						height="900"
 						class="hero__poster-img"
 						fetchpriority="high"
 						decoding="async"
-						aria-hidden="true"
 					/>
 				) : (
 					<>
@@ -52,13 +54,12 @@ const buyUrl = siteConfig.checkoutUrl;
 						/>
 						<img
 							src={heroPreloadSrc}
-							alt=""
+							alt={imageAlt}
 							width="1600"
 							height="900"
 							class="hero__poster-img"
 							fetchpriority="high"
 							decoding="async"
-							aria-hidden="true"
 						/>
 					</>
 				)
