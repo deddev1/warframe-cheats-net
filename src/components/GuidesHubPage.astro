@@ -107,7 +107,7 @@ const extraGraph = [
 							/>
 							<div class="guides__card-body">
 								<span class="guides__cat">{guide.gameName}</span>
-								<h3>{guide.title}</h3>
+								<p class="guides__card-title">{guide.title}</p>
 							</div>
 						</a>
 					))
@@ -220,14 +220,15 @@ const extraGraph = [
 		text-transform: uppercase;
 	}
 
-	.guides__card-body h3 {
+	.guides__card-body h3,
+	.guides__card-title {
 		margin: 0;
 		font-size: 0.98rem;
 		line-height: 1.35;
 		font-weight: 800;
 	}
 
-	.guides__card-body p {
+	.guides__card-body p:not(.guides__card-title) {
 		margin: 0;
 		color: rgba(255, 255, 255, 0.65);
 		font-size: 0.86rem;
