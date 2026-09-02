@@ -12,14 +12,13 @@ const locale = Astro.props.locale ?? defaultLocale;
 const ui = getUi(locale);
 
 const mainLinks = [
-	{ label: ui.nav.home, href: getLocalizedPath('home', locale) },
-	{ label: ui.nav.features, href: getLocalizedPath('features', locale) },
-	{ label: ui.nav.cheats ?? 'Cheats', href: getLocalizedPath('hacks', locale) },
-	{ label: ui.nav.updates, href: getLocalizedPath('updates', locale) },
-	{ label: ui.nav.pricing, href: getLocalizedPath('pricing', locale) },
-	{ label: ui.nav.faq, href: getLocalizedPath('faq', locale) },
+	{ label: ui.nav.esp, href: getLocalizedPath('warframe-esp', locale) },
+	{ label: ui.nav.aimbot, href: getLocalizedPath('warframe-aimbot', locale) },
+	{ label: 'Wallhack', href: getLocalizedPath('wallhack', locale) },
+	{ label: 'Radar', href: getLocalizedPath('radar', locale) },
+	{ label: ui.nav.setup, href: getLocalizedPath('setup', locale) },
 	{ label: 'Guides', href: '/guides/' },
-	{ label: ui.nav.reviews ?? 'Reviews', href: '/reviews/' },
+		{ label: 'Blog posts', href: '/blog/' },
 ];
 
 const legalLinks = [

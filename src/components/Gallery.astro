@@ -18,8 +18,25 @@ const slides = warframeImages.gallery.map((image) => ({
 	srcset: contentSrcSet(image.src),
 	alt: image.alt,
 	href: localizeInternalHref(image.href, locale),
+	linkLabel: galleryLinkLabel(localizeInternalHref(image.href, locale), image.src),
 }));
 const marqueeSlides = [...slides, ...slides];
+
+function galleryLinkLabel(href: string, src: string): string {
+	const file = src.match(/\/([^/]+?)(?:-\d+w)?\.webp$/)?.[1] ?? '';
+	const labels: Record<string, string> = {
+		'warframe-cheats-main-menu': 'Main menu shot',
+		'warframe-esp-wallhack-overlay': 'ESP overlay shot',
+		'warframe-esp-enemy-boxes': 'ESP boxes shot',
+		'warframe-sortie-aimbot-combat': 'Aimbot combat shot',
+		'warframe-cheats-settings-panel': 'Settings panel shot',
+		'warframe-radar-hack-minimap': 'Radar minimap shot',
+		'warframe-cheats-combat-esp': 'Combat ESP shot',
+	};
+	if (labels[file]) return labels[file];
+	const slug = href.replace(/^\/|\/$/g, '').split('/').pop() ?? 'page';
+	return `Open ${slug.replace(/-/g, ' ')}`;
+}
 ---
 
 <section class="gallery" id="gallery" aria-labelledby="gallery-title">
@@ -34,7 +51,13 @@ const marqueeSlides = [...slides, ...slides];
 			<div class="gallery__marquee-track">
 				{
 					marqueeSlides.map((slide, index) => (
-						<a href={slide.href} class="gallery__marquee-slide" aria-label={slide.alt}>
+						<a
+							href={slide.href}
+							class="gallery__marquee-slide"
+							aria-label={slide.linkLabel}
+							aria-hidden={index >= slides.length ? 'true' : undefined}
+							tabindex={index >= slides.length ? -1 : undefined}
+						>
 							<img
 								src={slide.src}
 								srcset={slide.srcset}

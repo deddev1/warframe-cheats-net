@@ -348,19 +348,19 @@ export const homeFaqs = [
 		category: 'Getting started',
 		question: 'What is Warframe Cheats?',
 		answer:
-			'Warframe Cheats is a maintained Windows PC package for <a href="https://www.warframe.com/" target="_blank" rel="noopener noreferrer">Warframe</a> with <a href="/warframe-esp/">ESP</a>, <a href="/warframe-wallhack/">wallhack</a>, <a href="/warframe-radar/">radar</a>, and <a href="/warframe-aimbot/">aimbot</a> controls. One license covers the full feature set plus <a href="/setup/">setup</a> help.',
+			'Warframe Cheats is a maintained Windows PC package for <a href="https://www.warframe.com/" target="_blank" rel="noopener noreferrer">Warframe</a> with <a href="/warframe-esp/">ESP page</a>, <a href="/warframe-wallhack/">wallhack</a>, <a href="/warframe-radar/">radar</a>, and <a href="/warframe-aimbot/">aimbot</a> controls. One license covers the full feature set plus <a href="/setup/">setup help</a>.',
 	},
 	{
 		category: 'Getting started',
 		question: 'What is included in one license?',
 		answer:
-			'Enemy ESP boxes, health and pickup markers, 2D radar overlays, and configurable aim assist — including per-weapon profiles and optional cloud DMA. See the full breakdown on <a href="/features/">Features</a> and compare plans on <a href="/pricing/">Pricing</a>.',
+			'Enemy ESP boxes, health and pickup markers, 2D radar overlays, and configurable aim assist — including per-weapon profiles and optional cloud DMA. See the <a href="/features/">full feature list</a> and compare <a href="/pricing/">license plans</a>.',
 	},
 	{
 		category: 'Getting started',
 		question: 'How are licenses delivered after checkout?',
 		answer:
-			'Licenses are delivered digitally after payment clears. Delivery timing can vary slightly by payment method. Keep your order confirmation handy if you contact <a href="/support/">Support</a>.',
+			'Licenses are delivered digitally after payment clears. Delivery timing can vary slightly by payment method. Keep your order confirmation handy if you contact <a href="/support/">our support team</a>.',
 	},
 	{
 		category: 'Features & gameplay',
@@ -372,19 +372,19 @@ export const homeFaqs = [
 		category: 'Features & gameplay',
 		question: 'Can I use a controller?',
 		answer:
-			'Controller support is available on Windows PC with adjustable FOV and aim settings. Menu navigation with a pad takes a little practice — see <a href="/setup/">Setup</a> for baseline values and <a href="/reviews/">buyer reviews</a> from controller players.',
+			'Controller support is available on Windows PC with adjustable FOV and aim settings. Menu navigation with a pad takes a little practice — see the <a href="/setup/">setup guide</a> for baseline values and <a href="/reviews/">player reviews</a> from controller players.',
 	},
 	{
 		category: 'Features & gameplay',
 		question: 'What is cloud DMA and do I need it?',
 		answer:
-			'Cloud DMA is an optional setup path for buyers who want hardware-assisted isolation instead of a standard loader. Most players start with the regular package. Read the <a href="/warframe-cheats/">main guide</a> and ask <a href="/support/">Support</a> before choosing DMA.',
+			'Cloud DMA is an optional setup path for buyers who want hardware-assisted isolation instead of a standard loader. Most players start with the regular package. Read the <a href="/warframe-cheats/">main guide</a> and ask <a href="/support/">support</a> before choosing DMA.',
 	},
 	{
 		category: 'Updates & support',
 		question: 'Is Warframe Cheats permanently undetected?',
 		answer:
-			'No tool can promise permanent undetected status. Warframe is maintained by <a href="https://www.digitalextremes.com/" target="_blank" rel="noopener noreferrer">Digital Extremes</a> and receives regular patches. We rebuild after anti-cheat updates and post status on <a href="/updates/">Updates</a> — check there before you load in.',
+			'No tool can promise permanent undetected status. Warframe is maintained by <a href="https://www.digitalextremes.com/" target="_blank" rel="noopener noreferrer">Digital Extremes</a> and receives regular patches. We rebuild after anti-cheat updates and post status on the <a href="/updates/">status page</a> — check there before you load in.',
 	},
 	{
 		category: 'Updates & support',
