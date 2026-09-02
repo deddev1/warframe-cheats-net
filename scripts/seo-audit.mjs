@@ -165,6 +165,16 @@ const warframeSrc = readFileSync(warframeTs, 'utf8');
 if (!/Warframe/i.test(warframeSrc)) fail('warframe.ts image alts missing Warframe keyword');
 checkBanned('warframe.ts', warframeSrc);
 
+const heroAstro = readFileSync(join(root, 'src/components/Hero.astro'), 'utf8');
+if (/alt=""/.test(heroAstro)) fail('Hero.astro must not use empty alt on hero images');
+
+if (existsSync(distIndex)) {
+	const emptyAltCount = (readFileSync(distIndex, 'utf8').match(/alt=""/g) || []).length;
+	if (emptyAltCount > 0) {
+		fail(`dist/index.html has ${emptyAltCount} image(s) with empty alt`);
+	}
+}
+
 // --- report ---
 console.log('\n=== SEO Audit: warframecheats.net ===\n');
 console.log(`Pages checked: ${pageIds.length} EN landing pages`);

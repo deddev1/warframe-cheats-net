@@ -93,7 +93,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					tagline: "Warframe Cheats for PC — ESP, aimbot, and wallhack with anti-cheat updates.",
 				},
 				images: {
-					hero: "Warframe cheats main menu with ESP wallhack and soft aim toggles",
+					hero: "Warframe cheats hero banner with ESP wallhack and soft aim toggles on PC",
 					espWallhack: "Warframe ESP overlay highlighting Grineer and Corpus units through walls",
 					aimbotCombat: "Warframe aimbot targeting a Grineer heavy unit during a Steel Path mission",
 					squadFight: "Warframe squad co-op fight with ESP and aimbot active in a Sortie",
