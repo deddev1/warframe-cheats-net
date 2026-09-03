@@ -59,14 +59,25 @@ export type PageContent = {
 \tctaSecondary?: string;
 \tctaSecondaryHref?: string;
 };
+export type HomeFaqItem = { category: string; question: string; answer: string };
 export type LocaleUi = {
-\tnav: { home: string; aimbot: string; esp: string; features: string; pricing: string; setup: string; updates: string; faq: string; buyNow: string };
+\tnav: { home: string; aimbot: string; esp: string; features: string; pricing: string; setup: string; updates: string; faq: string; buyNow: string; cheats?: string; reviews?: string; guides?: string };
 \thero: { accent: string; accentShort: string; subtitle: string; subtitleShort: string; buyNow: string; seeFeatures: string };
 \ttrust: { status: string; statusNote: string; statusShort: string; delivery: string; platform: string; antiCheat: string; antiCheatShort: string };
 \tproduct: { title: string; addToCart: string; monthly: string; lifetime: string; available: string; gameBadge: string; platformBadge: string; statusBadge: string };
 \treviews: { title: string; subtitle: string; outOf: string; countLabel: string; verifiedLabel?: string; seeAll?: string };
 \tcommon: { buyNow: string; readGuide: string; language: string; officialLanguageNote: string; relatedPages: string };
 \tfooter: { explore: string; help: string; tagline: string };
+\tsections: {
+\t\thomeFaq: { title: string; intro: string; seeAll: string; readGuides: string };
+\t\thomeExplore: { title: string; intro: string; stillDeciding: string; faqLink: string; reviewsLink: string };
+\t\thomeGuides: { title: string; intro: string; browseAll: string };
+\t\tfooter: { guides: string; support: string; privacy: string; terms: string; refund: string };
+\t\tpricing: { easyToUse: string; undetected: string; support24: string };
+\t\tgallery: { subtitle: string };
+\t\tnavbar: { openMenu: string; closeMenu: string };
+\t\texploreLinks: Record<string, string>;
+\t};
 \timages: {
 \t\thero: string; espWallhack: string; aimbotCombat: string; squadFight: string; playerEsp: string;
 \t\theaderArt: string; cheatsPackage: string; rebootFight: string; battleRoyale: string; battleRoyaleIsland: string;

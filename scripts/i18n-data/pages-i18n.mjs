@@ -1,6 +1,15 @@
 import { HERO_IMAGES, clampTitle, clampDesc, section, stripZadeyoFromMeta } from './constants.mjs';
 import { phrases } from './phrases.mjs';
 
+const KW = {
+	esp: 'ESP wallhack',
+	radar: 'radar hack',
+	aimbot: 'Aimbot',
+	product: 'Warframe Cheats',
+	game: 'Warframe',
+	eac: 'Digital Extremes anti-cheat',
+};
+
 /** Page-specific translated meta for home across locales. */
 const PAGE_META_HOME = {
 	es: { title: 'Warframe Cheats 2026 | ESP, Wallhack y Aimbot', desc: 'Trucos Warframe indetectables para Warframe en PC. ESP wallhack, radar hack y Aimbot con mantenimiento Digital Extremes anti-cheat. Entrega digital instantánea.', h1: 'Warframe Cheats — ESP, Wallhack y Aimbot indetectables', intro: 'Paquete undetected para Warframe en Windows PC: ESP wallhack, radar y Aimbot con mantenimiento Digital Extremes anti-cheat tras cada parche.', imageAlt: 'Hero warframe-cheats con ESP wallhack y Aimbot indetectables', gallery: 'Galería Warframe Cheats — ESP, Aimbot y wallhack', cta2: 'Ver funciones', h2a: 'Por qué eligen Warframe Cheats en 2026', h2b: 'ESP wallhack, radar y Aimbot en una licencia', topicA: 'Ideal para leer escuadrones enemigos en misiones y co-op missions.', topicB: 'Una licencia en lugar de herramientas separadas.' },
@@ -72,36 +81,49 @@ const PAGE_META_TAILS = {
 	'unlock-all': { suffix: 'What It Means', focus: 'unlock-all searches vs real ESP and Aimbot tools' },
 };
 
-function productPage(locale, pageKey, topicName, cta2href) {
+/** Ensure product page section helpers exist for every locale. */
+function phrasePack(locale) {
 	const p = phrases[locale];
+	return {
+		...p,
+		secEsp: p.secEsp ?? (() => `Read enemies with ${KW.esp}: boxes, health bars, and distance in ${p.maps}.`),
+		secGameplay: p.secGameplay ?? (() => `Enable overlays for Steel Path, Sorties, and open world tilesets on ${p.win}.`),
+		secOverlay: p.secOverlay ?? (() => `Tune ${KW.esp}, ${KW.radar}, and ${KW.aimbot} from the in-game menu before launching.`),
+		antiCheatNote: p.antiCheatNote ?? `${KW.eac} maintenance included.`,
+	};
+}
+
+function productPage(locale, pageKey, topicName, cta2href) {
+	const p = phrasePack(locale);
 	const home = PAGE_META_HOME[locale];
 	const meta = PAGE_META_TAILS[pageKey] ?? { suffix: 'Warframe Cheats', focus: 'ESP wallhack, radar, and Aimbot' };
+	const suffix = p.pageSuffix?.[pageKey] ?? meta.suffix;
+	const focus = p.pageFocus?.[pageKey] ?? meta.focus;
 	let titleBase = topicName.includes('2026')
-		? `${topicName} | ${meta.suffix}`
-		: `${topicName} 2026 | ${meta.suffix}`;
-	// Short topic labels (FAQ, Support, etc.) need brand context for usable SERP titles.
+		? `${topicName} | ${suffix}`
+		: `${topicName} 2026 | ${suffix}`;
 	if (titleBase.length < 35) {
-		titleBase = `${topicName} 2026 | Warframe Cheats ${meta.suffix}`;
+		titleBase = `${topicName} 2026 | Warframe Cheats ${suffix}`;
 	}
 	return {
 		title: clampTitle(stripZadeyoFromMeta(titleBase)),
 		description: clampDesc(
 			stripZadeyoFromMeta(
-				`${topicName}: ${meta.focus} for Warframe. ${p.delivery}. anti-cheat maintenance included.`,
+				`${topicName}: ${focus}. ${p.delivery}. ${p.antiCheatNote ?? 'anti-cheat maintenance included.'}`,
 			),
 		),
-		h1: `${topicName} — ${meta.suffix}`,
-		intro: p.s1(`${topicName} for ${p.maps}: ${meta.focus}.`),
-		imageAlt: `warframe-cheats ${pageKey} ${meta.focus} preview`,
-		galleryTitle: `Warframe Cheats ${topicName} gallery`,
+		h1: `${topicName} — ${suffix}`,
+		intro: p.s1(`${topicName}: ${focus}.`),
+		imageAlt: `${topicName} — ${focus}`,
+		galleryTitle: `${KW.product} — ${topicName}`,
 		heroImage: HERO_IMAGES[pageKey],
 		ctaPrimary: p.buy,
 		ctaSecondary: home.cta2,
 		ctaSecondaryHref: cta2href,
 		sections: [
-			section(`${topicName} — ${p.maps}`, p.s1(`Read enemy units with ESP wallhack.`), p.s2()),
-			section(`ESP wallhack & ${p.undetected}`, p.s1('Toggle overlays for open world missions and Steel Path missions.'), p.s3()),
-			section(`${p.delivery}`, p.s2(), p.s3()),
+			section(`${topicName} — ${p.maps}`, p.secEsp(), p.secGameplay()),
+			section(`${KW.esp} & ${p.undetected}`, p.secOverlay(), p.s3()),
+			section(p.delivery, p.s2(), p.s3()),
 		],
 	};
 }
