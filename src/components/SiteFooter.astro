@@ -10,16 +10,16 @@ interface Props {
 
 const locale = Astro.props.locale ?? defaultLocale;
 const ui = getUi(locale);
+const exploreLinks = ui.sections.exploreLinks;
 
 const mainLinks = [
-	{ label: ui.nav.home, href: getLocalizedPath('home', locale) },
-	{ label: ui.nav.features, href: getLocalizedPath('features', locale) },
-	{ label: ui.nav.cheats ?? 'Cheats', href: getLocalizedPath('hacks', locale) },
-	{ label: ui.nav.updates, href: getLocalizedPath('updates', locale) },
-	{ label: ui.nav.pricing, href: getLocalizedPath('pricing', locale) },
-	{ label: ui.nav.faq, href: getLocalizedPath('faq', locale) },
+	{ label: ui.nav.esp, href: getLocalizedPath('warframe-esp', locale) },
+	{ label: ui.nav.aimbot, href: getLocalizedPath('warframe-aimbot', locale) },
+	{ label: exploreLinks.wallhack, href: getLocalizedPath('wallhack', locale) },
+	{ label: exploreLinks.radar, href: getLocalizedPath('radar', locale) },
+	{ label: ui.nav.setup, href: getLocalizedPath('setup', locale) },
 	{ label: ui.sections.footer.guides, href: '/guides/' },
-	{ label: ui.nav.reviews ?? 'Reviews', href: '/reviews/' },
+	{ label: exploreLinks.blog, href: '/blog/' },
 ];
 
 const legalLinks = [

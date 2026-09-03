@@ -52,7 +52,7 @@ const enGallery: GalleryUi = {
 		},
 	],
 	updatesLabel: 'Warframe Cheats updates',
-	updatesShort: 'Updates',
+	updatesShort: 'Patches',
 };
 
 export const galleryUi: Record<LocaleCode, GalleryUi> = {

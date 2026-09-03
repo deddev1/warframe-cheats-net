@@ -12,6 +12,14 @@ const locale = Astro.props.locale ?? defaultLocale;
 const ui = getUi(locale);
 const copy = ui.sections.homeGuides;
 const guides = getPostsByCategory(locale, 'Warframe Game Guides').slice(0, 3);
+
+function guideCardLabel(title: string): string {
+	const trimmed = title.replace(/^Warframe\s+/i, '').trim();
+	if (trimmed.length <= 42) return trimmed;
+	const cut = trimmed.slice(0, 42);
+	const lastSpace = cut.lastIndexOf(' ');
+	return `${(lastSpace > 24 ? cut.slice(0, lastSpace) : cut).trim()}…`;
+}
 ---
 
 {
@@ -29,7 +37,7 @@ const guides = getPostsByCategory(locale, 'Warframe Game Guides').slice(0, 3);
 
 			<div class="home-guides__grid">
 				{guides.map((post) => (
-					<a class="home-guides__card" href={post.canonicalPath}>
+					<article class="home-guides__card">
 						<img
 							src={post.imageSrc}
 							alt={post.translation.imageAlt}
@@ -40,10 +48,12 @@ const guides = getPostsByCategory(locale, 'Warframe Game Guides').slice(0, 3);
 						/>
 						<div class="home-guides__body">
 							<span class="home-guides__cat">{post.category}</span>
-							<h3>{post.translation.title}</h3>
+							<h3 class="home-guides__title">
+								<a href={post.canonicalPath}>{guideCardLabel(post.translation.title)}</a>
+							</h3>
 							<p>{post.translation.intro}</p>
 						</div>
-					</a>
+					</article>
 				))}
 			</div>
 
@@ -108,7 +118,6 @@ const guides = getPostsByCategory(locale, 'Warframe Game Guides').slice(0, 3);
 		background: rgba(20, 24, 30, 0.88);
 		overflow: hidden;
 		color: inherit;
-		text-decoration: none;
 		transition:
 			border-color 0.2s ease,
 			transform 0.2s ease,
@@ -119,7 +128,6 @@ const guides = getPostsByCategory(locale, 'Warframe Game Guides').slice(0, 3);
 		border-color: rgba(32, 191, 192, 0.38);
 		transform: translateY(-2px);
 		box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
-		color: inherit;
 	}
 
 	.home-guides__card img {
@@ -142,11 +150,21 @@ const guides = getPostsByCategory(locale, 'Warframe Game Guides').slice(0, 3);
 		text-transform: uppercase;
 	}
 
-	.home-guides__body h3 {
+	.home-guides__body h3,
+	.home-guides__title {
 		margin: 0;
 		font-size: 0.98rem;
 		line-height: 1.35;
 		font-weight: 800;
+	}
+
+	.home-guides__title a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.home-guides__title a:hover {
+		color: var(--color-orchid);
 	}
 
 	.home-guides__body p {
