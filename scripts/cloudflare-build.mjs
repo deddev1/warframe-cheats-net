@@ -74,16 +74,23 @@ const packageName = JSON.parse(readFileSync('package.json', 'utf8')).name;
 console.log(`[cloudflare-build] Git commit: ${buildCommit}`);
 console.log(`[cloudflare-build] Package name: ${packageName}`);
 
-if (packageName === 'warframe-cheats') {
+if (packageName !== 'warframe-cheats') {
 	console.error(
-		'[cloudflare-build] Stale Warframe package detected. Deploy latest main (228547e+) instead of retrying an old failed build.',
+		'[cloudflare-build] Wrong package for warframecheats.net. Expected warframe-cheats, not a Zomboid rebrand checkout.',
 	);
 	process.exit(1);
 }
 
-if (!existsSync('src/components/ZomboidAuthorityLinks.astro')) {
+if (!existsSync('src/components/WarframeAuthorityLinks.astro')) {
 	console.error(
-		'[cloudflare-build] Missing src/components/ZomboidAuthorityLinks.astro — checkout latest main before building.',
+		'[cloudflare-build] Missing src/components/WarframeAuthorityLinks.astro — deploy Warframe main, not Project Zomboid.',
+	);
+	process.exit(1);
+}
+
+if (existsSync('src/components/ZomboidAuthorityLinks.astro')) {
+	console.error(
+		'[cloudflare-build] Project Zomboid component detected. Revert the Zomboid rebrand before deploying.',
 	);
 	process.exit(1);
 }
@@ -134,7 +141,7 @@ writeFileSync(
 		{
 			builtAt: new Date().toISOString(),
 			commit: buildId,
-			site: 'https://projectzomboidcheats.com',
+			site: 'https://warframecheats.net',
 		},
 		null,
 		2,
