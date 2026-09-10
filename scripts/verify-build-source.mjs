@@ -13,16 +13,23 @@ try {
 
 console.log(`[verify-build] commit=${commit} package=${packageName}`);
 
-if (packageName === 'warframe-cheats') {
+if (packageName !== 'warframe-cheats') {
 	console.error(
-		'[verify-build] Cloudflare is building a stale Warframe commit. Cancel retry and deploy latest main (228547e or newer).',
+		'[verify-build] Wrong package name for warframecheats.net. Expected warframe-cheats, not a Zomboid or other rebrand checkout.',
 	);
 	process.exit(1);
 }
 
-if (!existsSync('src/components/ZomboidAuthorityLinks.astro')) {
+if (!existsSync('src/components/WarframeAuthorityLinks.astro')) {
 	console.error(
-		'[verify-build] Missing src/components/ZomboidAuthorityLinks.astro. Deploy latest main instead of retrying an old failed build.',
+		'[verify-build] Missing src/components/WarframeAuthorityLinks.astro. Deploy the Warframe main branch, not a Project Zomboid rebrand.',
+	);
+	process.exit(1);
+}
+
+if (existsSync('src/components/ZomboidAuthorityLinks.astro')) {
+	console.error(
+		'[verify-build] Project Zomboid component detected. Revert the Zomboid rebrand before deploying warframecheats.net.',
 	);
 	process.exit(1);
 }
