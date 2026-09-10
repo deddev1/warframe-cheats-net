@@ -15,3 +15,7 @@ export function getPageContent(locale: LocaleCode, pageId: PageId) {
 export function getUi(locale: LocaleCode) {
 	return i18nContent[locale].ui;
 }
+
+export function getHomeFaqs(locale: LocaleCode) {
+	return i18nContent[locale].homeFaqs;
+}

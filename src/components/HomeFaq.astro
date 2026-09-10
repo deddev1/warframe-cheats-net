@@ -1,5 +1,5 @@
 ---
-import { homeFaqs } from '../data/site';
+import { getHomeFaqs, getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import FaqList from './FaqList.astro';
@@ -10,8 +10,11 @@ interface Props {
 }
 
 const locale = Astro.props.locale ?? defaultLocale;
-const { title = 'Frequently asked questions' } = Astro.props;
+const ui = getUi(locale);
+const copy = ui.sections.homeFaq;
+const faqItems = getHomeFaqs(locale);
 const faqHref = getLocalizedPath('faq', locale);
+const { title = copy.title } = Astro.props;
 ---
 
 <section class="home-faq shell" aria-labelledby="home-faq-title">
@@ -21,15 +24,15 @@ const faqHref = getLocalizedPath('faq', locale);
 			{title}
 		</h2>
 		<p class="home-faq__intro">
-			Quick answers about setup, features, Steel Path and open world use, patch-day status, and support.
+			{copy.intro}
 		</p>
 	</div>
 
-	<FaqList items={homeFaqs} groupByCategory />
+	<FaqList items={faqItems} groupByCategory />
 
 	<div class="home-faq__footer">
-		<a class="home-faq__link" href={faqHref}>See all FAQ questions</a>
-		<a class="home-faq__link home-faq__link--muted" href="/blog/">Read Warframe guides</a>
+		<a class="home-faq__link" href={faqHref}>{copy.seeAll}</a>
+		<a class="home-faq__link home-faq__link--muted" href="/blog/">{copy.readGuides}</a>
 	</div>
 </section>
 

@@ -11,6 +11,7 @@ import { LOCALES, TS_HEADER } from './i18n-data/constants.mjs';
 import { allUiStrings } from './i18n-data/ui-strings.mjs';
 import { englishPagesFinal } from './i18n-data/pages-en.mjs';
 import { buildPagesForLocale } from './i18n-data/pages-i18n.mjs';
+import { buildHomeFaqs } from './i18n-data/home-faqs.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -80,7 +81,7 @@ function buildI18nContent() {
 			}
 		}
 
-		content[locale] = { ui, pages };
+		content[locale] = { ui, pages, homeFaqs: buildHomeFaqs(locale) };
 	}
 
 	return content;
@@ -90,7 +91,7 @@ async function main() {
 	console.log('Generating i18n content for', LOCALES.length, 'locales...');
 
 	const i18nContent = buildI18nContent();
-	const body = `${TS_HEADER}\nexport const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageId, PageContent> }> = ${serialize(i18nContent)};\n`;
+	const body = `${TS_HEADER}\nexport const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageId, PageContent>; homeFaqs: HomeFaqItem[] }> = ${serialize(i18nContent)};\n`;
 
 	await mkdir(path.dirname(OUT_FILE), { recursive: true });
 	await writeFile(OUT_FILE, body, 'utf8');

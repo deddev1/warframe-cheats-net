@@ -1,27 +1,46 @@
 ---
+import { getUi } from '../data/i18n';
+import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
-import { getHomeExploreLinks } from '../lib/internal-links';
 
 interface Props {
 	locale?: LocaleCode;
 }
 
 const locale = Astro.props.locale ?? defaultLocale;
-const links = getHomeExploreLinks(locale);
+const ui = getUi(locale);
+const copy = ui.sections.homeExplore;
+const links = ui.sections.exploreLinks;
+const faqHref = getLocalizedPath('faq', locale);
+
+const exploreItems = [
+	{ label: links.guide, href: getLocalizedPath('hacks', locale) },
+	{ label: links.esp, href: getLocalizedPath('warframe-esp', locale) },
+	{ label: links.aimbot, href: getLocalizedPath('warframe-aimbot', locale) },
+	{ label: links.wallhack, href: getLocalizedPath('wallhack', locale) },
+	{ label: links.radar, href: getLocalizedPath('radar', locale) },
+	{ label: links.features, href: getLocalizedPath('features', locale) },
+	{ label: links.pricing, href: getLocalizedPath('pricing', locale) },
+	{ label: links.setup, href: getLocalizedPath('setup', locale) },
+	{ label: links.updates, href: getLocalizedPath('updates', locale) },
+	{ label: links.faq, href: getLocalizedPath('faq', locale) },
+	{ label: links.reviews, href: '/reviews/' },
+	{ label: links.blog, href: '/blog/' },
+];
 ---
 
 <section class="home-explore shell" aria-labelledby="home-explore-title">
 	<h2 id="home-explore-title" class="home-explore__title">
 		<span class="home-explore__accent" aria-hidden="true"></span>
-		Explore Warframe Cheats
+		{copy.title}
 	</h2>
 	<p class="home-explore__intro">
-		Compare guides, feature pages, pricing, setup help, reviews, and the blog before you buy.
+		{copy.intro}
 	</p>
 
 	<div class="home-explore__grid">
 		{
-			links.map((link) => (
+			exploreItems.map((link) => (
 				<a href={link.href} class="home-explore__card">
 					<span class="home-explore__card-label">{link.label}</span>
 					<svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -38,7 +57,8 @@ const links = getHomeExploreLinks(locale);
 	</div>
 
 	<p class="home-explore__more">
-		Still deciding? Use the links above to compare ESP, aimbot, pricing, and setup help.
+		{copy.stillDeciding} <a href={faqHref}>{copy.faqLink}</a> {copy.orBrowse ?? 'or browse'}
+		<a href="/reviews/">{copy.reviewsLink}</a>.
 	</p>
 </section>
 

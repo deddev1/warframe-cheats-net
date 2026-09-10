@@ -19,6 +19,10 @@ export const phrases = {
 	es: {
 		buy: 'Obtener acceso', undetected: 'indetectables', maps: 'Steel Path, Sorties y mundo abierto',
 		win: 'Windows PC', delivery: 'entrega digital instantánea', monthly: '$35/mes', lifetime: '$150 de por vida',
+		antiCheatNote: 'mantenimiento anti-cheat incluido',
+		secEsp: () => 'Lee enemigos con ESP wallhack: cajas, salud y distancia en misiones de Steel Path y mundo abierto.',
+		secGameplay: () => 'Activa overlays para Sorties, defensa y farming en Plains of Eidolon, Orb Vallis y Deimos.',
+		secOverlay: () => 'Ajusta ESP, radar y aimbot desde el menú en cliente antes de entrar a la misión.',
 		s1: (topic) => `${KW.product} ofrece ${KW.esp}, ${KW.radar} y ${KW.aimbot} ${phrases.es.undetected} para ${KW.game} en ${phrases.es.win}. ${topic}`,
 		s2: () => `Licencias con ${phrases.es.delivery} vía checkout ${KW.checkout}. Planes ${phrases.es.monthly} y ${phrases.es.lifetime} incluyen ${KW.eac} maintenance.`,
 		s3: () => `Consulta la página Updates antes de jugar tras parches de ${KW.eac}. Ningún cheat garantiza estado indetectable permanente.`,
@@ -27,6 +31,10 @@ export const phrases = {
 	fr: {
 		buy: 'Obtenir l\'accès', undetected: 'indétectables', maps: 'Steel Path, Sorties et monde ouvert',
 		win: 'PC Windows', delivery: 'livraison numérique instantanée', monthly: '35 $/mois', lifetime: '150 $ à vie',
+		antiCheatNote: 'maintenance anti-cheat incluse',
+		secEsp: () => 'Lisez les ennemis avec ESP wallhack : boîtes, santé et distance en Steel Path et monde ouvert.',
+		secGameplay: () => 'Activez les overlays pour Sorties, défense et farm sur Plains of Eidolon, Orb Vallis et Deimos.',
+		secOverlay: () => 'Réglez ESP, radar et aimbot depuis le menu en jeu avant de lancer la mission.',
 		s1: (topic) => `${KW.product} combine ${KW.esp}, ${KW.radar} et ${KW.aimbot} ${phrases.fr.undetected} pour ${KW.game} sur ${phrases.fr.win}. ${topic}`,
 		s2: () => `Licences avec ${phrases.fr.delivery} via checkout ${KW.checkout}. Forfaits ${phrases.fr.monthly} et ${phrases.fr.lifetime} incluent la maintenance ${KW.eac}.`,
 		s3: () => `Consultez Updates après les patchs ${KW.eac}. Aucune triche ne garantit un statut indétectable permanent.`,
@@ -35,13 +43,17 @@ export const phrases = {
 	de: {
 		buy: 'Zugang erhalten', undetected: 'unentdeckt', maps: 'Steel Path, Sorties und Open World',
 		win: 'Windows PC', delivery: 'sofortige digitale Lieferung', monthly: '$35/Monat', lifetime: '$150 Lifetime',
+		antiCheatNote: 'Anti-Cheat-Wartung inklusive',
+		secEsp: () => 'Gegner mit ESP wallhack lesen: Boxen, Gesundheit und Distanz in Steel Path und Open World.',
+		secGameplay: () => 'Overlays für Sorties, Defense und Farming auf Plains of Eidolon, Orb Vallis und Deimos aktivieren.',
+		secOverlay: () => 'ESP, Radar und Aimbot im In-Game-Menü vor dem Missionsstart einstellen.',
 		s1: (topic) => `${KW.product} bündelt ${KW.esp}, ${KW.radar} und ${KW.aimbot} als ${phrases.de.undetected} Paket für ${KW.game} auf ${phrases.de.win}. ${topic}`,
 		s2: () => `Lizenzen mit ${phrases.de.delivery} über ${KW.checkout} Checkout. ${phrases.de.monthly} und ${phrases.de.lifetime} inkl. ${KW.eac}-Wartung.`,
 		s3: () => `Updates-Seite nach ${KW.eac}-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.`,
 		legal: () => 'support@warframecheats.net für Support und rechtliche Anfragen.',
 	},
 	pt: {
-		buy: 'Comprar Warframe Cheats', undetected: 'indetectáveis', maps: 'mission objectives, spawn routes, and mission objectives',
+		buy: 'Comprar Warframe Cheats', undetected: 'indetectáveis', maps: 'Steel Path, Sorties e mundo aberto',
 		win: 'PC Windows', delivery: 'entrega digital instantânea', monthly: '$35/mês', lifetime: '$150 vitalício',
 		s1: (topic) => `${KW.product} reúne ${KW.esp}, ${KW.radar} e ${KW.aimbot} ${phrases.pt.undetected} para ${KW.game} no ${phrases.pt.win}. ${topic}`,
 		s2: () => `Licenças com ${phrases.pt.delivery} via checkout ${KW.checkout}. Planos ${phrases.pt.monthly} e ${phrases.pt.lifetime} incluem manutenção ${KW.eac}.`,
@@ -49,7 +61,7 @@ export const phrases = {
 		legal: () => 'Contacte support@warframecheats.net para suporte ou questões legais.',
 	},
 	it: {
-		buy: 'Acquista Warframe Cheats', undetected: 'indetectable', maps: 'mission objectives, spawn routes, and mission objectives',
+		buy: 'Acquista Warframe Cheats', undetected: 'indetectable', maps: 'Steel Path, Sorties e mondo aperto',
 		win: 'PC Windows', delivery: 'consegna digitale istantanea', monthly: '$35/mese', lifetime: '$150 a vita',
 		s1: (topic) => `${KW.product} unisce ${KW.esp}, ${KW.radar} e ${KW.aimbot} ${phrases.it.undetected} per ${KW.game} su ${phrases.it.win}. ${topic}`,
 		s2: () => `Licenze con ${phrases.it.delivery} via checkout ${KW.checkout}. Piani ${phrases.it.monthly} e ${phrases.it.lifetime} includono manutenzione ${KW.eac}.`,
@@ -57,7 +69,7 @@ export const phrases = {
 		legal: () => 'Contatta support@warframecheats.net per supporto o richieste legali.',
 	},
 	nl: {
-		buy: 'Warframe Cheats kopen', undetected: 'undetected', maps: 'mission objectives, spawn routes, and mission objectives',
+		buy: 'Warframe Cheats kopen', undetected: 'undetected', maps: 'Steel Path, Sorties en open wereld',
 		win: 'Windows PC', delivery: 'directe digitale levering', monthly: '$35/maand', lifetime: '$150 lifetime',
 		s1: (topic) => `${KW.product} bundelt ${KW.esp}, ${KW.radar} en ${KW.aimbot} als ${phrases.nl.undetected} pakket voor ${KW.game} op ${phrases.nl.win}. ${topic}`,
 		s2: () => `Licenties met ${phrases.nl.delivery} via ${KW.checkout} checkout. ${phrases.nl.monthly} en ${phrases.nl.lifetime} incl. ${KW.eac}-onderhoud.`,
@@ -65,7 +77,7 @@ export const phrases = {
 		legal: () => 'support@warframecheats.net voor support en juridische vragen.',
 	},
 	pl: {
-		buy: 'Kup Warframe Cheats', undetected: 'undetected', maps: 'mission objectives, spawn routes, and mission objectives',
+		buy: 'Kup Warframe Cheats', undetected: 'undetected', maps: 'Steel Path, Sorties i otwarty świat',
 		win: 'PC Windows', delivery: 'natychmiastowa dostawa cyfrowa', monthly: '$35/mies.', lifetime: '$150 lifetime',
 		s1: (topic) => `${KW.product} łączy ${KW.esp}, ${KW.radar} i ${KW.aimbot} jako pakiet ${phrases.pl.undetected} dla ${KW.game} na ${phrases.pl.win}. ${topic}`,
 		s2: () => `Licencje z ${phrases.pl.delivery} przez checkout ${KW.checkout}. Plany ${phrases.pl.monthly} i ${phrases.pl.lifetime} z konserwacją ${KW.eac}.`,
@@ -73,7 +85,7 @@ export const phrases = {
 		legal: () => 'support@warframecheats.net w sprawach wsparcia i prawnych.',
 	},
 	ru: {
-		buy: 'Купить Warframe Cheats', undetected: 'undetected', maps: 'mission objectives, spawn routes, and mission objectives',
+		buy: 'Купить Warframe Cheats', undetected: 'undetected', maps: 'Steel Path, Sorties и открытый мир',
 		win: 'Windows PC', delivery: 'мгновенная цифровая доставка', monthly: '$35/мес', lifetime: '$150 навсегда',
 		s1: (topic) => `${KW.product} объединяет ${KW.esp}, ${KW.radar} и ${KW.aimbot} в ${phrases.ru.undetected} пакете для ${KW.game} на ${phrases.ru.win}. ${topic}`,
 		s2: () => `Лицензии с ${phrases.ru.delivery} через checkout ${KW.checkout}. Тарифы ${phrases.ru.monthly} и ${phrases.ru.lifetime} включают обслуживание ${KW.eac}.`,
@@ -81,7 +93,7 @@ export const phrases = {
 		legal: () => 'support@warframecheats.net для поддержки и юридических вопросов.',
 	},
 	tr: {
-		buy: 'Warframe Cheats satın al', undetected: 'undetected', maps: 'mission objectives, spawn routes, and mission objectives',
+		buy: 'Warframe Cheats satın al', undetected: 'undetected', maps: 'Steel Path, Sorties e mundo aberto',
 		win: 'Windows PC', delivery: 'anında dijital teslimat', monthly: '$35/ay', lifetime: '$150 ömür boyu',
 		s1: (topic) => `${KW.product}, ${KW.game} için ${phrases.tr.win} üzerinde ${KW.esp}, ${KW.radar} ve ${KW.aimbot} ${phrases.tr.undetected} paket sunar. ${topic}`,
 		s2: () => `${KW.checkout} checkout ile ${phrases.tr.delivery}. ${phrases.tr.monthly} ve ${phrases.tr.lifetime} planları ${KW.eac} bakımı içerir.`,
@@ -89,7 +101,7 @@ export const phrases = {
 		legal: () => 'Destek ve yasal sorular için support@warframecheats.net.',
 	},
 	ar: {
-		buy: 'اشترِ Warframe Cheats', undetected: 'غير مكتشف', maps: 'mission objectives, spawn routes, and mission objectives',
+		buy: 'اشترِ Warframe Cheats', undetected: 'غير مكتشف', maps: 'Steel Path, Sorties e mundo aberto',
 		win: 'Windows PC', delivery: 'تسليم رقمي فوري', monthly: '35$/شهر', lifetime: '150$ مدى الحياة',
 		s1: (topic) => `${KW.product} يجمع ${KW.esp} و${KW.radar} و${KW.aimbot} ${phrases.ar.undetected} لـ ${KW.game} على ${phrases.ar.win}. ${topic}`,
 		s2: () => `تراخيص مع ${phrases.ar.delivery} عبر checkout ${KW.checkout}. خطط ${phrases.ar.monthly} و${phrases.ar.lifetime} تشمل صيانة ${KW.eac}.`,
@@ -97,7 +109,7 @@ export const phrases = {
 		legal: () => 'support@warframecheats.net للدعم والطلبات القانونية.',
 	},
 	ja: {
-		buy: 'Warframe Cheatsを購入', undetected: 'undetected', maps: 'mission objectives, spawn routes, and mission objectives',
+		buy: 'Warframe Cheatsを購入', undetected: 'undetected', maps: 'Steel Path、Sorties、オープンワールド',
 		win: 'Windows PC', delivery: '即時デジタル配信', monthly: '$35/月', lifetime: '$150永久',
 		s1: (topic) => `${KW.product}は${KW.game}向け${phrases.ja.win}用${KW.esp}、${KW.radar}、${KW.aimbot}の${phrases.ja.undetected}パッケージです。${topic}`,
 		s2: () => `${KW.checkout} checkoutで${phrases.ja.delivery}。${phrases.ja.monthly}と${phrases.ja.lifetime}プランに${KW.eac}メンテナンス含む。`,
@@ -105,7 +117,7 @@ export const phrases = {
 		legal: () => 'サポート・法務: support@warframecheats.net',
 	},
 	ko: {
-		buy: 'Warframe Cheats 구매', undetected: 'undetected', maps: 'mission objectives, spawn routes, and mission objectives',
+		buy: 'Warframe Cheats 구매', undetected: 'undetected', maps: 'Steel Path, Sorties, 오픈 월드',
 		win: 'Windows PC', delivery: '즉시 디지털 배송', monthly: '$35/월', lifetime: '$150 평생',
 		s1: (topic) => `${KW.product}는 ${KW.game} ${phrases.ko.win}용 ${KW.esp}, ${KW.radar}, ${KW.aimbot} ${phrases.ko.undetected} 패키지입니다. ${topic}`,
 		s2: () => `${KW.checkout} checkout으로 ${phrases.ko.delivery}. ${phrases.ko.monthly} 및 ${phrases.ko.lifetime} 요금제에 ${KW.eac} 유지보수 포함.`,
@@ -113,7 +125,7 @@ export const phrases = {
 		legal: () => '지원 및 법무: support@warframecheats.net',
 	},
 	zh: {
-		buy: '购买 Warframe Cheats', undetected: 'undetected', maps: 'mission objectives, spawn routes, and mission objectives',
+		buy: '购买 Warframe Cheats', undetected: 'undetected', maps: 'Steel Path、Sorties与开放世界',
 		win: 'Windows PC', delivery: '即时数字交付', monthly: '$35/月', lifetime: '$150终身',
 		s1: (topic) => `${KW.product}为${KW.game}${phrases.zh.win}提供${KW.esp}、${KW.radar}和${KW.aimbot}${phrases.zh.undetected}套餐。${topic}`,
 		s2: () => `通过${KW.checkout} checkout${phrases.zh.delivery}。${phrases.zh.monthly}和${phrases.zh.lifetime}含${KW.eac}维护。`,
@@ -121,7 +133,7 @@ export const phrases = {
 		legal: () => '支持与法务：support@warframecheats.net',
 	},
 	hi: {
-		buy: 'Warframe Cheats खरीदें', undetected: 'undetected', maps: 'mission objectives, spawn routes, and mission objectives',
+		buy: 'Warframe Cheats खरीदें', undetected: 'undetected', maps: 'Steel Path, Sorties e mundo aberto',
 		win: 'Windows PC', delivery: 'तुरंत डिजिटल डिलीवरी', monthly: '$35/माह', lifetime: '$150 लाइफ़टाइम',
 		s1: (topic) => `${KW.product} ${KW.game} के लिए ${phrases.hi.win} पर ${KW.esp}, ${KW.radar} और ${KW.aimbot} ${phrases.hi.undetected} पैकेज देता है। ${topic}`,
 		s2: () => `${KW.checkout} checkout से ${phrases.hi.delivery}। ${phrases.hi.monthly} और ${phrases.hi.lifetime} में ${KW.eac} maintenance शामिल।`,
@@ -129,7 +141,7 @@ export const phrases = {
 		legal: () => 'सहायता: support@warframecheats.net',
 	},
 	id: {
-		buy: 'Beli Warframe Cheats', undetected: 'undetected', maps: 'mission objectives, spawn routes, and mission objectives',
+		buy: 'Beli Warframe Cheats', undetected: 'undetected', maps: 'Steel Path, Sorties e mundo aberto',
 		win: 'PC Windows', delivery: 'pengiriman digital instan', monthly: '$35/bulan', lifetime: '$150 seumur hidup',
 		s1: (topic) => `${KW.product} menyediakan ${KW.esp}, ${KW.radar}, dan ${KW.aimbot} ${phrases.id.undetected} untuk ${KW.game} di ${phrases.id.win}. ${topic}`,
 		s2: () => `${phrases.id.delivery} via checkout ${KW.checkout}. Paket ${phrases.id.monthly} dan ${phrases.id.lifetime} termasuk pemeliharaan ${KW.eac}.`,
@@ -137,7 +149,7 @@ export const phrases = {
 		legal: () => 'support@warframecheats.net untuk dukungan dan legal.',
 	},
 	th: {
-		buy: 'ซื้อ Warframe Cheats', undetected: 'undetected', maps: 'mission objectives, spawn routes, and mission objectives',
+		buy: 'ซื้อ Warframe Cheats', undetected: 'undetected', maps: 'Steel Path, Sorties e mundo aberto',
 		win: 'Windows PC', delivery: 'จัดส่งดิจิทัลทันที', monthly: '$35/เดือน', lifetime: '$150 ตลอดชีพ',
 		s1: (topic) => `${KW.product} รวม ${KW.esp}, ${KW.radar} และ ${KW.aimbot} แบบ ${phrases.th.undetected} สำหรับ ${KW.game} บน ${phrases.th.win} ${topic}`,
 		s2: () => `${phrases.th.delivery} ผ่าน checkout ${KW.checkout} แพ็ก ${phrases.th.monthly} และ ${phrases.th.lifetime} รวมการดูแล ${KW.eac}`,
@@ -145,7 +157,7 @@ export const phrases = {
 		legal: () => 'support@warframecheats.net สำหรับการสนับสนุน',
 	},
 	vi: {
-		buy: 'Mua Warframe Cheats', undetected: 'undetected', maps: 'mission objectives, spawn routes, and mission objectives',
+		buy: 'Mua Warframe Cheats', undetected: 'undetected', maps: 'Steel Path, Sorties e mundo aberto',
 		win: 'PC Windows', delivery: 'giao hàng kỹ thuật số tức thì', monthly: '$35/tháng', lifetime: '$150 trọn đời',
 		s1: (topic) => `${KW.product} cung cấp ${KW.esp}, ${KW.radar} và ${KW.aimbot} ${phrases.vi.undetected} cho ${KW.game} trên ${phrases.vi.win}. ${topic}`,
 		s2: () => `${phrases.vi.delivery} qua checkout ${KW.checkout}. Gói ${phrases.vi.monthly} và ${phrases.vi.lifetime} gồm bảo trì ${KW.eac}.`,
@@ -153,15 +165,19 @@ export const phrases = {
 		legal: () => 'support@warframecheats.net cho hỗ trợ và pháp lý.',
 	},
 	uk: {
-		buy: 'Купити Warframe Cheats', undetected: 'undetected', maps: 'mission objectives, spawn routes, and mission objectives',
+		buy: 'Купити Warframe Cheats', undetected: 'невиявлені', maps: 'Steel Path, Sorties та відкритий світ',
 		win: 'Windows PC', delivery: 'миттєва цифрова доставка', monthly: '$35/міс', lifetime: '$150 назавжди',
+		antiCheatNote: 'обслуговування anti-cheat включено',
+		secEsp: () => 'Читайте ворогів через ESP wallhack: бокси, здоровʼя та відстань у Steel Path і відкритому світі.',
+		secGameplay: () => 'Увімкніть оверлеї для Sorties, оборони та фарму на Plains of Eidolon, Orb Vallis і Deimos.',
+		secOverlay: () => 'Налаштуйте ESP, radar і aimbot у внутрішньоігровому меню перед місією.',
 		s1: (topic) => `${KW.product} об'єднує ${KW.esp}, ${KW.radar} і ${KW.aimbot} у ${phrases.uk.undetected} пакеті для ${KW.game} на ${phrases.uk.win}. ${topic}`,
 		s2: () => `Ліцензії з ${phrases.uk.delivery} через checkout ${KW.checkout}. Тарифи ${phrases.uk.monthly} і ${phrases.uk.lifetime} включають обслуговування ${KW.eac}.`,
 		s3: () => `Перевіряйте Updates після патчів ${KW.eac}. Жоден чит не гарантує постійний undetected статус.`,
 		legal: () => 'support@warframecheats.net для підтримки та правових питань.',
 	},
 	cs: {
-		buy: 'Koupit Warframe Cheats', undetected: 'undetected', maps: 'mission objectives, spawn routes, and mission objectives',
+		buy: 'Koupit Warframe Cheats', undetected: 'undetected', maps: 'Steel Path, Sorties e mundo aberto',
 		win: 'Windows PC', delivery: 'okamžité digitální doručení', monthly: '$35/měs.', lifetime: '$150 lifetime',
 		s1: (topic) => `${KW.product} spojuje ${KW.esp}, ${KW.radar} a ${KW.aimbot} jako ${phrases.cs.undetected} balíček pro ${KW.game} na ${phrases.cs.win}. ${topic}`,
 		s2: () => `Licence s ${phrases.cs.delivery} přes checkout ${KW.checkout}. Plány ${phrases.cs.monthly} a ${phrases.cs.lifetime} včetně údržby ${KW.eac}.`,
@@ -169,7 +185,7 @@ export const phrases = {
 		legal: () => 'support@warframecheats.net pro podporu a právní dotazy.',
 	},
 	ro: {
-		buy: 'Cumpără Warframe Cheats', undetected: 'undetected', maps: 'mission objectives, spawn routes, and mission objectives',
+		buy: 'Cumpără Warframe Cheats', undetected: 'undetected', maps: 'Steel Path, Sorties e mundo aberto',
 		win: 'PC Windows', delivery: 'livrare digitală instantă', monthly: '$35/lună', lifetime: '$150 pe viață',
 		s1: (topic) => `${KW.product} combină ${KW.esp}, ${KW.radar} și ${KW.aimbot} ${phrases.ro.undetected} pentru ${KW.game} pe ${phrases.ro.win}. ${topic}`,
 		s2: () => `Licențe cu ${phrases.ro.delivery} via checkout ${KW.checkout}. Planuri ${phrases.ro.monthly} și ${phrases.ro.lifetime} includ mentenanță ${KW.eac}.`,
@@ -177,7 +193,7 @@ export const phrases = {
 		legal: () => 'support@warframecheats.net pentru suport și legal.',
 	},
 	sv: {
-		buy: 'Köp Warframe Cheats', undetected: 'undetected', maps: 'mission objectives, spawn routes, and mission objectives',
+		buy: 'Köp Warframe Cheats', undetected: 'undetected', maps: 'Steel Path, Sorties e mundo aberto',
 		win: 'Windows PC', delivery: 'omedelbar digital leverans', monthly: '$35/mån', lifetime: '$150 lifetime',
 		s1: (topic) => `${KW.product} kombinerar ${KW.esp}, ${KW.radar} och ${KW.aimbot} som ${phrases.sv.undetected} paket för ${KW.game} på ${phrases.sv.win}. ${topic}`,
 		s2: () => `Licenser med ${phrases.sv.delivery} via ${KW.checkout} checkout. ${phrases.sv.monthly} och ${phrases.sv.lifetime} inkl. ${KW.eac}-underhåll.`,
