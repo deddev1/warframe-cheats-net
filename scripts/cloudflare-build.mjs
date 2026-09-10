@@ -134,7 +134,7 @@ writeFileSync(
 		{
 			builtAt: new Date().toISOString(),
 			commit: buildId,
-			site: 'https://projectzomboidcheats.com',
+			site: 'https://warframecheats.net',
 		},
 		null,
 		2,
